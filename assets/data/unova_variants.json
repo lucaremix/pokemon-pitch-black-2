@@ -24,10 +24,19 @@
         "pokedex_id": 79,
         "type1": "Water",
         "type2": "Psychic",
+        "bst": 315,
         "abilities": [
           "Own Tempo",
           "Gluttony"
         ],
+        "stats": {
+          "hp": 90,
+          "atk": 65,
+          "def": 65,
+          "spa": 40,
+          "spd": 40,
+          "spe": 15
+        },
         "evo": "Use Honey",
         "moves": [
           {
@@ -177,10 +186,19 @@
         "pokedex_id": 333,
         "type1": "Flying",
         "type2": "Normal",
+        "bst": 310,
         "abilities": [
           "Natural Cure",
           "Cloud Nine"
         ],
+        "stats": {
+          "hp": 45,
+          "atk": 40,
+          "def": 60,
+          "spa": 40,
+          "spd": 75,
+          "spe": 50
+        },
         "evo": "Use Thunder Stone",
         "moves": [
           {
@@ -338,10 +356,19 @@
         "pokedex_id": 322,
         "type1": "Fire",
         "type2": "Ground",
+        "bst": 305,
         "abilities": [
           "Oblivious",
           "Simple"
         ],
+        "stats": {
+          "hp": 60,
+          "atk": 60,
+          "def": 40,
+          "spa": 65,
+          "spd": 45,
+          "spe": 35
+        },
         "evo": "Use Leaf Stone",
         "moves": [
           {
@@ -490,10 +517,19 @@
         "name": "Ralts",
         "pokedex_id": 280,
         "type1": "Psychic",
+        "bst": 238,
         "abilities": [
           "Synchronize",
           "Trace"
         ],
+        "stats": {
+          "hp": 28,
+          "atk": 25,
+          "def": 25,
+          "spa": 65,
+          "spd": 55,
+          "spe": 40
+        },
         "evo": "Level 20",
         "moves": [
           {
@@ -522,10 +558,19 @@
         "name": "Kirlia",
         "pokedex_id": 281,
         "type1": "Psychic",
+        "bst": 318,
         "abilities": [
           "Synchronize",
           "Trace"
         ],
+        "stats": {
+          "hp": 38,
+          "atk": 35,
+          "def": 35,
+          "spa": 85,
+          "spd": 75,
+          "spe": 50
+        },
         "evo": "Level up while knowing Aerial Ace",
         "moves": [
           {
@@ -589,20 +634,16 @@
         "level": 1
       },
       {
-        "move": "Low Kick",
-        "level": 1
-      },
-      {
         "move": "Low Sweep",
-        "level": 22
-      },
-      {
-        "move": "Slash",
-        "level": 25
+        "level": 1
       },
       {
         "move": "Agility",
         "level": 28
+      },
+      {
+        "move": "Slash",
+        "level": 30
       },
       {
         "move": "Brick Break",
@@ -757,10 +798,19 @@
         "name": "Bagon",
         "pokedex_id": 371,
         "type1": "Dragon",
+        "bst": 300,
         "abilities": [
           "Rock Head",
           "Sheer Force"
         ],
+        "stats": {
+          "hp": 45,
+          "atk": 75,
+          "def": 60,
+          "spa": 40,
+          "spd": 30,
+          "spe": 50
+        },
         "evo": "Level 20",
         "moves": [
           {
@@ -801,10 +851,19 @@
         "name": "Shelgon",
         "pokedex_id": 372,
         "type1": "Dragon",
+        "bst": 420,
         "abilities": [
           "Rock Head",
           "Overcoat"
         ],
+        "stats": {
+          "hp": 65,
+          "atk": 95,
+          "def": 100,
+          "spa": 60,
+          "spd": 50,
+          "spe": 50
+        },
         "evo": "Level 40",
         "moves": [
           {
@@ -930,17 +989,17 @@
     "pokedex_id": 219,
     "type1": "Poison",
     "type2": "Ground",
-    "bst": 460,
+    "bst": 500,
     "abilities": [
       "Aftermath",
       "Stench"
     ],
     "stats": {
-      "hp": 75,
+      "hp": 80,
       "atk": 50,
       "def": 80,
-      "spa": 110,
-      "spd": 80,
+      "spa": 115,
+      "spd": 110,
       "spe": 65
     },
     "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
@@ -949,10 +1008,19 @@
         "name": "Slugma",
         "pokedex_id": 218,
         "type1": "Fire",
+        "bst": 300,
         "abilities": [
           "Magma Armor",
           "Flame Body"
         ],
+        "stats": {
+          "hp": 50,
+          "atk": 50,
+          "def": 50,
+          "spa": 80,
+          "spd": 50,
+          "spe": 20
+        },
         "evo": "Use Black Sludge",
         "moves": [
           {
@@ -1114,10 +1182,19 @@
         "pokedex_id": 95,
         "type1": "Rock",
         "type2": "Ground",
+        "bst": 475,
         "abilities": [
           "Rock Head",
           "Sturdy"
         ],
+        "stats": {
+          "hp": 65,
+          "atk": 75,
+          "def": 160,
+          "spa": 30,
+          "spd": 45,
+          "spe": 100
+        },
         "evo": "Use Water Stone",
         "moves": [
           {
