@@ -210,6 +210,18 @@
     display: flex; align-items: baseline; justify-content: space-between;
     color: var(--muted); font-weight: 600; font-size: 14px;
   }
+  .total .tot-l { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .stat-who {
+    padding: 2px 10px; border-radius: 999px; font: 600 12.5px var(--body); color: var(--text);
+    background: color-mix(in srgb, var(--sc, var(--c1)) 28%, #0b0e14);
+    border: 1px solid color-mix(in srgb, var(--sc, var(--c1)) 60%, transparent);
+    animation: whoIn .25s ease both;
+  }
+  .stat-who[hidden] { display: none; }
+  @keyframes whoIn { from { opacity: 0; transform: translateX(-4px); } }
+  .total b.bump { animation: bump .35s ease; }
+  @keyframes bump { 40% { transform: scale(1.12); color: var(--volt); } }
+  @media (prefers-reduced-motion: reduce) { .stat-who, .total b.bump { animation: none; } }
   .total b { font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1; color: var(--text); font-variant-numeric: tabular-nums; }
 
 
@@ -747,16 +759,16 @@ function colorsOf(types) {
 function chainOf(p) {
   const pre = (p.preevo || []).map((e) => ({
     name: e.name, id: e.pokedex_id, sprite: e.sprite, types: [e.type1, e.type2].filter(Boolean),
-    abilities: e.abilities || [], moves: e.moves || [], evo: e.evo || ""
+    abilities: e.abilities || [], moves: e.moves || [], evo: e.evo || "", stats: e.stats, bst: e.bst
   }));
   const self = [{
     name: p.name, id: p.pokedex_id, sprite: p.sprite, types: [p.type1, p.type2].filter(Boolean),
-    abilities: p.abilities, moves: p.moves || [], evo: p.evo || "", self: true
+    abilities: p.abilities, moves: p.moves || [], evo: p.evo || "", stats: p.stats, bst: p.bst, self: true
   }];
   // optional "next": the Pokémon it now evolves into (shown after it, same box)
   const next = p.next ? [{
     name: p.next.name, id: p.next.pokedex_id, sprite: p.next.sprite, types: [p.next.type1, p.next.type2].filter(Boolean),
-    abilities: p.next.abilities || [], moves: p.next.moves || [], evo: ""
+    abilities: p.next.abilities || [], moves: p.next.moves || [], evo: "", stats: p.next.stats, bst: p.next.bst
   }] : [];
   return pre.concat(self, next);
 }
@@ -893,15 +905,20 @@ function detailHTML(p, key) {
     tmSectionHTML(chain[me], key, false) + "</div>";
 }
 
+function statsHTML(st) {
+  return STATS.map(([k, label], n) => {
+    const v = st[k];
+    const w = Math.max(4, Math.min(100, (v / 200) * 100));
+    return '<li class="stat' + (v >= 110 ? " hi" : "") + '" data-k="' + k + '"><span class="k">' + label + '</span><span class="v">' + v +
+      '</span><span class="bar" aria-hidden="true"><i style="--w:' + w + "%;--k:" + statColor(v) + ";--d:" + n * 45 + 'ms"></i></span></li>';
+  }).join("");
+}
+function bstOf(st, bst) { return bst || STATS.reduce((t, [k]) => t + (+st[k] || 0), 0); }
+
 function cardHTML(p, i) {
   const types = [p.type1, p.type2].filter(Boolean);
   const [c1, c2] = colorsOf(types);
-  const stats = STATS.map(([k, label], n) => {
-    const v = p.stats[k];
-    const w = Math.max(4, Math.min(100, (v / 200) * 100));
-    return '<li class="stat' + (v >= 110 ? " hi" : "") + '"><span class="k">' + label + '</span><span class="v">' + v +
-      '</span><span class="bar" aria-hidden="true"><i style="--w:' + w + "%;--k:" + statColor(v) + ";--d:" + n * 45 + 'ms"></i></span></li>';
-  }).join("");
+  const stats = statsHTML(p.stats);
   const abilities = p.abilities.map((a) => abilityLink(a)).join("");
   const id = String(p.pokedex_id).padStart(3, "0");
   const more = (p.preevo && p.preevo.length) || p.next || (p.moves && p.moves.length);
@@ -919,7 +936,7 @@ function cardHTML(p, i) {
       '<h2 class="name">' + esc(p.name) + "</h2>" +
       '<div class="abilities" role="group" aria-label="Abilities">' + abilities + "</div>" +
       '<ul class="stats" aria-label="Base stats">' + stats + "</ul>" +
-      '<div class="total"><span>Total</span><b>' + p.bst + "</b></div>" +
+      '<div class="total"><span class="tot-l">Total<span class="stat-who" hidden></span></span><b>' + p.bst + "</b></div>" +
     "</div>" +
     (more ? detailHTML(p, i) : "") +
   "</li>";
@@ -1033,6 +1050,14 @@ function placeOpen(card) {
 
 function closeCard(card) {
   card.classList.remove("open");
+  const own = chainOf(DATA[+card.dataset.i]).find((n) => n.self);
+  if (own && !card.querySelector(".stat-who").hidden) {
+    showStats(card, own);
+    card.querySelectorAll(".evo-node").forEach((n) => {
+      const on = +n.dataset.k === chainOf(DATA[+card.dataset.i]).indexOf(own);
+      if (on) pickStage(card, n);
+    });
+  }
   homeSlot(card);
   const b = card.querySelector(".expander");
   if (b) b.setAttribute("aria-expanded", "false");
@@ -1073,6 +1098,7 @@ function pickStage(card, node) {
   wrap.innerHTML = movesHTML(chain[k].moves);
   card.querySelector(".who").textContent = chain[k].name;
   card.querySelector(".count").textContent = chain[k].moves.length + " moves";
+  showStats(card, chain[k]);
   const oldTM = card.querySelector(".tm-sec");
   if (oldTM) {
     const wasOpen = oldTM.classList.contains("open");
@@ -1080,6 +1106,25 @@ function pickStage(card, node) {
     tmp.innerHTML = tmSectionHTML(chain[k], card.dataset.i, wasOpen);
     if (tmp.firstElementChild) oldTM.replaceWith(tmp.firstElementChild); else oldTM.remove();
   }
+}
+
+function showStats(card, n) {
+  if (!n.stats) return;   // no stats in the JSON for this stage: keep the current ones
+  card.querySelectorAll(".stats .stat").forEach((li) => {
+    const v = +n.stats[li.dataset.k];
+    li.querySelector(".v").textContent = v;
+    li.classList.toggle("hi", v >= 110);
+    const bar = li.querySelector(".bar > i");
+    bar.style.setProperty("--w", Math.max(4, Math.min(100, (v / 200) * 100)) + "%");
+    bar.style.setProperty("--k", statColor(v));
+  });
+  const b = card.querySelector(".total b");
+  b.textContent = bstOf(n.stats, n.bst);
+  b.classList.remove("bump"); void b.offsetWidth; b.classList.add("bump");
+  const who = card.querySelector(".stat-who");
+  who.hidden = !!n.self;
+  who.textContent = n.name;
+  who.style.setProperty("--sc", colorsOf(n.types)[0]);
 }
 
 grid.addEventListener("click", (e) => {
