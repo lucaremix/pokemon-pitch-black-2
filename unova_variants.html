@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#07090d">
 <title>Unova Variants – Pokémon Pitch Black 2</title>
-<meta name="description" content="All the Pokémon changes in Pokémon Pitch Black 2: types, abilities and base stats.">
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+<meta name="description" content="The Unova variants of Pokémon Pitch Black 2: types, abilities, base stats, movesets and TMs.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow:wght@400;500;600;700&display=swap">
 <style>
@@ -210,6 +210,18 @@
     display: flex; align-items: baseline; justify-content: space-between;
     color: var(--muted); font-weight: 600; font-size: 14px;
   }
+  .total .tot-l { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .stat-who {
+    padding: 2px 10px; border-radius: 999px; font: 600 12.5px var(--body); color: var(--text);
+    background: color-mix(in srgb, var(--sc, var(--c1)) 28%, #0b0e14);
+    border: 1px solid color-mix(in srgb, var(--sc, var(--c1)) 60%, transparent);
+    animation: whoIn .25s ease both;
+  }
+  .stat-who[hidden] { display: none; }
+  @keyframes whoIn { from { opacity: 0; transform: translateX(-4px); } }
+  .total b.bump { animation: bump .35s ease; }
+  @keyframes bump { 40% { transform: scale(1.12); color: var(--volt); } }
+  @media (prefers-reduced-motion: reduce) { .stat-who, .total b.bump { animation: none; } }
   .total b { font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1; color: var(--text); font-variant-numeric: tabular-nums; }
 
 
@@ -287,21 +299,6 @@
   .evo-arrow svg { width: 36px; height: 14px; color: var(--volt); transform: rotate(90deg); }
   .evo-arrow .how { max-width: 150px; }
   .evo-arrow .how svg { width: 15px; height: 15px; transform: none; color: currentColor; }
-  .how {
-    --k: #4a82e8;
-    display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px 4px 6px; border-radius: 10px; text-align: center;
-    font-size: 12.5px; font-weight: 700; line-height: 1.2; color: #fff;
-    background: color-mix(in srgb, var(--k) 22%, #0b0e14); border: 1px solid color-mix(in srgb, var(--k) 60%, transparent);
-  }
-  .how.level { --k: #38c6ff; }
-  .how.item { --k: #ffcb05; }
-  .how.hold { --k: #b47cff; }
-  .how img { width: 24px; height: 24px; flex: none; image-rendering: pixelated; }
-  .how svg { width: 15px; height: 15px; flex: none; }
-  .how .t-ico, .evo-arrow .how .t-ico { width: 15px; height: 15px; flex: none; transform: none; }
-  .how.night .t-ico { color: #c9b8ff; }
-  .how.day .t-ico { color: #ffcb05; }
-  .how.other { --k: #8e9ab2; padding-left: 10px; }
 
   .moves-wrap {
     position: relative; height: 212px; border-radius: 14px; overflow: hidden;
@@ -340,6 +337,118 @@
   .lv small { margin-right: 3px; font-family: var(--body); font-weight: 600; font-size: 10.5px; opacity: .8; }
   .no-moves { margin: 0; color: var(--muted); }
 
+
+  /* ───────── TMs & HMs drawer (inside the open card) ───────── */
+  .tm-sec { --tc: var(--c1); }
+  .tm-h { margin: 0; }
+  .tm-toggle {
+    width: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 14px;
+    padding: 12px 16px 12px 12px; border-radius: 14px; cursor: pointer; text-align: left; color: var(--text);
+    background:
+      radial-gradient(120% 140% at 0% 50%, color-mix(in srgb, var(--tc) 26%, transparent), transparent 60%),
+      linear-gradient(90deg, color-mix(in srgb, var(--tc) 10%, var(--panel-2)), var(--panel-2));
+    border: 1px solid color-mix(in srgb, var(--tc) 38%, var(--line));
+    transition: border-color .2s, box-shadow .2s, border-radius .3s;
+  }
+  .tm-toggle:hover { border-color: color-mix(in srgb, var(--tc) 80%, #fff 6%); box-shadow: 0 6px 22px rgba(0,0,0,.35); }
+  .tm-sec.open .tm-toggle { border-radius: 14px 14px 0 0; border-bottom-color: transparent; }
+  .tm-disc {
+    width: 46px; height: 46px; flex: none; display: grid; place-items: center; border-radius: 50%;
+    background: radial-gradient(circle at 50% 45%, rgba(255,255,255,.22), transparent 62%), color-mix(in srgb, var(--tc) 34%, #0a0d13);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--tc) 60%, transparent), 0 4px 16px color-mix(in srgb, var(--tc) 40%, transparent);
+  }
+  .tm-disc img { width: 30px; height: 30px; display: block; image-rendering: pixelated; transition: transform .45s cubic-bezier(.2,.7,.2,1); }
+  .tm-sec.open .tm-disc img { transform: translateY(-3px); }
+  .tm-title { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; min-width: 0; }
+  .tm-title b { font-family: var(--display); font-weight: 800; font-size: 18px; letter-spacing: .01em; line-height: 1.15; }
+  .tm-sub { flex-basis: 100%; color: var(--muted); font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .tm-new-n {
+    display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+    font-size: 12.5px; font-weight: 700; color: #0b0e14; background: var(--volt);
+    box-shadow: 0 0 16px rgba(255,203,5,.35);
+  }
+  .tm-new-n[hidden] { display: none; }
+  .tm-chev {
+    width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%;
+    background: rgba(7,9,13,.5); border: 1px solid rgba(255,255,255,.18);
+  }
+  .tm-chev svg { width: 17px; height: 17px; transition: transform .3s; }
+  .tm-sec.open .tm-chev svg { transform: rotate(180deg); }
+
+  .tm-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .38s cubic-bezier(.2,.7,.2,1); }
+  .tm-sec.open .tm-panel { grid-template-rows: 1fr; }
+  .tm-inner {
+    min-height: 0; overflow: hidden; border-radius: 0 0 14px 14px;
+    background: color-mix(in srgb, var(--tc) 5%, #0b0e14);
+    border: 1px solid transparent; border-top: 0;
+    transition: border-color .38s;
+  }
+  .tm-sec.open .tm-inner { border-color: color-mix(in srgb, var(--tc) 38%, var(--line)); }
+
+  .tm-filters { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 12px 4px; }
+  .tm-filter {
+    display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 12px 0 10px; border-radius: 999px;
+    cursor: pointer; color: var(--text); font-size: 13px; font-weight: 600;
+    background: var(--panel-2); border: 1px solid var(--line);
+    transition: background .15s, border-color .15s, color .15s;
+  }
+  .tm-filter:hover { border-color: color-mix(in srgb, var(--tc) 65%, var(--line)); }
+  .tm-filter[aria-pressed="true"] { background: color-mix(in srgb, var(--tc) 30%, #0b0e14); border-color: color-mix(in srgb, var(--tc) 85%, #fff 5%); }
+  .tm-filter .n { color: var(--muted); font-weight: 500; font-variant-numeric: tabular-nums; }
+  .tm-filter[aria-pressed="true"] .n { color: var(--text); }
+  .tm-filter .cat { width: 18px; height: 18px; }
+  .tm-filter.new-f .star { color: var(--volt); }
+
+  .tm-scroll {
+    max-height: 360px; overflow-y: auto; padding: 8px 12px 14px; overscroll-behavior: contain;
+    scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--tc) 55%, #333) transparent;
+  }
+  .tms { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; grid-template-columns: repeat(auto-fill, minmax(238px, 1fr)); }
+  .tms li[hidden] { display: none; }
+  .tm {
+    position: relative; display: flex; align-items: center; gap: 10px; padding: 5px 10px 5px 5px; border-radius: 10px;
+    color: var(--text); text-decoration: none; font-size: 14.5px; font-weight: 600;
+    background: color-mix(in srgb, var(--mc) 13%, var(--panel-2));
+    border: 1px solid color-mix(in srgb, var(--mc) 34%, transparent);
+    transition: background .15s, border-color .15s, transform .15s;
+  }
+  .tm:hover { background: color-mix(in srgb, var(--mc) 27%, var(--panel-2)); border-color: color-mix(in srgb, var(--mc) 80%, #fff 5%); transform: translateY(-1px); }
+  .tm:focus-visible { outline: 2px solid var(--volt); outline-offset: 2px; }
+  .tm-no {
+    flex: none; display: inline-flex; align-items: center; gap: 4px; min-width: 64px; padding: 3px 8px 3px 3px; border-radius: 8px;
+    font-family: var(--display); font-weight: 800; font-size: 14px; font-variant-numeric: tabular-nums; color: #fff;
+    background: color-mix(in srgb, var(--mc) 55%, #0a0d13); border: 1px solid color-mix(in srgb, var(--mc) 70%, transparent);
+    text-shadow: 0 1px 1px rgba(0,0,0,.45);
+  }
+  .tm-no img { width: 30px; height: 30px; flex: none; display: block; margin: -6px -3px -6px -4px; image-rendering: pixelated; }
+  .tm-no small { font-family: var(--body); font-weight: 600; font-size: 10.5px; opacity: .85; margin-right: -2px; }
+  .tm.hm .tm-no { background: linear-gradient(135deg, color-mix(in srgb, var(--volt) 80%, #000), color-mix(in srgb, var(--mc) 55%, #0a0d13)); border-color: var(--volt); }
+  .tm .mname { flex: 1; min-width: 0; overflow-wrap: normal; word-break: normal; line-height: 1.2; }
+  .cat { width: 20px; height: 20px; flex: none; display: block; }
+  .cat.phys { color: #ff8a3d; } .cat.spec { color: #7fb1ff; } .cat.stat { color: #b9c3d6; }
+  .tm .new {
+    flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--volt);
+    box-shadow: 0 0 0 3px rgba(255,203,5,.18), 0 0 10px rgba(255,203,5,.7);
+  }
+  .tm-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 0 12px 12px; color: var(--muted); font-size: 12.5px; font-weight: 600; }
+  .tm-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .tm-legend .new { width: 8px; height: 8px; border-radius: 50%; background: var(--volt); }
+  .tm-empty { margin: 6px 0 2px; color: var(--muted); font-size: 14px; }
+  .tm-sec.open .tms li { animation: tmIn .32s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(min(var(--i), 24) * 14ms); }
+  @keyframes tmIn { from { opacity: 0; transform: translateY(6px) scale(.98); } }
+  @media (max-width: 520px) {
+    .tm-toggle { gap: 10px; padding: 10px 12px 10px 10px; }
+    .tm-disc { width: 40px; height: 40px; }
+    .tms { grid-template-columns: 1fr; }
+    .tm-filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+    .tm-filters::-webkit-scrollbar { display: none; }
+    .tm-filter { flex: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tm-panel, .tm-disc img, .tm-chev svg { transition: none; }
+    .tm-sec.open .tms li { animation: none; }
+  }
+
   /* wide screens: stage | stats | evolution + moves, side by side */
   @media (min-width: 700px) {
     .card.open { grid-template-columns: 300px minmax(0, 1fr); grid-template-areas: "stage info" "detail detail"; }
@@ -363,6 +472,61 @@
     .detail { padding: 22px 24px 26px; }
   }
 
+
+  /* ───────── new evolution methods (separate section) ───────── */
+  .evo-sec { margin-top: 44px; scroll-margin-top: 84px; }
+  .evo-sec[hidden], .evo-card[hidden], .evo-row[hidden], .grid[hidden] { display: none; }
+  .sec-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 6px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .sec-head h2 { margin: 0; font-family: var(--display); font-weight: 800; font-stretch: 115%; font-size: clamp(24px, 3.4vw, 32px); line-height: 1.1; }
+  .sec-head .sec-n { color: var(--muted); font-weight: 600; font-size: 14.5px; font-variant-numeric: tabular-nums; }
+  .sec-sub { margin: 0 0 18px; color: var(--muted); font-size: 15px; }
+  .evo-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+  .evo-card {
+    --c1: #6b7a9c;
+    border-radius: 16px; overflow: hidden; background: var(--panel);
+    border: 1px solid color-mix(in srgb, var(--c1) 30%, var(--line));
+  }
+  .evo-row { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 8px; padding: 12px 14px; }
+  .evo-row + .evo-row { border-top: 1px dashed var(--line-2); }
+  .ec-mon { display: flex; flex-direction: column; align-items: center; gap: 5px; min-width: 0; text-align: center; }
+  .ec-spr {
+    --c: #6b7a9c;
+    flex: none; width: 64px; height: 64px; display: grid; place-items: center; border-radius: 14px;
+    background: radial-gradient(circle at 50% 75%, rgba(255,255,255,.18), transparent 70%), color-mix(in srgb, var(--c) 32%, #0a0d13);
+    border: 1px solid color-mix(in srgb, var(--c) 45%, transparent);
+  }
+  .ec-spr img { display: block; }
+  .ec-id { display: block; color: var(--muted); font-size: 12.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .ec-name { display: block; font-family: var(--display); font-weight: 800; font-size: 17px; line-height: 1.15; }
+  .ec-types { display: flex; gap: 3px; margin-top: 3px; }
+  .ec-types { justify-content: center; }
+  .ec-types img { width: 18px; height: 18px; display: block; }
+  .ec-how { display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 0; max-width: 160px; padding-bottom: 22px; }
+  .ec-how svg.arr { width: 44px; height: 14px; color: var(--muted); }
+  .how {
+    --k: #4a82e8;
+    display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px 4px 6px; border-radius: 10px; text-align: center;
+    font-size: 12.5px; font-weight: 700; line-height: 1.2; color: #fff;
+    background: color-mix(in srgb, var(--k) 22%, #0b0e14); border: 1px solid color-mix(in srgb, var(--k) 60%, transparent);
+  }
+  .how.level { --k: #38c6ff; }
+  .how.item { --k: #ffcb05; }
+  .how.hold { --k: #b47cff; }
+  .how img { width: 24px; height: 24px; flex: none; image-rendering: pixelated; }
+  .how svg { width: 15px; height: 15px; flex: none; }
+  .how .t-ico, .evo-arrow .how .t-ico { width: 15px; height: 15px; flex: none; transform: none; }
+  .how.night .t-ico { color: #c9b8ff; }
+  .how.day .t-ico { color: #ffcb05; }
+  .how.other { --k: #8e9ab2; padding-left: 10px; }
+  .how small { display: block; font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .evo-err { color: var(--muted); font-size: 14.5px; }
+  @media (max-width: 560px) {
+    .evo-grid { grid-template-columns: 1fr; }
+    .evo-row { gap: 6px; padding: 10px; }
+    .ec-spr { width: 56px; height: 56px; }
+    .ec-name { font-size: 15.5px; overflow-wrap: normal; }
+    .ec-how { max-width: 120px; }
+  }
   .empty { text-align: center; color: var(--muted); padding: 70px 0 30px; font-size: 17px; }
   .empty strong { display: block; color: var(--text); font-size: 20px; margin-bottom: 4px; }
   .empty .reset { margin-top: 16px; height: 42px; }
@@ -423,7 +587,7 @@
       </a>
     </div>
     <header class="hero">
-      <img class="logo" id="logo" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/logofull.png" alt="Pokémon Pitch Black 2" width="1774" height="887" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='assets/images/logofull.png'}">
+      <img class="logo" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/logofull.png" alt="Pokémon Pitch Black 2" width="1774" height="887" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='assets/images/logofull.png'}">
       <h1>Unova Variants</h1>
     </header>
   </div>
@@ -590,12 +754,18 @@ function colorsOf(types) {
 function chainOf(p) {
   const pre = (p.preevo || []).map((e) => ({
     name: e.name, id: e.pokedex_id, sprite: e.sprite, types: [e.type1, e.type2].filter(Boolean),
-    abilities: e.abilities || [], moves: e.moves || [], evo: e.evo || ""
+    abilities: e.abilities || [], moves: e.moves || [], evo: e.evo || "", stats: e.stats, bst: e.bst
   }));
-  return pre.concat([{
+  const self = [{
     name: p.name, id: p.pokedex_id, sprite: p.sprite, types: [p.type1, p.type2].filter(Boolean),
-    abilities: p.abilities, moves: p.moves || [], evo: ""
-  }]);
+    abilities: p.abilities, moves: p.moves || [], evo: p.evo || "", stats: p.stats, bst: p.bst, self: true
+  }];
+  // optional "next": the Pokémon it now evolves into (shown after it, same box)
+  const next = p.next ? [{
+    name: p.next.name, id: p.next.pokedex_id, sprite: p.next.sprite, types: [p.next.type1, p.next.type2].filter(Boolean),
+    abilities: p.next.abilities || [], moves: p.next.moves || [], evo: "", stats: p.next.stats, bst: p.next.bst
+  }] : [];
+  return pre.concat(self, next);
 }
 
 function moveURL(name) {
@@ -614,6 +784,90 @@ function movesHTML(list) {
     '<li>' + moveLink(m) + "</li>").join("") + "</ul></div>";
 }
 
+
+// ───────── TMs & HMs (assets/data/tms.json) ─────────
+const TM_URLS = [
+  "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/data/tms.json",
+  "assets/data/tms.json"
+];
+let TMDATA = null;
+const TM_ICON = (type) => "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-" + String(type || "normal").toLowerCase() + ".png";
+const TM_FALLBACK = TM_ICON("normal");
+const CAT_ICONS = {
+  Physical: '<svg class="cat phys" viewBox="0 0 24 24" aria-label="Physical" role="img"><title>Physical</title><path fill="currentColor" d="M12 1.8l2.3 5.6 5.9-1.6-2.8 5.3 5 3.4-6 .9.5 6-4.9-3.6L7.1 20.4l.5-6-6-.9 5-3.4L3.8 4.8l5.9 1.6z"/></svg>',
+  Special: '<svg class="cat spec" viewBox="0 0 24 24" aria-label="Special" role="img"><title>Special</title><g fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="5.2"/></g><circle cx="12" cy="12" r="1.9" fill="currentColor"/></svg>',
+  Status: '<svg class="cat stat" viewBox="0 0 24 24" aria-label="Status" role="img"><title>Status</title><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5.5l3.5 2"/></g></svg>'
+};
+const STAR = '<svg class="star" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg>';
+const TM_FILTERS = [["all", "All"], ["Physical", "Physical"], ["Special", "Special"], ["Status", "Status"], ["hm", "HM"], ["new", "New"]];
+
+function tmEntry(name) {
+  if (!TMDATA || !TMDATA.pokemon) return null;
+  const e = TMDATA.pokemon[name];
+  if (!e) return null;
+  const isNew = new Set(e.new || []);
+  return e.tm.filter((id) => TMDATA.list[id]).map((id) => Object.assign({ id, hm: id.startsWith("HM"), isNew: isNew.has(id) }, TMDATA.list[id]));
+}
+
+function tmMatches(t, f) {
+  return f === "all" || (f === "hm" ? t.hm : f === "new" ? t.isNew : t.cat === f);
+}
+
+function tmItemsHTML(list, filter) {
+  if (!list.length) return '<p class="tm-empty">This Pokémon can\'t learn any TM or HM.</p>';
+  return '<ul class="tms">' + list.map((t, i) => {
+    const c = TYPE_COLORS[t.type] || "#6b7a9c", num = t.id.slice(2);
+    return '<li data-cat="' + t.cat + '"' + (t.hm ? ' data-hm="1"' : "") + (t.isNew ? ' data-new="1"' : "") +
+      (tmMatches(t, filter) ? "" : " hidden") + ' style="--i:' + i + '">' +
+      '<a class="tm' + (t.hm ? " hm" : "") + '" style="--mc:' + c + '" href="' + moveURL(t.move) + '" target="_blank" rel="noopener noreferrer" ' +
+        'title="' + esc(t.id + " " + t.move + " · " + t.type + " · " + t.cat + (t.isNew ? " · new in Pitch Black 2" : "")) + '">' +
+        '<span class="tm-no"><img src="' + TM_ICON(t.type) + '" alt="" width="30" height="30" loading="lazy" onerror="this.onerror=null;this.src=TM_FALLBACK"><small>' + (t.hm ? "HM" : "TM") + "</small>" + num + "</span>" +
+        '<span class="mname">' + esc(t.move) + "</span>" +
+        (t.isNew ? '<span class="new" aria-label="New"></span>' : "") + (CAT_ICONS[t.cat] || "") +
+      "</a></li>";
+  }).join("") + "</ul>";
+}
+
+function tmSectionHTML(node, key, open) {
+  const list = tmEntry(node.name);
+  if (!list) return "";
+  const nTM = list.filter((t) => !t.hm).length, nHM = list.length - nTM, nNew = list.filter((t) => t.isNew).length;
+  const c1 = colorsOf(node.types)[0];
+  const counts = { all: list.length, hm: nHM, new: nNew };
+  ["Physical", "Special", "Status"].forEach((k) => { counts[k] = list.filter((t) => t.cat === k).length; });
+  const filters = TM_FILTERS.filter(([k]) => k === "all" || counts[k]).map(([k, label]) =>
+    '<button class="tm-filter' + (k === "new" ? " new-f" : "") + '" type="button" data-f="' + k + '" aria-pressed="' + (k === "all") + '">' +
+      (CAT_ICONS[k] || (k === "new" ? STAR : "")) + label + ' <span class="n">' + counts[k] + "</span></button>").join("");
+  return '<section class="d-sec tm-sec' + (open ? " open" : "") + '" style="--tc:' + c1 + '">' +
+    '<h3 class="tm-h"><button class="tm-toggle" type="button" aria-expanded="' + !!open + '" aria-controls="tm-' + key + '">' +
+      '<span class="tm-disc" aria-hidden="true"><img src="' + TM_ICON(node.types[0]) + '" alt="" width="30" height="30" onerror="this.onerror=null;this.src=TM_FALLBACK"></span>' +
+      '<span class="tm-title"><b>TMs &amp; HMs</b><span class="who">' + esc(node.name) + "</span>" +
+        '<span class="tm-sub">' + nTM + " TM" + (nTM === 1 ? "" : "s") + (nHM ? " · " + nHM + " HM" + (nHM === 1 ? "" : "s") : "") + "</span></span>" +
+      '<span class="tm-new-n"' + (nNew ? "" : " hidden") + ">" + nNew + " new</span>" +
+      '<span class="tm-chev" aria-hidden="true">' + CHEVRON + "</span>" +
+    "</button></h3>" +
+    '<div class="tm-panel" id="tm-' + key + '"><div class="tm-inner">' +
+      '<div class="tm-filters" role="group" aria-label="Filter TMs">' + filters + "</div>" +
+      '<div class="tm-scroll" tabindex="0" role="region" aria-label="TMs and HMs">' + tmItemsHTML(list, "all") + "</div>" +
+      (nNew ? '<div class="tm-legend"><span><i class="new"></i>New in Pitch Black 2</span></div>' : "") +
+    "</div></div></section>";
+}
+
+function toggleTM(sec) {
+  const open = !sec.classList.contains("open");
+  sec.classList.toggle("open", open);
+  sec.querySelector(".tm-toggle").setAttribute("aria-expanded", open ? "true" : "false");
+}
+
+function filterTM(sec, btn) {
+  const f = btn.dataset.f;
+  sec.querySelectorAll(".tm-filter").forEach((b) => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
+  sec.querySelectorAll(".tms li").forEach((li) => {
+    const ok = f === "all" || (f === "hm" ? li.dataset.hm : f === "new" ? li.dataset.new : li.dataset.cat === f);
+    li.hidden = !ok;
+  });
+}
+
 function evoNodeHTML(n, k, active) {
   const [c1, c2] = colorsOf(n.types);
   return '<div class="evo-node' + (active ? " active" : "") + '" data-k="' + k + '" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
@@ -629,34 +883,40 @@ function evoNodeHTML(n, k, active) {
 }
 
 function detailHTML(p, key) {
-  const chain = chainOf(p), last = chain.length - 1;
+  const chain = chainOf(p), last = chain.length - 1, me = chain.findIndex((n) => n.self);
   let evo = "";
   if (chain.length > 1) {
     evo = '<section class="d-sec"><h3>Evolution line</h3><div class="evo">';
     chain.forEach((n, k) => {
-      evo += evoNodeHTML(n, k, k === last);
+      evo += evoNodeHTML(n, k, k === me);
       if (k < last) evo += '<div class="evo-arrow">' + ARROW + methodPill(n.evo || "Evolves") + "</div>";
     });
     evo += "</div></section>";
   }
-  const [c1] = colorsOf(chain[last].types);
+  const [c1] = colorsOf(chain[me].types);
   return '<div class="detail" id="detail-' + key + '">' + evo +
-    '<section class="d-sec"><h3>Level-up moves<span class="who">' + esc(chain[last].name) + '</span><span class="count">' + chain[last].moves.length + " moves</span></h3>" +
-    '<div class="moves-wrap" style="--c1:' + c1 + '">' + movesHTML(chain[last].moves) + "</div></section></div>";
+    '<section class="d-sec"><h3>Level-up moves<span class="who">' + esc(chain[me].name) + '</span><span class="count">' + chain[me].moves.length + " moves</span></h3>" +
+    '<div class="moves-wrap" style="--c1:' + c1 + '">' + movesHTML(chain[me].moves) + "</div></section>" +
+    tmSectionHTML(chain[me], key, false) + "</div>";
 }
+
+function statsHTML(st) {
+  return STATS.map(([k, label], n) => {
+    const v = st[k];
+    const w = Math.max(4, Math.min(100, (v / 200) * 100));
+    return '<li class="stat' + (v >= 110 ? " hi" : "") + '" data-k="' + k + '"><span class="k">' + label + '</span><span class="v">' + v +
+      '</span><span class="bar" aria-hidden="true"><i style="--w:' + w + "%;--k:" + statColor(v) + ";--d:" + n * 45 + 'ms"></i></span></li>';
+  }).join("");
+}
+function bstOf(st, bst) { return bst || STATS.reduce((t, [k]) => t + (+st[k] || 0), 0); }
 
 function cardHTML(p, i) {
   const types = [p.type1, p.type2].filter(Boolean);
   const [c1, c2] = colorsOf(types);
-  const stats = STATS.map(([k, label], n) => {
-    const v = p.stats[k];
-    const w = Math.max(4, Math.min(100, (v / 200) * 100));
-    return '<li class="stat' + (v >= 110 ? " hi" : "") + '"><span class="k">' + label + '</span><span class="v">' + v +
-      '</span><span class="bar" aria-hidden="true"><i style="--w:' + w + "%;--k:" + statColor(v) + ";--d:" + n * 45 + 'ms"></i></span></li>';
-  }).join("");
+  const stats = statsHTML(p.stats);
   const abilities = p.abilities.map((a) => abilityLink(a)).join("");
   const id = String(p.pokedex_id).padStart(3, "0");
-  const more = (p.preevo && p.preevo.length) || (p.moves && p.moves.length);
+  const more = (p.preevo && p.preevo.length) || p.next || (p.moves && p.moves.length);
   const toggle = more
     ? '<button class="expander" type="button" aria-expanded="false" aria-controls="detail-' + i + '">Evolution &amp; moves' + CHEVRON + "</button>"
     : "";
@@ -671,7 +931,7 @@ function cardHTML(p, i) {
       '<h2 class="name">' + esc(p.name) + "</h2>" +
       '<div class="abilities" role="group" aria-label="Abilities">' + abilities + "</div>" +
       '<ul class="stats" aria-label="Base stats">' + stats + "</ul>" +
-      '<div class="total"><span>Total</span><b>' + p.bst + "</b></div>" +
+      '<div class="total"><span class="tot-l">Total<span class="stat-who" hidden></span></span><b>' + p.bst + "</b></div>" +
     "</div>" +
     (more ? detailHTML(p, i) : "") +
   "</li>";
@@ -699,7 +959,7 @@ const typeCount = {};
 DATA.forEach((p) => [p.type1, p.type2].forEach((t) => { if (t) typeCount[t] = (typeCount[t] || 0) + 1; }));
 ORDER.filter((t) => typeCount[t]).forEach((t) => {
   const b = document.createElement("button");
-  b.type = "button"; b.className = "chip"; b.setAttribute("aria-pressed", "false");
+  b.type = "button"; b.className = "chip"; b.dataset.t = t; b.setAttribute("aria-pressed", "false");
   b.style.setProperty("--tc", TYPE_COLORS[t] || "#8e9ab2");
   b.innerHTML = '<img src="' + TYPE_ICONS[t] + '" alt="" width="22" height="22">' + esc(t) + ' <span class="n">' + typeCount[t] + "</span>";
   b.addEventListener("click", () => {
@@ -731,14 +991,16 @@ function apply() {
   DATA.forEach((p, i) => {
     const types = [p.type1, p.type2];
     const okType = [...selected].every((t) => types.includes(t));
-    const extra = [...(p.preevo || []).map((e) => e.name), ...(p.moves || []).map((m) => m.move)].join(" ");
+    const extra = [...(p.preevo || []).map((e) => e.name + " " + (e.evo || "")), p.next ? p.next.name : "", p.evo || "", ...(p.moves || []).map((m) => m.move)].join(" ");
     const hay = (p.name + " " + p.abilities.join(" ") + " " + extra + " " + p.pokedex_id + " " + String(p.pokedex_id).padStart(3, "0")).toLowerCase();
     const ok = okType && (!term || hay.includes(term));
     cards[i].hidden = !ok;
     if (ok) shown++;
   });
   countEl.textContent = shown === DATA.length ? DATA.length + " Pokémon" : shown + " of " + DATA.length + " Pokémon";
-  empty.hidden = shown !== 0;
+  const evoShown = window.evoFilter ? window.evoFilter(term, [...selected]) : 0;
+  grid.hidden = shown === 0;
+  empty.hidden = shown !== 0 || evoShown !== 0;
   resetBtns[0].hidden = !(selected.size || term);
   if (openCard) { if (openCard.hidden) closeCard(openCard); else placeOpen(openCard); }
 }
@@ -783,6 +1045,14 @@ function placeOpen(card) {
 
 function closeCard(card) {
   card.classList.remove("open");
+  const own = chainOf(DATA[+card.dataset.i]).find((n) => n.self);
+  if (own && !card.querySelector(".stat-who").hidden) {
+    showStats(card, own);
+    card.querySelectorAll(".evo-node").forEach((n) => {
+      const on = +n.dataset.k === chainOf(DATA[+card.dataset.i]).indexOf(own);
+      if (on) pickStage(card, n);
+    });
+  }
   homeSlot(card);
   const b = card.querySelector(".expander");
   if (b) b.setAttribute("aria-expanded", "false");
@@ -823,6 +1093,33 @@ function pickStage(card, node) {
   wrap.innerHTML = movesHTML(chain[k].moves);
   card.querySelector(".who").textContent = chain[k].name;
   card.querySelector(".count").textContent = chain[k].moves.length + " moves";
+  showStats(card, chain[k]);
+  const oldTM = card.querySelector(".tm-sec");
+  if (oldTM) {
+    const wasOpen = oldTM.classList.contains("open");
+    const tmp = document.createElement("div");
+    tmp.innerHTML = tmSectionHTML(chain[k], card.dataset.i, wasOpen);
+    if (tmp.firstElementChild) oldTM.replaceWith(tmp.firstElementChild); else oldTM.remove();
+  }
+}
+
+function showStats(card, n) {
+  if (!n.stats) return;   // no stats in the JSON for this stage: keep the current ones
+  card.querySelectorAll(".stats .stat").forEach((li) => {
+    const v = +n.stats[li.dataset.k];
+    li.querySelector(".v").textContent = v;
+    li.classList.toggle("hi", v >= 110);
+    const bar = li.querySelector(".bar > i");
+    bar.style.setProperty("--w", Math.max(4, Math.min(100, (v / 200) * 100)) + "%");
+    bar.style.setProperty("--k", statColor(v));
+  });
+  const b = card.querySelector(".total b");
+  b.textContent = bstOf(n.stats, n.bst);
+  b.classList.remove("bump"); void b.offsetWidth; b.classList.add("bump");
+  const who = card.querySelector(".stat-who");
+  who.hidden = !!n.self;
+  who.textContent = n.name;
+  who.style.setProperty("--sc", colorsOf(n.types)[0]);
 }
 
 grid.addEventListener("click", (e) => {
@@ -831,6 +1128,10 @@ grid.addEventListener("click", (e) => {
   if (e.target.closest("a")) return;
   const pick = e.target.closest(".evo-pick");
   if (pick) { pickStage(card, pick.closest(".evo-node")); return; }
+  const tmT = e.target.closest(".tm-toggle");
+  if (tmT) { toggleTM(tmT.closest(".tm-sec")); return; }
+  const tmF = e.target.closest(".tm-filter");
+  if (tmF) { filterTM(tmF.closest(".tm-sec"), tmF); return; }
   if (e.target.closest(".detail")) return;
   toggleCard(card);
 });
@@ -851,20 +1152,33 @@ window.addEventListener("resize", () => {
 
 if (DATA.some((p) => p.moves && p.moves.length)) q.placeholder = "Search by name, ability, move or #ID";
 
+window.applyChanges = apply;
 apply();
 }
 
 // ───────── load the JSON ─────────
+const statusEl = document.getElementById("count");
+statusEl.textContent = "Loading Pokémon…";
+async function loadTMs() {
+  for (const url of TM_URLS) {
+    try {
+      const res = await fetch(url, { cache: "no-cache" });
+      if (!res.ok) continue;
+      TMDATA = await res.json();
+      return;
+    } catch (err) { /* try the next URL */ }
+  }
+}
 (async function load() {
-  const statusEl = document.getElementById("count");
-  statusEl.textContent = "Loading Pokémon…";
+  await loadTMs();
   let lastErr;
   for (const url of DATA_URLS) {
     try {
       const res = await fetch(url, { cache: "no-cache" });
       if (!res.ok) throw new Error("HTTP " + res.status + " on " + url);
       const json = await res.json();
-      init(Array.isArray(json) ? json : (json.pokemon || []));
+      const list = Array.isArray(json) ? json : (json.pokemon || []);
+      init(list);
       return;
     } catch (err) { lastErr = err; }
   }
@@ -872,8 +1186,9 @@ apply();
   const box = document.getElementById("loadError");
   box.hidden = false;
   box.innerHTML = "<strong>Could not load the Pokémon data.</strong> Check that assets/data/unova_variants.json exists and is valid JSON." +
-    "<code>" + String(lastErr ? lastErr.message : "unknown error").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])) + "</code>";
+    "<code>" + esc(lastErr ? lastErr.message : "unknown error") + "</code>";
 })();
+
 </script>
 </body>
 </html>
