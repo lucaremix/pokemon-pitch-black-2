@@ -98,56 +98,6 @@
     ]
   },
   {
-    "pokedex_id": 133,
-    "name": "Eevee",
-    "types": [
-      "Normal"
-    ],
-    "evolutions": [
-      {
-        "into": "Espeon",
-        "into_id": 196,
-        "into_types": [
-          "Psychic"
-        ],
-        "method": "Use Sun Stone",
-        "kind": "item",
-        "item": "Sun Stone"
-      },
-      {
-        "into": "Umbreon",
-        "into_id": 197,
-        "into_types": [
-          "Dark"
-        ],
-        "method": "Use Moon Stone",
-        "kind": "item",
-        "item": "Moon Stone"
-      },
-      {
-        "into": "Leafeon",
-        "into_id": 470,
-        "into_types": [
-          "Grass"
-        ],
-        "method": "Use Leaf Stone",
-        "kind": "item",
-        "item": "Leaf Stone"
-      },
-      {
-        "into": "Glaceon",
-        "into_id": 471,
-        "into_types": [
-          "Ice"
-        ],
-        "method": "Use Never-Melt Ice",
-        "kind": "item",
-        "item": "Never-Melt Ice",
-        "item_icon": "nevermeltice"
-      }
-    ]
-  },
-  {
     "pokedex_id": 137,
     "name": "Porygon",
     "types": [
@@ -182,25 +132,6 @@
         "method": "Use Dubious Disc",
         "kind": "item",
         "item": "Dubious Disc"
-      }
-    ]
-  },
-  {
-    "pokedex_id": 349,
-    "name": "Feebas",
-    "types": [
-      "Water"
-    ],
-    "evolutions": [
-      {
-        "into": "Milotic",
-        "into_id": 350,
-        "into_types": [
-          "Water"
-        ],
-        "method": "Use Prism Scale",
-        "kind": "item",
-        "item": "Prism Scale"
       }
     ]
   },
