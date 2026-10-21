@@ -305,17 +305,17 @@
     "pokedex_id": 26,
     "type1": "Electric",
     "type2": "Psychic",
-    "bst": 485,
+    "bst": 516,
     "abilities": [
       "Motor Drive"
     ],
     "stats": {
       "hp": 60,
       "atk": 85,
-      "def": 50,
-      "spa": 95,
+      "def": 60,
+      "spa": 105,
       "spd": 85,
-      "spe": 110
+      "spe": 121
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10100.gif",
     "preevo": [
@@ -3367,18 +3367,18 @@
     "name": "Farfetch’d (Galar)",
     "pokedex_id": 83,
     "type1": "Fighting",
-    "bst": 377,
+    "bst": 475,
     "abilities": [
       "Steadfast",
       "Scrappy"
     ],
     "stats": {
-      "hp": 52,
-      "atk": 95,
-      "def": 55,
-      "spa": 58,
-      "spd": 62,
-      "spe": 55
+      "hp": 65,
+      "atk": 130,
+      "def": 65,
+      "spa": 30,
+      "spd": 65,
+      "spe": 120
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10166.gif",
     "preevo": [],
@@ -3466,7 +3466,8 @@
             "move": "Close Combat",
             "level": 70
           }
-        ]
+        ],
+        "type2": "Grass"
       }
     ],
     "moves": [
@@ -3530,7 +3531,8 @@
         "move": "Brave Bird",
         "level": 65
       }
-    ]
+    ],
+    "type2": "Grass"
   },
   {
     "name": "Grimer (Alola)",
@@ -4372,18 +4374,18 @@
     "pokedex_id": 105,
     "type1": "Fire",
     "type2": "Ghost",
-    "bst": 425,
+    "bst": 470,
     "abilities": [
       "Cursed Body",
       "Lightning Rod"
     ],
     "stats": {
-      "hp": 60,
+      "hp": 70,
       "atk": 80,
       "def": 110,
       "spa": 50,
       "spd": 80,
-      "spe": 45
+      "spe": 80
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10115.gif",
     "preevo": [
@@ -7749,7 +7751,8 @@
     "type1": "Water",
     "bst": 330,
     "abilities": [
-      "Technician"
+      "Technician",
+      "Super Luck"
     ],
     "stats": {
       "hp": 50,
@@ -7768,7 +7771,8 @@
         "pokedex_id": 693,
         "type1": "Water",
         "abilities": [
-          "Technician"
+          "Technician",
+          "Super Luck"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/693.gif",
         "moves": [
@@ -7840,7 +7844,8 @@
             "move": "Muddy Water",
             "level": 57
           }
-        ]
+        ],
+        "type2": "Dark"
       }
     ],
     "moves": [
@@ -7896,7 +7901,8 @@
         "move": "Muddy Water",
         "level": 48
       }
-    ]
+    ],
+    "type2": "Dark"
   },
   {
     "name": "Clawitzer",
@@ -7904,7 +7910,8 @@
     "type1": "Water",
     "bst": 500,
     "abilities": [
-      "Technician"
+      "Technician",
+      "Super Luck"
     ],
     "stats": {
       "hp": 71,
@@ -7921,7 +7928,8 @@
         "pokedex_id": 692,
         "type1": "Water",
         "abilities": [
-          "Technician"
+          "Technician",
+          "Super Luck"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/692.gif",
         "evo": "Level 37",
@@ -7978,7 +7986,8 @@
             "move": "Muddy Water",
             "level": 48
           }
-        ]
+        ],
+        "type2": "Dark"
       }
     ],
     "moves": [
@@ -8050,7 +8059,8 @@
         "move": "Muddy Water",
         "level": 57
       }
-    ]
+    ],
+    "type2": "Dark"
   },
   {
     "name": "Helioptile",
@@ -8617,20 +8627,20 @@
   {
     "name": "Amaura",
     "pokedex_id": 698,
-    "type1": "Rock",
+    "type1": "Dragon",
     "type2": "Ice",
     "bst": 362,
     "abilities": [
-      "Adaptability",
-      "Snow Warning"
+      "Serene Grace",
+      "Solar Power"
     ],
     "stats": {
-      "hp": 77,
-      "atk": 59,
-      "def": 50,
-      "spa": 67,
-      "spd": 63,
-      "spe": 46
+      "hp": 75,
+      "atk": 47,
+      "def": 55,
+      "spa": 70,
+      "spd": 65,
+      "spe": 50
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/698.gif",
     "preevo": [],
@@ -8639,11 +8649,11 @@
       {
         "name": "Aurorus",
         "pokedex_id": 699,
-        "type1": "Rock",
+        "type1": "Dragon",
         "type2": "Ice",
         "abilities": [
-          "Adaptability",
-          "Snow Warning"
+          "Serene Grace",
+          "Solar Power"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/699.gif",
         "moves": [
@@ -8804,31 +8814,31 @@
   {
     "name": "Aurorus",
     "pokedex_id": 699,
-    "type1": "Rock",
+    "type1": "Dragon",
     "type2": "Ice",
     "bst": 521,
     "abilities": [
-      "Adaptability",
-      "Snow Warning"
+      "Serene Grace",
+      "Solar Power"
     ],
     "stats": {
-      "hp": 123,
-      "atk": 77,
-      "def": 72,
-      "spa": 99,
-      "spd": 92,
-      "spe": 58
+      "hp": 120,
+      "atk": 65,
+      "def": 80,
+      "spa": 101,
+      "spd": 95,
+      "spe": 60
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/699.gif",
     "preevo": [
       {
         "name": "Amaura",
         "pokedex_id": 698,
-        "type1": "Rock",
+        "type1": "Dragon",
         "type2": "Ice",
         "abilities": [
-          "Adaptability",
-          "Snow Warning"
+          "Serene Grace",
+          "Solar Power"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/698.gif",
         "evo": "Level 39",
@@ -12249,17 +12259,18 @@
     "name": "Zeraora",
     "pokedex_id": 807,
     "type1": "Electric",
-    "bst": 600,
+    "bst": 550,
     "abilities": [
-      "Volt Absorb"
+      "Volt Absorb",
+      "Flare Boost"
     ],
     "stats": {
       "hp": 88,
-      "atk": 112,
-      "def": 75,
-      "spa": 102,
-      "spd": 80,
-      "spe": 143
+      "atk": 102,
+      "def": 65,
+      "spa": 92,
+      "spd": 70,
+      "spe": 133
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/807.gif",
     "preevo": [],
@@ -12270,6 +12281,10 @@
       },
       {
         "move": "Spark",
+        "level": 1
+      },
+      {
+        "move": "Vacuum Wave",
         "level": 1
       },
       {
@@ -12317,14 +12332,23 @@
         "level": 40
       },
       {
+        "move": "Aura Sphere",
+        "level": 40
+      },
+      {
         "move": "Close Combat",
         "level": 47
       },
       {
         "move": "Discharge",
         "level": 50
+      },
+      {
+        "move": "Focus Blast",
+        "level": 64
       }
-    ]
+    ],
+    "type2": "Fighting"
   },
   {
     "name": "Rookidee",
@@ -13002,7 +13026,8 @@
             "move": "Sand Tomb",
             "level": 51
           }
-        ]
+        ],
+        "type2": "Poison"
       }
     ],
     "moves": [
@@ -13054,7 +13079,8 @@
         "move": "Sand Tomb",
         "level": 50
       }
-    ]
+    ],
+    "type2": "Poison"
   },
   {
     "name": "Sandaconda",
@@ -13134,7 +13160,8 @@
             "move": "Sand Tomb",
             "level": 50
           }
-        ]
+        ],
+        "type2": "Poison"
       }
     ],
     "moves": [
@@ -13186,7 +13213,8 @@
         "move": "Sand Tomb",
         "level": 51
       }
-    ]
+    ],
+    "type2": "Poison"
   },
   {
     "name": "Toxel",
@@ -15061,17 +15089,17 @@
     "name": "Sirfetch’d",
     "pokedex_id": 865,
     "type1": "Fighting",
-    "bst": 507,
+    "bst": 520,
     "abilities": [
       "Steadfast",
       "Scrappy"
     ],
     "stats": {
-      "hp": 62,
+      "hp": 65,
       "atk": 135,
-      "def": 95,
-      "spa": 68,
-      "spd": 82,
+      "def": 100,
+      "spa": 70,
+      "spd": 85,
       "spe": 65
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/865.gif",
@@ -15147,7 +15175,8 @@
             "move": "Brave Bird",
             "level": 65
           }
-        ]
+        ],
+        "type2": "Grass"
       }
     ],
     "moves": [
@@ -15223,7 +15252,8 @@
         "move": "Close Combat",
         "level": 70
       }
-    ]
+    ],
+    "type2": "Grass"
   },
   {
     "name": "Snom",
@@ -16294,17 +16324,18 @@
     "pokedex_id": 893,
     "type1": "Dark",
     "type2": "Grass",
-    "bst": 600,
+    "bst": 550,
     "abilities": [
-      "Leaf Guard"
+      "Leaf Guard",
+      "Intimidate"
     ],
     "stats": {
       "hp": 105,
-      "atk": 120,
-      "def": 105,
-      "spa": 70,
-      "spd": 95,
-      "spe": 105
+      "atk": 110,
+      "def": 95,
+      "spa": 60,
+      "spd": 85,
+      "spe": 95
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/893.gif",
     "preevo": [],
@@ -16721,11 +16752,10 @@
       {
         "name": "Teddiursa",
         "pokedex_id": 216,
-        "type1": "Normal",
-        "type2": "Ground",
+        "type1": "Ground",
         "abilities": [
-          "Pick Up",
-          "Battle Armor"
+          "Mold Breaker",
+          "Overcoat"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/216.gif",
         "evo": "Level 30",
@@ -16803,11 +16833,10 @@
       {
         "name": "Ursaring",
         "pokedex_id": 217,
-        "type1": "Fighting",
-        "type2": "Ground",
+        "type1": "Ground",
         "abilities": [
           "Mold Breaker",
-          "Battle Armor"
+          "Overcoat"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/217.gif",
         "evo": "Use Moon Stone",
@@ -19830,7 +19859,7 @@
         "type2": "Psychic",
         "abilities": [
           "Inner Focus",
-          "Early Bird"
+          "Sap Sipper"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/203.gif",
         "evo": "Level up knowing Double Hit",
