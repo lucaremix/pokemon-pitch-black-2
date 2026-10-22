@@ -7,7 +7,6 @@
 <title>Pokémon Pitch Black 2 – Wiki</title>
 <meta name="description" content="The official wiki of Pokémon Pitch Black 2: Pokémon changes, Unova variants, every challenge and all wild areas of the game.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="icon" href="assets/images/favicon.ico" sizes="any">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow:wght@400;500;600;700&display=swap">
 <style>
@@ -256,11 +255,13 @@
     .stat-card .art img { width: 110px; margin-left: -30px; }
   }
   @media (prefers-reduced-motion: reduce) { .sparkle, .walk img { animation: none; } .walk img { left: 40%; } }
+  .grid > li.wide { grid-column: span 2; }
   @media (max-width: 960px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 520px) {
     .hero { padding: 32px 0 30px; }
     .lead { font-size: 16.5px; }
     .grid { grid-template-columns: 1fr; }
+    .grid > li.wide { grid-column: auto; }
     .credits { flex-direction: column; gap: 6px; }
     .credits .rule { display: none; }
   }
@@ -301,14 +302,14 @@
   </div>
 
   <div class="stats3">
-    <a class="stat-card" href="changes.html" style="--c:#ee8130">
-      <div class="txt"><div class="num" id="nReworked">123</div></div>
+    <a class="stat-card" href="pokedex.html" style="--c:#ee8130">
+      <div class="txt"><div class="num" id="nReworked">245</div></div>
       <div class="txt"><div class="lbl">Reworked Pokémon</div><div class="sub">New types, abilities, stats and movesets</div></div>
       <div class="art" aria-hidden="true">
         <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/130.gif" alt="" loading="lazy"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="" loading="lazy">
       </div>
     </a>
-    <a class="stat-card" href="unova_variants.html" style="--c:#a6b91a">
+    <a class="stat-card" href="pokedex.html" style="--c:#a6b91a">
       <div class="txt"><div class="num">8</div></div>
       <div class="txt"><div class="lbl">New regional variants</div><div class="sub">Unovan forms of familiar Pokémon</div></div>
       <div class="art" aria-hidden="true">
@@ -369,8 +370,8 @@
 <main class="wrap">
   <h2 class="sec-title">Explore</h2>
   <ul class="grid">
-    <li>
-      <a class="card" href="changes.html" style="--c1:#ee8130;--c2:#6f35fc">
+    <li class="wide">
+      <a class="card" href="pokedex.html" style="--c1:#ee8130;--c2:#6f35fc">
         <div class="stage">
           <span class="num">01</span>
           <div class="sprites">
@@ -380,35 +381,17 @@
           </div>
         </div>
         <div class="body">
-          <h3 class="name">Pokémon Changes</h3>
-          <p class="desc">New types, abilities, base stats, evolution lines and level-up movesets for every reworked Pokémon.</p>
-          <div class="chips"><span class="chip">Types</span><span class="chip">Abilities</span><span class="chip">Base stats</span><span class="chip">Movesets</span></div>
-          <div class="go">Open the list <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a class="card" href="unova_variants.html" style="--c1:#a6b91a;--c2:#b7b7ce">
-        <div class="stage">
-          <span class="num">02</span>
-          <div class="sprites">
-            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif" alt="" loading="lazy" onload="fit(this)">
-            <img data-box="96" src="https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif" alt="" loading="lazy" onload="fit(this)">
-            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif" alt="" loading="lazy" onload="fit(this)">
-          </div>
-        </div>
-        <div class="body">
-          <h3 class="name">Unova Variants</h3>
-          <p class="desc">Regional forms found only in Pitch Black 2, with their typings, stats, evolution methods and moves.</p>
-          <div class="chips"><span class="chip">Regional forms</span><span class="chip">Evolutions</span><span class="chip">Movesets</span></div>
-          <div class="go">Discover the variants <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          <h3 class="name">Pokédex</h3>
+          <p class="desc">Every Pokémon you can find in Pitch Black 2: reworked Pokémon, Unovan variants, new evolution methods, base stats and level-up movesets.</p>
+          <div class="chips"><span class="chip">Reworked Pokémon</span><span class="chip">Unova variants</span><span class="chip">Evolutions</span><span class="chip">Base stats</span><span class="chip">Movesets</span></div>
+          <div class="go">Open the Pokédex <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
         </div>
       </a>
     </li>
     <li>
       <a class="card" href="challenges.html" style="--c1:#c22e28;--c2:#ffcb05">
         <div class="stage">
-          <span class="num">03</span>
+          <span class="num">02</span>
           <div class="sprites">
             <img data-box="78" src="https://play.pokemonshowdown.com/sprites/trainers/elesa.png" alt="" loading="lazy" onload="fit(this)">
             <img data-box="104" src="https://play.pokemonshowdown.com/sprites/trainers/iris.png" alt="" loading="lazy" onload="fit(this)">
@@ -426,7 +409,7 @@
     <li>
       <a class="card" href="wild_areas.html" style="--c1:#7ac74c;--c2:#6390f0">
         <div class="stage">
-          <span class="num">04</span>
+          <span class="num">03</span>
           <div class="sprites">
             <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/patrat.gif" alt="" loading="lazy" onload="fit(this)">
             <img data-box="96" src="https://play.pokemonshowdown.com/sprites/gen5ani/audino.gif" alt="" loading="lazy" onload="fit(this)">
@@ -444,7 +427,7 @@
     <li>
       <a class="card" href="items_marts.html" style="--c1:#ffcb05;--c2:#ee8130">
         <div class="stage">
-          <span class="num">05</span>
+          <span class="num">04</span>
           <div class="sprites">
             <img data-box="56" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/leftovers.png" alt="" loading="lazy" onload="fit(this)">
             <img data-box="80" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/fire-stone.png" alt="" loading="lazy" onload="fit(this)">
@@ -462,7 +445,7 @@
     <li>
       <a class="card" href="move_changes.html" style="--c1:#d685ad;--c2:#7ac74c">
         <div class="stage">
-          <span class="num">06</span>
+          <span class="num">05</span>
           <div class="sprites">
             <img data-box="56" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fairy.png" alt="" loading="lazy" onload="fit(this)" onerror="this.src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png'">
             <img data-box="96" src="https://play.pokemonshowdown.com/sprites/gen5ani/clefable.gif" alt="" loading="lazy" onload="fit(this)">
@@ -474,24 +457,6 @@
           <p class="desc">Brand-new Fairy moves, moves that changed type and rebalanced power, accuracy and PP.</p>
           <div class="chips"><span class="chip">New Fairy moves</span><span class="chip">Type changes</span><span class="chip">Power &amp; accuracy</span></div>
           <div class="go">See the moves <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a class="card" href="cross_gen.html" style="--c1:#6f35fc;--c2:#d685ad">
-        <div class="stage">
-          <span class="num">07</span>
-          <div class="sprites">
-            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/sylveon.gif" alt="" loading="lazy" onload="fit(this)">
-            <img data-box="96" src="https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif" alt="" loading="lazy" onload="fit(this)">
-            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/kommoo.gif" alt="" loading="lazy" onload="fit(this)">
-          </div>
-        </div>
-        <div class="body">
-          <h3 class="name">Cross-Gen Pokémon</h3>
-          <p class="desc">Pokémon from later generations, brought to Unova with Gen 5 movesets, stats and TMs.</p>
-          <div class="chips"><span class="chip">New Pokémon</span><span class="chip">Evolutions</span><span class="chip">Movesets</span><span class="chip">TMs</span></div>
-          <div class="go">Meet the newcomers <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
         </div>
       </a>
     </li>
