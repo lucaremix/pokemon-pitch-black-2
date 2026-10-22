@@ -551,14 +551,22 @@ const PLACEHOLDER = "data:image/svg+xml;utf8," + encodeURIComponent(
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-// "Deoxys (Attack)" -> "deoxys-attack"
-const SD = "https://play.pokemonshowdown.com/sprites/gen5ani/";
-function spriteURL(name, custom) { return custom || (SD + spriteName(name) + ".gif"); }
+// One sprite style for every Pokémon: Showdown animated sprites.
+// 1) PokeAPI mirror by National Dex number (or the "sprite" in the JSON for forms)
+// 2) if missing, Showdown by name  3) if missing too, a Poké Ball placeholder
+const API = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/";
+const SD = "https://play.pokemonshowdown.com/sprites/ani/";
+function spriteURL(name, id, custom) { return custom || (API + id + ".gif"); }
+// "Raichu (Alola)" -> "raichu-alola", "Iron Valiant" -> "ironvaliant"
 function spriteName(name) {
   let s = name.toLowerCase();
   const m = s.match(/^(.*?)\s*\((.*)\)$/);
-  if (m) s = m[1] + "-" + m[2];
+  if (m) s = m[1].replace(/[^a-z0-9]/g, "") + "-" + m[2].replace(/[^a-z0-9]/g, "");
   return s.replace(/[^a-z0-9-]/g, "");
+}
+function spriteFail(img, name) {
+  if (!img.dataset.f) { img.dataset.f = 1; img.src = SD + spriteName(name) + ".gif"; }
+  else { img.onerror = null; img.src = PLACEHOLDER; }
 }
 
 // Every sprite is scaled so its longest side equals the same box: all Pokémon show at one size.
@@ -675,8 +683,8 @@ function evoNodeHTML(n, k, active) {
   const [c1, c2] = colorsOf(n.types);
   return '<div class="evo-node' + (active ? " active" : "") + '" data-k="' + k + '" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
     '<button class="evo-pick" type="button" aria-pressed="' + (active ? "true" : "false") + '">' +
-      '<span class="thumb"><img data-box="64" src="' + esc(spriteURL(n.name, n.sprite)) + '" alt="" ' +
-        'loading="lazy" onload="fitSprite(this)" onerror="this.onerror=null;this.src=PLACEHOLDER"></span>' +
+      '<span class="thumb"><img data-box="64" src="' + esc(spriteURL(n.name, n.id, n.sprite)) + '" alt="" ' +
+        'loading="lazy" onload="fitSprite(this)" onerror="spriteFail(this,\'' + esc(spriteName(n.name)) + '\')"></span>' +
       '<span class="evo-info"><span class="evo-id">#' + String(n.id).padStart(3, "0") + '</span><span class="evo-name">' + esc(n.name) + "</span>" +
         '<span class="evo-types">' + n.types.map((t) =>
           '<img src="' + (TYPE_ICONS[t] || "") + '" alt="' + esc(t) + ' type" title="' + esc(t) + '" width="20" height="20" loading="lazy">').join("") + "</span></span>" +
@@ -728,8 +736,8 @@ function cardHTML(p, i) {
   return '<li class="card' + (types.length < 2 ? " mono" : "") + (more ? " can-open" : "") + '" data-i="' + i + '" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
     '<div class="stage">' +
       '<span class="id">#' + id + "</span>" +
-      '<div class="sprite"><img src="' + esc(spriteURL(p.name, p.sprite)) + '" ' +
-        'alt="' + esc(p.name) + ' sprite" loading="lazy" onload="fitSprite(this)" onerror="this.onerror=null;this.src=PLACEHOLDER"></div>' +
+      '<div class="sprite"><img src="' + esc(spriteURL(p.name, p.pokedex_id, p.sprite)) + '" ' +
+        'alt="' + esc(p.name) + ' sprite" loading="lazy" onload="fitSprite(this)" onerror="spriteFail(this,\'' + esc(spriteName(p.name)) + '\')"></div>' +
       '<div class="types">' + types.map(typeBadge).join("") + "</div>" + toggle +
     "</div>" +
     '<div class="body">' +
