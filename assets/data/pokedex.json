@@ -12777,7 +12777,7 @@
             "level": 68
           }
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
         "variant": true
       }
     ],
@@ -13034,7 +13034,7 @@
       "spd": 80,
       "spe": 60
     },
-    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
     "preevo": [
       {
         "name": "Slowpoke",
@@ -16236,7 +16236,7 @@
             "level": 68
           }
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
         "variant": true
       }
     ]
@@ -33839,7 +33839,7 @@
       "spd": 75,
       "spe": 80
     },
-    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
     "preevo": [
       {
         "name": "Onix",
@@ -34855,7 +34855,7 @@
       "spd": 95,
       "spe": 65
     },
-    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
     "preevo": [],
     "moves": [
       {
@@ -35808,7 +35808,7 @@
             "level": 64
           }
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
         "variant": true
       }
     ]
@@ -35982,7 +35982,7 @@
       "spd": 110,
       "spe": 65
     },
-    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
     "preevo": [
       {
         "name": "Slugma",
@@ -44440,7 +44440,7 @@
             "level": 56
           }
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
         "variant": true
       }
     ],
@@ -51877,7 +51877,7 @@
             "level": 64
           }
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
         "variant": true
       }
     ]
@@ -52060,7 +52060,7 @@
       "spd": 75,
       "spe": 40
     },
-    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
     "preevo": [
       {
         "name": "Numel",
@@ -54142,7 +54142,7 @@
             "level": 62
           }
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
         "variant": true
       }
     ]
@@ -54331,7 +54331,7 @@
       "spd": 70,
       "spe": 80
     },
-    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
     "preevo": [
       {
         "name": "Swablu",
@@ -60102,7 +60102,7 @@
             "level": 70
           }
         ],
-        "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
         "variant": true
       }
     ]
@@ -60436,7 +60436,7 @@
       "spd": 70,
       "spe": 90
     },
-    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
     "preevo": [
       {
         "name": "Bagon",
@@ -62706,7 +62706,7 @@
         "name": "Luxio",
         "pokedex_id": 404,
         "type1": "Electric",
-        "type2": "Fire",
+        "type2": "Dark",
         "abilities": [
           "Rivalry",
           "Intimidate"
@@ -62771,7 +62771,7 @@
         "name": "Luxray",
         "pokedex_id": 405,
         "type1": "Electric",
-        "type2": "Fire",
+        "type2": "Dark",
         "abilities": [
           "Rivalry",
           "Intimidate"
@@ -62974,13 +62974,67 @@
         ]
       }
     ],
-    "evo": "Level 30",
-    "next": [
+    "moves": [
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Leer",
+        "level": 1
+      },
+      {
+        "move": "Leer",
+        "level": 5
+      },
+      {
+        "move": "Charge",
+        "level": 9
+      },
+      {
+        "move": "Spark",
+        "level": 13
+      },
+      {
+        "move": "Bite",
+        "level": 18
+      },
+      {
+        "move": "Roar",
+        "level": 23
+      },
+      {
+        "move": "Swagger",
+        "level": 28
+      },
+      {
+        "move": "Thunder Fang",
+        "level": 33
+      },
+      {
+        "move": "Crunch",
+        "level": 38
+      },
+      {
+        "move": "Scary Face",
+        "level": 43
+      },
+      {
+        "move": "Discharge",
+        "level": 48
+      },
+      {
+        "move": "Wild Charge",
+        "level": 53
+      }
+    ],
+    "type2": "Dark",
+    "branches": [
       {
         "name": "Luxray",
         "pokedex_id": 405,
         "type1": "Electric",
-        "type2": "Fire",
+        "type2": "Dark",
         "abilities": [
           "Rivalry",
           "Intimidate"
@@ -63050,70 +63104,94 @@
             "move": "Wild Charge",
             "level": 63
           }
-        ]
+        ],
+        "evo": "Level 30"
+      },
+      {
+        "name": "Unovan Luxray",
+        "pokedex_id": 405,
+        "type1": "Electric",
+        "type2": "Fire",
+        "abilities": [
+          "Rivalry",
+          "Intimidate"
+        ],
+        "evo": "Use Fire Stone",
+        "moves": [
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Leer",
+            "level": 1
+          },
+          {
+            "move": "Charge",
+            "level": 1
+          },
+          {
+            "move": "Leer",
+            "level": 5
+          },
+          {
+            "move": "Charge",
+            "level": 9
+          },
+          {
+            "move": "Spark",
+            "level": 13
+          },
+          {
+            "move": "Fire Fang",
+            "level": 18
+          },
+          {
+            "move": "Roar",
+            "level": 23
+          },
+          {
+            "move": "Swagger",
+            "level": 28
+          },
+          {
+            "move": "Flame Charge",
+            "level": 32
+          },
+          {
+            "move": "Thunder Fang",
+            "level": 35
+          },
+          {
+            "move": "Flamethrower",
+            "level": 37
+          },
+          {
+            "move": "Flare Blitz",
+            "level": 42
+          },
+          {
+            "move": "Scary Face",
+            "level": 49
+          },
+          {
+            "move": "Discharge",
+            "level": 56
+          },
+          {
+            "move": "Wild Charge",
+            "level": 63
+          }
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif"
       }
-    ],
-    "moves": [
-      {
-        "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Leer",
-        "level": 5
-      },
-      {
-        "move": "Charge",
-        "level": 9
-      },
-      {
-        "move": "Spark",
-        "level": 13
-      },
-      {
-        "move": "Bite",
-        "level": 18
-      },
-      {
-        "move": "Roar",
-        "level": 23
-      },
-      {
-        "move": "Swagger",
-        "level": 28
-      },
-      {
-        "move": "Thunder Fang",
-        "level": 33
-      },
-      {
-        "move": "Crunch",
-        "level": 38
-      },
-      {
-        "move": "Scary Face",
-        "level": 43
-      },
-      {
-        "move": "Discharge",
-        "level": 48
-      },
-      {
-        "move": "Wild Charge",
-        "level": 53
-      }
-    ],
-    "type2": "Fire"
+    ]
   },
   {
     "name": "Luxray",
     "pokedex_id": 405,
     "type1": "Electric",
-    "type2": "Fire",
+    "type2": "Dark",
     "bst": 523,
     "abilities": [
       "Rivalry",
@@ -63251,7 +63329,7 @@
             "level": 53
           }
         ],
-        "type2": "Fire"
+        "type2": "Dark"
       }
     ],
     "moves": [
@@ -63320,6 +63398,229 @@
         "level": 63
       }
     ]
+  },
+  {
+    "name": "Unovan Luxray",
+    "pokedex_id": 405,
+    "type1": "Electric",
+    "type2": "Fire",
+    "bst": 523,
+    "abilities": [
+      "Rivalry",
+      "Intimidate"
+    ],
+    "stats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 79,
+      "spa": 95,
+      "spd": 79,
+      "spe": 70
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
+    "preevo": [
+      {
+        "name": "Shinx",
+        "pokedex_id": 403,
+        "type1": "Electric",
+        "abilities": [
+          "Rivalry",
+          "Intimidate"
+        ],
+        "evo": "Level 15",
+        "moves": [
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Leer",
+            "level": 5
+          },
+          {
+            "move": "Charge",
+            "level": 9
+          },
+          {
+            "move": "Spark",
+            "level": 13
+          },
+          {
+            "move": "Bite",
+            "level": 17
+          },
+          {
+            "move": "Roar",
+            "level": 21
+          },
+          {
+            "move": "Swagger",
+            "level": 25
+          },
+          {
+            "move": "Thunder Fang",
+            "level": 29
+          },
+          {
+            "move": "Crunch",
+            "level": 33
+          },
+          {
+            "move": "Scary Face",
+            "level": 37
+          },
+          {
+            "move": "Discharge",
+            "level": 41
+          },
+          {
+            "move": "Wild Charge",
+            "level": 45
+          }
+        ]
+      },
+      {
+        "name": "Luxio",
+        "pokedex_id": 404,
+        "type1": "Electric",
+        "type2": "Dark",
+        "abilities": [
+          "Rivalry",
+          "Intimidate"
+        ],
+        "evo": "Use Fire Stone",
+        "moves": [
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Leer",
+            "level": 1
+          },
+          {
+            "move": "Leer",
+            "level": 5
+          },
+          {
+            "move": "Charge",
+            "level": 9
+          },
+          {
+            "move": "Spark",
+            "level": 13
+          },
+          {
+            "move": "Bite",
+            "level": 18
+          },
+          {
+            "move": "Roar",
+            "level": 23
+          },
+          {
+            "move": "Swagger",
+            "level": 28
+          },
+          {
+            "move": "Thunder Fang",
+            "level": 33
+          },
+          {
+            "move": "Crunch",
+            "level": 38
+          },
+          {
+            "move": "Scary Face",
+            "level": 43
+          },
+          {
+            "move": "Discharge",
+            "level": 48
+          },
+          {
+            "move": "Wild Charge",
+            "level": 53
+          }
+        ],
+        "bst": 363,
+        "stats": {
+          "hp": 60,
+          "atk": 85,
+          "def": 49,
+          "spa": 60,
+          "spd": 49,
+          "spe": 60
+        }
+      }
+    ],
+    "moves": [
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Leer",
+        "level": 1
+      },
+      {
+        "move": "Charge",
+        "level": 1
+      },
+      {
+        "move": "Leer",
+        "level": 5
+      },
+      {
+        "move": "Charge",
+        "level": 9
+      },
+      {
+        "move": "Spark",
+        "level": 13
+      },
+      {
+        "move": "Fire Fang",
+        "level": 18
+      },
+      {
+        "move": "Roar",
+        "level": 23
+      },
+      {
+        "move": "Swagger",
+        "level": 28
+      },
+      {
+        "move": "Flame Charge",
+        "level": 32
+      },
+      {
+        "move": "Thunder Fang",
+        "level": 35
+      },
+      {
+        "move": "Flamethrower",
+        "level": 37
+      },
+      {
+        "move": "Flare Blitz",
+        "level": 42
+      },
+      {
+        "move": "Scary Face",
+        "level": 49
+      },
+      {
+        "move": "Discharge",
+        "level": 56
+      },
+      {
+        "move": "Wild Charge",
+        "level": 63
+      }
+    ],
+    "variant": "Unova"
   },
   {
     "name": "Budew",
@@ -75057,7 +75358,7 @@
       "spd": 65,
       "spe": 115
     },
-    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
     "preevo": [
       {
         "name": "Ralts",
@@ -75881,397 +76182,354 @@
         "move": "Discharge",
         "level": 64
       }
+    ],
+    "branches": [
+      {
+        "name": "Rotom (Fan)",
+        "pokedex_id": 479,
+        "type1": "Electric",
+        "type2": "Flying",
+        "abilities": [
+          "Levitate"
+        ],
+        "evo": "Change form",
+        "moves": [
+          {
+            "move": "Astonish",
+            "level": 1
+          },
+          {
+            "move": "Confuse Ray",
+            "level": 1
+          },
+          {
+            "move": "Thunder Shock",
+            "level": 1
+          },
+          {
+            "move": "Thunder Wave",
+            "level": 1
+          },
+          {
+            "move": "Trick",
+            "level": 1
+          },
+          {
+            "move": "Uproar",
+            "level": 8
+          },
+          {
+            "move": "Double Team",
+            "level": 15
+          },
+          {
+            "move": "Shock Wave",
+            "level": 22
+          },
+          {
+            "move": "Ominous Wind",
+            "level": 29
+          },
+          {
+            "move": "Substitute",
+            "level": 36
+          },
+          {
+            "move": "Electro Ball",
+            "level": 43
+          },
+          {
+            "move": "Hex",
+            "level": 50
+          },
+          {
+            "move": "Charge",
+            "level": 57
+          },
+          {
+            "move": "Discharge",
+            "level": 64
+          }
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10011.gif"
+      },
+      {
+        "name": "Rotom (Frost)",
+        "pokedex_id": 479,
+        "type1": "Electric",
+        "type2": "Ice",
+        "abilities": [
+          "Levitate"
+        ],
+        "evo": "Change form",
+        "moves": [
+          {
+            "move": "Astonish",
+            "level": 1
+          },
+          {
+            "move": "Confuse Ray",
+            "level": 1
+          },
+          {
+            "move": "Thunder Shock",
+            "level": 1
+          },
+          {
+            "move": "Thunder Wave",
+            "level": 1
+          },
+          {
+            "move": "Trick",
+            "level": 1
+          },
+          {
+            "move": "Uproar",
+            "level": 8
+          },
+          {
+            "move": "Double Team",
+            "level": 15
+          },
+          {
+            "move": "Shock Wave",
+            "level": 22
+          },
+          {
+            "move": "Ominous Wind",
+            "level": 29
+          },
+          {
+            "move": "Substitute",
+            "level": 36
+          },
+          {
+            "move": "Electro Ball",
+            "level": 43
+          },
+          {
+            "move": "Hex",
+            "level": 50
+          },
+          {
+            "move": "Charge",
+            "level": 57
+          },
+          {
+            "move": "Discharge",
+            "level": 64
+          }
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10010.gif"
+      },
+      {
+        "name": "Rotom (Heat)",
+        "pokedex_id": 479,
+        "type1": "Electric",
+        "type2": "Fire",
+        "abilities": [
+          "Levitate"
+        ],
+        "evo": "Change form",
+        "moves": [
+          {
+            "move": "Astonish",
+            "level": 1
+          },
+          {
+            "move": "Confuse Ray",
+            "level": 1
+          },
+          {
+            "move": "Thunder Shock",
+            "level": 1
+          },
+          {
+            "move": "Thunder Wave",
+            "level": 1
+          },
+          {
+            "move": "Trick",
+            "level": 1
+          },
+          {
+            "move": "Uproar",
+            "level": 8
+          },
+          {
+            "move": "Double Team",
+            "level": 15
+          },
+          {
+            "move": "Shock Wave",
+            "level": 22
+          },
+          {
+            "move": "Ominous Wind",
+            "level": 29
+          },
+          {
+            "move": "Substitute",
+            "level": 36
+          },
+          {
+            "move": "Electro Ball",
+            "level": 43
+          },
+          {
+            "move": "Hex",
+            "level": 50
+          },
+          {
+            "move": "Charge",
+            "level": 57
+          },
+          {
+            "move": "Discharge",
+            "level": 64
+          }
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10008.gif"
+      },
+      {
+        "name": "Rotom (Mow)",
+        "pokedex_id": 479,
+        "type1": "Electric",
+        "type2": "Grass",
+        "abilities": [
+          "Levitate"
+        ],
+        "evo": "Change form",
+        "moves": [
+          {
+            "move": "Astonish",
+            "level": 1
+          },
+          {
+            "move": "Confuse Ray",
+            "level": 1
+          },
+          {
+            "move": "Thunder Shock",
+            "level": 1
+          },
+          {
+            "move": "Thunder Wave",
+            "level": 1
+          },
+          {
+            "move": "Trick",
+            "level": 1
+          },
+          {
+            "move": "Uproar",
+            "level": 8
+          },
+          {
+            "move": "Double Team",
+            "level": 15
+          },
+          {
+            "move": "Shock Wave",
+            "level": 22
+          },
+          {
+            "move": "Ominous Wind",
+            "level": 29
+          },
+          {
+            "move": "Substitute",
+            "level": 36
+          },
+          {
+            "move": "Electro Ball",
+            "level": 43
+          },
+          {
+            "move": "Hex",
+            "level": 50
+          },
+          {
+            "move": "Charge",
+            "level": 57
+          },
+          {
+            "move": "Discharge",
+            "level": 64
+          }
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10012.gif"
+      },
+      {
+        "name": "Rotom (Wash)",
+        "pokedex_id": 479,
+        "type1": "Electric",
+        "type2": "Water",
+        "abilities": [
+          "Levitate"
+        ],
+        "evo": "Change form",
+        "moves": [
+          {
+            "move": "Astonish",
+            "level": 1
+          },
+          {
+            "move": "Confuse Ray",
+            "level": 1
+          },
+          {
+            "move": "Thunder Shock",
+            "level": 1
+          },
+          {
+            "move": "Thunder Wave",
+            "level": 1
+          },
+          {
+            "move": "Trick",
+            "level": 1
+          },
+          {
+            "move": "Uproar",
+            "level": 8
+          },
+          {
+            "move": "Double Team",
+            "level": 15
+          },
+          {
+            "move": "Shock Wave",
+            "level": 22
+          },
+          {
+            "move": "Ominous Wind",
+            "level": 29
+          },
+          {
+            "move": "Substitute",
+            "level": 36
+          },
+          {
+            "move": "Electro Ball",
+            "level": 43
+          },
+          {
+            "move": "Hex",
+            "level": 50
+          },
+          {
+            "move": "Charge",
+            "level": 57
+          },
+          {
+            "move": "Discharge",
+            "level": 64
+          }
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10009.gif"
+      }
     ]
-  },
-  {
-    "name": "Rotom (Fan)",
-    "pokedex_id": 479,
-    "type1": "Electric",
-    "type2": "Flying",
-    "bst": 520,
-    "abilities": [
-      "Levitate"
-    ],
-    "stats": {
-      "hp": 50,
-      "atk": 65,
-      "def": 107,
-      "spa": 105,
-      "spd": 107,
-      "spe": 86
-    },
-    "preevo": [],
-    "moves": [
-      {
-        "move": "Astonish",
-        "level": 1
-      },
-      {
-        "move": "Confuse Ray",
-        "level": 1
-      },
-      {
-        "move": "Thunder Shock",
-        "level": 1
-      },
-      {
-        "move": "Thunder Wave",
-        "level": 1
-      },
-      {
-        "move": "Trick",
-        "level": 1
-      },
-      {
-        "move": "Uproar",
-        "level": 8
-      },
-      {
-        "move": "Double Team",
-        "level": 15
-      },
-      {
-        "move": "Shock Wave",
-        "level": 22
-      },
-      {
-        "move": "Ominous Wind",
-        "level": 29
-      },
-      {
-        "move": "Substitute",
-        "level": 36
-      },
-      {
-        "move": "Electro Ball",
-        "level": 43
-      },
-      {
-        "move": "Hex",
-        "level": 50
-      },
-      {
-        "move": "Charge",
-        "level": 57
-      },
-      {
-        "move": "Discharge",
-        "level": 64
-      }
-    ],
-    "form_of": "Rotom"
-  },
-  {
-    "name": "Rotom (Frost)",
-    "pokedex_id": 479,
-    "type1": "Electric",
-    "type2": "Ice",
-    "bst": 520,
-    "abilities": [
-      "Levitate"
-    ],
-    "stats": {
-      "hp": 50,
-      "atk": 65,
-      "def": 107,
-      "spa": 105,
-      "spd": 107,
-      "spe": 86
-    },
-    "preevo": [],
-    "moves": [
-      {
-        "move": "Astonish",
-        "level": 1
-      },
-      {
-        "move": "Confuse Ray",
-        "level": 1
-      },
-      {
-        "move": "Thunder Shock",
-        "level": 1
-      },
-      {
-        "move": "Thunder Wave",
-        "level": 1
-      },
-      {
-        "move": "Trick",
-        "level": 1
-      },
-      {
-        "move": "Uproar",
-        "level": 8
-      },
-      {
-        "move": "Double Team",
-        "level": 15
-      },
-      {
-        "move": "Shock Wave",
-        "level": 22
-      },
-      {
-        "move": "Ominous Wind",
-        "level": 29
-      },
-      {
-        "move": "Substitute",
-        "level": 36
-      },
-      {
-        "move": "Electro Ball",
-        "level": 43
-      },
-      {
-        "move": "Hex",
-        "level": 50
-      },
-      {
-        "move": "Charge",
-        "level": 57
-      },
-      {
-        "move": "Discharge",
-        "level": 64
-      }
-    ],
-    "form_of": "Rotom"
-  },
-  {
-    "name": "Rotom (Heat)",
-    "pokedex_id": 479,
-    "type1": "Electric",
-    "type2": "Fire",
-    "bst": 520,
-    "abilities": [
-      "Levitate"
-    ],
-    "stats": {
-      "hp": 50,
-      "atk": 65,
-      "def": 107,
-      "spa": 105,
-      "spd": 107,
-      "spe": 86
-    },
-    "preevo": [],
-    "moves": [
-      {
-        "move": "Astonish",
-        "level": 1
-      },
-      {
-        "move": "Confuse Ray",
-        "level": 1
-      },
-      {
-        "move": "Thunder Shock",
-        "level": 1
-      },
-      {
-        "move": "Thunder Wave",
-        "level": 1
-      },
-      {
-        "move": "Trick",
-        "level": 1
-      },
-      {
-        "move": "Uproar",
-        "level": 8
-      },
-      {
-        "move": "Double Team",
-        "level": 15
-      },
-      {
-        "move": "Shock Wave",
-        "level": 22
-      },
-      {
-        "move": "Ominous Wind",
-        "level": 29
-      },
-      {
-        "move": "Substitute",
-        "level": 36
-      },
-      {
-        "move": "Electro Ball",
-        "level": 43
-      },
-      {
-        "move": "Hex",
-        "level": 50
-      },
-      {
-        "move": "Charge",
-        "level": 57
-      },
-      {
-        "move": "Discharge",
-        "level": 64
-      }
-    ],
-    "form_of": "Rotom"
-  },
-  {
-    "name": "Rotom (Mow)",
-    "pokedex_id": 479,
-    "type1": "Electric",
-    "type2": "Grass",
-    "bst": 520,
-    "abilities": [
-      "Levitate"
-    ],
-    "stats": {
-      "hp": 50,
-      "atk": 65,
-      "def": 107,
-      "spa": 105,
-      "spd": 107,
-      "spe": 86
-    },
-    "preevo": [],
-    "moves": [
-      {
-        "move": "Astonish",
-        "level": 1
-      },
-      {
-        "move": "Confuse Ray",
-        "level": 1
-      },
-      {
-        "move": "Thunder Shock",
-        "level": 1
-      },
-      {
-        "move": "Thunder Wave",
-        "level": 1
-      },
-      {
-        "move": "Trick",
-        "level": 1
-      },
-      {
-        "move": "Uproar",
-        "level": 8
-      },
-      {
-        "move": "Double Team",
-        "level": 15
-      },
-      {
-        "move": "Shock Wave",
-        "level": 22
-      },
-      {
-        "move": "Ominous Wind",
-        "level": 29
-      },
-      {
-        "move": "Substitute",
-        "level": 36
-      },
-      {
-        "move": "Electro Ball",
-        "level": 43
-      },
-      {
-        "move": "Hex",
-        "level": 50
-      },
-      {
-        "move": "Charge",
-        "level": 57
-      },
-      {
-        "move": "Discharge",
-        "level": 64
-      }
-    ],
-    "form_of": "Rotom"
-  },
-  {
-    "name": "Rotom (Wash)",
-    "pokedex_id": 479,
-    "type1": "Electric",
-    "type2": "Water",
-    "bst": 520,
-    "abilities": [
-      "Levitate"
-    ],
-    "stats": {
-      "hp": 50,
-      "atk": 65,
-      "def": 107,
-      "spa": 105,
-      "spd": 107,
-      "spe": 86
-    },
-    "preevo": [],
-    "moves": [
-      {
-        "move": "Astonish",
-        "level": 1
-      },
-      {
-        "move": "Confuse Ray",
-        "level": 1
-      },
-      {
-        "move": "Thunder Shock",
-        "level": 1
-      },
-      {
-        "move": "Thunder Wave",
-        "level": 1
-      },
-      {
-        "move": "Trick",
-        "level": 1
-      },
-      {
-        "move": "Uproar",
-        "level": 8
-      },
-      {
-        "move": "Double Team",
-        "level": 15
-      },
-      {
-        "move": "Shock Wave",
-        "level": 22
-      },
-      {
-        "move": "Ominous Wind",
-        "level": 29
-      },
-      {
-        "move": "Substitute",
-        "level": 36
-      },
-      {
-        "move": "Electro Ball",
-        "level": 43
-      },
-      {
-        "move": "Hex",
-        "level": 50
-      },
-      {
-        "move": "Charge",
-        "level": 57
-      },
-      {
-        "move": "Discharge",
-        "level": 64
-      }
-    ],
-    "form_of": "Rotom"
   },
   {
     "name": "Uxie",
@@ -87257,38 +87515,32 @@
         "move": "Overheat",
         "level": 54
       }
-    ]
-  },
-  {
-    "name": "Darmanitan (Zen)",
-    "pokedex_id": 555,
-    "type1": "Fire",
-    "type2": "Psychic",
-    "bst": 540,
-    "abilities": [
-      "Zen Mode"
     ],
-    "stats": {
-      "hp": 105,
-      "atk": 30,
-      "def": 105,
-      "spa": 140,
-      "spd": 105,
-      "spe": 55
-    },
-    "preevo": [
+    "branches": [
       {
-        "name": "Darumaka",
-        "pokedex_id": 554,
+        "name": "Darmanitan (Zen)",
+        "pokedex_id": 555,
         "type1": "Fire",
+        "type2": "Psychic",
         "abilities": [
-          "Hustle",
-          "Inner Focus"
+          "Zen Mode"
         ],
-        "evo": "Level 35",
+        "evo": "Zen Mode (below half HP)",
         "moves": [
           {
             "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Rollout",
+            "level": 1
+          },
+          {
+            "move": "Incinerate",
+            "level": 1
+          },
+          {
+            "move": "Rage",
             "level": 1
           },
           {
@@ -87312,7 +87564,7 @@
             "level": 14
           },
           {
-            "move": "Uproar",
+            "move": "Swagger",
             "level": 17
           },
           {
@@ -87340,111 +87592,33 @@
             "level": 33
           },
           {
-            "move": "Taunt",
+            "move": "Hammer Arm",
             "level": 35
           },
           {
-            "move": "Superpower",
+            "move": "Uproar",
+            "level": 35
+          },
+          {
+            "move": "Taunt",
             "level": 39
           },
           {
-            "move": "Overheat",
+            "move": "Sky Uppercut",
             "level": 42
+          },
+          {
+            "move": "Superpower",
+            "level": 47
+          },
+          {
+            "move": "Overheat",
+            "level": 54
           }
-        ]
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10017.gif"
       }
-    ],
-    "moves": [
-      {
-        "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Rollout",
-        "level": 1
-      },
-      {
-        "move": "Incinerate",
-        "level": 1
-      },
-      {
-        "move": "Rage",
-        "level": 1
-      },
-      {
-        "move": "Rollout",
-        "level": 3
-      },
-      {
-        "move": "Incinerate",
-        "level": 6
-      },
-      {
-        "move": "Rage",
-        "level": 9
-      },
-      {
-        "move": "Fire Fang",
-        "level": 11
-      },
-      {
-        "move": "Headbutt",
-        "level": 14
-      },
-      {
-        "move": "Swagger",
-        "level": 17
-      },
-      {
-        "move": "Facade",
-        "level": 19
-      },
-      {
-        "move": "Fire Punch",
-        "level": 22
-      },
-      {
-        "move": "Work Up",
-        "level": 25
-      },
-      {
-        "move": "Thrash",
-        "level": 27
-      },
-      {
-        "move": "Belly Drum",
-        "level": 30
-      },
-      {
-        "move": "Flare Blitz",
-        "level": 33
-      },
-      {
-        "move": "Hammer Arm",
-        "level": 35
-      },
-      {
-        "move": "Uproar",
-        "level": 35
-      },
-      {
-        "move": "Taunt",
-        "level": 39
-      },
-      {
-        "move": "Sky Uppercut",
-        "level": 42
-      },
-      {
-        "move": "Superpower",
-        "level": 47
-      },
-      {
-        "move": "Overheat",
-        "level": 54
-      }
-    ],
-    "form_of": "Darmanitan"
+    ]
   },
   {
     "name": "Maractus",
