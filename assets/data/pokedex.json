@@ -2761,15 +2761,15 @@
             "level": 1
           },
           {
-            "move": "Confusion",
+            "move": "Disarming Voice",
             "level": 3
           },
           {
-            "move": "Psybeam",
+            "move": "Draining Kiss",
             "level": 8
           },
           {
-            "move": "Psyshock",
+            "move": "Dazzling Gleam",
             "level": 14
           },
           {
@@ -2779,6 +2779,10 @@
           {
             "move": "Discharge",
             "level": 42
+          },
+          {
+            "move": "Moonblast",
+            "level": 46
           },
           {
             "move": "Thunder",
@@ -2969,15 +2973,15 @@
         "level": 1
       },
       {
-        "move": "Confusion",
+        "move": "Disarming Voice",
         "level": 3
       },
       {
-        "move": "Psybeam",
+        "move": "Draining Kiss",
         "level": 8
       },
       {
-        "move": "Psyshock",
+        "move": "Dazzling Gleam",
         "level": 14
       },
       {
@@ -2987,6 +2991,10 @@
       {
         "move": "Discharge",
         "level": 42
+      },
+      {
+        "move": "Moonblast",
+        "level": 46
       },
       {
         "move": "Thunder",
@@ -17488,6 +17496,10 @@
             "level": 5
           },
           {
+            "move": "Mud-Slap",
+            "level": 10
+          },
+          {
             "move": "Fury Attack",
             "level": 14
           },
@@ -17500,7 +17512,7 @@
             "level": 28
           },
           {
-            "move": "Uproar",
+            "move": "Bulldoze",
             "level": 31
           },
           {
@@ -17548,7 +17560,7 @@
         "level": 5
       },
       {
-        "move": "Rage",
+        "move": "Mud-Slap",
         "level": 10
       },
       {
@@ -17560,7 +17572,7 @@
         "level": 19
       },
       {
-        "move": "Uproar",
+        "move": "Bulldoze",
         "level": 23
       },
       {
@@ -17580,7 +17592,7 @@
         "level": 41
       },
       {
-        "move": "Endeavor",
+        "move": "Earthquake",
         "level": 46
       },
       {
@@ -17633,7 +17645,7 @@
             "level": 5
           },
           {
-            "move": "Rage",
+            "move": "Mud-Slap",
             "level": 10
           },
           {
@@ -17645,7 +17657,7 @@
             "level": 19
           },
           {
-            "move": "Uproar",
+            "move": "Bulldoze",
             "level": 23
           },
           {
@@ -17665,7 +17677,7 @@
             "level": 41
           },
           {
-            "move": "Endeavor",
+            "move": "Earthquake",
             "level": 46
           },
           {
@@ -17697,6 +17709,10 @@
         "level": 5
       },
       {
+        "move": "Mud-Slap",
+        "level": 10
+      },
+      {
         "move": "Fury Attack",
         "level": 14
       },
@@ -17709,7 +17725,7 @@
         "level": 28
       },
       {
-        "move": "Uproar",
+        "move": "Bulldoze",
         "level": 31
       },
       {
@@ -18164,7 +18180,7 @@
             "level": 18
           },
           {
-            "move": "Mud Bomb",
+            "move": "Body Slam",
             "level": 21
           },
           {
@@ -18200,7 +18216,7 @@
             "level": 49
           },
           {
-            "move": "Earth Power",
+            "move": "Double-Edge",
             "level": 49
           },
           {
@@ -18240,7 +18256,7 @@
         "level": 18
       },
       {
-        "move": "Mud Bomb",
+        "move": "Body Slam",
         "level": 21
       },
       {
@@ -18508,7 +18524,7 @@
             "level": 18
           },
           {
-            "move": "Mud Bomb",
+            "move": "Body Slam",
             "level": 21
           },
           {
@@ -18585,7 +18601,7 @@
         "level": 18
       },
       {
-        "move": "Mud Bomb",
+        "move": "Body Slam",
         "level": 21
       },
       {
@@ -18621,7 +18637,7 @@
         "level": 49
       },
       {
-        "move": "Earth Power",
+        "move": "Double-Edge",
         "level": 49
       },
       {
@@ -28438,6 +28454,10 @@
             "level": 12
           },
           {
+            "move": "Charge Beam",
+            "level": 12
+          },
+          {
             "move": "Recover",
             "level": 18
           },
@@ -28460,6 +28480,10 @@
           {
             "move": "Lock-On",
             "level": 45
+          },
+          {
+            "move": "Thunderbolt",
+            "level": 48
           },
           {
             "move": "Tri Attack",
@@ -28518,6 +28542,10 @@
             "level": 12
           },
           {
+            "move": "Charge Beam",
+            "level": 12
+          },
+          {
             "move": "Recover",
             "level": 18
           },
@@ -28530,7 +28558,7 @@
             "level": 29
           },
           {
-            "move": "Embargo",
+            "move": "Psyshock",
             "level": 34
           },
           {
@@ -28544,6 +28572,10 @@
           {
             "move": "Tri Attack",
             "level": 51
+          },
+          {
+            "move": "Psychic",
+            "level": 53
           },
           {
             "move": "Magic Coat",
@@ -28584,6 +28616,10 @@
       },
       {
         "move": "Agility",
+        "level": 12
+      },
+      {
+        "move": "Charge Beam",
         "level": 12
       },
       {
@@ -29273,7 +29309,7 @@
         "level": 6
       },
       {
-        "move": "Roar",
+        "move": "Wing Attack",
         "level": 9
       },
       {
@@ -29301,7 +29337,7 @@
         "level": 38
       },
       {
-        "move": "Take Down",
+        "move": "Brave Bird",
         "level": 41
       },
       {
@@ -32194,15 +32230,15 @@
             "level": 1
           },
           {
-            "move": "Confusion",
+            "move": "Disarming Voice",
             "level": 3
           },
           {
-            "move": "Psybeam",
+            "move": "Draining Kiss",
             "level": 8
           },
           {
-            "move": "Psyshock",
+            "move": "Dazzling Gleam",
             "level": 14
           },
           {
@@ -32212,6 +32248,10 @@
           {
             "move": "Discharge",
             "level": 42
+          },
+          {
+            "move": "Moonblast",
+            "level": 46
           },
           {
             "move": "Thunder",
@@ -38682,7 +38722,7 @@
         "level": 4
       },
       {
-        "move": "Twister",
+        "move": "Disarming Voice",
         "level": 6
       },
       {
@@ -38702,7 +38742,7 @@
         "level": 16
       },
       {
-        "move": "Dragon Tail",
+        "move": "Draining Kiss",
         "level": 16
       },
       {
@@ -38722,7 +38762,7 @@
         "level": 28
       },
       {
-        "move": "Dragon Pulse",
+        "move": "Dazzling Gleam",
         "level": 28
       },
       {
@@ -38738,7 +38778,7 @@
         "level": 37
       },
       {
-        "move": "Outrage",
+        "move": "Play Rough",
         "level": 38
       },
       {
@@ -44287,6 +44327,10 @@
             "level": 12
           },
           {
+            "move": "Charge Beam",
+            "level": 12
+          },
+          {
             "move": "Recover",
             "level": 18
           },
@@ -44366,6 +44410,10 @@
             "level": 12
           },
           {
+            "move": "Charge Beam",
+            "level": 12
+          },
+          {
             "move": "Recover",
             "level": 18
           },
@@ -44378,7 +44426,7 @@
             "level": 29
           },
           {
-            "move": "Embargo",
+            "move": "Psyshock",
             "level": 34
           },
           {
@@ -44392,6 +44440,10 @@
           {
             "move": "Tri Attack",
             "level": 51
+          },
+          {
+            "move": "Psychic",
+            "level": 53
           },
           {
             "move": "Magic Coat",
@@ -44435,6 +44487,10 @@
         "level": 12
       },
       {
+        "move": "Charge Beam",
+        "level": 12
+      },
+      {
         "move": "Recover",
         "level": 18
       },
@@ -44457,6 +44513,10 @@
       {
         "move": "Lock-On",
         "level": 45
+      },
+      {
+        "move": "Thunderbolt",
+        "level": 48
       },
       {
         "move": "Tri Attack",
@@ -57084,7 +57144,7 @@
             "level": 1
           },
           {
-            "move": "Rage",
+            "move": "Metal Claw",
             "level": 1
           },
           {
@@ -57128,7 +57188,7 @@
             "level": 45
           },
           {
-            "move": "Skull Bash",
+            "move": "Iron Head",
             "level": 50
           },
           {
@@ -57148,7 +57208,7 @@
         "level": 1
       },
       {
-        "move": "Rage",
+        "move": "Metal Claw",
         "level": 6
       },
       {
@@ -57188,7 +57248,7 @@
         "level": 36
       },
       {
-        "move": "Take Down",
+        "move": "Iron Head",
         "level": 38
       }
     ]
@@ -57233,7 +57293,7 @@
             "level": 1
           },
           {
-            "move": "Rage",
+            "move": "Metal Claw",
             "level": 6
           },
           {
@@ -57273,7 +57333,7 @@
             "level": 36
           },
           {
-            "move": "Take Down",
+            "move": "Iron Head",
             "level": 38
           }
         ]
@@ -57297,7 +57357,7 @@
         "level": 1
       },
       {
-        "move": "Rage",
+        "move": "Metal Claw",
         "level": 1
       },
       {
@@ -57341,7 +57401,7 @@
         "level": 45
       },
       {
-        "move": "Skull Bash",
+        "move": "Iron Head",
         "level": 50
       },
       {
@@ -58934,7 +58994,7 @@
             "level": 10
           },
           {
-            "move": "Bide",
+            "move": "Bulldoze",
             "level": 17
           },
           {
@@ -58958,7 +59018,7 @@
             "level": 34
           },
           {
-            "move": "Dragon Breath",
+            "move": "Earth Power",
             "level": 35
           },
           {
@@ -59006,7 +59066,7 @@
             "level": 10
           },
           {
-            "move": "Bide",
+            "move": "Bulldoze",
             "level": 17
           },
           {
@@ -59030,7 +59090,7 @@
             "level": 34
           },
           {
-            "move": "Dragon Breath",
+            "move": "Earth Power",
             "level": 35
           },
           {
@@ -59046,7 +59106,7 @@
             "level": 44
           },
           {
-            "move": "Dragon Tail",
+            "move": "Earthquake",
             "level": 45
           },
           {
@@ -59266,7 +59326,7 @@
             "level": 10
           },
           {
-            "move": "Bide",
+            "move": "Bulldoze",
             "level": 17
           },
           {
@@ -59290,7 +59350,7 @@
             "level": 34
           },
           {
-            "move": "Dragon Breath",
+            "move": "Earth Power",
             "level": 35
           },
           {
@@ -59306,7 +59366,7 @@
             "level": 44
           },
           {
-            "move": "Dragon Tail",
+            "move": "Earthquake",
             "level": 45
           },
           {
@@ -59346,7 +59406,7 @@
         "level": 10
       },
       {
-        "move": "Bide",
+        "move": "Bulldoze",
         "level": 17
       },
       {
@@ -59370,7 +59430,7 @@
         "level": 34
       },
       {
-        "move": "Dragon Breath",
+        "move": "Earth Power",
         "level": 35
       },
       {
@@ -59524,7 +59584,7 @@
             "level": 10
           },
           {
-            "move": "Bide",
+            "move": "Bulldoze",
             "level": 17
           },
           {
@@ -59548,7 +59608,7 @@
             "level": 34
           },
           {
-            "move": "Dragon Breath",
+            "move": "Earth Power",
             "level": 35
           },
           {
@@ -59588,7 +59648,7 @@
         "level": 10
       },
       {
-        "move": "Bide",
+        "move": "Bulldoze",
         "level": 17
       },
       {
@@ -59612,7 +59672,7 @@
         "level": 34
       },
       {
-        "move": "Dragon Breath",
+        "move": "Earth Power",
         "level": 35
       },
       {
@@ -59628,7 +59688,7 @@
         "level": 44
       },
       {
-        "move": "Dragon Tail",
+        "move": "Earthquake",
         "level": 45
       },
       {
@@ -59980,9 +60040,9 @@
   },
   {
     "name": "Swablu",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 333,
-    "type1": "Normal",
+    "type1": "Fairy",
     "type2": "Flying",
     "bst": 310,
     "abilities": [
@@ -60007,7 +60067,7 @@
         "level": 1
       },
       {
-        "move": "Astonish",
+        "move": "Disarming Voice",
         "level": 4
       },
       {
@@ -60031,7 +60091,7 @@
         "level": 18
       },
       {
-        "move": "Natural Gift",
+        "move": "Draining Kiss",
         "level": 21
       },
       {
@@ -60039,7 +60099,7 @@
         "level": 25
       },
       {
-        "move": "Refresh",
+        "move": "Dazzling Gleam",
         "level": 29
       },
       {
@@ -60055,7 +60115,7 @@
         "level": 42
       },
       {
-        "move": "Perish Song",
+        "move": "Moonblast",
         "level": 48
       }
     ],
@@ -60063,14 +60123,14 @@
       {
         "name": "Altaria",
         "pokedex_id": 334,
-        "type1": "Dragon",
-        "type2": "Flying",
+        "type1": "Fairy",
+        "type2": "Dragon",
         "abilities": [
           "Natural Cure"
         ],
         "moves": [
           {
-            "move": "Astonish",
+            "move": "Disarming Voice",
             "level": 1
           },
           {
@@ -60106,7 +60166,7 @@
             "level": 18
           },
           {
-            "move": "Natural Gift",
+            "move": "Draining Kiss",
             "level": 21
           },
           {
@@ -60114,7 +60174,7 @@
             "level": 25
           },
           {
-            "move": "Refresh",
+            "move": "Dazzling Gleam",
             "level": 29
           },
           {
@@ -60134,7 +60194,7 @@
             "level": 48
           },
           {
-            "move": "Perish Song",
+            "move": "Moonblast",
             "level": 57
           },
           {
@@ -60147,7 +60207,7 @@
       {
         "name": "Unovan Altaria",
         "pokedex_id": 334,
-        "type1": "Flying",
+        "type1": "Fairy",
         "type2": "Electric",
         "abilities": [
           "Static",
@@ -60168,7 +60228,7 @@
             "level": 1
           },
           {
-            "move": "Astonish",
+            "move": "Disarming Voice",
             "level": 1
           },
           {
@@ -60184,7 +60244,7 @@
             "level": 18
           },
           {
-            "move": "Air Cutter",
+            "move": "Draining Kiss",
             "level": 21
           },
           {
@@ -60200,7 +60260,7 @@
             "level": 28
           },
           {
-            "move": "Air Slash",
+            "move": "Dazzling Gleam",
             "level": 32
           },
           {
@@ -60224,7 +60284,7 @@
             "level": 50
           },
           {
-            "move": "Hurricane",
+            "move": "Moonblast",
             "level": 55
           },
           {
@@ -60239,10 +60299,10 @@
   },
   {
     "name": "Altaria",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 334,
-    "type1": "Dragon",
-    "type2": "Flying",
+    "type1": "Fairy",
+    "type2": "Dragon",
     "bst": 490,
     "abilities": [
       "Natural Cure"
@@ -60259,7 +60319,7 @@
       {
         "name": "Swablu",
         "pokedex_id": 333,
-        "type1": "Normal",
+        "type1": "Fairy",
         "type2": "Flying",
         "abilities": [
           "Natural Cure"
@@ -60275,7 +60335,7 @@
             "level": 1
           },
           {
-            "move": "Astonish",
+            "move": "Disarming Voice",
             "level": 4
           },
           {
@@ -60299,7 +60359,7 @@
             "level": 18
           },
           {
-            "move": "Natural Gift",
+            "move": "Draining Kiss",
             "level": 21
           },
           {
@@ -60307,7 +60367,7 @@
             "level": 25
           },
           {
-            "move": "Refresh",
+            "move": "Dazzling Gleam",
             "level": 29
           },
           {
@@ -60323,7 +60383,7 @@
             "level": 42
           },
           {
-            "move": "Perish Song",
+            "move": "Moonblast",
             "level": 48
           }
         ]
@@ -60331,7 +60391,7 @@
     ],
     "moves": [
       {
-        "move": "Astonish",
+        "move": "Disarming Voice",
         "level": 1
       },
       {
@@ -60367,7 +60427,7 @@
         "level": 18
       },
       {
-        "move": "Natural Gift",
+        "move": "Draining Kiss",
         "level": 21
       },
       {
@@ -60375,7 +60435,7 @@
         "level": 25
       },
       {
-        "move": "Refresh",
+        "move": "Dazzling Gleam",
         "level": 29
       },
       {
@@ -60395,7 +60455,7 @@
         "level": 48
       },
       {
-        "move": "Perish Song",
+        "move": "Moonblast",
         "level": 57
       },
       {
@@ -60408,7 +60468,7 @@
     "name": "Unovan Altaria",
     "changed": true,
     "pokedex_id": 334,
-    "type1": "Flying",
+    "type1": "Fairy",
     "type2": "Electric",
     "bst": 490,
     "abilities": [
@@ -60428,7 +60488,7 @@
       {
         "name": "Swablu",
         "pokedex_id": 333,
-        "type1": "Normal",
+        "type1": "Fairy",
         "type2": "Flying",
         "bst": 310,
         "abilities": [
@@ -60453,7 +60513,7 @@
             "level": 1
           },
           {
-            "move": "Astonish",
+            "move": "Disarming Voice",
             "level": 4
           },
           {
@@ -60477,7 +60537,7 @@
             "level": 18
           },
           {
-            "move": "Natural Gift",
+            "move": "Draining Kiss",
             "level": 21
           },
           {
@@ -60485,7 +60545,7 @@
             "level": 25
           },
           {
-            "move": "Refresh",
+            "move": "Dazzling Gleam",
             "level": 29
           },
           {
@@ -60501,7 +60561,7 @@
             "level": 42
           },
           {
-            "move": "Perish Song",
+            "move": "Moonblast",
             "level": 48
           }
         ]
@@ -60521,7 +60581,7 @@
         "level": 1
       },
       {
-        "move": "Astonish",
+        "move": "Disarming Voice",
         "level": 1
       },
       {
@@ -60537,7 +60597,7 @@
         "level": 18
       },
       {
-        "move": "Air Cutter",
+        "move": "Draining Kiss",
         "level": 21
       },
       {
@@ -60553,7 +60613,7 @@
         "level": 28
       },
       {
-        "move": "Air Slash",
+        "move": "Dazzling Gleam",
         "level": 32
       },
       {
@@ -60577,7 +60637,7 @@
         "level": 50
       },
       {
-        "move": "Hurricane",
+        "move": "Moonblast",
         "level": 55
       },
       {
@@ -71984,7 +72044,7 @@
             "level": 4
           },
           {
-            "move": "Acid Spray",
+            "move": "Water Pulse",
             "level": 8
           },
           {
@@ -72004,7 +72064,7 @@
             "level": 22
           },
           {
-            "move": "Sludge",
+            "move": "Brine",
             "level": 23
           },
           {
@@ -72016,11 +72076,11 @@
             "level": 30
           },
           {
-            "move": "Sludge Bomb",
+            "move": "Muddy Water",
             "level": 33
           },
           {
-            "move": "Sludge Wave",
+            "move": "Earth Power",
             "level": 41
           },
           {
@@ -72032,7 +72092,7 @@
     ],
     "moves": [
       {
-        "move": "Mud-Slap",
+        "move": "Water Gun",
         "level": 1
       },
       {
@@ -72048,7 +72108,7 @@
         "level": 8
       },
       {
-        "move": "Mud Bomb",
+        "move": "Water Pulse",
         "level": 11
       },
       {
@@ -72072,7 +72132,7 @@
         "level": 23
       },
       {
-        "move": "Sludge",
+        "move": "Brine",
         "level": 23
       },
       {
@@ -72116,7 +72176,7 @@
         "evo": "Level 30",
         "moves": [
           {
-            "move": "Mud-Slap",
+            "move": "Water Gun",
             "level": 1
           },
           {
@@ -72132,7 +72192,7 @@
             "level": 8
           },
           {
-            "move": "Mud Bomb",
+            "move": "Water Pulse",
             "level": 11
           },
           {
@@ -72156,7 +72216,7 @@
             "level": 23
           },
           {
-            "move": "Sludge",
+            "move": "Brine",
             "level": 23
           },
           {
@@ -72192,7 +72252,7 @@
         "level": 4
       },
       {
-        "move": "Acid Spray",
+        "move": "Water Pulse",
         "level": 8
       },
       {
@@ -72212,7 +72272,7 @@
         "level": 22
       },
       {
-        "move": "Sludge",
+        "move": "Brine",
         "level": 23
       },
       {
@@ -72224,11 +72284,11 @@
         "level": 30
       },
       {
-        "move": "Sludge Bomb",
+        "move": "Muddy Water",
         "level": 33
       },
       {
-        "move": "Sludge Wave",
+        "move": "Earth Power",
         "level": 41
       },
       {
@@ -75926,7 +75986,7 @@
             "level": 19
           },
           {
-            "move": "Metal Sound",
+            "move": "Zen Headbutt",
             "level": 24
           },
           {
@@ -75954,7 +76014,7 @@
             "level": 55
           },
           {
-            "move": "Dragon Pulse",
+            "move": "Psychic",
             "level": 60
           },
           {
@@ -76130,7 +76190,7 @@
         "level": 19
       },
       {
-        "move": "Metal Sound",
+        "move": "Zen Headbutt",
         "level": 24
       },
       {
@@ -76158,7 +76218,7 @@
         "level": 55
       },
       {
-        "move": "Dragon Pulse",
+        "move": "Psychic",
         "level": 60
       },
       {
@@ -80694,6 +80754,10 @@
             "level": 12
           },
           {
+            "move": "Charge Beam",
+            "level": 12
+          },
+          {
             "move": "Recover",
             "level": 18
           },
@@ -80767,6 +80831,10 @@
             "level": 12
           },
           {
+            "move": "Charge Beam",
+            "level": 12
+          },
+          {
             "move": "Recover",
             "level": 18
           },
@@ -80789,6 +80857,10 @@
           {
             "move": "Lock-On",
             "level": 45
+          },
+          {
+            "move": "Thunderbolt",
+            "level": 48
           },
           {
             "move": "Tri Attack",
@@ -80840,6 +80912,10 @@
         "level": 12
       },
       {
+        "move": "Charge Beam",
+        "level": 12
+      },
+      {
         "move": "Recover",
         "level": 18
       },
@@ -80852,7 +80928,7 @@
         "level": 29
       },
       {
-        "move": "Embargo",
+        "move": "Psyshock",
         "level": 34
       },
       {
@@ -80866,6 +80942,10 @@
       {
         "move": "Tri Attack",
         "level": 51
+      },
+      {
+        "move": "Psychic",
+        "level": 53
       },
       {
         "move": "Magic Coat",
@@ -86063,7 +86143,7 @@
             "level": 25
           },
           {
-            "move": "Stomp",
+            "move": "Crunch",
             "level": 31
           },
           {
@@ -86079,7 +86159,7 @@
             "level": 47
           },
           {
-            "move": "Thrash",
+            "move": "Foul Play",
             "level": 53
           }
         ]
@@ -86272,7 +86352,7 @@
         "level": 25
       },
       {
-        "move": "Stomp",
+        "move": "Crunch",
         "level": 31
       },
       {
@@ -86288,7 +86368,7 @@
         "level": 47
       },
       {
-        "move": "Thrash",
+        "move": "Foul Play",
         "level": 53
       }
     ]
@@ -112823,656 +112903,6 @@
       {
         "move": "Heavy Slam",
         "level": 67
-      }
-    ]
-  },
-  {
-    "name": "Phantump",
-    "changed": false,
-    "pokedex_id": 708,
-    "type1": "Ghost",
-    "type2": "Grass",
-    "bst": 309,
-    "abilities": [
-      "Natural Cure",
-      "Frisk"
-    ],
-    "stats": {
-      "hp": 43,
-      "atk": 70,
-      "def": 48,
-      "spa": 50,
-      "spd": 60,
-      "spe": 38
-    },
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/708.gif",
-    "preevo": [],
-    "evo": "Use Dusk Stone",
-    "next": [
-      {
-        "name": "Trevenant",
-        "pokedex_id": 709,
-        "type1": "Ghost",
-        "type2": "Grass",
-        "abilities": [
-          "Natural Cure",
-          "Frisk"
-        ],
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/709.gif",
-        "moves": [
-          {
-            "move": "Astonish",
-            "level": 1
-          },
-          {
-            "move": "Confuse Ray",
-            "level": 1
-          },
-          {
-            "move": "Growth",
-            "level": 1
-          },
-          {
-            "move": "Horn Leech",
-            "level": 1
-          },
-          {
-            "move": "Shadow Claw",
-            "level": 1
-          },
-          {
-            "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Ingrain",
-            "level": 13
-          },
-          {
-            "move": "Feint Attack",
-            "level": 19
-          },
-          {
-            "move": "Leech Seed",
-            "level": 23
-          },
-          {
-            "move": "Curse",
-            "level": 28
-          },
-          {
-            "move": "Will-O-Wisp",
-            "level": 31
-          },
-          {
-            "move": "Destiny Bond",
-            "level": 39
-          },
-          {
-            "move": "Shadow Force",
-            "level": 45
-          },
-          {
-            "move": "Wood Hammer",
-            "level": 49
-          }
-        ]
-      }
-    ],
-    "moves": [
-      {
-        "move": "Confuse Ray",
-        "level": 1
-      },
-      {
-        "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Astonish",
-        "level": 5
-      },
-      {
-        "move": "Growth",
-        "level": 8
-      },
-      {
-        "move": "Ingrain",
-        "level": 13
-      },
-      {
-        "move": "Feint Attack",
-        "level": 19
-      },
-      {
-        "move": "Leech Seed",
-        "level": 23
-      },
-      {
-        "move": "Curse",
-        "level": 28
-      },
-      {
-        "move": "Will-O-Wisp",
-        "level": 31
-      },
-      {
-        "move": "Destiny Bond",
-        "level": 39
-      },
-      {
-        "move": "Shadow Force",
-        "level": 45
-      },
-      {
-        "move": "Wood Hammer",
-        "level": 49
-      },
-      {
-        "move": "Horn Leech",
-        "level": 54
-      }
-    ]
-  },
-  {
-    "name": "Trevenant",
-    "changed": false,
-    "pokedex_id": 709,
-    "type1": "Ghost",
-    "type2": "Grass",
-    "bst": 474,
-    "abilities": [
-      "Natural Cure",
-      "Frisk"
-    ],
-    "stats": {
-      "hp": 85,
-      "atk": 110,
-      "def": 76,
-      "spa": 65,
-      "spd": 82,
-      "spe": 56
-    },
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/709.gif",
-    "preevo": [
-      {
-        "name": "Phantump",
-        "pokedex_id": 708,
-        "type1": "Ghost",
-        "type2": "Grass",
-        "abilities": [
-          "Natural Cure",
-          "Frisk"
-        ],
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/708.gif",
-        "evo": "Use Dusk Stone",
-        "moves": [
-          {
-            "move": "Confuse Ray",
-            "level": 1
-          },
-          {
-            "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Astonish",
-            "level": 5
-          },
-          {
-            "move": "Growth",
-            "level": 8
-          },
-          {
-            "move": "Ingrain",
-            "level": 13
-          },
-          {
-            "move": "Feint Attack",
-            "level": 19
-          },
-          {
-            "move": "Leech Seed",
-            "level": 23
-          },
-          {
-            "move": "Curse",
-            "level": 28
-          },
-          {
-            "move": "Will-O-Wisp",
-            "level": 31
-          },
-          {
-            "move": "Destiny Bond",
-            "level": 39
-          },
-          {
-            "move": "Shadow Force",
-            "level": 45
-          },
-          {
-            "move": "Wood Hammer",
-            "level": 49
-          },
-          {
-            "move": "Horn Leech",
-            "level": 54
-          }
-        ]
-      }
-    ],
-    "moves": [
-      {
-        "move": "Astonish",
-        "level": 1
-      },
-      {
-        "move": "Confuse Ray",
-        "level": 1
-      },
-      {
-        "move": "Growth",
-        "level": 1
-      },
-      {
-        "move": "Horn Leech",
-        "level": 1
-      },
-      {
-        "move": "Shadow Claw",
-        "level": 1
-      },
-      {
-        "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Ingrain",
-        "level": 13
-      },
-      {
-        "move": "Feint Attack",
-        "level": 19
-      },
-      {
-        "move": "Leech Seed",
-        "level": 23
-      },
-      {
-        "move": "Curse",
-        "level": 28
-      },
-      {
-        "move": "Will-O-Wisp",
-        "level": 31
-      },
-      {
-        "move": "Destiny Bond",
-        "level": 39
-      },
-      {
-        "move": "Shadow Force",
-        "level": 45
-      },
-      {
-        "move": "Wood Hammer",
-        "level": 49
-      }
-    ]
-  },
-  {
-    "name": "Bergmite",
-    "changed": false,
-    "pokedex_id": 712,
-    "type1": "Ice",
-    "bst": 304,
-    "abilities": [
-      "Own Tempo",
-      "Ice Body"
-    ],
-    "stats": {
-      "hp": 55,
-      "atk": 69,
-      "def": 85,
-      "spa": 32,
-      "spd": 35,
-      "spe": 28
-    },
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/712.gif",
-    "preevo": [],
-    "evo": "Level 37",
-    "next": [
-      {
-        "name": "Avalugg",
-        "pokedex_id": 713,
-        "type1": "Ice",
-        "abilities": [
-          "Own Tempo",
-          "Ice Body"
-        ],
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/713.gif",
-        "moves": [
-          {
-            "move": "Bite",
-            "level": 1
-          },
-          {
-            "move": "Body Slam",
-            "level": 1
-          },
-          {
-            "move": "Crunch",
-            "level": 1
-          },
-          {
-            "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Iron Defense",
-            "level": 1
-          },
-          {
-            "move": "Powder Snow",
-            "level": 1
-          },
-          {
-            "move": "Skull Bash",
-            "level": 1
-          },
-          {
-            "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Wide Guard",
-            "level": 1
-          },
-          {
-            "move": "Icy Wind",
-            "level": 10
-          },
-          {
-            "move": "Take Down",
-            "level": 15
-          },
-          {
-            "move": "Sharpen",
-            "level": 20
-          },
-          {
-            "move": "Curse",
-            "level": 22
-          },
-          {
-            "move": "Ice Fang",
-            "level": 26
-          },
-          {
-            "move": "Ice Ball",
-            "level": 30
-          },
-          {
-            "move": "Rapid Spin",
-            "level": 35
-          },
-          {
-            "move": "Avalanche",
-            "level": 42
-          },
-          {
-            "move": "Blizzard",
-            "level": 46
-          },
-          {
-            "move": "Recover",
-            "level": 51
-          },
-          {
-            "move": "Double-Edge",
-            "level": 56
-          }
-        ]
-      }
-    ],
-    "moves": [
-      {
-        "move": "Bite",
-        "level": 1
-      },
-      {
-        "move": "Harden",
-        "level": 1
-      },
-      {
-        "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Powder Snow",
-        "level": 5
-      },
-      {
-        "move": "Icy Wind",
-        "level": 10
-      },
-      {
-        "move": "Take Down",
-        "level": 15
-      },
-      {
-        "move": "Sharpen",
-        "level": 20
-      },
-      {
-        "move": "Curse",
-        "level": 22
-      },
-      {
-        "move": "Ice Fang",
-        "level": 26
-      },
-      {
-        "move": "Ice Ball",
-        "level": 30
-      },
-      {
-        "move": "Rapid Spin",
-        "level": 35
-      },
-      {
-        "move": "Avalanche",
-        "level": 39
-      },
-      {
-        "move": "Blizzard",
-        "level": 43
-      },
-      {
-        "move": "Recover",
-        "level": 47
-      },
-      {
-        "move": "Double-Edge",
-        "level": 49
-      }
-    ]
-  },
-  {
-    "name": "Avalugg",
-    "changed": false,
-    "pokedex_id": 713,
-    "type1": "Ice",
-    "bst": 514,
-    "abilities": [
-      "Own Tempo",
-      "Ice Body"
-    ],
-    "stats": {
-      "hp": 95,
-      "atk": 117,
-      "def": 184,
-      "spa": 44,
-      "spd": 46,
-      "spe": 28
-    },
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/713.gif",
-    "preevo": [
-      {
-        "name": "Bergmite",
-        "pokedex_id": 712,
-        "type1": "Ice",
-        "abilities": [
-          "Own Tempo",
-          "Ice Body"
-        ],
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/712.gif",
-        "evo": "Level 37",
-        "moves": [
-          {
-            "move": "Bite",
-            "level": 1
-          },
-          {
-            "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Powder Snow",
-            "level": 5
-          },
-          {
-            "move": "Icy Wind",
-            "level": 10
-          },
-          {
-            "move": "Take Down",
-            "level": 15
-          },
-          {
-            "move": "Sharpen",
-            "level": 20
-          },
-          {
-            "move": "Curse",
-            "level": 22
-          },
-          {
-            "move": "Ice Fang",
-            "level": 26
-          },
-          {
-            "move": "Ice Ball",
-            "level": 30
-          },
-          {
-            "move": "Rapid Spin",
-            "level": 35
-          },
-          {
-            "move": "Avalanche",
-            "level": 39
-          },
-          {
-            "move": "Blizzard",
-            "level": 43
-          },
-          {
-            "move": "Recover",
-            "level": 47
-          },
-          {
-            "move": "Double-Edge",
-            "level": 49
-          }
-        ]
-      }
-    ],
-    "moves": [
-      {
-        "move": "Bite",
-        "level": 1
-      },
-      {
-        "move": "Body Slam",
-        "level": 1
-      },
-      {
-        "move": "Crunch",
-        "level": 1
-      },
-      {
-        "move": "Harden",
-        "level": 1
-      },
-      {
-        "move": "Iron Defense",
-        "level": 1
-      },
-      {
-        "move": "Powder Snow",
-        "level": 1
-      },
-      {
-        "move": "Skull Bash",
-        "level": 1
-      },
-      {
-        "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Wide Guard",
-        "level": 1
-      },
-      {
-        "move": "Icy Wind",
-        "level": 10
-      },
-      {
-        "move": "Take Down",
-        "level": 15
-      },
-      {
-        "move": "Sharpen",
-        "level": 20
-      },
-      {
-        "move": "Curse",
-        "level": 22
-      },
-      {
-        "move": "Ice Fang",
-        "level": 26
-      },
-      {
-        "move": "Ice Ball",
-        "level": 30
-      },
-      {
-        "move": "Rapid Spin",
-        "level": 35
-      },
-      {
-        "move": "Avalanche",
-        "level": 42
-      },
-      {
-        "move": "Blizzard",
-        "level": 46
-      },
-      {
-        "move": "Recover",
-        "level": 51
-      },
-      {
-        "move": "Double-Edge",
-        "level": 56
       }
     ]
   },
