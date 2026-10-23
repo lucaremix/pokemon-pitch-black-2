@@ -1,6 +1,7 @@
 [
   {
     "name": "Caterpie",
+    "changed": false,
     "pokedex_id": 10,
     "type1": "Bug",
     "bst": 195,
@@ -122,6 +123,7 @@
   },
   {
     "name": "Metapod",
+    "changed": false,
     "pokedex_id": 11,
     "type1": "Bug",
     "bst": 205,
@@ -244,6 +246,7 @@
   },
   {
     "name": "Butterfree",
+    "changed": true,
     "pokedex_id": 12,
     "type1": "Bug",
     "type2": "Flying",
@@ -364,6 +367,7 @@
   },
   {
     "name": "Weedle",
+    "changed": false,
     "pokedex_id": 13,
     "type1": "Bug",
     "type2": "Poison",
@@ -489,6 +493,7 @@
   },
   {
     "name": "Kakuna",
+    "changed": false,
     "pokedex_id": 14,
     "type1": "Bug",
     "type2": "Poison",
@@ -615,6 +620,7 @@
   },
   {
     "name": "Beedrill",
+    "changed": true,
     "pokedex_id": 15,
     "type1": "Bug",
     "type2": "Steel",
@@ -739,6 +745,7 @@
   },
   {
     "name": "Pidgey",
+    "changed": false,
     "pokedex_id": 16,
     "type1": "Normal",
     "type2": "Flying",
@@ -957,6 +964,7 @@
   },
   {
     "name": "Pidgeotto",
+    "changed": false,
     "pokedex_id": 17,
     "type1": "Normal",
     "type2": "Flying",
@@ -1176,6 +1184,7 @@
   },
   {
     "name": "Pidgeot",
+    "changed": false,
     "pokedex_id": 18,
     "type1": "Normal",
     "type2": "Flying",
@@ -1393,6 +1402,7 @@
   },
   {
     "name": "Rattata",
+    "changed": false,
     "pokedex_id": 19,
     "type1": "Normal",
     "bst": 253,
@@ -1540,6 +1550,7 @@
   },
   {
     "name": "Rattata (Alola)",
+    "changed": false,
     "pokedex_id": 19,
     "type1": "Dark",
     "type2": "Normal",
@@ -1691,6 +1702,7 @@
   },
   {
     "name": "Raticate",
+    "changed": true,
     "pokedex_id": 20,
     "type1": "Normal",
     "bst": 440,
@@ -1837,6 +1849,7 @@
   },
   {
     "name": "Raticate (Alola)",
+    "changed": false,
     "pokedex_id": 20,
     "type1": "Dark",
     "type2": "Normal",
@@ -1987,6 +2000,7 @@
   },
   {
     "name": "Spearow",
+    "changed": false,
     "pokedex_id": 21,
     "type1": "Normal",
     "type2": "Flying",
@@ -2118,6 +2132,7 @@
   },
   {
     "name": "Fearow",
+    "changed": true,
     "pokedex_id": 22,
     "type1": "Normal",
     "type2": "Flying",
@@ -2248,6 +2263,7 @@
   },
   {
     "name": "Ekans",
+    "changed": false,
     "pokedex_id": 23,
     "type1": "Poison",
     "bst": 288,
@@ -2427,6 +2443,7 @@
   },
   {
     "name": "Arbok",
+    "changed": true,
     "pokedex_id": 24,
     "type1": "Poison",
     "bst": 450,
@@ -2605,6 +2622,7 @@
   },
   {
     "name": "Pikachu",
+    "changed": false,
     "pokedex_id": 25,
     "type1": "Electric",
     "bst": 320,
@@ -2767,7 +2785,8 @@
             "level": 50
           }
         ],
-        "evo": "Use Thunder Stone"
+        "evo": "Use Thunder Stone",
+        "type2": "Fairy"
       },
       {
         "name": "Raichu (Alola)",
@@ -2810,6 +2829,7 @@
   },
   {
     "name": "Raichu",
+    "changed": true,
     "pokedex_id": 26,
     "type1": "Electric",
     "bst": 516,
@@ -2972,10 +2992,12 @@
         "move": "Thunder",
         "level": 50
       }
-    ]
+    ],
+    "type2": "Fairy"
   },
   {
     "name": "Raichu (Alola)",
+    "changed": true,
     "pokedex_id": 26,
     "type1": "Electric",
     "type2": "Psychic",
@@ -3129,6 +3151,7 @@
   },
   {
     "name": "Sandshrew",
+    "changed": true,
     "pokedex_id": 27,
     "type1": "Ground",
     "bst": 330,
@@ -3306,6 +3329,7 @@
   },
   {
     "name": "Sandshrew (Alola)",
+    "changed": false,
     "pokedex_id": 27,
     "type1": "Ice",
     "type2": "Steel",
@@ -3439,6 +3463,7 @@
   },
   {
     "name": "Sandslash",
+    "changed": true,
     "pokedex_id": 28,
     "type1": "Ground",
     "bst": 480,
@@ -3615,6 +3640,7 @@
   },
   {
     "name": "Sandslash (Alola)",
+    "changed": false,
     "pokedex_id": 28,
     "type1": "Ice",
     "type2": "Steel",
@@ -3747,6 +3773,7 @@
   },
   {
     "name": "Nidoran-F",
+    "changed": false,
     "pokedex_id": 29,
     "type1": "Poison",
     "bst": 275,
@@ -3943,6 +3970,7 @@
   },
   {
     "name": "Nidorina",
+    "changed": false,
     "pokedex_id": 30,
     "type1": "Poison",
     "bst": 365,
@@ -4140,6 +4168,7 @@
   },
   {
     "name": "Nidoqueen",
+    "changed": true,
     "pokedex_id": 31,
     "type1": "Poison",
     "type2": "Psychic",
@@ -4335,6 +4364,7 @@
   },
   {
     "name": "Nidoran-M",
+    "changed": false,
     "pokedex_id": 32,
     "type1": "Poison",
     "bst": 273,
@@ -4536,6 +4566,7 @@
   },
   {
     "name": "Nidorino",
+    "changed": true,
     "pokedex_id": 33,
     "type1": "Ground",
     "bst": 365,
@@ -4738,6 +4769,7 @@
   },
   {
     "name": "Nidoking",
+    "changed": true,
     "pokedex_id": 34,
     "type1": "Ground",
     "type2": "Dark",
@@ -4930,6 +4962,7 @@
   },
   {
     "name": "Clefairy",
+    "changed": false,
     "pokedex_id": 35,
     "type1": "Normal",
     "bst": 323,
@@ -5106,6 +5139,7 @@
   },
   {
     "name": "Clefable",
+    "changed": false,
     "pokedex_id": 36,
     "type1": "Normal",
     "bst": 483,
@@ -5280,6 +5314,7 @@
   },
   {
     "name": "Vulpix",
+    "changed": true,
     "pokedex_id": 37,
     "type1": "Fire",
     "bst": 299,
@@ -5452,6 +5487,7 @@
   },
   {
     "name": "Vulpix (Alola)",
+    "changed": false,
     "pokedex_id": 37,
     "type1": "Ice",
     "bst": 299,
@@ -5598,6 +5634,7 @@
   },
   {
     "name": "Ninetales",
+    "changed": true,
     "pokedex_id": 38,
     "type1": "Fire",
     "type2": "Psychic",
@@ -5769,6 +5806,7 @@
   },
   {
     "name": "Ninetales (Alola)",
+    "changed": false,
     "pokedex_id": 38,
     "type1": "Ice",
     "type2": "Fairy",
@@ -5914,12 +5952,14 @@
   },
   {
     "name": "Jigglypuff",
+    "changed": true,
     "pokedex_id": 39,
     "type1": "Normal",
     "type2": "Fairy",
     "bst": 320,
     "abilities": [
-      "Cute Charm"
+      "Cute Charm",
+      "Friend Guard"
     ],
     "stats": {
       "hp": 115,
@@ -5936,7 +5976,8 @@
         "type1": "Normal",
         "type2": "Fairy",
         "abilities": [
-          "Cute Charm"
+          "Cute Charm",
+          "Friend Guard"
         ],
         "evo": "Level up with high friendship",
         "moves": [
@@ -6032,7 +6073,8 @@
         "type1": "Normal",
         "type2": "Fairy",
         "abilities": [
-          "Cute Charm"
+          "Cute Charm",
+          "Friend Guard"
         ],
         "moves": [
           {
@@ -6136,12 +6178,14 @@
   },
   {
     "name": "Wigglytuff",
+    "changed": true,
     "pokedex_id": 40,
     "type1": "Normal",
     "type2": "Fairy",
     "bst": 485,
     "abilities": [
-      "Cute Charm"
+      "Cute Charm",
+      "Friend Guard"
     ],
     "stats": {
       "hp": 150,
@@ -6158,7 +6202,8 @@
         "type1": "Normal",
         "type2": "Fairy",
         "abilities": [
-          "Cute Charm"
+          "Cute Charm",
+          "Friend Guard"
         ],
         "evo": "Level up with high friendship",
         "moves": [
@@ -6194,7 +6239,8 @@
         "type1": "Normal",
         "type2": "Fairy",
         "abilities": [
-          "Cute Charm"
+          "Cute Charm",
+          "Friend Guard"
         ],
         "evo": "Use Moon Stone",
         "moves": [
@@ -6278,6 +6324,7 @@
   },
   {
     "name": "Zubat",
+    "changed": false,
     "pokedex_id": 41,
     "type1": "Poison",
     "type2": "Flying",
@@ -6493,6 +6540,7 @@
   },
   {
     "name": "Golbat",
+    "changed": false,
     "pokedex_id": 42,
     "type1": "Poison",
     "type2": "Flying",
@@ -6709,6 +6757,7 @@
   },
   {
     "name": "Oddish",
+    "changed": false,
     "pokedex_id": 43,
     "type1": "Grass",
     "type2": "Poison",
@@ -6850,6 +6899,7 @@
   },
   {
     "name": "Gloom",
+    "changed": false,
     "pokedex_id": 44,
     "type1": "Grass",
     "type2": "Poison",
@@ -7089,6 +7139,7 @@
   },
   {
     "name": "Vileplume",
+    "changed": false,
     "pokedex_id": 45,
     "type1": "Grass",
     "type2": "Poison",
@@ -7265,6 +7316,7 @@
   },
   {
     "name": "Paras",
+    "changed": true,
     "pokedex_id": 46,
     "type1": "Bug",
     "type2": "Grass",
@@ -7418,6 +7470,7 @@
   },
   {
     "name": "Parasect",
+    "changed": true,
     "pokedex_id": 47,
     "type1": "Bug",
     "type2": "Ghost",
@@ -7570,6 +7623,7 @@
   },
   {
     "name": "Venonat",
+    "changed": false,
     "pokedex_id": 48,
     "type1": "Bug",
     "type2": "Poison",
@@ -7739,6 +7793,7 @@
   },
   {
     "name": "Venomoth",
+    "changed": true,
     "pokedex_id": 49,
     "type1": "Bug",
     "type2": "Psychic",
@@ -7907,6 +7962,7 @@
   },
   {
     "name": "Diglett",
+    "changed": false,
     "pokedex_id": 50,
     "type1": "Ground",
     "bst": 265,
@@ -8066,6 +8122,7 @@
   },
   {
     "name": "Diglett (Alola)",
+    "changed": false,
     "pokedex_id": 50,
     "type1": "Ground",
     "type2": "Steel",
@@ -8233,6 +8290,7 @@
   },
   {
     "name": "Dugtrio",
+    "changed": true,
     "pokedex_id": 51,
     "type1": "Ground",
     "bst": 455,
@@ -8391,6 +8449,7 @@
   },
   {
     "name": "Dugtrio (Alola)",
+    "changed": false,
     "pokedex_id": 51,
     "type1": "Ground",
     "type2": "Steel",
@@ -8557,6 +8616,7 @@
   },
   {
     "name": "Meowth",
+    "changed": false,
     "pokedex_id": 52,
     "type1": "Normal",
     "bst": 290,
@@ -8727,6 +8787,7 @@
   },
   {
     "name": "Meowth (Galar)",
+    "changed": false,
     "pokedex_id": 52,
     "type1": "Steel",
     "bst": 290,
@@ -8880,6 +8941,7 @@
   },
   {
     "name": "Persian",
+    "changed": true,
     "pokedex_id": 53,
     "type1": "Ice",
     "type2": "",
@@ -9050,6 +9112,7 @@
   },
   {
     "name": "Psyduck",
+    "changed": true,
     "pokedex_id": 54,
     "type1": "Water",
     "bst": 320,
@@ -9219,6 +9282,7 @@
   },
   {
     "name": "Golduck",
+    "changed": true,
     "pokedex_id": 55,
     "type1": "Water",
     "bst": 500,
@@ -9387,6 +9451,7 @@
   },
   {
     "name": "Mankey",
+    "changed": false,
     "pokedex_id": 56,
     "type1": "Fighting",
     "bst": 305,
@@ -9554,6 +9619,7 @@
   },
   {
     "name": "Primeape",
+    "changed": false,
     "pokedex_id": 57,
     "type1": "Fighting",
     "bst": 455,
@@ -9808,6 +9874,7 @@
   },
   {
     "name": "Growlithe",
+    "changed": true,
     "pokedex_id": 58,
     "type1": "Fire",
     "bst": 350,
@@ -9973,6 +10040,7 @@
   },
   {
     "name": "Growlithe (Hisui)",
+    "changed": false,
     "pokedex_id": 58,
     "type1": "Fire",
     "type2": "Rock",
@@ -10144,6 +10212,7 @@
   },
   {
     "name": "Arcanine",
+    "changed": true,
     "pokedex_id": 59,
     "type1": "Fire",
     "type2": "Normal",
@@ -10308,6 +10377,7 @@
   },
   {
     "name": "Arcanine (Hisui)",
+    "changed": false,
     "pokedex_id": 59,
     "type1": "Fire",
     "type2": "Rock",
@@ -10478,6 +10548,7 @@
   },
   {
     "name": "Poliwag",
+    "changed": false,
     "pokedex_id": 60,
     "type1": "Water",
     "bst": 300,
@@ -10625,6 +10696,7 @@
   },
   {
     "name": "Poliwhirl",
+    "changed": false,
     "pokedex_id": 61,
     "type1": "Water",
     "bst": 385,
@@ -10879,6 +10951,7 @@
   },
   {
     "name": "Poliwrath",
+    "changed": false,
     "pokedex_id": 62,
     "type1": "Water",
     "type2": "Fighting",
@@ -11066,6 +11139,7 @@
   },
   {
     "name": "Abra",
+    "changed": false,
     "pokedex_id": 63,
     "type1": "Psychic",
     "bst": 310,
@@ -11237,6 +11311,7 @@
   },
   {
     "name": "Kadabra",
+    "changed": true,
     "pokedex_id": 64,
     "type1": "Psychic",
     "bst": 400,
@@ -11409,6 +11484,7 @@
   },
   {
     "name": "Alakazam",
+    "changed": true,
     "pokedex_id": 65,
     "type1": "Psychic",
     "bst": 500,
@@ -11579,6 +11655,7 @@
   },
   {
     "name": "Machop",
+    "changed": false,
     "pokedex_id": 66,
     "type1": "Fighting",
     "bst": 305,
@@ -11798,6 +11875,7 @@
   },
   {
     "name": "Machoke",
+    "changed": true,
     "pokedex_id": 67,
     "type1": "Fighting",
     "bst": 405,
@@ -12018,6 +12096,7 @@
   },
   {
     "name": "Machamp",
+    "changed": true,
     "pokedex_id": 68,
     "type1": "Fighting",
     "bst": 505,
@@ -12236,6 +12315,7 @@
   },
   {
     "name": "Bellsprout",
+    "changed": false,
     "pokedex_id": 69,
     "type1": "Grass",
     "type2": "Poison",
@@ -12427,6 +12507,7 @@
   },
   {
     "name": "Weepinbell",
+    "changed": false,
     "pokedex_id": 70,
     "type1": "Grass",
     "type2": "Poison",
@@ -12619,6 +12700,7 @@
   },
   {
     "name": "Victreebel",
+    "changed": false,
     "pokedex_id": 71,
     "type1": "Grass",
     "type2": "Poison",
@@ -12809,6 +12891,7 @@
   },
   {
     "name": "Tentacool",
+    "changed": false,
     "pokedex_id": 72,
     "type1": "Water",
     "type2": "Poison",
@@ -12974,6 +13057,7 @@
   },
   {
     "name": "Tentacruel",
+    "changed": false,
     "pokedex_id": 73,
     "type1": "Water",
     "type2": "Poison",
@@ -13138,6 +13222,7 @@
   },
   {
     "name": "Geodude",
+    "changed": true,
     "pokedex_id": 74,
     "type1": "Rock",
     "type2": "Fighting",
@@ -13380,6 +13465,7 @@
   },
   {
     "name": "Geodude (Alola)",
+    "changed": false,
     "pokedex_id": 74,
     "type1": "Rock",
     "type2": "Electric",
@@ -13629,6 +13715,7 @@
   },
   {
     "name": "Graveler",
+    "changed": true,
     "pokedex_id": 75,
     "type1": "Rock",
     "type2": "Fighting",
@@ -13872,6 +13959,7 @@
   },
   {
     "name": "Graveler (Alola)",
+    "changed": false,
     "pokedex_id": 75,
     "type1": "Rock",
     "type2": "Electric",
@@ -14122,6 +14210,7 @@
   },
   {
     "name": "Golem",
+    "changed": true,
     "pokedex_id": 76,
     "type1": "Rock",
     "type2": "Fighting",
@@ -14363,6 +14452,7 @@
   },
   {
     "name": "Golem (Alola)",
+    "changed": false,
     "pokedex_id": 76,
     "type1": "Rock",
     "type2": "Electric",
@@ -14611,6 +14701,7 @@
   },
   {
     "name": "Ponyta",
+    "changed": false,
     "pokedex_id": 77,
     "type1": "Fire",
     "bst": 410,
@@ -14791,6 +14882,7 @@
   },
   {
     "name": "Ponyta (Galar)",
+    "changed": false,
     "pokedex_id": 77,
     "type1": "Psychic",
     "bst": 410,
@@ -14945,6 +15037,7 @@
   },
   {
     "name": "Rapidash",
+    "changed": true,
     "pokedex_id": 78,
     "type1": "Fire",
     "type2": "Fairy",
@@ -15124,6 +15217,7 @@
   },
   {
     "name": "Rapidash (Galar)",
+    "changed": false,
     "pokedex_id": 78,
     "type1": "Psychic",
     "type2": "Fairy",
@@ -15277,6 +15371,7 @@
   },
   {
     "name": "Slowpoke",
+    "changed": false,
     "pokedex_id": 79,
     "type1": "Water",
     "type2": "Psychic",
@@ -15622,6 +15717,7 @@
   },
   {
     "name": "Slowpoke (Galar)",
+    "changed": false,
     "pokedex_id": 79,
     "type1": "Psychic",
     "bst": 315,
@@ -15914,6 +16010,7 @@
   },
   {
     "name": "Slowbro",
+    "changed": false,
     "pokedex_id": 80,
     "type1": "Water",
     "type2": "Psychic",
@@ -16082,6 +16179,7 @@
   },
   {
     "name": "Unovan Slowbro",
+    "changed": true,
     "pokedex_id": 80,
     "type1": "Normal",
     "type2": "Bug",
@@ -16269,6 +16367,7 @@
   },
   {
     "name": "Slowbro (Galar)",
+    "changed": false,
     "pokedex_id": 80,
     "type1": "Poison",
     "type2": "Psychic",
@@ -16450,6 +16549,7 @@
   },
   {
     "name": "Magnemite",
+    "changed": false,
     "pokedex_id": 81,
     "type1": "Electric",
     "type2": "Steel",
@@ -16716,6 +16816,7 @@
   },
   {
     "name": "Magneton",
+    "changed": false,
     "pokedex_id": 82,
     "type1": "Electric",
     "type2": "Steel",
@@ -17069,6 +17170,7 @@
   },
   {
     "name": "Farfetch’d",
+    "changed": true,
     "pokedex_id": 83,
     "type1": "Fighting",
     "type2": "Flying",
@@ -17163,6 +17265,7 @@
   },
   {
     "name": "Farfetch’d (Galar)",
+    "changed": true,
     "pokedex_id": 83,
     "type1": "Fighting",
     "bst": 475,
@@ -17334,9 +17437,10 @@
   },
   {
     "name": "Doduo",
+    "changed": true,
     "pokedex_id": 84,
-    "type1": "Normal",
-    "type2": "Flying",
+    "type1": "Flying",
+    "type2": "Ground",
     "bst": 310,
     "abilities": [
       "Run Away",
@@ -17487,6 +17591,7 @@
   },
   {
     "name": "Dodrio",
+    "changed": true,
     "pokedex_id": 85,
     "type1": "Flying",
     "type2": "Ground",
@@ -17507,8 +17612,8 @@
       {
         "name": "Doduo",
         "pokedex_id": 84,
-        "type1": "Normal",
-        "type2": "Flying",
+        "type1": "Flying",
+        "type2": "Ground",
         "abilities": [
           "Run Away",
           "Early Bird"
@@ -17639,6 +17744,7 @@
   },
   {
     "name": "Seel",
+    "changed": false,
     "pokedex_id": 86,
     "type1": "Water",
     "bst": 325,
@@ -17815,6 +17921,7 @@
   },
   {
     "name": "Dewgong",
+    "changed": true,
     "pokedex_id": 87,
     "type1": "Water",
     "type2": "Ice",
@@ -17990,6 +18097,7 @@
   },
   {
     "name": "Grimer",
+    "changed": true,
     "pokedex_id": 88,
     "type1": "Poison",
     "bst": 325,
@@ -18005,7 +18113,7 @@
       "spd": 50,
       "spe": 25
     },
-    "type2": "Ground",
+    "type2": "Normal",
     "preevo": [],
     "evo": "Level 35",
     "next": [
@@ -18013,7 +18121,7 @@
         "name": "Muk",
         "pokedex_id": 89,
         "type1": "Poison",
-        "type2": "Ground",
+        "type2": "Normal",
         "abilities": [
           "Liquid Ooze",
           "Sticky Hold"
@@ -18171,6 +18279,7 @@
   },
   {
     "name": "Grimer (Alola)",
+    "changed": false,
     "pokedex_id": 88,
     "type1": "Poison",
     "type2": "Dark",
@@ -18342,9 +18451,10 @@
   },
   {
     "name": "Muk",
+    "changed": true,
     "pokedex_id": 89,
     "type1": "Poison",
-    "type2": "Ground",
+    "type2": "Normal",
     "bst": 500,
     "abilities": [
       "Liquid Ooze",
@@ -18434,7 +18544,7 @@
             "level": 48
           }
         ],
-        "type2": "Ground"
+        "type2": "Normal"
       }
     ],
     "moves": [
@@ -18522,6 +18632,7 @@
   },
   {
     "name": "Muk (Alola)",
+    "changed": false,
     "pokedex_id": 89,
     "type1": "Poison",
     "type2": "Dark",
@@ -18692,6 +18803,7 @@
   },
   {
     "name": "Shellder",
+    "changed": true,
     "pokedex_id": 90,
     "type1": "Ice",
     "bst": 305,
@@ -18844,6 +18956,7 @@
   },
   {
     "name": "Cloyster",
+    "changed": true,
     "pokedex_id": 91,
     "type1": "Ice",
     "type2": "Dark",
@@ -18995,6 +19108,7 @@
   },
   {
     "name": "Gastly",
+    "changed": false,
     "pokedex_id": 92,
     "type1": "Ghost",
     "type2": "Poison",
@@ -19230,6 +19344,7 @@
   },
   {
     "name": "Haunter",
+    "changed": true,
     "pokedex_id": 93,
     "type1": "Ghost",
     "type2": "Poison",
@@ -19466,6 +19581,7 @@
   },
   {
     "name": "Gengar",
+    "changed": true,
     "pokedex_id": 94,
     "type1": "Ghost",
     "type2": "Poison",
@@ -19700,6 +19816,7 @@
   },
   {
     "name": "Onix",
+    "changed": true,
     "pokedex_id": 95,
     "type1": "Rock",
     "type2": "Ground",
@@ -20000,6 +20117,7 @@
   },
   {
     "name": "Drowzee",
+    "changed": false,
     "pokedex_id": 96,
     "type1": "Psychic",
     "bst": 328,
@@ -20195,6 +20313,7 @@
   },
   {
     "name": "Hypno",
+    "changed": true,
     "pokedex_id": 97,
     "type1": "Psychic",
     "type2": "Ghost",
@@ -20389,6 +20508,7 @@
   },
   {
     "name": "Krabby",
+    "changed": false,
     "pokedex_id": 98,
     "type1": "Water",
     "bst": 325,
@@ -20569,6 +20689,7 @@
   },
   {
     "name": "Kingler",
+    "changed": true,
     "pokedex_id": 99,
     "type1": "Water",
     "type2": "Steel",
@@ -20748,6 +20869,7 @@
   },
   {
     "name": "Voltorb",
+    "changed": true,
     "pokedex_id": 100,
     "type1": "Electric",
     "bst": 330,
@@ -20937,6 +21059,7 @@
   },
   {
     "name": "Voltorb (Hisui)",
+    "changed": false,
     "pokedex_id": 100,
     "type1": "Electric",
     "type2": "Grass",
@@ -21116,6 +21239,7 @@
   },
   {
     "name": "Electrode",
+    "changed": true,
     "pokedex_id": 101,
     "type1": "Electric",
     "type2": "Steel",
@@ -21304,6 +21428,7 @@
   },
   {
     "name": "Electrode (Hisui)",
+    "changed": false,
     "pokedex_id": 101,
     "type1": "Electric",
     "type2": "Grass",
@@ -21482,6 +21607,7 @@
   },
   {
     "name": "Exeggcute",
+    "changed": false,
     "pokedex_id": 102,
     "type1": "Grass",
     "type2": "Psychic",
@@ -21667,6 +21793,7 @@
   },
   {
     "name": "Exeggutor",
+    "changed": false,
     "pokedex_id": 103,
     "type1": "Grass",
     "type2": "Psychic",
@@ -21801,6 +21928,7 @@
   },
   {
     "name": "Exeggutor (Alola)",
+    "changed": false,
     "pokedex_id": 103,
     "type1": "Grass",
     "type2": "Dragon",
@@ -21938,6 +22066,7 @@
   },
   {
     "name": "Cubone",
+    "changed": false,
     "pokedex_id": 104,
     "type1": "Ground",
     "bst": 320,
@@ -22192,6 +22321,7 @@
   },
   {
     "name": "Marowak",
+    "changed": true,
     "pokedex_id": 105,
     "type1": "Ground",
     "bst": 470,
@@ -22367,6 +22497,7 @@
   },
   {
     "name": "Marowak (Alola)",
+    "changed": true,
     "pokedex_id": 105,
     "type1": "Fire",
     "type2": "Ghost",
@@ -22528,6 +22659,7 @@
   },
   {
     "name": "Hitmonlee",
+    "changed": false,
     "pokedex_id": 106,
     "type1": "Fighting",
     "bst": 455,
@@ -22646,6 +22778,7 @@
   },
   {
     "name": "Hitmonchan",
+    "changed": false,
     "pokedex_id": 107,
     "type1": "Fighting",
     "bst": 455,
@@ -22768,6 +22901,7 @@
   },
   {
     "name": "Lickitung",
+    "changed": false,
     "pokedex_id": 108,
     "type1": "Normal",
     "bst": 385,
@@ -22927,6 +23061,7 @@
   },
   {
     "name": "Koffing",
+    "changed": false,
     "pokedex_id": 109,
     "type1": "Poison",
     "bst": 340,
@@ -23170,6 +23305,7 @@
   },
   {
     "name": "Weezing",
+    "changed": false,
     "pokedex_id": 110,
     "type1": "Poison",
     "bst": 490,
@@ -23314,6 +23450,7 @@
   },
   {
     "name": "Weezing (Galar)",
+    "changed": false,
     "pokedex_id": 110,
     "type1": "Poison",
     "type2": "Fairy",
@@ -23490,6 +23627,7 @@
   },
   {
     "name": "Rhyhorn",
+    "changed": false,
     "pokedex_id": 111,
     "type1": "Ground",
     "type2": "Rock",
@@ -23720,6 +23858,7 @@
   },
   {
     "name": "Rhydon",
+    "changed": true,
     "pokedex_id": 112,
     "type1": "Ground",
     "type2": "Rock",
@@ -23951,6 +24090,7 @@
   },
   {
     "name": "Chansey",
+    "changed": false,
     "pokedex_id": 113,
     "type1": "Normal",
     "bst": 450,
@@ -24155,6 +24295,7 @@
   },
   {
     "name": "Tangela",
+    "changed": false,
     "pokedex_id": 114,
     "type1": "Grass",
     "bst": 435,
@@ -24338,6 +24479,7 @@
   },
   {
     "name": "Kangaskhan",
+    "changed": false,
     "pokedex_id": 115,
     "type1": "Normal",
     "bst": 490,
@@ -24419,6 +24561,7 @@
   },
   {
     "name": "Horsea",
+    "changed": false,
     "pokedex_id": 116,
     "type1": "Water",
     "bst": 295,
@@ -24615,6 +24758,7 @@
   },
   {
     "name": "Seadra",
+    "changed": true,
     "pokedex_id": 117,
     "type1": "Water",
     "bst": 440,
@@ -24812,6 +24956,7 @@
   },
   {
     "name": "Goldeen",
+    "changed": false,
     "pokedex_id": 118,
     "type1": "Water",
     "bst": 320,
@@ -24963,6 +25108,7 @@
   },
   {
     "name": "Seaking",
+    "changed": true,
     "pokedex_id": 119,
     "type1": "Water",
     "bst": 460,
@@ -25113,6 +25259,7 @@
   },
   {
     "name": "Staryu",
+    "changed": false,
     "pokedex_id": 120,
     "type1": "Water",
     "bst": 340,
@@ -25233,6 +25380,7 @@
   },
   {
     "name": "Starmie",
+    "changed": false,
     "pokedex_id": 121,
     "type1": "Water",
     "type2": "Psychic",
@@ -25352,6 +25500,7 @@
   },
   {
     "name": "Mr. Mime",
+    "changed": false,
     "pokedex_id": 122,
     "type1": "Psychic",
     "bst": 460,
@@ -25550,6 +25699,7 @@
   },
   {
     "name": "Scyther",
+    "changed": true,
     "pokedex_id": 123,
     "type1": "Bug",
     "type2": "Fighting",
@@ -25805,6 +25955,7 @@
   },
   {
     "name": "Jynx",
+    "changed": false,
     "pokedex_id": 124,
     "type1": "Ice",
     "type2": "Psychic",
@@ -25961,6 +26112,7 @@
   },
   {
     "name": "Electabuzz",
+    "changed": false,
     "pokedex_id": 125,
     "type1": "Electric",
     "bst": 490,
@@ -26210,6 +26362,7 @@
   },
   {
     "name": "Magmar",
+    "changed": true,
     "pokedex_id": 126,
     "type1": "Fire",
     "bst": 495,
@@ -26431,6 +26584,7 @@
   },
   {
     "name": "Pinsir",
+    "changed": false,
     "pokedex_id": 127,
     "type1": "Bug",
     "bst": 500,
@@ -26512,6 +26666,7 @@
   },
   {
     "name": "Tauros",
+    "changed": false,
     "pokedex_id": 128,
     "type1": "Normal",
     "bst": 490,
@@ -26589,6 +26744,7 @@
   },
   {
     "name": "Tauros (Paldea Aqua)",
+    "changed": false,
     "pokedex_id": 128,
     "type1": "Fighting",
     "type2": "Water",
@@ -26668,6 +26824,7 @@
   },
   {
     "name": "Tauros (Paldea Blaze)",
+    "changed": false,
     "pokedex_id": 128,
     "type1": "Fighting",
     "type2": "Fire",
@@ -26747,6 +26904,7 @@
   },
   {
     "name": "Tauros (Paldea Combat)",
+    "changed": false,
     "pokedex_id": 128,
     "type1": "Fighting",
     "bst": 490,
@@ -26825,6 +26983,7 @@
   },
   {
     "name": "Magikarp",
+    "changed": false,
     "pokedex_id": 129,
     "type1": "Water",
     "bst": 200,
@@ -26915,6 +27074,7 @@
   },
   {
     "name": "Gyarados",
+    "changed": false,
     "pokedex_id": 130,
     "type1": "Water",
     "type2": "Flying",
@@ -27004,6 +27164,7 @@
   },
   {
     "name": "Lapras",
+    "changed": false,
     "pokedex_id": 131,
     "type1": "Water",
     "type2": "Ice",
@@ -27086,6 +27247,7 @@
   },
   {
     "name": "Ditto",
+    "changed": false,
     "pokedex_id": 132,
     "type1": "Normal",
     "bst": 288,
@@ -27110,6 +27272,7 @@
   },
   {
     "name": "Eevee",
+    "changed": false,
     "pokedex_id": 133,
     "type1": "Normal",
     "bst": 325,
@@ -27769,6 +27932,7 @@
   },
   {
     "name": "Vaporeon",
+    "changed": true,
     "pokedex_id": 134,
     "type1": "Water",
     "bst": 525,
@@ -27920,6 +28084,7 @@
   },
   {
     "name": "Jolteon",
+    "changed": true,
     "pokedex_id": 135,
     "type1": "Electric",
     "bst": 525,
@@ -28067,6 +28232,7 @@
   },
   {
     "name": "Flareon",
+    "changed": true,
     "pokedex_id": 136,
     "type1": "Fire",
     "bst": 525,
@@ -28218,6 +28384,7 @@
   },
   {
     "name": "Porygon",
+    "changed": true,
     "pokedex_id": 137,
     "type1": "Normal",
     "bst": 395,
@@ -28310,12 +28477,13 @@
             "move": "Hyper Beam",
             "level": 67
           }
-        ]
+        ],
+        "type2": "Electric"
       },
       {
         "name": "PorygonZ",
         "pokedex_id": 474,
-        "type1": "Normal",
+        "type1": "Psychic",
         "abilities": [
           "Adaptability",
           "Download"
@@ -28389,7 +28557,8 @@
             "move": "Hyper Beam",
             "level": 67
           }
-        ]
+        ],
+        "type2": "Electric"
       }
     ],
     "moves": [
@@ -28453,10 +28622,12 @@
         "move": "Zap Cannon",
         "level": 62
       }
-    ]
+    ],
+    "type2": "Electric"
   },
   {
     "name": "Omanyte",
+    "changed": false,
     "pokedex_id": 138,
     "type1": "Rock",
     "type2": "Water",
@@ -28610,6 +28781,7 @@
   },
   {
     "name": "Omastar",
+    "changed": false,
     "pokedex_id": 139,
     "type1": "Rock",
     "type2": "Water",
@@ -28762,6 +28934,7 @@
   },
   {
     "name": "Kabuto",
+    "changed": false,
     "pokedex_id": 140,
     "type1": "Rock",
     "type2": "Water",
@@ -28907,6 +29080,7 @@
   },
   {
     "name": "Kabutops",
+    "changed": false,
     "pokedex_id": 141,
     "type1": "Rock",
     "type2": "Water",
@@ -29051,12 +29225,14 @@
   },
   {
     "name": "Aerodactyl",
+    "changed": true,
     "pokedex_id": 142,
-    "type1": "Rock",
-    "type2": "Dragon",
+    "type1": "Dragon",
+    "type2": "Flying",
     "bst": 515,
     "abilities": [
-      "Levitate"
+      "Pressure",
+      "Unnerve"
     ],
     "stats": {
       "hp": 80,
@@ -29148,6 +29324,7 @@
   },
   {
     "name": "Snorlax",
+    "changed": false,
     "pokedex_id": 143,
     "type1": "Normal",
     "bst": 540,
@@ -29314,6 +29491,7 @@
   },
   {
     "name": "Dratini",
+    "changed": true,
     "pokedex_id": 147,
     "type1": "Water",
     "bst": 300,
@@ -29575,6 +29753,7 @@
   },
   {
     "name": "Dragonair",
+    "changed": true,
     "pokedex_id": 148,
     "type1": "Dragon",
     "bst": 420,
@@ -29837,6 +30016,7 @@
   },
   {
     "name": "Dragonite",
+    "changed": true,
     "pokedex_id": 149,
     "type1": "Dragon",
     "type2": "Water",
@@ -30097,6 +30277,7 @@
   },
   {
     "name": "Sentret",
+    "changed": false,
     "pokedex_id": 161,
     "type1": "Normal",
     "bst": 215,
@@ -30244,6 +30425,7 @@
   },
   {
     "name": "Furret",
+    "changed": true,
     "pokedex_id": 162,
     "type1": "Normal",
     "bst": 440,
@@ -30390,8 +30572,9 @@
   },
   {
     "name": "Hoothoot",
+    "changed": true,
     "pokedex_id": 163,
-    "type1": "Normal",
+    "type1": "Psychic",
     "type2": "Flying",
     "bst": 270,
     "abilities": [
@@ -30568,6 +30751,7 @@
   },
   {
     "name": "Noctowl",
+    "changed": true,
     "pokedex_id": 164,
     "type1": "Psychic",
     "type2": "Flying",
@@ -30588,7 +30772,7 @@
       {
         "name": "Hoothoot",
         "pokedex_id": 163,
-        "type1": "Normal",
+        "type1": "Psychic",
         "type2": "Flying",
         "abilities": [
           "Insomnia",
@@ -30745,6 +30929,7 @@
   },
   {
     "name": "Ledyba",
+    "changed": true,
     "pokedex_id": 165,
     "type1": "Bug",
     "type2": "Flying",
@@ -30886,6 +31071,7 @@
   },
   {
     "name": "Ledian",
+    "changed": true,
     "pokedex_id": 166,
     "type1": "Bug",
     "type2": "Flying",
@@ -31026,6 +31212,7 @@
   },
   {
     "name": "Spinarak",
+    "changed": true,
     "pokedex_id": 167,
     "type1": "Bug",
     "type2": "Dark",
@@ -31183,6 +31370,7 @@
   },
   {
     "name": "Ariados",
+    "changed": true,
     "pokedex_id": 168,
     "type1": "Bug",
     "type2": "Dark",
@@ -31339,6 +31527,7 @@
   },
   {
     "name": "Crobat",
+    "changed": false,
     "pokedex_id": 169,
     "type1": "Poison",
     "type2": "Flying",
@@ -31553,6 +31742,7 @@
   },
   {
     "name": "Chinchou",
+    "changed": true,
     "pokedex_id": 170,
     "type1": "Water",
     "type2": "Electric",
@@ -31722,6 +31912,7 @@
   },
   {
     "name": "Lanturn",
+    "changed": true,
     "pokedex_id": 171,
     "type1": "Water",
     "type2": "Electric",
@@ -31890,6 +32081,7 @@
   },
   {
     "name": "Pichu",
+    "changed": false,
     "pokedex_id": 172,
     "type1": "Electric",
     "bst": 205,
@@ -32025,7 +32217,8 @@
             "move": "Thunder",
             "level": 50
           }
-        ]
+        ],
+        "type2": "Fairy"
       }
     ],
     "moves": [
@@ -32057,6 +32250,7 @@
   },
   {
     "name": "Cleffa",
+    "changed": false,
     "pokedex_id": 173,
     "type1": "Normal",
     "bst": 218,
@@ -32232,11 +32426,13 @@
   },
   {
     "name": "Igglybuff",
+    "changed": true,
     "pokedex_id": 174,
     "type1": "Normal",
     "bst": 210,
     "abilities": [
-      "Cute Charm"
+      "Cute Charm",
+      "Friend Guard"
     ],
     "stats": {
       "hp": 90,
@@ -32256,7 +32452,8 @@
         "type1": "Normal",
         "type2": "Fairy",
         "abilities": [
-          "Cute Charm"
+          "Cute Charm",
+          "Friend Guard"
         ],
         "evo": "Use Moon Stone",
         "moves": [
@@ -32324,7 +32521,8 @@
         "type1": "Normal",
         "type2": "Fairy",
         "abilities": [
-          "Cute Charm"
+          "Cute Charm",
+          "Friend Guard"
         ],
         "moves": [
           {
@@ -32375,6 +32573,7 @@
   },
   {
     "name": "Togepi",
+    "changed": true,
     "pokedex_id": 175,
     "type1": "Fairy",
     "bst": 245,
@@ -32564,6 +32763,7 @@
   },
   {
     "name": "Togetic",
+    "changed": true,
     "pokedex_id": 176,
     "type1": "Fairy",
     "type2": "Flying",
@@ -32754,6 +32954,7 @@
   },
   {
     "name": "Natu",
+    "changed": true,
     "pokedex_id": 177,
     "type1": "Grass",
     "type2": "Psychic",
@@ -32939,6 +33140,7 @@
   },
   {
     "name": "Xatu",
+    "changed": true,
     "pokedex_id": 178,
     "type1": "Psychic",
     "type2": "Grass",
@@ -33123,6 +33325,7 @@
   },
   {
     "name": "Mareep",
+    "changed": true,
     "pokedex_id": 179,
     "type1": "Electric",
     "bst": 280,
@@ -33358,6 +33561,7 @@
   },
   {
     "name": "Flaaffy",
+    "changed": true,
     "pokedex_id": 180,
     "type1": "Electric",
     "bst": 365,
@@ -33594,6 +33798,7 @@
   },
   {
     "name": "Ampharos",
+    "changed": true,
     "pokedex_id": 181,
     "type1": "Electric",
     "bst": 510,
@@ -33828,6 +34033,7 @@
   },
   {
     "name": "Bellossom",
+    "changed": true,
     "pokedex_id": 182,
     "type1": "Grass",
     "type2": "Fairy",
@@ -34029,6 +34235,7 @@
   },
   {
     "name": "Marill",
+    "changed": true,
     "pokedex_id": 183,
     "type1": "Water",
     "bst": 250,
@@ -34240,6 +34447,7 @@
   },
   {
     "name": "Azumarill",
+    "changed": true,
     "pokedex_id": 184,
     "type1": "Water",
     "type2": "Fairy",
@@ -34449,6 +34657,7 @@
   },
   {
     "name": "Sudowoodo",
+    "changed": true,
     "pokedex_id": 185,
     "type1": "Rock",
     "type2": "Grass",
@@ -34629,6 +34838,7 @@
   },
   {
     "name": "Politoed",
+    "changed": true,
     "pokedex_id": 186,
     "type1": "Water",
     "type2": "Grass",
@@ -34840,6 +35050,7 @@
   },
   {
     "name": "Hoppip",
+    "changed": true,
     "pokedex_id": 187,
     "type1": "Grass",
     "type2": "Flying",
@@ -35106,6 +35317,7 @@
   },
   {
     "name": "Skiploom",
+    "changed": true,
     "pokedex_id": 188,
     "type1": "Grass",
     "type2": "Flying",
@@ -35373,6 +35585,7 @@
   },
   {
     "name": "Jumpluff",
+    "changed": true,
     "pokedex_id": 189,
     "type1": "Grass",
     "type2": "Flying",
@@ -35638,6 +35851,7 @@
   },
   {
     "name": "Aipom",
+    "changed": true,
     "pokedex_id": 190,
     "type1": "Normal",
     "type2": "Fighting",
@@ -35827,6 +36041,7 @@
   },
   {
     "name": "Sunkern",
+    "changed": false,
     "pokedex_id": 191,
     "type1": "Grass",
     "bst": 180,
@@ -36019,6 +36234,7 @@
   },
   {
     "name": "Sunflora",
+    "changed": true,
     "pokedex_id": 192,
     "type1": "Grass",
     "type2": "Fire",
@@ -36210,6 +36426,7 @@
   },
   {
     "name": "Yanma",
+    "changed": false,
     "pokedex_id": 193,
     "type1": "Bug",
     "type2": "Flying",
@@ -36395,6 +36612,7 @@
   },
   {
     "name": "Wooper",
+    "changed": true,
     "pokedex_id": 194,
     "type1": "Water",
     "type2": "Ground",
@@ -36536,6 +36754,7 @@
   },
   {
     "name": "Wooper (Paldea)",
+    "changed": false,
     "pokedex_id": 194,
     "type1": "Poison",
     "type2": "Ground",
@@ -36675,6 +36894,7 @@
   },
   {
     "name": "Quagsire",
+    "changed": true,
     "pokedex_id": 195,
     "type1": "Water",
     "type2": "Ground",
@@ -36815,6 +37035,7 @@
   },
   {
     "name": "Espeon",
+    "changed": true,
     "pokedex_id": 196,
     "type1": "Psychic",
     "bst": 525,
@@ -36962,6 +37183,7 @@
   },
   {
     "name": "Umbreon",
+    "changed": true,
     "pokedex_id": 197,
     "type1": "Dark",
     "bst": 525,
@@ -37109,6 +37331,7 @@
   },
   {
     "name": "Murkrow",
+    "changed": false,
     "pokedex_id": 198,
     "type1": "Dark",
     "type2": "Flying",
@@ -37246,6 +37469,7 @@
   },
   {
     "name": "Slowking",
+    "changed": false,
     "pokedex_id": 199,
     "type1": "Water",
     "type2": "Psychic",
@@ -37418,6 +37642,7 @@
   },
   {
     "name": "Slowking (Galar)",
+    "changed": false,
     "pokedex_id": 199,
     "type1": "Poison",
     "type2": "Psychic",
@@ -37619,6 +37844,7 @@
   },
   {
     "name": "Misdreavus",
+    "changed": true,
     "pokedex_id": 200,
     "type1": "Ghost",
     "bst": 435,
@@ -37818,6 +38044,7 @@
   },
   {
     "name": "Unown",
+    "changed": true,
     "pokedex_id": 201,
     "type1": "Psychic",
     "bst": 500,
@@ -37842,6 +38069,7 @@
   },
   {
     "name": "Wobbuffet",
+    "changed": true,
     "pokedex_id": 202,
     "type1": "Psychic",
     "bst": 450,
@@ -37918,6 +38146,7 @@
   },
   {
     "name": "Girafarig",
+    "changed": true,
     "pokedex_id": 203,
     "type1": "Normal",
     "type2": "Psychic",
@@ -38080,6 +38309,7 @@
   },
   {
     "name": "Pineco",
+    "changed": false,
     "pokedex_id": 204,
     "type1": "Bug",
     "bst": 290,
@@ -38250,6 +38480,7 @@
   },
   {
     "name": "Forretress",
+    "changed": false,
     "pokedex_id": 205,
     "type1": "Bug",
     "type2": "Steel",
@@ -38419,9 +38650,10 @@
   },
   {
     "name": "Dunsparce",
+    "changed": true,
     "pokedex_id": 206,
     "type1": "Normal",
-    "type2": "Dragon",
+    "type2": "Fairy",
     "bst": 455,
     "abilities": [
       "Serene Grace",
@@ -38529,6 +38761,7 @@
   },
   {
     "name": "Gligar",
+    "changed": true,
     "pokedex_id": 207,
     "type1": "Poison",
     "type2": "Flying",
@@ -38698,6 +38931,7 @@
   },
   {
     "name": "Steelix",
+    "changed": false,
     "pokedex_id": 208,
     "type1": "Steel",
     "type2": "Ground",
@@ -38914,6 +39148,7 @@
   },
   {
     "name": "Unovan Steelix",
+    "changed": true,
     "pokedex_id": 208,
     "type1": "Steel",
     "type2": "Water",
@@ -39097,6 +39332,7 @@
   },
   {
     "name": "Snubbull",
+    "changed": true,
     "pokedex_id": 209,
     "type1": "Fairy",
     "bst": 300,
@@ -39285,6 +39521,7 @@
   },
   {
     "name": "Granbull",
+    "changed": true,
     "pokedex_id": 210,
     "type1": "Steel",
     "type2": "Fairy",
@@ -39472,6 +39709,7 @@
   },
   {
     "name": "Qwilfish",
+    "changed": true,
     "pokedex_id": 211,
     "type1": "Water",
     "type2": "Poison",
@@ -39566,6 +39804,7 @@
   },
   {
     "name": "Qwilfish (Hisui)",
+    "changed": false,
     "pokedex_id": 211,
     "type1": "Dark",
     "type2": "Poison",
@@ -39741,6 +39980,7 @@
   },
   {
     "name": "Scizor",
+    "changed": false,
     "pokedex_id": 212,
     "type1": "Bug",
     "type2": "Steel",
@@ -39929,6 +40169,7 @@
   },
   {
     "name": "Shuckle",
+    "changed": true,
     "pokedex_id": 213,
     "type1": "Bug",
     "type2": "Water",
@@ -40023,6 +40264,7 @@
   },
   {
     "name": "Heracross",
+    "changed": false,
     "pokedex_id": 214,
     "type1": "Bug",
     "type2": "Fighting",
@@ -40105,6 +40347,7 @@
   },
   {
     "name": "Unovan Heracross",
+    "changed": true,
     "pokedex_id": 214,
     "type1": "Bug",
     "type2": "Steel",
@@ -40205,6 +40448,7 @@
   },
   {
     "name": "Sneasel",
+    "changed": false,
     "pokedex_id": 215,
     "type1": "Dark",
     "type2": "Ice",
@@ -40381,6 +40625,7 @@
   },
   {
     "name": "Sneasel (Hisui)",
+    "changed": false,
     "pokedex_id": 215,
     "type1": "Fighting",
     "type2": "Poison",
@@ -40528,8 +40773,9 @@
   },
   {
     "name": "Teddiursa",
+    "changed": true,
     "pokedex_id": 216,
-    "type1": "Ground",
+    "type1": "Normal",
     "bst": 330,
     "abilities": [
       "Mold Breaker",
@@ -40549,7 +40795,7 @@
       {
         "name": "Ursaring",
         "pokedex_id": 217,
-        "type1": "Ground",
+        "type1": "Normal",
         "abilities": [
           "Mold Breaker",
           "Overcoat"
@@ -40639,7 +40885,8 @@
             "move": "Hammer Arm",
             "level": 67
           }
-        ]
+        ],
+        "type2": "Ground"
       }
     ],
     "moves": [
@@ -40711,12 +40958,14 @@
         "move": "Fling",
         "level": 57
       }
-    ]
+    ],
+    "type2": "Ground"
   },
   {
     "name": "Ursaring",
+    "changed": true,
     "pokedex_id": 217,
-    "type1": "Ground",
+    "type1": "Normal",
     "bst": 505,
     "abilities": [
       "Mold Breaker",
@@ -40734,7 +40983,7 @@
       {
         "name": "Teddiursa",
         "pokedex_id": 216,
-        "type1": "Ground",
+        "type1": "Normal",
         "abilities": [
           "Mold Breaker",
           "Overcoat"
@@ -40809,7 +41058,8 @@
             "move": "Fling",
             "level": 57
           }
-        ]
+        ],
+        "type2": "Ground"
       }
     ],
     "moves": [
@@ -40985,10 +41235,12 @@
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/901.gif"
       }
-    ]
+    ],
+    "type2": "Ground"
   },
   {
     "name": "Slugma",
+    "changed": true,
     "pokedex_id": 218,
     "type1": "Fire",
     "bst": 300,
@@ -41228,6 +41480,7 @@
   },
   {
     "name": "Magcargo",
+    "changed": true,
     "pokedex_id": 219,
     "type1": "Fire",
     "type2": "Rock",
@@ -41379,6 +41632,7 @@
   },
   {
     "name": "Unovan Magcargo",
+    "changed": true,
     "pokedex_id": 219,
     "type1": "Poison",
     "type2": "Ground",
@@ -41553,6 +41807,7 @@
   },
   {
     "name": "Swinub",
+    "changed": false,
     "pokedex_id": 220,
     "type1": "Ice",
     "type2": "Ground",
@@ -41799,6 +42054,7 @@
   },
   {
     "name": "Piloswine",
+    "changed": false,
     "pokedex_id": 221,
     "type1": "Ice",
     "type2": "Ground",
@@ -42046,6 +42302,7 @@
   },
   {
     "name": "Corsola",
+    "changed": true,
     "pokedex_id": 222,
     "type1": "Water",
     "type2": "Rock",
@@ -42136,6 +42393,7 @@
   },
   {
     "name": "Corsola (Galar)",
+    "changed": false,
     "pokedex_id": 222,
     "type1": "Ghost",
     "bst": 410,
@@ -42281,6 +42539,7 @@
   },
   {
     "name": "Remoraid",
+    "changed": false,
     "pokedex_id": 223,
     "type1": "Water",
     "bst": 300,
@@ -42457,6 +42716,7 @@
   },
   {
     "name": "Octillery",
+    "changed": true,
     "pokedex_id": 224,
     "type1": "Water",
     "type2": "Fire",
@@ -42632,6 +42892,7 @@
   },
   {
     "name": "Delibird",
+    "changed": true,
     "pokedex_id": 225,
     "type1": "Ice",
     "type2": "Flying",
@@ -42734,6 +42995,7 @@
   },
   {
     "name": "Mantine",
+    "changed": true,
     "pokedex_id": 226,
     "type1": "Water",
     "type2": "Flying",
@@ -42902,6 +43164,7 @@
   },
   {
     "name": "Skarmory",
+    "changed": true,
     "pokedex_id": 227,
     "type1": "Steel",
     "type2": "Flying",
@@ -42988,6 +43251,7 @@
   },
   {
     "name": "Houndour",
+    "changed": false,
     "pokedex_id": 228,
     "type1": "Dark",
     "type2": "Fire",
@@ -43157,6 +43421,7 @@
   },
   {
     "name": "Houndoom",
+    "changed": false,
     "pokedex_id": 229,
     "type1": "Dark",
     "type2": "Fire",
@@ -43325,6 +43590,7 @@
   },
   {
     "name": "Kingdra",
+    "changed": true,
     "pokedex_id": 230,
     "type1": "Water",
     "type2": "Dragon",
@@ -43520,6 +43786,7 @@
   },
   {
     "name": "Phanpy",
+    "changed": false,
     "pokedex_id": 231,
     "type1": "Ground",
     "bst": 330,
@@ -43671,6 +43938,7 @@
   },
   {
     "name": "Donphan",
+    "changed": true,
     "pokedex_id": 232,
     "type1": "Ground",
     "bst": 555,
@@ -43967,6 +44235,7 @@
   },
   {
     "name": "Porygon2",
+    "changed": true,
     "pokedex_id": 233,
     "type1": "Normal",
     "bst": 515,
@@ -44053,7 +44322,8 @@
             "move": "Zap Cannon",
             "level": 62
           }
-        ]
+        ],
+        "type2": "Electric"
       }
     ],
     "evo": "Use Dubious Disc",
@@ -44061,7 +44331,7 @@
       {
         "name": "PorygonZ",
         "pokedex_id": 474,
-        "type1": "Normal",
+        "type1": "Psychic",
         "abilities": [
           "Adaptability",
           "Download"
@@ -44135,7 +44405,8 @@
             "move": "Hyper Beam",
             "level": 67
           }
-        ]
+        ],
+        "type2": "Electric"
       }
     ],
     "moves": [
@@ -44203,10 +44474,12 @@
         "move": "Hyper Beam",
         "level": 67
       }
-    ]
+    ],
+    "type2": "Electric"
   },
   {
     "name": "Stantler",
+    "changed": false,
     "pokedex_id": 234,
     "type1": "Normal",
     "bst": 465,
@@ -44360,6 +44633,7 @@
   },
   {
     "name": "Smeargle",
+    "changed": false,
     "pokedex_id": 235,
     "type1": "Normal",
     "bst": 250,
@@ -44385,6 +44659,7 @@
   },
   {
     "name": "Tyrogue",
+    "changed": false,
     "pokedex_id": 236,
     "type1": "Fighting",
     "bst": 210,
@@ -44664,6 +44939,7 @@
   },
   {
     "name": "Hitmontop",
+    "changed": false,
     "pokedex_id": 237,
     "type1": "Fighting",
     "bst": 455,
@@ -44778,6 +45054,7 @@
   },
   {
     "name": "Smoochum",
+    "changed": false,
     "pokedex_id": 238,
     "type1": "Ice",
     "type2": "Psychic",
@@ -44935,6 +45212,7 @@
   },
   {
     "name": "Elekid",
+    "changed": false,
     "pokedex_id": 239,
     "type1": "Electric",
     "bst": 360,
@@ -45183,6 +45461,7 @@
   },
   {
     "name": "Magby",
+    "changed": false,
     "pokedex_id": 240,
     "type1": "Fire",
     "bst": 365,
@@ -45403,6 +45682,7 @@
   },
   {
     "name": "Miltank",
+    "changed": true,
     "pokedex_id": 241,
     "type1": "Normal",
     "type2": "Ground",
@@ -45493,6 +45773,7 @@
   },
   {
     "name": "Blissey",
+    "changed": false,
     "pokedex_id": 242,
     "type1": "Normal",
     "bst": 540,
@@ -45695,6 +45976,7 @@
   },
   {
     "name": "Larvitar",
+    "changed": true,
     "pokedex_id": 246,
     "type1": "Dark",
     "type2": "Dragon",
@@ -45925,6 +46207,7 @@
   },
   {
     "name": "Pupitar",
+    "changed": true,
     "pokedex_id": 247,
     "type1": "Dark",
     "type2": "Dragon",
@@ -46156,6 +46439,7 @@
   },
   {
     "name": "Tyranitar",
+    "changed": true,
     "pokedex_id": 248,
     "type1": "Dark",
     "type2": "Dragon",
@@ -46469,6 +46753,7 @@
   },
   {
     "name": "Poochyena",
+    "changed": false,
     "pokedex_id": 261,
     "type1": "Dark",
     "bst": 220,
@@ -46616,6 +46901,7 @@
   },
   {
     "name": "Mightyena",
+    "changed": true,
     "pokedex_id": 262,
     "type1": "Dark",
     "bst": 450,
@@ -46762,6 +47048,7 @@
   },
   {
     "name": "Zigzagoon",
+    "changed": true,
     "pokedex_id": 263,
     "type1": "Normal",
     "bst": 240,
@@ -46913,6 +47200,7 @@
   },
   {
     "name": "Zigzagoon (Galar)",
+    "changed": false,
     "pokedex_id": 263,
     "type1": "Dark",
     "type2": "Normal",
@@ -47178,6 +47466,7 @@
   },
   {
     "name": "Linoone",
+    "changed": true,
     "pokedex_id": 264,
     "type1": "Normal",
     "bst": 440,
@@ -47328,6 +47617,7 @@
   },
   {
     "name": "Linoone (Galar)",
+    "changed": false,
     "pokedex_id": 264,
     "type1": "Dark",
     "type2": "Normal",
@@ -47594,6 +47884,7 @@
   },
   {
     "name": "Wurmple",
+    "changed": false,
     "pokedex_id": 265,
     "type1": "Bug",
     "bst": 195,
@@ -47667,6 +47958,7 @@
   },
   {
     "name": "Silcoon",
+    "changed": false,
     "pokedex_id": 266,
     "type1": "Bug",
     "bst": 205,
@@ -47791,6 +48083,7 @@
   },
   {
     "name": "Beautifly",
+    "changed": true,
     "pokedex_id": 267,
     "type1": "Bug",
     "type2": "Fairy",
@@ -47913,6 +48206,7 @@
   },
   {
     "name": "Cascoon",
+    "changed": false,
     "pokedex_id": 268,
     "type1": "Bug",
     "bst": 205,
@@ -48024,6 +48318,7 @@
   },
   {
     "name": "Dustox",
+    "changed": true,
     "pokedex_id": 269,
     "type1": "Bug",
     "type2": "Poison",
@@ -48133,6 +48428,7 @@
   },
   {
     "name": "Lotad",
+    "changed": false,
     "pokedex_id": 270,
     "type1": "Water",
     "type2": "Grass",
@@ -48287,6 +48583,7 @@
   },
   {
     "name": "Lombre",
+    "changed": false,
     "pokedex_id": 271,
     "type1": "Water",
     "type2": "Grass",
@@ -48442,6 +48739,7 @@
   },
   {
     "name": "Ludicolo",
+    "changed": false,
     "pokedex_id": 272,
     "type1": "Water",
     "type2": "Grass",
@@ -48595,6 +48893,7 @@
   },
   {
     "name": "Seedot",
+    "changed": false,
     "pokedex_id": 273,
     "type1": "Grass",
     "bst": 220,
@@ -48772,6 +49071,7 @@
   },
   {
     "name": "Nuzleaf",
+    "changed": true,
     "pokedex_id": 274,
     "type1": "Grass",
     "type2": "Ghost",
@@ -48950,6 +49250,7 @@
   },
   {
     "name": "Shiftry",
+    "changed": true,
     "pokedex_id": 275,
     "type1": "Grass",
     "type2": "Ghost",
@@ -49126,6 +49427,7 @@
   },
   {
     "name": "Taillow",
+    "changed": false,
     "pokedex_id": 276,
     "type1": "Normal",
     "type2": "Flying",
@@ -49245,6 +49547,7 @@
   },
   {
     "name": "Swellow",
+    "changed": true,
     "pokedex_id": 277,
     "type1": "Normal",
     "type2": "Flying",
@@ -49363,6 +49666,7 @@
   },
   {
     "name": "Wingull",
+    "changed": false,
     "pokedex_id": 278,
     "type1": "Water",
     "type2": "Flying",
@@ -49530,6 +49834,7 @@
   },
   {
     "name": "Pelipper",
+    "changed": true,
     "pokedex_id": 279,
     "type1": "Water",
     "type2": "Flying",
@@ -49696,6 +50001,7 @@
   },
   {
     "name": "Ralts",
+    "changed": true,
     "pokedex_id": 280,
     "type1": "Psychic",
     "type2": "Fairy",
@@ -49853,6 +50159,7 @@
   },
   {
     "name": "Kirlia",
+    "changed": true,
     "pokedex_id": 281,
     "type1": "Psychic",
     "type2": "Fairy",
@@ -50235,6 +50542,7 @@
   },
   {
     "name": "Gardevoir",
+    "changed": true,
     "pokedex_id": 282,
     "type1": "Psychic",
     "type2": "Fairy",
@@ -50560,6 +50868,7 @@
   },
   {
     "name": "Surskit",
+    "changed": true,
     "pokedex_id": 283,
     "type1": "Bug",
     "type2": "Water",
@@ -50697,6 +51006,7 @@
   },
   {
     "name": "Masquerain",
+    "changed": true,
     "pokedex_id": 284,
     "type1": "Bug",
     "type2": "Water",
@@ -50833,6 +51143,7 @@
   },
   {
     "name": "Shroomish",
+    "changed": false,
     "pokedex_id": 285,
     "type1": "Grass",
     "bst": 295,
@@ -50969,6 +51280,7 @@
   },
   {
     "name": "Breloom",
+    "changed": false,
     "pokedex_id": 286,
     "type1": "Grass",
     "type2": "Fighting",
@@ -51104,6 +51416,7 @@
   },
   {
     "name": "Slakoth",
+    "changed": true,
     "pokedex_id": 287,
     "type1": "Normal",
     "bst": 280,
@@ -51367,6 +51680,7 @@
   },
   {
     "name": "Vigoroth",
+    "changed": true,
     "pokedex_id": 288,
     "type1": "Normal",
     "bst": 440,
@@ -51631,6 +51945,7 @@
   },
   {
     "name": "Slaking",
+    "changed": true,
     "pokedex_id": 289,
     "type1": "Normal",
     "type2": "Grass",
@@ -51893,6 +52208,7 @@
   },
   {
     "name": "Nincada",
+    "changed": false,
     "pokedex_id": 290,
     "type1": "Bug",
     "type2": "Ground",
@@ -52093,6 +52409,7 @@
   },
   {
     "name": "Ninjask",
+    "changed": true,
     "pokedex_id": 291,
     "type1": "Flying",
     "type2": "Electric",
@@ -52232,6 +52549,7 @@
   },
   {
     "name": "Shedinja",
+    "changed": false,
     "pokedex_id": 292,
     "type1": "Bug",
     "type2": "Ghost",
@@ -52355,6 +52673,7 @@
   },
   {
     "name": "Whismur",
+    "changed": true,
     "pokedex_id": 293,
     "type1": "Normal",
     "bst": 240,
@@ -52630,6 +52949,7 @@
   },
   {
     "name": "Loudred",
+    "changed": true,
     "pokedex_id": 294,
     "type1": "Normal",
     "bst": 360,
@@ -52906,6 +53226,7 @@
   },
   {
     "name": "Exploud",
+    "changed": true,
     "pokedex_id": 295,
     "type1": "Normal",
     "bst": 515,
@@ -53180,6 +53501,7 @@
   },
   {
     "name": "Makuhita",
+    "changed": false,
     "pokedex_id": 296,
     "type1": "Fighting",
     "bst": 237,
@@ -53355,6 +53677,7 @@
   },
   {
     "name": "Hariyama",
+    "changed": false,
     "pokedex_id": 297,
     "type1": "Fighting",
     "bst": 474,
@@ -53613,6 +53936,7 @@
   },
   {
     "name": "Azurill",
+    "changed": true,
     "pokedex_id": 298,
     "type1": "Normal",
     "bst": 190,
@@ -53823,6 +54147,7 @@
   },
   {
     "name": "Nosepass",
+    "changed": false,
     "pokedex_id": 299,
     "type1": "Rock",
     "bst": 375,
@@ -54011,6 +54336,7 @@
   },
   {
     "name": "Skitty",
+    "changed": true,
     "pokedex_id": 300,
     "type1": "Fairy",
     "bst": 280,
@@ -54136,6 +54462,7 @@
   },
   {
     "name": "Delcatty",
+    "changed": true,
     "pokedex_id": 301,
     "type1": "Fairy",
     "type2": "",
@@ -54261,6 +54588,7 @@
   },
   {
     "name": "Sableye",
+    "changed": true,
     "pokedex_id": 302,
     "type1": "Ghost",
     "type2": "Rock",
@@ -54355,6 +54683,7 @@
   },
   {
     "name": "Mawile",
+    "changed": true,
     "pokedex_id": 303,
     "type1": "Steel",
     "type2": "Fairy",
@@ -54445,6 +54774,7 @@
   },
   {
     "name": "Aron",
+    "changed": true,
     "pokedex_id": 304,
     "type1": "Steel",
     "bst": 330,
@@ -54712,6 +55042,7 @@
   },
   {
     "name": "Lairon",
+    "changed": true,
     "pokedex_id": 305,
     "type1": "Steel",
     "bst": 430,
@@ -54980,6 +55311,7 @@
   },
   {
     "name": "Aggron",
+    "changed": true,
     "pokedex_id": 306,
     "type1": "Steel",
     "type2": "Fighting",
@@ -55246,6 +55578,7 @@
   },
   {
     "name": "Meditite",
+    "changed": false,
     "pokedex_id": 307,
     "type1": "Fighting",
     "type2": "Psychic",
@@ -55413,6 +55746,7 @@
   },
   {
     "name": "Medicham",
+    "changed": false,
     "pokedex_id": 308,
     "type1": "Fighting",
     "type2": "Psychic",
@@ -55579,6 +55913,7 @@
   },
   {
     "name": "Electrike",
+    "changed": false,
     "pokedex_id": 309,
     "type1": "Electric",
     "bst": 295,
@@ -55730,6 +56065,7 @@
   },
   {
     "name": "Manectric",
+    "changed": false,
     "pokedex_id": 310,
     "type1": "Electric",
     "bst": 475,
@@ -55880,6 +56216,7 @@
   },
   {
     "name": "Plusle",
+    "changed": true,
     "pokedex_id": 311,
     "type1": "Electric",
     "bst": 465,
@@ -55968,6 +56305,7 @@
   },
   {
     "name": "Minun",
+    "changed": true,
     "pokedex_id": 312,
     "type1": "Electric",
     "bst": 465,
@@ -56060,6 +56398,7 @@
   },
   {
     "name": "Volbeat",
+    "changed": true,
     "pokedex_id": 313,
     "type1": "Bug",
     "bst": 450,
@@ -56147,6 +56486,7 @@
   },
   {
     "name": "Illumise",
+    "changed": true,
     "pokedex_id": 314,
     "type1": "Bug",
     "bst": 450,
@@ -56218,6 +56558,7 @@
   },
   {
     "name": "Roselia",
+    "changed": false,
     "pokedex_id": 315,
     "type1": "Grass",
     "type2": "Poison",
@@ -56377,6 +56718,7 @@
   },
   {
     "name": "Gulpin",
+    "changed": false,
     "pokedex_id": 316,
     "type1": "Poison",
     "bst": 302,
@@ -56536,6 +56878,7 @@
   },
   {
     "name": "Swalot",
+    "changed": false,
     "pokedex_id": 317,
     "type1": "Poison",
     "bst": 467,
@@ -56694,19 +57037,21 @@
   },
   {
     "name": "Carvanha",
+    "changed": true,
     "pokedex_id": 318,
     "type1": "Water",
-    "type2": "Dark",
+    "type2": "Steel",
     "bst": 305,
     "abilities": [
-      "Rough Skin"
+      "Rough Skin",
+      "Speed Boost"
     ],
     "stats": {
       "hp": 45,
       "atk": 90,
-      "def": 20,
-      "spa": 65,
-      "spd": 20,
+      "def": 35,
+      "spa": 35,
+      "spd": 35,
       "spe": 65
     },
     "preevo": [],
@@ -56716,9 +57061,10 @@
         "name": "Sharpedo",
         "pokedex_id": 319,
         "type1": "Water",
-        "type2": "Dark",
+        "type2": "Steel",
         "abilities": [
-          "Rough Skin"
+          "Rough Skin",
+          "Speed Boost"
         ],
         "moves": [
           {
@@ -56849,19 +57195,21 @@
   },
   {
     "name": "Sharpedo",
+    "changed": true,
     "pokedex_id": 319,
     "type1": "Water",
-    "type2": "Dark",
+    "type2": "Steel",
     "bst": 460,
     "abilities": [
-      "Rough Skin"
+      "Rough Skin",
+      "Speed Boost"
     ],
     "stats": {
       "hp": 70,
       "atk": 120,
-      "def": 40,
-      "spa": 95,
-      "spd": 40,
+      "def": 65,
+      "spa": 50,
+      "spd": 60,
       "spe": 95
     },
     "preevo": [
@@ -56869,9 +57217,10 @@
         "name": "Carvanha",
         "pokedex_id": 318,
         "type1": "Water",
-        "type2": "Dark",
+        "type2": "Steel",
         "abilities": [
-          "Rough Skin"
+          "Rough Skin",
+          "Speed Boost"
         ],
         "evo": "Level 30",
         "moves": [
@@ -57003,6 +57352,7 @@
   },
   {
     "name": "Wailmer",
+    "changed": false,
     "pokedex_id": 320,
     "type1": "Water",
     "bst": 400,
@@ -57183,6 +57533,7 @@
   },
   {
     "name": "Wailord",
+    "changed": true,
     "pokedex_id": 321,
     "type1": "Water",
     "type2": "Flying",
@@ -57362,6 +57713,7 @@
   },
   {
     "name": "Numel",
+    "changed": false,
     "pokedex_id": 322,
     "type1": "Fire",
     "type2": "Ground",
@@ -57610,6 +57962,7 @@
   },
   {
     "name": "Camerupt",
+    "changed": false,
     "pokedex_id": 323,
     "type1": "Fire",
     "type2": "Ground",
@@ -57770,6 +58123,7 @@
   },
   {
     "name": "Unovan Camerupt",
+    "changed": true,
     "pokedex_id": 323,
     "type1": "Ground",
     "type2": "Grass",
@@ -57949,6 +58303,7 @@
   },
   {
     "name": "Torkoal",
+    "changed": false,
     "pokedex_id": 324,
     "type1": "Fire",
     "bst": 470,
@@ -58037,6 +58392,7 @@
   },
   {
     "name": "Spoink",
+    "changed": true,
     "pokedex_id": 325,
     "type1": "Psychic",
     "bst": 330,
@@ -58238,6 +58594,7 @@
   },
   {
     "name": "Grumpig",
+    "changed": true,
     "pokedex_id": 326,
     "type1": "Psychic",
     "type2": "Ground",
@@ -58438,6 +58795,7 @@
   },
   {
     "name": "Spinda",
+    "changed": true,
     "pokedex_id": 327,
     "type1": "Normal",
     "type2": "Psychic",
@@ -58524,6 +58882,7 @@
   },
   {
     "name": "Trapinch",
+    "changed": true,
     "pokedex_id": 328,
     "type1": "Bug",
     "bst": 290,
@@ -58546,8 +58905,8 @@
       {
         "name": "Vibrava",
         "pokedex_id": 329,
-        "type1": "Dragon",
-        "type2": "Bug",
+        "type1": "Bug",
+        "type2": "Ground",
         "abilities": [
           "Levitate",
           "Compound Eyes"
@@ -58623,8 +58982,8 @@
       {
         "name": "Flygon",
         "pokedex_id": 330,
-        "type1": "Dragon",
-        "type2": "Bug",
+        "type1": "Bug",
+        "type2": "Ground",
         "abilities": [
           "Levitate",
           "Compound Eyes"
@@ -58778,9 +59137,10 @@
   },
   {
     "name": "Vibrava",
+    "changed": true,
     "pokedex_id": 329,
-    "type1": "Dragon",
-    "type2": "Bug",
+    "type1": "Bug",
+    "type2": "Ground",
     "bst": 340,
     "abilities": [
       "Levitate",
@@ -58882,8 +59242,8 @@
       {
         "name": "Flygon",
         "pokedex_id": 330,
-        "type1": "Dragon",
-        "type2": "Bug",
+        "type1": "Bug",
+        "type2": "Ground",
         "abilities": [
           "Levitate",
           "Compound Eyes"
@@ -59033,9 +59393,10 @@
   },
   {
     "name": "Flygon",
+    "changed": true,
     "pokedex_id": 330,
-    "type1": "Dragon",
-    "type2": "Bug",
+    "type1": "Bug",
+    "type2": "Ground",
     "bst": 550,
     "abilities": [
       "Levitate",
@@ -59134,8 +59495,8 @@
       {
         "name": "Vibrava",
         "pokedex_id": 329,
-        "type1": "Dragon",
-        "type2": "Bug",
+        "type1": "Bug",
+        "type2": "Ground",
         "abilities": [
           "Levitate",
           "Compound Eyes"
@@ -59286,6 +59647,7 @@
   },
   {
     "name": "Cacnea",
+    "changed": false,
     "pokedex_id": 331,
     "type1": "Grass",
     "bst": 335,
@@ -59452,6 +59814,7 @@
   },
   {
     "name": "Cacturne",
+    "changed": false,
     "pokedex_id": 332,
     "type1": "Grass",
     "type2": "Dark",
@@ -59617,6 +59980,7 @@
   },
   {
     "name": "Swablu",
+    "changed": false,
     "pokedex_id": 333,
     "type1": "Normal",
     "type2": "Flying",
@@ -59875,6 +60239,7 @@
   },
   {
     "name": "Altaria",
+    "changed": false,
     "pokedex_id": 334,
     "type1": "Dragon",
     "type2": "Flying",
@@ -60041,6 +60406,7 @@
   },
   {
     "name": "Unovan Altaria",
+    "changed": true,
     "pokedex_id": 334,
     "type1": "Flying",
     "type2": "Electric",
@@ -60223,6 +60589,7 @@
   },
   {
     "name": "Zangoose",
+    "changed": true,
     "pokedex_id": 335,
     "type1": "Fighting",
     "type2": "Dark",
@@ -60321,6 +60688,7 @@
   },
   {
     "name": "Seviper",
+    "changed": true,
     "pokedex_id": 336,
     "type1": "Poison",
     "type2": "Dark",
@@ -60415,6 +60783,7 @@
   },
   {
     "name": "Lunatone",
+    "changed": true,
     "pokedex_id": 337,
     "type1": "Rock",
     "type2": "Dark",
@@ -60497,6 +60866,7 @@
   },
   {
     "name": "Solrock",
+    "changed": true,
     "pokedex_id": 338,
     "type1": "Rock",
     "type2": "Fire",
@@ -60583,6 +60953,7 @@
   },
   {
     "name": "Barboach",
+    "changed": false,
     "pokedex_id": 339,
     "type1": "Water",
     "type2": "Ground",
@@ -60740,6 +61111,7 @@
   },
   {
     "name": "Whiscash",
+    "changed": false,
     "pokedex_id": 340,
     "type1": "Water",
     "type2": "Ground",
@@ -60896,6 +61268,7 @@
   },
   {
     "name": "Corphish",
+    "changed": false,
     "pokedex_id": 341,
     "type1": "Water",
     "bst": 308,
@@ -61040,6 +61413,7 @@
   },
   {
     "name": "Crawdaunt",
+    "changed": false,
     "pokedex_id": 342,
     "type1": "Water",
     "type2": "Dark",
@@ -61183,6 +61557,7 @@
   },
   {
     "name": "Baltoy",
+    "changed": true,
     "pokedex_id": 343,
     "type1": "Psychic",
     "type2": "Rock",
@@ -61368,6 +61743,7 @@
   },
   {
     "name": "Claydol",
+    "changed": true,
     "pokedex_id": 344,
     "type1": "Psychic",
     "type2": "Rock",
@@ -61552,6 +61928,7 @@
   },
   {
     "name": "Lileep",
+    "changed": false,
     "pokedex_id": 345,
     "type1": "Rock",
     "type2": "Grass",
@@ -61691,6 +62068,7 @@
   },
   {
     "name": "Cradily",
+    "changed": false,
     "pokedex_id": 346,
     "type1": "Rock",
     "type2": "Grass",
@@ -61829,6 +62207,7 @@
   },
   {
     "name": "Anorith",
+    "changed": false,
     "pokedex_id": 347,
     "type1": "Rock",
     "type2": "Bug",
@@ -61960,6 +62339,7 @@
   },
   {
     "name": "Armaldo",
+    "changed": false,
     "pokedex_id": 348,
     "type1": "Rock",
     "type2": "Bug",
@@ -62090,6 +62470,7 @@
   },
   {
     "name": "Feebas",
+    "changed": false,
     "pokedex_id": 349,
     "type1": "Water",
     "bst": 200,
@@ -62193,6 +62574,7 @@
   },
   {
     "name": "Milotic",
+    "changed": true,
     "pokedex_id": 350,
     "type1": "Water",
     "bst": 540,
@@ -62295,6 +62677,7 @@
   },
   {
     "name": "Castform",
+    "changed": true,
     "pokedex_id": 351,
     "type1": "Normal",
     "bst": 480,
@@ -62364,6 +62747,7 @@
   },
   {
     "name": "Kecleon",
+    "changed": true,
     "pokedex_id": 352,
     "type1": "Normal",
     "bst": 480,
@@ -62456,6 +62840,7 @@
   },
   {
     "name": "Shuppet",
+    "changed": false,
     "pokedex_id": 353,
     "type1": "Ghost",
     "bst": 295,
@@ -62628,6 +63013,7 @@
   },
   {
     "name": "Banette",
+    "changed": true,
     "pokedex_id": 354,
     "type1": "Ghost",
     "type2": "Normal",
@@ -62799,6 +63185,7 @@
   },
   {
     "name": "Duskull",
+    "changed": true,
     "pokedex_id": 355,
     "type1": "Ghost",
     "bst": 295,
@@ -63063,6 +63450,7 @@
   },
   {
     "name": "Dusclops",
+    "changed": true,
     "pokedex_id": 356,
     "type1": "Ghost",
     "bst": 455,
@@ -63328,6 +63716,7 @@
   },
   {
     "name": "Tropius",
+    "changed": true,
     "pokedex_id": 357,
     "type1": "Grass",
     "type2": "Dragon",
@@ -63422,6 +63811,7 @@
   },
   {
     "name": "Chimecho",
+    "changed": true,
     "pokedex_id": 358,
     "type1": "Psychic",
     "type2": "Flying",
@@ -63557,6 +63947,7 @@
   },
   {
     "name": "Absol",
+    "changed": true,
     "pokedex_id": 359,
     "type1": "Dark",
     "type2": "Ice",
@@ -63667,6 +64058,7 @@
   },
   {
     "name": "Wynaut",
+    "changed": false,
     "pokedex_id": 360,
     "type1": "Psychic",
     "bst": 260,
@@ -63744,6 +64136,7 @@
   },
   {
     "name": "Snorunt",
+    "changed": false,
     "pokedex_id": 361,
     "type1": "Ice",
     "bst": 300,
@@ -63964,6 +64357,7 @@
   },
   {
     "name": "Glalie",
+    "changed": true,
     "pokedex_id": 362,
     "type1": "Ice",
     "type2": "Rock",
@@ -64119,6 +64513,7 @@
   },
   {
     "name": "Spheal",
+    "changed": false,
     "pokedex_id": 363,
     "type1": "Ice",
     "type2": "Water",
@@ -64333,6 +64728,7 @@
   },
   {
     "name": "Sealeo",
+    "changed": false,
     "pokedex_id": 364,
     "type1": "Ice",
     "type2": "Water",
@@ -64548,6 +64944,7 @@
   },
   {
     "name": "Walrein",
+    "changed": false,
     "pokedex_id": 365,
     "type1": "Ice",
     "type2": "Water",
@@ -64761,6 +65158,7 @@
   },
   {
     "name": "Clamperl",
+    "changed": false,
     "pokedex_id": 366,
     "type1": "Water",
     "bst": 345,
@@ -64950,6 +65348,7 @@
   },
   {
     "name": "Huntail",
+    "changed": true,
     "pokedex_id": 367,
     "type1": "Water",
     "type2": "Dragon",
@@ -65065,6 +65464,7 @@
   },
   {
     "name": "Gorebyss",
+    "changed": true,
     "pokedex_id": 368,
     "type1": "Water",
     "type2": "Fairy",
@@ -65180,6 +65580,7 @@
   },
   {
     "name": "Relicanth",
+    "changed": false,
     "pokedex_id": 369,
     "type1": "Water",
     "type2": "Rock",
@@ -65254,6 +65655,7 @@
   },
   {
     "name": "Luvdisc",
+    "changed": true,
     "pokedex_id": 370,
     "type1": "Water",
     "bst": 465,
@@ -65331,6 +65733,7 @@
   },
   {
     "name": "Bagon",
+    "changed": true,
     "pokedex_id": 371,
     "type1": "Dragon",
     "bst": 300,
@@ -65547,6 +65950,7 @@
   },
   {
     "name": "Shelgon",
+    "changed": true,
     "pokedex_id": 372,
     "type1": "Dragon",
     "bst": 420,
@@ -65835,21 +66239,22 @@
   },
   {
     "name": "Salamence",
+    "changed": true,
     "pokedex_id": 373,
     "type1": "Dragon",
     "type2": "Flying",
-    "bst": 600,
+    "bst": 550,
     "abilities": [
       "Intimidate",
       "Moxie"
     ],
     "stats": {
       "hp": 95,
-      "atk": 135,
-      "def": 80,
-      "spa": 110,
-      "spd": 80,
-      "spe": 100
+      "atk": 125,
+      "def": 70,
+      "spa": 100,
+      "spd": 70,
+      "spe": 90
     },
     "preevo": [
       {
@@ -66146,6 +66551,7 @@
   },
   {
     "name": "Unovan Salamence",
+    "changed": true,
     "pokedex_id": 373,
     "type1": "Dragon",
     "type2": "Poison",
@@ -66357,6 +66763,7 @@
   },
   {
     "name": "Beldum",
+    "changed": true,
     "pokedex_id": 374,
     "type1": "Steel",
     "bst": 300,
@@ -66515,6 +66922,7 @@
   },
   {
     "name": "Metang",
+    "changed": true,
     "pokedex_id": 375,
     "type1": "Steel",
     "type2": "Fighting",
@@ -66674,6 +67082,7 @@
   },
   {
     "name": "Metagross",
+    "changed": true,
     "pokedex_id": 376,
     "type1": "Steel",
     "type2": "Fighting",
@@ -66831,6 +67240,7 @@
   },
   {
     "name": "Starly",
+    "changed": false,
     "pokedex_id": 396,
     "type1": "Normal",
     "type2": "Flying",
@@ -67053,6 +67463,7 @@
   },
   {
     "name": "Staravia",
+    "changed": true,
     "pokedex_id": 397,
     "type1": "Fighting",
     "type2": "Flying",
@@ -67276,6 +67687,7 @@
   },
   {
     "name": "Staraptor",
+    "changed": true,
     "pokedex_id": 398,
     "type1": "Flying",
     "type2": "Fighting",
@@ -67497,6 +67909,7 @@
   },
   {
     "name": "Bidoof",
+    "changed": false,
     "pokedex_id": 399,
     "type1": "Normal",
     "bst": 250,
@@ -67633,6 +68046,7 @@
   },
   {
     "name": "Bibarel",
+    "changed": true,
     "pokedex_id": 400,
     "type1": "Normal",
     "type2": "Water",
@@ -67768,6 +68182,7 @@
   },
   {
     "name": "Kricketot",
+    "changed": false,
     "pokedex_id": 401,
     "type1": "Bug",
     "bst": 194,
@@ -67869,6 +68284,7 @@
   },
   {
     "name": "Kricketune",
+    "changed": true,
     "pokedex_id": 402,
     "type1": "Bug",
     "bst": 440,
@@ -67969,6 +68385,7 @@
   },
   {
     "name": "Shinx",
+    "changed": false,
     "pokedex_id": 403,
     "type1": "Electric",
     "bst": 263,
@@ -68182,6 +68599,7 @@
   },
   {
     "name": "Luxio",
+    "changed": true,
     "pokedex_id": 404,
     "type1": "Electric",
     "bst": 363,
@@ -68474,6 +68892,7 @@
   },
   {
     "name": "Luxray",
+    "changed": true,
     "pokedex_id": 405,
     "type1": "Electric",
     "type2": "Dark",
@@ -68686,6 +69105,7 @@
   },
   {
     "name": "Unovan Luxray",
+    "changed": true,
     "pokedex_id": 405,
     "type1": "Electric",
     "type2": "Fire",
@@ -68909,6 +69329,7 @@
   },
   {
     "name": "Budew",
+    "changed": false,
     "pokedex_id": 406,
     "type1": "Grass",
     "type2": "Poison",
@@ -69067,6 +69488,7 @@
   },
   {
     "name": "Roserade",
+    "changed": false,
     "pokedex_id": 407,
     "type1": "Grass",
     "type2": "Poison",
@@ -69224,6 +69646,7 @@
   },
   {
     "name": "Cranidos",
+    "changed": false,
     "pokedex_id": 408,
     "type1": "Rock",
     "bst": 350,
@@ -69396,6 +69819,7 @@
   },
   {
     "name": "Rampardos",
+    "changed": true,
     "pokedex_id": 409,
     "type1": "Rock",
     "type2": "Steel",
@@ -69567,6 +69991,7 @@
   },
   {
     "name": "Shieldon",
+    "changed": false,
     "pokedex_id": 410,
     "type1": "Rock",
     "type2": "Steel",
@@ -69702,6 +70127,7 @@
   },
   {
     "name": "Bastiodon",
+    "changed": false,
     "pokedex_id": 411,
     "type1": "Rock",
     "type2": "Steel",
@@ -69836,6 +70262,7 @@
   },
   {
     "name": "Burmy",
+    "changed": false,
     "pokedex_id": 412,
     "type1": "Bug",
     "bst": 224,
@@ -70006,6 +70433,7 @@
   },
   {
     "name": "Wormadam",
+    "changed": true,
     "pokedex_id": 413,
     "type1": "Bug",
     "type2": "Grass",
@@ -70107,6 +70535,7 @@
   },
   {
     "name": "Wormadam (Sandy)",
+    "changed": true,
     "pokedex_id": 413,
     "type1": "Bug",
     "type2": "Ground",
@@ -70208,6 +70637,7 @@
   },
   {
     "name": "Wormadam (Trash)",
+    "changed": true,
     "pokedex_id": 413,
     "type1": "Bug",
     "type2": "Steel",
@@ -70309,6 +70739,7 @@
   },
   {
     "name": "Mothim",
+    "changed": true,
     "pokedex_id": 414,
     "type1": "Bug",
     "type2": "Flying",
@@ -70414,6 +70845,7 @@
   },
   {
     "name": "Combee",
+    "changed": false,
     "pokedex_id": 415,
     "type1": "Bug",
     "type2": "Flying",
@@ -70533,6 +70965,7 @@
   },
   {
     "name": "Vespiquen",
+    "changed": false,
     "pokedex_id": 416,
     "type1": "Bug",
     "type2": "Flying",
@@ -70651,6 +71084,7 @@
   },
   {
     "name": "Pachirisu",
+    "changed": true,
     "pokedex_id": 417,
     "type1": "Electric",
     "type2": "Grass",
@@ -70761,6 +71195,7 @@
   },
   {
     "name": "Buizel",
+    "changed": true,
     "pokedex_id": 418,
     "type1": "Water",
     "bst": 330,
@@ -70942,6 +71377,7 @@
   },
   {
     "name": "Floatzel",
+    "changed": true,
     "pokedex_id": 419,
     "type1": "Water",
     "type2": "Ice",
@@ -71122,6 +71558,7 @@
   },
   {
     "name": "Cherubi",
+    "changed": false,
     "pokedex_id": 420,
     "type1": "Grass",
     "bst": 275,
@@ -71247,6 +71684,7 @@
   },
   {
     "name": "Cherrim",
+    "changed": true,
     "pokedex_id": 421,
     "type1": "Grass",
     "bst": 455,
@@ -71371,6 +71809,7 @@
   },
   {
     "name": "Cherrim (Sunshine)",
+    "changed": true,
     "pokedex_id": 421,
     "type1": "Grass",
     "bst": 555,
@@ -71495,8 +71934,9 @@
   },
   {
     "name": "Shellos",
+    "changed": true,
     "pokedex_id": 422,
-    "type1": "Ground",
+    "type1": "Water",
     "bst": 325,
     "abilities": [
       "Sticky Hold",
@@ -71510,7 +71950,6 @@
       "spd": 62,
       "spe": 34
     },
-    "type2": "Poison",
     "preevo": [],
     "evo": "Level 30",
     "next": [
@@ -71648,6 +72087,7 @@
   },
   {
     "name": "Gastrodon",
+    "changed": true,
     "pokedex_id": 423,
     "type1": "Water",
     "type2": "Ground",
@@ -71668,8 +72108,7 @@
       {
         "name": "Shellos",
         "pokedex_id": 422,
-        "type1": "Ground",
-        "type2": "Poison",
+        "type1": "Water",
         "abilities": [
           "Sticky Hold",
           "Hydration"
@@ -71800,6 +72239,7 @@
   },
   {
     "name": "Ambipom",
+    "changed": true,
     "pokedex_id": 424,
     "type1": "Normal",
     "type2": "Fighting",
@@ -71988,6 +72428,7 @@
   },
   {
     "name": "Drifloon",
+    "changed": false,
     "pokedex_id": 425,
     "type1": "Ghost",
     "type2": "Flying",
@@ -72145,6 +72586,7 @@
   },
   {
     "name": "Drifblim",
+    "changed": false,
     "pokedex_id": 426,
     "type1": "Ghost",
     "type2": "Flying",
@@ -72301,6 +72743,7 @@
   },
   {
     "name": "Buneary",
+    "changed": false,
     "pokedex_id": 427,
     "type1": "Normal",
     "bst": 350,
@@ -72472,6 +72915,7 @@
   },
   {
     "name": "Lopunny",
+    "changed": false,
     "pokedex_id": 428,
     "type1": "Normal",
     "bst": 480,
@@ -72642,6 +73086,7 @@
   },
   {
     "name": "Mismagius",
+    "changed": true,
     "pokedex_id": 429,
     "type1": "Ghost",
     "bst": 525,
@@ -72758,6 +73203,7 @@
   },
   {
     "name": "Honchkrow",
+    "changed": false,
     "pokedex_id": 430,
     "type1": "Dark",
     "type2": "Flying",
@@ -72894,6 +73340,7 @@
   },
   {
     "name": "Glameow",
+    "changed": false,
     "pokedex_id": 431,
     "type1": "Normal",
     "bst": 310,
@@ -73037,6 +73484,7 @@
   },
   {
     "name": "Purugly",
+    "changed": false,
     "pokedex_id": 432,
     "type1": "Normal",
     "bst": 452,
@@ -73179,6 +73627,7 @@
   },
   {
     "name": "Chingling",
+    "changed": false,
     "pokedex_id": 433,
     "type1": "Psychic",
     "bst": 285,
@@ -73315,6 +73764,7 @@
   },
   {
     "name": "Stunky",
+    "changed": false,
     "pokedex_id": 434,
     "type1": "Poison",
     "type2": "Dark",
@@ -73460,6 +73910,7 @@
   },
   {
     "name": "Skuntank",
+    "changed": false,
     "pokedex_id": 435,
     "type1": "Poison",
     "type2": "Dark",
@@ -73604,6 +74055,7 @@
   },
   {
     "name": "Bronzor",
+    "changed": false,
     "pokedex_id": 436,
     "type1": "Steel",
     "type2": "Psychic",
@@ -73781,6 +74233,7 @@
   },
   {
     "name": "Bronzong",
+    "changed": false,
     "pokedex_id": 437,
     "type1": "Steel",
     "type2": "Psychic",
@@ -73957,6 +74410,7 @@
   },
   {
     "name": "Bonsly",
+    "changed": true,
     "pokedex_id": 438,
     "type1": "Rock",
     "bst": 290,
@@ -74138,6 +74592,7 @@
   },
   {
     "name": "Mime Jr.",
+    "changed": false,
     "pokedex_id": 439,
     "type1": "Psychic",
     "bst": 310,
@@ -74337,6 +74792,7 @@
   },
   {
     "name": "Happiny",
+    "changed": false,
     "pokedex_id": 440,
     "type1": "Normal",
     "bst": 220,
@@ -74540,6 +74996,7 @@
   },
   {
     "name": "Chatot",
+    "changed": true,
     "pokedex_id": 441,
     "type1": "Normal",
     "type2": "Flying",
@@ -74622,6 +75079,7 @@
   },
   {
     "name": "Spiritomb",
+    "changed": true,
     "pokedex_id": 442,
     "type1": "Ghost",
     "type2": "Rock",
@@ -74696,6 +75154,7 @@
   },
   {
     "name": "Gible",
+    "changed": true,
     "pokedex_id": 443,
     "type1": "Steel",
     "bst": 300,
@@ -74873,6 +75332,7 @@
   },
   {
     "name": "Gabite",
+    "changed": true,
     "pokedex_id": 444,
     "type1": "Flying",
     "type2": "Steel",
@@ -75051,6 +75511,7 @@
   },
   {
     "name": "Garchomp",
+    "changed": true,
     "pokedex_id": 445,
     "type1": "Flying",
     "type2": "Steel",
@@ -75227,6 +75688,7 @@
   },
   {
     "name": "Munchlax",
+    "changed": false,
     "pokedex_id": 446,
     "type1": "Normal",
     "bst": 390,
@@ -75394,6 +75856,7 @@
   },
   {
     "name": "Riolu",
+    "changed": false,
     "pokedex_id": 447,
     "type1": "Fighting",
     "bst": 285,
@@ -75416,7 +75879,7 @@
         "name": "Lucario",
         "pokedex_id": 448,
         "type1": "Fighting",
-        "type2": "Steel",
+        "type2": "Psychic",
         "abilities": [
           "Steadfast",
           "Inner Focus"
@@ -75550,9 +76013,10 @@
   },
   {
     "name": "Lucario",
+    "changed": true,
     "pokedex_id": 448,
     "type1": "Fighting",
-    "type2": "Steel",
+    "type2": "Psychic",
     "bst": 525,
     "abilities": [
       "Steadfast",
@@ -75560,10 +76024,10 @@
     ],
     "stats": {
       "hp": 70,
-      "atk": 110,
+      "atk": 95,
       "def": 70,
-      "spa": 115,
-      "spd": 70,
+      "spa": 120,
+      "spd": 80,
       "spe": 90
     },
     "preevo": [
@@ -75705,6 +76169,7 @@
   },
   {
     "name": "Hippopotas",
+    "changed": false,
     "pokedex_id": 449,
     "type1": "Ground",
     "bst": 330,
@@ -75861,6 +76326,7 @@
   },
   {
     "name": "Hippowdon",
+    "changed": true,
     "pokedex_id": 450,
     "type1": "Ground",
     "type2": "Water",
@@ -76016,6 +76482,7 @@
   },
   {
     "name": "Skorupi",
+    "changed": false,
     "pokedex_id": 451,
     "type1": "Poison",
     "type2": "Bug",
@@ -76193,6 +76660,7 @@
   },
   {
     "name": "Drapion",
+    "changed": false,
     "pokedex_id": 452,
     "type1": "Poison",
     "type2": "Dark",
@@ -76369,6 +76837,7 @@
   },
   {
     "name": "Croagunk",
+    "changed": true,
     "pokedex_id": 453,
     "type1": "Poison",
     "type2": "Fighting",
@@ -76542,6 +77011,7 @@
   },
   {
     "name": "Toxicroak",
+    "changed": true,
     "pokedex_id": 454,
     "type1": "Poison",
     "type2": "Fighting",
@@ -76714,6 +77184,7 @@
   },
   {
     "name": "Carnivine",
+    "changed": false,
     "pokedex_id": 455,
     "type1": "Grass",
     "bst": 454,
@@ -76790,6 +77261,7 @@
   },
   {
     "name": "Finneon",
+    "changed": false,
     "pokedex_id": 456,
     "type1": "Water",
     "bst": 330,
@@ -76958,6 +77430,7 @@
   },
   {
     "name": "Lumineon",
+    "changed": true,
     "pokedex_id": 457,
     "type1": "Water",
     "type2": "Electric",
@@ -77125,6 +77598,7 @@
   },
   {
     "name": "Mantyke",
+    "changed": true,
     "pokedex_id": 458,
     "type1": "Water",
     "type2": "Flying",
@@ -77294,6 +77768,7 @@
   },
   {
     "name": "Snover",
+    "changed": false,
     "pokedex_id": 459,
     "type1": "Grass",
     "type2": "Ice",
@@ -77439,6 +77914,7 @@
   },
   {
     "name": "Abomasnow",
+    "changed": true,
     "pokedex_id": 460,
     "type1": "Grass",
     "type2": "Ice",
@@ -77583,6 +78059,7 @@
   },
   {
     "name": "Weavile",
+    "changed": false,
     "pokedex_id": 461,
     "type1": "Dark",
     "type2": "Ice",
@@ -77758,6 +78235,7 @@
   },
   {
     "name": "Magnezone",
+    "changed": false,
     "pokedex_id": 462,
     "type1": "Electric",
     "type2": "Steel",
@@ -78023,6 +78501,7 @@
   },
   {
     "name": "Lickilicky",
+    "changed": false,
     "pokedex_id": 463,
     "type1": "Normal",
     "bst": 515,
@@ -78181,6 +78660,7 @@
   },
   {
     "name": "Rhyperior",
+    "changed": true,
     "pokedex_id": 464,
     "type1": "Ground",
     "type2": "Rock",
@@ -78410,6 +78890,7 @@
   },
   {
     "name": "Tangrowth",
+    "changed": false,
     "pokedex_id": 465,
     "type1": "Grass",
     "bst": 535,
@@ -78592,6 +79073,7 @@
   },
   {
     "name": "Electivire",
+    "changed": true,
     "pokedex_id": 466,
     "type1": "Electric",
     "type2": "Fighting",
@@ -78839,6 +79321,7 @@
   },
   {
     "name": "Magmortar",
+    "changed": true,
     "pokedex_id": 467,
     "type1": "Fire",
     "bst": 540,
@@ -79058,6 +79541,7 @@
   },
   {
     "name": "Togekiss",
+    "changed": true,
     "pokedex_id": 468,
     "type1": "Fairy",
     "type2": "Flying",
@@ -79246,6 +79730,7 @@
   },
   {
     "name": "Yanmega",
+    "changed": true,
     "pokedex_id": 469,
     "type1": "Bug",
     "type2": "Dragon",
@@ -79430,6 +79915,7 @@
   },
   {
     "name": "Leafeon",
+    "changed": true,
     "pokedex_id": 470,
     "type1": "Grass",
     "bst": 525,
@@ -79593,6 +80079,7 @@
   },
   {
     "name": "Glaceon",
+    "changed": true,
     "pokedex_id": 471,
     "type1": "Ice",
     "bst": 525,
@@ -79740,6 +80227,7 @@
   },
   {
     "name": "Gliscor",
+    "changed": true,
     "pokedex_id": 472,
     "type1": "Poison",
     "type2": "Flying",
@@ -79908,6 +80396,7 @@
   },
   {
     "name": "Mamoswine",
+    "changed": false,
     "pokedex_id": 473,
     "type1": "Ice",
     "type2": "Ground",
@@ -80153,8 +80642,9 @@
   },
   {
     "name": "PorygonZ",
+    "changed": true,
     "pokedex_id": 474,
-    "type1": "Normal",
+    "type1": "Psychic",
     "bst": 535,
     "abilities": [
       "Adaptability",
@@ -80239,7 +80729,8 @@
             "move": "Zap Cannon",
             "level": 62
           }
-        ]
+        ],
+        "type2": "Electric"
       },
       {
         "name": "Porygon2",
@@ -80315,7 +80806,8 @@
             "move": "Hyper Beam",
             "level": 67
           }
-        ]
+        ],
+        "type2": "Electric"
       }
     ],
     "moves": [
@@ -80387,10 +80879,12 @@
         "move": "Hyper Beam",
         "level": 67
       }
-    ]
+    ],
+    "type2": "Electric"
   },
   {
     "name": "Gallade",
+    "changed": false,
     "pokedex_id": 475,
     "type1": "Psychic",
     "type2": "Fighting",
@@ -80627,6 +81121,7 @@
   },
   {
     "name": "Unovan Gallade",
+    "changed": true,
     "pokedex_id": 475,
     "type1": "Flying",
     "type2": "Fighting",
@@ -80684,7 +81179,8 @@
             "move": "Lucky Chant",
             "level": 17
           }
-        ]
+        ],
+        "type2": "Fairy"
       },
       {
         "name": "Kirlia",
@@ -80749,7 +81245,8 @@
             "move": "Aerial Ace",
             "level": 28
           }
-        ]
+        ],
+        "type2": "Fairy"
       }
     ],
     "moves": [
@@ -80810,6 +81307,7 @@
   },
   {
     "name": "Probopass",
+    "changed": true,
     "pokedex_id": 476,
     "type1": "Rock",
     "type2": "Flying",
@@ -80997,6 +81495,7 @@
   },
   {
     "name": "Dusknoir",
+    "changed": true,
     "pokedex_id": 477,
     "type1": "Ghost",
     "bst": 525,
@@ -81260,6 +81759,7 @@
   },
   {
     "name": "Froslass",
+    "changed": false,
     "pokedex_id": 478,
     "type1": "Ice",
     "type2": "Ghost",
@@ -81394,6 +81894,7 @@
   },
   {
     "name": "Rotom",
+    "changed": false,
     "pokedex_id": 479,
     "type1": "Electric",
     "type2": "Ghost",
@@ -81475,7 +81976,7 @@
         "type1": "Electric",
         "type2": "Flying",
         "abilities": [
-          "Levitate"
+          "Motor Drive"
         ],
         "evo": "Change form",
         "moves": [
@@ -81818,12 +82319,13 @@
   },
   {
     "name": "Rotom (Fan)",
+    "changed": true,
     "pokedex_id": 479,
     "type1": "Electric",
     "type2": "Flying",
     "bst": 520,
     "abilities": [
-      "Levitate"
+      "Motor Drive"
     ],
     "stats": {
       "hp": 50,
@@ -81896,6 +82398,7 @@
   },
   {
     "name": "Rotom (Frost)",
+    "changed": false,
     "pokedex_id": 479,
     "type1": "Electric",
     "type2": "Ice",
@@ -81974,6 +82477,7 @@
   },
   {
     "name": "Rotom (Heat)",
+    "changed": false,
     "pokedex_id": 479,
     "type1": "Electric",
     "type2": "Fire",
@@ -82052,6 +82556,7 @@
   },
   {
     "name": "Rotom (Mow)",
+    "changed": false,
     "pokedex_id": 479,
     "type1": "Electric",
     "type2": "Grass",
@@ -82130,6 +82635,7 @@
   },
   {
     "name": "Rotom (Wash)",
+    "changed": false,
     "pokedex_id": 479,
     "type1": "Electric",
     "type2": "Water",
@@ -82208,6 +82714,7 @@
   },
   {
     "name": "Patrat",
+    "changed": true,
     "pokedex_id": 504,
     "type1": "Normal",
     "bst": 255,
@@ -82405,6 +82912,7 @@
   },
   {
     "name": "Watchog",
+    "changed": true,
     "pokedex_id": 505,
     "type1": "Dark",
     "type2": "Psychic",
@@ -82601,6 +83109,7 @@
   },
   {
     "name": "Lillipup",
+    "changed": true,
     "pokedex_id": 506,
     "type1": "Normal",
     "bst": 275,
@@ -82883,6 +83392,7 @@
   },
   {
     "name": "Herdier",
+    "changed": true,
     "pokedex_id": 507,
     "type1": "Normal",
     "bst": 370,
@@ -83166,6 +83676,7 @@
   },
   {
     "name": "Stoutland",
+    "changed": true,
     "pokedex_id": 508,
     "type1": "Normal",
     "type2": "Ice",
@@ -83447,6 +83958,7 @@
   },
   {
     "name": "Purrloin",
+    "changed": false,
     "pokedex_id": 509,
     "type1": "Dark",
     "bst": 281,
@@ -83611,6 +84123,7 @@
   },
   {
     "name": "Liepard",
+    "changed": true,
     "pokedex_id": 510,
     "type1": "Dark",
     "bst": 470,
@@ -83774,6 +84287,7 @@
   },
   {
     "name": "Pansage",
+    "changed": true,
     "pokedex_id": 511,
     "type1": "Grass",
     "bst": 320,
@@ -83885,6 +84399,7 @@
   },
   {
     "name": "Simisage",
+    "changed": true,
     "pokedex_id": 512,
     "type1": "Grass",
     "bst": 510,
@@ -83995,6 +84510,7 @@
   },
   {
     "name": "Pansear",
+    "changed": true,
     "pokedex_id": 513,
     "type1": "Fire",
     "bst": 320,
@@ -84106,6 +84622,7 @@
   },
   {
     "name": "Simisear",
+    "changed": true,
     "pokedex_id": 514,
     "type1": "Fire",
     "bst": 510,
@@ -84216,6 +84733,7 @@
   },
   {
     "name": "Panpour",
+    "changed": true,
     "pokedex_id": 515,
     "type1": "Water",
     "bst": 320,
@@ -84327,6 +84845,7 @@
   },
   {
     "name": "Simipour",
+    "changed": true,
     "pokedex_id": 516,
     "type1": "Water",
     "bst": 510,
@@ -84437,6 +84956,7 @@
   },
   {
     "name": "Munna",
+    "changed": true,
     "pokedex_id": 517,
     "type1": "Psychic",
     "bst": 292,
@@ -84606,6 +85126,7 @@
   },
   {
     "name": "Musharna",
+    "changed": true,
     "pokedex_id": 518,
     "type1": "Psychic",
     "type2": "Fairy",
@@ -84774,20 +85295,21 @@
   },
   {
     "name": "Pidove",
+    "changed": true,
     "pokedex_id": 519,
     "type1": "Normal",
     "type2": "Flying",
-    "bst": 264,
+    "bst": 275,
     "abilities": [
       "Big Pecks",
       "Super Luck"
     ],
     "stats": {
       "hp": 50,
-      "atk": 55,
+      "atk": 36,
       "def": 50,
-      "spa": 36,
-      "spd": 30,
+      "spa": 55,
+      "spd": 41,
       "spe": 43
     },
     "preevo": [],
@@ -85004,20 +85526,21 @@
   },
   {
     "name": "Tranquill",
+    "changed": true,
     "pokedex_id": 520,
     "type1": "Normal",
     "type2": "Flying",
-    "bst": 358,
+    "bst": 370,
     "abilities": [
       "Big Pecks",
       "Super Luck"
     ],
     "stats": {
       "hp": 62,
-      "atk": 77,
+      "atk": 50,
       "def": 62,
-      "spa": 50,
-      "spd": 42,
+      "spa": 77,
+      "spd": 54,
       "spe": 65
     },
     "preevo": [
@@ -85235,20 +85758,21 @@
   },
   {
     "name": "Unfezant",
+    "changed": true,
     "pokedex_id": 521,
     "type1": "Normal",
     "type2": "Flying",
-    "bst": 488,
+    "bst": 500,
     "abilities": [
       "Big Pecks",
       "Super Luck"
     ],
     "stats": {
       "hp": 80,
-      "atk": 115,
+      "atk": 65,
       "def": 80,
-      "spa": 65,
-      "spd": 55,
+      "spa": 115,
+      "spd": 67,
       "spe": 93
     },
     "preevo": [
@@ -85464,6 +85988,7 @@
   },
   {
     "name": "Blitzle",
+    "changed": true,
     "pokedex_id": 522,
     "type1": "Electric",
     "bst": 295,
@@ -85487,7 +86012,7 @@
         "name": "Zebstrika",
         "pokedex_id": 523,
         "type1": "Electric",
-        "type2": "Normal",
+        "type2": "Dark",
         "abilities": [
           "Lightning Rod",
           "Sap Sipper"
@@ -85617,9 +86142,10 @@
   },
   {
     "name": "Zebstrika",
+    "changed": true,
     "pokedex_id": 523,
     "type1": "Electric",
-    "type2": "Normal",
+    "type2": "Dark",
     "bst": 517,
     "abilities": [
       "Lightning Rod",
@@ -85769,6 +86295,7 @@
   },
   {
     "name": "Roggenrola",
+    "changed": false,
     "pokedex_id": 524,
     "type1": "Rock",
     "bst": 280,
@@ -85977,6 +86504,7 @@
   },
   {
     "name": "Boldore",
+    "changed": true,
     "pokedex_id": 525,
     "type1": "Rock",
     "bst": 390,
@@ -86186,6 +86714,7 @@
   },
   {
     "name": "Gigalith",
+    "changed": true,
     "pokedex_id": 526,
     "type1": "Rock",
     "bst": 515,
@@ -86393,6 +86922,7 @@
   },
   {
     "name": "Woobat",
+    "changed": true,
     "pokedex_id": 527,
     "type1": "Flying",
     "type2": "Fairy",
@@ -86538,6 +87068,7 @@
   },
   {
     "name": "Swoobat",
+    "changed": true,
     "pokedex_id": 528,
     "type1": "Flying",
     "type2": "Fairy",
@@ -86682,6 +87213,7 @@
   },
   {
     "name": "Drilbur",
+    "changed": false,
     "pokedex_id": 529,
     "type1": "Ground",
     "bst": 328,
@@ -86842,6 +87374,7 @@
   },
   {
     "name": "Excadrill",
+    "changed": false,
     "pokedex_id": 530,
     "type1": "Ground",
     "type2": "Steel",
@@ -87001,6 +87534,7 @@
   },
   {
     "name": "Audino",
+    "changed": true,
     "pokedex_id": 531,
     "type1": "Normal",
     "type2": "Fairy",
@@ -87095,6 +87629,7 @@
   },
   {
     "name": "Timburr",
+    "changed": true,
     "pokedex_id": 532,
     "type1": "Fighting",
     "bst": 305,
@@ -87373,6 +87908,7 @@
   },
   {
     "name": "Gurdurr",
+    "changed": true,
     "pokedex_id": 533,
     "type1": "Fighting",
     "bst": 405,
@@ -87652,6 +88188,7 @@
   },
   {
     "name": "Conkeldurr",
+    "changed": true,
     "pokedex_id": 534,
     "type1": "Fighting",
     "type2": "Rock",
@@ -87929,6 +88466,7 @@
   },
   {
     "name": "Tympole",
+    "changed": false,
     "pokedex_id": 535,
     "type1": "Water",
     "bst": 294,
@@ -88174,6 +88712,7 @@
   },
   {
     "name": "Palpitoad",
+    "changed": true,
     "pokedex_id": 536,
     "type1": "Water",
     "type2": "Poison",
@@ -88420,6 +88959,7 @@
   },
   {
     "name": "Seismitoad",
+    "changed": true,
     "pokedex_id": 537,
     "type1": "Water",
     "type2": "Poison",
@@ -88664,6 +89204,7 @@
   },
   {
     "name": "Throh",
+    "changed": true,
     "pokedex_id": 538,
     "type1": "Fighting",
     "type2": "Fire",
@@ -88761,6 +89302,7 @@
   },
   {
     "name": "Sawk",
+    "changed": true,
     "pokedex_id": 539,
     "type1": "Fighting",
     "type2": "Water",
@@ -88858,6 +89400,7 @@
   },
   {
     "name": "Sewaddle",
+    "changed": false,
     "pokedex_id": 540,
     "type1": "Bug",
     "type2": "Grass",
@@ -89016,6 +89559,7 @@
   },
   {
     "name": "Swadloon",
+    "changed": false,
     "pokedex_id": 541,
     "type1": "Bug",
     "type2": "Grass",
@@ -89175,6 +89719,7 @@
   },
   {
     "name": "Leavanny",
+    "changed": false,
     "pokedex_id": 542,
     "type1": "Bug",
     "type2": "Grass",
@@ -89332,6 +89877,7 @@
   },
   {
     "name": "Venipede",
+    "changed": false,
     "pokedex_id": 543,
     "type1": "Bug",
     "type2": "Poison",
@@ -89562,6 +90108,7 @@
   },
   {
     "name": "Whirlipede",
+    "changed": false,
     "pokedex_id": 544,
     "type1": "Bug",
     "type2": "Poison",
@@ -89793,6 +90340,7 @@
   },
   {
     "name": "Scolipede",
+    "changed": false,
     "pokedex_id": 545,
     "type1": "Bug",
     "type2": "Poison",
@@ -90022,6 +90570,7 @@
   },
   {
     "name": "Cottonee",
+    "changed": false,
     "pokedex_id": 546,
     "type1": "Grass",
     "bst": 280,
@@ -90149,6 +90698,7 @@
   },
   {
     "name": "Whimsicott",
+    "changed": false,
     "pokedex_id": 547,
     "type1": "Grass",
     "bst": 480,
@@ -90275,6 +90825,7 @@
   },
   {
     "name": "Petilil",
+    "changed": false,
     "pokedex_id": 548,
     "type1": "Grass",
     "bst": 280,
@@ -90528,6 +91079,7 @@
   },
   {
     "name": "Lilligant",
+    "changed": true,
     "pokedex_id": 549,
     "type1": "Grass",
     "type2": "Fairy",
@@ -90678,6 +91230,7 @@
   },
   {
     "name": "Lilligant (Hisui)",
+    "changed": false,
     "pokedex_id": 549,
     "type1": "Grass",
     "type2": "Fighting",
@@ -90867,6 +91420,7 @@
   },
   {
     "name": "Basculin",
+    "changed": true,
     "pokedex_id": 550,
     "type1": "Water",
     "type2": "Ghost",
@@ -91143,6 +91697,7 @@
   },
   {
     "name": "Sandile",
+    "changed": true,
     "pokedex_id": 551,
     "type1": "Water",
     "type2": "Dark",
@@ -91397,6 +91952,7 @@
   },
   {
     "name": "Krokorok",
+    "changed": true,
     "pokedex_id": 552,
     "type1": "Water",
     "type2": "Dark",
@@ -91652,6 +92208,7 @@
   },
   {
     "name": "Krookodile",
+    "changed": true,
     "pokedex_id": 553,
     "type1": "Water",
     "type2": "Dark",
@@ -91905,6 +92462,7 @@
   },
   {
     "name": "Darumaka",
+    "changed": false,
     "pokedex_id": 554,
     "type1": "Fire",
     "bst": 315,
@@ -92093,6 +92651,7 @@
   },
   {
     "name": "Darmanitan",
+    "changed": true,
     "pokedex_id": 555,
     "type1": "Fire",
     "type2": "Fighting",
@@ -92383,6 +92942,7 @@
   },
   {
     "name": "Darmanitan (Zen)",
+    "changed": false,
     "pokedex_id": 555,
     "type1": "Fire",
     "type2": "Psychic",
@@ -92570,6 +93130,7 @@
   },
   {
     "name": "Maractus",
+    "changed": true,
     "pokedex_id": 556,
     "type1": "Grass",
     "type2": "Ground",
@@ -92680,6 +93241,7 @@
   },
   {
     "name": "Dwebble",
+    "changed": false,
     "pokedex_id": 557,
     "type1": "Bug",
     "type2": "Rock",
@@ -92833,6 +93395,7 @@
   },
   {
     "name": "Crustle",
+    "changed": false,
     "pokedex_id": 558,
     "type1": "Bug",
     "type2": "Rock",
@@ -92985,6 +93548,7 @@
   },
   {
     "name": "Scraggy",
+    "changed": false,
     "pokedex_id": 559,
     "type1": "Dark",
     "type2": "Fighting",
@@ -93150,6 +93714,7 @@
   },
   {
     "name": "Scrafty",
+    "changed": false,
     "pokedex_id": 560,
     "type1": "Dark",
     "type2": "Fighting",
@@ -93314,6 +93879,7 @@
   },
   {
     "name": "Sigilyph",
+    "changed": false,
     "pokedex_id": 561,
     "type1": "Psychic",
     "type2": "Flying",
@@ -93404,6 +93970,7 @@
   },
   {
     "name": "Yamask",
+    "changed": false,
     "pokedex_id": 562,
     "type1": "Ghost",
     "bst": 303,
@@ -93582,6 +94149,7 @@
   },
   {
     "name": "Cofagrigus",
+    "changed": true,
     "pokedex_id": 563,
     "type1": "Ghost",
     "type2": "Steel",
@@ -93759,6 +94327,7 @@
   },
   {
     "name": "Tirtouga",
+    "changed": false,
     "pokedex_id": 564,
     "type1": "Water",
     "type2": "Rock",
@@ -93940,6 +94509,7 @@
   },
   {
     "name": "Carracosta",
+    "changed": false,
     "pokedex_id": 565,
     "type1": "Water",
     "type2": "Rock",
@@ -94120,6 +94690,7 @@
   },
   {
     "name": "Archen",
+    "changed": true,
     "pokedex_id": 566,
     "type1": "Rock",
     "type2": "Dragon",
@@ -94301,6 +94872,7 @@
   },
   {
     "name": "Archeops",
+    "changed": true,
     "pokedex_id": 567,
     "type1": "Rock",
     "type2": "Dragon",
@@ -94481,6 +95053,7 @@
   },
   {
     "name": "Trubbish",
+    "changed": false,
     "pokedex_id": 568,
     "type1": "Poison",
     "bst": 329,
@@ -94668,6 +95241,7 @@
   },
   {
     "name": "Garbodor",
+    "changed": true,
     "pokedex_id": 569,
     "type1": "Poison",
     "type2": "Steel",
@@ -94854,6 +95428,7 @@
   },
   {
     "name": "Zorua",
+    "changed": false,
     "pokedex_id": 570,
     "type1": "Dark",
     "bst": 330,
@@ -95044,6 +95619,7 @@
   },
   {
     "name": "Zorua (Hisui)",
+    "changed": false,
     "pokedex_id": 570,
     "type1": "Normal",
     "type2": "Ghost",
@@ -95201,6 +95777,7 @@
   },
   {
     "name": "Zoroark",
+    "changed": true,
     "pokedex_id": 571,
     "type1": "Dark",
     "type2": "Fairy",
@@ -95390,6 +95967,7 @@
   },
   {
     "name": "Zoroark (Hisui)",
+    "changed": false,
     "pokedex_id": 571,
     "type1": "Normal",
     "type2": "Ghost",
@@ -95546,6 +96124,7 @@
   },
   {
     "name": "Minccino",
+    "changed": true,
     "pokedex_id": 572,
     "type1": "Normal",
     "bst": 300,
@@ -95719,6 +96298,7 @@
   },
   {
     "name": "Cinccino",
+    "changed": true,
     "pokedex_id": 573,
     "type1": "Normal",
     "type2": "Fairy",
@@ -95891,6 +96471,7 @@
   },
   {
     "name": "Gothita",
+    "changed": false,
     "pokedex_id": 574,
     "type1": "Psychic",
     "bst": 290,
@@ -96163,6 +96744,7 @@
   },
   {
     "name": "Gothorita",
+    "changed": false,
     "pokedex_id": 575,
     "type1": "Psychic",
     "bst": 390,
@@ -96436,6 +97018,7 @@
   },
   {
     "name": "Gothitelle",
+    "changed": true,
     "pokedex_id": 576,
     "type1": "Psychic",
     "type2": "Dark",
@@ -96707,6 +97290,7 @@
   },
   {
     "name": "Solosis",
+    "changed": false,
     "pokedex_id": 577,
     "type1": "Psychic",
     "bst": 290,
@@ -96950,6 +97534,7 @@
   },
   {
     "name": "Duosion",
+    "changed": false,
     "pokedex_id": 578,
     "type1": "Psychic",
     "bst": 370,
@@ -97194,6 +97779,7 @@
   },
   {
     "name": "Reuniclus",
+    "changed": false,
     "pokedex_id": 579,
     "type1": "Psychic",
     "bst": 490,
@@ -97436,6 +98022,7 @@
   },
   {
     "name": "Ducklett",
+    "changed": false,
     "pokedex_id": 580,
     "type1": "Water",
     "type2": "Flying",
@@ -97593,6 +98180,7 @@
   },
   {
     "name": "Swanna",
+    "changed": false,
     "pokedex_id": 581,
     "type1": "Water",
     "type2": "Flying",
@@ -97749,6 +98337,7 @@
   },
   {
     "name": "Vanillite",
+    "changed": false,
     "pokedex_id": 582,
     "type1": "Ice",
     "bst": 305,
@@ -98026,6 +98615,7 @@
   },
   {
     "name": "Vanillish",
+    "changed": true,
     "pokedex_id": 583,
     "type1": "Ice",
     "bst": 395,
@@ -98304,6 +98894,7 @@
   },
   {
     "name": "Vanilluxe",
+    "changed": true,
     "pokedex_id": 584,
     "type1": "Ice",
     "type2": "Fairy",
@@ -98580,6 +99171,7 @@
   },
   {
     "name": "Deerling",
+    "changed": false,
     "pokedex_id": 585,
     "type1": "Normal",
     "type2": "Grass",
@@ -98745,6 +99337,7 @@
   },
   {
     "name": "Sawsbuck",
+    "changed": false,
     "pokedex_id": 586,
     "type1": "Normal",
     "type2": "Grass",
@@ -98909,6 +99502,7 @@
   },
   {
     "name": "Emolga",
+    "changed": true,
     "pokedex_id": 587,
     "type1": "Electric",
     "type2": "Flying",
@@ -98990,6 +99584,7 @@
   },
   {
     "name": "Karrablast",
+    "changed": true,
     "pokedex_id": 588,
     "type1": "Bug",
     "bst": 315,
@@ -99146,6 +99741,7 @@
   },
   {
     "name": "Escavalier",
+    "changed": true,
     "pokedex_id": 589,
     "type1": "Bug",
     "type2": "Steel",
@@ -99301,6 +99897,7 @@
   },
   {
     "name": "Foongus",
+    "changed": true,
     "pokedex_id": 590,
     "type1": "Grass",
     "type2": "Poison",
@@ -99458,6 +100055,7 @@
   },
   {
     "name": "Amoonguss",
+    "changed": true,
     "pokedex_id": 591,
     "type1": "Grass",
     "type2": "Poison",
@@ -99694,6 +100292,7 @@
   },
   {
     "name": "Frillish",
+    "changed": true,
     "pokedex_id": 592,
     "type1": "Water",
     "type2": "Poison",
@@ -99853,6 +100452,7 @@
   },
   {
     "name": "Jellicent",
+    "changed": true,
     "pokedex_id": 593,
     "type1": "Poison",
     "type2": "Water",
@@ -100011,6 +100611,7 @@
   },
   {
     "name": "Alomomola",
+    "changed": true,
     "pokedex_id": 594,
     "type1": "Water",
     "type2": "Fairy",
@@ -100117,6 +100718,7 @@
   },
   {
     "name": "Joltik",
+    "changed": true,
     "pokedex_id": 595,
     "type1": "Bug",
     "type2": "Electric",
@@ -100282,6 +100884,7 @@
   },
   {
     "name": "Galvantula",
+    "changed": true,
     "pokedex_id": 596,
     "type1": "Bug",
     "type2": "Electric",
@@ -100446,6 +101049,7 @@
   },
   {
     "name": "Ferroseed",
+    "changed": false,
     "pokedex_id": 597,
     "type1": "Grass",
     "type2": "Steel",
@@ -100609,6 +101213,7 @@
   },
   {
     "name": "Ferrothorn",
+    "changed": false,
     "pokedex_id": 598,
     "type1": "Grass",
     "type2": "Steel",
@@ -100771,6 +101376,7 @@
   },
   {
     "name": "Klink",
+    "changed": true,
     "pokedex_id": 599,
     "type1": "Steel",
     "bst": 300,
@@ -101045,6 +101651,7 @@
   },
   {
     "name": "Klang",
+    "changed": true,
     "pokedex_id": 600,
     "type1": "Steel",
     "bst": 440,
@@ -101320,6 +101927,7 @@
   },
   {
     "name": "Klinklang",
+    "changed": true,
     "pokedex_id": 601,
     "type1": "Steel",
     "type2": "Electric",
@@ -101593,6 +102201,7 @@
   },
   {
     "name": "Tynamo",
+    "changed": true,
     "pokedex_id": 602,
     "type1": "Electric",
     "bst": 275,
@@ -101799,6 +102408,7 @@
   },
   {
     "name": "Eelektrik",
+    "changed": true,
     "pokedex_id": 603,
     "type1": "Electric",
     "bst": 405,
@@ -102006,6 +102616,7 @@
   },
   {
     "name": "Eelektross",
+    "changed": true,
     "pokedex_id": 604,
     "type1": "Electric",
     "type2": "Water",
@@ -102211,6 +102822,7 @@
   },
   {
     "name": "Elgyem",
+    "changed": true,
     "pokedex_id": 605,
     "type1": "Psychic",
     "bst": 335,
@@ -102390,6 +103002,7 @@
   },
   {
     "name": "Beheeyem",
+    "changed": true,
     "pokedex_id": 606,
     "type1": "Psychic",
     "bst": 485,
@@ -102568,6 +103181,7 @@
   },
   {
     "name": "Litwick",
+    "changed": true,
     "pokedex_id": 607,
     "type1": "Ghost",
     "type2": "Fire",
@@ -102770,6 +103384,7 @@
   },
   {
     "name": "Lampent",
+    "changed": true,
     "pokedex_id": 608,
     "type1": "Ghost",
     "type2": "Fire",
@@ -102973,6 +103588,7 @@
   },
   {
     "name": "Chandelure",
+    "changed": false,
     "pokedex_id": 609,
     "type1": "Ghost",
     "type2": "Fire",
@@ -103174,6 +103790,7 @@
   },
   {
     "name": "Axew",
+    "changed": false,
     "pokedex_id": 610,
     "type1": "Dragon",
     "bst": 320,
@@ -103450,6 +104067,7 @@
   },
   {
     "name": "Fraxure",
+    "changed": false,
     "pokedex_id": 611,
     "type1": "Dragon",
     "bst": 410,
@@ -103727,6 +104345,7 @@
   },
   {
     "name": "Haxorus",
+    "changed": true,
     "pokedex_id": 612,
     "type1": "Dragon",
     "type2": "Steel",
@@ -104002,6 +104621,7 @@
   },
   {
     "name": "Cubchoo",
+    "changed": false,
     "pokedex_id": 613,
     "type1": "Ice",
     "bst": 305,
@@ -104194,6 +104814,7 @@
   },
   {
     "name": "Beartic",
+    "changed": true,
     "pokedex_id": 614,
     "type1": "Ice",
     "type2": "Fighting",
@@ -104385,6 +105006,7 @@
   },
   {
     "name": "Cryogonal",
+    "changed": true,
     "pokedex_id": 615,
     "type1": "Ice",
     "type2": "Flying",
@@ -104494,6 +105116,7 @@
   },
   {
     "name": "Shelmet",
+    "changed": false,
     "pokedex_id": 616,
     "type1": "Bug",
     "bst": 305,
@@ -104674,6 +105297,7 @@
   },
   {
     "name": "Accelgor",
+    "changed": true,
     "pokedex_id": 617,
     "type1": "Bug",
     "type2": "Dark",
@@ -104853,6 +105477,7 @@
   },
   {
     "name": "Stunfisk",
+    "changed": false,
     "pokedex_id": 618,
     "type1": "Ground",
     "type2": "Electric",
@@ -104935,6 +105560,7 @@
   },
   {
     "name": "Stunfisk (Galar)",
+    "changed": false,
     "pokedex_id": 618,
     "type1": "Ground",
     "type2": "Steel",
@@ -105017,6 +105643,7 @@
   },
   {
     "name": "Mienfoo",
+    "changed": false,
     "pokedex_id": 619,
     "type1": "Fighting",
     "bst": 350,
@@ -105180,6 +105807,7 @@
   },
   {
     "name": "Mienshao",
+    "changed": false,
     "pokedex_id": 620,
     "type1": "Fighting",
     "bst": 510,
@@ -105342,6 +105970,7 @@
   },
   {
     "name": "Druddigon",
+    "changed": true,
     "pokedex_id": 621,
     "type1": "Dragon",
     "type2": "Fighting",
@@ -105452,6 +106081,7 @@
   },
   {
     "name": "Golett",
+    "changed": true,
     "pokedex_id": 622,
     "type1": "Ghost",
     "type2": "Steel",
@@ -105629,6 +106259,7 @@
   },
   {
     "name": "Golurk",
+    "changed": true,
     "pokedex_id": 623,
     "type1": "Ghost",
     "type2": "Steel",
@@ -105805,6 +106436,7 @@
   },
   {
     "name": "Pawniard",
+    "changed": true,
     "pokedex_id": 624,
     "type1": "Dark",
     "type2": "Steel",
@@ -105974,6 +106606,7 @@
   },
   {
     "name": "Bisharp",
+    "changed": true,
     "pokedex_id": 625,
     "type1": "Dark",
     "type2": "Steel",
@@ -106222,6 +106855,7 @@
   },
   {
     "name": "Bouffalant",
+    "changed": false,
     "pokedex_id": 626,
     "type1": "Normal",
     "bst": 490,
@@ -106299,6 +106933,7 @@
   },
   {
     "name": "Rufflet",
+    "changed": true,
     "pokedex_id": 627,
     "type1": "Normal",
     "type2": "Flying",
@@ -106550,6 +107185,7 @@
   },
   {
     "name": "Braviary",
+    "changed": true,
     "pokedex_id": 628,
     "type1": "Normal",
     "type2": "Flying",
@@ -106718,6 +107354,7 @@
   },
   {
     "name": "Braviary (Hisui)",
+    "changed": false,
     "pokedex_id": 628,
     "type1": "Psychic",
     "type2": "Flying",
@@ -106888,6 +107525,7 @@
   },
   {
     "name": "Vullaby",
+    "changed": true,
     "pokedex_id": 629,
     "type1": "Dark",
     "type2": "Flying",
@@ -107057,6 +107695,7 @@
   },
   {
     "name": "Mandibuzz",
+    "changed": true,
     "pokedex_id": 630,
     "type1": "Dark",
     "type2": "Flying",
@@ -107225,6 +107864,7 @@
   },
   {
     "name": "Heatmor",
+    "changed": true,
     "pokedex_id": 631,
     "type1": "Fire",
     "bst": 500,
@@ -107319,6 +107959,7 @@
   },
   {
     "name": "Durant",
+    "changed": false,
     "pokedex_id": 632,
     "type1": "Bug",
     "type2": "Steel",
@@ -107401,6 +108042,7 @@
   },
   {
     "name": "Deino",
+    "changed": true,
     "pokedex_id": 633,
     "type1": "Dragon",
     "type2": "Poison",
@@ -107635,6 +108277,7 @@
   },
   {
     "name": "Zweilous",
+    "changed": true,
     "pokedex_id": 634,
     "type1": "Dragon",
     "type2": "Poison",
@@ -107870,6 +108513,7 @@
   },
   {
     "name": "Hydreigon",
+    "changed": true,
     "pokedex_id": 635,
     "type1": "Dragon",
     "type2": "Poison",
@@ -108187,6 +108831,7 @@
   },
   {
     "name": "Larvesta",
+    "changed": false,
     "pokedex_id": 636,
     "type1": "Bug",
     "type2": "Fire",
@@ -108323,6 +108968,7 @@
   },
   {
     "name": "Volcarona",
+    "changed": true,
     "pokedex_id": 637,
     "type1": "Bug",
     "type2": "Fire",
@@ -108628,6 +109274,7 @@
   },
   {
     "name": "Fletchling",
+    "changed": false,
     "pokedex_id": 661,
     "type1": "Normal",
     "type2": "Flying",
@@ -108865,6 +109512,7 @@
   },
   {
     "name": "Fletchinder",
+    "changed": false,
     "pokedex_id": 662,
     "type1": "Fire",
     "type2": "Flying",
@@ -109103,6 +109751,7 @@
   },
   {
     "name": "Talonflame",
+    "changed": false,
     "pokedex_id": 663,
     "type1": "Fire",
     "type2": "Flying",
@@ -109339,6 +109988,7 @@
   },
   {
     "name": "Inkay",
+    "changed": false,
     "pokedex_id": 686,
     "type1": "Dark",
     "type2": "Psychic",
@@ -109526,6 +110176,7 @@
   },
   {
     "name": "Malamar",
+    "changed": false,
     "pokedex_id": 687,
     "type1": "Dark",
     "type2": "Psychic",
@@ -109712,6 +110363,7 @@
   },
   {
     "name": "Clauncher",
+    "changed": true,
     "pokedex_id": 692,
     "type1": "Water",
     "bst": 330,
@@ -109871,6 +110523,7 @@
   },
   {
     "name": "Clawitzer",
+    "changed": true,
     "pokedex_id": 693,
     "type1": "Water",
     "bst": 500,
@@ -110029,6 +110682,7 @@
   },
   {
     "name": "Helioptile",
+    "changed": false,
     "pokedex_id": 694,
     "type1": "Electric",
     "type2": "Normal",
@@ -110140,6 +110794,7 @@
   },
   {
     "name": "Heliolisk",
+    "changed": false,
     "pokedex_id": 695,
     "type1": "Electric",
     "type2": "Normal",
@@ -110250,6 +110905,7 @@
   },
   {
     "name": "Tyrunt",
+    "changed": false,
     "pokedex_id": 696,
     "type1": "Rock",
     "type2": "Dragon",
@@ -110421,6 +111077,7 @@
   },
   {
     "name": "Tyrantrum",
+    "changed": false,
     "pokedex_id": 697,
     "type1": "Rock",
     "type2": "Dragon",
@@ -110591,6 +111248,7 @@
   },
   {
     "name": "Amaura",
+    "changed": true,
     "pokedex_id": 698,
     "type1": "Dragon",
     "type2": "Ice",
@@ -110778,6 +111436,7 @@
   },
   {
     "name": "Aurorus",
+    "changed": true,
     "pokedex_id": 699,
     "type1": "Dragon",
     "type2": "Ice",
@@ -110964,6 +111623,7 @@
   },
   {
     "name": "Sylveon",
+    "changed": false,
     "pokedex_id": 700,
     "type1": "Fairy",
     "bst": 525,
@@ -111116,6 +111776,7 @@
   },
   {
     "name": "Goomy",
+    "changed": false,
     "pokedex_id": 704,
     "type1": "Dragon",
     "bst": 300,
@@ -111311,6 +111972,7 @@
   },
   {
     "name": "Sliggoo",
+    "changed": false,
     "pokedex_id": 705,
     "type1": "Dragon",
     "bst": 452,
@@ -111510,6 +112172,7 @@
   },
   {
     "name": "Sliggoo (Hisui)",
+    "changed": false,
     "pokedex_id": 705,
     "type1": "Steel",
     "type2": "Dragon",
@@ -111739,6 +112402,7 @@
   },
   {
     "name": "Goodra",
+    "changed": false,
     "pokedex_id": 706,
     "type1": "Dragon",
     "bst": 600,
@@ -111936,6 +112600,7 @@
   },
   {
     "name": "Goodra (Hisui)",
+    "changed": false,
     "pokedex_id": 706,
     "type1": "Steel",
     "type2": "Dragon",
@@ -112163,6 +112828,7 @@
   },
   {
     "name": "Phantump",
+    "changed": false,
     "pokedex_id": 708,
     "type1": "Ghost",
     "type2": "Grass",
@@ -112310,6 +112976,7 @@
   },
   {
     "name": "Trevenant",
+    "changed": false,
     "pokedex_id": 709,
     "type1": "Ghost",
     "type2": "Grass",
@@ -112456,6 +113123,7 @@
   },
   {
     "name": "Bergmite",
+    "changed": false,
     "pokedex_id": 712,
     "type1": "Ice",
     "bst": 304,
@@ -112633,6 +113301,7 @@
   },
   {
     "name": "Avalugg",
+    "changed": false,
     "pokedex_id": 713,
     "type1": "Ice",
     "bst": 514,
@@ -112808,364 +113477,8 @@
     ]
   },
   {
-    "name": "Noibat",
-    "pokedex_id": 714,
-    "type1": "Flying",
-    "type2": "Dragon",
-    "bst": 245,
-    "abilities": [
-      "Frisk",
-      "Infiltrator"
-    ],
-    "stats": {
-      "hp": 40,
-      "atk": 30,
-      "def": 35,
-      "spa": 45,
-      "spd": 40,
-      "spe": 55
-    },
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/714.gif",
-    "preevo": [],
-    "evo": "Level 48",
-    "next": [
-      {
-        "name": "Noivern",
-        "pokedex_id": 715,
-        "type1": "Flying",
-        "type2": "Dragon",
-        "abilities": [
-          "Frisk",
-          "Infiltrator"
-        ],
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/715.gif",
-        "moves": [
-          {
-            "move": "Absorb",
-            "level": 1
-          },
-          {
-            "move": "Hyper Voice",
-            "level": 1
-          },
-          {
-            "move": "Dragon Pulse",
-            "level": 1
-          },
-          {
-            "move": "Hurricane",
-            "level": 1
-          },
-          {
-            "move": "Moonlight",
-            "level": 1
-          },
-          {
-            "move": "Screech",
-            "level": 1
-          },
-          {
-            "move": "Supersonic",
-            "level": 1
-          },
-          {
-            "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Gust",
-            "level": 11
-          },
-          {
-            "move": "Bite",
-            "level": 13
-          },
-          {
-            "move": "Wing Attack",
-            "level": 16
-          },
-          {
-            "move": "Agility",
-            "level": 18
-          },
-          {
-            "move": "Air Cutter",
-            "level": 23
-          },
-          {
-            "move": "Roost",
-            "level": 27
-          },
-          {
-            "move": "Razor Wind",
-            "level": 31
-          },
-          {
-            "move": "Tailwind",
-            "level": 35
-          },
-          {
-            "move": "Whirlwind",
-            "level": 40
-          },
-          {
-            "move": "Super Fang",
-            "level": 43
-          },
-          {
-            "move": "Air Slash",
-            "level": 53
-          }
-        ]
-      }
-    ],
-    "moves": [
-      {
-        "move": "Screech",
-        "level": 1
-      },
-      {
-        "move": "Supersonic",
-        "level": 1
-      },
-      {
-        "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Absorb",
-        "level": 5
-      },
-      {
-        "move": "Gust",
-        "level": 11
-      },
-      {
-        "move": "Bite",
-        "level": 13
-      },
-      {
-        "move": "Wing Attack",
-        "level": 16
-      },
-      {
-        "move": "Agility",
-        "level": 18
-      },
-      {
-        "move": "Air Cutter",
-        "level": 23
-      },
-      {
-        "move": "Roost",
-        "level": 27
-      },
-      {
-        "move": "Razor Wind",
-        "level": 31
-      },
-      {
-        "move": "Tailwind",
-        "level": 35
-      },
-      {
-        "move": "Whirlwind",
-        "level": 40
-      },
-      {
-        "move": "Super Fang",
-        "level": 43
-      },
-      {
-        "move": "Air Slash",
-        "level": 48
-      },
-      {
-        "move": "Hurricane",
-        "level": 58
-      }
-    ]
-  },
-  {
-    "name": "Noivern",
-    "pokedex_id": 715,
-    "type1": "Flying",
-    "type2": "Dragon",
-    "bst": 535,
-    "abilities": [
-      "Frisk",
-      "Infiltrator"
-    ],
-    "stats": {
-      "hp": 85,
-      "atk": 70,
-      "def": 80,
-      "spa": 97,
-      "spd": 80,
-      "spe": 123
-    },
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/715.gif",
-    "preevo": [
-      {
-        "name": "Noibat",
-        "pokedex_id": 714,
-        "type1": "Flying",
-        "type2": "Dragon",
-        "abilities": [
-          "Frisk",
-          "Infiltrator"
-        ],
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/714.gif",
-        "evo": "Level 48",
-        "moves": [
-          {
-            "move": "Screech",
-            "level": 1
-          },
-          {
-            "move": "Supersonic",
-            "level": 1
-          },
-          {
-            "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Absorb",
-            "level": 5
-          },
-          {
-            "move": "Gust",
-            "level": 11
-          },
-          {
-            "move": "Bite",
-            "level": 13
-          },
-          {
-            "move": "Wing Attack",
-            "level": 16
-          },
-          {
-            "move": "Agility",
-            "level": 18
-          },
-          {
-            "move": "Air Cutter",
-            "level": 23
-          },
-          {
-            "move": "Roost",
-            "level": 27
-          },
-          {
-            "move": "Razor Wind",
-            "level": 31
-          },
-          {
-            "move": "Tailwind",
-            "level": 35
-          },
-          {
-            "move": "Whirlwind",
-            "level": 40
-          },
-          {
-            "move": "Super Fang",
-            "level": 43
-          },
-          {
-            "move": "Air Slash",
-            "level": 48
-          },
-          {
-            "move": "Hurricane",
-            "level": 58
-          }
-        ]
-      }
-    ],
-    "moves": [
-      {
-        "move": "Absorb",
-        "level": 1
-      },
-      {
-        "move": "Hyper Voice",
-        "level": 1
-      },
-      {
-        "move": "Dragon Pulse",
-        "level": 1
-      },
-      {
-        "move": "Hurricane",
-        "level": 1
-      },
-      {
-        "move": "Moonlight",
-        "level": 1
-      },
-      {
-        "move": "Screech",
-        "level": 1
-      },
-      {
-        "move": "Supersonic",
-        "level": 1
-      },
-      {
-        "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Gust",
-        "level": 11
-      },
-      {
-        "move": "Bite",
-        "level": 13
-      },
-      {
-        "move": "Wing Attack",
-        "level": 16
-      },
-      {
-        "move": "Agility",
-        "level": 18
-      },
-      {
-        "move": "Air Cutter",
-        "level": 23
-      },
-      {
-        "move": "Roost",
-        "level": 27
-      },
-      {
-        "move": "Razor Wind",
-        "level": 31
-      },
-      {
-        "move": "Tailwind",
-        "level": 35
-      },
-      {
-        "move": "Whirlwind",
-        "level": 40
-      },
-      {
-        "move": "Super Fang",
-        "level": 43
-      },
-      {
-        "move": "Air Slash",
-        "level": 53
-      }
-    ]
-  },
-  {
     "name": "Crabrawler",
+    "changed": false,
     "pokedex_id": 739,
     "type1": "Fighting",
     "bst": 338,
@@ -113312,6 +113625,7 @@
   },
   {
     "name": "Crabominable",
+    "changed": false,
     "pokedex_id": 740,
     "type1": "Fighting",
     "type2": "Ice",
@@ -113457,6 +113771,7 @@
   },
   {
     "name": "Oricorio",
+    "changed": false,
     "pokedex_id": 741,
     "type1": "Fire",
     "type2": "Flying",
@@ -113543,6 +113858,7 @@
   },
   {
     "name": "Oricorio (Pa'u)",
+    "changed": false,
     "pokedex_id": 741,
     "type1": "Psychic",
     "type2": "Flying",
@@ -113629,6 +113945,7 @@
   },
   {
     "name": "Oricorio (Pom-Pom)",
+    "changed": false,
     "pokedex_id": 741,
     "type1": "Electric",
     "type2": "Flying",
@@ -113715,6 +114032,7 @@
   },
   {
     "name": "Oricorio (Sensu)",
+    "changed": false,
     "pokedex_id": 741,
     "type1": "Ghost",
     "type2": "Flying",
@@ -113801,6 +114119,7 @@
   },
   {
     "name": "Dewpider",
+    "changed": false,
     "pokedex_id": 751,
     "type1": "Water",
     "type2": "Bug",
@@ -113948,6 +114267,7 @@
   },
   {
     "name": "Araquanid",
+    "changed": false,
     "pokedex_id": 752,
     "type1": "Water",
     "type2": "Bug",
@@ -114094,6 +114414,7 @@
   },
   {
     "name": "Wimpod",
+    "changed": false,
     "pokedex_id": 767,
     "type1": "Bug",
     "type2": "Water",
@@ -114215,6 +114536,7 @@
   },
   {
     "name": "Golisopod",
+    "changed": false,
     "pokedex_id": 768,
     "type1": "Bug",
     "type2": "Water",
@@ -114335,6 +114657,7 @@
   },
   {
     "name": "Sandygast",
+    "changed": false,
     "pokedex_id": 769,
     "type1": "Ghost",
     "type2": "Ground",
@@ -114486,6 +114809,7 @@
   },
   {
     "name": "Palossand",
+    "changed": false,
     "pokedex_id": 770,
     "type1": "Ghost",
     "type2": "Ground",
@@ -114636,6 +114960,7 @@
   },
   {
     "name": "Drampa",
+    "changed": false,
     "pokedex_id": 780,
     "type1": "Normal",
     "type2": "Dragon",
@@ -114719,6 +115044,7 @@
   },
   {
     "name": "Dhelmise",
+    "changed": false,
     "pokedex_id": 781,
     "type1": "Ghost",
     "type2": "Grass",
@@ -114813,6 +115139,7 @@
   },
   {
     "name": "Jangmo-o",
+    "changed": false,
     "pokedex_id": 782,
     "type1": "Dragon",
     "bst": 300,
@@ -115065,6 +115392,7 @@
   },
   {
     "name": "Hakamo-o",
+    "changed": false,
     "pokedex_id": 783,
     "type1": "Dragon",
     "type2": "Fighting",
@@ -115318,6 +115646,7 @@
   },
   {
     "name": "Kommo-o",
+    "changed": false,
     "pokedex_id": 784,
     "type1": "Dragon",
     "type2": "Fighting",
@@ -115569,6 +115898,7 @@
   },
   {
     "name": "Rookidee",
+    "changed": false,
     "pokedex_id": 821,
     "type1": "Flying",
     "bst": 245,
@@ -115768,6 +116098,7 @@
   },
   {
     "name": "Corvisquire",
+    "changed": false,
     "pokedex_id": 822,
     "type1": "Flying",
     "bst": 365,
@@ -115968,6 +116299,7 @@
   },
   {
     "name": "Corviknight",
+    "changed": false,
     "pokedex_id": 823,
     "type1": "Flying",
     "type2": "Steel",
@@ -116166,6 +116498,7 @@
   },
   {
     "name": "Silicobra",
+    "changed": true,
     "pokedex_id": 843,
     "type1": "Ground",
     "bst": 315,
@@ -116301,6 +116634,7 @@
   },
   {
     "name": "Sandaconda",
+    "changed": true,
     "pokedex_id": 844,
     "type1": "Ground",
     "bst": 510,
@@ -116435,6 +116769,7 @@
   },
   {
     "name": "Toxel",
+    "changed": false,
     "pokedex_id": 848,
     "type1": "Electric",
     "type2": "Poison",
@@ -116606,6 +116941,7 @@
   },
   {
     "name": "Toxtricity",
+    "changed": false,
     "pokedex_id": 849,
     "type1": "Electric",
     "type2": "Poison",
@@ -116776,20 +117112,21 @@
   },
   {
     "name": "Sizzlipede",
+    "changed": true,
     "pokedex_id": 850,
     "type1": "Fire",
     "type2": "Bug",
     "bst": 305,
     "abilities": [
       "Flash Fire",
-      "White Smoke"
+      "Speed Boost"
     ],
     "stats": {
       "hp": 50,
       "atk": 65,
       "def": 45,
-      "spa": 50,
-      "spd": 50,
+      "spa": 55,
+      "spd": 45,
       "spe": 45
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/850.gif",
@@ -116803,7 +117140,7 @@
         "type2": "Bug",
         "abilities": [
           "Flash Fire",
-          "White Smoke"
+          "Speed Boost"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/851.gif",
         "moves": [
@@ -116923,20 +117260,21 @@
   },
   {
     "name": "Centiskorch",
+    "changed": true,
     "pokedex_id": 851,
     "type1": "Fire",
     "type2": "Bug",
     "bst": 525,
     "abilities": [
       "Flash Fire",
-      "White Smoke"
+      "Speed Boost"
     ],
     "stats": {
       "hp": 100,
       "atk": 115,
       "def": 65,
-      "spa": 90,
-      "spd": 90,
+      "spa": 105,
+      "spd": 75,
       "spe": 65
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/851.gif",
@@ -116948,7 +117286,7 @@
         "type2": "Bug",
         "abilities": [
           "Flash Fire",
-          "White Smoke"
+          "Speed Boost"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/850.gif",
         "evo": "Level 28",
@@ -117069,6 +117407,7 @@
   },
   {
     "name": "Impidimp",
+    "changed": false,
     "pokedex_id": 859,
     "type1": "Dark",
     "type2": "Fairy",
@@ -117294,6 +117633,7 @@
   },
   {
     "name": "Morgrem",
+    "changed": false,
     "pokedex_id": 860,
     "type1": "Dark",
     "type2": "Fairy",
@@ -117520,6 +117860,7 @@
   },
   {
     "name": "Grimmsnarl",
+    "changed": false,
     "pokedex_id": 861,
     "type1": "Dark",
     "type2": "Fairy",
@@ -117744,6 +118085,7 @@
   },
   {
     "name": "Obstagoon",
+    "changed": false,
     "pokedex_id": 862,
     "type1": "Dark",
     "type2": "Normal",
@@ -118008,6 +118350,7 @@
   },
   {
     "name": "Perrserker",
+    "changed": false,
     "pokedex_id": 863,
     "type1": "Steel",
     "bst": 440,
@@ -118160,6 +118503,7 @@
   },
   {
     "name": "Cursola",
+    "changed": false,
     "pokedex_id": 864,
     "type1": "Ghost",
     "bst": 510,
@@ -118304,6 +118648,7 @@
   },
   {
     "name": "Sirfetch’d",
+    "changed": true,
     "pokedex_id": 865,
     "type1": "Fighting",
     "bst": 520,
@@ -118474,6 +118819,7 @@
   },
   {
     "name": "Snom",
+    "changed": false,
     "pokedex_id": 872,
     "type1": "Ice",
     "type2": "Bug",
@@ -118645,6 +118991,7 @@
   },
   {
     "name": "Frosmoth",
+    "changed": false,
     "pokedex_id": 873,
     "type1": "Ice",
     "type2": "Bug",
@@ -118815,6 +119162,7 @@
   },
   {
     "name": "Dreepy",
+    "changed": false,
     "pokedex_id": 885,
     "type1": "Dragon",
     "type2": "Ghost",
@@ -119056,6 +119404,7 @@
   },
   {
     "name": "Drakloak",
+    "changed": false,
     "pokedex_id": 886,
     "type1": "Dragon",
     "type2": "Ghost",
@@ -119298,20 +119647,21 @@
   },
   {
     "name": "Dragapult",
+    "changed": true,
     "pokedex_id": 887,
     "type1": "Dragon",
     "type2": "Ghost",
-    "bst": 600,
+    "bst": 550,
     "abilities": [
       "Clear Body",
       "Infiltrator"
     ],
     "stats": {
       "hp": 88,
-      "atk": 120,
-      "def": 75,
-      "spa": 100,
-      "spd": 75,
+      "atk": 100,
+      "def": 65,
+      "spa": 90,
+      "spd": 65,
       "spe": 142
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/887.gif",
@@ -119538,6 +119888,7 @@
   },
   {
     "name": "Wyrdeer",
+    "changed": false,
     "pokedex_id": 899,
     "type1": "Normal",
     "type2": "Psychic",
@@ -119691,6 +120042,7 @@
   },
   {
     "name": "Kleavor",
+    "changed": false,
     "pokedex_id": 900,
     "type1": "Bug",
     "type2": "Rock",
@@ -119861,6 +120213,7 @@
   },
   {
     "name": "Ursaluna",
+    "changed": false,
     "pokedex_id": 901,
     "type1": "Ground",
     "type2": "Normal",
@@ -119882,7 +120235,7 @@
       {
         "name": "Teddiursa",
         "pokedex_id": 216,
-        "type1": "Ground",
+        "type1": "Normal",
         "abilities": [
           "Mold Breaker",
           "Overcoat"
@@ -119958,12 +120311,13 @@
             "move": "Fling",
             "level": 57
           }
-        ]
+        ],
+        "type2": "Ground"
       },
       {
         "name": "Ursaring",
         "pokedex_id": 217,
-        "type1": "Ground",
+        "type1": "Normal",
         "abilities": [
           "Mold Breaker",
           "Overcoat"
@@ -120055,7 +120409,8 @@
             "move": "Hammer Arm",
             "level": 67
           }
-        ]
+        ],
+        "type2": "Ground"
       }
     ],
     "moves": [
@@ -120135,6 +120490,7 @@
   },
   {
     "name": "Basculegion",
+    "changed": false,
     "pokedex_id": 902,
     "type1": "Water",
     "type2": "Ghost",
@@ -120412,6 +120768,7 @@
   },
   {
     "name": "Basculegion (Female)",
+    "changed": false,
     "pokedex_id": 902,
     "type1": "Water",
     "type2": "Ghost",
@@ -120603,6 +120960,7 @@
   },
   {
     "name": "Sneasler",
+    "changed": false,
     "pokedex_id": 903,
     "type1": "Fighting",
     "type2": "Poison",
@@ -120749,6 +121107,7 @@
   },
   {
     "name": "Overqwil",
+    "changed": false,
     "pokedex_id": 904,
     "type1": "Dark",
     "type2": "Poison",
@@ -120923,6 +121282,7 @@
   },
   {
     "name": "Charcadet",
+    "changed": false,
     "pokedex_id": 935,
     "type1": "Fire",
     "bst": 255,
@@ -121163,6 +121523,7 @@
   },
   {
     "name": "Armarouge",
+    "changed": false,
     "pokedex_id": 936,
     "type1": "Fire",
     "type2": "Psychic",
@@ -121312,6 +121673,7 @@
   },
   {
     "name": "Ceruledge",
+    "changed": false,
     "pokedex_id": 937,
     "type1": "Fire",
     "type2": "Ghost",
@@ -121465,6 +121827,7 @@
   },
   {
     "name": "Wattrel",
+    "changed": false,
     "pokedex_id": 940,
     "type1": "Electric",
     "type2": "Flying",
@@ -121608,6 +121971,7 @@
   },
   {
     "name": "Kilowattrel",
+    "changed": false,
     "pokedex_id": 941,
     "type1": "Electric",
     "type2": "Flying",
@@ -121750,6 +122114,7 @@
   },
   {
     "name": "Capsakid",
+    "changed": false,
     "pokedex_id": 951,
     "type1": "Grass",
     "bst": 304,
@@ -121776,7 +122141,7 @@
         "type2": "Fire",
         "abilities": [
           "Chlorophyll",
-          "Insomnia"
+          "Moody"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/952.gif",
         "moves": [
@@ -121896,13 +122261,14 @@
   },
   {
     "name": "Scovillain",
+    "changed": true,
     "pokedex_id": 952,
     "type1": "Grass",
     "type2": "Fire",
     "bst": 486,
     "abilities": [
       "Chlorophyll",
-      "Insomnia"
+      "Moody"
     ],
     "stats": {
       "hp": 65,
@@ -122041,6 +122407,7 @@
   },
   {
     "name": "Annihilape",
+    "changed": false,
     "pokedex_id": 979,
     "type1": "Fighting",
     "type2": "Ghost",
@@ -122295,6 +122662,7 @@
   },
   {
     "name": "Clodsire",
+    "changed": false,
     "pokedex_id": 980,
     "type1": "Poison",
     "type2": "Ground",
@@ -122433,6 +122801,7 @@
   },
   {
     "name": "Farigiraf",
+    "changed": false,
     "pokedex_id": 981,
     "type1": "Normal",
     "type2": "Psychic",
@@ -122595,6 +122964,7 @@
   },
   {
     "name": "Kingambit",
+    "changed": false,
     "pokedex_id": 983,
     "type1": "Dark",
     "type2": "Steel",
@@ -122843,6 +123213,7 @@
   },
   {
     "name": "Great Tusk",
+    "changed": true,
     "pokedex_id": 984,
     "type1": "Ground",
     "type2": "Fighting",
@@ -123072,6 +123443,7 @@
   },
   {
     "name": "Scream Tail",
+    "changed": true,
     "pokedex_id": 985,
     "type1": "Fairy",
     "type2": "Psychic",
@@ -123096,7 +123468,8 @@
         "type1": "Normal",
         "type2": "Fairy",
         "abilities": [
-          "Cute Charm"
+          "Cute Charm",
+          "Friend Guard"
         ],
         "evo": "Level up with high friendship",
         "moves": [
@@ -123132,7 +123505,8 @@
         "type1": "Normal",
         "type2": "Fairy",
         "abilities": [
-          "Cute Charm"
+          "Cute Charm",
+          "Friend Guard"
         ],
         "evo": "Use Primal Gene",
         "moves": [
@@ -123269,6 +123643,7 @@
   },
   {
     "name": "Brute Bonnet",
+    "changed": true,
     "pokedex_id": 986,
     "type1": "Grass",
     "type2": "Dark",
@@ -123508,6 +123883,7 @@
   },
   {
     "name": "Flutter Mane",
+    "changed": true,
     "pokedex_id": 987,
     "type1": "Ghost",
     "type2": "Fairy",
@@ -123674,6 +124050,7 @@
   },
   {
     "name": "Slither Wing",
+    "changed": true,
     "pokedex_id": 988,
     "type1": "Bug",
     "type2": "Fighting",
@@ -123896,6 +124273,7 @@
   },
   {
     "name": "Sandy Shocks",
+    "changed": true,
     "pokedex_id": 989,
     "type1": "Electric",
     "type2": "Ground",
@@ -124163,6 +124541,7 @@
   },
   {
     "name": "Iron Treads",
+    "changed": true,
     "pokedex_id": 990,
     "type1": "Ground",
     "type2": "Steel",
@@ -124388,6 +124767,7 @@
   },
   {
     "name": "Iron Bundle",
+    "changed": true,
     "pokedex_id": 991,
     "type1": "Ice",
     "type2": "Water",
@@ -124494,6 +124874,7 @@
   },
   {
     "name": "Iron Hands",
+    "changed": true,
     "pokedex_id": 992,
     "type1": "Fighting",
     "type2": "Electric",
@@ -124755,6 +125136,7 @@
   },
   {
     "name": "Iron Jugulis",
+    "changed": true,
     "pokedex_id": 993,
     "type1": "Dark",
     "type2": "Flying",
@@ -125075,6 +125457,7 @@
   },
   {
     "name": "Iron Moth",
+    "changed": true,
     "pokedex_id": 994,
     "type1": "Fire",
     "type2": "Poison",
@@ -125301,6 +125684,7 @@
   },
   {
     "name": "Iron Thorns",
+    "changed": true,
     "pokedex_id": 995,
     "type1": "Rock",
     "type2": "Electric",
@@ -125617,6 +126001,7 @@
   },
   {
     "name": "Gimmighoul",
+    "changed": false,
     "pokedex_id": 999,
     "type1": "Ghost",
     "bst": 300,
@@ -125749,6 +126134,7 @@
   },
   {
     "name": "Gholdengo",
+    "changed": false,
     "pokedex_id": 1000,
     "type1": "Steel",
     "type2": "Ghost",
@@ -125880,6 +126266,7 @@
   },
   {
     "name": "Roaring Moon",
+    "changed": true,
     "pokedex_id": 1005,
     "type1": "Dragon",
     "type2": "Dark",
@@ -126194,6 +126581,7 @@
   },
   {
     "name": "Iron Valiant",
+    "changed": true,
     "pokedex_id": 1006,
     "type1": "Fairy",
     "type2": "Fighting",
