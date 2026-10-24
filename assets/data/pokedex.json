@@ -3355,7 +3355,7 @@
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10101.gif",
     "preevo": [],
-    "evo": "Level up at night holding Never-Melt Ice",
+    "evo": "Use Ice Stone",
     "next": [
       {
         "name": "Sandslash (Alola)",
@@ -3648,7 +3648,7 @@
   },
   {
     "name": "Sandslash (Alola)",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 28,
     "type1": "Ice",
     "type2": "Steel",
@@ -3675,7 +3675,7 @@
           "Snow Cloak"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10101.gif",
-        "evo": "Level up at night holding Never-Melt Ice",
+        "evo": "Use Ice Stone",
         "moves": [
           {
             "move": "Defense Curl",
@@ -5513,7 +5513,7 @@
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10103.gif",
     "preevo": [],
-    "evo": "Level up during the day holding Never-Melt Ice",
+    "evo": "Use Ice Stone",
     "next": [
       {
         "name": "Ninetales (Alola)",
@@ -5814,7 +5814,7 @@
   },
   {
     "name": "Ninetales (Alola)",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 38,
     "type1": "Ice",
     "type2": "Fairy",
@@ -5842,7 +5842,7 @@
           "Snow Warning"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10103.gif",
-        "evo": "Level up during the day holding Never-Melt Ice",
+        "evo": "Use Ice Stone",
         "moves": [
           {
             "move": "Powder Snow",
@@ -9528,12 +9528,12 @@
             "level": 25
           },
           {
-            "move": "Rage",
-            "level": 28
-          },
-          {
             "move": "Swagger",
             "level": 35
+          },
+          {
+            "move": "Rage",
+            "level": 36
           },
           {
             "move": "Cross Chop",
@@ -9627,7 +9627,7 @@
   },
   {
     "name": "Primeape",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 57,
     "type1": "Fighting",
     "bst": 455,
@@ -9763,12 +9763,12 @@
         "level": 25
       },
       {
-        "move": "Rage",
-        "level": 28
-      },
-      {
         "move": "Swagger",
         "level": 35
+      },
+      {
+        "move": "Rage",
+        "level": 36
       },
       {
         "move": "Cross Chop",
@@ -15488,7 +15488,7 @@
           "Oblivious",
           "Own Tempo"
         ],
-        "evo": "Trade holding King's Rock",
+        "evo": "Use King's Rock",
         "moves": [
           {
             "move": "Curse",
@@ -15832,7 +15832,7 @@
             "level": 45
           }
         ],
-        "evo": "Level up during the day holding Poison Barb"
+        "evo": "Use Poison Stone"
       },
       {
         "name": "Slowking (Galar)",
@@ -15942,7 +15942,7 @@
             "level": 45
           }
         ],
-        "evo": "Level up at night holding Poison Barb"
+        "evo": "Use Poison Stone"
       }
     ],
     "moves": [
@@ -16375,7 +16375,7 @@
   },
   {
     "name": "Slowbro (Galar)",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 80,
     "type1": "Poison",
     "type2": "Psychic",
@@ -16403,7 +16403,7 @@
           "Own Tempo"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10164.gif",
-        "evo": "Level up during the day holding Poison Barb",
+        "evo": "Use Poison Stone",
         "moves": [
           {
             "move": "Curse",
@@ -17291,7 +17291,7 @@
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10166.gif",
     "preevo": [],
-    "evo": "Level up during the day holding Stick",
+    "evo": "Level 36",
     "next": [
       {
         "name": "Sirfetch’d",
@@ -18836,7 +18836,7 @@
       "spe": 40
     },
     "preevo": [],
-    "evo": "Use Water Stone",
+    "evo": "Use Dusk Stone",
     "next": [
       {
         "name": "Cloyster",
@@ -18998,7 +18998,7 @@
           "Shell Armor",
           "Skill Link"
         ],
-        "evo": "Use Water Stone",
+        "evo": "Use Dusk Stone",
         "moves": [
           {
             "move": "Tackle",
@@ -19124,13 +19124,13 @@
   },
   {
     "name": "Gastly",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 92,
     "type1": "Ghost",
-    "type2": "Poison",
+    "type2": "Dark",
     "bst": 310,
     "abilities": [
-      "Levitate"
+      "Cursed Body"
     ],
     "stats": {
       "hp": 30,
@@ -19147,9 +19147,9 @@
         "name": "Haunter",
         "pokedex_id": 93,
         "type1": "Ghost",
-        "type2": "Poison",
+        "type2": "Dark",
         "abilities": [
-          "Levitate"
+          "Cursed Body"
         ],
         "evo": "Level 35",
         "moves": [
@@ -19223,9 +19223,9 @@
         "name": "Gengar",
         "pokedex_id": 94,
         "type1": "Ghost",
-        "type2": "Poison",
+        "type2": "Dark",
         "abilities": [
-          "Levitate"
+          "Cursed Body"
         ],
         "moves": [
           {
@@ -19363,10 +19363,10 @@
     "changed": true,
     "pokedex_id": 93,
     "type1": "Ghost",
-    "type2": "Poison",
+    "type2": "Dark",
     "bst": 405,
     "abilities": [
-      "Levitate"
+      "Cursed Body"
     ],
     "stats": {
       "hp": 45,
@@ -19381,9 +19381,9 @@
         "name": "Gastly",
         "pokedex_id": 92,
         "type1": "Ghost",
-        "type2": "Poison",
+        "type2": "Dark",
         "abilities": [
-          "Levitate"
+          "Cursed Body"
         ],
         "evo": "Level 25",
         "moves": [
@@ -19456,9 +19456,9 @@
         "name": "Gengar",
         "pokedex_id": 94,
         "type1": "Ghost",
-        "type2": "Poison",
+        "type2": "Dark",
         "abilities": [
-          "Levitate"
+          "Cursed Body"
         ],
         "moves": [
           {
@@ -19600,10 +19600,10 @@
     "changed": true,
     "pokedex_id": 94,
     "type1": "Ghost",
-    "type2": "Poison",
+    "type2": "Dark",
     "bst": 500,
     "abilities": [
-      "Levitate"
+      "Cursed Body"
     ],
     "stats": {
       "hp": 60,
@@ -19618,9 +19618,9 @@
         "name": "Gastly",
         "pokedex_id": 92,
         "type1": "Ghost",
-        "type2": "Poison",
+        "type2": "Dark",
         "abilities": [
-          "Levitate"
+          "Cursed Body"
         ],
         "evo": "Level 25",
         "moves": [
@@ -19690,9 +19690,9 @@
         "name": "Haunter",
         "pokedex_id": 93,
         "type1": "Ghost",
-        "type2": "Poison",
+        "type2": "Dark",
         "abilities": [
-          "Levitate"
+          "Cursed Body"
         ],
         "evo": "Level 35",
         "moves": [
@@ -20044,7 +20044,7 @@
             "level": 49
           }
         ],
-        "evo": "Trade holding Metal Coat"
+        "evo": "Use Metal Stone"
       },
       {
         "name": "Unovan Steelix",
@@ -22264,7 +22264,7 @@
           "Cursed Body",
           "Lightning Rod"
         ],
-        "evo": "Level up at night holding Spell Tag",
+        "evo": "Use Fire Stone",
         "moves": [
           {
             "move": "Bone Club",
@@ -22541,7 +22541,7 @@
           "Lightning Rod"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/104.gif",
-        "evo": "Level up at night holding Spell Tag",
+        "evo": "Use Fire Stone",
         "moves": [
           {
             "move": "Growl",
@@ -24106,7 +24106,7 @@
   },
   {
     "name": "Chansey",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 113,
     "type1": "Normal",
     "bst": 450,
@@ -24131,7 +24131,7 @@
           "Natural Cure",
           "Serene Grace"
         ],
-        "evo": "Level up during the day holding Oval Stone",
+        "evo": "Use Moon Stone",
         "moves": [
           {
             "move": "Charm",
@@ -25825,7 +25825,7 @@
           "Swarm",
           "Technician"
         ],
-        "evo": "Level up during the day holding Metal Coat",
+        "evo": "Use Metal Stone",
         "moves": [
           {
             "move": "Bullet Punch",
@@ -25910,7 +25910,7 @@
           "Swarm",
           "Sheer Force"
         ],
-        "evo": "Level up at night holding Hard Stone",
+        "evo": "Use Dusk Stone",
         "moves": [
           {
             "move": "Leer",
@@ -26214,7 +26214,7 @@
         ]
       }
     ],
-    "evo": "Level up during the day holding Electirizer",
+    "evo": "Use Electirizer",
     "next": [
       {
         "name": "Electivire",
@@ -27753,7 +27753,7 @@
           "Ice Body",
           "Keen Eye"
         ],
-        "evo": "Level up during the day holding Never-Melt Ice",
+        "evo": "Use Ice Stone",
         "moves": [
           {
             "move": "Helping Hand",
@@ -36654,7 +36654,7 @@
     "name": "Wooper",
     "changed": true,
     "pokedex_id": 194,
-    "type1": "Water",
+    "type1": "Fairy",
     "type2": "Ground",
     "bst": 230,
     "abilities": [
@@ -36675,7 +36675,7 @@
       {
         "name": "Quagsire",
         "pokedex_id": 195,
-        "type1": "Water",
+        "type1": "Fairy",
         "type2": "Ground",
         "abilities": [
           "Damp",
@@ -36691,7 +36691,7 @@
             "level": 1
           },
           {
-            "move": "Water Gun",
+            "move": "Disarming Voice",
             "level": 1
           },
           {
@@ -36699,7 +36699,7 @@
             "level": 9
           },
           {
-            "move": "Slam",
+            "move": "Draining Kiss",
             "level": 15
           },
           {
@@ -36719,7 +36719,7 @@
             "level": 36
           },
           {
-            "move": "Rain Dance",
+            "move": "Play Rough",
             "level": 41
           },
           {
@@ -36731,7 +36731,7 @@
             "level": 48
           },
           {
-            "move": "Muddy Water",
+            "move": "Moonblast",
             "level": 53
           }
         ]
@@ -36743,7 +36743,7 @@
         "level": 1
       },
       {
-        "move": "Water Gun",
+        "move": "Disarming Voice",
         "level": 1
       },
       {
@@ -36755,7 +36755,7 @@
         "level": 9
       },
       {
-        "move": "Slam",
+        "move": "Draining Kiss",
         "level": 15
       },
       {
@@ -36775,7 +36775,7 @@
         "level": 33
       },
       {
-        "move": "Rain Dance",
+        "move": "Play Rough",
         "level": 37
       },
       {
@@ -36787,7 +36787,7 @@
         "level": 43
       },
       {
-        "move": "Muddy Water",
+        "move": "Moonblast",
         "level": 47
       }
     ]
@@ -36936,7 +36936,7 @@
     "name": "Quagsire",
     "changed": true,
     "pokedex_id": 195,
-    "type1": "Water",
+    "type1": "Fairy",
     "type2": "Ground",
     "bst": 450,
     "abilities": [
@@ -36955,7 +36955,7 @@
       {
         "name": "Wooper",
         "pokedex_id": 194,
-        "type1": "Water",
+        "type1": "Fairy",
         "type2": "Ground",
         "abilities": [
           "Damp",
@@ -36968,7 +36968,7 @@
             "level": 1
           },
           {
-            "move": "Water Gun",
+            "move": "Disarming Voice",
             "level": 1
           },
           {
@@ -36980,7 +36980,7 @@
             "level": 9
           },
           {
-            "move": "Slam",
+            "move": "Draining Kiss",
             "level": 15
           },
           {
@@ -37000,7 +37000,7 @@
             "level": 33
           },
           {
-            "move": "Rain Dance",
+            "move": "Play Rough",
             "level": 37
           },
           {
@@ -37012,7 +37012,7 @@
             "level": 43
           },
           {
-            "move": "Muddy Water",
+            "move": "Moonblast",
             "level": 47
           }
         ]
@@ -37028,7 +37028,7 @@
         "level": 1
       },
       {
-        "move": "Water Gun",
+        "move": "Disarming Voice",
         "level": 1
       },
       {
@@ -37036,7 +37036,7 @@
         "level": 9
       },
       {
-        "move": "Slam",
+        "move": "Draining Kiss",
         "level": 15
       },
       {
@@ -37056,7 +37056,7 @@
         "level": 36
       },
       {
-        "move": "Rain Dance",
+        "move": "Play Rough",
         "level": 41
       },
       {
@@ -37068,7 +37068,7 @@
         "level": 48
       },
       {
-        "move": "Muddy Water",
+        "move": "Moonblast",
         "level": 53
       }
     ]
@@ -37509,7 +37509,7 @@
   },
   {
     "name": "Slowking",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 199,
     "type1": "Water",
     "type2": "Psychic",
@@ -37536,7 +37536,7 @@
           "Oblivious",
           "Own Tempo"
         ],
-        "evo": "Trade holding King's Rock",
+        "evo": "Use King's Rock",
         "moves": [
           {
             "move": "Curse",
@@ -37682,7 +37682,7 @@
   },
   {
     "name": "Slowking (Galar)",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 199,
     "type1": "Poison",
     "type2": "Psychic",
@@ -37710,7 +37710,7 @@
           "Own Tempo"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10164.gif",
-        "evo": "Level up at night holding Poison Barb",
+        "evo": "Use Poison Stone",
         "moves": [
           {
             "move": "Curse",
@@ -38693,7 +38693,7 @@
     "changed": true,
     "pokedex_id": 206,
     "type1": "Normal",
-    "type2": "Fairy",
+    "type2": "Dragon",
     "bst": 455,
     "abilities": [
       "Serene Grace",
@@ -38722,7 +38722,7 @@
         "level": 4
       },
       {
-        "move": "Disarming Voice",
+        "move": "Twister",
         "level": 6
       },
       {
@@ -38742,7 +38742,7 @@
         "level": 16
       },
       {
-        "move": "Draining Kiss",
+        "move": "Dragon Tail",
         "level": 16
       },
       {
@@ -38762,7 +38762,7 @@
         "level": 28
       },
       {
-        "move": "Dazzling Gleam",
+        "move": "Dragon Pulse",
         "level": 28
       },
       {
@@ -38778,7 +38778,7 @@
         "level": 37
       },
       {
-        "move": "Play Rough",
+        "move": "Outrage",
         "level": 38
       },
       {
@@ -38819,7 +38819,7 @@
       "spe": 85
     },
     "preevo": [],
-    "evo": "Level up at night holding Razor Fang",
+    "evo": "Level 32",
     "next": [
       {
         "name": "Gliscor",
@@ -38971,7 +38971,7 @@
   },
   {
     "name": "Steelix",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 208,
     "type1": "Steel",
     "type2": "Ground",
@@ -38998,7 +38998,7 @@
           "Rock Head",
           "Sturdy"
         ],
-        "evo": "Trade holding Metal Coat",
+        "evo": "Use Metal Stone",
         "moves": [
           {
             "move": "Bind",
@@ -39863,7 +39863,7 @@
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10234.gif",
     "preevo": [],
-    "evo": "Level up knowing Pin Missile",
+    "evo": "Level 34",
     "next": [
       {
         "name": "Overqwil",
@@ -40020,7 +40020,7 @@
   },
   {
     "name": "Scizor",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 212,
     "type1": "Bug",
     "type2": "Steel",
@@ -40047,7 +40047,7 @@
           "Swarm",
           "Technician"
         ],
-        "evo": "Level up during the day holding Metal Coat",
+        "evo": "Use Metal Stone",
         "moves": [
           {
             "move": "Vacuum Wave",
@@ -40506,7 +40506,7 @@
       "spe": 115
     },
     "preevo": [],
-    "evo": "Level up at night holding Razor Claw",
+    "evo": "Level 33",
     "next": [
       {
         "name": "Weavile",
@@ -40684,7 +40684,7 @@
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10235.gif",
     "preevo": [],
-    "evo": "Level up during the day holding Razor Claw",
+    "evo": "Level 35",
     "next": [
       {
         "name": "Sneasler",
@@ -41438,7 +41438,7 @@
           "Aftermath",
           "Stench"
         ],
-        "evo": "Use Black Sludge",
+        "evo": "Use Poison Stone",
         "moves": [
           {
             "move": "Acid Armor",
@@ -41708,7 +41708,7 @@
           "spd": 50,
           "spe": 20
         },
-        "evo": "Use Black Sludge",
+        "evo": "Use Poison Stone",
         "moves": [
           {
             "move": "Yawn",
@@ -45299,7 +45299,7 @@
           "Static",
           "Vital Spirit"
         ],
-        "evo": "Level up during the day holding Electirizer",
+        "evo": "Use Electirizer",
         "moves": [
           {
             "move": "Quick Attack",
@@ -45858,7 +45858,7 @@
           "Natural Cure",
           "Serene Grace"
         ],
-        "evo": "Level up during the day holding Oval Stone",
+        "evo": "Use Moon Stone",
         "moves": [
           {
             "move": "Charm",
@@ -47291,7 +47291,7 @@
           "Gluttony"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10175.gif",
-        "evo": "Level up at night holding Black Glasses",
+        "evo": "Level 34",
         "moves": [
           {
             "move": "Sweet Kiss",
@@ -47767,7 +47767,7 @@
         ]
       }
     ],
-    "evo": "Level up at night holding Black Glasses",
+    "evo": "Level 34",
     "next": [
       {
         "name": "Obstagoon",
@@ -47969,7 +47969,7 @@
         "abilities": [
           "Shed Skin"
         ],
-        "evo": "Level 7",
+        "evo": "Level 7 (random)",
         "moves": [
           {
             "move": "Harden",
@@ -47988,7 +47988,7 @@
         "abilities": [
           "Shed Skin"
         ],
-        "evo": "Level 7",
+        "evo": "Level 7 (random)",
         "moves": [
           {
             "move": "Harden",
@@ -48042,7 +48042,7 @@
           "Shield Dust",
           "Run Away"
         ],
-        "evo": "Level 7",
+        "evo": "Level 7 (random)",
         "moves": [
           {
             "move": "Tackle",
@@ -48169,7 +48169,7 @@
           "Shield Dust",
           "Run Away"
         ],
-        "evo": "Level 7",
+        "evo": "Level 7 (random)",
         "moves": [
           {
             "move": "Tackle",
@@ -48290,7 +48290,7 @@
           "Shield Dust",
           "Run Away"
         ],
-        "evo": "Level 7",
+        "evo": "Level 7 (random)",
         "moves": [
           {
             "move": "Tackle",
@@ -48403,7 +48403,7 @@
           "Shield Dust",
           "Run Away"
         ],
-        "evo": "Level 7",
+        "evo": "Level 7 (random)",
         "moves": [
           {
             "move": "Tackle",
@@ -50397,7 +50397,7 @@
         "abilities": [
           "Steadfast"
         ],
-        "evo": "Use Dawn Stone",
+        "evo": "Use Dawn Stone (male)",
         "moves": [
           {
             "move": "Confusion",
@@ -50478,7 +50478,7 @@
           "Justified",
           "Inner Focus"
         ],
-        "evo": "Level up while knowing Aerial Ace",
+        "evo": "Level up knowing Aerial Ace",
         "moves": [
           {
             "move": "Leer",
@@ -52371,7 +52371,7 @@
         "abilities": [
           "Wonder Guard"
         ],
-        "evo": "Level 20",
+        "evo": "Level 20 (empty party slot and a Poké Ball in the Bag)",
         "moves": [
           {
             "move": "Harden",
@@ -52635,7 +52635,7 @@
           "Compound Eyes",
           "Run Away"
         ],
-        "evo": "Level 20",
+        "evo": "Level 20 (empty party slot and a Poké Ball in the Bag)",
         "moves": [
           {
             "move": "Scratch",
@@ -54650,7 +54650,7 @@
     "name": "Sableye",
     "changed": true,
     "pokedex_id": 302,
-    "type1": "Ghost",
+    "type1": "Fairy",
     "type2": "Rock",
     "bst": 440,
     "abilities": [
@@ -54688,7 +54688,7 @@
         "level": 8
       },
       {
-        "move": "Astonish",
+        "move": "Disarming Voice",
         "level": 11
       },
       {
@@ -54708,7 +54708,7 @@
         "level": 22
       },
       {
-        "move": "Shadow Sneak",
+        "move": "Draining Kiss",
         "level": 25
       },
       {
@@ -54716,7 +54716,7 @@
         "level": 28
       },
       {
-        "move": "Shadow Claw",
+        "move": "Play Rough",
         "level": 39
       },
       {
@@ -54732,7 +54732,7 @@
         "level": 53
       },
       {
-        "move": "Shadow Ball",
+        "move": "Moonblast",
         "level": 57
       },
       {
@@ -60042,10 +60042,11 @@
     "name": "Swablu",
     "changed": true,
     "pokedex_id": 333,
-    "type1": "Fairy",
-    "type2": "Flying",
+    "type1": "Flying",
+    "type2": "Fairy",
     "bst": 310,
     "abilities": [
+      "White Smoke",
       "Natural Cure"
     ],
     "stats": {
@@ -60123,9 +60124,10 @@
       {
         "name": "Altaria",
         "pokedex_id": 334,
-        "type1": "Fairy",
-        "type2": "Dragon",
+        "type1": "Dragon",
+        "type2": "Fairy",
         "abilities": [
+          "Levitate",
           "Natural Cure"
         ],
         "moves": [
@@ -60210,7 +60212,7 @@
         "type1": "Fairy",
         "type2": "Electric",
         "abilities": [
-          "Static",
+          "Levitate",
           "Cloud Nine"
         ],
         "evo": "Use Thunder Stone",
@@ -60301,10 +60303,11 @@
     "name": "Altaria",
     "changed": true,
     "pokedex_id": 334,
-    "type1": "Fairy",
-    "type2": "Dragon",
+    "type1": "Dragon",
+    "type2": "Fairy",
     "bst": 490,
     "abilities": [
+      "Levitate",
       "Natural Cure"
     ],
     "stats": {
@@ -60319,9 +60322,10 @@
       {
         "name": "Swablu",
         "pokedex_id": 333,
-        "type1": "Fairy",
-        "type2": "Flying",
+        "type1": "Flying",
+        "type2": "Fairy",
         "abilities": [
+          "White Smoke",
           "Natural Cure"
         ],
         "evo": "Level 35",
@@ -60472,7 +60476,7 @@
     "type2": "Electric",
     "bst": 490,
     "abilities": [
-      "Static",
+      "Levitate",
       "Cloud Nine"
     ],
     "stats": {
@@ -60488,10 +60492,11 @@
       {
         "name": "Swablu",
         "pokedex_id": 333,
-        "type1": "Fairy",
-        "type2": "Flying",
+        "type1": "Flying",
+        "type2": "Fairy",
         "bst": 310,
         "abilities": [
+          "White Smoke",
           "Natural Cure"
         ],
         "stats": {
@@ -61988,13 +61993,14 @@
   },
   {
     "name": "Lileep",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 345,
     "type1": "Rock",
-    "type2": "Grass",
+    "type2": "Poison",
     "bst": 355,
     "abilities": [
-      "Suction Cups"
+      "Suction Cups",
+      "Arena Trap"
     ],
     "stats": {
       "hp": 66,
@@ -62011,9 +62017,10 @@
         "name": "Cradily",
         "pokedex_id": 346,
         "type1": "Rock",
-        "type2": "Grass",
+        "type2": "Poison",
         "abilities": [
-          "Suction Cups"
+          "Suction Cups",
+          "Arena Trap"
         ],
         "moves": [
           {
@@ -62029,7 +62036,7 @@
             "level": 1
           },
           {
-            "move": "Ingrain",
+            "move": "Clear Smog",
             "level": 1
           },
           {
@@ -62049,7 +62056,7 @@
             "level": 46
           },
           {
-            "move": "Energy Ball",
+            "move": "Sludge Bomb",
             "level": 56
           },
           {
@@ -62085,7 +62092,7 @@
         "level": 8
       },
       {
-        "move": "Ingrain",
+        "move": "Clear Smog",
         "level": 15
       },
       {
@@ -62105,7 +62112,7 @@
         "level": 43
       },
       {
-        "move": "Energy Ball",
+        "move": "Sludge Bomb",
         "level": 50
       },
       {
@@ -62128,13 +62135,14 @@
   },
   {
     "name": "Cradily",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 346,
     "type1": "Rock",
-    "type2": "Grass",
+    "type2": "Poison",
     "bst": 495,
     "abilities": [
-      "Suction Cups"
+      "Suction Cups",
+      "Arena Trap"
     ],
     "stats": {
       "hp": 86,
@@ -62149,9 +62157,10 @@
         "name": "Lileep",
         "pokedex_id": 345,
         "type1": "Rock",
-        "type2": "Grass",
+        "type2": "Poison",
         "abilities": [
-          "Suction Cups"
+          "Suction Cups",
+          "Arena Trap"
         ],
         "evo": "Level 40",
         "moves": [
@@ -62168,7 +62177,7 @@
             "level": 8
           },
           {
-            "move": "Ingrain",
+            "move": "Clear Smog",
             "level": 15
           },
           {
@@ -62188,7 +62197,7 @@
             "level": 43
           },
           {
-            "move": "Energy Ball",
+            "move": "Sludge Bomb",
             "level": 50
           },
           {
@@ -62224,7 +62233,7 @@
         "level": 1
       },
       {
-        "move": "Ingrain",
+        "move": "Clear Smog",
         "level": 1
       },
       {
@@ -62244,7 +62253,7 @@
         "level": 46
       },
       {
-        "move": "Energy Ball",
+        "move": "Sludge Bomb",
         "level": 56
       },
       {
@@ -62546,7 +62555,7 @@
       "spe": 80
     },
     "preevo": [],
-    "evo": "Level up during the day holding Prism Scale",
+    "evo": "Use Prism Scale",
     "next": [
       {
         "name": "Milotic",
@@ -62658,7 +62667,7 @@
         "abilities": [
           "Swift Swim"
         ],
-        "evo": "Level up during the day holding Prism Scale",
+        "evo": "Use Prism Scale",
         "moves": [
           {
             "move": "Splash",
@@ -64223,7 +64232,7 @@
           "Inner Focus",
           "Moody"
         ],
-        "evo": "Level up at night holding Never-Melt Ice",
+        "evo": "Use Ice Stone",
         "moves": [
           {
             "move": "Powder Snow",
@@ -64307,7 +64316,7 @@
         "abilities": [
           "Snow Cloak"
         ],
-        "evo": "Use Dawn Stone",
+        "evo": "Use Dawn Stone (female)",
         "moves": [
           {
             "move": "Astonish",
@@ -64443,7 +64452,7 @@
           "Inner Focus",
           "Ice Body"
         ],
-        "evo": "Level up at night holding Never-Melt Ice",
+        "evo": "Use Ice Stone",
         "moves": [
           {
             "move": "Powder Snow",
@@ -65245,7 +65254,7 @@
           "Steadfast",
           "Intimidate"
         ],
-        "evo": "Level up at night holding Deep Sea Tooth",
+        "evo": "Use Deep Sea Tooth",
         "moves": [
           {
             "move": "Whirlpool",
@@ -65318,7 +65327,7 @@
           "Steadfast",
           "Shed Skin"
         ],
-        "evo": "Level up during the day holding Deep Sea Scale",
+        "evo": "Use Deep Sea Scale",
         "moves": [
           {
             "move": "Whirlpool",
@@ -65434,7 +65443,7 @@
           "Shell Armor",
           "Rattled"
         ],
-        "evo": "Level up at night holding Deep Sea Tooth",
+        "evo": "Use Deep Sea Tooth",
         "moves": [
           {
             "move": "Clamp",
@@ -65550,7 +65559,7 @@
           "Shell Armor",
           "Rattled"
         ],
-        "evo": "Level up during the day holding Deep Sea Scale",
+        "evo": "Use Deep Sea Scale",
         "moves": [
           {
             "move": "Clamp",
@@ -66228,7 +66237,7 @@
         "name": "Unovan Salamence",
         "pokedex_id": 373,
         "type1": "Dragon",
-        "type2": "Poison",
+        "type2": "Fire",
         "abilities": [
           "Rock Head",
           "Intimidate"
@@ -66244,7 +66253,7 @@
             "level": 1
           },
           {
-            "move": "Poison Sting",
+            "move": "Ember",
             "level": 1
           },
           {
@@ -66252,7 +66261,7 @@
             "level": 1
           },
           {
-            "move": "Poison Fang",
+            "move": "Fire Fang",
             "level": 40
           },
           {
@@ -66260,7 +66269,7 @@
             "level": 42
           },
           {
-            "move": "Cross Poison",
+            "move": "Flamethrower",
             "level": 45
           },
           {
@@ -66272,11 +66281,11 @@
             "level": 51
           },
           {
-            "move": "Poison Jab",
+            "move": "Flare Blitz",
             "level": 54
           },
           {
-            "move": "Toxic",
+            "move": "Will-O-Wisp",
             "level": 57
           },
           {
@@ -66284,7 +66293,7 @@
             "level": 60
           },
           {
-            "move": "Gunk Shot",
+            "move": "Fire Blast",
             "level": 65
           },
           {
@@ -66614,7 +66623,7 @@
     "changed": true,
     "pokedex_id": 373,
     "type1": "Dragon",
-    "type2": "Poison",
+    "type2": "Fire",
     "bst": 550,
     "abilities": [
       "Rock Head",
@@ -66771,7 +66780,7 @@
         "level": 1
       },
       {
-        "move": "Poison Sting",
+        "move": "Ember",
         "level": 1
       },
       {
@@ -66779,7 +66788,7 @@
         "level": 1
       },
       {
-        "move": "Poison Fang",
+        "move": "Fire Fang",
         "level": 40
       },
       {
@@ -66787,7 +66796,7 @@
         "level": 42
       },
       {
-        "move": "Cross Poison",
+        "move": "Flamethrower",
         "level": 45
       },
       {
@@ -66799,11 +66808,11 @@
         "level": 51
       },
       {
-        "move": "Poison Jab",
+        "move": "Flare Blitz",
         "level": 54
       },
       {
-        "move": "Toxic",
+        "move": "Will-O-Wisp",
         "level": 57
       },
       {
@@ -66811,7 +66820,7 @@
         "level": 60
       },
       {
-        "move": "Gunk Shot",
+        "move": "Fire Blast",
         "level": 65
       },
       {
@@ -70347,7 +70356,7 @@
         "abilities": [
           "Anticipation"
         ],
-        "evo": "Level 20",
+        "evo": "Level 20 (female)",
         "moves": [
           {
             "move": "Tackle",
@@ -70411,7 +70420,7 @@
         "abilities": [
           "Swarm"
         ],
-        "evo": "Level 20",
+        "evo": "Level 20 (male)",
         "moves": [
           {
             "move": "Tackle",
@@ -70517,7 +70526,7 @@
         "abilities": [
           "Shed Skin"
         ],
-        "evo": "Level 20",
+        "evo": "Level 20 (female)",
         "moves": [
           {
             "move": "Protect",
@@ -70823,7 +70832,7 @@
         "abilities": [
           "Shed Skin"
         ],
-        "evo": "Level 20",
+        "evo": "Level 20 (male)",
         "moves": [
           {
             "move": "Protect",
@@ -70922,7 +70931,7 @@
       "spe": 70
     },
     "preevo": [],
-    "evo": "Level 21",
+    "evo": "Level 21 (female)",
     "next": [
       {
         "name": "Vespiquen",
@@ -71050,7 +71059,7 @@
         "abilities": [
           "Honey Gather"
         ],
-        "evo": "Level 21",
+        "evo": "Level 21 (female)",
         "moves": [
           {
             "move": "Gust",
@@ -74869,7 +74878,7 @@
       "spe": 30
     },
     "preevo": [],
-    "evo": "Level up during the day holding Oval Stone",
+    "evo": "Use Moon Stone",
     "next": [
       {
         "name": "Chansey",
@@ -78119,7 +78128,7 @@
   },
   {
     "name": "Weavile",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 461,
     "type1": "Dark",
     "type2": "Ice",
@@ -78145,7 +78154,7 @@
           "Inner Focus",
           "Keen Eye"
         ],
-        "evo": "Level up at night holding Razor Claw",
+        "evo": "Level 33",
         "moves": [
           {
             "move": "Leer",
@@ -79227,7 +79236,7 @@
           "Static",
           "Vital Spirit"
         ],
-        "evo": "Level up during the day holding Electirizer",
+        "evo": "Use Electirizer",
         "moves": [
           {
             "move": "Quick Attack",
@@ -80164,7 +80173,7 @@
           "Run Away",
           "Adaptability"
         ],
-        "evo": "Level up during the day holding Never-Melt Ice",
+        "evo": "Use Ice Stone",
         "moves": [
           {
             "move": "Helping Hand",
@@ -80314,7 +80323,7 @@
           "Hyper Cutter",
           "Immunity"
         ],
-        "evo": "Level up at night holding Razor Fang",
+        "evo": "Level 32",
         "moves": [
           {
             "move": "Poison Sting",
@@ -81063,7 +81072,7 @@
           "Synchronize",
           "Trace"
         ],
-        "evo": "Use Dawn Stone",
+        "evo": "Use Dawn Stone (male)",
         "moves": [
           {
             "move": "Confusion",
@@ -81279,7 +81288,7 @@
           "spd": 75,
           "spe": 50
         },
-        "evo": "Level up while knowing Aerial Ace",
+        "evo": "Level up knowing Aerial Ace",
         "moves": [
           {
             "move": "Growl",
@@ -81864,7 +81873,7 @@
           "Inner Focus",
           "Ice Body"
         ],
-        "evo": "Use Dawn Stone",
+        "evo": "Use Dawn Stone (female)",
         "moves": [
           {
             "move": "Powder Snow",
@@ -84061,7 +84070,6 @@
         "name": "Liepard",
         "pokedex_id": 510,
         "type1": "Dark",
-        "type2": "Electric",
         "abilities": [
           "Prankster",
           "Unburden"
@@ -84362,8 +84370,7 @@
         "move": "Sucker Punch",
         "level": 55
       }
-    ],
-    "type2": "Electric"
+    ]
   },
   {
     "name": "Pansage",
@@ -86092,7 +86099,7 @@
         "name": "Zebstrika",
         "pokedex_id": 523,
         "type1": "Electric",
-        "type2": "Dark",
+        "type2": "Normal",
         "abilities": [
           "Lightning Rod",
           "Sap Sipper"
@@ -86143,7 +86150,7 @@
             "level": 25
           },
           {
-            "move": "Crunch",
+            "move": "Stomp",
             "level": 31
           },
           {
@@ -86159,7 +86166,7 @@
             "level": 47
           },
           {
-            "move": "Foul Play",
+            "move": "Thrash",
             "level": 53
           }
         ]
@@ -86225,7 +86232,7 @@
     "changed": true,
     "pokedex_id": 523,
     "type1": "Electric",
-    "type2": "Dark",
+    "type2": "Normal",
     "bst": 517,
     "abilities": [
       "Lightning Rod",
@@ -86352,7 +86359,7 @@
         "level": 25
       },
       {
-        "move": "Crunch",
+        "move": "Stomp",
         "level": 31
       },
       {
@@ -86368,7 +86375,7 @@
         "level": 47
       },
       {
-        "move": "Foul Play",
+        "move": "Thrash",
         "level": 53
       }
     ]
@@ -91503,7 +91510,6 @@
     "changed": true,
     "pokedex_id": 550,
     "type1": "Water",
-    "type2": "Ghost",
     "bst": 490,
     "abilities": [
       "Adaptability",
@@ -91552,7 +91558,7 @@
         "level": 16
       },
       {
-        "move": "Hex",
+        "move": "Chip Away",
         "level": 16
       },
       {
@@ -91568,7 +91574,7 @@
         "level": 28
       },
       {
-        "move": "Shadow Ball",
+        "move": "Zen Headbutt",
         "level": 28
       },
       {
@@ -91610,7 +91616,7 @@
           "Swift Swim",
           "Adaptability"
         ],
-        "evo": "Level up at night holding Reaper Cloth (male)",
+        "evo": "Use Reaper's Cloth (male)",
         "moves": [
           {
             "move": "Shadow Force",
@@ -91696,7 +91702,7 @@
           "Swift Swim",
           "Adaptability"
         ],
-        "evo": "Level up at night holding Reaper Cloth (female)",
+        "evo": "Use Reaper's Cloth (female)",
         "moves": [
           {
             "move": "Shadow Force",
@@ -99681,7 +99687,7 @@
       "spe": 60
     },
     "preevo": [],
-    "evo": "Use Metal Coat",
+    "evo": "Use Metal Stone",
     "next": [
       {
         "name": "Escavalier",
@@ -99847,7 +99853,7 @@
           "Swarm",
           "Shed Skin"
         ],
-        "evo": "Use Metal Coat",
+        "evo": "Use Metal Stone",
         "moves": [
           {
             "move": "Peck",
@@ -106862,7 +106868,7 @@
           "Defiant",
           "Pressure"
         ],
-        "evo": "Level up at night holding King's Rock",
+        "evo": "Use King's Rock",
         "moves": [
           {
             "move": "Fury Cutter",
@@ -107188,7 +107194,7 @@
           "Keen Eye",
           "Sheer Force"
         ],
-        "evo": "Level up at night holding Twisted Spoon",
+        "evo": "Use Moon Stone",
         "moves": [
           {
             "move": "Extrasensory",
@@ -107434,7 +107440,7 @@
   },
   {
     "name": "Braviary (Hisui)",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 628,
     "type1": "Psychic",
     "type2": "Flying",
@@ -107463,7 +107469,7 @@
           "Sheer Force"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/627.gif",
-        "evo": "Level up at night holding Twisted Spoon",
+        "evo": "Use Moon Stone",
         "moves": [
           {
             "move": "Leer",
@@ -110762,19 +110768,19 @@
   },
   {
     "name": "Helioptile",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 694,
     "type1": "Electric",
-    "type2": "Normal",
-    "bst": 289,
+    "type2": "Dragon",
+    "bst": 300,
     "abilities": [
       "Dry Skin",
       "Sand Veil"
     ],
     "stats": {
-      "hp": 44,
+      "hp": 50,
       "atk": 38,
-      "def": 33,
+      "def": 38,
       "spa": 61,
       "spd": 43,
       "spe": 70
@@ -110787,7 +110793,7 @@
         "name": "Heliolisk",
         "pokedex_id": 695,
         "type1": "Electric",
-        "type2": "Normal",
+        "type2": "Dragon",
         "abilities": [
           "Dry Skin",
           "Sand Veil"
@@ -110811,7 +110817,7 @@
             "level": 1
           },
           {
-            "move": "Razor Wind",
+            "move": "Dragon Pulse",
             "level": 1
           },
           {
@@ -110847,7 +110853,7 @@
         "level": 17
       },
       {
-        "move": "Razor Wind",
+        "move": "Dragon Breath",
         "level": 22
       },
       {
@@ -110867,6 +110873,10 @@
         "level": 40
       },
       {
+        "move": "Dragon Pulse",
+        "level": 45
+      },
+      {
         "move": "Thunderbolt",
         "level": 49
       }
@@ -110874,19 +110884,19 @@
   },
   {
     "name": "Heliolisk",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 695,
     "type1": "Electric",
-    "type2": "Normal",
-    "bst": 481,
+    "type2": "Dragon",
+    "bst": 497,
     "abilities": [
       "Dry Skin",
       "Sand Veil"
     ],
     "stats": {
-      "hp": 62,
+      "hp": 70,
       "atk": 55,
-      "def": 52,
+      "def": 60,
       "spa": 109,
       "spd": 94,
       "spe": 109
@@ -110897,7 +110907,7 @@
         "name": "Helioptile",
         "pokedex_id": 694,
         "type1": "Electric",
-        "type2": "Normal",
+        "type2": "Dragon",
         "abilities": [
           "Dry Skin",
           "Sand Veil"
@@ -110930,7 +110940,7 @@
             "level": 17
           },
           {
-            "move": "Razor Wind",
+            "move": "Dragon Breath",
             "level": 22
           },
           {
@@ -110948,6 +110958,10 @@
           {
             "move": "Volt Switch",
             "level": 40
+          },
+          {
+            "move": "Dragon Pulse",
+            "level": 45
           },
           {
             "move": "Thunderbolt",
@@ -110974,7 +110988,7 @@
         "level": 1
       },
       {
-        "move": "Razor Wind",
+        "move": "Dragon Pulse",
         "level": 1
       },
       {
@@ -112000,7 +112014,7 @@
             "level": 56
           }
         ],
-        "evo": "Level up at night holding Metal Coat"
+        "evo": "Use Metal Stone"
       }
     ],
     "moves": [
@@ -112252,7 +112266,7 @@
   },
   {
     "name": "Sliggoo (Hisui)",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 705,
     "type1": "Steel",
     "type2": "Dragon",
@@ -112280,7 +112294,7 @@
           "Hydration"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/704.gif",
-        "evo": "Level up at night holding Metal Coat",
+        "evo": "Use Metal Stone",
         "moves": [
           {
             "move": "Bubble",
@@ -112708,7 +112722,7 @@
           "Hydration"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/704.gif",
-        "evo": "Level up at night holding Metal Coat",
+        "evo": "Use Metal Stone",
         "moves": [
           {
             "move": "Bubble",
@@ -112926,7 +112940,7 @@
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/739.gif",
     "preevo": [],
-    "evo": "Level up during the day holding Never-Melt Ice",
+    "evo": "Use Ice Stone",
     "next": [
       {
         "name": "Crabominable",
@@ -113055,7 +113069,7 @@
   },
   {
     "name": "Crabominable",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 740,
     "type1": "Fighting",
     "type2": "Ice",
@@ -113083,7 +113097,7 @@
           "Iron Fist"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/739.gif",
-        "evo": "Level up during the day holding Never-Melt Ice",
+        "evo": "Use Ice Stone",
         "moves": [
           {
             "move": "Bubble",
@@ -117515,7 +117529,7 @@
   },
   {
     "name": "Obstagoon",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 862,
     "type1": "Dark",
     "type2": "Normal",
@@ -117614,7 +117628,7 @@
           "Gluttony"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10175.gif",
-        "evo": "Level up at night holding Black Glasses",
+        "evo": "Level 34",
         "moves": [
           {
             "move": "Sweet Kiss",
@@ -118105,7 +118119,7 @@
           "Scrappy"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10166.gif",
-        "evo": "Level up during the day holding Stick",
+        "evo": "Level 36",
         "moves": [
           {
             "move": "Peck",
@@ -119472,7 +119486,7 @@
   },
   {
     "name": "Kleavor",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 900,
     "type1": "Bug",
     "type2": "Rock",
@@ -119501,7 +119515,7 @@
           "Technician"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/123.gif",
-        "evo": "Level up at night holding Hard Stone",
+        "evo": "Use Dusk Stone",
         "moves": [
           {
             "move": "Vacuum Wave",
@@ -119920,7 +119934,7 @@
   },
   {
     "name": "Basculegion",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 902,
     "type1": "Water",
     "type2": "Ghost",
@@ -119943,13 +119957,12 @@
         "name": "Basculin",
         "pokedex_id": 550,
         "type1": "Water",
-        "type2": "Ghost",
         "abilities": [
           "Adaptability",
           "Reckless"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/550.gif",
-        "evo": "Level up at night holding Reaper Cloth (male)",
+        "evo": "Use Reaper's Cloth (male)",
         "moves": [
           {
             "move": "Tackle",
@@ -119984,7 +119997,7 @@
             "level": 16
           },
           {
-            "move": "Hex",
+            "move": "Chip Away",
             "level": 16
           },
           {
@@ -120000,7 +120013,7 @@
             "level": 28
           },
           {
-            "move": "Shadow Ball",
+            "move": "Zen Headbutt",
             "level": 28
           },
           {
@@ -120107,98 +120120,11 @@
         "move": "Head Smash",
         "level": 56
       }
-    ],
-    "branches": [
-      {
-        "name": "Basculegion (Female)",
-        "pokedex_id": 902,
-        "type1": "Water",
-        "type2": "Ghost",
-        "abilities": [
-          "Swift Swim",
-          "Adaptability"
-        ],
-        "moves": [
-          {
-            "move": "Shadow Force",
-            "level": 1
-          },
-          {
-            "move": "Shadow Ball",
-            "level": 1
-          },
-          {
-            "move": "Tail Whip",
-            "level": 1
-          },
-          {
-            "move": "Water Gun",
-            "level": 1
-          },
-          {
-            "move": "Tackle",
-            "level": 4
-          },
-          {
-            "move": "Flail",
-            "level": 8
-          },
-          {
-            "move": "Aqua Jet",
-            "level": 12
-          },
-          {
-            "move": "Bite",
-            "level": 16
-          },
-          {
-            "move": "Scary Face",
-            "level": 20
-          },
-          {
-            "move": "Headbutt",
-            "level": 24
-          },
-          {
-            "move": "Soak",
-            "level": 28
-          },
-          {
-            "move": "Crunch",
-            "level": 32
-          },
-          {
-            "move": "Take Down",
-            "level": 36
-          },
-          {
-            "move": "Uproar",
-            "level": 40
-          },
-          {
-            "move": "Aqua Tail",
-            "level": 44
-          },
-          {
-            "move": "Thrash",
-            "level": 48
-          },
-          {
-            "move": "Double-Edge",
-            "level": 52
-          },
-          {
-            "move": "Head Smash",
-            "level": 56
-          }
-        ],
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/undefined.gif"
-      }
     ]
   },
   {
     "name": "Basculegion (Female)",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 902,
     "type1": "Water",
     "type2": "Ghost",
@@ -120222,13 +120148,12 @@
         "name": "Basculin",
         "pokedex_id": 550,
         "type1": "Water",
-        "type2": "Ghost",
         "abilities": [
           "Adaptability",
           "Reckless"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/550.gif",
-        "evo": "Level up at night holding Reaper Cloth (female)",
+        "evo": "Use Reaper's Cloth (female)",
         "moves": [
           {
             "move": "Tackle",
@@ -120263,7 +120188,7 @@
             "level": 16
           },
           {
-            "move": "Hex",
+            "move": "Chip Away",
             "level": 16
           },
           {
@@ -120279,7 +120204,7 @@
             "level": 28
           },
           {
-            "move": "Shadow Ball",
+            "move": "Zen Headbutt",
             "level": 28
           },
           {
@@ -120390,7 +120315,7 @@
   },
   {
     "name": "Sneasler",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 903,
     "type1": "Fighting",
     "type2": "Poison",
@@ -120419,7 +120344,7 @@
           "Keen Eye"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10235.gif",
-        "evo": "Level up during the day holding Razor Claw",
+        "evo": "Level 35",
         "moves": [
           {
             "move": "Leer",
@@ -120537,7 +120462,7 @@
   },
   {
     "name": "Overqwil",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 904,
     "type1": "Dark",
     "type2": "Poison",
@@ -120566,7 +120491,7 @@
           "Swift Swim"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10234.gif",
-        "evo": "Level up knowing Pin Missile",
+        "evo": "Level 34",
         "moves": [
           {
             "move": "Poison Sting",
@@ -121985,12 +121910,12 @@
             "level": 25
           },
           {
-            "move": "Rage",
-            "level": 28
-          },
-          {
             "move": "Swagger",
             "level": 35
+          },
+          {
+            "move": "Rage",
+            "level": 36
           },
           {
             "move": "Cross Chop",
@@ -122394,7 +122319,7 @@
   },
   {
     "name": "Kingambit",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 983,
     "type1": "Dark",
     "type2": "Steel",
@@ -122501,7 +122426,7 @@
           "Inner Focus"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/625.gif",
-        "evo": "Level up at night holding King's Rock",
+        "evo": "Use King's Rock",
         "moves": [
           {
             "move": "Fury Cutter",
@@ -125448,7 +125373,7 @@
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/999.gif",
     "preevo": [],
-    "evo": "Level up during the day holding Amulet Coin",
+    "evo": "Level 40",
     "next": [
       {
         "name": "Gholdengo",
@@ -125564,7 +125489,7 @@
   },
   {
     "name": "Gholdengo",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 1000,
     "type1": "Steel",
     "type2": "Ghost",
@@ -125590,7 +125515,7 @@
           "Rattled"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/999.gif",
-        "evo": "Level up during the day holding Amulet Coin",
+        "evo": "Level 40",
         "moves": [
           {
             "move": "Astonish",
