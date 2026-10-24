@@ -354,6 +354,117 @@
   }
 
 
+  /* ───────── TMs & HMs drawer (inside the open card) ───────── */
+  .tm-sec { --tc: var(--c1); }
+  .tm-h { margin: 0; }
+  .tm-toggle {
+    width: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 14px;
+    padding: 12px 16px 12px 12px; border-radius: 14px; cursor: pointer; text-align: left; color: var(--text);
+    background:
+      radial-gradient(120% 140% at 0% 50%, color-mix(in srgb, var(--tc) 26%, transparent), transparent 60%),
+      linear-gradient(90deg, color-mix(in srgb, var(--tc) 10%, var(--panel-2)), var(--panel-2));
+    border: 1px solid color-mix(in srgb, var(--tc) 38%, var(--line));
+    transition: border-color .2s, box-shadow .2s, border-radius .3s;
+  }
+  .tm-toggle:hover { border-color: color-mix(in srgb, var(--tc) 80%, #fff 6%); box-shadow: 0 6px 22px rgba(0,0,0,.35); }
+  .tm-sec.open .tm-toggle { border-radius: 14px 14px 0 0; border-bottom-color: transparent; }
+  .tm-disc {
+    width: 46px; height: 46px; flex: none; display: grid; place-items: center; border-radius: 50%;
+    background: radial-gradient(circle at 50% 45%, rgba(255,255,255,.22), transparent 62%), color-mix(in srgb, var(--tc) 34%, #0a0d13);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--tc) 60%, transparent), 0 4px 16px color-mix(in srgb, var(--tc) 40%, transparent);
+  }
+  .tm-disc img { width: 30px; height: 30px; display: block; image-rendering: pixelated; transition: transform .45s cubic-bezier(.2,.7,.2,1); }
+  .tm-sec.open .tm-disc img { transform: translateY(-3px); }
+  .tm-title { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; min-width: 0; }
+  .tm-title b { font-family: var(--display); font-weight: 800; font-size: 18px; letter-spacing: .01em; line-height: 1.15; }
+  .tm-sub { flex-basis: 100%; color: var(--muted); font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .tm-new-n {
+    display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+    font-size: 12.5px; font-weight: 700; color: #0b0e14; background: var(--volt);
+    box-shadow: 0 0 16px rgba(255,203,5,.35);
+  }
+  .tm-new-n[hidden] { display: none; }
+  .tm-chev {
+    width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%;
+    background: rgba(7,9,13,.5); border: 1px solid rgba(255,255,255,.18);
+  }
+  .tm-chev svg { width: 17px; height: 17px; transition: transform .3s; }
+  .tm-sec.open .tm-chev svg { transform: rotate(180deg); }
+
+  .tm-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .38s cubic-bezier(.2,.7,.2,1); }
+  .tm-sec.open .tm-panel { grid-template-rows: 1fr; }
+  .tm-inner {
+    min-height: 0; overflow: hidden; border-radius: 0 0 14px 14px;
+    background: color-mix(in srgb, var(--tc) 5%, #0b0e14);
+    border: 1px solid transparent; border-top: 0;
+    transition: border-color .38s;
+  }
+  .tm-sec.open .tm-inner { border-color: color-mix(in srgb, var(--tc) 38%, var(--line)); }
+
+  .tm-filters { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 12px 4px; }
+  .tm-filter {
+    display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 12px 0 10px; border-radius: 999px;
+    cursor: pointer; color: var(--text); font-size: 13px; font-weight: 600;
+    background: var(--panel-2); border: 1px solid var(--line);
+    transition: background .15s, border-color .15s, color .15s;
+  }
+  .tm-filter:hover { border-color: color-mix(in srgb, var(--tc) 65%, var(--line)); }
+  .tm-filter[aria-pressed="true"] { background: color-mix(in srgb, var(--tc) 30%, #0b0e14); border-color: color-mix(in srgb, var(--tc) 85%, #fff 5%); }
+  .tm-filter .n { color: var(--muted); font-weight: 500; font-variant-numeric: tabular-nums; }
+  .tm-filter[aria-pressed="true"] .n { color: var(--text); }
+  .tm-filter .cat { width: 18px; height: 18px; }
+  .tm-filter.new-f .star { color: var(--volt); }
+
+  .tm-scroll {
+    max-height: 360px; overflow-y: auto; padding: 8px 12px 14px; overscroll-behavior: contain;
+    scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--tc) 55%, #333) transparent;
+  }
+  .tms { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; grid-template-columns: repeat(auto-fill, minmax(238px, 1fr)); }
+  .tms li[hidden] { display: none; }
+  .tm {
+    position: relative; display: flex; align-items: center; gap: 10px; padding: 5px 10px 5px 5px; border-radius: 10px;
+    color: var(--text); text-decoration: none; font-size: 14.5px; font-weight: 600;
+    background: color-mix(in srgb, var(--mc) 13%, var(--panel-2));
+    border: 1px solid color-mix(in srgb, var(--mc) 34%, transparent);
+    transition: background .15s, border-color .15s, transform .15s;
+  }
+  .tm:hover { background: color-mix(in srgb, var(--mc) 27%, var(--panel-2)); border-color: color-mix(in srgb, var(--mc) 80%, #fff 5%); transform: translateY(-1px); }
+  .tm:focus-visible { outline: 2px solid var(--volt); outline-offset: 2px; }
+  .tm-no {
+    flex: none; display: inline-flex; align-items: center; gap: 4px; min-width: 64px; padding: 3px 8px 3px 3px; border-radius: 8px;
+    font-family: var(--display); font-weight: 800; font-size: 14px; font-variant-numeric: tabular-nums; color: #fff;
+    background: color-mix(in srgb, var(--mc) 55%, #0a0d13); border: 1px solid color-mix(in srgb, var(--mc) 70%, transparent);
+    text-shadow: 0 1px 1px rgba(0,0,0,.45);
+  }
+  .tm-no img { width: 30px; height: 30px; flex: none; display: block; margin: -6px -3px -6px -4px; image-rendering: pixelated; }
+  .tm-no small { font-family: var(--body); font-weight: 600; font-size: 10.5px; opacity: .85; margin-right: -2px; }
+  .tm.hm .tm-no { background: linear-gradient(135deg, color-mix(in srgb, var(--volt) 80%, #000), color-mix(in srgb, var(--mc) 55%, #0a0d13)); border-color: var(--volt); }
+  .tm .mname { flex: 1; min-width: 0; overflow-wrap: normal; word-break: normal; line-height: 1.2; }
+  .cat { width: 20px; height: 20px; flex: none; display: block; }
+  .cat.phys { color: #ff8a3d; } .cat.spec { color: #7fb1ff; } .cat.stat { color: #b9c3d6; }
+  .tm .new {
+    flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--volt);
+    box-shadow: 0 0 0 3px rgba(255,203,5,.18), 0 0 10px rgba(255,203,5,.7);
+  }
+  .tm-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 0 12px 12px; color: var(--muted); font-size: 12.5px; font-weight: 600; }
+  .tm-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .tm-legend .new { width: 8px; height: 8px; border-radius: 50%; background: var(--volt); }
+  .tm-empty { margin: 6px 0 2px; color: var(--muted); font-size: 14px; }
+  .tm-sec.open .tms li { animation: tmIn .32s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(min(var(--i), 24) * 14ms); }
+  @keyframes tmIn { from { opacity: 0; transform: translateY(6px) scale(.98); } }
+  @media (max-width: 520px) {
+    .tm-toggle { gap: 10px; padding: 10px 12px 10px 10px; }
+    .tm-disc { width: 40px; height: 40px; }
+    .tms { grid-template-columns: 1fr; }
+    .tm-filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+    .tm-filters::-webkit-scrollbar { display: none; }
+    .tm-filter { flex: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tm-panel, .tm-disc img, .tm-chev svg { transition: none; }
+    .tm-sec.open .tms li { animation: none; }
+  }
+
   /* ───────── new evolution methods (separate section) ───────── */
   .evo-sec { margin-top: 44px; scroll-margin-top: 84px; }
   .evo-sec[hidden], .evo-card[hidden], .evo-row[hidden], .grid[hidden] { display: none; }
@@ -607,12 +718,13 @@ const ARROW = '<svg viewBox="0 0 36 14" fill="none" stroke="currentColor" stroke
 
 // ───────── evolution method pill: "Level 35" / "Use Sun Stone" / "Level up holding Metal Coat" ─────────
 // Item icons come from Showdown; ITEM_FILES fixes the few whose file name differs from the item name.
-const ITEM_FILES = { "Deep Sea Scale": "deepseascale", "Deep Sea Tooth": "deepseatooth", "Never-Melt Ice": "nevermeltice" };
+const ITEM_FILES = { "Deep Sea Scale": "deepseascale", "Deep Sea Tooth": "deepseatooth", "Never-Melt Ice": "nevermeltice", "Reaper's Cloth": "reaper-cloth" };
 const ITEM_ICON = (n, file) => "https://play.pokemonshowdown.com/sprites/itemicons/" +
   (file || ITEM_FILES[n] || String(n).toLowerCase().replace(/['’.]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")) + ".png";
 const LEVEL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
 function parseMethod(text) {
-  const t = String(text || "").trim();
+  // a note in brackets at the end, e.g. "(male)", is not part of the item name
+  const t = String(text || "").trim().replace(/\s*\([^)]*\)$/, "");
   let m;
   if ((m = t.match(/holding (?:an? )?(.+?)\.?$/i))) return { kind: "hold", item: m[1] };
   if ((m = t.match(/^Use (?:an? )?(.+?)\.?$/i))) return { kind: "item", item: m[1] };
@@ -679,6 +791,100 @@ function movesHTML(list) {
     '<li>' + moveLink(m) + "</li>").join("") + "</ul></div>";
 }
 
+// ───────── TMs & HMs (assets/data/tms.json) ─────────
+const TM_URLS = [
+  "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/data/tms.json",
+  "assets/data/tms.json"
+];
+let TMDATA = null;
+const TM_ICON = (type) => "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-" + String(type || "normal").toLowerCase() + ".png";
+const TM_FALLBACK = TM_ICON("normal");
+const CAT_ICONS = {
+  Physical: '<svg class="cat phys" viewBox="0 0 24 24" aria-label="Physical" role="img"><title>Physical</title><path fill="currentColor" d="M12 1.8l2.3 5.6 5.9-1.6-2.8 5.3 5 3.4-6 .9.5 6-4.9-3.6L7.1 20.4l.5-6-6-.9 5-3.4L3.8 4.8l5.9 1.6z"/></svg>',
+  Special: '<svg class="cat spec" viewBox="0 0 24 24" aria-label="Special" role="img"><title>Special</title><g fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="5.2"/></g><circle cx="12" cy="12" r="1.9" fill="currentColor"/></svg>',
+  Status: '<svg class="cat stat" viewBox="0 0 24 24" aria-label="Status" role="img"><title>Status</title><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5.5l3.5 2"/></g></svg>'
+};
+const STAR = '<svg class="star" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg>';
+const TM_FILTERS = [["all", "All"], ["Physical", "Physical"], ["Special", "Special"], ["Status", "Status"], ["hm", "HM"], ["new", "New"]];
+
+function tmEntry(name) {
+  if (!TMDATA || !TMDATA.pokemon) return null;
+  const e = TMDATA.pokemon[name];
+  if (!e) return null;
+  const isNew = new Set(e.new || []);
+  return e.tm.filter((id) => TMDATA.list[id]).map((id) => Object.assign({ id, hm: id.startsWith("HM"), isNew: isNew.has(id) }, TMDATA.list[id]));
+}
+
+function tmMatches(t, f) {
+  return f === "all" || (f === "hm" ? t.hm : f === "new" ? t.isNew : t.cat === f);
+}
+
+function tmItemsHTML(list, filter) {
+  if (!list.length) return '<p class="tm-empty">This Pokémon can\'t learn any TM or HM.</p>';
+  return '<ul class="tms">' + list.map((t, i) => {
+    const c = TYPE_COLORS[t.type] || "#6b7a9c", num = t.id.slice(2);
+    return '<li data-cat="' + t.cat + '"' + (t.hm ? ' data-hm="1"' : "") + (t.isNew ? ' data-new="1"' : "") +
+      (tmMatches(t, filter) ? "" : " hidden") + ' style="--i:' + i + '">' +
+      '<a class="tm' + (t.hm ? " hm" : "") + '" style="--mc:' + c + '" href="' + moveURL(t.move) + '" target="_blank" rel="noopener noreferrer" ' +
+        'title="' + esc(t.id + " " + t.move + " · " + t.type + " · " + t.cat + (t.isNew ? " · new in Pitch Black 2" : "")) + '">' +
+        '<span class="tm-no"><img src="' + TM_ICON(t.type) + '" alt="" width="30" height="30" loading="lazy" onerror="this.onerror=null;this.src=TM_FALLBACK"><small>' + (t.hm ? "HM" : "TM") + "</small>" + num + "</span>" +
+        '<span class="mname">' + esc(t.move) + "</span>" +
+        (t.isNew ? '<span class="new" aria-label="New"></span>' : "") + (CAT_ICONS[t.cat] || "") +
+      "</a></li>";
+  }).join("") + "</ul>";
+}
+
+function tmSectionHTML(node, key, open) {
+  const list = tmEntry(node.name);
+  if (!list) return "";
+  const nTM = list.filter((t) => !t.hm).length, nHM = list.length - nTM, nNew = list.filter((t) => t.isNew).length;
+  const c1 = colorsOf(node.types)[0];
+  const counts = { all: list.length, hm: nHM, new: nNew };
+  ["Physical", "Special", "Status"].forEach((k) => { counts[k] = list.filter((t) => t.cat === k).length; });
+  const filters = TM_FILTERS.filter(([k]) => k === "all" || counts[k]).map(([k, label]) =>
+    '<button class="tm-filter' + (k === "new" ? " new-f" : "") + '" type="button" data-f="' + k + '" aria-pressed="' + (k === "all") + '">' +
+      (CAT_ICONS[k] || (k === "new" ? STAR : "")) + label + ' <span class="n">' + counts[k] + "</span></button>").join("");
+  return '<section class="d-sec tm-sec' + (open ? " open" : "") + '" style="--tc:' + c1 + '">' +
+    '<h3 class="tm-h"><button class="tm-toggle" type="button" aria-expanded="' + !!open + '" aria-controls="tm-' + key + '">' +
+      '<span class="tm-disc" aria-hidden="true"><img src="' + TM_ICON(node.types[0]) + '" alt="" width="30" height="30" onerror="this.onerror=null;this.src=TM_FALLBACK"></span>' +
+      '<span class="tm-title"><b>TMs &amp; HMs</b><span class="who">' + esc(node.name) + "</span>" +
+        '<span class="tm-sub">' + nTM + " TM" + (nTM === 1 ? "" : "s") + (nHM ? " · " + nHM + " HM" + (nHM === 1 ? "" : "s") : "") + "</span></span>" +
+      '<span class="tm-new-n"' + (nNew ? "" : " hidden") + ">" + nNew + " new</span>" +
+      '<span class="tm-chev" aria-hidden="true">' + CHEVRON + "</span>" +
+    "</button></h3>" +
+    '<div class="tm-panel" id="tm-' + key + '"><div class="tm-inner">' +
+      '<div class="tm-filters" role="group" aria-label="Filter TMs">' + filters + "</div>" +
+      '<div class="tm-scroll" tabindex="0" role="region" aria-label="TMs and HMs">' + tmItemsHTML(list, "all") + "</div>" +
+      (nNew ? '<div class="tm-legend"><span><i class="new"></i>New in Pitch Black 2</span></div>' : "") +
+    "</div></div></section>";
+}
+
+function toggleTM(sec) {
+  const open = !sec.classList.contains("open");
+  sec.classList.toggle("open", open);
+  sec.querySelector(".tm-toggle").setAttribute("aria-expanded", open ? "true" : "false");
+}
+
+function filterTM(sec, btn) {
+  const f = btn.dataset.f;
+  sec.querySelectorAll(".tm-filter").forEach((b) => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
+  sec.querySelectorAll(".tms li").forEach((li) => {
+    const ok = f === "all" || (f === "hm" ? li.dataset.hm : f === "new" ? li.dataset.new : li.dataset.cat === f);
+    li.hidden = !ok;
+  });
+}
+
+async function loadTMs() {
+  for (const url of TM_URLS) {
+    try {
+      const res = await fetch(url, { cache: "no-cache" });
+      if (!res.ok) continue;
+      TMDATA = await res.json();
+      return;
+    } catch (err) { /* try the next URL */ }
+  }
+}
+
 function evoNodeHTML(n, k, active) {
   const [c1, c2] = colorsOf(n.types);
   return '<div class="evo-node' + (active ? " active" : "") + '" data-k="' + k + '" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
@@ -715,7 +921,8 @@ function detailHTML(p, key) {
   const [c1] = colorsOf(chain[me].types);
   return '<div class="detail" id="detail-' + key + '">' + evo +
     '<section class="d-sec"><h3>Level-up moves<span class="who">' + esc(chain[me].name) + '</span><span class="count">' + chain[me].moves.length + " moves</span></h3>" +
-    '<div class="moves-wrap" style="--c1:' + c1 + '">' + movesHTML(chain[me].moves) + "</div></section></div>";
+    '<div class="moves-wrap" style="--c1:' + c1 + '">' + movesHTML(chain[me].moves) + "</div></section>" +
+    tmSectionHTML(chain[me], key, false) + "</div>";
 }
 
 function cardHTML(p, i) {
@@ -898,6 +1105,11 @@ function pickStage(card, node) {
   wrap.innerHTML = movesHTML(chain[k].moves);
   card.querySelector(".who").textContent = chain[k].name;
   card.querySelector(".count").textContent = chain[k].moves.length + " moves";
+  const oldTM = card.querySelector(".tm-sec");
+  const tmp = document.createElement("div");
+  tmp.innerHTML = tmSectionHTML(chain[k], card.dataset.i, oldTM ? oldTM.classList.contains("open") : false);
+  if (oldTM) { if (tmp.firstElementChild) oldTM.replaceWith(tmp.firstElementChild); else oldTM.remove(); }
+  else if (tmp.firstElementChild) card.querySelector(".detail").appendChild(tmp.firstElementChild);
 }
 
 grid.addEventListener("click", (e) => {
@@ -906,6 +1118,10 @@ grid.addEventListener("click", (e) => {
   if (e.target.closest("a")) return;
   const pick = e.target.closest(".evo-pick");
   if (pick) { pickStage(card, pick.closest(".evo-node")); return; }
+  const tmT = e.target.closest(".tm-toggle");
+  if (tmT) { toggleTM(tmT.closest(".tm-sec")); return; }
+  const tmF = e.target.closest(".tm-filter");
+  if (tmF) { filterTM(tmF.closest(".tm-sec"), tmF); return; }
   if (e.target.closest(".detail")) return;
   toggleCard(card);
 });
@@ -934,6 +1150,7 @@ apply();
 const statusEl = document.getElementById("count");
 statusEl.textContent = "Loading Pokémon…";
 (async function load() {
+  await loadTMs();
   let lastErr;
   for (const url of DATA_URLS) {
     try {
