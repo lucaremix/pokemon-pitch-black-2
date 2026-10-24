@@ -738,6 +738,18 @@
           "category": "Type boosters I",
           "price": 500,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poison-barb.png"
+        },
+        {
+          "name": "Never-Melt Ice",
+          "category": "Type boosters I",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/never-melt-ice.png"
+        },
+        {
+          "name": "Metal Coat",
+          "category": "Type boosters I",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metal-coat.png"
         }
       ],
       "tms": [
@@ -877,6 +889,18 @@
           "category": "Accuracy, evasion & critical hits",
           "price": 600,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/zoom-lens.png"
+        },
+        {
+          "name": "Razor Claw",
+          "category": "Accuracy, evasion & critical hits",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/razor-claw.png"
+        },
+        {
+          "name": "Razor Fang",
+          "category": "Accuracy, evasion & critical hits",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/razor-fang.png"
         }
       ],
       "tms": [
@@ -1113,13 +1137,6 @@
       ],
       "tms": [
         {
-          "tm": "TM05",
-          "name": "Roar",
-          "type": "Normal",
-          "price": 1200,
-          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
-        },
-        {
           "tm": "TM19",
           "name": "Telekinesis",
           "type": "Psychic",
@@ -1224,32 +1241,32 @@
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/water-stone.png"
         },
         {
-          "name": "Oval Stone",
-          "category": "Evolution items",
-          "price": 800,
-          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/oval-stone.png"
+          "name": "Ice Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/items/Ice-Stone.png"
+        },
+        {
+          "name": "Metal Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/items/Metal-Stone.png"
+        },
+        {
+          "name": "Poison Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/items/Poison-Stone.png"
         },
         {
           "name": "Honey",
-          "category": "Evolution items",
+          "category": "Natural evolution items",
           "price": 300,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/honey.png"
         },
         {
-          "name": "Black Sludge",
-          "category": "Evolution items",
-          "price": 800,
-          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-sludge.png"
-        },
-        {
-          "name": "Never-Melt Ice",
-          "category": "Evolution items",
-          "price": 800,
-          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/never-melt-ice.png"
-        },
-        {
           "name": "Prism Scale",
-          "category": "Evolution items",
+          "category": "Natural evolution items",
           "price": 800,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/prism-scale.png"
         }
@@ -1305,19 +1322,13 @@
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/magmarizer.png"
         },
         {
-          "name": "Metal Coat",
-          "category": "Evolution items",
-          "price": 1200,
-          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metal-coat.png"
-        },
-        {
           "name": "Protector",
           "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/protector.png"
         },
         {
-          "name": "Reaper Cloth",
+          "name": "Reaper's Cloth",
           "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/reaper-cloth.png"
@@ -1327,24 +1338,6 @@
           "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/up-grade.png"
-        },
-        {
-          "name": "Razor Claw",
-          "category": "Evolution items",
-          "price": 1200,
-          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/razor-claw.png"
-        },
-        {
-          "name": "Razor Fang",
-          "category": "Evolution items",
-          "price": 1200,
-          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/razor-fang.png"
-        },
-        {
-          "name": "Heart Scale",
-          "category": "Heart Scales",
-          "price": 500,
-          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heart-scale.png"
         }
       ],
       "tms": []
@@ -1641,6 +1634,12 @@
           "category": "Defensive & recovery",
           "price": 500,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/big-root.png"
+        },
+        {
+          "name": "Black Sludge",
+          "category": "Defensive & recovery",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-sludge.png"
         }
       ],
       "tms": [
@@ -1778,6 +1777,13 @@
           "type": "Psychic",
           "price": 2000,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        },
+        {
+          "tm": "TM05",
+          "name": "Dazzling Gleam",
+          "type": "Fairy",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fairy.png"
         },
         {
           "tm": "TM08",
