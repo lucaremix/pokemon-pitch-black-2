@@ -23661,7 +23661,7 @@
       "spe": 25
     },
     "preevo": [],
-    "evo": "Level 42",
+    "evo": "Level 32",
     "next": [
       {
         "name": "Rhydon",
@@ -23901,7 +23901,7 @@
           "Lightning Rod",
           "Rock Head"
         ],
-        "evo": "Level 42",
+        "evo": "Level 32",
         "moves": [
           {
             "move": "Horn Attack",
@@ -54851,7 +54851,7 @@
       "spe": 30
     },
     "preevo": [],
-    "evo": "Level 32",
+    "evo": "Level 26",
     "next": [
       {
         "name": "Lairon",
@@ -54861,7 +54861,7 @@
           "Sturdy",
           "Battle Armor"
         ],
-        "evo": "Level 42",
+        "evo": "Level 39",
         "moves": [
           {
             "move": "Tackle",
@@ -55127,7 +55127,7 @@
           "Sturdy",
           "Battle Armor"
         ],
-        "evo": "Level 32",
+        "evo": "Level 26",
         "moves": [
           {
             "move": "Tackle",
@@ -55196,7 +55196,7 @@
         ]
       }
     ],
-    "evo": "Level 42",
+    "evo": "Level 39",
     "next": [
       {
         "name": "Aggron",
@@ -55396,7 +55396,7 @@
           "Sturdy",
           "Battle Armor"
         ],
-        "evo": "Level 32",
+        "evo": "Level 26",
         "moves": [
           {
             "move": "Tackle",
@@ -55472,7 +55472,7 @@
           "Sturdy",
           "Battle Armor"
         ],
-        "evo": "Level 42",
+        "evo": "Level 39",
         "moves": [
           {
             "move": "Tackle",
@@ -64611,7 +64611,7 @@
           "Thick Fat",
           "Ice Body"
         ],
-        "evo": "Level 44",
+        "evo": "Level 37",
         "moves": [
           {
             "move": "Encore",
@@ -64881,7 +64881,7 @@
         ]
       }
     ],
-    "evo": "Level 44",
+    "evo": "Level 37",
     "next": [
       {
         "name": "Walrein",
@@ -65013,7 +65013,7 @@
   },
   {
     "name": "Walrein",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 365,
     "type1": "Ice",
     "type2": "Water",
@@ -65105,7 +65105,7 @@
           "Thick Fat",
           "Ice Body"
         ],
-        "evo": "Level 44",
+        "evo": "Level 37",
         "moves": [
           {
             "move": "Encore",
@@ -65819,7 +65819,7 @@
       "spe": 50
     },
     "preevo": [],
-    "evo": "Level 30",
+    "evo": "Level 28",
     "next": [
       {
         "name": "Shelgon",
@@ -65829,7 +65829,7 @@
           "Rock Head",
           "Overcoat"
         ],
-        "evo": "Level 50",
+        "evo": "Level 42",
         "moves": [
           {
             "move": "Bite",
@@ -66044,7 +66044,7 @@
           "Rock Head",
           "Sheer Force"
         ],
-        "evo": "Level 30",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Rage",
@@ -66231,7 +66231,7 @@
             "level": 80
           }
         ],
-        "evo": "Level 50"
+        "evo": "Level 42"
       },
       {
         "name": "Unovan Salamence",
@@ -66242,7 +66242,7 @@
           "Rock Head",
           "Intimidate"
         ],
-        "evo": "Level 40",
+        "evo": "Use Fire Stone",
         "moves": [
           {
             "move": "Leer",
@@ -66334,7 +66334,7 @@
           "Rock Head",
           "Sheer Force"
         ],
-        "evo": "Level 30",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Rage",
@@ -66394,7 +66394,7 @@
           "Rock Head",
           "Overcoat"
         ],
-        "evo": "Level 50",
+        "evo": "Level 42",
         "moves": [
           {
             "move": "Bite",
@@ -66656,7 +66656,7 @@
           "spd": 30,
           "spe": 50
         },
-        "evo": "Level 20",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Rage",
@@ -66709,7 +66709,7 @@
           "spd": 50,
           "spe": 50
         },
-        "evo": "Level 40",
+        "evo": "Use Fire Stone",
         "moves": [
           {
             "move": "Rage",
@@ -78756,7 +78756,7 @@
           "Lightning Rod",
           "Rock Head"
         ],
-        "evo": "Level 42",
+        "evo": "Level 32",
         "moves": [
           {
             "move": "Horn Attack",
@@ -103893,7 +103893,7 @@
       "spe": 57
     },
     "preevo": [],
-    "evo": "Level 38",
+    "evo": "Level 28",
     "next": [
       {
         "name": "Fraxure",
@@ -103903,7 +103903,7 @@
           "Rivalry",
           "Mold Breaker"
         ],
-        "evo": "Level 48",
+        "evo": "Level 42",
         "moves": [
           {
             "move": "Scratch",
@@ -104153,7 +104153,7 @@
   },
   {
     "name": "Fraxure",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 611,
     "type1": "Dragon",
     "bst": 410,
@@ -104178,7 +104178,7 @@
           "Rivalry",
           "Mold Breaker"
         ],
-        "evo": "Level 38",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Scratch",
@@ -104247,7 +104247,7 @@
         ]
       }
     ],
-    "evo": "Level 48",
+    "evo": "Level 42",
     "next": [
       {
         "name": "Haxorus",
@@ -104457,7 +104457,7 @@
           "Rivalry",
           "Mold Breaker"
         ],
-        "evo": "Level 38",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Scratch",
@@ -104533,7 +104533,7 @@
           "Rivalry",
           "Mold Breaker"
         ],
-        "evo": "Level 48",
+        "evo": "Level 42",
         "moves": [
           {
             "move": "Scratch",
@@ -105746,7 +105746,7 @@
       "spe": 65
     },
     "preevo": [],
-    "evo": "Level 50",
+    "evo": "Level 36",
     "next": [
       {
         "name": "Mienshao",
@@ -105893,7 +105893,7 @@
   },
   {
     "name": "Mienshao",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 620,
     "type1": "Fighting",
     "bst": 510,
@@ -105918,7 +105918,7 @@
           "Inner Focus",
           "Regenerator"
         ],
-        "evo": "Level 50",
+        "evo": "Level 36",
         "moves": [
           {
             "move": "Pound",
@@ -108934,7 +108934,7 @@
       "spe": 60
     },
     "preevo": [],
-    "evo": "Level 59",
+    "evo": "Level 38",
     "next": [
       {
         "name": "Volcarona",
@@ -109080,7 +109080,7 @@
         "abilities": [
           "Flame Body"
         ],
-        "evo": "Level 59",
+        "evo": "Level 38",
         "moves": [
           {
             "move": "Ember",
@@ -111944,7 +111944,7 @@
             "level": 47
           }
         ],
-        "evo": "Level 40"
+        "evo": "Level 28"
       },
       {
         "name": "Sliggoo (Hisui)",
@@ -112066,7 +112066,7 @@
   },
   {
     "name": "Sliggoo",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 705,
     "type1": "Dragon",
     "bst": 452,
@@ -112093,7 +112093,7 @@
           "Hydration"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/704.gif",
-        "evo": "Level 40",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Bubble",
@@ -112142,7 +112142,7 @@
         ]
       }
     ],
-    "evo": "Level 50",
+    "evo": "Level 42",
     "next": [
       {
         "name": "Goodra",
@@ -112343,7 +112343,7 @@
         ]
       }
     ],
-    "evo": "Level 50",
+    "evo": "Level 42",
     "next": [
       {
         "name": "Goodra (Hisui)",
@@ -112496,21 +112496,21 @@
   },
   {
     "name": "Goodra",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 706,
     "type1": "Dragon",
-    "bst": 600,
+    "bst": 550,
     "abilities": [
       "Sap Sipper",
       "Hydration"
     ],
     "stats": {
       "hp": 90,
-      "atk": 100,
-      "def": 70,
-      "spa": 110,
-      "spd": 150,
-      "spe": 80
+      "atk": 90,
+      "def": 60,
+      "spa": 100,
+      "spd": 140,
+      "spe": 70
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/706.gif",
     "preevo": [
@@ -112523,7 +112523,7 @@
           "Hydration"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/704.gif",
-        "evo": "Level 40",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Bubble",
@@ -112580,7 +112580,7 @@
           "Hydration"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/705.gif",
-        "evo": "Level 50",
+        "evo": "Level 42",
         "moves": [
           {
             "move": "Absorb",
@@ -112694,22 +112694,22 @@
   },
   {
     "name": "Goodra (Hisui)",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 706,
     "type1": "Steel",
     "type2": "Dragon",
-    "bst": 600,
+    "bst": 550,
     "abilities": [
       "Sap Sipper",
       "Shell Armor"
     ],
     "stats": {
       "hp": 80,
-      "atk": 100,
-      "def": 100,
-      "spa": 110,
-      "spd": 150,
-      "spe": 60
+      "atk": 90,
+      "def": 90,
+      "spa": 100,
+      "spd": 140,
+      "spe": 50
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10242.gif",
     "preevo": [
@@ -112780,7 +112780,7 @@
           "Shell Armor"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10241.gif",
-        "evo": "Level 50",
+        "evo": "Level 42",
         "moves": [
           {
             "move": "Absorb",
@@ -114601,7 +114601,7 @@
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/782.gif",
     "preevo": [],
-    "evo": "Level 35",
+    "evo": "Level 28",
     "next": [
       {
         "name": "Hakamo-o",
@@ -114836,7 +114836,7 @@
   },
   {
     "name": "Hakamo-o",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 783,
     "type1": "Dragon",
     "type2": "Fighting",
@@ -114864,7 +114864,7 @@
           "Soundproof"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/782.gif",
-        "evo": "Level 35",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Tackle",
@@ -115090,7 +115090,7 @@
   },
   {
     "name": "Kommo-o",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 784,
     "type1": "Dragon",
     "type2": "Fighting",
@@ -115118,7 +115118,7 @@
           "Soundproof"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/782.gif",
-        "evo": "Level 35",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Tackle",
@@ -118625,7 +118625,7 @@
     },
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/885.gif",
     "preevo": [],
-    "evo": "Level 50",
+    "evo": "Level 28",
     "next": [
       {
         "name": "Drakloak",
@@ -118637,7 +118637,7 @@
           "Infiltrator"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/886.gif",
-        "evo": "Level 60",
+        "evo": "Level 42",
         "moves": [
           {
             "move": "Astonish",
@@ -118848,7 +118848,7 @@
   },
   {
     "name": "Drakloak",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 886,
     "type1": "Dragon",
     "type2": "Ghost",
@@ -118877,7 +118877,7 @@
           "Infiltrator"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/885.gif",
-        "evo": "Level 50",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Astonish",
@@ -118930,7 +118930,7 @@
         ]
       }
     ],
-    "evo": "Level 60",
+    "evo": "Level 42",
     "next": [
       {
         "name": "Dragapult",
@@ -119120,7 +119120,7 @@
           "Infiltrator"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/885.gif",
-        "evo": "Level 50",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Astonish",
@@ -119182,7 +119182,7 @@
           "Infiltrator"
         ],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/886.gif",
-        "evo": "Level 60",
+        "evo": "Level 42",
         "moves": [
           {
             "move": "Astonish",
@@ -123432,7 +123432,7 @@
         "abilities": [
           "Flame Body"
         ],
-        "evo": "Level 59",
+        "evo": "Level 38",
         "moves": [
           {
             "move": "Ember",
@@ -124839,7 +124839,7 @@
         "abilities": [
           "Flame Body"
         ],
-        "evo": "Level 59",
+        "evo": "Level 38",
         "moves": [
           {
             "move": "Ember",
@@ -125648,7 +125648,7 @@
           "Rock Head",
           "Sheer Force"
         ],
-        "evo": "Level 30",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Rage",
@@ -125708,7 +125708,7 @@
           "Rock Head",
           "Overcoat"
         ],
-        "evo": "Level 50",
+        "evo": "Level 42",
         "moves": [
           {
             "move": "Bite",
