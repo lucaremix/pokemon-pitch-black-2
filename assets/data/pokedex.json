@@ -399,10 +399,6 @@
         "moves": [
           {
             "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Harden",
             "level": 7
           }
         ]
@@ -417,10 +413,6 @@
           "Unnerve"
         ],
         "moves": [
-          {
-            "move": "Fury Attack",
-            "level": 1
-          },
           {
             "move": "Fury Attack",
             "level": 10
@@ -550,10 +542,6 @@
         "moves": [
           {
             "move": "Fury Attack",
-            "level": 1
-          },
-          {
-            "move": "Fury Attack",
             "level": 10
           },
           {
@@ -608,10 +596,6 @@
       }
     ],
     "moves": [
-      {
-        "move": "Harden",
-        "level": 1
-      },
       {
         "move": "Harden",
         "level": 7
@@ -675,20 +659,12 @@
         "moves": [
           {
             "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Harden",
             "level": 7
           }
         ]
       }
     ],
     "moves": [
-      {
-        "move": "Fury Attack",
-        "level": 1
-      },
       {
         "move": "Fury Attack",
         "level": 10
@@ -3208,6 +3184,10 @@
             "level": 7
           },
           {
+            "move": "Metal Claw",
+            "level": 7
+          },
+          {
             "move": "Rapid Spin",
             "level": 9
           },
@@ -3236,6 +3216,10 @@
             "level": 23
           },
           {
+            "move": "Iron Head",
+            "level": 23
+          },
+          {
             "move": "Slash",
             "level": 26
           },
@@ -3246,6 +3230,10 @@
           {
             "move": "Gyro Ball",
             "level": 34
+          },
+          {
+            "move": "Iron Tail",
+            "level": 37
           },
           {
             "move": "Swords Dance",
@@ -3285,6 +3273,10 @@
         "level": 7
       },
       {
+        "move": "Metal Claw",
+        "level": 7
+      },
+      {
         "move": "Rapid Spin",
         "level": 9
       },
@@ -3309,6 +3301,10 @@
         "level": 23
       },
       {
+        "move": "Iron Head",
+        "level": 23
+      },
+      {
         "move": "Slash",
         "level": 26
       },
@@ -3322,6 +3318,10 @@
       },
       {
         "move": "Sandstorm",
+        "level": 37
+      },
+      {
+        "move": "Iron Tail",
         "level": 37
       },
       {
@@ -3520,6 +3520,10 @@
             "level": 7
           },
           {
+            "move": "Metal Claw",
+            "level": 7
+          },
+          {
             "move": "Rapid Spin",
             "level": 9
           },
@@ -3544,6 +3548,10 @@
             "level": 23
           },
           {
+            "move": "Iron Head",
+            "level": 23
+          },
+          {
             "move": "Slash",
             "level": 26
           },
@@ -3557,6 +3565,10 @@
           },
           {
             "move": "Sandstorm",
+            "level": 37
+          },
+          {
+            "move": "Iron Tail",
             "level": 37
           },
           {
@@ -3592,6 +3604,10 @@
         "level": 7
       },
       {
+        "move": "Metal Claw",
+        "level": 7
+      },
+      {
         "move": "Rapid Spin",
         "level": 9
       },
@@ -3620,6 +3636,10 @@
         "level": 23
       },
       {
+        "move": "Iron Head",
+        "level": 23
+      },
+      {
         "move": "Slash",
         "level": 26
       },
@@ -3630,6 +3650,10 @@
       {
         "move": "Gyro Ball",
         "level": 34
+      },
+      {
+        "move": "Iron Tail",
+        "level": 37
       },
       {
         "move": "Swords Dance",
@@ -5998,6 +6022,18 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 1
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 1
+          },
+          {
+            "move": "Moonblast",
+            "level": 1
+          },
+          {
             "move": "Defense Curl",
             "level": 5
           },
@@ -6026,6 +6062,10 @@
         "level": 5
       },
       {
+        "move": "Disarming Voice",
+        "level": 8
+      },
+      {
         "move": "Pound",
         "level": 9
       },
@@ -6046,6 +6086,10 @@
         "level": 25
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 27
+      },
+      {
         "move": "Rest",
         "level": 29
       },
@@ -6060,6 +6104,10 @@
       {
         "move": "Wake-Up Slap",
         "level": 41
+      },
+      {
+        "move": "Moonblast",
+        "level": 42
       },
       {
         "move": "Mimic",
@@ -6099,6 +6147,18 @@
           },
           {
             "move": "Sing",
+            "level": 1
+          },
+          {
+            "move": "Disarming Voice",
+            "level": 1
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 1
+          },
+          {
+            "move": "Moonblast",
             "level": 1
           }
         ],
@@ -6224,6 +6284,18 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 1
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 1
+          },
+          {
+            "move": "Moonblast",
+            "level": 1
+          },
+          {
             "move": "Defense Curl",
             "level": 5
           },
@@ -6261,6 +6333,10 @@
             "level": 5
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Pound",
             "level": 9
           },
@@ -6281,6 +6357,10 @@
             "level": 25
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
             "move": "Rest",
             "level": 29
           },
@@ -6295,6 +6375,10 @@
           {
             "move": "Wake-Up Slap",
             "level": 41
+          },
+          {
+            "move": "Moonblast",
+            "level": 42
           },
           {
             "move": "Mimic",
@@ -6326,6 +6410,18 @@
       },
       {
         "move": "Sing",
+        "level": 1
+      },
+      {
+        "move": "Disarming Voice",
+        "level": 1
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 1
+      },
+      {
+        "move": "Moonblast",
         "level": 1
       }
     ]
@@ -6801,14 +6897,6 @@
           },
           {
             "move": "Sweet Scent",
-            "level": 1
-          },
-          {
-            "move": "Acid",
-            "level": 1
-          },
-          {
-            "move": "Sweet Scent",
             "level": 5
           },
           {
@@ -7093,14 +7181,6 @@
       },
       {
         "move": "Sweet Scent",
-        "level": 1
-      },
-      {
-        "move": "Acid",
-        "level": 1
-      },
-      {
-        "move": "Sweet Scent",
         "level": 5
       },
       {
@@ -7242,14 +7322,6 @@
           },
           {
             "move": "Sweet Scent",
-            "level": 1
-          },
-          {
-            "move": "Acid",
-            "level": 1
-          },
-          {
-            "move": "Sweet Scent",
             "level": 5
           },
           {
@@ -7360,14 +7432,6 @@
           },
           {
             "move": "Scratch",
-            "level": 1
-          },
-          {
-            "move": "Poison Powder",
-            "level": 1
-          },
-          {
-            "move": "Leech Life",
             "level": 1
           },
           {
@@ -7568,14 +7632,6 @@
         "level": 1
       },
       {
-        "move": "Poison Powder",
-        "level": 1
-      },
-      {
-        "move": "Leech Life",
-        "level": 1
-      },
-      {
         "move": "String Shot",
         "level": 1
       },
@@ -7675,10 +7731,6 @@
           },
           {
             "move": "Foresight",
-            "level": 1
-          },
-          {
-            "move": "Supersonic",
             "level": 1
           },
           {
@@ -7904,10 +7956,6 @@
       },
       {
         "move": "Foresight",
-        "level": 1
-      },
-      {
-        "move": "Supersonic",
         "level": 1
       },
       {
@@ -8665,10 +8713,6 @@
           },
           {
             "move": "Bite",
-            "level": 1
-          },
-          {
-            "move": "Bite",
             "level": 6
           },
           {
@@ -9050,10 +9094,6 @@
       },
       {
         "move": "Growl",
-        "level": 1
-      },
-      {
-        "move": "Bite",
         "level": 1
       },
       {
@@ -10590,14 +10630,6 @@
           },
           {
             "move": "Bubble",
-            "level": 1
-          },
-          {
-            "move": "Hypnosis",
-            "level": 1
-          },
-          {
-            "move": "Bubble",
             "level": 5
           },
           {
@@ -10901,14 +10933,6 @@
       },
       {
         "move": "Bubble",
-        "level": 1
-      },
-      {
-        "move": "Hypnosis",
-        "level": 1
-      },
-      {
-        "move": "Bubble",
         "level": 5
       },
       {
@@ -11053,14 +11077,6 @@
         "moves": [
           {
             "move": "Water Sport",
-            "level": 1
-          },
-          {
-            "move": "Bubble",
-            "level": 1
-          },
-          {
-            "move": "Hypnosis",
             "level": 1
           },
           {
@@ -13271,10 +13287,6 @@
           },
           {
             "move": "Rock Polish",
-            "level": 1
-          },
-          {
-            "move": "Rock Polish",
             "level": 8
           },
           {
@@ -13343,10 +13355,6 @@
           },
           {
             "move": "Defense Curl",
-            "level": 1
-          },
-          {
-            "move": "Rock Polish",
             "level": 1
           },
           {
@@ -13832,10 +13840,6 @@
             "level": 1
           },
           {
-            "move": "Rock Polish",
-            "level": 1
-          },
-          {
             "move": "Rock Smash",
             "level": 4
           },
@@ -13905,10 +13909,6 @@
       },
       {
         "move": "Defense Curl",
-        "level": 1
-      },
-      {
-        "move": "Rock Polish",
         "level": 1
       },
       {
@@ -14326,10 +14326,6 @@
           },
           {
             "move": "Rock Polish",
-            "level": 1
-          },
-          {
-            "move": "Rock Polish",
             "level": 8
           },
           {
@@ -14390,10 +14386,6 @@
       },
       {
         "move": "Defense Curl",
-        "level": 1
-      },
-      {
-        "move": "Rock Polish",
         "level": 1
       },
       {
@@ -14752,14 +14744,6 @@
           },
           {
             "move": "Quick Attack",
-            "level": 1
-          },
-          {
-            "move": "Tail Whip",
-            "level": 1
-          },
-          {
-            "move": "Ember",
             "level": 1
           },
           {
@@ -15147,14 +15131,6 @@
       },
       {
         "move": "Quick Attack",
-        "level": 1
-      },
-      {
-        "move": "Tail Whip",
-        "level": 1
-      },
-      {
-        "move": "Ember",
         "level": 1
       },
       {
@@ -17222,6 +17198,10 @@
         "level": 7
       },
       {
+        "move": "Rock Smash",
+        "level": 8
+      },
+      {
         "move": "Knock Off",
         "level": 9
       },
@@ -17242,6 +17222,10 @@
         "level": 25
       },
       {
+        "move": "Brick Break",
+        "level": 28
+      },
+      {
         "move": "Agility",
         "level": 31
       },
@@ -17256,6 +17240,10 @@
       {
         "move": "Feint",
         "level": 43
+      },
+      {
+        "move": "Close Combat",
+        "level": 44
       },
       {
         "move": "False Swipe",
@@ -17489,10 +17477,6 @@
           },
           {
             "move": "Quick Attack",
-            "level": 1
-          },
-          {
-            "move": "Quick Attack",
             "level": 5
           },
           {
@@ -17698,10 +17682,6 @@
       },
       {
         "move": "Growl",
-        "level": 1
-      },
-      {
-        "move": "Quick Attack",
         "level": 1
       },
       {
@@ -18153,14 +18133,6 @@
           },
           {
             "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Mud-Slap",
-            "level": 1
-          },
-          {
-            "move": "Harden",
             "level": 4
           },
           {
@@ -18570,14 +18542,6 @@
       },
       {
         "move": "Poison Gas",
-        "level": 1
-      },
-      {
-        "move": "Harden",
-        "level": 1
-      },
-      {
-        "move": "Mud-Slap",
         "level": 1
       },
       {
@@ -20179,23 +20143,11 @@
           },
           {
             "move": "Disable",
-            "level": 1
-          },
-          {
-            "move": "Confusion",
-            "level": 1
-          },
-          {
-            "move": "Disable",
             "level": 5
           },
           {
             "move": "Confusion",
             "level": 9
-          },
-          {
-            "move": "Headbutt",
-            "level": 13
           },
           {
             "move": "Poison Gas",
@@ -20272,10 +20224,6 @@
       {
         "move": "Confusion",
         "level": 9
-      },
-      {
-        "move": "Headbutt",
-        "level": 13
       },
       {
         "move": "Poison Gas",
@@ -20373,10 +20321,6 @@
             "level": 9
           },
           {
-            "move": "Headbutt",
-            "level": 13
-          },
-          {
             "move": "Poison Gas",
             "level": 17
           },
@@ -20446,23 +20390,11 @@
       },
       {
         "move": "Disable",
-        "level": 1
-      },
-      {
-        "move": "Confusion",
-        "level": 1
-      },
-      {
-        "move": "Disable",
         "level": 5
       },
       {
         "move": "Confusion",
         "level": 9
-      },
-      {
-        "move": "Headbutt",
-        "level": 13
       },
       {
         "move": "Poison Gas",
@@ -20563,14 +20495,6 @@
           },
           {
             "move": "Bubble",
-            "level": 1
-          },
-          {
-            "move": "Vise Grip",
-            "level": 1
-          },
-          {
-            "move": "Leer",
             "level": 1
           },
           {
@@ -20811,14 +20735,6 @@
       },
       {
         "move": "Vise Grip",
-        "level": 1
-      },
-      {
-        "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Vise Grip",
         "level": 5
       },
       {
@@ -20917,18 +20833,6 @@
         "moves": [
           {
             "move": "Charge",
-            "level": 1
-          },
-          {
-            "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Sonic Boom",
-            "level": 1
-          },
-          {
-            "move": "Spark",
             "level": 1
           },
           {
@@ -21358,18 +21262,6 @@
     "moves": [
       {
         "move": "Charge",
-        "level": 1
-      },
-      {
-        "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Sonic Boom",
-        "level": 1
-      },
-      {
-        "move": "Spark",
         "level": 1
       },
       {
@@ -26239,14 +26131,6 @@
             "level": 1
           },
           {
-            "move": "Thunder Shock",
-            "level": 1
-          },
-          {
-            "move": "Low Kick",
-            "level": 1
-          },
-          {
             "move": "Rock Smash",
             "level": 3
           },
@@ -26320,10 +26204,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Thunder Shock",
         "level": 1
       },
       {
@@ -27334,6 +27214,10 @@
             "level": 5
           },
           {
+            "move": "Twister",
+            "level": 7
+          },
+          {
             "move": "Water Gun",
             "level": 9
           },
@@ -27350,6 +27234,10 @@
             "level": 21
           },
           {
+            "move": "Dragon Breath",
+            "level": 23
+          },
+          {
             "move": "Aqua Ring",
             "level": 25
           },
@@ -27364,6 +27252,10 @@
           {
             "move": "Haze",
             "level": 33
+          },
+          {
+            "move": "Dragon Pulse",
+            "level": 36
           },
           {
             "move": "Muddy Water",
@@ -27407,6 +27299,10 @@
             "level": 5
           },
           {
+            "move": "Mud-Slap",
+            "level": 7
+          },
+          {
             "move": "Thunder Shock",
             "level": 9
           },
@@ -27423,6 +27319,10 @@
             "level": 21
           },
           {
+            "move": "Mud Bomb",
+            "level": 23
+          },
+          {
             "move": "Pin Missile",
             "level": 25
           },
@@ -27433,6 +27333,10 @@
           {
             "move": "Thunder Wave",
             "level": 33
+          },
+          {
+            "move": "Earth Power",
+            "level": 36
           },
           {
             "move": "Discharge",
@@ -27549,6 +27453,10 @@
             "level": 5
           },
           {
+            "move": "Astonish",
+            "level": 7
+          },
+          {
             "move": "Confusion",
             "level": 9
           },
@@ -27565,6 +27473,10 @@
             "level": 21
           },
           {
+            "move": "Hex",
+            "level": 23
+          },
+          {
             "move": "Future Sight",
             "level": 25
           },
@@ -27575,6 +27487,10 @@
           {
             "move": "Morning Sun",
             "level": 33
+          },
+          {
+            "move": "Shadow Ball",
+            "level": 36
           },
           {
             "move": "Psychic",
@@ -27618,6 +27534,10 @@
             "level": 5
           },
           {
+            "move": "Rock Smash",
+            "level": 7
+          },
+          {
             "move": "Pursuit",
             "level": 9
           },
@@ -27634,6 +27554,10 @@
             "level": 21
           },
           {
+            "move": "Brick Break",
+            "level": 23
+          },
+          {
             "move": "Assurance",
             "level": 25
           },
@@ -27644,6 +27568,10 @@
           {
             "move": "Moonlight",
             "level": 33
+          },
+          {
+            "move": "Close Combat",
+            "level": 36
           },
           {
             "move": "Mean Look",
@@ -27772,6 +27700,10 @@
             "level": 5
           },
           {
+            "move": "Acid",
+            "level": 7
+          },
+          {
             "move": "Icy Wind",
             "level": 9
           },
@@ -27788,6 +27720,10 @@
             "level": 21
           },
           {
+            "move": "Venoshock",
+            "level": 23
+          },
+          {
             "move": "Ice Shard",
             "level": 25
           },
@@ -27798,6 +27734,10 @@
           {
             "move": "Mirror Coat",
             "level": 33
+          },
+          {
+            "move": "Sludge Bomb",
+            "level": 36
           },
           {
             "move": "Hail",
@@ -28052,6 +27992,10 @@
         "level": 5
       },
       {
+        "move": "Twister",
+        "level": 7
+      },
+      {
         "move": "Water Gun",
         "level": 9
       },
@@ -28068,6 +28012,10 @@
         "level": 21
       },
       {
+        "move": "Dragon Breath",
+        "level": 23
+      },
+      {
         "move": "Aqua Ring",
         "level": 25
       },
@@ -28082,6 +28030,10 @@
       {
         "move": "Haze",
         "level": 33
+      },
+      {
+        "move": "Dragon Pulse",
+        "level": 36
       },
       {
         "move": "Muddy Water",
@@ -28204,6 +28156,10 @@
         "level": 5
       },
       {
+        "move": "Mud-Slap",
+        "level": 7
+      },
+      {
         "move": "Thunder Shock",
         "level": 9
       },
@@ -28220,6 +28176,10 @@
         "level": 21
       },
       {
+        "move": "Mud Bomb",
+        "level": 23
+      },
+      {
         "move": "Pin Missile",
         "level": 25
       },
@@ -28230,6 +28190,10 @@
       {
         "move": "Thunder Wave",
         "level": 33
+      },
+      {
+        "move": "Earth Power",
+        "level": 36
       },
       {
         "move": "Discharge",
@@ -29567,14 +29531,6 @@
           },
           {
             "move": "Thunder Wave",
-            "level": 1
-          },
-          {
-            "move": "Twister",
-            "level": 1
-          },
-          {
-            "move": "Thunder Wave",
             "level": 5
           },
           {
@@ -29663,14 +29619,6 @@
           },
           {
             "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Thunder Wave",
-            "level": 1
-          },
-          {
-            "move": "Twister",
             "level": 1
           },
           {
@@ -29898,14 +29846,6 @@
           },
           {
             "move": "Thunder Wave",
-            "level": 1
-          },
-          {
-            "move": "Twister",
-            "level": 1
-          },
-          {
-            "move": "Thunder Wave",
             "level": 5
           },
           {
@@ -29978,14 +29918,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Thunder Wave",
-        "level": 1
-      },
-      {
-        "move": "Twister",
         "level": 1
       },
       {
@@ -30147,14 +30079,6 @@
           },
           {
             "move": "Thunder Wave",
-            "level": 1
-          },
-          {
-            "move": "Twister",
-            "level": 1
-          },
-          {
-            "move": "Thunder Wave",
             "level": 5
           },
           {
@@ -30235,14 +30159,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Thunder Wave",
-        "level": 1
-      },
-      {
-        "move": "Twister",
         "level": 1
       },
       {
@@ -31288,14 +31204,6 @@
           },
           {
             "move": "Scary Face",
-            "level": 1
-          },
-          {
-            "move": "Constrict",
-            "level": 1
-          },
-          {
-            "move": "Scary Face",
             "level": 5
           },
           {
@@ -31497,14 +31405,6 @@
       },
       {
         "move": "String Shot",
-        "level": 1
-      },
-      {
-        "move": "Scary Face",
-        "level": 1
-      },
-      {
-        "move": "Constrict",
         "level": 1
       },
       {
@@ -32506,6 +32406,10 @@
             "level": 5
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Pound",
             "level": 9
           },
@@ -32526,6 +32430,10 @@
             "level": 25
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
             "move": "Rest",
             "level": 29
           },
@@ -32540,6 +32448,10 @@
           {
             "move": "Wake-Up Slap",
             "level": 41
+          },
+          {
+            "move": "Moonblast",
+            "level": 42
           },
           {
             "move": "Mimic",
@@ -32580,6 +32492,18 @@
           {
             "move": "Sing",
             "level": 1
+          },
+          {
+            "move": "Disarming Voice",
+            "level": 1
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 1
+          },
+          {
+            "move": "Moonblast",
+            "level": 1
           }
         ]
       }
@@ -32591,6 +32515,18 @@
       },
       {
         "move": "Sing",
+        "level": 1
+      },
+      {
+        "move": "Disarming Voice",
+        "level": 1
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 1
+      },
+      {
+        "move": "Moonblast",
         "level": 1
       },
       {
@@ -32664,6 +32600,14 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
+            "move": "Air Cutter",
+            "level": 8
+          },
+          {
             "move": "Yawn",
             "level": 13
           },
@@ -32680,6 +32624,14 @@
             "level": 25
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
+            "move": "Air Slash",
+            "level": 27
+          },
+          {
             "move": "Wish",
             "level": 29
           },
@@ -32694,6 +32646,10 @@
           {
             "move": "Baton Pass",
             "level": 41
+          },
+          {
+            "move": "Moonblast",
+            "level": 42
           },
           {
             "move": "Double-Edge",
@@ -32734,6 +32690,18 @@
           {
             "move": "Sky Attack",
             "level": 1
+          },
+          {
+            "move": "Disarming Voice",
+            "level": 1
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 1
+          },
+          {
+            "move": "Moonblast",
+            "level": 1
           }
         ]
       }
@@ -32750,6 +32718,10 @@
       {
         "move": "Metronome",
         "level": 5
+      },
+      {
+        "move": "Disarming Voice",
+        "level": 8
       },
       {
         "move": "Sweet Kiss",
@@ -32772,6 +32744,10 @@
         "level": 25
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 27
+      },
+      {
         "move": "Wish",
         "level": 29
       },
@@ -32786,6 +32762,10 @@
       {
         "move": "Baton Pass",
         "level": 41
+      },
+      {
+        "move": "Moonblast",
+        "level": 42
       },
       {
         "move": "Double-Edge",
@@ -32844,6 +32824,10 @@
             "level": 5
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Sweet Kiss",
             "level": 9
           },
@@ -32864,6 +32848,10 @@
             "level": 25
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
             "move": "Wish",
             "level": 29
           },
@@ -32878,6 +32866,10 @@
           {
             "move": "Baton Pass",
             "level": 41
+          },
+          {
+            "move": "Moonblast",
+            "level": 42
           },
           {
             "move": "Double-Edge",
@@ -32921,6 +32913,18 @@
           {
             "move": "Sky Attack",
             "level": 1
+          },
+          {
+            "move": "Disarming Voice",
+            "level": 1
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 1
+          },
+          {
+            "move": "Moonblast",
+            "level": 1
           }
         ]
       }
@@ -32947,6 +32951,14 @@
         "level": 1
       },
       {
+        "move": "Disarming Voice",
+        "level": 8
+      },
+      {
+        "move": "Air Cutter",
+        "level": 8
+      },
+      {
         "move": "Yawn",
         "level": 13
       },
@@ -32963,6 +32975,14 @@
         "level": 25
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 27
+      },
+      {
+        "move": "Air Slash",
+        "level": 27
+      },
+      {
         "move": "Wish",
         "level": 29
       },
@@ -32977,6 +32997,10 @@
       {
         "move": "Baton Pass",
         "level": 41
+      },
+      {
+        "move": "Moonblast",
+        "level": 42
       },
       {
         "move": "Double-Edge",
@@ -33409,6 +33433,10 @@
             "level": 4
           },
           {
+            "move": "Mega Drain",
+            "level": 8
+          },
+          {
             "move": "Cotton Spore",
             "level": 11
           },
@@ -33425,6 +33453,10 @@
             "level": 25
           },
           {
+            "move": "Giga Drain",
+            "level": 28
+          },
+          {
             "move": "Confuse Ray",
             "level": 29
           },
@@ -33439,6 +33471,10 @@
           {
             "move": "Discharge",
             "level": 38
+          },
+          {
+            "move": "Energy Ball",
+            "level": 45
           },
           {
             "move": "Signal Beam",
@@ -33484,6 +33520,10 @@
             "level": 1
           },
           {
+            "move": "Mega Drain",
+            "level": 9
+          },
+          {
             "move": "Cotton Spore",
             "level": 11
           },
@@ -33508,6 +33548,10 @@
             "level": 30
           },
           {
+            "move": "Giga Drain",
+            "level": 31
+          },
+          {
             "move": "Power Gem",
             "level": 35
           },
@@ -33518,6 +33562,10 @@
           {
             "move": "Discharge",
             "level": 40
+          },
+          {
+            "move": "Energy Ball",
+            "level": 50
           },
           {
             "move": "Signal Beam",
@@ -33549,6 +33597,10 @@
         "level": 4
       },
       {
+        "move": "Mega Drain",
+        "level": 7
+      },
+      {
         "move": "Thunder Shock",
         "level": 8
       },
@@ -33569,6 +33621,10 @@
         "level": 22
       },
       {
+        "move": "Giga Drain",
+        "level": 23
+      },
+      {
         "move": "Confuse Ray",
         "level": 25
       },
@@ -33583,6 +33639,10 @@
       {
         "move": "Discharge",
         "level": 32
+      },
+      {
+        "move": "Energy Ball",
+        "level": 37
       },
       {
         "move": "Signal Beam",
@@ -33640,6 +33700,10 @@
             "level": 4
           },
           {
+            "move": "Mega Drain",
+            "level": 7
+          },
+          {
             "move": "Thunder Shock",
             "level": 8
           },
@@ -33660,6 +33724,10 @@
             "level": 22
           },
           {
+            "move": "Giga Drain",
+            "level": 23
+          },
+          {
             "move": "Confuse Ray",
             "level": 25
           },
@@ -33674,6 +33742,10 @@
           {
             "move": "Discharge",
             "level": 32
+          },
+          {
+            "move": "Energy Ball",
+            "level": 37
           },
           {
             "move": "Signal Beam",
@@ -33721,6 +33793,10 @@
             "level": 1
           },
           {
+            "move": "Mega Drain",
+            "level": 9
+          },
+          {
             "move": "Cotton Spore",
             "level": 11
           },
@@ -33745,6 +33821,10 @@
             "level": 30
           },
           {
+            "move": "Giga Drain",
+            "level": 31
+          },
+          {
             "move": "Power Gem",
             "level": 35
           },
@@ -33755,6 +33835,10 @@
           {
             "move": "Discharge",
             "level": 40
+          },
+          {
+            "move": "Energy Ball",
+            "level": 50
           },
           {
             "move": "Signal Beam",
@@ -33790,6 +33874,10 @@
         "level": 4
       },
       {
+        "move": "Mega Drain",
+        "level": 8
+      },
+      {
         "move": "Cotton Spore",
         "level": 11
       },
@@ -33806,6 +33894,10 @@
         "level": 25
       },
       {
+        "move": "Giga Drain",
+        "level": 28
+      },
+      {
         "move": "Confuse Ray",
         "level": 29
       },
@@ -33820,6 +33912,10 @@
       {
         "move": "Discharge",
         "level": 38
+      },
+      {
+        "move": "Energy Ball",
+        "level": 45
       },
       {
         "move": "Signal Beam",
@@ -33877,6 +33973,10 @@
             "level": 4
           },
           {
+            "move": "Mega Drain",
+            "level": 7
+          },
+          {
             "move": "Thunder Shock",
             "level": 8
           },
@@ -33897,6 +33997,10 @@
             "level": 22
           },
           {
+            "move": "Giga Drain",
+            "level": 23
+          },
+          {
             "move": "Confuse Ray",
             "level": 25
           },
@@ -33911,6 +34015,10 @@
           {
             "move": "Discharge",
             "level": 32
+          },
+          {
+            "move": "Energy Ball",
+            "level": 37
           },
           {
             "move": "Signal Beam",
@@ -33953,6 +34061,10 @@
             "level": 4
           },
           {
+            "move": "Mega Drain",
+            "level": 8
+          },
+          {
             "move": "Cotton Spore",
             "level": 11
           },
@@ -33969,6 +34081,10 @@
             "level": 25
           },
           {
+            "move": "Giga Drain",
+            "level": 28
+          },
+          {
             "move": "Confuse Ray",
             "level": 29
           },
@@ -33983,6 +34099,10 @@
           {
             "move": "Discharge",
             "level": 38
+          },
+          {
+            "move": "Energy Ball",
+            "level": 45
           },
           {
             "move": "Signal Beam",
@@ -34021,6 +34141,10 @@
         "level": 1
       },
       {
+        "move": "Mega Drain",
+        "level": 9
+      },
+      {
         "move": "Cotton Spore",
         "level": 11
       },
@@ -34045,6 +34169,10 @@
         "level": 30
       },
       {
+        "move": "Giga Drain",
+        "level": 31
+      },
+      {
         "move": "Power Gem",
         "level": 35
       },
@@ -34055,6 +34183,10 @@
       {
         "move": "Discharge",
         "level": 40
+      },
+      {
+        "move": "Energy Ball",
+        "level": 50
       },
       {
         "move": "Signal Beam",
@@ -34165,14 +34297,6 @@
         "moves": [
           {
             "move": "Absorb",
-            "level": 1
-          },
-          {
-            "move": "Sweet Scent",
-            "level": 1
-          },
-          {
-            "move": "Acid",
             "level": 1
           },
           {
@@ -34321,12 +34445,20 @@
             "level": 2
           },
           {
+            "move": "Disarming Voice",
+            "level": 3
+          },
+          {
             "move": "Water Sport",
             "level": 5
           },
           {
             "move": "Water Gun",
             "level": 7
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 12
           },
           {
             "move": "Bubble Beam",
@@ -34384,6 +34516,10 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 7
+          },
+          {
             "move": "Rollout",
             "level": 10
           },
@@ -34400,6 +34536,10 @@
             "level": 21
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 23
+          },
+          {
             "move": "Double-Edge",
             "level": 25
           },
@@ -34410,6 +34550,10 @@
           {
             "move": "Rain Dance",
             "level": 35
+          },
+          {
+            "move": "Moonblast",
+            "level": 37
           },
           {
             "move": "Superpower",
@@ -34444,6 +34588,10 @@
         "level": 5
       },
       {
+        "move": "Disarming Voice",
+        "level": 6
+      },
+      {
         "move": "Water Gun",
         "level": 7
       },
@@ -34464,6 +34612,10 @@
         "level": 20
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 20
+      },
+      {
         "move": "Aqua Ring",
         "level": 23
       },
@@ -34474,6 +34626,10 @@
       {
         "move": "Rain Dance",
         "level": 31
+      },
+      {
+        "move": "Moonblast",
+        "level": 32
       },
       {
         "move": "Superpower",
@@ -34533,12 +34689,20 @@
             "level": 2
           },
           {
+            "move": "Disarming Voice",
+            "level": 3
+          },
+          {
             "move": "Water Sport",
             "level": 5
           },
           {
             "move": "Water Gun",
             "level": 7
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 12
           },
           {
             "move": "Bubble Beam",
@@ -34590,6 +34754,10 @@
             "level": 5
           },
           {
+            "move": "Disarming Voice",
+            "level": 6
+          },
+          {
             "move": "Water Gun",
             "level": 7
           },
@@ -34610,6 +34778,10 @@
             "level": 20
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 20
+          },
+          {
             "move": "Aqua Ring",
             "level": 23
           },
@@ -34620,6 +34792,10 @@
           {
             "move": "Rain Dance",
             "level": 31
+          },
+          {
+            "move": "Moonblast",
+            "level": 32
           },
           {
             "move": "Superpower",
@@ -34658,6 +34834,10 @@
         "level": 1
       },
       {
+        "move": "Disarming Voice",
+        "level": 7
+      },
+      {
         "move": "Rollout",
         "level": 10
       },
@@ -34674,6 +34854,10 @@
         "level": 21
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 23
+      },
+      {
         "move": "Double-Edge",
         "level": 25
       },
@@ -34684,6 +34868,10 @@
       {
         "move": "Rain Dance",
         "level": 35
+      },
+      {
+        "move": "Moonblast",
+        "level": 37
       },
       {
         "move": "Superpower",
@@ -34796,18 +34984,6 @@
       },
       {
         "move": "Copycat",
-        "level": 1
-      },
-      {
-        "move": "Flail",
-        "level": 1
-      },
-      {
-        "move": "Low Kick",
-        "level": 1
-      },
-      {
-        "move": "Rock Throw",
         "level": 1
       },
       {
@@ -34972,14 +35148,6 @@
         "moves": [
           {
             "move": "Water Sport",
-            "level": 1
-          },
-          {
-            "move": "Bubble",
-            "level": 1
-          },
-          {
-            "move": "Hypnosis",
             "level": 1
           },
           {
@@ -35930,14 +36098,6 @@
             "level": 1
           },
           {
-            "move": "Sand Attack",
-            "level": 1
-          },
-          {
-            "move": "Astonish",
-            "level": 1
-          },
-          {
             "move": "Rock Smash",
             "level": 3
           },
@@ -36026,6 +36186,10 @@
         "level": 4
       },
       {
+        "move": "Rock Smash",
+        "level": 6
+      },
+      {
         "move": "Astonish",
         "level": 8
       },
@@ -36054,6 +36218,10 @@
         "level": 22
       },
       {
+        "move": "Brick Break",
+        "level": 22
+      },
+      {
         "move": "Screech",
         "level": 25
       },
@@ -36064,6 +36232,10 @@
       {
         "move": "Double Hit",
         "level": 32
+      },
+      {
+        "move": "Close Combat",
+        "level": 34
       },
       {
         "move": "Fling",
@@ -36510,14 +36682,6 @@
           },
           {
             "move": "Foresight",
-            "level": 1
-          },
-          {
-            "move": "Quick Attack",
-            "level": 1
-          },
-          {
-            "move": "Double Team",
             "level": 1
           },
           {
@@ -37179,6 +37343,10 @@
         "level": 5
       },
       {
+        "move": "Astonish",
+        "level": 7
+      },
+      {
         "move": "Confusion",
         "level": 9
       },
@@ -37195,6 +37363,10 @@
         "level": 21
       },
       {
+        "move": "Hex",
+        "level": 23
+      },
+      {
         "move": "Future Sight",
         "level": 25
       },
@@ -37205,6 +37377,10 @@
       {
         "move": "Morning Sun",
         "level": 33
+      },
+      {
+        "move": "Shadow Ball",
+        "level": 36
       },
       {
         "move": "Psychic",
@@ -37327,6 +37503,10 @@
         "level": 5
       },
       {
+        "move": "Rock Smash",
+        "level": 7
+      },
+      {
         "move": "Pursuit",
         "level": 9
       },
@@ -37343,6 +37523,10 @@
         "level": 21
       },
       {
+        "move": "Brick Break",
+        "level": 23
+      },
+      {
         "move": "Assurance",
         "level": 25
       },
@@ -37353,6 +37537,10 @@
       {
         "move": "Moonlight",
         "level": 33
+      },
+      {
+        "move": "Close Combat",
+        "level": 36
       },
       {
         "move": "Mean Look",
@@ -37915,6 +38103,10 @@
         "level": 5
       },
       {
+        "move": "Disarming Voice",
+        "level": 8
+      },
+      {
         "move": "Astonish",
         "level": 10
       },
@@ -37935,6 +38127,10 @@
         "level": 28
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 28
+      },
+      {
         "move": "Pain Split",
         "level": 32
       },
@@ -37945,6 +38141,10 @@
       {
         "move": "Shadow Ball",
         "level": 41
+      },
+      {
+        "move": "Moonblast",
+        "level": 44
       },
       {
         "move": "Perish Song",
@@ -37992,6 +38192,18 @@
           },
           {
             "move": "Spite",
+            "level": 1
+          },
+          {
+            "move": "Disarming Voice",
+            "level": 1
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 1
+          },
+          {
+            "move": "Moonblast",
             "level": 1
           }
         ],
@@ -42622,18 +42834,6 @@
           },
           {
             "move": "Constrict",
-            "level": 1
-          },
-          {
-            "move": "Psybeam",
-            "level": 1
-          },
-          {
-            "move": "Aurora Beam",
-            "level": 1
-          },
-          {
-            "move": "Constrict",
             "level": 6
           },
           {
@@ -42850,18 +43050,6 @@
       },
       {
         "move": "Water Gun",
-        "level": 1
-      },
-      {
-        "move": "Constrict",
-        "level": 1
-      },
-      {
-        "move": "Psybeam",
-        "level": 1
-      },
-      {
-        "move": "Aurora Beam",
         "level": 1
       },
       {
@@ -45311,10 +45499,6 @@
           },
           {
             "move": "Thunder Shock",
-            "level": 1
-          },
-          {
-            "move": "Thunder Shock",
             "level": 5
           },
           {
@@ -45383,14 +45567,6 @@
           },
           {
             "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Thunder Shock",
-            "level": 1
-          },
-          {
-            "move": "Low Kick",
             "level": 1
           },
           {
@@ -46077,14 +46253,6 @@
           },
           {
             "move": "Sandstorm",
-            "level": 1
-          },
-          {
-            "move": "Screech",
-            "level": 1
-          },
-          {
-            "move": "Sandstorm",
             "level": 5
           },
           {
@@ -46153,14 +46321,6 @@
           },
           {
             "move": "Sandstorm",
-            "level": 1
-          },
-          {
-            "move": "Screech",
-            "level": 1
-          },
-          {
-            "move": "Sandstorm",
             "level": 5
           },
           {
@@ -46170,6 +46330,10 @@
           {
             "move": "Twister",
             "level": 10
+          },
+          {
+            "move": "Bite",
+            "level": 11
           },
           {
             "move": "Chip Away",
@@ -46194,6 +46358,10 @@
           {
             "move": "Dragon Pulse",
             "level": 33
+          },
+          {
+            "move": "Crunch",
+            "level": 38
           },
           {
             "move": "Dragon Claw",
@@ -46369,14 +46537,6 @@
           },
           {
             "move": "Sandstorm",
-            "level": 1
-          },
-          {
-            "move": "Screech",
-            "level": 1
-          },
-          {
-            "move": "Sandstorm",
             "level": 5
           },
           {
@@ -46386,6 +46546,10 @@
           {
             "move": "Twister",
             "level": 10
+          },
+          {
+            "move": "Bite",
+            "level": 11
           },
           {
             "move": "Chip Away",
@@ -46410,6 +46574,10 @@
           {
             "move": "Dragon Pulse",
             "level": 33
+          },
+          {
+            "move": "Crunch",
+            "level": 38
           },
           {
             "move": "Dragon Claw",
@@ -46445,14 +46613,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Sandstorm",
-        "level": 1
-      },
-      {
-        "move": "Screech",
         "level": 1
       },
       {
@@ -46591,14 +46751,6 @@
           },
           {
             "move": "Sandstorm",
-            "level": 1
-          },
-          {
-            "move": "Screech",
-            "level": 1
-          },
-          {
-            "move": "Sandstorm",
             "level": 5
           },
           {
@@ -46659,14 +46811,6 @@
       },
       {
         "move": "Sandstorm",
-        "level": 1
-      },
-      {
-        "move": "Screech",
-        "level": 1
-      },
-      {
-        "move": "Sandstorm",
         "level": 5
       },
       {
@@ -46676,6 +46820,10 @@
       {
         "move": "Twister",
         "level": 10
+      },
+      {
+        "move": "Bite",
+        "level": 11
       },
       {
         "move": "Chip Away",
@@ -46700,6 +46848,10 @@
       {
         "move": "Dragon Pulse",
         "level": 33
+      },
+      {
+        "move": "Crunch",
+        "level": 38
       },
       {
         "move": "Dragon Claw",
@@ -47973,10 +48125,6 @@
         "moves": [
           {
             "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Harden",
             "level": 7
           }
         ]
@@ -48077,10 +48225,6 @@
         "moves": [
           {
             "move": "Absorb",
-            "level": 1
-          },
-          {
-            "move": "Absorb",
             "level": 10
           },
           {
@@ -48131,10 +48275,6 @@
       }
     ],
     "moves": [
-      {
-        "move": "Harden",
-        "level": 1
-      },
       {
         "move": "Harden",
         "level": 7
@@ -48200,20 +48340,12 @@
         "moves": [
           {
             "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Harden",
             "level": 7
           }
         ]
       }
     ],
     "moves": [
-      {
-        "move": "Absorb",
-        "level": 1
-      },
       {
         "move": "Absorb",
         "level": 10
@@ -50108,6 +50240,10 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 10
+          },
+          {
             "move": "Lucky Chant",
             "level": 17
           },
@@ -50124,6 +50260,10 @@
             "level": 31
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 32
+          },
+          {
             "move": "Psychic",
             "level": 36
           },
@@ -50138,6 +50278,10 @@
           {
             "move": "Charm",
             "level": 50
+          },
+          {
+            "move": "Moonblast",
+            "level": 51
           },
           {
             "move": "Hypnosis",
@@ -50164,6 +50308,10 @@
         "level": 6
       },
       {
+        "move": "Disarming Voice",
+        "level": 8
+      },
+      {
         "move": "Double Team",
         "level": 10
       },
@@ -50184,6 +50332,10 @@
         "level": 23
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 27
+      },
+      {
         "move": "Calm Mind",
         "level": 28
       },
@@ -50201,6 +50353,10 @@
       },
       {
         "move": "Charm",
+        "level": 43
+      },
+      {
+        "move": "Moonblast",
         "level": 43
       },
       {
@@ -50257,6 +50413,10 @@
             "level": 6
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Double Team",
             "level": 10
           },
@@ -50277,6 +50437,10 @@
             "level": 23
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
             "move": "Calm Mind",
             "level": 28
           },
@@ -50294,6 +50458,10 @@
           },
           {
             "move": "Charm",
+            "level": 43
+          },
+          {
+            "move": "Moonblast",
             "level": 43
           },
           {
@@ -50344,6 +50512,10 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 12
+          },
+          {
             "move": "Wish",
             "level": 17
           },
@@ -50364,6 +50536,10 @@
             "level": 40
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 40
+          },
+          {
             "move": "Imprison",
             "level": 45
           },
@@ -50374,6 +50550,10 @@
           {
             "move": "Captivate",
             "level": 60
+          },
+          {
+            "move": "Moonblast",
+            "level": 64
           },
           {
             "move": "Hypnosis",
@@ -50555,6 +50735,10 @@
         "level": 1
       },
       {
+        "move": "Disarming Voice",
+        "level": 10
+      },
+      {
         "move": "Lucky Chant",
         "level": 17
       },
@@ -50571,6 +50755,10 @@
         "level": 31
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 32
+      },
+      {
         "move": "Psychic",
         "level": 36
       },
@@ -50585,6 +50773,10 @@
       {
         "move": "Charm",
         "level": 50
+      },
+      {
+        "move": "Moonblast",
+        "level": 51
       },
       {
         "move": "Hypnosis",
@@ -50640,6 +50832,10 @@
             "level": 6
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Double Team",
             "level": 10
           },
@@ -50660,6 +50856,10 @@
             "level": 23
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
             "move": "Calm Mind",
             "level": 28
           },
@@ -50677,6 +50877,10 @@
           },
           {
             "move": "Charm",
+            "level": 43
+          },
+          {
+            "move": "Moonblast",
             "level": 43
           },
           {
@@ -50721,6 +50925,10 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 10
+          },
+          {
             "move": "Lucky Chant",
             "level": 17
           },
@@ -50737,6 +50945,10 @@
             "level": 31
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 32
+          },
+          {
             "move": "Psychic",
             "level": 36
           },
@@ -50751,6 +50963,10 @@
           {
             "move": "Charm",
             "level": 50
+          },
+          {
+            "move": "Moonblast",
+            "level": 51
           },
           {
             "move": "Hypnosis",
@@ -50789,6 +51005,10 @@
         "level": 1
       },
       {
+        "move": "Disarming Voice",
+        "level": 12
+      },
+      {
         "move": "Wish",
         "level": 17
       },
@@ -50809,6 +51029,10 @@
         "level": 40
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 40
+      },
+      {
         "move": "Imprison",
         "level": 45
       },
@@ -50819,6 +51043,10 @@
       {
         "move": "Captivate",
         "level": 60
+      },
+      {
+        "move": "Moonblast",
+        "level": 64
       },
       {
         "move": "Hypnosis",
@@ -50964,18 +51192,6 @@
           },
           {
             "move": "Bubble",
-            "level": 1
-          },
-          {
-            "move": "Quick Attack",
-            "level": 1
-          },
-          {
-            "move": "Sweet Scent",
-            "level": 1
-          },
-          {
-            "move": "Water Sport",
             "level": 1
           },
           {
@@ -51141,18 +51357,6 @@
       },
       {
         "move": "Bubble",
-        "level": 1
-      },
-      {
-        "move": "Quick Attack",
-        "level": 1
-      },
-      {
-        "move": "Sweet Scent",
-        "level": 1
-      },
-      {
-        "move": "Water Sport",
         "level": 1
       },
       {
@@ -51515,14 +51719,6 @@
           },
           {
             "move": "Encore",
-            "level": 1
-          },
-          {
-            "move": "Uproar",
-            "level": 1
-          },
-          {
-            "move": "Encore",
             "level": 7
           },
           {
@@ -51590,14 +51786,6 @@
           },
           {
             "move": "Yawn",
-            "level": 1
-          },
-          {
-            "move": "Encore",
-            "level": 1
-          },
-          {
-            "move": "Slack Off",
             "level": 1
           },
           {
@@ -51839,14 +52027,6 @@
           },
           {
             "move": "Encore",
-            "level": 1
-          },
-          {
-            "move": "Slack Off",
-            "level": 1
-          },
-          {
-            "move": "Encore",
             "level": 7
           },
           {
@@ -51939,14 +52119,6 @@
       },
       {
         "move": "Focus Energy",
-        "level": 1
-      },
-      {
-        "move": "Encore",
-        "level": 1
-      },
-      {
-        "move": "Uproar",
         "level": 1
       },
       {
@@ -52101,14 +52273,6 @@
           },
           {
             "move": "Encore",
-            "level": 1
-          },
-          {
-            "move": "Uproar",
-            "level": 1
-          },
-          {
-            "move": "Encore",
             "level": 7
           },
           {
@@ -52170,14 +52334,6 @@
       },
       {
         "move": "Yawn",
-        "level": 1
-      },
-      {
-        "move": "Encore",
-        "level": 1
-      },
-      {
-        "move": "Slack Off",
         "level": 1
       },
       {
@@ -52306,8 +52462,8 @@
             "level": 1
           },
           {
-            "move": "Sand Attack",
-            "level": 1
+            "move": "Wing Attack",
+            "level": 7
           },
           {
             "move": "Sand Attack",
@@ -52332,6 +52488,10 @@
           {
             "move": "Spark",
             "level": 22
+          },
+          {
+            "move": "Aerial Ace",
+            "level": 23
           },
           {
             "move": "Swords Dance",
@@ -52550,8 +52710,8 @@
         "level": 1
       },
       {
-        "move": "Sand Attack",
-        "level": 1
+        "move": "Wing Attack",
+        "level": 7
       },
       {
         "move": "Sand Attack",
@@ -52576,6 +52736,10 @@
       {
         "move": "Spark",
         "level": 22
+      },
+      {
+        "move": "Aerial Ace",
+        "level": 23
       },
       {
         "move": "Swords Dance",
@@ -52767,14 +52931,6 @@
             "level": 1
           },
           {
-            "move": "Astonish",
-            "level": 1
-          },
-          {
-            "move": "Howl",
-            "level": 1
-          },
-          {
             "move": "Rock Smash",
             "level": 7
           },
@@ -52783,7 +52939,7 @@
             "level": 11
           },
           {
-            "move": "Double Kick",
+            "move": "Echoed Voice",
             "level": 14
           },
           {
@@ -52803,7 +52959,7 @@
             "level": 27
           },
           {
-            "move": "Low Sweep",
+            "move": "Uproar",
             "level": 27
           },
           {
@@ -52811,7 +52967,7 @@
             "level": 29
           },
           {
-            "move": "Wild Charge",
+            "move": "Body Slam",
             "level": 33
           },
           {
@@ -52827,7 +52983,7 @@
             "level": 43
           },
           {
-            "move": "Synchronoise",
+            "move": "Hyper Voice",
             "level": 51
           },
           {
@@ -52866,14 +53022,6 @@
             "level": 1
           },
           {
-            "move": "Astonish",
-            "level": 1
-          },
-          {
-            "move": "Howl",
-            "level": 1
-          },
-          {
             "move": "Rock Smash",
             "level": 7
           },
@@ -52882,7 +53030,7 @@
             "level": 11
           },
           {
-            "move": "Double Kick",
+            "move": "Echoed Voice",
             "level": 14
           },
           {
@@ -52902,7 +53050,7 @@
             "level": 27
           },
           {
-            "move": "Low Sweep",
+            "move": "Uproar",
             "level": 27
           },
           {
@@ -52910,7 +53058,7 @@
             "level": 29
           },
           {
-            "move": "Wild Charge",
+            "move": "Body Slam",
             "level": 33
           },
           {
@@ -52926,7 +53074,7 @@
             "level": 40
           },
           {
-            "move": "Thunder",
+            "move": "Hyper Voice",
             "level": 43
           },
           {
@@ -52938,11 +53086,11 @@
             "level": 45
           },
           {
-            "move": "Jump Kick",
+            "move": "Double-Edge",
             "level": 51
           },
           {
-            "move": "Synchronoise",
+            "move": "Hyper Beam",
             "level": 55
           },
           {
@@ -52970,7 +53118,7 @@
         "level": 11
       },
       {
-        "move": "Double Kick",
+        "move": "Echoed Voice",
         "level": 14
       },
       {
@@ -52994,7 +53142,7 @@
         "level": 35
       },
       {
-        "move": "Synchronoise",
+        "move": "Hyper Voice",
         "level": 41
       },
       {
@@ -53049,7 +53197,7 @@
             "level": 11
           },
           {
-            "move": "Double Kick",
+            "move": "Echoed Voice",
             "level": 14
           },
           {
@@ -53073,7 +53221,7 @@
             "level": 35
           },
           {
-            "move": "Synchronoise",
+            "move": "Hyper Voice",
             "level": 41
           },
           {
@@ -53115,14 +53263,6 @@
             "level": 1
           },
           {
-            "move": "Astonish",
-            "level": 1
-          },
-          {
-            "move": "Howl",
-            "level": 1
-          },
-          {
             "move": "Rock Smash",
             "level": 7
           },
@@ -53131,7 +53271,7 @@
             "level": 11
           },
           {
-            "move": "Double Kick",
+            "move": "Echoed Voice",
             "level": 14
           },
           {
@@ -53151,7 +53291,7 @@
             "level": 27
           },
           {
-            "move": "Low Sweep",
+            "move": "Uproar",
             "level": 27
           },
           {
@@ -53159,7 +53299,7 @@
             "level": 29
           },
           {
-            "move": "Wild Charge",
+            "move": "Body Slam",
             "level": 33
           },
           {
@@ -53175,7 +53315,7 @@
             "level": 40
           },
           {
-            "move": "Thunder",
+            "move": "Hyper Voice",
             "level": 43
           },
           {
@@ -53187,11 +53327,11 @@
             "level": 45
           },
           {
-            "move": "Jump Kick",
+            "move": "Double-Edge",
             "level": 51
           },
           {
-            "move": "Synchronoise",
+            "move": "Hyper Beam",
             "level": 55
           },
           {
@@ -53211,14 +53351,6 @@
         "level": 1
       },
       {
-        "move": "Astonish",
-        "level": 1
-      },
-      {
-        "move": "Howl",
-        "level": 1
-      },
-      {
         "move": "Rock Smash",
         "level": 7
       },
@@ -53227,7 +53359,7 @@
         "level": 11
       },
       {
-        "move": "Double Kick",
+        "move": "Echoed Voice",
         "level": 14
       },
       {
@@ -53247,7 +53379,7 @@
         "level": 27
       },
       {
-        "move": "Low Sweep",
+        "move": "Uproar",
         "level": 27
       },
       {
@@ -53255,7 +53387,7 @@
         "level": 29
       },
       {
-        "move": "Wild Charge",
+        "move": "Body Slam",
         "level": 33
       },
       {
@@ -53271,7 +53403,7 @@
         "level": 43
       },
       {
-        "move": "Synchronoise",
+        "move": "Hyper Voice",
         "level": 51
       },
       {
@@ -53326,7 +53458,7 @@
             "level": 11
           },
           {
-            "move": "Double Kick",
+            "move": "Echoed Voice",
             "level": 14
           },
           {
@@ -53350,7 +53482,7 @@
             "level": 35
           },
           {
-            "move": "Synchronoise",
+            "move": "Hyper Voice",
             "level": 41
           },
           {
@@ -53378,14 +53510,6 @@
             "level": 1
           },
           {
-            "move": "Astonish",
-            "level": 1
-          },
-          {
-            "move": "Howl",
-            "level": 1
-          },
-          {
             "move": "Rock Smash",
             "level": 7
           },
@@ -53394,7 +53518,7 @@
             "level": 11
           },
           {
-            "move": "Double Kick",
+            "move": "Echoed Voice",
             "level": 14
           },
           {
@@ -53414,7 +53538,7 @@
             "level": 27
           },
           {
-            "move": "Low Sweep",
+            "move": "Uproar",
             "level": 27
           },
           {
@@ -53422,7 +53546,7 @@
             "level": 29
           },
           {
-            "move": "Wild Charge",
+            "move": "Body Slam",
             "level": 33
           },
           {
@@ -53438,7 +53562,7 @@
             "level": 43
           },
           {
-            "move": "Synchronoise",
+            "move": "Hyper Voice",
             "level": 51
           },
           {
@@ -53470,14 +53594,6 @@
         "level": 1
       },
       {
-        "move": "Astonish",
-        "level": 1
-      },
-      {
-        "move": "Howl",
-        "level": 1
-      },
-      {
         "move": "Rock Smash",
         "level": 7
       },
@@ -53486,7 +53602,7 @@
         "level": 11
       },
       {
-        "move": "Double Kick",
+        "move": "Echoed Voice",
         "level": 14
       },
       {
@@ -53506,7 +53622,7 @@
         "level": 27
       },
       {
-        "move": "Low Sweep",
+        "move": "Uproar",
         "level": 27
       },
       {
@@ -53514,7 +53630,7 @@
         "level": 29
       },
       {
-        "move": "Wild Charge",
+        "move": "Body Slam",
         "level": 33
       },
       {
@@ -53530,7 +53646,7 @@
         "level": 40
       },
       {
-        "move": "Thunder",
+        "move": "Hyper Voice",
         "level": 43
       },
       {
@@ -53542,11 +53658,11 @@
         "level": 45
       },
       {
-        "move": "Jump Kick",
+        "move": "Double-Edge",
         "level": 51
       },
       {
-        "move": "Synchronoise",
+        "move": "Hyper Beam",
         "level": 55
       },
       {
@@ -54048,6 +54164,10 @@
             "level": 5
           },
           {
+            "move": "Disarming Voice",
+            "level": 6
+          },
+          {
             "move": "Water Gun",
             "level": 7
           },
@@ -54068,6 +54188,10 @@
             "level": 20
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 20
+          },
+          {
             "move": "Aqua Ring",
             "level": 23
           },
@@ -54078,6 +54202,10 @@
           {
             "move": "Rain Dance",
             "level": 31
+          },
+          {
+            "move": "Moonblast",
+            "level": 32
           },
           {
             "move": "Superpower",
@@ -54124,6 +54252,10 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 7
+          },
+          {
             "move": "Rollout",
             "level": 10
           },
@@ -54140,6 +54272,10 @@
             "level": 21
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 23
+          },
+          {
             "move": "Double-Edge",
             "level": 25
           },
@@ -54150,6 +54286,10 @@
           {
             "move": "Rain Dance",
             "level": 35
+          },
+          {
+            "move": "Moonblast",
+            "level": 37
           },
           {
             "move": "Superpower",
@@ -54180,12 +54320,20 @@
         "level": 2
       },
       {
+        "move": "Disarming Voice",
+        "level": 3
+      },
+      {
         "move": "Water Sport",
         "level": 5
       },
       {
         "move": "Water Gun",
         "level": 7
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 12
       },
       {
         "move": "Bubble Beam",
@@ -54246,14 +54394,6 @@
           },
           {
             "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Iron Defense",
-            "level": 1
-          },
-          {
-            "move": "Block",
             "level": 1
           },
           {
@@ -54873,14 +55013,6 @@
           },
           {
             "move": "Mud-Slap",
-            "level": 1
-          },
-          {
-            "move": "Headbutt",
-            "level": 1
-          },
-          {
-            "move": "Mud-Slap",
             "level": 4
           },
           {
@@ -54952,14 +55084,6 @@
           },
           {
             "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Mud-Slap",
-            "level": 1
-          },
-          {
-            "move": "Headbutt",
             "level": 1
           },
           {
@@ -55217,14 +55341,6 @@
           },
           {
             "move": "Mud-Slap",
-            "level": 1
-          },
-          {
-            "move": "Headbutt",
-            "level": 1
-          },
-          {
-            "move": "Mud-Slap",
             "level": 4
           },
           {
@@ -55301,14 +55417,6 @@
       },
       {
         "move": "Harden",
-        "level": 1
-      },
-      {
-        "move": "Mud-Slap",
-        "level": 1
-      },
-      {
-        "move": "Headbutt",
         "level": 1
       },
       {
@@ -55484,14 +55592,6 @@
           },
           {
             "move": "Mud-Slap",
-            "level": 1
-          },
-          {
-            "move": "Headbutt",
-            "level": 1
-          },
-          {
-            "move": "Mud-Slap",
             "level": 4
           },
           {
@@ -55556,14 +55656,6 @@
       },
       {
         "move": "Harden",
-        "level": 1
-      },
-      {
-        "move": "Mud-Slap",
-        "level": 1
-      },
-      {
-        "move": "Headbutt",
         "level": 1
       },
       {
@@ -57447,18 +57539,6 @@
           },
           {
             "move": "Growl",
-            "level": 1
-          },
-          {
-            "move": "Water Gun",
-            "level": 1
-          },
-          {
-            "move": "Rollout",
-            "level": 1
-          },
-          {
-            "move": "Growl",
             "level": 4
           },
           {
@@ -57691,18 +57771,6 @@
     "moves": [
       {
         "move": "Splash",
-        "level": 1
-      },
-      {
-        "move": "Growl",
-        "level": 1
-      },
-      {
-        "move": "Water Gun",
-        "level": 1
-      },
-      {
-        "move": "Rollout",
         "level": 1
       },
       {
@@ -58488,18 +58556,6 @@
           },
           {
             "move": "Psywave",
-            "level": 1
-          },
-          {
-            "move": "Odor Sleuth",
-            "level": 1
-          },
-          {
-            "move": "Psybeam",
-            "level": 1
-          },
-          {
-            "move": "Psywave",
             "level": 7
           },
           {
@@ -58765,18 +58821,6 @@
       },
       {
         "move": "Psywave",
-        "level": 1
-      },
-      {
-        "move": "Odor Sleuth",
-        "level": 1
-      },
-      {
-        "move": "Psybeam",
-        "level": 1
-      },
-      {
-        "move": "Psywave",
         "level": 7
       },
       {
@@ -58978,10 +59022,6 @@
             "level": 1
           },
           {
-            "move": "Feint Attack",
-            "level": 1
-          },
-          {
             "move": "String Shot",
             "level": 1
           },
@@ -59051,10 +59091,6 @@
         "moves": [
           {
             "move": "Sonic Boom",
-            "level": 1
-          },
-          {
-            "move": "Feint Attack",
             "level": 1
           },
           {
@@ -59315,10 +59351,6 @@
           },
           {
             "move": "Feint Attack",
-            "level": 1
-          },
-          {
-            "move": "Feint Attack",
             "level": 7
           },
           {
@@ -59387,10 +59419,6 @@
     "moves": [
       {
         "move": "Sonic Boom",
-        "level": 1
-      },
-      {
-        "move": "Feint Attack",
         "level": 1
       },
       {
@@ -59568,10 +59596,6 @@
             "level": 1
           },
           {
-            "move": "Feint Attack",
-            "level": 1
-          },
-          {
             "move": "String Shot",
             "level": 1
           },
@@ -59633,10 +59657,6 @@
     "moves": [
       {
         "move": "Sonic Boom",
-        "level": 1
-      },
-      {
-        "move": "Feint Attack",
         "level": 1
       },
       {
@@ -61666,10 +61686,6 @@
           },
           {
             "move": "Rapid Spin",
-            "level": 1
-          },
-          {
-            "move": "Rapid Spin",
             "level": 4
           },
           {
@@ -61915,10 +61931,6 @@
       },
       {
         "move": "Confusion",
-        "level": 1
-      },
-      {
-        "move": "Rapid Spin",
         "level": 1
       },
       {
@@ -62580,6 +62592,10 @@
             "level": 5
           },
           {
+            "move": "Disarming Voice",
+            "level": 7
+          },
+          {
             "move": "Refresh",
             "level": 9
           },
@@ -62600,6 +62616,10 @@
             "level": 25
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 25
+          },
+          {
             "move": "Aqua Tail",
             "level": 29
           },
@@ -62610,6 +62630,10 @@
           {
             "move": "Hydro Pump",
             "level": 37
+          },
+          {
+            "move": "Moonblast",
+            "level": 39
           },
           {
             "move": "Attract",
@@ -62698,6 +62722,10 @@
         "level": 5
       },
       {
+        "move": "Disarming Voice",
+        "level": 7
+      },
+      {
         "move": "Refresh",
         "level": 9
       },
@@ -62718,6 +62746,10 @@
         "level": 25
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 25
+      },
+      {
         "move": "Aqua Tail",
         "level": 29
       },
@@ -62728,6 +62760,10 @@
       {
         "move": "Hydro Pump",
         "level": 37
+      },
+      {
+        "move": "Moonblast",
+        "level": 39
       },
       {
         "move": "Attract",
@@ -62940,18 +62976,6 @@
         "moves": [
           {
             "move": "Knock Off",
-            "level": 1
-          },
-          {
-            "move": "Screech",
-            "level": 1
-          },
-          {
-            "move": "Night Shade",
-            "level": 1
-          },
-          {
-            "move": "Curse",
             "level": 1
           },
           {
@@ -63179,18 +63203,6 @@
         "level": 1
       },
       {
-        "move": "Screech",
-        "level": 1
-      },
-      {
-        "move": "Night Shade",
-        "level": 1
-      },
-      {
-        "move": "Curse",
-        "level": 1
-      },
-      {
         "move": "Slash",
         "level": 1
       },
@@ -63320,6 +63332,10 @@
             "level": 9
           },
           {
+            "move": "Rock Smash",
+            "level": 9
+          },
+          {
             "move": "Astonish",
             "level": 14
           },
@@ -63340,6 +63356,10 @@
             "level": 30
           },
           {
+            "move": "Brick Break",
+            "level": 31
+          },
+          {
             "move": "Will-O-Wisp",
             "level": 33
           },
@@ -63353,6 +63373,10 @@
           },
           {
             "move": "Mean Look",
+            "level": 49
+          },
+          {
+            "move": "Close Combat",
             "level": 49
           },
           {
@@ -63412,6 +63436,10 @@
             "level": 9
           },
           {
+            "move": "Rock Smash",
+            "level": 9
+          },
+          {
             "move": "Astonish",
             "level": 14
           },
@@ -63432,6 +63460,10 @@
             "level": 30
           },
           {
+            "move": "Brick Break",
+            "level": 31
+          },
+          {
             "move": "Will-O-Wisp",
             "level": 33
           },
@@ -63445,6 +63477,10 @@
           },
           {
             "move": "Mean Look",
+            "level": 49
+          },
+          {
+            "move": "Close Combat",
             "level": 49
           },
           {
@@ -63652,6 +63688,10 @@
             "level": 9
           },
           {
+            "move": "Rock Smash",
+            "level": 9
+          },
+          {
             "move": "Astonish",
             "level": 14
           },
@@ -63672,6 +63712,10 @@
             "level": 30
           },
           {
+            "move": "Brick Break",
+            "level": 31
+          },
+          {
             "move": "Will-O-Wisp",
             "level": 33
           },
@@ -63685,6 +63729,10 @@
           },
           {
             "move": "Mean Look",
+            "level": 49
+          },
+          {
+            "move": "Close Combat",
             "level": 49
           },
           {
@@ -63737,6 +63785,10 @@
         "level": 9
       },
       {
+        "move": "Rock Smash",
+        "level": 9
+      },
+      {
         "move": "Astonish",
         "level": 14
       },
@@ -63757,6 +63809,10 @@
         "level": 30
       },
       {
+        "move": "Brick Break",
+        "level": 31
+      },
+      {
         "move": "Will-O-Wisp",
         "level": 33
       },
@@ -63770,6 +63826,10 @@
       },
       {
         "move": "Mean Look",
+        "level": 49
+      },
+      {
+        "move": "Close Combat",
         "level": 49
       },
       {
@@ -64244,14 +64304,6 @@
           },
           {
             "move": "Double Team",
-            "level": 1
-          },
-          {
-            "move": "Bite",
-            "level": 1
-          },
-          {
-            "move": "Double Team",
             "level": 4
           },
           {
@@ -64512,14 +64564,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Double Team",
-        "level": 1
-      },
-      {
-        "move": "Bite",
         "level": 1
       },
       {
@@ -65754,6 +65798,10 @@
         "level": 7
       },
       {
+        "move": "Disarming Voice",
+        "level": 8
+      },
+      {
         "move": "Agility",
         "level": 9
       },
@@ -65774,6 +65822,10 @@
         "level": 27
       },
       {
+        "move": "Dazzling Gleam",
+        "level": 28
+      },
+      {
         "move": "Flail",
         "level": 31
       },
@@ -65784,6 +65836,10 @@
       {
         "move": "Hydro Pump",
         "level": 40
+      },
+      {
+        "move": "Moonblast",
+        "level": 44
       },
       {
         "move": "Aqua Ring",
@@ -66717,18 +66773,6 @@
           },
           {
             "move": "Bite",
-            "level": 1
-          },
-          {
-            "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Headbutt",
-            "level": 1
-          },
-          {
-            "move": "Bite",
             "level": 5
           },
           {
@@ -67350,10 +67394,6 @@
           },
           {
             "move": "Quick Attack",
-            "level": 1
-          },
-          {
-            "move": "Quick Attack",
             "level": 5
           },
           {
@@ -67414,14 +67454,6 @@
           },
           {
             "move": "Growl",
-            "level": 1
-          },
-          {
-            "move": "Quick Attack",
-            "level": 1
-          },
-          {
-            "move": "Wing Attack",
             "level": 1
           },
           {
@@ -67634,14 +67666,6 @@
           },
           {
             "move": "Quick Attack",
-            "level": 1
-          },
-          {
-            "move": "Wing Attack",
-            "level": 1
-          },
-          {
-            "move": "Quick Attack",
             "level": 5
           },
           {
@@ -67702,10 +67726,6 @@
       },
       {
         "move": "Growl",
-        "level": 1
-      },
-      {
-        "move": "Quick Attack",
         "level": 1
       },
       {
@@ -67856,10 +67876,6 @@
           },
           {
             "move": "Quick Attack",
-            "level": 1
-          },
-          {
-            "move": "Quick Attack",
             "level": 5
           },
           {
@@ -67912,14 +67928,6 @@
       },
       {
         "move": "Growl",
-        "level": 1
-      },
-      {
-        "move": "Quick Attack",
-        "level": 1
-      },
-      {
-        "move": "Wing Attack",
         "level": 1
       },
       {
@@ -68490,10 +68498,6 @@
           },
           {
             "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Leer",
             "level": 5
           },
           {
@@ -68550,14 +68554,6 @@
         "moves": [
           {
             "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Charge",
             "level": 1
           },
           {
@@ -68753,10 +68749,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Leer",
         "level": 5
       },
       {
@@ -68814,14 +68806,6 @@
         "moves": [
           {
             "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Charge",
             "level": 1
           },
           {
@@ -68892,14 +68876,6 @@
         "moves": [
           {
             "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Charge",
             "level": 1
           },
           {
@@ -69055,10 +69031,6 @@
           },
           {
             "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Leer",
             "level": 5
           },
           {
@@ -69108,14 +69080,6 @@
     "moves": [
       {
         "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Charge",
         "level": 1
       },
       {
@@ -69270,10 +69234,6 @@
           },
           {
             "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Leer",
             "level": 5
           },
           {
@@ -69331,14 +69291,6 @@
     "moves": [
       {
         "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Charge",
         "level": 1
       },
       {
@@ -69757,6 +69709,10 @@
             "level": 6
           },
           {
+            "move": "Metal Claw",
+            "level": 9
+          },
+          {
             "move": "Pursuit",
             "level": 10
           },
@@ -69785,6 +69741,10 @@
             "level": 28
           },
           {
+            "move": "Iron Head",
+            "level": 29
+          },
+          {
             "move": "Endeavor",
             "level": 30
           },
@@ -69811,6 +69771,10 @@
           {
             "move": "Jump Kick",
             "level": 43
+          },
+          {
+            "move": "Iron Tail",
+            "level": 46
           },
           {
             "move": "Screech",
@@ -69989,6 +69953,10 @@
         "level": 6
       },
       {
+        "move": "Metal Claw",
+        "level": 9
+      },
+      {
         "move": "Pursuit",
         "level": 10
       },
@@ -70017,6 +69985,10 @@
         "level": 28
       },
       {
+        "move": "Iron Head",
+        "level": 29
+      },
+      {
         "move": "Endeavor",
         "level": 30
       },
@@ -70043,6 +70015,10 @@
       {
         "move": "Jump Kick",
         "level": 43
+      },
+      {
+        "move": "Iron Tail",
+        "level": 46
       },
       {
         "move": "Screech",
@@ -71307,18 +71283,6 @@
           },
           {
             "move": "Growl",
-            "level": 1
-          },
-          {
-            "move": "Water Sport",
-            "level": 1
-          },
-          {
-            "move": "Quick Attack",
-            "level": 1
-          },
-          {
-            "move": "Growl",
             "level": 4
           },
           {
@@ -71398,6 +71362,10 @@
         "level": 7
       },
       {
+        "move": "Ice Fang",
+        "level": 7
+      },
+      {
         "move": "Quick Attack",
         "level": 11
       },
@@ -71428,6 +71396,10 @@
       {
         "move": "Razor Wind",
         "level": 35
+      },
+      {
+        "move": "Icicle Crash",
+        "level": 36
       },
       {
         "move": "Aqua Tail",
@@ -71487,6 +71459,10 @@
             "level": 7
           },
           {
+            "move": "Ice Fang",
+            "level": 7
+          },
+          {
             "move": "Quick Attack",
             "level": 11
           },
@@ -71519,6 +71495,10 @@
             "level": 35
           },
           {
+            "move": "Icicle Crash",
+            "level": 36
+          },
+          {
             "move": "Aqua Tail",
             "level": 38
           },
@@ -71545,18 +71525,6 @@
       },
       {
         "move": "Sonic Boom",
-        "level": 1
-      },
-      {
-        "move": "Growl",
-        "level": 1
-      },
-      {
-        "move": "Water Sport",
-        "level": 1
-      },
-      {
-        "move": "Quick Attack",
         "level": 1
       },
       {
@@ -72038,14 +72006,6 @@
           },
           {
             "move": "Mud Sport",
-            "level": 1
-          },
-          {
-            "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Mud Sport",
             "level": 2
           },
           {
@@ -72246,14 +72206,6 @@
       },
       {
         "move": "Mud Sport",
-        "level": 1
-      },
-      {
-        "move": "Harden",
-        "level": 1
-      },
-      {
-        "move": "Mud Sport",
         "level": 2
       },
       {
@@ -72350,6 +72302,10 @@
             "level": 4
           },
           {
+            "move": "Rock Smash",
+            "level": 6
+          },
+          {
             "move": "Astonish",
             "level": 8
           },
@@ -72378,6 +72334,10 @@
             "level": 22
           },
           {
+            "move": "Brick Break",
+            "level": 22
+          },
+          {
             "move": "Screech",
             "level": 25
           },
@@ -72388,6 +72348,10 @@
           {
             "move": "Double Hit",
             "level": 32
+          },
+          {
+            "move": "Close Combat",
+            "level": 34
           },
           {
             "move": "Fling",
@@ -72411,14 +72375,6 @@
       },
       {
         "move": "Tail Whip",
-        "level": 1
-      },
-      {
-        "move": "Sand Attack",
-        "level": 1
-      },
-      {
-        "move": "Astonish",
         "level": 1
       },
       {
@@ -73196,6 +73152,10 @@
             "level": 5
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Astonish",
             "level": 10
           },
@@ -73216,6 +73176,10 @@
             "level": 28
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 28
+          },
+          {
             "move": "Pain Split",
             "level": 32
           },
@@ -73226,6 +73190,10 @@
           {
             "move": "Shadow Ball",
             "level": 41
+          },
+          {
+            "move": "Moonblast",
+            "level": 44
           },
           {
             "move": "Perish Song",
@@ -73265,6 +73233,18 @@
       },
       {
         "move": "Spite",
+        "level": 1
+      },
+      {
+        "move": "Disarming Voice",
+        "level": 1
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 1
+      },
+      {
+        "move": "Moonblast",
         "level": 1
       }
     ],
@@ -74519,18 +74499,6 @@
           },
           {
             "move": "Flail",
-            "level": 1
-          },
-          {
-            "move": "Low Kick",
-            "level": 1
-          },
-          {
-            "move": "Rock Throw",
-            "level": 1
-          },
-          {
-            "move": "Flail",
             "level": 5
           },
           {
@@ -75315,10 +75283,6 @@
           },
           {
             "move": "Sandstorm",
-            "level": 1
-          },
-          {
-            "move": "Sandstorm",
             "level": 13
           },
           {
@@ -75474,10 +75438,6 @@
           },
           {
             "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Sandstorm",
             "level": 1
           },
           {
@@ -75695,10 +75655,6 @@
       },
       {
         "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Sandstorm",
         "level": 1
       },
       {
@@ -76289,15 +76245,11 @@
           },
           {
             "move": "Bite",
-            "level": 1
-          },
-          {
-            "move": "Yawn",
-            "level": 1
-          },
-          {
-            "move": "Bite",
             "level": 7
+          },
+          {
+            "move": "Aqua Jet",
+            "level": 9
           },
           {
             "move": "Yawn",
@@ -76314,6 +76266,10 @@
           {
             "move": "Sand Tomb",
             "level": 25
+          },
+          {
+            "move": "Aqua Tail",
+            "level": 30
           },
           {
             "move": "Crunch",
@@ -76334,6 +76290,10 @@
           {
             "move": "Leaf Storm",
             "level": 47
+          },
+          {
+            "move": "Waterfall",
+            "level": 48
           },
           {
             "move": "Double-Edge",
@@ -76493,15 +76453,11 @@
       },
       {
         "move": "Bite",
-        "level": 1
-      },
-      {
-        "move": "Yawn",
-        "level": 1
-      },
-      {
-        "move": "Bite",
         "level": 7
+      },
+      {
+        "move": "Aqua Jet",
+        "level": 9
       },
       {
         "move": "Yawn",
@@ -76518,6 +76474,10 @@
       {
         "move": "Sand Tomb",
         "level": 25
+      },
+      {
+        "move": "Aqua Tail",
+        "level": 30
       },
       {
         "move": "Crunch",
@@ -76538,6 +76498,10 @@
       {
         "move": "Leaf Storm",
         "level": 47
+      },
+      {
+        "move": "Waterfall",
+        "level": 48
       },
       {
         "move": "Double-Edge",
@@ -76942,10 +76906,6 @@
           },
           {
             "move": "Mud-Slap",
-            "level": 1
-          },
-          {
-            "move": "Mud-Slap",
             "level": 3
           },
           {
@@ -77179,10 +77139,6 @@
       },
       {
         "move": "Mud-Slap",
-        "level": 1
-      },
-      {
-        "move": "Mud-Slap",
         "level": 3
       },
       {
@@ -77361,14 +77317,6 @@
         "moves": [
           {
             "move": "Pound",
-            "level": 1
-          },
-          {
-            "move": "Water Gun",
-            "level": 1
-          },
-          {
-            "move": "Attract",
             "level": 1
           },
           {
@@ -77589,14 +77537,6 @@
     "moves": [
       {
         "move": "Pound",
-        "level": 1
-      },
-      {
-        "move": "Water Gun",
-        "level": 1
-      },
-      {
-        "move": "Attract",
         "level": 1
       },
       {
@@ -77881,14 +77821,6 @@
           },
           {
             "move": "Razor Leaf",
-            "level": 1
-          },
-          {
-            "move": "Icy Wind",
-            "level": 1
-          },
-          {
-            "move": "Razor Leaf",
             "level": 5
           },
           {
@@ -78074,14 +78006,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Razor Leaf",
-        "level": 1
-      },
-      {
-        "move": "Icy Wind",
         "level": 1
       },
       {
@@ -79248,10 +79172,6 @@
           },
           {
             "move": "Thunder Shock",
-            "level": 1
-          },
-          {
-            "move": "Thunder Shock",
             "level": 5
           },
           {
@@ -79312,14 +79232,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Thunder Shock",
-        "level": 1
-      },
-      {
-        "move": "Low Kick",
         "level": 1
       },
       {
@@ -79651,6 +79563,10 @@
             "level": 5
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Sweet Kiss",
             "level": 9
           },
@@ -79671,6 +79587,10 @@
             "level": 25
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
             "move": "Wish",
             "level": 29
           },
@@ -79685,6 +79605,10 @@
           {
             "move": "Baton Pass",
             "level": 41
+          },
+          {
+            "move": "Moonblast",
+            "level": 42
           },
           {
             "move": "Double-Edge",
@@ -79732,6 +79656,14 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
+            "move": "Air Cutter",
+            "level": 8
+          },
+          {
             "move": "Yawn",
             "level": 13
           },
@@ -79748,6 +79680,14 @@
             "level": 25
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
+            "move": "Air Slash",
+            "level": 27
+          },
+          {
             "move": "Wish",
             "level": 29
           },
@@ -79762,6 +79702,10 @@
           {
             "move": "Baton Pass",
             "level": 41
+          },
+          {
+            "move": "Moonblast",
+            "level": 42
           },
           {
             "move": "Double-Edge",
@@ -79793,6 +79737,18 @@
       },
       {
         "move": "Sky Attack",
+        "level": 1
+      },
+      {
+        "move": "Disarming Voice",
+        "level": 1
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 1
+      },
+      {
+        "move": "Moonblast",
         "level": 1
       }
     ]
@@ -79910,14 +79866,6 @@
       },
       {
         "move": "Foresight",
-        "level": 1
-      },
-      {
-        "move": "Quick Attack",
-        "level": 1
-      },
-      {
-        "move": "Double Team",
         "level": 1
       },
       {
@@ -80252,6 +80200,10 @@
         "level": 5
       },
       {
+        "move": "Acid",
+        "level": 7
+      },
+      {
         "move": "Icy Wind",
         "level": 9
       },
@@ -80268,6 +80220,10 @@
         "level": 21
       },
       {
+        "move": "Venoshock",
+        "level": 23
+      },
+      {
         "move": "Ice Shard",
         "level": 25
       },
@@ -80278,6 +80234,10 @@
       {
         "move": "Mirror Coat",
         "level": 33
+      },
+      {
+        "move": "Sludge Bomb",
+        "level": 36
       },
       {
         "move": "Hail",
@@ -81010,6 +80970,10 @@
             "level": 6
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Double Team",
             "level": 10
           },
@@ -81030,6 +80994,10 @@
             "level": 23
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
             "move": "Calm Mind",
             "level": 28
           },
@@ -81047,6 +81015,10 @@
           },
           {
             "move": "Charm",
+            "level": 43
+          },
+          {
+            "move": "Moonblast",
             "level": 43
           },
           {
@@ -81091,6 +81063,10 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 10
+          },
+          {
             "move": "Lucky Chant",
             "level": 17
           },
@@ -81107,6 +81083,10 @@
             "level": 31
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 32
+          },
+          {
             "move": "Psychic",
             "level": 36
           },
@@ -81121,6 +81101,10 @@
           {
             "move": "Charm",
             "level": 50
+          },
+          {
+            "move": "Moonblast",
+            "level": 51
           },
           {
             "move": "Hypnosis",
@@ -81257,6 +81241,10 @@
             "level": 6
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Double Team",
             "level": 10
           },
@@ -81267,6 +81255,54 @@
           {
             "move": "Lucky Chant",
             "level": 17
+          },
+          {
+            "move": "Magical Leaf",
+            "level": 21
+          },
+          {
+            "move": "Heal Pulse",
+            "level": 23
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
+            "move": "Calm Mind",
+            "level": 28
+          },
+          {
+            "move": "Psychic",
+            "level": 32
+          },
+          {
+            "move": "Imprison",
+            "level": 34
+          },
+          {
+            "move": "Future Sight",
+            "level": 39
+          },
+          {
+            "move": "Charm",
+            "level": 43
+          },
+          {
+            "move": "Moonblast",
+            "level": 43
+          },
+          {
+            "move": "Hypnosis",
+            "level": 45
+          },
+          {
+            "move": "Dream Eater",
+            "level": 50
+          },
+          {
+            "move": "Stored Power",
+            "level": 54
           }
         ],
         "type2": "Fairy"
@@ -81291,32 +81327,24 @@
         "evo": "Level up knowing Aerial Ace",
         "moves": [
           {
+            "move": "Confusion",
+            "level": 1
+          },
+          {
+            "move": "Double Team",
+            "level": 1
+          },
+          {
             "move": "Growl",
             "level": 1
           },
           {
-            "move": "Confusion",
-            "level": 1
-          },
-          {
-            "move": "Double Team",
-            "level": 1
-          },
-          {
             "move": "Teleport",
             "level": 1
           },
           {
-            "move": "Confusion",
-            "level": 6
-          },
-          {
-            "move": "Double Team",
+            "move": "Disarming Voice",
             "level": 10
-          },
-          {
-            "move": "Teleport",
-            "level": 12
           },
           {
             "move": "Lucky Chant",
@@ -81331,8 +81359,44 @@
             "level": 25
           },
           {
-            "move": "Aerial Ace",
-            "level": 28
+            "move": "Calm Mind",
+            "level": 31
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 32
+          },
+          {
+            "move": "Psychic",
+            "level": 36
+          },
+          {
+            "move": "Imprison",
+            "level": 39
+          },
+          {
+            "move": "Future Sight",
+            "level": 45
+          },
+          {
+            "move": "Charm",
+            "level": 50
+          },
+          {
+            "move": "Moonblast",
+            "level": 51
+          },
+          {
+            "move": "Hypnosis",
+            "level": 53
+          },
+          {
+            "move": "Dream Eater",
+            "level": 59
+          },
+          {
+            "move": "Stored Power",
+            "level": 64
           }
         ],
         "type2": "Fairy"
@@ -81502,14 +81566,6 @@
       },
       {
         "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Iron Defense",
-        "level": 1
-      },
-      {
-        "move": "Block",
         "level": 1
       },
       {
@@ -81716,6 +81772,10 @@
             "level": 9
           },
           {
+            "move": "Rock Smash",
+            "level": 9
+          },
+          {
             "move": "Astonish",
             "level": 14
           },
@@ -81736,6 +81796,10 @@
             "level": 30
           },
           {
+            "move": "Brick Break",
+            "level": 31
+          },
+          {
             "move": "Will-O-Wisp",
             "level": 33
           },
@@ -81749,6 +81813,10 @@
           },
           {
             "move": "Mean Look",
+            "level": 49
+          },
+          {
+            "move": "Close Combat",
             "level": 49
           },
           {
@@ -81800,6 +81868,10 @@
         "level": 9
       },
       {
+        "move": "Rock Smash",
+        "level": 9
+      },
+      {
         "move": "Astonish",
         "level": 14
       },
@@ -81820,6 +81892,10 @@
         "level": 30
       },
       {
+        "move": "Brick Break",
+        "level": 31
+      },
+      {
         "move": "Will-O-Wisp",
         "level": 33
       },
@@ -81833,6 +81909,10 @@
       },
       {
         "move": "Mean Look",
+        "level": 49
+      },
+      {
+        "move": "Close Combat",
         "level": 49
       },
       {
@@ -82838,14 +82918,6 @@
             "level": 1
           },
           {
-            "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Bite",
-            "level": 1
-          },
-          {
             "move": "Low Kick",
             "level": 1
           },
@@ -83107,14 +83179,6 @@
         "level": 1
       },
       {
-        "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Bite",
-        "level": 1
-      },
-      {
         "move": "Low Kick",
         "level": 1
       },
@@ -83239,14 +83303,6 @@
           },
           {
             "move": "Odor Sleuth",
-            "level": 1
-          },
-          {
-            "move": "Bite",
-            "level": 1
-          },
-          {
-            "move": "Odor Sleuth",
             "level": 5
           },
           {
@@ -83335,14 +83391,6 @@
           },
           {
             "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Odor Sleuth",
-            "level": 1
-          },
-          {
-            "move": "Bite",
             "level": 1
           },
           {
@@ -83607,14 +83655,6 @@
           },
           {
             "move": "Odor Sleuth",
-            "level": 1
-          },
-          {
-            "move": "Bite",
-            "level": 1
-          },
-          {
-            "move": "Odor Sleuth",
             "level": 5
           },
           {
@@ -83691,14 +83731,6 @@
       },
       {
         "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Odor Sleuth",
-        "level": 1
-      },
-      {
-        "move": "Bite",
         "level": 1
       },
       {
@@ -83876,14 +83908,6 @@
           },
           {
             "move": "Odor Sleuth",
-            "level": 1
-          },
-          {
-            "move": "Bite",
-            "level": 1
-          },
-          {
-            "move": "Odor Sleuth",
             "level": 5
           },
           {
@@ -83965,14 +83989,6 @@
       },
       {
         "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Odor Sleuth",
-        "level": 1
-      },
-      {
-        "move": "Bite",
         "level": 1
       },
       {
@@ -84415,6 +84431,18 @@
           {
             "move": "Seed Bomb",
             "level": 1
+          },
+          {
+            "move": "Rock Smash",
+            "level": 1
+          },
+          {
+            "move": "Brick Break",
+            "level": 1
+          },
+          {
+            "move": "Close Combat",
+            "level": 1
           }
         ],
         "type2": "Fighting"
@@ -84428,6 +84456,10 @@
       {
         "move": "Leer",
         "level": 4
+      },
+      {
+        "move": "Rock Smash",
+        "level": 6
       },
       {
         "move": "Lick",
@@ -84454,6 +84486,10 @@
         "level": 22
       },
       {
+        "move": "Brick Break",
+        "level": 22
+      },
+      {
         "move": "Torment",
         "level": 25
       },
@@ -84467,6 +84503,10 @@
       },
       {
         "move": "Grass Knot",
+        "level": 34
+      },
+      {
+        "move": "Close Combat",
         "level": 34
       },
       {
@@ -84521,6 +84561,10 @@
             "level": 4
           },
           {
+            "move": "Rock Smash",
+            "level": 6
+          },
+          {
             "move": "Lick",
             "level": 7
           },
@@ -84545,6 +84589,10 @@
             "level": 22
           },
           {
+            "move": "Brick Break",
+            "level": 22
+          },
+          {
             "move": "Torment",
             "level": 25
           },
@@ -84558,6 +84606,10 @@
           },
           {
             "move": "Grass Knot",
+            "level": 34
+          },
+          {
+            "move": "Close Combat",
             "level": 34
           },
           {
@@ -84590,6 +84642,18 @@
       },
       {
         "move": "Seed Bomb",
+        "level": 1
+      },
+      {
+        "move": "Rock Smash",
+        "level": 1
+      },
+      {
+        "move": "Brick Break",
+        "level": 1
+      },
+      {
+        "move": "Close Combat",
         "level": 1
       }
     ],
@@ -84638,6 +84702,18 @@
           {
             "move": "Lick",
             "level": 1
+          },
+          {
+            "move": "Razor Leaf",
+            "level": 1
+          },
+          {
+            "move": "Seed Bomb",
+            "level": 1
+          },
+          {
+            "move": "Leaf Blade",
+            "level": 1
           }
         ],
         "type2": "Grass"
@@ -84651,6 +84727,10 @@
       {
         "move": "Leer",
         "level": 4
+      },
+      {
+        "move": "Razor Leaf",
+        "level": 6
       },
       {
         "move": "Lick",
@@ -84677,6 +84757,10 @@
         "level": 22
       },
       {
+        "move": "Seed Bomb",
+        "level": 22
+      },
+      {
         "move": "Amnesia",
         "level": 25
       },
@@ -84690,6 +84774,10 @@
       },
       {
         "move": "Fire Blast",
+        "level": 34
+      },
+      {
+        "move": "Leaf Blade",
         "level": 34
       },
       {
@@ -84744,6 +84832,10 @@
             "level": 4
           },
           {
+            "move": "Razor Leaf",
+            "level": 6
+          },
+          {
             "move": "Lick",
             "level": 7
           },
@@ -84768,6 +84860,10 @@
             "level": 22
           },
           {
+            "move": "Seed Bomb",
+            "level": 22
+          },
+          {
             "move": "Amnesia",
             "level": 25
           },
@@ -84781,6 +84877,10 @@
           },
           {
             "move": "Fire Blast",
+            "level": 34
+          },
+          {
+            "move": "Leaf Blade",
             "level": 34
           },
           {
@@ -84813,6 +84913,18 @@
       },
       {
         "move": "Lick",
+        "level": 1
+      },
+      {
+        "move": "Razor Leaf",
+        "level": 1
+      },
+      {
+        "move": "Seed Bomb",
+        "level": 1
+      },
+      {
+        "move": "Leaf Blade",
         "level": 1
       }
     ],
@@ -84861,6 +84973,18 @@
           {
             "move": "Scald",
             "level": 1
+          },
+          {
+            "move": "Mega Drain",
+            "level": 1
+          },
+          {
+            "move": "Giga Drain",
+            "level": 1
+          },
+          {
+            "move": "Energy Ball",
+            "level": 1
           }
         ],
         "type2": "Grass"
@@ -84874,6 +84998,10 @@
       {
         "move": "Leer",
         "level": 4
+      },
+      {
+        "move": "Mega Drain",
+        "level": 6
       },
       {
         "move": "Lick",
@@ -84900,6 +85028,10 @@
         "level": 22
       },
       {
+        "move": "Giga Drain",
+        "level": 22
+      },
+      {
         "move": "Taunt",
         "level": 25
       },
@@ -84913,6 +85045,10 @@
       },
       {
         "move": "Brine",
+        "level": 34
+      },
+      {
+        "move": "Energy Ball",
         "level": 34
       },
       {
@@ -84967,6 +85103,10 @@
             "level": 4
           },
           {
+            "move": "Mega Drain",
+            "level": 6
+          },
+          {
             "move": "Lick",
             "level": 7
           },
@@ -84991,6 +85131,10 @@
             "level": 22
           },
           {
+            "move": "Giga Drain",
+            "level": 22
+          },
+          {
             "move": "Taunt",
             "level": 25
           },
@@ -85004,6 +85148,10 @@
           },
           {
             "move": "Brine",
+            "level": 34
+          },
+          {
+            "move": "Energy Ball",
             "level": 34
           },
           {
@@ -85036,6 +85184,18 @@
       },
       {
         "move": "Scald",
+        "level": 1
+      },
+      {
+        "move": "Mega Drain",
+        "level": 1
+      },
+      {
+        "move": "Giga Drain",
+        "level": 1
+      },
+      {
+        "move": "Energy Ball",
         "level": 1
       }
     ],
@@ -86111,18 +86271,6 @@
           },
           {
             "move": "Tail Whip",
-            "level": 1
-          },
-          {
-            "move": "Charge",
-            "level": 1
-          },
-          {
-            "move": "Thunder Wave",
-            "level": 1
-          },
-          {
-            "move": "Tail Whip",
             "level": 4
           },
           {
@@ -86316,18 +86464,6 @@
     "moves": [
       {
         "move": "Quick Attack",
-        "level": 1
-      },
-      {
-        "move": "Tail Whip",
-        "level": 1
-      },
-      {
-        "move": "Charge",
-        "level": 1
-      },
-      {
-        "move": "Thunder Wave",
         "level": 1
       },
       {
@@ -87041,18 +87177,6 @@
         "moves": [
           {
             "move": "Odor Sleuth",
-            "level": 1
-          },
-          {
-            "move": "Gust",
-            "level": 1
-          },
-          {
-            "move": "Assurance",
-            "level": 1
-          },
-          {
-            "move": "Odor Sleuth",
             "level": 4
           },
           {
@@ -87236,18 +87360,6 @@
       }
     ],
     "moves": [
-      {
-        "move": "Odor Sleuth",
-        "level": 1
-      },
-      {
-        "move": "Gust",
-        "level": 1
-      },
-      {
-        "move": "Assurance",
-        "level": 1
-      },
       {
         "move": "Odor Sleuth",
         "level": 4
@@ -87757,14 +87869,6 @@
           },
           {
             "move": "Focus Energy",
-            "level": 1
-          },
-          {
-            "move": "Bide",
-            "level": 1
-          },
-          {
-            "move": "Focus Energy",
             "level": 4
           },
           {
@@ -87841,14 +87945,6 @@
           },
           {
             "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Focus Energy",
-            "level": 1
-          },
-          {
-            "move": "Bide",
             "level": 1
           },
           {
@@ -88120,14 +88216,6 @@
             "level": 1
           },
           {
-            "move": "Focus Energy",
-            "level": 1
-          },
-          {
-            "move": "Bide",
-            "level": 1
-          },
-          {
             "move": "Smack Down",
             "level": 3
           },
@@ -88201,14 +88289,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Focus Energy",
-        "level": 1
-      },
-      {
-        "move": "Bide",
         "level": 1
       },
       {
@@ -88398,14 +88478,6 @@
           },
           {
             "move": "Focus Energy",
-            "level": 1
-          },
-          {
-            "move": "Bide",
-            "level": 1
-          },
-          {
-            "move": "Focus Energy",
             "level": 4
           },
           {
@@ -88475,14 +88547,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Focus Energy",
-        "level": 1
-      },
-      {
-        "move": "Bide",
         "level": 1
       },
       {
@@ -88593,14 +88657,6 @@
           },
           {
             "move": "Supersonic",
-            "level": 1
-          },
-          {
-            "move": "Round",
-            "level": 1
-          },
-          {
-            "move": "Supersonic",
             "level": 5
           },
           {
@@ -88665,14 +88721,6 @@
           },
           {
             "move": "Growl",
-            "level": 1
-          },
-          {
-            "move": "Supersonic",
-            "level": 1
-          },
-          {
-            "move": "Round",
             "level": 1
           },
           {
@@ -88908,14 +88956,6 @@
           },
           {
             "move": "Supersonic",
-            "level": 1
-          },
-          {
-            "move": "Round",
-            "level": 1
-          },
-          {
-            "move": "Supersonic",
             "level": 5
           },
           {
@@ -88984,14 +89024,6 @@
       },
       {
         "move": "Growl",
-        "level": 1
-      },
-      {
-        "move": "Supersonic",
-        "level": 1
-      },
-      {
-        "move": "Round",
         "level": 1
       },
       {
@@ -89153,14 +89185,6 @@
           },
           {
             "move": "Supersonic",
-            "level": 1
-          },
-          {
-            "move": "Round",
-            "level": 1
-          },
-          {
-            "move": "Supersonic",
             "level": 5
           },
           {
@@ -89217,14 +89241,6 @@
       },
       {
         "move": "Growl",
-        "level": 1
-      },
-      {
-        "move": "Supersonic",
-        "level": 1
-      },
-      {
-        "move": "Round",
         "level": 1
       },
       {
@@ -91835,16 +91851,12 @@
             "level": 10
           },
           {
-            "move": "Sand Tomb",
+            "move": "Water Gun",
             "level": 13
           },
           {
             "move": "Assurance",
             "level": 16
-          },
-          {
-            "move": "Mud-Slap",
-            "level": 19
           },
           {
             "move": "Embargo",
@@ -91859,7 +91871,7 @@
             "level": 28
           },
           {
-            "move": "Dig",
+            "move": "Aqua Tail",
             "level": 32
           },
           {
@@ -91915,16 +91927,12 @@
             "level": 10
           },
           {
-            "move": "Sand Tomb",
+            "move": "Water Gun",
             "level": 13
           },
           {
             "move": "Assurance",
             "level": 16
-          },
-          {
-            "move": "Mud-Slap",
-            "level": 19
           },
           {
             "move": "Embargo",
@@ -91939,7 +91947,7 @@
             "level": 28
           },
           {
-            "move": "Dig",
+            "move": "Aqua Tail",
             "level": 32
           },
           {
@@ -91987,16 +91995,12 @@
         "level": 10
       },
       {
-        "move": "Sand Tomb",
+        "move": "Water Gun",
         "level": 13
       },
       {
         "move": "Assurance",
         "level": 16
-      },
-      {
-        "move": "Mud-Slap",
-        "level": 19
       },
       {
         "move": "Embargo",
@@ -92011,7 +92015,7 @@
         "level": 28
       },
       {
-        "move": "Dig",
+        "move": "Aqua Tail",
         "level": 31
       },
       {
@@ -92088,16 +92092,12 @@
             "level": 10
           },
           {
-            "move": "Sand Tomb",
+            "move": "Water Gun",
             "level": 13
           },
           {
             "move": "Assurance",
             "level": 16
-          },
-          {
-            "move": "Mud-Slap",
-            "level": 19
           },
           {
             "move": "Embargo",
@@ -92112,7 +92112,7 @@
             "level": 28
           },
           {
-            "move": "Dig",
+            "move": "Aqua Tail",
             "level": 31
           },
           {
@@ -92171,16 +92171,12 @@
             "level": 10
           },
           {
-            "move": "Sand Tomb",
+            "move": "Water Gun",
             "level": 13
           },
           {
             "move": "Assurance",
             "level": 16
-          },
-          {
-            "move": "Mud-Slap",
-            "level": 19
           },
           {
             "move": "Embargo",
@@ -92195,7 +92191,7 @@
             "level": 28
           },
           {
-            "move": "Dig",
+            "move": "Aqua Tail",
             "level": 32
           },
           {
@@ -92243,16 +92239,12 @@
         "level": 10
       },
       {
-        "move": "Sand Tomb",
+        "move": "Water Gun",
         "level": 13
       },
       {
         "move": "Assurance",
         "level": 16
-      },
-      {
-        "move": "Mud-Slap",
-        "level": 19
       },
       {
         "move": "Embargo",
@@ -92267,7 +92259,7 @@
         "level": 28
       },
       {
-        "move": "Dig",
+        "move": "Aqua Tail",
         "level": 32
       },
       {
@@ -92344,16 +92336,12 @@
             "level": 10
           },
           {
-            "move": "Sand Tomb",
+            "move": "Water Gun",
             "level": 13
           },
           {
             "move": "Assurance",
             "level": 16
-          },
-          {
-            "move": "Mud-Slap",
-            "level": 19
           },
           {
             "move": "Embargo",
@@ -92368,7 +92356,7 @@
             "level": 28
           },
           {
-            "move": "Dig",
+            "move": "Aqua Tail",
             "level": 31
           },
           {
@@ -92425,16 +92413,12 @@
             "level": 10
           },
           {
-            "move": "Sand Tomb",
+            "move": "Water Gun",
             "level": 13
           },
           {
             "move": "Assurance",
             "level": 16
-          },
-          {
-            "move": "Mud-Slap",
-            "level": 19
           },
           {
             "move": "Embargo",
@@ -92449,7 +92433,7 @@
             "level": 28
           },
           {
-            "move": "Dig",
+            "move": "Aqua Tail",
             "level": 32
           },
           {
@@ -92497,16 +92481,12 @@
         "level": 10
       },
       {
-        "move": "Sand Tomb",
+        "move": "Water Gun",
         "level": 13
       },
       {
         "move": "Assurance",
         "level": 16
-      },
-      {
-        "move": "Mud-Slap",
-        "level": 19
       },
       {
         "move": "Embargo",
@@ -92521,7 +92501,7 @@
         "level": 28
       },
       {
-        "move": "Dig",
+        "move": "Aqua Tail",
         "level": 32
       },
       {
@@ -92579,18 +92559,6 @@
         "moves": [
           {
             "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Rollout",
-            "level": 1
-          },
-          {
-            "move": "Incinerate",
-            "level": 1
-          },
-          {
-            "move": "Rage",
             "level": 1
           },
           {
@@ -92839,18 +92807,6 @@
       },
       {
         "move": "Rollout",
-        "level": 1
-      },
-      {
-        "move": "Incinerate",
-        "level": 1
-      },
-      {
-        "move": "Rage",
-        "level": 1
-      },
-      {
-        "move": "Rollout",
         "level": 3
       },
       {
@@ -92935,18 +92891,6 @@
         "moves": [
           {
             "move": "Tackle",
-            "level": 1
-          },
-          {
-            "move": "Rollout",
-            "level": 1
-          },
-          {
-            "move": "Incinerate",
-            "level": 1
-          },
-          {
-            "move": "Rage",
             "level": 1
           },
           {
@@ -93125,18 +93069,6 @@
     "moves": [
       {
         "move": "Tackle",
-        "level": 1
-      },
-      {
-        "move": "Rollout",
-        "level": 1
-      },
-      {
-        "move": "Incinerate",
-        "level": 1
-      },
-      {
-        "move": "Rage",
         "level": 1
       },
       {
@@ -94093,14 +94025,6 @@
           },
           {
             "move": "Disable",
-            "level": 1
-          },
-          {
-            "move": "Haze",
-            "level": 1
-          },
-          {
-            "move": "Disable",
             "level": 5
           },
           {
@@ -94331,14 +94255,6 @@
       },
       {
         "move": "Protect",
-        "level": 1
-      },
-      {
-        "move": "Disable",
-        "level": 1
-      },
-      {
-        "move": "Haze",
         "level": 1
       },
       {
@@ -94816,10 +94732,6 @@
           },
           {
             "move": "Rock Throw",
-            "level": 1
-          },
-          {
-            "move": "Rock Throw",
             "level": 5
           },
           {
@@ -95069,10 +94981,6 @@
       },
       {
         "move": "Rock Throw",
-        "level": 1
-      },
-      {
-        "move": "Rock Throw",
         "level": 5
       },
       {
@@ -95173,14 +95081,6 @@
           },
           {
             "move": "Poison Gas",
-            "level": 1
-          },
-          {
-            "move": "Recycle",
-            "level": 1
-          },
-          {
-            "move": "Toxic Spikes",
             "level": 1
           },
           {
@@ -95432,14 +95332,6 @@
       },
       {
         "move": "Recycle",
-        "level": 1
-      },
-      {
-        "move": "Toxic Spikes",
-        "level": 1
-      },
-      {
-        "move": "Recycle",
         "level": 3
       },
       {
@@ -95551,14 +95443,6 @@
           },
           {
             "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Pursuit",
-            "level": 1
-          },
-          {
-            "move": "Hone Claws",
             "level": 1
           },
           {
@@ -95967,14 +95851,6 @@
       },
       {
         "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Pursuit",
-        "level": 1
-      },
-      {
-        "move": "Hone Claws",
         "level": 1
       },
       {
@@ -96592,18 +96468,6 @@
           },
           {
             "move": "Confusion",
-            "level": 1
-          },
-          {
-            "move": "Tickle",
-            "level": 1
-          },
-          {
-            "move": "Fake Tears",
-            "level": 1
-          },
-          {
-            "move": "Confusion",
             "level": 3
           },
           {
@@ -96676,18 +96540,6 @@
         "moves": [
           {
             "move": "Pound",
-            "level": 1
-          },
-          {
-            "move": "Confusion",
-            "level": 1
-          },
-          {
-            "move": "Tickle",
-            "level": 1
-          },
-          {
-            "move": "Fake Tears",
             "level": 1
           },
           {
@@ -96942,18 +96794,6 @@
           },
           {
             "move": "Confusion",
-            "level": 1
-          },
-          {
-            "move": "Tickle",
-            "level": 1
-          },
-          {
-            "move": "Fake Tears",
-            "level": 1
-          },
-          {
-            "move": "Confusion",
             "level": 3
           },
           {
@@ -97026,18 +96866,6 @@
     "moves": [
       {
         "move": "Pound",
-        "level": 1
-      },
-      {
-        "move": "Confusion",
-        "level": 1
-      },
-      {
-        "move": "Tickle",
-        "level": 1
-      },
-      {
-        "move": "Fake Tears",
         "level": 1
       },
       {
@@ -97214,18 +97042,6 @@
           },
           {
             "move": "Confusion",
-            "level": 1
-          },
-          {
-            "move": "Tickle",
-            "level": 1
-          },
-          {
-            "move": "Fake Tears",
-            "level": 1
-          },
-          {
-            "move": "Confusion",
             "level": 3
           },
           {
@@ -97290,18 +97106,6 @@
     "moves": [
       {
         "move": "Pound",
-        "level": 1
-      },
-      {
-        "move": "Confusion",
-        "level": 1
-      },
-      {
-        "move": "Tickle",
-        "level": 1
-      },
-      {
-        "move": "Fake Tears",
         "level": 1
       },
       {
@@ -98459,18 +98263,6 @@
           },
           {
             "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Astonish",
-            "level": 1
-          },
-          {
-            "move": "Uproar",
-            "level": 1
-          },
-          {
-            "move": "Harden",
             "level": 4
           },
           {
@@ -98551,18 +98343,6 @@
           },
           {
             "move": "Icicle Spear",
-            "level": 1
-          },
-          {
-            "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Astonish",
-            "level": 1
-          },
-          {
-            "move": "Uproar",
             "level": 1
           },
           {
@@ -98814,18 +98594,6 @@
           },
           {
             "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Astonish",
-            "level": 1
-          },
-          {
-            "move": "Uproar",
-            "level": 1
-          },
-          {
-            "move": "Harden",
             "level": 4
           },
           {
@@ -98898,18 +98666,6 @@
     "moves": [
       {
         "move": "Icicle Spear",
-        "level": 1
-      },
-      {
-        "move": "Harden",
-        "level": 1
-      },
-      {
-        "move": "Astonish",
-        "level": 1
-      },
-      {
-        "move": "Uproar",
         "level": 1
       },
       {
@@ -99086,18 +98842,6 @@
           },
           {
             "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Astonish",
-            "level": 1
-          },
-          {
-            "move": "Uproar",
-            "level": 1
-          },
-          {
-            "move": "Harden",
             "level": 4
           },
           {
@@ -99171,18 +98915,6 @@
       },
       {
         "move": "Icicle Spear",
-        "level": 1
-      },
-      {
-        "move": "Harden",
-        "level": 1
-      },
-      {
-        "move": "Astonish",
-        "level": 1
-      },
-      {
-        "move": "Uproar",
         "level": 1
       },
       {
@@ -100416,10 +100148,6 @@
           },
           {
             "move": "Absorb",
-            "level": 1
-          },
-          {
-            "move": "Absorb",
             "level": 5
           },
           {
@@ -100631,10 +100359,6 @@
       },
       {
         "move": "Water Sport",
-        "level": 1
-      },
-      {
-        "move": "Absorb",
         "level": 1
       },
       {
@@ -101499,18 +101223,6 @@
           },
           {
             "move": "Charge",
-            "level": 1
-          },
-          {
-            "move": "Thunder Shock",
-            "level": 1
-          },
-          {
-            "move": "Gear Grind",
-            "level": 1
-          },
-          {
-            "move": "Charge",
             "level": 6
           },
           {
@@ -101583,18 +101295,6 @@
         "moves": [
           {
             "move": "Vise Grip",
-            "level": 1
-          },
-          {
-            "move": "Charge",
-            "level": 1
-          },
-          {
-            "move": "Thunder Shock",
-            "level": 1
-          },
-          {
-            "move": "Gear Grind",
             "level": 1
           },
           {
@@ -101851,18 +101551,6 @@
           },
           {
             "move": "Charge",
-            "level": 1
-          },
-          {
-            "move": "Thunder Shock",
-            "level": 1
-          },
-          {
-            "move": "Gear Grind",
-            "level": 1
-          },
-          {
-            "move": "Charge",
             "level": 6
           },
           {
@@ -101935,18 +101623,6 @@
     "moves": [
       {
         "move": "Vise Grip",
-        "level": 1
-      },
-      {
-        "move": "Charge",
-        "level": 1
-      },
-      {
-        "move": "Thunder Shock",
-        "level": 1
-      },
-      {
-        "move": "Gear Grind",
         "level": 1
       },
       {
@@ -102124,18 +101800,6 @@
           },
           {
             "move": "Charge",
-            "level": 1
-          },
-          {
-            "move": "Thunder Shock",
-            "level": 1
-          },
-          {
-            "move": "Gear Grind",
-            "level": 1
-          },
-          {
-            "move": "Charge",
             "level": 6
           },
           {
@@ -102201,18 +101865,6 @@
     "moves": [
       {
         "move": "Vise Grip",
-        "level": 1
-      },
-      {
-        "move": "Charge",
-        "level": 1
-      },
-      {
-        "move": "Thunder Shock",
-        "level": 1
-      },
-      {
-        "move": "Gear Grind",
         "level": 1
       },
       {
@@ -103911,18 +103563,6 @@
           },
           {
             "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Assurance",
-            "level": 1
-          },
-          {
-            "move": "Dragon Rage",
-            "level": 1
-          },
-          {
-            "move": "Leer",
             "level": 4
           },
           {
@@ -103995,18 +103635,6 @@
         "moves": [
           {
             "move": "Scratch",
-            "level": 1
-          },
-          {
-            "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Assurance",
-            "level": 1
-          },
-          {
-            "move": "Dragon Rage",
             "level": 1
           },
           {
@@ -104265,18 +103893,6 @@
           },
           {
             "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Assurance",
-            "level": 1
-          },
-          {
-            "move": "Dragon Rage",
-            "level": 1
-          },
-          {
-            "move": "Leer",
             "level": 4
           },
           {
@@ -104353,18 +103969,6 @@
     "moves": [
       {
         "move": "Scratch",
-        "level": 1
-      },
-      {
-        "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Assurance",
-        "level": 1
-      },
-      {
-        "move": "Dragon Rage",
         "level": 1
       },
       {
@@ -104541,18 +104145,6 @@
           },
           {
             "move": "Leer",
-            "level": 1
-          },
-          {
-            "move": "Assurance",
-            "level": 1
-          },
-          {
-            "move": "Dragon Rage",
-            "level": 1
-          },
-          {
-            "move": "Leer",
             "level": 4
           },
           {
@@ -104617,18 +104209,6 @@
     "moves": [
       {
         "move": "Scratch",
-        "level": 1
-      },
-      {
-        "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Assurance",
-        "level": 1
-      },
-      {
-        "move": "Dragon Rage",
         "level": 1
       },
       {
@@ -104746,18 +104326,6 @@
           },
           {
             "move": "Powder Snow",
-            "level": 1
-          },
-          {
-            "move": "Growl",
-            "level": 1
-          },
-          {
-            "move": "Bide",
-            "level": 1
-          },
-          {
-            "move": "Icy Wind",
             "level": 1
           },
           {
@@ -105006,18 +104574,6 @@
       },
       {
         "move": "Growl",
-        "level": 1
-      },
-      {
-        "move": "Bide",
-        "level": 1
-      },
-      {
-        "move": "Icy Wind",
-        "level": 1
-      },
-      {
-        "move": "Growl",
         "level": 5
       },
       {
@@ -105233,18 +104789,6 @@
         "moves": [
           {
             "move": "Leech Life",
-            "level": 1
-          },
-          {
-            "move": "Acid Spray",
-            "level": 1
-          },
-          {
-            "move": "Double Team",
-            "level": 1
-          },
-          {
-            "move": "Quick Attack",
             "level": 1
           },
           {
@@ -105477,18 +105021,6 @@
     "moves": [
       {
         "move": "Leech Life",
-        "level": 1
-      },
-      {
-        "move": "Acid Spray",
-        "level": 1
-      },
-      {
-        "move": "Double Team",
-        "level": 1
-      },
-      {
-        "move": "Quick Attack",
         "level": 1
       },
       {
@@ -107981,6 +107513,10 @@
         "level": 6
       },
       {
+        "move": "Acid",
+        "level": 9
+      },
+      {
         "move": "Bind",
         "level": 11
       },
@@ -107998,6 +107534,10 @@
       },
       {
         "move": "Flame Burst",
+        "level": 31
+      },
+      {
+        "move": "Venoshock",
         "level": 31
       },
       {
@@ -108019,6 +107559,10 @@
       {
         "move": "Amnesia",
         "level": 46
+      },
+      {
+        "move": "Sludge Bomb",
+        "level": 49
       },
       {
         "move": "Flamethrower",
@@ -108169,10 +107713,6 @@
           },
           {
             "move": "Focus Energy",
-            "level": 1
-          },
-          {
-            "move": "Focus Energy",
             "level": 4
           },
           {
@@ -108237,10 +107777,6 @@
           },
           {
             "move": "Dragon Rage",
-            "level": 1
-          },
-          {
-            "move": "Focus Energy",
             "level": 1
           },
           {
@@ -108453,10 +107989,6 @@
           },
           {
             "move": "Focus Energy",
-            "level": 1
-          },
-          {
-            "move": "Focus Energy",
             "level": 4
           },
           {
@@ -108541,10 +108073,6 @@
       },
       {
         "move": "Dragon Rage",
-        "level": 1
-      },
-      {
-        "move": "Focus Energy",
         "level": 1
       },
       {
@@ -108687,10 +108215,6 @@
           },
           {
             "move": "Focus Energy",
-            "level": 1
-          },
-          {
-            "move": "Focus Energy",
             "level": 4
           },
           {
@@ -108747,10 +108271,6 @@
       },
       {
         "move": "Dragon Rage",
-        "level": 1
-      },
-      {
-        "move": "Focus Energy",
         "level": 1
       },
       {
@@ -110565,6 +110085,10 @@
         "level": 7
       },
       {
+        "move": "Snarl",
+        "level": 7
+      },
+      {
         "move": "Vise Grip",
         "level": 9
       },
@@ -110579,6 +110103,10 @@
       {
         "move": "Bubble Beam",
         "level": 20
+      },
+      {
+        "move": "Dark Pulse",
+        "level": 24
       },
       {
         "move": "Swords Dance",
@@ -110651,6 +110179,10 @@
             "level": 7
           },
           {
+            "move": "Snarl",
+            "level": 7
+          },
+          {
             "move": "Vise Grip",
             "level": 9
           },
@@ -110665,6 +110197,10 @@
           {
             "move": "Bubble Beam",
             "level": 20
+          },
+          {
+            "move": "Dark Pulse",
+            "level": 24
           },
           {
             "move": "Swords Dance",
@@ -111395,6 +110931,10 @@
             "level": 1
           },
           {
+            "move": "Twister",
+            "level": 11
+          },
+          {
             "move": "Icy Wind",
             "level": 13
           },
@@ -111423,6 +110963,10 @@
             "level": 34
           },
           {
+            "move": "Dragon Breath",
+            "level": 37
+          },
+          {
             "move": "Hail",
             "level": 38
           },
@@ -111441,6 +110985,10 @@
           {
             "move": "Ice Beam",
             "level": 56
+          },
+          {
+            "move": "Dragon Pulse",
+            "level": 59
           },
           {
             "move": "Hyper Beam",
@@ -111471,6 +111019,10 @@
         "level": 10
       },
       {
+        "move": "Twister",
+        "level": 10
+      },
+      {
         "move": "Icy Wind",
         "level": 13
       },
@@ -111495,6 +111047,10 @@
         "level": 30
       },
       {
+        "move": "Dragon Breath",
+        "level": 33
+      },
+      {
         "move": "Avalanche",
         "level": 34
       },
@@ -111517,6 +111073,10 @@
       {
         "move": "Ice Beam",
         "level": 50
+      },
+      {
+        "move": "Dragon Pulse",
+        "level": 52
       },
       {
         "move": "Hyper Beam",
@@ -111578,6 +111138,10 @@
             "level": 10
           },
           {
+            "move": "Twister",
+            "level": 10
+          },
+          {
             "move": "Icy Wind",
             "level": 13
           },
@@ -111602,6 +111166,10 @@
             "level": 30
           },
           {
+            "move": "Dragon Breath",
+            "level": 33
+          },
+          {
             "move": "Avalanche",
             "level": 34
           },
@@ -111624,6 +111192,10 @@
           {
             "move": "Ice Beam",
             "level": 50
+          },
+          {
+            "move": "Dragon Pulse",
+            "level": 52
           },
           {
             "move": "Hyper Beam",
@@ -111658,6 +111230,10 @@
         "level": 1
       },
       {
+        "move": "Twister",
+        "level": 11
+      },
+      {
         "move": "Icy Wind",
         "level": 13
       },
@@ -111686,6 +111262,10 @@
         "level": 34
       },
       {
+        "move": "Dragon Breath",
+        "level": 37
+      },
+      {
         "move": "Hail",
         "level": 38
       },
@@ -111704,6 +111284,10 @@
       {
         "move": "Ice Beam",
         "level": 56
+      },
+      {
+        "move": "Dragon Pulse",
+        "level": 59
       },
       {
         "move": "Hyper Beam",
@@ -115989,6 +115573,10 @@
             "level": 1
           },
           {
+            "move": "Poison Fang",
+            "level": 8
+          },
+          {
             "move": "Bulldoze",
             "level": 15
           },
@@ -116001,12 +115589,20 @@
             "level": 25
           },
           {
+            "move": "Poison Jab",
+            "level": 26
+          },
+          {
             "move": "Dig",
             "level": 30
           },
           {
             "move": "Sandstorm",
             "level": 35
+          },
+          {
+            "move": "Gunk Shot",
+            "level": 41
           },
           {
             "move": "Slam",
@@ -116038,6 +115634,10 @@
         "level": 5
       },
       {
+        "move": "Poison Fang",
+        "level": 8
+      },
+      {
         "move": "Feint Attack",
         "level": 10
       },
@@ -116054,6 +115654,10 @@
         "level": 25
       },
       {
+        "move": "Poison Jab",
+        "level": 25
+      },
+      {
         "move": "Dig",
         "level": 30
       },
@@ -116063,6 +115667,10 @@
       },
       {
         "move": "Slam",
+        "level": 40
+      },
+      {
+        "move": "Gunk Shot",
         "level": 40
       },
       {
@@ -116120,6 +115728,10 @@
             "level": 5
           },
           {
+            "move": "Poison Fang",
+            "level": 8
+          },
+          {
             "move": "Feint Attack",
             "level": 10
           },
@@ -116136,6 +115748,10 @@
             "level": 25
           },
           {
+            "move": "Poison Jab",
+            "level": 25
+          },
+          {
             "move": "Dig",
             "level": 30
           },
@@ -116145,6 +115761,10 @@
           },
           {
             "move": "Slam",
+            "level": 40
+          },
+          {
+            "move": "Gunk Shot",
             "level": 40
           },
           {
@@ -116177,6 +115797,10 @@
         "level": 1
       },
       {
+        "move": "Poison Fang",
+        "level": 8
+      },
+      {
         "move": "Bulldoze",
         "level": 15
       },
@@ -116189,12 +115813,20 @@
         "level": 25
       },
       {
+        "move": "Poison Jab",
+        "level": 26
+      },
+      {
         "move": "Dig",
         "level": 30
       },
       {
         "move": "Sandstorm",
         "level": 35
+      },
+      {
+        "move": "Gunk Shot",
+        "level": 41
       },
       {
         "move": "Slam",
@@ -122837,6 +122469,18 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 1
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 1
+          },
+          {
+            "move": "Moonblast",
+            "level": 1
+          },
+          {
             "move": "Defense Curl",
             "level": 5
           },
@@ -122874,6 +122518,10 @@
             "level": 5
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Pound",
             "level": 9
           },
@@ -122894,6 +122542,10 @@
             "level": 25
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
             "move": "Rest",
             "level": 29
           },
@@ -122908,6 +122560,10 @@
           {
             "move": "Wake-Up Slap",
             "level": 41
+          },
+          {
+            "move": "Moonblast",
+            "level": 42
           },
           {
             "move": "Mimic",
@@ -123281,6 +122937,10 @@
             "level": 5
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Astonish",
             "level": 10
           },
@@ -123301,6 +122961,10 @@
             "level": 28
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 28
+          },
+          {
             "move": "Pain Split",
             "level": 32
           },
@@ -123311,6 +122975,10 @@
           {
             "move": "Shadow Ball",
             "level": 41
+          },
+          {
+            "move": "Moonblast",
+            "level": 44
           },
           {
             "move": "Perish Song",
@@ -124580,10 +124248,6 @@
           },
           {
             "move": "Focus Energy",
-            "level": 1
-          },
-          {
-            "move": "Focus Energy",
             "level": 4
           },
           {
@@ -124649,10 +124313,6 @@
           },
           {
             "move": "Dragon Rage",
-            "level": 1
-          },
-          {
-            "move": "Focus Energy",
             "level": 1
           },
           {
@@ -125132,14 +124792,6 @@
           },
           {
             "move": "Sandstorm",
-            "level": 1
-          },
-          {
-            "move": "Screech",
-            "level": 1
-          },
-          {
-            "move": "Sandstorm",
             "level": 5
           },
           {
@@ -125209,14 +124861,6 @@
           },
           {
             "move": "Sandstorm",
-            "level": 1
-          },
-          {
-            "move": "Screech",
-            "level": 1
-          },
-          {
-            "move": "Sandstorm",
             "level": 5
           },
           {
@@ -125226,6 +124870,10 @@
           {
             "move": "Twister",
             "level": 10
+          },
+          {
+            "move": "Bite",
+            "level": 11
           },
           {
             "move": "Chip Away",
@@ -125250,6 +124898,10 @@
           {
             "move": "Dragon Pulse",
             "level": 33
+          },
+          {
+            "move": "Crunch",
+            "level": 38
           },
           {
             "move": "Dragon Claw",
@@ -125975,6 +125627,10 @@
             "level": 6
           },
           {
+            "move": "Disarming Voice",
+            "level": 8
+          },
+          {
             "move": "Double Team",
             "level": 10
           },
@@ -125995,6 +125651,10 @@
             "level": 23
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 27
+          },
+          {
             "move": "Calm Mind",
             "level": 28
           },
@@ -126012,6 +125672,10 @@
           },
           {
             "move": "Charm",
+            "level": 43
+          },
+          {
+            "move": "Moonblast",
             "level": 43
           },
           {
@@ -126056,6 +125720,10 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 10
+          },
+          {
             "move": "Lucky Chant",
             "level": 17
           },
@@ -126072,6 +125740,10 @@
             "level": 31
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 32
+          },
+          {
             "move": "Psychic",
             "level": 36
           },
@@ -126086,6 +125758,10 @@
           {
             "move": "Charm",
             "level": 50
+          },
+          {
+            "move": "Moonblast",
+            "level": 51
           },
           {
             "move": "Hypnosis",
@@ -126133,6 +125809,10 @@
             "level": 1
           },
           {
+            "move": "Disarming Voice",
+            "level": 12
+          },
+          {
             "move": "Wish",
             "level": 17
           },
@@ -126153,6 +125833,10 @@
             "level": 40
           },
           {
+            "move": "Dazzling Gleam",
+            "level": 40
+          },
+          {
             "move": "Imprison",
             "level": 45
           },
@@ -126163,6 +125847,10 @@
           {
             "move": "Captivate",
             "level": 60
+          },
+          {
+            "move": "Moonblast",
+            "level": 64
           },
           {
             "move": "Hypnosis",
