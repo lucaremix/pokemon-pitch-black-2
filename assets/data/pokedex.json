@@ -454,8 +454,16 @@
             "level": 28
           },
           {
+            "move": "Iron Head",
+            "level": 30
+          },
+          {
             "move": "Agility",
             "level": 31
+          },
+          {
+            "move": "X-Scissor",
+            "level": 32
           },
           {
             "move": "Assurance",
@@ -581,8 +589,16 @@
             "level": 28
           },
           {
+            "move": "Iron Head",
+            "level": 30
+          },
+          {
             "move": "Agility",
             "level": 31
+          },
+          {
+            "move": "X-Scissor",
+            "level": 32
           },
           {
             "move": "Assurance",
@@ -706,8 +722,16 @@
         "level": 28
       },
       {
+        "move": "Iron Head",
+        "level": 30
+      },
+      {
         "move": "Agility",
         "level": 31
+      },
+      {
+        "move": "X-Scissor",
+        "level": 32
       },
       {
         "move": "Assurance",
@@ -3931,12 +3955,24 @@
             "level": 23
           },
           {
+            "move": "Poison Jab",
+            "level": 29
+          },
+          {
             "move": "Body Slam",
             "level": 35
           },
           {
             "move": "Crunch",
             "level": 37
+          },
+          {
+            "move": "Zen Headbutt",
+            "level": 44
+          },
+          {
+            "move": "Gunk Shot",
+            "level": 46
           },
           {
             "move": "Superpower",
@@ -4129,12 +4165,24 @@
             "level": 23
           },
           {
+            "move": "Poison Jab",
+            "level": 29
+          },
+          {
             "move": "Body Slam",
             "level": 35
           },
           {
             "move": "Crunch",
             "level": 37
+          },
+          {
+            "move": "Zen Headbutt",
+            "level": 44
+          },
+          {
+            "move": "Gunk Shot",
+            "level": 46
           },
           {
             "move": "Superpower",
@@ -4381,12 +4429,24 @@
         "level": 23
       },
       {
+        "move": "Poison Jab",
+        "level": 29
+      },
+      {
         "move": "Body Slam",
         "level": 35
       },
       {
         "move": "Crunch",
         "level": 37
+      },
+      {
+        "move": "Zen Headbutt",
+        "level": 44
+      },
+      {
+        "move": "Gunk Shot",
+        "level": 46
       },
       {
         "move": "Superpower",
@@ -4533,6 +4593,10 @@
           {
             "move": "Earth Power",
             "level": 43
+          },
+          {
+            "move": "Drill Run",
+            "level": 46
           },
           {
             "move": "Megahorn",
@@ -4732,6 +4796,10 @@
           {
             "move": "Earth Power",
             "level": 43
+          },
+          {
+            "move": "Drill Run",
+            "level": 46
           },
           {
             "move": "Megahorn",
@@ -4987,6 +5055,10 @@
         "level": 43
       },
       {
+        "move": "Drill Run",
+        "level": 46
+      },
+      {
         "move": "Megahorn",
         "level": 58
       }
@@ -4994,9 +5066,9 @@
   },
   {
     "name": "Clefairy",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 35,
-    "type1": "Normal",
+    "type1": "Fairy",
     "bst": 323,
     "abilities": [
       "Cute Charm",
@@ -5014,7 +5086,7 @@
       {
         "name": "Cleffa",
         "pokedex_id": 173,
-        "type1": "Normal",
+        "type1": "Fairy",
         "abilities": [
           "Cute Charm",
           "Magic Guard"
@@ -5031,6 +5103,10 @@
           },
           {
             "move": "Encore",
+            "level": 4
+          },
+          {
+            "move": "Disarming Voice",
             "level": 4
           },
           {
@@ -5057,7 +5133,7 @@
       {
         "name": "Clefable",
         "pokedex_id": 36,
-        "type1": "Normal",
+        "type1": "Fairy",
         "abilities": [
           "Cute Charm",
           "Magic Guard"
@@ -5077,6 +5153,18 @@
           },
           {
             "move": "Sing",
+            "level": 1
+          },
+          {
+            "move": "Disarming Voice",
+            "level": 1
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 1
+          },
+          {
+            "move": "Moonblast",
             "level": 1
           }
         ]
@@ -5104,6 +5192,10 @@
         "level": 10
       },
       {
+        "move": "Disarming Voice",
+        "level": 10
+      },
+      {
         "move": "Defense Curl",
         "level": 13
       },
@@ -5122,6 +5214,10 @@
       {
         "move": "Wake-Up Slap",
         "level": 22
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 26
       },
       {
         "move": "Cosmic Power",
@@ -5160,7 +5256,7 @@
         "level": 49
       },
       {
-        "move": "After You",
+        "move": "Moonblast",
         "level": 52
       },
       {
@@ -5171,9 +5267,9 @@
   },
   {
     "name": "Clefable",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 36,
-    "type1": "Normal",
+    "type1": "Fairy",
     "bst": 483,
     "abilities": [
       "Cute Charm",
@@ -5191,7 +5287,7 @@
       {
         "name": "Cleffa",
         "pokedex_id": 173,
-        "type1": "Normal",
+        "type1": "Fairy",
         "abilities": [
           "Cute Charm",
           "Magic Guard"
@@ -5208,6 +5304,10 @@
           },
           {
             "move": "Encore",
+            "level": 4
+          },
+          {
+            "move": "Disarming Voice",
             "level": 4
           },
           {
@@ -5231,7 +5331,7 @@
       {
         "name": "Clefairy",
         "pokedex_id": 35,
-        "type1": "Normal",
+        "type1": "Fairy",
         "abilities": [
           "Cute Charm",
           "Magic Guard"
@@ -5259,6 +5359,10 @@
             "level": 10
           },
           {
+            "move": "Disarming Voice",
+            "level": 10
+          },
+          {
             "move": "Defense Curl",
             "level": 13
           },
@@ -5277,6 +5381,10 @@
           {
             "move": "Wake-Up Slap",
             "level": 22
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 26
           },
           {
             "move": "Cosmic Power",
@@ -5315,7 +5423,7 @@
             "level": 49
           },
           {
-            "move": "After You",
+            "move": "Moonblast",
             "level": 52
           },
           {
@@ -5340,6 +5448,18 @@
       },
       {
         "move": "Sing",
+        "level": 1
+      },
+      {
+        "move": "Disarming Voice",
+        "level": 1
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 1
+      },
+      {
+        "move": "Moonblast",
         "level": 1
       }
     ]
@@ -5396,15 +5516,15 @@
             "level": 1
           },
           {
-            "move": "Powder Snow",
+            "move": "Confusion",
             "level": 3
           },
           {
-            "move": "Frost Breath",
+            "move": "Psybeam",
             "level": 8
           },
           {
-            "move": "Aurora Beam",
+            "move": "Psychic",
             "level": 14
           },
           {
@@ -5803,15 +5923,15 @@
         "level": 1
       },
       {
-        "move": "Powder Snow",
+        "move": "Confusion",
         "level": 3
       },
       {
-        "move": "Frost Breath",
+        "move": "Psybeam",
         "level": 8
       },
       {
-        "move": "Aurora Beam",
+        "move": "Psychic",
         "level": 14
       },
       {
@@ -6920,6 +7040,10 @@
             "level": 23
           },
           {
+            "move": "Sludge Bomb",
+            "level": 27
+          },
+          {
             "move": "Lucky Chant",
             "level": 29
           },
@@ -6995,7 +7119,7 @@
   },
   {
     "name": "Gloom",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 44,
     "type1": "Grass",
     "type2": "Poison",
@@ -7204,6 +7328,10 @@
         "level": 23
       },
       {
+        "move": "Sludge Bomb",
+        "level": 27
+      },
+      {
         "move": "Lucky Chant",
         "level": 29
       },
@@ -7343,6 +7471,10 @@
           {
             "move": "Mega Drain",
             "level": 23
+          },
+          {
+            "move": "Sludge Bomb",
+            "level": 27
           },
           {
             "move": "Lucky Chant",
@@ -7519,6 +7651,10 @@
         "level": 27
       },
       {
+        "move": "Seed Bomb",
+        "level": 27
+      },
+      {
         "move": "Growth",
         "level": 33
       },
@@ -7597,6 +7733,10 @@
           },
           {
             "move": "Slash",
+            "level": 27
+          },
+          {
+            "move": "Seed Bomb",
             "level": 27
           },
           {
@@ -7687,7 +7827,7 @@
   },
   {
     "name": "Venonat",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 48,
     "type1": "Bug",
     "type2": "Poison",
@@ -7826,6 +7966,10 @@
         "level": 23
       },
       {
+        "move": "Poison Jab",
+        "level": 24
+      },
+      {
         "move": "Psybeam",
         "level": 25
       },
@@ -7913,6 +8057,10 @@
           {
             "move": "Stun Spore",
             "level": 23
+          },
+          {
+            "move": "Poison Jab",
+            "level": 24
           },
           {
             "move": "Psybeam",
@@ -9245,6 +9393,10 @@
             "level": 43
           },
           {
+            "move": "Psychic",
+            "level": 48
+          },
+          {
             "move": "Amnesia",
             "level": 49
           },
@@ -9481,6 +9633,10 @@
       {
         "move": "Psych Up",
         "level": 43
+      },
+      {
+        "move": "Psychic",
+        "level": 48
       },
       {
         "move": "Amnesia",
@@ -10069,6 +10225,10 @@
         "level": 34
       },
       {
+        "move": "Hyper Voice",
+        "level": 36
+      },
+      {
         "move": "Crunch",
         "level": 39
       },
@@ -10343,6 +10503,10 @@
           {
             "move": "Flamethrower",
             "level": 34
+          },
+          {
+            "move": "Hyper Voice",
+            "level": 36
           },
           {
             "move": "Crunch",
@@ -10912,11 +11076,19 @@
             "level": 35
           },
           {
+            "move": "Giga Drain",
+            "level": 36
+          },
+          {
             "move": "Bounce",
             "level": 37
           },
           {
             "move": "Hydro Pump",
+            "level": 38
+          },
+          {
+            "move": "Scald",
             "level": 38
           },
           {
@@ -13466,6 +13638,10 @@
         "level": 36
       },
       {
+        "move": "Close Combat",
+        "level": 40
+      },
+      {
         "move": "Explosion",
         "level": 43
       },
@@ -13803,6 +13979,10 @@
           {
             "move": "Stealth Rock",
             "level": 36
+          },
+          {
+            "move": "Close Combat",
+            "level": 40
           },
           {
             "move": "Explosion",
@@ -14290,6 +14470,10 @@
           {
             "move": "Stealth Rock",
             "level": 36
+          },
+          {
+            "move": "Close Combat",
+            "level": 40
           },
           {
             "move": "Explosion",
@@ -15624,7 +15808,7 @@
             "level": 62
           },
           {
-            "move": "Megahorn",
+            "move": "Bug Buzz",
             "level": 68
           }
         ],
@@ -15701,7 +15885,7 @@
   },
   {
     "name": "Slowpoke (Galar)",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 79,
     "type1": "Psychic",
     "bst": 315,
@@ -15784,7 +15968,7 @@
             "level": 27
           },
           {
-            "move": "Surf",
+            "move": "Scald",
             "level": 30
           },
           {
@@ -15898,7 +16082,7 @@
             "level": 27
           },
           {
-            "move": "Surf",
+            "move": "Scald",
             "level": 30
           },
           {
@@ -15967,7 +16151,7 @@
         "level": 27
       },
       {
-        "move": "Surf",
+        "move": "Scald",
         "level": 30
       },
       {
@@ -16343,7 +16527,7 @@
         "level": 62
       },
       {
-        "move": "Megahorn",
+        "move": "Bug Buzz",
         "level": 68
       }
     ],
@@ -16426,7 +16610,7 @@
             "level": 27
           },
           {
-            "move": "Surf",
+            "move": "Scald",
             "level": 30
           },
           {
@@ -16506,7 +16690,7 @@
         "level": 27
       },
       {
-        "move": "Surf",
+        "move": "Scald",
         "level": 30
       },
       {
@@ -17222,7 +17406,7 @@
         "level": 25
       },
       {
-        "move": "Brick Break",
+        "move": "Submission",
         "level": 28
       },
       {
@@ -17336,6 +17520,10 @@
             "level": 35
           },
           {
+            "move": "Seed Bomb",
+            "level": 35
+          },
+          {
             "move": "Brick Break",
             "level": 40
           },
@@ -17350,6 +17538,10 @@
           {
             "move": "Leaf Blade",
             "level": 55
+          },
+          {
+            "move": "Wood Hammer",
+            "level": 56
           },
           {
             "move": "Final Gambit",
@@ -17401,6 +17593,10 @@
         "level": 30
       },
       {
+        "move": "Seed Bomb",
+        "level": 33
+      },
+      {
         "move": "Defog",
         "level": 35
       },
@@ -17415,6 +17611,14 @@
       {
         "move": "Slam",
         "level": 50
+      },
+      {
+        "move": "Close Combat",
+        "level": 52
+      },
+      {
+        "move": "Wood Hammer",
+        "level": 52
       },
       {
         "move": "Leaf Blade",
@@ -17572,6 +17776,10 @@
         "level": 37
       },
       {
+        "move": "Brave Bird",
+        "level": 40
+      },
+      {
         "move": "Drill Peck",
         "level": 41
       },
@@ -17655,6 +17863,10 @@
           {
             "move": "Agility",
             "level": 37
+          },
+          {
+            "move": "Brave Bird",
+            "level": 40
           },
           {
             "move": "Drill Peck",
@@ -18164,7 +18376,7 @@
             "level": 29
           },
           {
-            "move": "Dig",
+            "move": "Poison Jab",
             "level": 29
           },
           {
@@ -18577,7 +18789,7 @@
         "level": 29
       },
       {
-        "move": "Dig",
+        "move": "Poison Jab",
         "level": 29
       },
       {
@@ -18833,7 +19045,7 @@
             "level": 1
           },
           {
-            "move": "Bite",
+            "move": "Assurance",
             "level": 1
           },
           {
@@ -18849,7 +19061,7 @@
             "level": 28
           },
           {
-            "move": "Crunch",
+            "move": "Sucker Punch",
             "level": 34
           },
           {
@@ -18893,7 +19105,7 @@
         "level": 20
       },
       {
-        "move": "Clamp",
+        "move": "Avalanche",
         "level": 25
       },
       {
@@ -18901,7 +19113,7 @@
         "level": 28
       },
       {
-        "move": "Razor Shell",
+        "move": "Icicle Crash",
         "level": 32
       },
       {
@@ -18989,7 +19201,7 @@
             "level": 20
           },
           {
-            "move": "Clamp",
+            "move": "Avalanche",
             "level": 25
           },
           {
@@ -18997,7 +19209,7 @@
             "level": 28
           },
           {
-            "move": "Razor Shell",
+            "move": "Icicle Crash",
             "level": 32
           },
           {
@@ -19053,7 +19265,7 @@
         "level": 1
       },
       {
-        "move": "Bite",
+        "move": "Assurance",
         "level": 1
       },
       {
@@ -19069,7 +19281,7 @@
         "level": 28
       },
       {
-        "move": "Crunch",
+        "move": "Sucker Punch",
         "level": 34
       },
       {
@@ -20194,6 +20406,10 @@
             "level": 49
           },
           {
+            "move": "Ominous Wind",
+            "level": 49
+          },
+          {
             "move": "Nasty Plot",
             "level": 53
           },
@@ -20441,6 +20657,10 @@
         "level": 49
       },
       {
+        "move": "Ominous Wind",
+        "level": 49
+      },
+      {
         "move": "Nasty Plot",
         "level": 53
       },
@@ -20526,7 +20746,7 @@
             "level": 25
           },
           {
-            "move": "Dig",
+            "move": "Iron Head",
             "level": 30
           },
           {
@@ -20534,7 +20754,7 @@
             "level": 32
           },
           {
-            "move": "Earth Power",
+            "move": "Heavy Slam",
             "level": 35
           },
           {
@@ -20762,7 +20982,7 @@
         "level": 25
       },
       {
-        "move": "Dig",
+        "move": "Iron Head",
         "level": 30
       },
       {
@@ -20770,7 +20990,7 @@
         "level": 32
       },
       {
-        "move": "Earth Power",
+        "move": "Heavy Slam",
         "level": 35
       },
       {
@@ -20892,6 +21112,10 @@
             "level": 46
           },
           {
+            "move": "Thunder",
+            "level": 50
+          },
+          {
             "move": "Gyro Ball",
             "level": 51
           },
@@ -20961,6 +21185,14 @@
       },
       {
         "move": "Magnet Rise",
+        "level": 40
+      },
+      {
+        "move": "Thunder",
+        "level": 40
+      },
+      {
+        "move": "Flash Cannon",
         "level": 40
       },
       {
@@ -21245,6 +21477,14 @@
             "level": 40
           },
           {
+            "move": "Thunder",
+            "level": 40
+          },
+          {
+            "move": "Flash Cannon",
+            "level": 40
+          },
+          {
             "move": "Gyro Ball",
             "level": 43
           },
@@ -21319,6 +21559,10 @@
       {
         "move": "Magnet Rise",
         "level": 46
+      },
+      {
+        "move": "Thunder",
+        "level": 50
       },
       {
         "move": "Gyro Ball",
@@ -21667,7 +21911,7 @@
             "level": 1
           },
           {
-            "move": "Dragon Claw",
+            "move": "Dragon Tail",
             "level": 1
           },
           {
@@ -21836,7 +22080,7 @@
   },
   {
     "name": "Exeggutor (Alola)",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 103,
     "type1": "Grass",
     "type2": "Dragon",
@@ -21943,7 +22187,7 @@
         "level": 1
       },
       {
-        "move": "Dragon Claw",
+        "move": "Dragon Tail",
         "level": 1
       },
       {
@@ -22113,6 +22357,10 @@
             "level": 29
           },
           {
+            "move": "Brick Break",
+            "level": 30
+          },
+          {
             "move": "Thrash",
             "level": 33
           },
@@ -22131,6 +22379,10 @@
           {
             "move": "Bone Rush",
             "level": 43
+          },
+          {
+            "move": "Close Combat",
+            "level": 47
           },
           {
             "move": "Endeavor",
@@ -22369,6 +22621,10 @@
         "level": 29
       },
       {
+        "move": "Brick Break",
+        "level": 30
+      },
+      {
         "move": "Thrash",
         "level": 33
       },
@@ -22387,6 +22643,10 @@
       {
         "move": "Bone Rush",
         "level": 43
+      },
+      {
+        "move": "Close Combat",
+        "level": 47
       },
       {
         "move": "Endeavor",
@@ -25408,7 +25668,7 @@
   },
   {
     "name": "Mr. Mime",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 122,
     "type1": "Psychic",
     "bst": 460,
@@ -25452,7 +25712,7 @@
             "level": 4
           },
           {
-            "move": "Meditate",
+            "move": "Disarming Voice",
             "level": 8
           },
           {
@@ -25507,7 +25767,8 @@
             "move": "Safeguard",
             "level": 50
           }
-        ]
+        ],
+        "type2": "Fairy"
       }
     ],
     "moves": [
@@ -25524,7 +25785,7 @@
         "level": 1
       },
       {
-        "move": "Magical Leaf",
+        "move": "Draining Kiss",
         "level": 1
       },
       {
@@ -25546,6 +25807,10 @@
       {
         "move": "Meditate",
         "level": 8
+      },
+      {
+        "move": "Disarming Voice",
+        "level": 10
       },
       {
         "move": "Double Slap",
@@ -25600,10 +25865,11 @@
         "level": 46
       },
       {
-        "move": "Safeguard",
+        "move": "Moonblast",
         "level": 50
       }
-    ]
+    ],
+    "type2": "Fairy"
   },
   {
     "name": "Scyther",
@@ -25696,6 +25962,10 @@
       },
       {
         "move": "Double Hit",
+        "level": 49
+      },
+      {
+        "move": "Bug Buzz",
         "level": 49
       },
       {
@@ -27554,7 +27824,7 @@
             "level": 21
           },
           {
-            "move": "Brick Break",
+            "move": "Submission",
             "level": 23
           },
           {
@@ -27611,7 +27881,7 @@
             "level": 1
           },
           {
-            "move": "Cut",
+            "move": "Bullet Seed",
             "level": 1
           },
           {
@@ -27639,6 +27909,10 @@
             "level": 21
           },
           {
+            "move": "Iron Head",
+            "level": 23
+          },
+          {
             "move": "Giga Drain",
             "level": 25
           },
@@ -27656,6 +27930,10 @@
           },
           {
             "move": "Acrobatics",
+            "level": 36
+          },
+          {
+            "move": "Iron Tail",
             "level": 36
           },
           {
@@ -29313,6 +29591,10 @@
         "level": 65
       },
       {
+        "move": "Aerial Ace",
+        "level": 65
+      },
+      {
         "move": "Rock Slide",
         "level": 73
       },
@@ -30687,6 +30969,10 @@
         "level": 45
       },
       {
+        "move": "Hurricane",
+        "level": 46
+      },
+      {
         "move": "Psycho Shift",
         "level": 49
       },
@@ -30787,6 +31073,10 @@
           {
             "move": "Extrasensory",
             "level": 45
+          },
+          {
+            "move": "Hurricane",
+            "level": 46
           },
           {
             "move": "Psycho Shift",
@@ -32190,9 +32480,9 @@
   },
   {
     "name": "Cleffa",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 173,
-    "type1": "Normal",
+    "type1": "Fairy",
     "bst": 218,
     "abilities": [
       "Cute Charm",
@@ -32212,7 +32502,7 @@
       {
         "name": "Clefairy",
         "pokedex_id": 35,
-        "type1": "Normal",
+        "type1": "Fairy",
         "abilities": [
           "Cute Charm",
           "Magic Guard"
@@ -32240,6 +32530,10 @@
             "level": 10
           },
           {
+            "move": "Disarming Voice",
+            "level": 10
+          },
+          {
             "move": "Defense Curl",
             "level": 13
           },
@@ -32258,6 +32552,10 @@
           {
             "move": "Wake-Up Slap",
             "level": 22
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 26
           },
           {
             "move": "Cosmic Power",
@@ -32296,7 +32594,7 @@
             "level": 49
           },
           {
-            "move": "After You",
+            "move": "Moonblast",
             "level": 52
           },
           {
@@ -32308,7 +32606,7 @@
       {
         "name": "Clefable",
         "pokedex_id": 36,
-        "type1": "Normal",
+        "type1": "Fairy",
         "abilities": [
           "Cute Charm",
           "Magic Guard"
@@ -32329,6 +32627,18 @@
           {
             "move": "Sing",
             "level": 1
+          },
+          {
+            "move": "Disarming Voice",
+            "level": 1
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 1
+          },
+          {
+            "move": "Moonblast",
+            "level": 1
           }
         ]
       }
@@ -32344,6 +32654,10 @@
       },
       {
         "move": "Encore",
+        "level": 4
+      },
+      {
+        "move": "Disarming Voice",
         "level": 4
       },
       {
@@ -32649,6 +32963,10 @@
           },
           {
             "move": "Moonblast",
+            "level": 42
+          },
+          {
+            "move": "Hurricane",
             "level": 42
           },
           {
@@ -33000,6 +33318,10 @@
       },
       {
         "move": "Moonblast",
+        "level": 42
+      },
+      {
+        "move": "Hurricane",
         "level": 42
       },
       {
@@ -34324,6 +34646,10 @@
             "level": 23
           },
           {
+            "move": "Sludge Bomb",
+            "level": 27
+          },
+          {
             "move": "Lucky Chant",
             "level": 29
           },
@@ -34458,6 +34784,10 @@
           },
           {
             "move": "Dazzling Gleam",
+            "level": 12
+          },
+          {
+            "move": "Swift",
             "level": 12
           },
           {
@@ -34702,6 +35032,10 @@
           },
           {
             "move": "Dazzling Gleam",
+            "level": 12
+          },
+          {
+            "move": "Swift",
             "level": 12
           },
           {
@@ -34964,6 +35298,10 @@
           {
             "move": "Rock Slide",
             "level": 29
+          },
+          {
+            "move": "Seed Bomb",
+            "level": 32
           },
           {
             "move": "Sucker Punch",
@@ -35243,11 +35581,19 @@
         "level": 35
       },
       {
+        "move": "Giga Drain",
+        "level": 36
+      },
+      {
         "move": "Bounce",
         "level": 37
       },
       {
         "move": "Hydro Pump",
+        "level": 38
+      },
+      {
+        "move": "Scald",
         "level": 38
       },
       {
@@ -36106,7 +36452,7 @@
             "level": 4
           },
           {
-            "move": "Absorb",
+            "move": "Low Kick",
             "level": 4
           },
           {
@@ -36118,7 +36464,7 @@
             "level": 8
           },
           {
-            "move": "Mega Drain",
+            "move": "Tackle",
             "level": 9
           },
           {
@@ -36155,6 +36501,10 @@
           },
           {
             "move": "Double Hit",
+            "level": 32
+          },
+          {
+            "move": "Brick Break",
             "level": 32
           },
           {
@@ -36638,7 +36988,7 @@
   },
   {
     "name": "Yanma",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 193,
     "type1": "Bug",
     "type2": "Flying",
@@ -36737,6 +37087,10 @@
             "level": 46
           },
           {
+            "move": "Draco Meteor",
+            "level": 46
+          },
+          {
             "move": "U-turn",
             "level": 49
           },
@@ -36798,6 +37152,14 @@
       },
       {
         "move": "Screech",
+        "level": 46
+      },
+      {
+        "move": "Signal Beam",
+        "level": 46
+      },
+      {
+        "move": "Hurricane",
         "level": 46
       },
       {
@@ -37523,7 +37885,7 @@
         "level": 21
       },
       {
-        "move": "Brick Break",
+        "move": "Submission",
         "level": 23
       },
       {
@@ -37945,7 +38307,7 @@
             "level": 27
           },
           {
-            "move": "Surf",
+            "move": "Scald",
             "level": 30
           },
           {
@@ -38049,7 +38411,7 @@
         "level": 27
       },
       {
-        "move": "Surf",
+        "move": "Scald",
         "level": 30
       },
       {
@@ -38205,6 +38567,10 @@
           {
             "move": "Moonblast",
             "level": 1
+          },
+          {
+            "move": "Ominous Wind",
+            "level": 10
           }
         ],
         "type2": "Fairy",
@@ -39088,6 +39454,10 @@
             "level": 22
           },
           {
+            "move": "Aerial Ace",
+            "level": 25
+          },
+          {
             "move": "Night Slash",
             "level": 27
           },
@@ -39102,6 +39472,10 @@
           {
             "move": "Swords Dance",
             "level": 38
+          },
+          {
+            "move": "Brave Bird",
+            "level": 39
           },
           {
             "move": "X-Scissor",
@@ -39152,6 +39526,14 @@
         "level": 22
       },
       {
+        "move": "Poison Jab",
+        "level": 25
+      },
+      {
+        "move": "Aerial Ace",
+        "level": 25
+      },
+      {
         "move": "Slash",
         "level": 27
       },
@@ -39166,6 +39548,14 @@
       {
         "move": "Swords Dance",
         "level": 38
+      },
+      {
+        "move": "Gunk Shot",
+        "level": 39
+      },
+      {
+        "move": "Brave Bird",
+        "level": 39
       },
       {
         "move": "X-Scissor",
@@ -39440,6 +39830,14 @@
         "evo": "Use Water Stone",
         "moves": [
           {
+            "move": "Bind",
+            "level": 1
+          },
+          {
+            "move": "Harden",
+            "level": 1
+          },
+          {
             "move": "Mud Sport",
             "level": 1
           },
@@ -39448,16 +39846,12 @@
             "level": 1
           },
           {
-            "move": "Harden",
-            "level": 1
-          },
-          {
-            "move": "Bind",
-            "level": 1
-          },
-          {
             "move": "Curse",
             "level": 4
+          },
+          {
+            "move": "Screech",
+            "level": 6
           },
           {
             "move": "Rock Throw",
@@ -39488,12 +39882,12 @@
             "level": 25
           },
           {
-            "move": "Slam",
-            "level": 28
+            "move": "Sandstorm",
+            "level": 25
           },
           {
-            "move": "Screech",
-            "level": 31
+            "move": "Slam",
+            "level": 28
           },
           {
             "move": "Rock Slide",
@@ -39506,6 +39900,18 @@
           {
             "move": "Iron Tail",
             "level": 40
+          },
+          {
+            "move": "Dig",
+            "level": 43
+          },
+          {
+            "move": "Stone Edge",
+            "level": 46
+          },
+          {
+            "move": "Double-Edge",
+            "level": 49
           }
         ]
       }
@@ -39762,6 +40168,10 @@
         "level": 37
       },
       {
+        "move": "Play Rough",
+        "level": 39
+      },
+      {
         "move": "Payback",
         "level": 43
       },
@@ -39856,6 +40266,10 @@
           {
             "move": "Take Down",
             "level": 37
+          },
+          {
+            "move": "Play Rough",
+            "level": 39
           },
           {
             "move": "Payback",
@@ -40334,6 +40748,10 @@
             "level": 49
           },
           {
+            "move": "Bug Buzz",
+            "level": 49
+          },
+          {
             "move": "Swords Dance",
             "level": 57
           },
@@ -40680,7 +41098,7 @@
         "level": 42
       },
       {
-        "move": "Sacred Sword",
+        "move": "Heavy Slam",
         "level": 47
       },
       {
@@ -41102,7 +41520,7 @@
             "level": 29
           },
           {
-            "move": "Double Kick",
+            "move": "Drill Run",
             "level": 32
           },
           {
@@ -41110,7 +41528,7 @@
             "level": 33
           },
           {
-            "move": "Sky Uppercut",
+            "move": "Body Slam",
             "level": 37
           },
           {
@@ -41364,7 +41782,7 @@
         "level": 29
       },
       {
-        "move": "Double Kick",
+        "move": "Drill Run",
         "level": 32
       },
       {
@@ -41372,7 +41790,7 @@
         "level": 33
       },
       {
-        "move": "Sky Uppercut",
+        "move": "Body Slam",
         "level": 37
       },
       {
@@ -41923,11 +42341,11 @@
         "evo": "Use Poison Stone",
         "moves": [
           {
-            "move": "Yawn",
+            "move": "Smog",
             "level": 1
           },
           {
-            "move": "Smog",
+            "move": "Yawn",
             "level": 1
           },
           {
@@ -44014,7 +44432,7 @@
   },
   {
     "name": "Phanpy",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 231,
     "type1": "Ground",
     "bst": 330,
@@ -44091,12 +44509,24 @@
             "level": 25
           },
           {
+            "move": "Rock Slide",
+            "level": 27
+          },
+          {
             "move": "Assurance",
             "level": 31
           },
           {
             "move": "Scary Face",
             "level": 39
+          },
+          {
+            "move": "Drill Run",
+            "level": 43
+          },
+          {
+            "move": "Stone Edge",
+            "level": 43
           },
           {
             "move": "Earthquake",
@@ -44131,6 +44561,10 @@
         "level": 6
       },
       {
+        "move": "Mud-Slap",
+        "level": 8
+      },
+      {
         "move": "Take Down",
         "level": 10
       },
@@ -44141,6 +44575,10 @@
       {
         "move": "Natural Gift",
         "level": 19
+      },
+      {
+        "move": "Dig",
+        "level": 21
       },
       {
         "move": "Slam",
@@ -44213,6 +44651,10 @@
             "level": 6
           },
           {
+            "move": "Mud-Slap",
+            "level": 8
+          },
+          {
             "move": "Take Down",
             "level": 10
           },
@@ -44223,6 +44665,10 @@
           {
             "move": "Natural Gift",
             "level": 19
+          },
+          {
+            "move": "Dig",
+            "level": 21
           },
           {
             "move": "Slam",
@@ -44297,12 +44743,24 @@
         "level": 25
       },
       {
+        "move": "Rock Slide",
+        "level": 27
+      },
+      {
         "move": "Assurance",
         "level": 31
       },
       {
         "move": "Scary Face",
         "level": 39
+      },
+      {
+        "move": "Drill Run",
+        "level": 43
+      },
+      {
+        "move": "Stone Edge",
+        "level": 43
       },
       {
         "move": "Earthquake",
@@ -46376,6 +46834,10 @@
             "level": 54
           },
           {
+            "move": "Night Slash",
+            "level": 60
+          },
+          {
             "move": "Stone Edge",
             "level": 63
           },
@@ -46413,6 +46875,10 @@
       },
       {
         "move": "Chip Away",
+        "level": 14
+      },
+      {
+        "move": "Feint Attack",
         "level": 14
       },
       {
@@ -46486,6 +46952,10 @@
           },
           {
             "move": "Chip Away",
+            "level": 14
+          },
+          {
+            "move": "Feint Attack",
             "level": 14
           },
           {
@@ -46590,6 +47060,10 @@
           {
             "move": "Earthquake",
             "level": 54
+          },
+          {
+            "move": "Night Slash",
+            "level": 60
           },
           {
             "move": "Stone Edge",
@@ -46710,6 +47184,10 @@
           },
           {
             "move": "Chip Away",
+            "level": 14
+          },
+          {
+            "move": "Feint Attack",
             "level": 14
           },
           {
@@ -46864,6 +47342,10 @@
       {
         "move": "Earthquake",
         "level": 54
+      },
+      {
+        "move": "Night Slash",
+        "level": 60
       },
       {
         "move": "Stone Edge",
@@ -49152,6 +49634,10 @@
             "level": 25
           },
           {
+            "move": "Seed Bomb",
+            "level": 25
+          },
+          {
             "move": "Razor Wind",
             "level": 37
           },
@@ -49427,6 +49913,10 @@
         "level": 25
       },
       {
+        "move": "Seed Bomb",
+        "level": 25
+      },
+      {
         "move": "Razor Wind",
         "level": 37
       },
@@ -49549,6 +50039,10 @@
           },
           {
             "move": "Nightmare",
+            "level": 25
+          },
+          {
+            "move": "Seed Bomb",
             "level": 25
           },
           {
@@ -52424,7 +52918,7 @@
   },
   {
     "name": "Nincada",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 290,
     "type1": "Bug",
     "type2": "Ground",
@@ -52508,6 +53002,10 @@
           {
             "move": "Thunderbolt",
             "level": 33
+          },
+          {
+            "move": "Brave Bird",
+            "level": 36
           },
           {
             "move": "Agility",
@@ -52610,6 +53108,10 @@
         "level": 19
       },
       {
+        "move": "X-Scissor",
+        "level": 23
+      },
+      {
         "move": "False Swipe",
         "level": 25
       },
@@ -52680,6 +53182,10 @@
           {
             "move": "Mind Reader",
             "level": 19
+          },
+          {
+            "move": "X-Scissor",
+            "level": 23
           },
           {
             "move": "False Swipe",
@@ -52758,6 +53264,10 @@
         "level": 33
       },
       {
+        "move": "Brave Bird",
+        "level": 36
+      },
+      {
         "move": "Agility",
         "level": 38
       },
@@ -52824,6 +53334,10 @@
           {
             "move": "Mind Reader",
             "level": 19
+          },
+          {
+            "move": "X-Scissor",
+            "level": 23
           },
           {
             "move": "False Swipe",
@@ -54333,6 +54847,10 @@
       },
       {
         "move": "Dazzling Gleam",
+        "level": 12
+      },
+      {
+        "move": "Swift",
         "level": 12
       },
       {
@@ -56601,7 +57119,7 @@
         "level": 21
       },
       {
-        "move": "Fire Fang",
+        "move": "Flame Wheel",
         "level": 21
       },
       {
@@ -56615,6 +57133,10 @@
       {
         "move": "Helping Hand",
         "level": 33
+      },
+      {
+        "move": "U-turn",
+        "level": 36
       },
       {
         "move": "Zen Headbutt",
@@ -56679,6 +57201,14 @@
       {
         "move": "Wish",
         "level": 21
+      },
+      {
+        "move": "Signal Beam",
+        "level": 23
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 23
       },
       {
         "move": "Encore",
@@ -57256,7 +57786,7 @@
             "level": 21
           },
           {
-            "move": "Assurance",
+            "move": "Aqua Tail",
             "level": 26
           },
           {
@@ -57280,11 +57810,15 @@
             "level": 45
           },
           {
+            "move": "Iron Tail",
+            "level": 45
+          },
+          {
             "move": "Iron Head",
             "level": 50
           },
           {
-            "move": "Night Slash",
+            "move": "Waterfall",
             "level": 56
           }
         ]
@@ -57324,7 +57858,7 @@
         "level": 21
       },
       {
-        "move": "Assurance",
+        "move": "Waterfall",
         "level": 26
       },
       {
@@ -57409,7 +57943,7 @@
             "level": 21
           },
           {
-            "move": "Assurance",
+            "move": "Waterfall",
             "level": 26
           },
           {
@@ -57469,7 +58003,7 @@
         "level": 21
       },
       {
-        "move": "Assurance",
+        "move": "Aqua Tail",
         "level": 26
       },
       {
@@ -57493,11 +58027,15 @@
         "level": 45
       },
       {
+        "move": "Iron Tail",
+        "level": 45
+      },
+      {
         "move": "Iron Head",
         "level": 50
       },
       {
-        "move": "Night Slash",
+        "move": "Waterfall",
         "level": 56
       }
     ]
@@ -57592,6 +58130,10 @@
           {
             "move": "Bounce",
             "level": 54
+          },
+          {
+            "move": "Hurricane",
+            "level": 56
           },
           {
             "move": "Hydro Pump",
@@ -57828,6 +58370,10 @@
       {
         "move": "Bounce",
         "level": 54
+      },
+      {
+        "move": "Hurricane",
+        "level": 56
       },
       {
         "move": "Hydro Pump",
@@ -59066,6 +59612,10 @@
             "level": 37
           },
           {
+            "move": "Drill Run",
+            "level": 39
+          },
+          {
             "move": "Leech Life",
             "level": 41
           },
@@ -59466,6 +60016,10 @@
         "level": 37
       },
       {
+        "move": "Drill Run",
+        "level": 39
+      },
+      {
         "move": "Leech Life",
         "level": 41
       },
@@ -59638,6 +60192,10 @@
           {
             "move": "Bug Buzz",
             "level": 37
+          },
+          {
+            "move": "Drill Run",
+            "level": 39
           },
           {
             "move": "Leech Life",
@@ -60116,6 +60674,10 @@
         "level": 21
       },
       {
+        "move": "Air Slash",
+        "level": 24
+      },
+      {
         "move": "Take Down",
         "level": 25
       },
@@ -60126,6 +60688,10 @@
       {
         "move": "Mirror Move",
         "level": 34
+      },
+      {
+        "move": "Hurricane",
+        "level": 38
       },
       {
         "move": "Cotton Guard",
@@ -60160,7 +60726,7 @@
             "level": 1
           },
           {
-            "move": "Peck",
+            "move": "Twister",
             "level": 1
           },
           {
@@ -60387,6 +60953,10 @@
             "level": 21
           },
           {
+            "move": "Air Slash",
+            "level": 24
+          },
+          {
             "move": "Take Down",
             "level": 25
           },
@@ -60397,6 +60967,10 @@
           {
             "move": "Mirror Move",
             "level": 34
+          },
+          {
+            "move": "Hurricane",
+            "level": 38
           },
           {
             "move": "Cotton Guard",
@@ -60423,7 +60997,7 @@
         "level": 1
       },
       {
-        "move": "Peck",
+        "move": "Twister",
         "level": 1
       },
       {
@@ -60566,6 +61140,10 @@
             "level": 21
           },
           {
+            "move": "Air Slash",
+            "level": 24
+          },
+          {
             "move": "Take Down",
             "level": 25
           },
@@ -60576,6 +61154,10 @@
           {
             "move": "Mirror Move",
             "level": 34
+          },
+          {
+            "move": "Hurricane",
+            "level": 38
           },
           {
             "move": "Cotton Guard",
@@ -62064,6 +62646,10 @@
             "level": 36
           },
           {
+            "move": "Power Gem",
+            "level": 38
+          },
+          {
             "move": "Gastro Acid",
             "level": 46
           },
@@ -62114,6 +62700,10 @@
       {
         "move": "Amnesia",
         "level": 29
+      },
+      {
+        "move": "Power Gem",
+        "level": 32
       },
       {
         "move": "Gastro Acid",
@@ -62201,6 +62791,10 @@
             "level": 29
           },
           {
+            "move": "Power Gem",
+            "level": 32
+          },
+          {
             "move": "Gastro Acid",
             "level": 36
           },
@@ -62259,6 +62853,10 @@
       {
         "move": "Ancient Power",
         "level": 36
+      },
+      {
+        "move": "Power Gem",
+        "level": 38
       },
       {
         "move": "Gastro Acid",
@@ -63979,6 +64577,10 @@
           {
             "move": "Astonish",
             "level": 9
+          },
+          {
+            "move": "Psybeam",
+            "level": 13
           },
           {
             "move": "Confusion",
@@ -66000,7 +66602,7 @@
             "level": 43
           },
           {
-            "move": "Fly",
+            "move": "Air Slash",
             "level": 50
           },
           {
@@ -66267,7 +66869,7 @@
             "level": 43
           },
           {
-            "move": "Fly",
+            "move": "Air Slash",
             "level": 50
           },
           {
@@ -66557,7 +67159,7 @@
         "level": 43
       },
       {
-        "move": "Fly",
+        "move": "Air Slash",
         "level": 50
       },
       {
@@ -66658,7 +67260,7 @@
             "level": 63
           },
           {
-            "move": "Fly",
+            "move": "Air Slash",
             "level": 70
           },
           {
@@ -66723,10 +67325,6 @@
             "level": 5
           },
           {
-            "move": "Dragon Rage",
-            "level": 8
-          },
-          {
             "move": "Leer",
             "level": 10
           },
@@ -66735,16 +67333,36 @@
             "level": 16
           },
           {
-            "move": "Dragon Breath",
-            "level": 17
-          },
-          {
             "move": "Focus Energy",
             "level": 20
           },
           {
             "move": "Ember",
             "level": 25
+          },
+          {
+            "move": "Dragon Breath",
+            "level": 31
+          },
+          {
+            "move": "Zen Headbutt",
+            "level": 35
+          },
+          {
+            "move": "Scary Face",
+            "level": 40
+          },
+          {
+            "move": "Crunch",
+            "level": 46
+          },
+          {
+            "move": "Dragon Claw",
+            "level": 50
+          },
+          {
+            "move": "Double-Edge",
+            "level": 55
           }
         ]
       },
@@ -66768,28 +67386,20 @@
         "evo": "Use Fire Stone",
         "moves": [
           {
-            "move": "Rage",
+            "move": "Bite",
             "level": 1
           },
           {
-            "move": "Bite",
-            "level": 5
-          },
-          {
-            "move": "Dragon Rage",
-            "level": 8
+            "move": "Headbutt",
+            "level": 1
           },
           {
             "move": "Leer",
-            "level": 10
+            "level": 1
           },
           {
-            "move": "Headbutt",
-            "level": 16
-          },
-          {
-            "move": "Dragon Breath",
-            "level": 17
+            "move": "Rage",
+            "level": 1
           },
           {
             "move": "Focus Energy",
@@ -66804,12 +67414,28 @@
             "level": 30
           },
           {
+            "move": "Dragon Breath",
+            "level": 32
+          },
+          {
+            "move": "Zen Headbutt",
+            "level": 37
+          },
+          {
             "move": "Scary Face",
             "level": 43
           },
           {
             "move": "Crunch",
             "level": 50
+          },
+          {
+            "move": "Dragon Claw",
+            "level": 55
+          },
+          {
+            "move": "Double-Edge",
+            "level": 61
           }
         ]
       }
@@ -71310,7 +71936,7 @@
             "level": 24
           },
           {
-            "move": "Circle Throw",
+            "move": "Icicle Crash",
             "level": 28
           },
           {
@@ -71326,7 +71952,7 @@
             "level": 35
           },
           {
-            "move": "Sky Uppercut",
+            "move": "Waterfall",
             "level": 39
           },
           {
@@ -71556,7 +72182,7 @@
         "level": 24
       },
       {
-        "move": "Circle Throw",
+        "move": "Icicle Crash",
         "level": 28
       },
       {
@@ -71572,7 +72198,7 @@
         "level": 35
       },
       {
-        "move": "Sky Uppercut",
+        "move": "Waterfall",
         "level": 39
       },
       {
@@ -72386,7 +73012,7 @@
         "level": 4
       },
       {
-        "move": "Absorb",
+        "move": "Low Kick",
         "level": 4
       },
       {
@@ -72398,7 +73024,7 @@
         "level": 8
       },
       {
-        "move": "Mega Drain",
+        "move": "Tackle",
         "level": 9
       },
       {
@@ -72435,6 +73061,10 @@
       },
       {
         "move": "Double Hit",
+        "level": 32
+      },
+      {
+        "move": "Brick Break",
         "level": 32
       },
       {
@@ -73246,6 +73876,10 @@
       {
         "move": "Moonblast",
         "level": 1
+      },
+      {
+        "move": "Ominous Wind",
+        "level": 10
       }
     ],
     "type2": "Fairy"
@@ -73676,7 +74310,7 @@
   },
   {
     "name": "Chingling",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 433,
     "type1": "Psychic",
     "bst": 285,
@@ -73792,6 +74426,10 @@
       {
         "move": "Astonish",
         "level": 9
+      },
+      {
+        "move": "Psybeam",
+        "level": 13
       },
       {
         "move": "Confusion",
@@ -74618,6 +75256,10 @@
         "level": 29
       },
       {
+        "move": "Seed Bomb",
+        "level": 32
+      },
+      {
         "move": "Sucker Punch",
         "level": 36
       },
@@ -74629,7 +75271,7 @@
   },
   {
     "name": "Mime Jr.",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 439,
     "type1": "Psychic",
     "bst": 310,
@@ -74670,7 +75312,7 @@
             "level": 1
           },
           {
-            "move": "Magical Leaf",
+            "move": "Draining Kiss",
             "level": 1
           },
           {
@@ -74692,6 +75334,10 @@
           {
             "move": "Meditate",
             "level": 8
+          },
+          {
+            "move": "Disarming Voice",
+            "level": 10
           },
           {
             "move": "Double Slap",
@@ -74746,10 +75392,11 @@
             "level": 46
           },
           {
-            "move": "Safeguard",
+            "move": "Moonblast",
             "level": 50
           }
-        ]
+        ],
+        "type2": "Fairy"
       }
     ],
     "moves": [
@@ -74770,7 +75417,7 @@
         "level": 4
       },
       {
-        "move": "Meditate",
+        "move": "Disarming Voice",
         "level": 8
       },
       {
@@ -74825,7 +75472,8 @@
         "move": "Safeguard",
         "level": 50
       }
-    ]
+    ],
+    "type2": "Fairy"
   },
   {
     "name": "Happiny",
@@ -75246,6 +75894,10 @@
             "level": 28
           },
           {
+            "move": "Wing Attack",
+            "level": 30
+          },
+          {
             "move": "Aerial Ace",
             "level": 32
           },
@@ -75521,6 +76173,10 @@
         "level": 28
       },
       {
+        "move": "Wing Attack",
+        "level": 30
+      },
+      {
         "move": "Aerial Ace",
         "level": 32
       },
@@ -75628,6 +76284,10 @@
           {
             "move": "Slash",
             "level": 28
+          },
+          {
+            "move": "Wing Attack",
+            "level": 30
           },
           {
             "move": "Aerial Ace",
@@ -75975,6 +76635,10 @@
             "level": 51
           },
           {
+            "move": "Extrasensory",
+            "level": 52
+          },
+          {
             "move": "Close Combat",
             "level": 55
           },
@@ -76179,6 +76843,10 @@
         "level": 51
       },
       {
+        "move": "Extrasensory",
+        "level": 52
+      },
+      {
         "move": "Close Combat",
         "level": 55
       },
@@ -76276,7 +76944,7 @@
             "level": 31
           },
           {
-            "move": "Seed Bomb",
+            "move": "Drill Run",
             "level": 36
           },
           {
@@ -76284,7 +76952,7 @@
             "level": 40
           },
           {
-            "move": "Energy Ball",
+            "move": "Bulldoze",
             "level": 41
           },
           {
@@ -76484,7 +77152,7 @@
         "level": 31
       },
       {
-        "move": "Seed Bomb",
+        "move": "Drill Run",
         "level": 36
       },
       {
@@ -76492,7 +77160,7 @@
         "level": 40
       },
       {
-        "move": "Energy Ball",
+        "move": "Bulldoze",
         "level": 41
       },
       {
@@ -79708,6 +80376,10 @@
             "level": 42
           },
           {
+            "move": "Hurricane",
+            "level": 42
+          },
+          {
             "move": "Double-Edge",
             "level": 45
           },
@@ -79837,6 +80509,14 @@
             "level": 46
           },
           {
+            "move": "Signal Beam",
+            "level": 46
+          },
+          {
+            "move": "Hurricane",
+            "level": 46
+          },
+          {
             "move": "U-turn",
             "level": 49
           },
@@ -79918,6 +80598,10 @@
       },
       {
         "move": "Screech",
+        "level": 46
+      },
+      {
+        "move": "Draco Meteor",
         "level": 46
       },
       {
@@ -80032,7 +80716,7 @@
         "level": 1
       },
       {
-        "move": "Cut",
+        "move": "Bullet Seed",
         "level": 1
       },
       {
@@ -80060,6 +80744,10 @@
         "level": 21
       },
       {
+        "move": "Iron Head",
+        "level": 23
+      },
+      {
         "move": "Giga Drain",
         "level": 25
       },
@@ -80077,6 +80765,10 @@
       },
       {
         "move": "Acrobatics",
+        "level": 36
+      },
+      {
+        "move": "Iron Tail",
         "level": 36
       },
       {
@@ -80318,6 +81010,14 @@
             "level": 22
           },
           {
+            "move": "Poison Jab",
+            "level": 25
+          },
+          {
+            "move": "Aerial Ace",
+            "level": 25
+          },
+          {
             "move": "Slash",
             "level": 27
           },
@@ -80332,6 +81032,14 @@
           {
             "move": "Swords Dance",
             "level": 38
+          },
+          {
+            "move": "Gunk Shot",
+            "level": 39
+          },
+          {
+            "move": "Brave Bird",
+            "level": 39
           },
           {
             "move": "X-Scissor",
@@ -80394,6 +81102,10 @@
         "level": 22
       },
       {
+        "move": "Aerial Ace",
+        "level": 25
+      },
+      {
         "move": "Night Slash",
         "level": 27
       },
@@ -80408,6 +81120,10 @@
       {
         "move": "Swords Dance",
         "level": 38
+      },
+      {
+        "move": "Brave Bird",
+        "level": 39
       },
       {
         "move": "X-Scissor",
@@ -83514,6 +84230,10 @@
         "level": 29
       },
       {
+        "move": "Icicle Crash",
+        "level": 32
+      },
+      {
         "move": "Reversal",
         "level": 33
       },
@@ -83605,6 +84325,10 @@
           {
             "move": "Retaliate",
             "level": 29
+          },
+          {
+            "move": "Icicle Crash",
+            "level": 32
           },
           {
             "move": "Reversal",
@@ -83872,6 +84596,10 @@
           {
             "move": "Retaliate",
             "level": 29
+          },
+          {
+            "move": "Icicle Crash",
+            "level": 32
           },
           {
             "move": "Reversal",
@@ -84443,6 +85171,10 @@
           {
             "move": "Close Combat",
             "level": 1
+          },
+          {
+            "move": "Bullet Seed",
+            "level": 10
           }
         ],
         "type2": "Fighting"
@@ -84507,6 +85239,10 @@
       },
       {
         "move": "Close Combat",
+        "level": 34
+      },
+      {
+        "move": "Leaf Blade",
         "level": 34
       },
       {
@@ -84613,6 +85349,10 @@
             "level": 34
           },
           {
+            "move": "Leaf Blade",
+            "level": 34
+          },
+          {
             "move": "Recycle",
             "level": 37
           },
@@ -84655,6 +85395,10 @@
       {
         "move": "Close Combat",
         "level": 1
+      },
+      {
+        "move": "Bullet Seed",
+        "level": 10
       }
     ],
     "type2": "Fighting"
@@ -84714,6 +85458,10 @@
           {
             "move": "Leaf Blade",
             "level": 1
+          },
+          {
+            "move": "Fire Fang",
+            "level": 10
           }
         ],
         "type2": "Grass"
@@ -84926,6 +85674,10 @@
       {
         "move": "Leaf Blade",
         "level": 1
+      },
+      {
+        "move": "Fire Fang",
+        "level": 10
       }
     ],
     "type2": "Grass"
@@ -84985,6 +85737,10 @@
           {
             "move": "Energy Ball",
             "level": 1
+          },
+          {
+            "move": "Water Pulse",
+            "level": 10
           }
         ],
         "type2": "Grass"
@@ -85197,6 +85953,10 @@
       {
         "move": "Energy Ball",
         "level": 1
+      },
+      {
+        "move": "Water Pulse",
+        "level": 10
       }
     ],
     "type2": "Grass"
@@ -87896,6 +88656,10 @@
             "level": 29
           },
           {
+            "move": "Iron Head",
+            "level": 29
+          },
+          {
             "move": "Magnet Bomb",
             "level": 30
           },
@@ -87914,6 +88678,10 @@
           {
             "move": "Hammer Arm",
             "level": 45
+          },
+          {
+            "move": "Heavy Slam",
+            "level": 46
           },
           {
             "move": "Stone Edge",
@@ -88072,6 +88840,10 @@
         "level": 37
       },
       {
+        "move": "Seed Bomb",
+        "level": 39
+      },
+      {
         "move": "Hammer Arm",
         "level": 40
       },
@@ -88175,6 +88947,10 @@
           {
             "move": "Scary Face",
             "level": 37
+          },
+          {
+            "move": "Seed Bomb",
+            "level": 39
           },
           {
             "move": "Hammer Arm",
@@ -88320,6 +89096,10 @@
         "level": 29
       },
       {
+        "move": "Iron Head",
+        "level": 29
+      },
+      {
         "move": "Magnet Bomb",
         "level": 30
       },
@@ -88338,6 +89118,10 @@
       {
         "move": "Hammer Arm",
         "level": 45
+      },
+      {
+        "move": "Heavy Slam",
+        "level": 46
       },
       {
         "move": "Stone Edge",
@@ -88440,6 +89224,10 @@
             "level": 37
           },
           {
+            "move": "Seed Bomb",
+            "level": 39
+          },
+          {
             "move": "Hammer Arm",
             "level": 40
           },
@@ -88505,6 +89293,10 @@
             "level": 29
           },
           {
+            "move": "Iron Head",
+            "level": 29
+          },
+          {
             "move": "Magnet Bomb",
             "level": 30
           },
@@ -88523,6 +89315,10 @@
           {
             "move": "Hammer Arm",
             "level": 45
+          },
+          {
+            "move": "Heavy Slam",
+            "level": 46
           },
           {
             "move": "Stone Edge",
@@ -88676,6 +89472,10 @@
             "level": 23
           },
           {
+            "move": "Sludge Bomb",
+            "level": 26
+          },
+          {
             "move": "Muddy Water",
             "level": 28
           },
@@ -88690,6 +89490,10 @@
           {
             "move": "Flail",
             "level": 37
+          },
+          {
+            "move": "Sludge Wave",
+            "level": 41
           },
           {
             "move": "Echoed Voice",
@@ -89047,6 +89851,10 @@
         "level": 23
       },
       {
+        "move": "Sludge Bomb",
+        "level": 26
+      },
+      {
         "move": "Muddy Water",
         "level": 28
       },
@@ -89061,6 +89869,10 @@
       {
         "move": "Flail",
         "level": 37
+      },
+      {
+        "move": "Sludge Wave",
+        "level": 41
       },
       {
         "move": "Echoed Voice",
@@ -89204,6 +90016,10 @@
             "level": 23
           },
           {
+            "move": "Sludge Bomb",
+            "level": 26
+          },
+          {
             "move": "Muddy Water",
             "level": 28
           },
@@ -89218,6 +90034,10 @@
           {
             "move": "Flail",
             "level": 37
+          },
+          {
+            "move": "Sludge Wave",
+            "level": 41
           },
           {
             "move": "Echoed Voice",
@@ -89480,7 +90300,7 @@
         "level": 37
       },
       {
-        "move": "Crabhammer",
+        "move": "Scald",
         "level": 38
       },
       {
@@ -90673,7 +91493,7 @@
   },
   {
     "name": "Cottonee",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 546,
     "type1": "Grass",
     "bst": 280,
@@ -90718,7 +91538,7 @@
             "level": 1
           },
           {
-            "move": "Gust",
+            "move": "Disarming Voice",
             "level": 10
           },
           {
@@ -90726,10 +91546,19 @@
             "level": 28
           },
           {
-            "move": "Hurricane",
+            "move": "Dazzling Gleam",
+            "level": 28
+          },
+          {
+            "move": "Energy Ball",
+            "level": 37
+          },
+          {
+            "move": "Moonblast",
             "level": 46
           }
-        ]
+        ],
+        "type2": "Fairy"
       }
     ],
     "moves": [
@@ -90744,6 +91573,10 @@
       {
         "move": "Leech Seed",
         "level": 8
+      },
+      {
+        "move": "Disarming Voice",
+        "level": 9
       },
       {
         "move": "Stun Spore",
@@ -90764,6 +91597,10 @@
       {
         "move": "Poison Powder",
         "level": 22
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 23
       },
       {
         "move": "Giga Drain",
@@ -90797,11 +91634,12 @@
         "move": "Solar Beam",
         "level": 46
       }
-    ]
+    ],
+    "type2": "Fairy"
   },
   {
     "name": "Whimsicott",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 547,
     "type1": "Grass",
     "bst": 480,
@@ -90841,6 +91679,10 @@
             "level": 8
           },
           {
+            "move": "Disarming Voice",
+            "level": 9
+          },
+          {
             "move": "Stun Spore",
             "level": 10
           },
@@ -90859,6 +91701,10 @@
           {
             "move": "Poison Powder",
             "level": 22
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 23
           },
           {
             "move": "Giga Drain",
@@ -90892,7 +91738,8 @@
             "move": "Solar Beam",
             "level": 46
           }
-        ]
+        ],
+        "type2": "Fairy"
       }
     ],
     "moves": [
@@ -90913,7 +91760,7 @@
         "level": 1
       },
       {
-        "move": "Gust",
+        "move": "Disarming Voice",
         "level": 10
       },
       {
@@ -90921,10 +91768,19 @@
         "level": 28
       },
       {
-        "move": "Hurricane",
+        "move": "Dazzling Gleam",
+        "level": 28
+      },
+      {
+        "move": "Energy Ball",
+        "level": 37
+      },
+      {
+        "move": "Moonblast",
         "level": 46
       }
-    ]
+    ],
+    "type2": "Fairy"
   },
   {
     "name": "Petilil",
@@ -91883,6 +92739,10 @@
             "level": 40
           },
           {
+            "move": "Waterfall",
+            "level": 42
+          },
+          {
             "move": "Sandstorm",
             "level": 44
           },
@@ -91963,6 +92823,10 @@
             "level": 48
           },
           {
+            "move": "Waterfall",
+            "level": 48
+          },
+          {
             "move": "Earthquake",
             "level": 54
           },
@@ -92024,6 +92888,10 @@
       },
       {
         "move": "Foul Play",
+        "level": 37
+      },
+      {
+        "move": "Waterfall",
         "level": 37
       },
       {
@@ -92124,6 +92992,10 @@
             "level": 37
           },
           {
+            "move": "Waterfall",
+            "level": 37
+          },
+          {
             "move": "Sandstorm",
             "level": 40
           },
@@ -92207,6 +93079,10 @@
             "level": 48
           },
           {
+            "move": "Waterfall",
+            "level": 48
+          },
+          {
             "move": "Earthquake",
             "level": 54
           },
@@ -92269,6 +93145,10 @@
       {
         "move": "Foul Play",
         "level": 40
+      },
+      {
+        "move": "Waterfall",
+        "level": 42
       },
       {
         "move": "Sandstorm",
@@ -92368,6 +93248,10 @@
             "level": 37
           },
           {
+            "move": "Waterfall",
+            "level": 37
+          },
+          {
             "move": "Sandstorm",
             "level": 40
           },
@@ -92445,6 +93329,10 @@
             "level": 40
           },
           {
+            "move": "Waterfall",
+            "level": 42
+          },
+          {
             "move": "Sandstorm",
             "level": 44
           },
@@ -92514,6 +93402,10 @@
       },
       {
         "move": "Sandstorm",
+        "level": 48
+      },
+      {
+        "move": "Waterfall",
         "level": 48
       },
       {
@@ -101266,6 +102158,10 @@
             "level": 48
           },
           {
+            "move": "Iron Head",
+            "level": 51
+          },
+          {
             "move": "Shift Gear",
             "level": 52
           },
@@ -101350,6 +102246,10 @@
             "level": 54
           },
           {
+            "move": "Iron Head",
+            "level": 58
+          },
+          {
             "move": "Lock-On",
             "level": 60
           },
@@ -101416,6 +102316,10 @@
       {
         "move": "Metal Sound",
         "level": 45
+      },
+      {
+        "move": "Iron Head",
+        "level": 46
       },
       {
         "move": "Shift Gear",
@@ -101515,6 +102419,10 @@
             "level": 45
           },
           {
+            "move": "Iron Head",
+            "level": 46
+          },
+          {
             "move": "Shift Gear",
             "level": 48
           },
@@ -101602,6 +102510,10 @@
             "level": 54
           },
           {
+            "move": "Iron Head",
+            "level": 58
+          },
+          {
             "move": "Lock-On",
             "level": 60
           },
@@ -101668,6 +102580,10 @@
       {
         "move": "Metal Sound",
         "level": 48
+      },
+      {
+        "move": "Iron Head",
+        "level": 51
       },
       {
         "move": "Shift Gear",
@@ -101766,6 +102682,10 @@
             "level": 45
           },
           {
+            "move": "Iron Head",
+            "level": 46
+          },
+          {
             "move": "Shift Gear",
             "level": 48
           },
@@ -101843,6 +102763,10 @@
             "level": 48
           },
           {
+            "move": "Iron Head",
+            "level": 51
+          },
+          {
             "move": "Shift Gear",
             "level": 52
           },
@@ -101918,6 +102842,10 @@
       {
         "move": "Shift Gear",
         "level": 54
+      },
+      {
+        "move": "Iron Head",
+        "level": 58
       },
       {
         "move": "Lock-On",
@@ -101999,7 +102927,7 @@
             "level": 19
           },
           {
-            "move": "Clamp",
+            "move": "Water Gun",
             "level": 20
           },
           {
@@ -102083,7 +103011,7 @@
             "level": 10
           },
           {
-            "move": "Clamp",
+            "move": "Bubble",
             "level": 20
           },
           {
@@ -102135,7 +103063,7 @@
         "level": 10
       },
       {
-        "move": "Clamp",
+        "move": "Water Gun",
         "level": 20
       },
       {
@@ -102196,7 +103124,7 @@
             "level": 10
           },
           {
-            "move": "Clamp",
+            "move": "Water Gun",
             "level": 20
           },
           {
@@ -102247,7 +103175,7 @@
             "level": 10
           },
           {
-            "move": "Clamp",
+            "move": "Bubble",
             "level": 20
           },
           {
@@ -102307,7 +103235,7 @@
         "level": 19
       },
       {
-        "move": "Clamp",
+        "move": "Water Gun",
         "level": 20
       },
       {
@@ -102403,7 +103331,7 @@
             "level": 10
           },
           {
-            "move": "Clamp",
+            "move": "Water Gun",
             "level": 20
           },
           {
@@ -102452,7 +103380,7 @@
             "level": 19
           },
           {
-            "move": "Clamp",
+            "move": "Water Gun",
             "level": 20
           },
           {
@@ -102529,7 +103457,7 @@
         "level": 10
       },
       {
-        "move": "Clamp",
+        "move": "Bubble",
         "level": 20
       },
       {
@@ -104848,6 +105776,10 @@
             "level": 44
           },
           {
+            "move": "Feint Attack",
+            "level": 45
+          },
+          {
             "move": "Recover",
             "level": 49
           },
@@ -105078,6 +106010,10 @@
       {
         "move": "Bug Buzz",
         "level": 44
+      },
+      {
+        "move": "Feint Attack",
+        "level": 45
       },
       {
         "move": "Recover",
@@ -105802,6 +106738,10 @@
             "level": 46
           },
           {
+            "move": "Ominous Wind",
+            "level": 56
+          },
+          {
             "move": "Hammer Arm",
             "level": 60
           },
@@ -105864,6 +106804,10 @@
       {
         "move": "Curse",
         "level": 40
+      },
+      {
+        "move": "Ominous Wind",
+        "level": 44
       },
       {
         "move": "Hammer Arm",
@@ -105959,6 +106903,10 @@
             "level": 40
           },
           {
+            "move": "Ominous Wind",
+            "level": 44
+          },
+          {
             "move": "Hammer Arm",
             "level": 50
           },
@@ -106041,6 +106989,10 @@
       {
         "move": "Meteor Mash",
         "level": 46
+      },
+      {
+        "move": "Ominous Wind",
+        "level": 56
       },
       {
         "move": "Hammer Arm",
@@ -107880,6 +108832,10 @@
         "level": 12
       },
       {
+        "move": "Dragon Tail",
+        "level": 14
+      },
+      {
         "move": "Dragon Breath",
         "level": 17
       },
@@ -107947,6 +108903,10 @@
           {
             "move": "Headbutt",
             "level": 12
+          },
+          {
+            "move": "Dragon Tail",
+            "level": 14
           },
           {
             "move": "Dragon Breath",
@@ -108175,6 +109135,10 @@
           {
             "move": "Headbutt",
             "level": 12
+          },
+          {
+            "move": "Dragon Tail",
+            "level": 14
           },
           {
             "move": "Dragon Breath",
@@ -108760,7 +109724,7 @@
             "level": 35
           },
           {
-            "move": "X-Scissor",
+            "move": "U-turn",
             "level": 42
           },
           {
@@ -108834,7 +109798,7 @@
             "level": 21
           },
           {
-            "move": "X-Scissor",
+            "move": "U-turn",
             "level": 28
           },
           {
@@ -110048,6 +111012,10 @@
             "level": 25
           },
           {
+            "move": "Feint Attack",
+            "level": 29
+          },
+          {
             "move": "Crabhammer",
             "level": 30
           },
@@ -110119,6 +111087,10 @@
       {
         "move": "Water Pulse",
         "level": 34
+      },
+      {
+        "move": "Feint Attack",
+        "level": 38
       },
       {
         "move": "Smack Down",
@@ -110215,6 +111187,10 @@
             "level": 34
           },
           {
+            "move": "Feint Attack",
+            "level": 38
+          },
+          {
             "move": "Smack Down",
             "level": 39
           },
@@ -110278,6 +111254,10 @@
       {
         "move": "Swords Dance",
         "level": 25
+      },
+      {
+        "move": "Feint Attack",
+        "level": 29
       },
       {
         "move": "Crabhammer",
@@ -110405,6 +111385,10 @@
         "level": 35
       },
       {
+        "move": "Draco Meteor",
+        "level": 39
+      },
+      {
         "move": "Volt Switch",
         "level": 40
       },
@@ -110490,6 +111474,10 @@
           {
             "move": "Bulldoze",
             "level": 35
+          },
+          {
+            "move": "Draco Meteor",
+            "level": 39
           },
           {
             "move": "Volt Switch",
@@ -113988,7 +114976,7 @@
   },
   {
     "name": "Drampa",
-    "changed": false,
+    "changed": true,
     "pokedex_id": 780,
     "type1": "Normal",
     "type2": "Dragon",
@@ -114057,7 +115045,7 @@
         "level": 41
       },
       {
-        "move": "Fly",
+        "move": "Air Slash",
         "level": 45
       },
       {
@@ -116265,7 +117253,7 @@
             "level": 46
           },
           {
-            "move": "Fire Punch",
+            "move": "Fire Fang",
             "level": 53
           },
           {
@@ -116321,7 +117309,7 @@
         "level": 40
       },
       {
-        "move": "Fire Punch",
+        "move": "Fire Fang",
         "level": 45
       },
       {
@@ -116408,7 +117396,7 @@
             "level": 40
           },
           {
-            "move": "Fire Punch",
+            "move": "Fire Fang",
             "level": 45
           },
           {
@@ -116468,7 +117456,7 @@
         "level": 46
       },
       {
-        "move": "Fire Punch",
+        "move": "Fire Fang",
         "level": 53
       },
       {
@@ -117786,6 +118774,10 @@
             "level": 30
           },
           {
+            "move": "Seed Bomb",
+            "level": 33
+          },
+          {
             "move": "Defog",
             "level": 35
           },
@@ -117800,6 +118792,14 @@
           {
             "move": "Slam",
             "level": 50
+          },
+          {
+            "move": "Close Combat",
+            "level": 52
+          },
+          {
+            "move": "Wood Hammer",
+            "level": 52
           },
           {
             "move": "Leaf Blade",
@@ -117863,6 +118863,10 @@
         "level": 35
       },
       {
+        "move": "Seed Bomb",
+        "level": 35
+      },
+      {
         "move": "Brick Break",
         "level": 40
       },
@@ -117877,6 +118881,10 @@
       {
         "move": "Leaf Blade",
         "level": 55
+      },
+      {
+        "move": "Wood Hammer",
+        "level": 56
       },
       {
         "move": "Final Gambit",
@@ -118365,7 +119373,7 @@
             "level": 1
           },
           {
-            "move": "Dual Chop",
+            "move": "Twister",
             "level": 1
           },
           {
@@ -118588,7 +119596,7 @@
             "level": 1
           },
           {
-            "move": "Dual Chop",
+            "move": "Twister",
             "level": 1
           },
           {
@@ -118901,7 +119909,7 @@
         "level": 1
       },
       {
-        "move": "Dual Chop",
+        "move": "Twister",
         "level": 1
       },
       {
@@ -119222,6 +120230,10 @@
             "level": 49
           },
           {
+            "move": "Bug Buzz",
+            "level": 49
+          },
+          {
             "move": "Swords Dance",
             "level": 57
           },
@@ -119450,7 +120462,7 @@
             "level": 29
           },
           {
-            "move": "Double Kick",
+            "move": "Drill Run",
             "level": 32
           },
           {
@@ -119458,7 +120470,7 @@
             "level": 33
           },
           {
-            "move": "Sky Uppercut",
+            "move": "Body Slam",
             "level": 37
           },
           {
@@ -122249,6 +123261,10 @@
             "level": 6
           },
           {
+            "move": "Mud-Slap",
+            "level": 8
+          },
+          {
             "move": "Take Down",
             "level": 10
           },
@@ -122259,6 +123275,10 @@
           {
             "move": "Natural Gift",
             "level": 19
+          },
+          {
+            "move": "Dig",
+            "level": 21
           },
           {
             "move": "Slam",
@@ -122342,12 +123362,24 @@
             "level": 25
           },
           {
+            "move": "Rock Slide",
+            "level": 27
+          },
+          {
             "move": "Assurance",
             "level": 31
           },
           {
             "move": "Scary Face",
             "level": 39
+          },
+          {
+            "move": "Drill Run",
+            "level": 43
+          },
+          {
+            "move": "Stone Edge",
+            "level": 43
           },
           {
             "move": "Earthquake",
@@ -123260,7 +124292,7 @@
         "level": 35
       },
       {
-        "move": "X-Scissor",
+        "move": "U-turn",
         "level": 42
       },
       {
@@ -123613,6 +124645,10 @@
             "level": 6
           },
           {
+            "move": "Mud-Slap",
+            "level": 8
+          },
+          {
             "move": "Take Down",
             "level": 10
           },
@@ -123623,6 +124659,10 @@
           {
             "move": "Natural Gift",
             "level": 19
+          },
+          {
+            "move": "Dig",
+            "level": 21
           },
           {
             "move": "Slam",
@@ -123706,12 +124746,24 @@
             "level": 25
           },
           {
+            "move": "Rock Slide",
+            "level": 27
+          },
+          {
             "move": "Assurance",
             "level": 31
           },
           {
             "move": "Scary Face",
             "level": 39
+          },
+          {
+            "move": "Drill Run",
+            "level": 43
+          },
+          {
+            "move": "Stone Edge",
+            "level": 43
           },
           {
             "move": "Earthquake",
@@ -124210,6 +125262,10 @@
             "level": 12
           },
           {
+            "move": "Dragon Tail",
+            "level": 14
+          },
+          {
             "move": "Dragon Breath",
             "level": 17
           },
@@ -124651,7 +125707,7 @@
         "level": 21
       },
       {
-        "move": "X-Scissor",
+        "move": "U-turn",
         "level": 28
       },
       {
@@ -124751,6 +125807,10 @@
           },
           {
             "move": "Chip Away",
+            "level": 14
+          },
+          {
+            "move": "Feint Attack",
             "level": 14
           },
           {
@@ -124914,6 +125974,10 @@
           {
             "move": "Earthquake",
             "level": 54
+          },
+          {
+            "move": "Night Slash",
+            "level": 60
           },
           {
             "move": "Stone Edge",
@@ -125476,7 +126540,7 @@
             "level": 43
           },
           {
-            "move": "Fly",
+            "move": "Air Slash",
             "level": 50
           },
           {
@@ -125568,7 +126632,7 @@
         "level": 63
       },
       {
-        "move": "Fly",
+        "move": "Air Slash",
         "level": 70
       },
       {
