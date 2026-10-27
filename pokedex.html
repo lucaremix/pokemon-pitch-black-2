@@ -684,15 +684,12 @@ const PLACEHOLDER = "data:image/svg+xml;utf8," + encodeURIComponent(
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
 // ───────── sprites ─────────
-// pokedex.json has a "sprite" only when the default file does not exist (checked against the PokeAPI sprite repo).
-// If an image still fails, the page walks down this list, then shows a Poké Ball.
+// One style for every Pokémon: the Black/White (gen 5) sprites from PokeAPI, which exist for all of them.
+// pokedex.json has a "sprite" only for forms (their own PokeAPI number). If an image fails, the HOME image, then a Poké Ball.
 const PK = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
 const SPRITE_CHAIN = [
-  (id) => PK + "other/showdown/" + id + ".gif",
-  (id) => PK + "versions/generation-v/black-white/animated/" + id + ".gif",
   (id) => PK + "versions/generation-v/black-white/" + id + ".png",
-  (id) => PK + "other/home/" + id + ".png",
-  (id) => PK + id + ".png"
+  (id) => PK + "other/home/" + id + ".png"
 ];
 function spriteURL(p) { return p.sprite || SPRITE_CHAIN[0](p.pokedex_id); }
 function spriteKey(p) {
@@ -700,25 +697,53 @@ function spriteKey(p) {
   return m ? m[1] : p.pokedex_id;
 }
 function spriteFail(img) {
+  delete img.dataset.c;
   const n = (+img.dataset.f || 0) + 1;
   img.dataset.f = n;
-  if (n < SPRITE_CHAIN.length) img.src = SPRITE_CHAIN[n](img.dataset.k);
-  else { img.onerror = null; img.src = PLACEHOLDER; }
+  if (n < SPRITE_CHAIN.length) { img.crossOrigin = "anonymous"; img.src = SPRITE_CHAIN[n](img.dataset.k); }
+  else { img.onerror = null; img.dataset.c = "1"; img.src = PLACEHOLDER; }
 }
 function spriteImg(p, box, extra) {
-  return '<img ' + (box ? 'data-box="' + box + '" ' : "") + 'data-k="' + esc(spriteKey(p)) + '" src="' + esc(spriteURL(p)) + '" ' + (extra || 'alt=""') +
-    ' loading="lazy" onload="fitSprite(this)" onerror="spriteFail(this)">';
+  const url = spriteURL(p), c = CROPPED.get(url);
+  return '<img ' + (box ? 'data-box="' + box + '" ' : "") + 'data-k="' + esc(spriteKey(p)) + '" src="' + esc(c || url) + '" ' + (extra || 'alt=""') +
+    (c ? ' data-c="1"' : ' crossorigin="anonymous"') + ' loading="lazy" onload="fitSprite(this)" onerror="spriteFail(this)">';
+}
+
+// Gen 5 sprites sit in a 96×96 canvas with empty margins: crop them once, then every Pokémon fills the same box.
+const CROPPED = new Map();
+function cropSprite(img) {
+  if (img.dataset.c) return false;
+  img.dataset.c = "1";
+  try {
+    const w = img.naturalWidth, h = img.naturalHeight, cv = document.createElement("canvas");
+    cv.width = w; cv.height = h;
+    const cx = cv.getContext("2d"); cx.drawImage(img, 0, 0);
+    const a = cx.getImageData(0, 0, w, h).data;
+    let x0 = w, y0 = h, x1 = -1, y1 = -1;
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) if (a[(y * w + x) * 4 + 3] > 8) {
+      if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y;
+    }
+    if (x1 < 0 || (x1 - x0 + 1 === w && y1 - y0 + 1 === h)) return false;
+    const out = document.createElement("canvas");
+    out.width = x1 - x0 + 1; out.height = y1 - y0 + 1;
+    out.getContext("2d").drawImage(cv, x0, y0, out.width, out.height, 0, 0, out.width, out.height);
+    const url = out.toDataURL();
+    CROPPED.set(img.currentSrc || img.src, url);
+    img.src = url;
+    return true;
+  } catch (e) { return false; }   // no CORS: keep the uncropped image
 }
 
 // Every sprite is scaled so its longest side equals the same box: all Pokémon show at one size.
-const SPRITE_BOX = 104;
+const SPRITE_BOX = 96;
 function fitSprite(img) {
+  if (cropSprite(img)) return;     // fitSprite runs again when the cropped image loads
   const w = img.naturalWidth, h = img.naturalHeight;
   if (!w || !h) return;
   const k = (+img.dataset.box || SPRITE_BOX) / Math.max(w, h);
   img.style.width = Math.round(w * k) + "px";
   img.style.height = Math.round(h * k) + "px";
-  img.style.imageRendering = k > 1 ? "pixelated" : "auto";
+  img.style.imageRendering = "pixelated";
 }
 
 function statColor(v) {
