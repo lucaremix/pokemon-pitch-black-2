@@ -217,8 +217,15 @@
   /* following */
   .walk { position: relative; width: 100%; height: 100%; }
   .walk .path { position: absolute; left: 10%; right: 10%; bottom: 26px; height: 2px; background: repeating-linear-gradient(90deg, rgba(255,255,255,.25) 0 6px, transparent 6px 14px); }
-  .walk img { position: absolute; bottom: 22px; width: 64px; animation: stroll 6s ease-in-out infinite alternate; }
-  @keyframes stroll { from { left: 8%; } to { left: calc(92% - 64px); } }
+  /* walking.gif only animates the steps and faces left: the page moves it and flips it when it walks right */
+  .walk img { position: absolute; bottom: 20px; width: 64px; height: 82px; image-rendering: pixelated; animation: stroll 14s linear infinite; }
+  @keyframes stroll {
+    0%     { left: calc(92% - 64px); transform: scaleX(1); }
+    49.99% { left: 8%;               transform: scaleX(1); }
+    50%    { left: 8%;               transform: scaleX(-1); }
+    99.99% { left: calc(92% - 64px); transform: scaleX(-1); }
+    100%   { left: calc(92% - 64px); transform: scaleX(1); }
+  }
 
   /* battle box */
   .bbox { width: 86%; padding: 9px 11px; border-radius: 10px; background: #f4f1e6; color: #1d2230; box-shadow: 0 6px 18px rgba(0,0,0,.45); font: 700 13px var(--body); }
@@ -360,7 +367,7 @@
       <div class="f-body"><h3>Fairy type</h3><p>The Fairy type joins Unova, with new Fairy moves and retyped Pokémon.</p></div>
     </li>
     <li class="feat" style="--c:#f7d02c">
-      <div class="f-art" aria-hidden="true"><div class="walk"><span class="path"></span><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" alt="" loading="lazy"></div></div>
+      <div class="f-art" aria-hidden="true"><div class="walk"><span class="path"></span><img class="px" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/walking.gif" alt="" width="32" height="41" loading="lazy"></div></div>
       <div class="f-body"><h3>Following Pokémon</h3><p>Your lead Pokémon walks behind you in the overworld.</p></div>
     </li>
     <li class="feat" style="--c:#6390f0">
@@ -491,7 +498,7 @@
       <span class="rule" aria-hidden="true"></span>
       <span>Pokémon &copy; Nintendo / Game Freak</span>
       <span class="rule" aria-hidden="true"></span>
-      <span>created by <strong>lucaremix & CrMagno</strong></span>
+      <span>created by <strong>lucaremix</strong> &amp; <strong>CrMagno</strong></span>
     </p>
   </div>
 </footer>
