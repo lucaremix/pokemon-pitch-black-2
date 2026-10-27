@@ -399,8 +399,6 @@
     },
     "effect": "30% chance to make the target flinch."
   },
-  
-[
   {
     "name": "Fire Fang",
     "new": false,
@@ -551,6 +549,4 @@
     },
     "effect": ""
   }
-]
-
 ]
