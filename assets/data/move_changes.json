@@ -272,7 +272,7 @@
       "from": 30,
       "to": 30
     },
-    "effect": ""
+    "effect": "High critical-hit ratio."
   },
   {
     "name": "Strength",
@@ -348,5 +348,55 @@
       "to": 20
     },
     "effect": "Hits twice. Each hit has a 20% chance to poison."
+  },
+  {
+    "name": "Wild Charge",
+    "new": false,
+    "type": {
+      "from": "Electric",
+      "to": "Electric"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 90,
+      "to": 90
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 15,
+      "to": 15
+    },
+    "effect": "No recoil (was: user takes 1/4 of the damage dealt). 30% chance to paralyze the target."
+  },
+  {
+    "name": "Icicle Crash",
+    "new": false,
+    "type": {
+      "from": "Ice",
+      "to": "Ice"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 85,
+      "to": 80
+    },
+    "accuracy": {
+      "from": 90,
+      "to": 100
+    },
+    "pp": {
+      "from": 10,
+      "to": 10
+    },
+    "effect": "30% chance to make the target flinch."
   }
 ]
