@@ -71,7 +71,7 @@
     margin: 0 0 16px; font-family: var(--display); font-weight: 800; font-stretch: 115%;
     font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
   }
-  .grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .card {
     --c1: #2f7bff; --c2: #ffcb05;
     position: relative; display: flex; flex-direction: column; height: 100%; overflow: hidden;
@@ -174,13 +174,14 @@
   .stats3 { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 18px; }
   .stat-card {
     --c: #2f7bff;
+    cursor: default;
     position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto 1fr; column-gap: 6px; min-height: 230px;
     padding: 20px 22px; border-radius: 20px; color: inherit; text-decoration: none;
     background: radial-gradient(260px 180px at 85% 85%, color-mix(in srgb, var(--c) 30%, transparent), transparent 70%), var(--panel);
     border: 1px solid color-mix(in srgb, var(--c) 40%, var(--line));
     transition: transform .2s, border-color .2s;
   }
-  a.stat-card:hover { transform: translateY(-3px); border-color: var(--c); }
+  .stat-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: linear-gradient(90deg, var(--c), transparent 80%); }
   .stat-card .num { position: static; font-family: var(--display); font-weight: 800; font-stretch: 120%; font-size: 64px; line-height: .9; color: #fff; text-shadow: 0 0 30px color-mix(in srgb, var(--c) 60%, transparent); }
   .stat-card .lbl { font-family: var(--display); font-weight: 800; font-size: 20px; line-height: 1.15; }
   .stat-card .sub { color: var(--muted); font-size: 14px; margin-top: 4px; }
@@ -239,9 +240,9 @@
   .eviv li i.max { background: linear-gradient(90deg, #ffb300, #ffcb05); }
 
   /* pc */
-  .pc { display: grid; grid-template-columns: repeat(4, 30px); gap: 5px; padding: 10px; border-radius: 10px; background: rgba(122,199,76,.12); border: 1px solid rgba(122,199,76,.45); }
-  .pc img { width: 30px; height: 30px; }
-  .pc .cell { width: 30px; height: 30px; border-radius: 6px; background: rgba(255,255,255,.06); display: grid; place-items: center; }
+  .pc { display: grid; grid-template-columns: repeat(4, 40px); gap: 5px; padding: 10px; border-radius: 10px; background: rgba(122,199,76,.12); border: 1px solid rgba(122,199,76,.45); }
+  .pc img { width: 40px; height: 30px; }
+  .pc .cell { width: 40px; height: 36px; border-radius: 6px; background: rgba(255,255,255,.06); display: grid; place-items: center; }
 
   @media (max-width: 1100px) { .feats { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (max-width: 860px) {
@@ -256,13 +257,34 @@
     .stat-card .art img { width: 110px; margin-left: -30px; }
   }
   @media (prefers-reduced-motion: reduce) { .sparkle, .walk img { animation: none; } .walk img { left: 40%; } }
-  .grid > li.wide { grid-column: span 2; }
-  @media (max-width: 960px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .grid > li.full { grid-column: 1 / -1; }
+  /* the Pokédex card: one full row, stage on the left on wide screens */
+  .card.feature .stage { height: 300px; }
+  .card.feature .sprites { inset: 20px 12px 40px; gap: 14px; }
+  .card.feature .stage::after { width: 420px; height: 26px; bottom: 34px; }
+  .card.feature .name { font-size: 36px; }
+  @media (min-width: 900px) {
+    .card.feature { flex-direction: row; }
+    .card.feature .stage { flex: 0 0 58%; height: auto; min-height: 320px; }
+    .card.feature .body { padding: 30px 32px; justify-content: center; gap: 14px; }
+    .card.feature .desc { font-size: 17px; max-width: 46ch; }
+  }
+  .card .stage { height: 220px; }
+  .sec-title { display: flex; align-items: center; gap: 14px; }
+  .sec-title::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--line-2), transparent); }
+  .stat-card.wide-txt .art img { width: 96px; margin-left: -26px; }
+  .stat-card.wide-txt .art img:first-child { margin-left: 0; }
+  .mini-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+  .mini-chips span { padding: 2px 9px; border-radius: 999px; font-size: 12.5px; font-weight: 600; color: #e6dcff;
+    background: color-mix(in srgb, var(--c) 22%, #0b0e14); border: 1px solid color-mix(in srgb, var(--c) 55%, transparent); }
+  .stat-card .art img { filter: drop-shadow(0 6px 10px rgba(0,0,0,.45)); }
+  .feat { transition: transform .2s, border-color .2s; }
+  .feat:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--c) 75%, var(--line)); }
   @media (max-width: 520px) {
     .hero { padding: 32px 0 30px; }
     .lead { font-size: 16.5px; }
     .grid { grid-template-columns: 1fr; }
-    .grid > li.wide { grid-column: auto; }
+    .card.feature .stage { height: 230px; }
     .credits { flex-direction: column; gap: 6px; }
     .credits .rule { display: none; }
   }
@@ -303,27 +325,28 @@
   </div>
 
   <div class="stats3">
-    <a class="stat-card" href="pokedex.html" style="--c:#ee8130">
-      <div class="txt"><div class="num" id="nReworked">407</div></div>
+    <div class="stat-card" style="--c:#ee8130">
+      <div class="txt"><div class="num">407</div></div>
       <div class="txt"><div class="lbl">Reworked Pokémon</div><div class="sub">New types, abilities, stats and movesets</div></div>
       <div class="art" aria-hidden="true">
-        <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/130.gif" alt="" loading="lazy"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="" loading="lazy">
+        <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/130.gif" alt="" loading="lazy"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/637.gif" alt="" loading="lazy">
       </div>
-    </a>
-    <a class="stat-card" href="pokedex.html" style="--c:#a6b91a">
+    </div>
+    <div class="stat-card" style="--c:#a6b91a">
       <div class="txt"><div class="num">9</div></div>
       <div class="txt"><div class="lbl">New regional variants</div><div class="sub">Unovan forms of familiar Pokémon</div></div>
       <div class="art" aria-hidden="true">
         <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/80.gif" alt="" loading="lazy"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/201-question.gif" alt="" loading="lazy">
       </div>
-    </a>
-    <a class="stat-card" href="challenges.html" style="--c:#c22e28">
-      <div class="txt"><div class="num" style="font-size:44px">Harder</div></div>
-      <div class="txt"><div class="lbl">Increased trainer difficulty</div><div class="sub">Full teams, held items, smarter movesets</div></div>
+    </div>
+    <div class="stat-card wide-txt" style="--c:#6f35fc">
+      <div class="txt"><div class="num">132</div></div>
+      <div class="txt"><div class="lbl">Cross-gen Pokémon</div><div class="sub">From Kalos to Paldea, plus Paradox forms</div>
+        <div class="mini-chips"><span>44 regional forms</span><span>14 Paradox</span><span>74 new species</span></div></div>
       <div class="art" aria-hidden="true">
-        <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/635.gif" alt="" loading="lazy"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/248.gif" alt="" loading="lazy">
+        <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/887.gif" alt="" loading="lazy"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1006.gif" alt="" loading="lazy">
       </div>
-    </a>
+    </div>
   </div>
 
   <h2 class="sec-title mt">Features</h2>
@@ -340,9 +363,9 @@
       <div class="f-art" aria-hidden="true"><div class="walk"><span class="path"></span><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" alt="" loading="lazy"></div></div>
       <div class="f-body"><h3>Following Pokémon</h3><p>Your lead Pokémon walks behind you in the overworld.</p></div>
     </li>
-    <li class="feat" style="--c:#ee8130">
+    <li class="feat" style="--c:#6390f0">
       <div class="f-art" aria-hidden="true">
-        <div class="bbox"><div class="row1"><b>Charizard</b><img src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/typinglogos/fire.svg" alt=""><img src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/typinglogos/dragon.svg" alt=""><span>Lv50</span></div>
+        <div class="bbox"><div class="row1"><b>Vaporeon</b><img src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/typinglogos/water.svg" alt=""><img src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/typinglogos/dragon.svg" alt=""><span>Lv50</span></div>
           <div class="hp">HP<span><i></i></span></div></div>
       </div>
       <div class="f-body"><h3>Types shown in battle</h3><p>See both Pokémon's types right on the battle screen.</p></div>
@@ -358,10 +381,7 @@
     </li>
     <li class="feat" style="--c:#7ac74c">
       <div class="f-art" aria-hidden="true">
-        <div class="pc">
-          <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt=""><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png" alt=""><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png" alt=""><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png" alt="">
-          <span class="cell"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt=""></span><span class="cell"></span><span class="cell"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png" alt=""></span><span class="cell"></span>
-        </div>
+        <div class="pc"><span class="cell"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/635.png" alt=""></span><span class="cell"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/637.png" alt=""></span><span class="cell"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/700.png" alt=""></span><span class="cell"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/663.png" alt=""></span><span class="cell"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/784.png" alt=""></span><span class="cell"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/134.png" alt=""></span><span class="cell"></span><span class="cell"></span></div>
       </div>
       <div class="f-body"><h3>PC from the Bag</h3><p>Open your PC boxes anywhere, no Pokémon Center needed.</p></div>
     </li>
@@ -371,14 +391,14 @@
 <main class="wrap">
   <h2 class="sec-title">Explore</h2>
   <ul class="grid">
-    <li class="wide">
-      <a class="card" href="pokedex.html" style="--c1:#ee8130;--c2:#6f35fc">
+    <li class="full">
+      <a class="card feature" href="pokedex.html" style="--c1:#ee8130;--c2:#6f35fc">
         <div class="stage">
           <span class="num">01</span>
           <div class="sprites">
-            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/garchomp.gif" alt="" loading="lazy" onload="fit(this)">
-            <img data-box="96" src="https://play.pokemonshowdown.com/sprites/gen5ani/charizard.gif" alt="" loading="lazy" onload="fit(this)">
-            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/tyranitar.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="150" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/445.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="200" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/635.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="150" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/248.gif" alt="" loading="lazy" onload="fit(this)">
           </div>
         </div>
         <div class="body">
@@ -394,9 +414,9 @@
         <div class="stage">
           <span class="num">02</span>
           <div class="sprites">
-            <img data-box="78" src="https://play.pokemonshowdown.com/sprites/trainers/elesa.png" alt="" loading="lazy" onload="fit(this)">
-            <img data-box="104" src="https://play.pokemonshowdown.com/sprites/trainers/iris.png" alt="" loading="lazy" onload="fit(this)">
-            <img data-box="78" src="https://play.pokemonshowdown.com/sprites/trainers/ghetsis.png" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="104" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/giftrainers/hugh.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="132" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/giftrainers/iris.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="104" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/giftrainers/elesa.gif" alt="" loading="lazy" onload="fit(this)">
           </div>
         </div>
         <div class="body">
@@ -412,9 +432,9 @@
         <div class="stage">
           <span class="num">03</span>
           <div class="sprites">
-            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/patrat.gif" alt="" loading="lazy" onload="fit(this)">
-            <img data-box="96" src="https://play.pokemonshowdown.com/sprites/gen5ani/audino.gif" alt="" loading="lazy" onload="fit(this)">
-            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/ducklett.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="70" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/504.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="96" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/531.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="70" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/580.gif" alt="" loading="lazy" onload="fit(this)">
           </div>
         </div>
         <div class="body">
@@ -449,7 +469,7 @@
           <span class="num">05</span>
           <div class="sprites">
             <img data-box="56" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fairy.png" alt="" loading="lazy" onload="fit(this)" onerror="this.src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png'">
-            <img data-box="96" src="https://play.pokemonshowdown.com/sprites/gen5ani/clefable.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="96" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/36.gif" alt="" loading="lazy" onload="fit(this)">
             <img data-box="56" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-grass.png" alt="" loading="lazy" onload="fit(this)">
           </div>
         </div>
@@ -485,14 +505,6 @@
     img.style.height = Math.round(h * k) + "px";
     img.style.imageRendering = k > 1 ? "pixelated" : "auto";
   }
-  // keep the "reworked Pokémon" number in sync with changes.json
-  (function () {
-    var el = document.getElementById("nReworked"); if (!el || !window.fetch) return;
-    ["https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/data/changes.json", "assets/data/changes.json"]
-      .reduce(function (p, url) { return p.catch(function () { return fetch(url).then(function (r) { if (!r.ok) throw 0; return r.json(); }); }); }, Promise.reject())
-      .then(function (d) { var n = Array.isArray(d) ? d.length : (d.pokemon || []).length; if (n) el.textContent = n; })
-      .catch(function () {});
-  })();
 </script>
 </body>
 </html>
