@@ -7662,7 +7662,7 @@
        "rate": 10
       },
       {
-       "name": "Heracross",
+       "name": "Heracross (Unova)",
        "min": 44,
        "max": 46,
        "rate": 5
@@ -15682,14 +15682,15 @@
   "Aerodactyl": {
    "sprite": "142",
    "types": [
-    "Rock",
-    "Dragon"
+    "Dragon",
+    "Flying"
    ]
   },
   "Aipom": {
    "sprite": "190",
    "types": [
-    "Normal"
+    "Normal",
+    "Fighting"
    ]
   },
   "Alakazam": {
@@ -15709,13 +15710,13 @@
    "sprite": "334",
    "types": [
     "Dragon",
-    "Flying"
+    "Fairy"
    ]
   },
   "Amaura": {
    "sprite": "698",
    "types": [
-    "Rock",
+    "Dragon",
     "Ice"
    ]
   },
@@ -15757,7 +15758,7 @@
    "sprite": "566",
    "types": [
     "Rock",
-    "Flying"
+    "Dragon"
    ]
   },
   "Ariados": {
@@ -15770,8 +15771,7 @@
   "Aron": {
    "sprite": "304",
    "types": [
-    "Steel",
-    "Rock"
+    "Steel"
    ]
   },
   "Audino": {
@@ -15810,8 +15810,8 @@
   "Baltoy": {
    "sprite": "343",
    "types": [
-    "Ground",
-    "Psychic"
+    "Psychic",
+    "Rock"
    ]
   },
   "Banette": {
@@ -15838,8 +15838,7 @@
   "Basculin": {
    "sprite": "550",
    "types": [
-    "Water",
-    "Ghost"
+    "Water"
    ]
   },
   "Basculin (Blue-Striped)": {
@@ -15851,8 +15850,7 @@
   "Basculin (Red-Striped)": {
    "sprite": "550",
    "types": [
-    "Water",
-    "Ghost"
+    "Water"
    ]
   },
   "Beartic": {
@@ -15885,8 +15883,7 @@
   "Beldum": {
    "sprite": "374",
    "types": [
-    "Steel",
-    "Psychic"
+    "Steel"
    ]
   },
   "Bellossom": {
@@ -15932,7 +15929,8 @@
   "Blitzle": {
    "sprite": "522",
    "types": [
-    "Electric"
+    "Electric",
+    "Normal"
    ]
   },
   "Boldore": {
@@ -15944,7 +15942,8 @@
   "Bonsly": {
    "sprite": "438",
    "types": [
-    "Rock"
+    "Rock",
+    "Grass"
    ]
   },
   "Bouffalant": {
@@ -16005,7 +16004,8 @@
   "Buizel": {
    "sprite": "418",
    "types": [
-    "Water"
+    "Water",
+    "Ice"
    ]
   },
   "Buneary": {
@@ -16063,7 +16063,7 @@
    "sprite": "318",
    "types": [
     "Water",
-    "Dark"
+    "Steel"
    ]
   },
   "Castform": {
@@ -16145,7 +16145,8 @@
   "Clauncher": {
    "sprite": "692",
    "types": [
-    "Water"
+    "Water",
+    "Dark"
    ]
   },
   "Claydol": {
@@ -16290,7 +16291,8 @@
   "Darmanitan": {
    "sprite": "555",
    "types": [
-    "Fire"
+    "Fire",
+    "Fighting"
    ]
   },
   "Darumaka": {
@@ -16309,8 +16311,8 @@
   "Deino": {
    "sprite": "633",
    "types": [
-    "Dark",
-    "Dragon"
+    "Dragon",
+    "Poison"
    ]
   },
   "Delibird": {
@@ -16370,20 +16372,22 @@
   "Doduo": {
    "sprite": "84",
    "types": [
-    "Normal",
-    "Flying"
+    "Flying",
+    "Ground"
    ]
   },
   "Donphan": {
    "sprite": "232",
    "types": [
-    "Ground"
+    "Ground",
+    "Rock"
    ]
   },
   "Dragonair": {
    "sprite": "148",
    "types": [
-    "Dragon"
+    "Dragon",
+    "Water"
    ]
   },
   "Dragonite": {
@@ -16410,7 +16414,7 @@
   "Dratini": {
    "sprite": "147",
    "types": [
-    "Dragon"
+    "Water"
    ]
   },
   "Dreepy": {
@@ -16489,7 +16493,8 @@
   "Dusclops": {
    "sprite": "356",
    "types": [
-    "Ghost"
+    "Ghost",
+    "Fighting"
    ]
   },
   "Duskull": {
@@ -16515,7 +16520,8 @@
   "Eelektrik": {
    "sprite": "603",
    "types": [
-    "Electric"
+    "Electric",
+    "Water"
    ]
   },
   "Eevee": {
@@ -16571,7 +16577,8 @@
   "Espeon": {
    "sprite": "196",
    "types": [
-    "Psychic"
+    "Psychic",
+    "Ghost"
    ]
   },
   "Excadrill": {
@@ -16605,14 +16612,15 @@
   "Farfetch'd": {
    "sprite": "83",
    "types": [
-    "Normal",
+    "Fighting",
     "Flying"
    ]
   },
   "Farfetch'd (Galar)": {
    "sprite": "10166",
    "types": [
-    "Fighting"
+    "Fighting",
+    "Grass"
    ]
   },
   "Fearow": {
@@ -16644,13 +16652,15 @@
   "Flaaffy": {
    "sprite": "180",
    "types": [
-    "Electric"
+    "Electric",
+    "Grass"
    ]
   },
   "Flareon": {
    "sprite": "136",
    "types": [
-    "Fire"
+    "Fire",
+    "Normal"
    ]
   },
   "Fletchling": {
@@ -16664,7 +16674,7 @@
    "sprite": "419",
    "types": [
     "Water",
-    "Fighting"
+    "Ice"
    ]
   },
   "Flutter Mane": {
@@ -16698,7 +16708,7 @@
    "sprite": "592",
    "types": [
     "Water",
-    "Ghost"
+    "Poison"
    ]
   },
   "Furret": {
@@ -16710,8 +16720,8 @@
   "Gabite": {
    "sprite": "444",
    "types": [
-    "Dragon",
-    "Ground"
+    "Flying",
+    "Steel"
    ]
   },
   "Galvantula": {
@@ -16732,21 +16742,21 @@
    "sprite": "92",
    "types": [
     "Ghost",
-    "Poison"
+    "Dark"
    ]
   },
   "Gastrodon": {
    "sprite": "423",
    "types": [
-    "Ground",
-    "Poison"
+    "Water",
+    "Ground"
    ]
   },
   "Geodude": {
    "sprite": "74",
    "types": [
     "Rock",
-    "Ground"
+    "Fighting"
    ]
   },
   "Geodude (Alola)": {
@@ -16759,8 +16769,7 @@
   "Gible": {
    "sprite": "443",
    "types": [
-    "Dragon",
-    "Ground"
+    "Steel"
    ]
   },
   "Gimmighoul": {
@@ -16779,7 +16788,8 @@
   "Glaceon": {
    "sprite": "471",
    "types": [
-    "Ice"
+    "Ice",
+    "Poison"
    ]
   },
   "Glalie": {
@@ -16798,14 +16808,14 @@
   "Gligar": {
    "sprite": "207",
    "types": [
-    "Ground",
+    "Poison",
     "Flying"
    ]
   },
   "Gliscor": {
    "sprite": "472",
    "types": [
-    "Ground",
+    "Poison",
     "Flying"
    ]
   },
@@ -16832,14 +16842,15 @@
   "Golduck": {
    "sprite": "55",
    "types": [
-    "Water"
+    "Water",
+    "Psychic"
    ]
   },
   "Golett": {
    "sprite": "622",
    "types": [
-    "Ground",
-    "Ghost"
+    "Ghost",
+    "Steel"
    ]
   },
   "Golurk": {
@@ -16892,7 +16903,7 @@
    "sprite": "75",
    "types": [
     "Rock",
-    "Ground"
+    "Fighting"
    ]
   },
   "Great Tusk": {
@@ -16905,7 +16916,8 @@
   "Grimer": {
    "sprite": "88",
    "types": [
-    "Poison"
+    "Poison",
+    "Normal"
    ]
   },
   "Grimer (Alola)": {
@@ -16918,7 +16930,8 @@
   "Growlithe": {
    "sprite": "58",
    "types": [
-    "Fire"
+    "Fire",
+    "Normal"
    ]
   },
   "Growlithe (Hisui)": {
@@ -16944,7 +16957,8 @@
   "Gurdurr": {
    "sprite": "533",
    "types": [
-    "Fighting"
+    "Fighting",
+    "Steel"
    ]
   },
   "Gyarados": {
@@ -16970,27 +16984,28 @@
    "sprite": "93",
    "types": [
     "Ghost",
-    "Poison"
+    "Dark"
    ]
   },
   "Heatmor": {
    "sprite": "631",
    "types": [
-    "Fire"
+    "Fire",
+    "Poison"
    ]
   },
   "Heliolisk": {
    "sprite": "695",
    "types": [
     "Electric",
-    "Normal"
+    "Dragon"
    ]
   },
   "Helioptile": {
    "sprite": "694",
    "types": [
     "Electric",
-    "Normal"
+    "Dragon"
    ]
   },
   "Heracross": {
@@ -17000,10 +17015,18 @@
     "Fighting"
    ]
   },
+  "Heracross (Unova)": {
+   "sprite": "214",
+   "types": [
+    "Bug",
+    "Steel"
+   ]
+  },
   "Herdier": {
    "sprite": "507",
    "types": [
-    "Normal"
+    "Normal",
+    "Ice"
    ]
   },
   "Hippopotas": {
@@ -17015,7 +17038,7 @@
   "Hoothoot": {
    "sprite": "163",
    "types": [
-    "Normal",
+    "Psychic",
     "Flying"
    ]
   },
@@ -17063,7 +17086,8 @@
   "Illumise": {
    "sprite": "314",
    "types": [
-    "Bug"
+    "Bug",
+    "Fairy"
    ]
   },
   "Impidimp": {
@@ -17145,7 +17169,8 @@
   "Jolteon": {
    "sprite": "135",
    "types": [
-    "Electric"
+    "Electric",
+    "Ground"
    ]
   },
   "Joltik": {
@@ -17211,7 +17236,7 @@
    "sprite": "99",
    "types": [
     "Water",
-    "Ground"
+    "Steel"
    ]
   },
   "Kirlia": {
@@ -17224,13 +17249,15 @@
   "Klang": {
    "sprite": "600",
    "types": [
-    "Steel"
+    "Steel",
+    "Electric"
    ]
   },
   "Klink": {
    "sprite": "599",
    "types": [
-    "Steel"
+    "Steel",
+    "Electric"
    ]
   },
   "Klinklang": {
@@ -17267,7 +17294,7 @@
   "Krokorok": {
    "sprite": "552",
    "types": [
-    "Ground",
+    "Water",
     "Dark"
    ]
   },
@@ -17281,8 +17308,7 @@
   "Lairon": {
    "sprite": "305",
    "types": [
-    "Steel",
-    "Rock"
+    "Steel"
    ]
   },
   "Lampent": {
@@ -17309,14 +17335,15 @@
   "Larvitar": {
    "sprite": "246",
    "types": [
-    "Rock",
-    "Ground"
+    "Dark",
+    "Dragon"
    ]
   },
   "Leafeon": {
    "sprite": "470",
    "types": [
-    "Grass"
+    "Grass",
+    "Steel"
    ]
   },
   "Ledian": {
@@ -17355,7 +17382,7 @@
    "sprite": "345",
    "types": [
     "Rock",
-    "Grass"
+    "Poison"
    ]
   },
   "Lilligant": {
@@ -17375,7 +17402,8 @@
   "Lillipup": {
    "sprite": "506",
    "types": [
-    "Normal"
+    "Normal",
+    "Ice"
    ]
   },
   "Linoone": {
@@ -17415,7 +17443,7 @@
    "sprite": "448",
    "types": [
     "Fighting",
-    "Steel"
+    "Psychic"
    ]
   },
   "Ludicolo": {
@@ -17442,7 +17470,8 @@
   "Luvdisc": {
    "sprite": "370",
    "types": [
-    "Water"
+    "Water",
+    "Fairy"
    ]
   },
   "Luxray": {
@@ -17566,7 +17595,8 @@
   "Mareep": {
    "sprite": "179",
    "types": [
-    "Electric"
+    "Electric",
+    "Grass"
    ]
   },
   "Marill": {
@@ -17579,7 +17609,8 @@
   "Marowak": {
    "sprite": "105",
    "types": [
-    "Ground"
+    "Ground",
+    "Fighting"
    ]
   },
   "Marowak (Alola)": {
@@ -17633,7 +17664,7 @@
    "sprite": "375",
    "types": [
     "Steel",
-    "Psychic"
+    "Fighting"
    ]
   },
   "Mienfoo": {
@@ -17657,7 +17688,8 @@
   "Milotic": {
    "sprite": "350",
    "types": [
-    "Water"
+    "Water",
+    "Fairy"
    ]
   },
   "Miltank": {
@@ -17677,7 +17709,8 @@
   "Minccino": {
    "sprite": "572",
    "types": [
-    "Normal"
+    "Normal",
+    "Fairy"
    ]
   },
   "Minun": {
@@ -17689,7 +17722,8 @@
   "Misdreavus": {
    "sprite": "200",
    "types": [
-    "Ghost"
+    "Ghost",
+    "Fairy"
    ]
   },
   "Mothim": {
@@ -17710,7 +17744,7 @@
    "sprite": "89",
    "types": [
     "Poison",
-    "Ground"
+    "Normal"
    ]
   },
   "Munchlax": {
@@ -17722,7 +17756,8 @@
   "Munna": {
    "sprite": "517",
    "types": [
-    "Psychic"
+    "Psychic",
+    "Fairy"
    ]
   },
   "Murkrow": {
@@ -17742,8 +17777,8 @@
   "Natu": {
    "sprite": "177",
    "types": [
-    "Psychic",
-    "Flying"
+    "Grass",
+    "Psychic"
    ]
   },
   "Nidoking": {
@@ -17781,7 +17816,8 @@
   "Nidorino": {
    "sprite": "33",
    "types": [
-    "Poison"
+    "Ground",
+    "Dark"
    ]
   },
   "Nincada": {
@@ -17795,7 +17831,7 @@
    "sprite": "38",
    "types": [
     "Fire",
-    "Ice"
+    "Psychic"
    ]
   },
   "Ninetales (Alola)": {
@@ -17808,7 +17844,7 @@
   "Noctowl": {
    "sprite": "164",
    "types": [
-    "Normal",
+    "Psychic",
     "Flying"
    ]
   },
@@ -17829,7 +17865,7 @@
    "sprite": "274",
    "types": [
     "Grass",
-    "Dark"
+    "Ghost"
    ]
   },
   "Octillery": {
@@ -17899,25 +17935,28 @@
    "sprite": "536",
    "types": [
     "Water",
-    "Ground"
+    "Poison"
    ]
   },
   "Panpour": {
    "sprite": "515",
    "types": [
-    "Water"
+    "Water",
+    "Grass"
    ]
   },
   "Pansage": {
    "sprite": "511",
    "types": [
-    "Grass"
+    "Grass",
+    "Fighting"
    ]
   },
   "Pansear": {
    "sprite": "513",
    "types": [
-    "Fire"
+    "Fire",
+    "Grass"
    ]
   },
   "Paras": {
@@ -17937,7 +17976,8 @@
   "Patrat": {
    "sprite": "504",
    "types": [
-    "Normal"
+    "Normal",
+    "Psychic"
    ]
   },
   "Pawniard": {
@@ -18076,13 +18116,15 @@
   "Porygon": {
    "sprite": "137",
    "types": [
-    "Normal"
+    "Normal",
+    "Electric"
    ]
   },
   "Porygon2": {
    "sprite": "233",
    "types": [
-    "Normal"
+    "Normal",
+    "Electric"
    ]
   },
   "Primeape": {
@@ -18101,14 +18143,15 @@
   "Psyduck": {
    "sprite": "54",
    "types": [
-    "Water"
+    "Water",
+    "Psychic"
    ]
   },
   "Pupitar": {
    "sprite": "247",
    "types": [
-    "Rock",
-    "Ground"
+    "Dark",
+    "Dragon"
    ]
   },
   "Purrloin": {
@@ -18120,7 +18163,7 @@
   "Quagsire": {
    "sprite": "195",
    "types": [
-    "Water",
+    "Fairy",
     "Ground"
    ]
   },
@@ -18142,7 +18185,7 @@
    "sprite": "26",
    "types": [
     "Electric",
-    "Psychic"
+    "Fairy"
    ]
   },
   "Raichu (Alola)": {
@@ -18281,21 +18324,22 @@
   "Sableye": {
    "sprite": "302",
    "types": [
-    "Ghost",
+    "Fairy",
     "Rock"
    ]
   },
   "Sandile": {
    "sprite": "551",
    "types": [
-    "Ground",
+    "Water",
     "Dark"
    ]
   },
   "Sandshrew": {
    "sprite": "27",
    "types": [
-    "Ground"
+    "Ground",
+    "Steel"
    ]
   },
   "Sandshrew (Alola)": {
@@ -18308,7 +18352,8 @@
   "Sandslash": {
    "sprite": "28",
    "types": [
-    "Ground"
+    "Ground",
+    "Steel"
    ]
   },
   "Sandy Shocks": {
@@ -18443,7 +18488,7 @@
    "sprite": "319",
    "types": [
     "Water",
-    "Dark"
+    "Steel"
    ]
   },
   "Shelgon": {
@@ -18455,7 +18500,7 @@
   "Shellder": {
    "sprite": "90",
    "types": [
-    "Water"
+    "Ice"
    ]
   },
   "Shellos": {
@@ -18519,25 +18564,29 @@
   "Silicobra": {
    "sprite": "843",
    "types": [
-    "Ground"
+    "Ground",
+    "Poison"
    ]
   },
   "Simipour": {
    "sprite": "516",
    "types": [
-    "Water"
+    "Water",
+    "Grass"
    ]
   },
   "Simisage": {
    "sprite": "512",
    "types": [
-    "Grass"
+    "Grass",
+    "Fighting"
    ]
   },
   "Simisear": {
    "sprite": "514",
    "types": [
-    "Fire"
+    "Fire",
+    "Grass"
    ]
   },
   "Sizzlipede": {
@@ -18564,7 +18613,7 @@
   "Skitty": {
    "sprite": "300",
    "types": [
-    "Normal"
+    "Fairy"
    ]
   },
   "Skorupi": {
@@ -18584,7 +18633,8 @@
   "Slakoth": {
    "sprite": "287",
    "types": [
-    "Normal"
+    "Normal",
+    "Grass"
    ]
   },
   "Sliggoo": {
@@ -18723,7 +18773,7 @@
    "sprite": "167",
    "types": [
     "Bug",
-    "Poison"
+    "Dark"
    ]
   },
   "Spinda": {
@@ -18743,7 +18793,8 @@
   "Spoink": {
    "sprite": "325",
    "types": [
-    "Psychic"
+    "Psychic",
+    "Ground"
    ]
   },
   "Stantler": {
@@ -18762,7 +18813,7 @@
   "Staravia": {
    "sprite": "397",
    "types": [
-    "Normal",
+    "Fighting",
     "Flying"
    ]
   },
@@ -18844,8 +18895,8 @@
   "Swablu": {
    "sprite": "333",
    "types": [
-    "Normal",
-    "Flying"
+    "Flying",
+    "Fairy"
    ]
   },
   "Swadloon": {
@@ -18943,7 +18994,8 @@
   "Teddiursa": {
    "sprite": "216",
    "types": [
-    "Normal"
+    "Normal",
+    "Ground"
    ]
   },
   "Tentacool": {
@@ -18977,7 +19029,8 @@
   "Timburr": {
    "sprite": "532",
    "types": [
-    "Fighting"
+    "Fighting",
+    "Grass"
    ]
   },
   "Tirtouga": {
@@ -19009,8 +19062,8 @@
   "Toxicroak": {
    "sprite": "454",
    "types": [
-    "Fighting",
-    "Ghost"
+    "Poison",
+    "Fighting"
    ]
   },
   "Tranquill": {
@@ -19023,6 +19076,7 @@
   "Trapinch": {
    "sprite": "328",
    "types": [
+    "Bug",
     "Ground"
    ]
   },
@@ -19048,14 +19102,15 @@
   "Tynamo": {
    "sprite": "602",
    "types": [
-    "Electric"
+    "Electric",
+    "Water"
    ]
   },
   "Tyranitar": {
    "sprite": "248",
    "types": [
-    "Dragon",
-    "Rock"
+    "Dark",
+    "Dragon"
    ]
   },
   "Tyrogue": {
@@ -19074,7 +19129,8 @@
   "Umbreon": {
    "sprite": "197",
    "types": [
-    "Dark"
+    "Dark",
+    "Fighting"
    ]
   },
   "Unfezant": {
@@ -19093,14 +19149,15 @@
   "Ursaring": {
    "sprite": "217",
    "types": [
-    "Fighting",
+    "Normal",
     "Ground"
    ]
   },
   "Vanillish": {
    "sprite": "583",
    "types": [
-    "Ice"
+    "Ice",
+    "Fairy"
    ]
   },
   "Vanillite": {
@@ -19119,7 +19176,8 @@
   "Vaporeon": {
    "sprite": "134",
    "types": [
-    "Water"
+    "Water",
+    "Dragon"
    ]
   },
   "Venipede": {
@@ -19160,7 +19218,8 @@
   "Vigoroth": {
    "sprite": "288",
    "types": [
-    "Normal"
+    "Normal",
+    "Grass"
    ]
   },
   "Vileplume": {
@@ -19180,7 +19239,8 @@
   "Volbeat": {
    "sprite": "313",
    "types": [
-    "Bug"
+    "Bug",
+    "Fire"
    ]
   },
   "Volcarona": {
@@ -19193,7 +19253,8 @@
   "Voltorb": {
    "sprite": "100",
    "types": [
-    "Electric"
+    "Electric",
+    "Steel"
    ]
   },
   "Voltorb (Hisui)": {
@@ -19333,14 +19394,14 @@
   "Woobat": {
    "sprite": "527",
    "types": [
-    "Psychic",
-    "Flying"
+    "Flying",
+    "Fairy"
    ]
   },
   "Wooper": {
    "sprite": "194",
    "types": [
-    "Water",
+    "Fairy",
     "Ground"
    ]
   },
@@ -19454,8 +19515,8 @@
   "Zweilous": {
    "sprite": "634",
    "types": [
-    "Dark",
-    "Dragon"
+    "Dragon",
+    "Poison"
    ]
   }
  }
