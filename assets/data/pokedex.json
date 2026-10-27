@@ -1,5 +1,5 @@
 {
-"_readme": "Pokédex of Pokémon Pitch Black 2. Every Pokémon appears ONCE. 'evo' = {from, method}: the Pokémon it evolves from and how. The page builds the boxes by itself: one box per final evolution (split evolutions = one box each, e.g. Vileplume and Bellossom both contain Oddish and Gloom); Paradox Pokémon get their own box with only the Pokémon they come from ('paradox.from'); alternate forms ('form_of', e.g. Rotom (Heat)) sit inside the box of their base form. 'changed' = true if the Pokémon is different from vanilla Black 2/White 2. 'sprite' only when the default image (PokeAPI showdown/{pokedex_id}.gif) does not exist.",
+"_readme": "Pokédex of Pokémon Pitch Black 2. Every Pokémon appears ONCE. 'evo' = {from, method}: the Pokémon it evolves from and how. The page builds the boxes by itself: one box per final evolution (split evolutions = one box each, e.g. Vileplume and Bellossom both contain Oddish and Gloom); Paradox Pokémon get their own box with only the Pokémon they come from ('paradox.from'); alternate forms ('form_of', e.g. Rotom (Heat)) sit inside the box of their base form. 'changed' = true if the Pokémon is different from vanilla Black 2/White 2. 'sprite' only when the image is not the default one (PokeAPI Black/White sprite {pokedex_id}.png), e.g. regional forms.",
 "pokemon": [
 {
   "name": "Caterpie",
@@ -226,7 +226,7 @@
   "bst": 253,
   "stats": {"hp": 30, "atk": 56, "def": 35, "spa": 25, "spd": 35, "spe": 72},
   "abilities": ["Gluttony", "Hustle"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10091.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10091.png",
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Tail Whip", "level": 1},
@@ -280,7 +280,7 @@
   "stats": {"hp": 75, "atk": 71, "def": 70, "spa": 40, "spd": 80, "spe": 77},
   "abilities": ["Gluttony", "Hustle"],
   "evo": {"from": "Rattata (Alola)", "method": "Level 20"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10092.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10092.png",
   "moves": [
     {"move": "Focus Energy", "level": 1},
     {"move": "Quick Attack", "level": 1},
@@ -467,7 +467,7 @@
   "stats": {"hp": 60, "atk": 85, "def": 60, "spa": 105, "spd": 85, "spe": 121},
   "abilities": ["Motor Drive"],
   "evo": {"from": "Pikachu", "method": "Use Dawn Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10100.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10100.png",
   "moves": [
     {"move": "Psychic", "level": 1},
     {"move": "Quick Attack", "level": 1},
@@ -518,7 +518,7 @@
   "bst": 300,
   "stats": {"hp": 50, "atk": 75, "def": 90, "spa": 10, "spd": 35, "spe": 40},
   "abilities": ["Snow Cloak"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10101.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10101.png",
   "moves": [
     {"move": "Defense Curl", "level": 1},
     {"move": "Scratch", "level": 1},
@@ -583,7 +583,7 @@
   "stats": {"hp": 75, "atk": 100, "def": 120, "spa": 25, "spd": 65, "spe": 65},
   "abilities": ["Snow Cloak"],
   "evo": {"from": "Sandshrew (Alola)", "method": "Use Ice Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10102.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10102.png",
   "moves": [
     {"move": "Defense Curl", "level": 1},
     {"move": "Ice Ball", "level": 1},
@@ -840,7 +840,7 @@
   "bst": 299,
   "stats": {"hp": 38, "atk": 41, "def": 40, "spa": 50, "spd": 65, "spe": 65},
   "abilities": ["Snow Cloak", "Snow Warning"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10103.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10103.png",
   "moves": [
     {"move": "Powder Snow", "level": 1},
     {"move": "Tail Whip", "level": 4},
@@ -900,7 +900,7 @@
   "stats": {"hp": 73, "atk": 67, "def": 75, "spa": 81, "spd": 100, "spe": 109},
   "abilities": ["Snow Cloak", "Snow Warning"],
   "evo": {"from": "Vulpix (Alola)", "method": "Use Ice Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10104.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10104.png",
   "moves": [
     {"move": "Confuse Ray", "level": 1},
     {"move": "Dazzling Gleam", "level": 1},
@@ -1078,6 +1078,8 @@
     {"move": "Mega Drain", "level": 1},
     {"move": "Poison Powder", "level": 1},
     {"move": "Stun Spore", "level": 1},
+    {"move": "Acid", "level": 1},
+    {"move": "Sludge Bomb", "level": 49},
     {"move": "Petal Dance", "level": 53},
     {"move": "Solar Beam", "level": 65}
   ]
@@ -1149,6 +1151,7 @@
     {"move": "Disable", "level": 1},
     {"move": "Foresight", "level": 1},
     {"move": "Supersonic", "level": 5},
+    {"move": "Poison Fang", "level": 9},
     {"move": "Confusion", "level": 11},
     {"move": "Poison Powder", "level": 13},
     {"move": "Leech Life", "level": 17},
@@ -1158,7 +1161,6 @@
     {"move": "Sleep Powder", "level": 29},
     {"move": "Signal Beam", "level": 35},
     {"move": "Zen Headbutt", "level": 37},
-    {"move": "Poison Fang", "level": 41},
     {"move": "Psychic", "level": 47}
   ]
 },
@@ -1227,7 +1229,7 @@
   "bst": 265,
   "stats": {"hp": 10, "atk": 55, "def": 30, "spa": 35, "spd": 45, "spe": 90},
   "abilities": ["Sand Veil", "Sand Force"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10105.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10105.png",
   "moves": [
     {"move": "Metal Claw", "level": 1},
     {"move": "Sand Attack", "level": 1},
@@ -1284,7 +1286,7 @@
   "stats": {"hp": 35, "atk": 100, "def": 60, "spa": 50, "spd": 70, "spe": 110},
   "abilities": ["Sand Veil", "Sand Force"],
   "evo": {"from": "Diglett (Alola)", "method": "Level 26"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10106.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10106.png",
   "moves": [
     {"move": "Growl", "level": 1},
     {"move": "Metal Claw", "level": 1},
@@ -1340,7 +1342,7 @@
   "bst": 290,
   "stats": {"hp": 50, "atk": 65, "def": 55, "spa": 40, "spd": 40, "spe": 40},
   "abilities": ["Pickup", "Technician"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10161.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10161.png",
   "moves": [
     {"move": "Fake Out", "level": 1},
     {"move": "Growl", "level": 1},
@@ -1543,7 +1545,7 @@
   "bst": 350,
   "stats": {"hp": 60, "atk": 75, "def": 45, "spa": 65, "spd": 50, "spe": 55},
   "abilities": ["Intimidate", "Flash Fire"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10229.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10229.png",
   "moves": [
     {"move": "Ember", "level": 1},
     {"move": "Leer", "level": 1},
@@ -1599,7 +1601,7 @@
   "stats": {"hp": 95, "atk": 115, "def": 80, "spa": 95, "spd": 80, "spe": 90},
   "abilities": ["Intimidate", "Flash Fire"],
   "evo": {"from": "Growlithe (Hisui)", "method": "Use Fire Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10230.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10230.png",
   "moves": [
     {"move": "Agility", "level": 1},
     {"move": "Bite", "level": 1},
@@ -1903,7 +1905,9 @@
     {"move": "Swallow", "level": 1},
     {"move": "Sweet Scent", "level": 1},
     {"move": "Vine Whip", "level": 1},
+    {"move": "Acid", "level": 1},
     {"move": "Leaf Tornado", "level": 27},
+    {"move": "Poison Jab", "level": 39},
     {"move": "Leaf Blade", "level": 47},
     {"move": "Leaf Storm", "level": 47}
   ]
@@ -2001,7 +2005,7 @@
   "bst": 300,
   "stats": {"hp": 40, "atk": 80, "def": 100, "spa": 30, "spd": 30, "spe": 20},
   "abilities": ["Magnet Pull", "Sturdy"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10109.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10109.png",
   "moves": [
     {"move": "Defense Curl", "level": 1},
     {"move": "Tackle", "level": 1},
@@ -2059,7 +2063,7 @@
   "stats": {"hp": 55, "atk": 95, "def": 115, "spa": 45, "spd": 45, "spe": 35},
   "abilities": ["Magnet Pull", "Sturdy"],
   "evo": {"from": "Geodude (Alola)", "method": "Level 25"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10110.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10110.png",
   "moves": [
     {"move": "Charge", "level": 1},
     {"move": "Defense Curl", "level": 1},
@@ -2119,7 +2123,7 @@
   "stats": {"hp": 80, "atk": 120, "def": 130, "spa": 55, "spd": 65, "spe": 45},
   "abilities": ["Magnet Pull", "Sturdy"],
   "evo": {"from": "Graveler (Alola)", "method": "Level 35"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10111.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10111.png",
   "moves": [
     {"move": "Charge", "level": 1},
     {"move": "Defense Curl", "level": 1},
@@ -2173,7 +2177,7 @@
   "bst": 410,
   "stats": {"hp": 50, "atk": 85, "def": 55, "spa": 65, "spd": 65, "spe": 90},
   "abilities": ["Run Away", "Immunity"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10162.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10162.png",
   "moves": [
     {"move": "Growl", "level": 1},
     {"move": "Tackle", "level": 1},
@@ -2233,7 +2237,7 @@
   "stats": {"hp": 65, "atk": 100, "def": 70, "spa": 80, "spd": 80, "spe": 105},
   "abilities": ["Run Away", "Immunity"],
   "evo": {"from": "Ponyta (Galar)", "method": "Level 35"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10163.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10163.png",
   "moves": [
     {"move": "Confusion", "level": 1},
     {"move": "Growl", "level": 1},
@@ -2289,7 +2293,7 @@
   "bst": 315,
   "stats": {"hp": 90, "atk": 65, "def": 65, "spa": 40, "spd": 40, "spe": 15},
   "abilities": ["Gluttony", "Own Tempo"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10164.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10164.png",
   "moves": [
     {"move": "Curse", "level": 1},
     {"move": "Tackle", "level": 1},
@@ -2351,7 +2355,7 @@
   "abilities": ["Swarm", "Gluttony"],
   "evo": {"from": "Slowpoke", "method": "Use Honey"},
   "variant": "Unova",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/201-question.png",
   "moves": [
     {"move": "Curse", "level": 1},
     {"move": "Yawn", "level": 1},
@@ -2384,7 +2388,7 @@
   "stats": {"hp": 95, "atk": 100, "def": 95, "spa": 100, "spd": 70, "spe": 30},
   "abilities": ["Regenerator", "Own Tempo"],
   "evo": {"from": "Slowpoke (Galar)", "method": "Use Poison Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10165.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10165.png",
   "moves": [
     {"move": "Acid", "level": 1},
     {"move": "Curse", "level": 1},
@@ -2509,7 +2513,7 @@
   "bst": 475,
   "stats": {"hp": 65, "atk": 130, "def": 65, "spa": 30, "spd": 65, "spe": 120},
   "abilities": ["Steadfast", "Scrappy"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10166.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10166.png",
   "moves": [
     {"move": "Peck", "level": 1},
     {"move": "Sand Attack", "level": 1},
@@ -2682,7 +2686,7 @@
   "bst": 325,
   "stats": {"hp": 80, "atk": 80, "def": 50, "spa": 40, "spd": 50, "spe": 25},
   "abilities": ["Poison Touch", "Gluttony"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10112.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10112.png",
   "moves": [
     {"move": "Poison Gas", "level": 1},
     {"move": "Pound", "level": 1},
@@ -2743,7 +2747,7 @@
   "stats": {"hp": 105, "atk": 105, "def": 75, "spa": 65, "spd": 100, "spe": 50},
   "abilities": ["Poison Touch", "Gluttony"],
   "evo": {"from": "Grimer (Alola)", "method": "Level 35"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10113.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10113.png",
   "moves": [
     {"move": "Bite", "level": 1},
     {"move": "Harden", "level": 1},
@@ -3094,7 +3098,7 @@
   "bst": 330,
   "stats": {"hp": 40, "atk": 30, "def": 50, "spa": 55, "spd": 55, "spe": 100},
   "abilities": ["Soundproof", "Static"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10231.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10231.png",
   "moves": [
     {"move": "Charge", "level": 1},
     {"move": "Tackle", "level": 1},
@@ -3157,7 +3161,7 @@
   "stats": {"hp": 60, "atk": 50, "def": 70, "spa": 80, "spd": 80, "spe": 150},
   "abilities": ["Soundproof", "Static"],
   "evo": {"from": "Voltorb (Hisui)", "method": "Use Leaf Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10232.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10232.png",
   "moves": [
     {"move": "Charge", "level": 1},
     {"move": "Leaf Storm", "level": 1},
@@ -3239,7 +3243,7 @@
   "stats": {"hp": 95, "atk": 105, "def": 85, "spa": 125, "spd": 75, "spe": 45},
   "abilities": ["Frisk", "Harvest"],
   "evo": {"from": "Exeggcute", "method": "Use Sun Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10114.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10114.png",
   "moves": [
     {"move": "Barrage", "level": 1},
     {"move": "Confusion", "level": 1},
@@ -3323,20 +3327,20 @@
   "stats": {"hp": 70, "atk": 80, "def": 110, "spa": 50, "spd": 80, "spe": 80},
   "abilities": ["Cursed Body", "Lightning Rod"],
   "evo": {"from": "Cubone", "method": "Use Fire Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10115.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10115.png",
   "moves": [
     {"move": "Bone Club", "level": 1},
     {"move": "Flame Wheel", "level": 1},
     {"move": "Growl", "level": 1},
     {"move": "Tail Whip", "level": 1},
     {"move": "Leer", "level": 13},
-    {"move": "Hex", "level": 17},
+    {"move": "Shadow Punch", "level": 17},
     {"move": "Bonemerang", "level": 21},
     {"move": "Will-O-Wisp", "level": 23},
     {"move": "Shadow Claw", "level": 27},
     {"move": "Thrash", "level": 33},
     {"move": "Fling", "level": 37},
-    {"move": "Bulldoze", "level": 43},
+    {"move": "Fire Punch", "level": 43},
     {"move": "Endeavor", "level": 49},
     {"move": "Flare Blitz", "level": 53},
     {"move": "Retaliate", "level": 59},
@@ -3489,7 +3493,7 @@
   "stats": {"hp": 65, "atk": 90, "def": 120, "spa": 85, "spd": 70, "spe": 60},
   "abilities": ["Levitate", "Cloud Nine"],
   "evo": {"from": "Koffing", "method": "Use Shiny Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10167.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10167.png",
   "moves": [
     {"move": "Aromatherapy", "level": 1},
     {"move": "Defog", "level": 1},
@@ -3793,7 +3797,10 @@
     {"move": "Recover", "level": 1},
     {"move": "Swift", "level": 1},
     {"move": "Water Gun", "level": 1},
-    {"move": "Confuse Ray", "level": 22}
+    {"move": "Psybeam", "level": 1},
+    {"move": "Confuse Ray", "level": 22},
+    {"move": "Scald", "level": 33},
+    {"move": "Psychic", "level": 40}
   ]
 },
 {
@@ -3958,7 +3965,7 @@
     {"move": "Focus Energy", "level": 1},
     {"move": "Vise Grip", "level": 1},
     {"move": "Bind", "level": 4},
-    {"move": "Seismic Toss", "level": 8},
+    {"move": "Bug Bite", "level": 8},
     {"move": "Harden", "level": 11},
     {"move": "Revenge", "level": 15},
     {"move": "Brick Break", "level": 18},
@@ -3968,6 +3975,7 @@
     {"move": "Storm Throw", "level": 33},
     {"move": "Thrash", "level": 35},
     {"move": "Swords Dance", "level": 38},
+    {"move": "Megahorn", "level": 40},
     {"move": "Superpower", "level": 43},
     {"move": "Guillotine", "level": 47}
   ]
@@ -4006,7 +4014,7 @@
   "bst": 490,
   "stats": {"hp": 75, "atk": 110, "def": 105, "spa": 30, "spd": 70, "spe": 100},
   "abilities": ["Intimidate", "Anger Point"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10252.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10252.png",
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Tail Whip", "level": 1},
@@ -4033,7 +4041,7 @@
   "bst": 490,
   "stats": {"hp": 75, "atk": 110, "def": 105, "spa": 30, "spd": 70, "spe": 100},
   "abilities": ["Intimidate", "Anger Point"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10251.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10251.png",
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Tail Whip", "level": 1},
@@ -4059,7 +4067,7 @@
   "bst": 490,
   "stats": {"hp": 75, "atk": 110, "def": 105, "spa": 30, "spd": 70, "spe": 100},
   "abilities": ["Intimidate", "Anger Point"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10250.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10250.png",
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Tail Whip", "level": 1},
@@ -4106,10 +4114,12 @@
     {"move": "Bite", "level": 20},
     {"move": "Dragon Rage", "level": 23},
     {"move": "Leer", "level": 26},
+    {"move": "Waterfall", "level": 26},
     {"move": "Twister", "level": 29},
     {"move": "Ice Fang", "level": 32},
     {"move": "Aqua Tail", "level": 35},
     {"move": "Rain Dance", "level": 38},
+    {"move": "Bounce", "level": 40},
     {"move": "Hydro Pump", "level": 41},
     {"move": "Dragon Dance", "level": 44},
     {"move": "Hyper Beam", "level": 47}
@@ -4363,12 +4373,14 @@
     {"move": "Harden", "level": 1},
     {"move": "Scratch", "level": 1},
     {"move": "Absorb", "level": 6},
+    {"move": "Aqua Jet", "level": 6},
     {"move": "Leer", "level": 11},
     {"move": "Mud Shot", "level": 16},
     {"move": "Sand Attack", "level": 21},
+    {"move": "Rock Tomb", "level": 21},
     {"move": "Endure", "level": 26},
-    {"move": "Aqua Jet", "level": 31},
     {"move": "Mega Drain", "level": 36},
+    {"move": "Waterfall", "level": 36},
     {"move": "Metal Sound", "level": 41},
     {"move": "Ancient Power", "level": 46},
     {"move": "Wring Out", "level": 51}
@@ -4390,13 +4402,16 @@
     {"move": "Harden", "level": 1},
     {"move": "Leer", "level": 1},
     {"move": "Scratch", "level": 1},
+    {"move": "Aqua Jet", "level": 6},
     {"move": "Mud Shot", "level": 16},
     {"move": "Sand Attack", "level": 21},
+    {"move": "Rock Tomb", "level": 21},
     {"move": "Endure", "level": 26},
-    {"move": "Aqua Jet", "level": 31},
     {"move": "Mega Drain", "level": 36},
+    {"move": "Waterfall", "level": 36},
     {"move": "Slash", "level": 40},
     {"move": "Metal Sound", "level": 45},
+    {"move": "Rock Slide", "level": 45},
     {"move": "Ancient Power", "level": 54},
     {"move": "Wring Out", "level": 63},
     {"move": "Night Slash", "level": 72}
@@ -4675,9 +4690,11 @@
     {"move": "Tackle", "level": 1},
     {"move": "Supersonic", "level": 6},
     {"move": "Comet Punch", "level": 9},
+    {"move": "Bug Bite", "level": 9},
     {"move": "Light Screen", "level": 14},
     {"move": "Reflect", "level": 14},
     {"move": "Safeguard", "level": 14},
+    {"move": "Wing Attack", "level": 15},
     {"move": "Mach Punch", "level": 17},
     {"move": "Baton Pass", "level": 22},
     {"move": "Silver Wind", "level": 25},
@@ -4701,14 +4718,17 @@
     {"move": "Comet Punch", "level": 1},
     {"move": "Supersonic", "level": 1},
     {"move": "Tackle", "level": 1},
+    {"move": "Bug Bite", "level": 9},
     {"move": "Light Screen", "level": 14},
     {"move": "Reflect", "level": 14},
     {"move": "Safeguard", "level": 14},
+    {"move": "Wing Attack", "level": 15},
     {"move": "Mach Punch", "level": 17},
     {"move": "Baton Pass", "level": 24},
     {"move": "Silver Wind", "level": 29},
+    {"move": "X-Scissor", "level": 32},
     {"move": "Agility", "level": 36},
-    {"move": "Swift", "level": 41},
+    {"move": "Acrobatics", "level": 41},
     {"move": "Double-Edge", "level": 48},
     {"move": "Bug Buzz", "level": 53}
   ]
@@ -5525,7 +5545,7 @@
   "bst": 210,
   "stats": {"hp": 55, "atk": 45, "def": 45, "spa": 25, "spd": 25, "spe": 15},
   "abilities": ["Poison Point", "Water Absorb"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10253.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10253.png",
   "moves": [
     {"move": "Mud Shot", "level": 1},
     {"move": "Tail Whip", "level": 1},
@@ -5695,7 +5715,7 @@
   "stats": {"hp": 95, "atk": 65, "def": 80, "spa": 110, "spd": 110, "spe": 30},
   "abilities": ["Regenerator", "Own Tempo"],
   "evo": {"from": "Slowpoke (Galar)", "method": "Use Poison Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10172.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10172.png",
   "moves": [
     {"move": "Acid", "level": 1},
     {"move": "Hail", "level": 1},
@@ -5951,21 +5971,22 @@
     {"move": "Thunder Fang", "level": 1},
     {"move": "Curse", "level": 4},
     {"move": "Screech", "level": 6},
-    {"move": "Rock Throw", "level": 7},
+    {"move": "Metal Claw", "level": 7},
     {"move": "Rage", "level": 10},
-    {"move": "Rock Tomb", "level": 13},
+    {"move": "Bulldoze", "level": 13},
     {"move": "Stealth Rock", "level": 16},
     {"move": "Autotomize", "level": 19},
     {"move": "Smack Down", "level": 22},
     {"move": "Dragon Breath", "level": 25},
     {"move": "Sandstorm", "level": 25},
     {"move": "Slam", "level": 28},
-    {"move": "Rock Slide", "level": 34},
+    {"move": "Iron Head", "level": 34},
     {"move": "Crunch", "level": 37},
     {"move": "Iron Tail", "level": 40},
     {"move": "Dig", "level": 43},
     {"move": "Stone Edge", "level": 46},
-    {"move": "Double-Edge", "level": 49}
+    {"move": "Double-Edge", "level": 49},
+    {"move": "Earthquake", "level": 52}
   ]
 },
 {
@@ -5979,7 +6000,7 @@
   "abilities": ["Rock Head", "Swift Swim"],
   "evo": {"from": "Onix", "method": "Use Water Stone"},
   "variant": "Unova",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/201-question.png",
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Harden", "level": 1},
@@ -6102,7 +6123,7 @@
   "bst": 440,
   "stats": {"hp": 65, "atk": 95, "def": 85, "spa": 55, "spd": 55, "spe": 85},
   "abilities": ["Poison Point", "Swift Swim"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10234.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10234.png",
   "moves": [
     {"move": "Poison Sting", "level": 1},
     {"move": "Tackle", "level": 1},
@@ -6221,7 +6242,7 @@
   "stats": {"hp": 80, "atk": 125, "def": 95, "spa": 40, "spd": 95, "spe": 65},
   "abilities": ["Mold Breaker", "Battle Armor"],
   "variant": "Unova",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/201-question.png",
   "moves": [
     {"move": "Leer", "level": 1},
     {"move": "Tackle", "level": 1},
@@ -6281,7 +6302,7 @@
   "bst": 430,
   "stats": {"hp": 55, "atk": 95, "def": 55, "spa": 35, "spd": 75, "spe": 115},
   "abilities": ["Inner Focus", "Keen Eye"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10235.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10235.png",
   "moves": [
     {"move": "Leer", "level": 1},
     {"move": "Rock Smash", "level": 1},
@@ -6425,7 +6446,7 @@
   "abilities": ["Aftermath", "Stench"],
   "evo": {"from": "Slugma", "method": "Use Poison Stone"},
   "variant": "Unova",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/201-question.png",
   "moves": [
     {"move": "Acid Armor", "level": 1},
     {"move": "Mud-Slap", "level": 1},
@@ -6541,7 +6562,7 @@
   "bst": 410,
   "stats": {"hp": 60, "atk": 55, "def": 100, "spa": 65, "spd": 100, "spe": 30},
   "abilities": ["Weak Armor", "Cursed Body"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10173.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10173.png",
   "moves": [
     {"move": "Harden", "level": 1},
     {"move": "Tackle", "level": 1},
@@ -6624,7 +6645,14 @@
   "stats": {"hp": 65, "atk": 80, "def": 65, "spa": 110, "spd": 65, "spe": 120},
   "abilities": ["Vital Spirit", "Hustle"],
   "moves": [
-    {"move": "Present", "level": 1}
+    {"move": "Present", "level": 1},
+    {"move": "Powder Snow", "level": 1},
+    {"move": "Gust", "level": 9},
+    {"move": "Icy Wind", "level": 18},
+    {"move": "Air Cutter", "level": 25},
+    {"move": "Ice Beam", "level": 36},
+    {"move": "Air Slash", "level": 43},
+    {"move": "Blizzard", "level": 50}
   ]
 },
 {
@@ -7243,7 +7271,7 @@
   "bst": 240,
   "stats": {"hp": 38, "atk": 30, "def": 41, "spa": 30, "spd": 41, "spe": 60},
   "abilities": ["Pickup", "Gluttony"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10174.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10174.png",
   "moves": [
     {"move": "Leer", "level": 1},
     {"move": "Tackle", "level": 1},
@@ -7298,7 +7326,7 @@
   "stats": {"hp": 78, "atk": 70, "def": 61, "spa": 50, "spd": 61, "spe": 100},
   "abilities": ["Pickup", "Gluttony"],
   "evo": {"from": "Zigzagoon (Galar)", "method": "Level 20"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10175.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10175.png",
   "moves": [
     {"move": "Sweet Kiss", "level": 1},
     {"move": "Leer", "level": 1},
@@ -7398,7 +7426,9 @@
   "evo": {"from": "Cascoon", "method": "Level 10"},
   "moves": [
     {"move": "Confusion", "level": 1},
+    {"move": "Struggle Bug", "level": 10},
     {"move": "Gust", "level": 13},
+    {"move": "Acid", "level": 15},
     {"move": "Protect", "level": 17},
     {"move": "Moonlight", "level": 20},
     {"move": "Psybeam", "level": 24},
@@ -7407,7 +7437,8 @@
     {"move": "Silver Wind", "level": 34},
     {"move": "Toxic", "level": 38},
     {"move": "Bug Buzz", "level": 41},
-    {"move": "Quiver Dance", "level": 45}
+    {"move": "Quiver Dance", "level": 45},
+    {"move": "Sludge Bomb", "level": 47}
   ]
 },
 {
@@ -7471,7 +7502,10 @@
     {"move": "Astonish", "level": 1},
     {"move": "Growl", "level": 1},
     {"move": "Mega Drain", "level": 1},
-    {"move": "Nature Power", "level": 1}
+    {"move": "Nature Power", "level": 1},
+    {"move": "Bubble Beam", "level": 1},
+    {"move": "Giga Drain", "level": 30},
+    {"move": "Hydro Pump", "level": 45}
   ]
 },
 {
@@ -7587,7 +7621,7 @@
     {"move": "Endeavor", "level": 28},
     {"move": "Aerial Ace", "level": 38},
     {"move": "Agility", "level": 49},
-    {"move": "Air Slash", "level": 61}
+    {"move": "Brave Bird", "level": 51}
   ]
 },
 {
@@ -8245,9 +8279,11 @@
     {"move": "Attract", "level": 1},
     {"move": "Sing", "level": 1},
     {"move": "Double Slap", "level": 1},
+    {"move": "Covet", "level": 1},
     {"move": "Disarming Voice", "level": 8},
     {"move": "Draining Kiss", "level": 16},
-    {"move": "Wake-Up Slap", "level": 32}
+    {"move": "Wake-Up Slap", "level": 32},
+    {"move": "Play Rough", "level": 36}
   ]
 },
 {
@@ -8293,20 +8329,21 @@
     {"move": "Astonish", "level": 1},
     {"move": "Fake Tears", "level": 6},
     {"move": "Charm", "level": 6},
+    {"move": "Metal Claw", "level": 9},
     {"move": "Bite", "level": 11},
     {"move": "Sweet Scent", "level": 16},
     {"move": "Covet", "level": 16},
     {"move": "Vise Grip", "level": 21},
-    {"move": "Feint Attack", "level": 26},
+    {"move": "Steel Wing", "level": 26},
     {"move": "Baton Pass", "level": 31},
     {"move": "Play Rough", "level": 33},
     {"move": "Crunch", "level": 36},
     {"move": "Iron Defense", "level": 41},
+    {"move": "Iron Head", "level": 41},
     {"move": "Sucker Punch", "level": 46},
     {"move": "Stockpile", "level": 51},
     {"move": "Swallow", "level": 51},
-    {"move": "Spit Up", "level": 51},
-    {"move": "Iron Head", "level": 56}
+    {"move": "Spit Up", "level": 51}
   ]
 },
 {
@@ -8884,7 +8921,7 @@
   "abilities": ["Sap Sipper", "Chlorophyll"],
   "evo": {"from": "Numel", "method": "Use Leaf Stone"},
   "variant": "Unova",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/201-question.png",
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Growl", "level": 1},
@@ -9042,10 +9079,10 @@
     {"move": "Struggle Bug", "level": 10},
     {"move": "Mud-Slap", "level": 13},
     {"move": "Bide", "level": 17},
-    {"move": "Silver Wind", "level": 18},
+    {"move": "Bug Bite", "level": 18},
     {"move": "Bulldoze", "level": 21},
     {"move": "Rock Slide", "level": 25},
-    {"move": "Signal Beam", "level": 26},
+    {"move": "X-Scissor", "level": 26},
     {"move": "Dig", "level": 29},
     {"move": "Crunch", "level": 34},
     {"move": "Sandstorm", "level": 44},
@@ -9241,7 +9278,7 @@
   "abilities": ["Levitate", "Cloud Nine"],
   "evo": {"from": "Swablu", "method": "Use Thunder Stone"},
   "variant": "Unova",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/201-question.png",
   "moves": [
     {"move": "Peck", "level": 1},
     {"move": "Growl", "level": 1},
@@ -9707,14 +9744,15 @@
     {"move": "Ember", "level": 10},
     {"move": "Powder Snow", "level": 10},
     {"move": "Water Gun", "level": 10},
-    {"move": "Headbutt", "level": 15},
+    {"move": "Swift", "level": 15},
     {"move": "Hail", "level": 20},
     {"move": "Rain Dance", "level": 20},
     {"move": "Sunny Day", "level": 20},
     {"move": "Weather Ball", "level": 30},
     {"move": "Blizzard", "level": 40},
     {"move": "Fire Blast", "level": 40},
-    {"move": "Hydro Pump", "level": 40}
+    {"move": "Hydro Pump", "level": 40},
+    {"move": "Hyper Voice", "level": 45}
   ]
 },
 {
@@ -10244,10 +10282,10 @@
     {"move": "Rage", "level": 1},
     {"move": "Bite", "level": 5},
     {"move": "Leer", "level": 10},
+    {"move": "Dragon Breath", "level": 13},
     {"move": "Headbutt", "level": 16},
     {"move": "Focus Energy", "level": 20},
     {"move": "Ember", "level": 25},
-    {"move": "Dragon Breath", "level": 31},
     {"move": "Zen Headbutt", "level": 35},
     {"move": "Scary Face", "level": 40},
     {"move": "Crunch", "level": 46},
@@ -10269,10 +10307,10 @@
     {"move": "Headbutt", "level": 1},
     {"move": "Leer", "level": 1},
     {"move": "Rage", "level": 1},
+    {"move": "Dragon Breath", "level": 13},
     {"move": "Focus Energy", "level": 20},
     {"move": "Ember", "level": 25},
     {"move": "Protect", "level": 30},
-    {"move": "Dragon Breath", "level": 32},
     {"move": "Zen Headbutt", "level": 37},
     {"move": "Scary Face", "level": 43},
     {"move": "Crunch", "level": 50},
@@ -10297,15 +10335,16 @@
     {"move": "Leer", "level": 1},
     {"move": "Rage", "level": 1},
     {"move": "Thunder Fang", "level": 1},
+    {"move": "Dragon Breath", "level": 13},
     {"move": "Focus Energy", "level": 20},
     {"move": "Ember", "level": 25},
     {"move": "Protect", "level": 30},
-    {"move": "Dragon Breath", "level": 32},
     {"move": "Zen Headbutt", "level": 37},
+    {"move": "Aerial Ace", "level": 42},
     {"move": "Scary Face", "level": 43},
+    {"move": "Dragon Claw", "level": 45},
     {"move": "Air Slash", "level": 50},
     {"move": "Crunch", "level": 53},
-    {"move": "Dragon Claw", "level": 61},
     {"move": "Double-Edge", "level": 70},
     {"move": "Dragon Tail", "level": 80}
   ]
@@ -10321,7 +10360,7 @@
   "abilities": ["Rock Head", "Intimidate"],
   "evo": {"from": "Shelgon", "method": "Use Fire Stone"},
   "variant": "Unova",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/201-question.png",
   "moves": [
     {"move": "Leer", "level": 1},
     {"move": "Bite", "level": 1},
@@ -10657,7 +10696,7 @@
   "abilities": ["Rivalry", "Intimidate"],
   "evo": {"from": "Luxio", "method": "Use Fire Stone"},
   "variant": "Unova",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/201-question.png",
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Leer", "level": 5},
@@ -10686,6 +10725,7 @@
   "abilities": ["Natural Cure", "Poison Point"],
   "moves": [
     {"move": "Absorb", "level": 1},
+    {"move": "Poison Sting", "level": 1},
     {"move": "Growth", "level": 4},
     {"move": "Water Sport", "level": 7},
     {"move": "Stun Spore", "level": 10},
@@ -10786,6 +10826,7 @@
     {"move": "Tackle", "level": 1},
     {"move": "Taunt", "level": 6},
     {"move": "Metal Sound", "level": 10},
+    {"move": "Metal Claw", "level": 12},
     {"move": "Take Down", "level": 15},
     {"move": "Iron Defense", "level": 19},
     {"move": "Swagger", "level": 24},
@@ -10811,6 +10852,7 @@
     {"move": "Protect", "level": 1},
     {"move": "Tackle", "level": 1},
     {"move": "Taunt", "level": 1},
+    {"move": "Metal Claw", "level": 12},
     {"move": "Take Down", "level": 15},
     {"move": "Iron Defense", "level": 19},
     {"move": "Swagger", "level": 24},
@@ -10878,15 +10920,16 @@
     {"move": "Protect", "level": 10},
     {"move": "Bug Bite", "level": 15},
     {"move": "Hidden Power", "level": 20},
-    {"move": "Confusion", "level": 23},
+    {"move": "Bulldoze", "level": 23},
     {"move": "Razor Leaf", "level": 26},
     {"move": "Growth", "level": 29},
-    {"move": "Psybeam", "level": 32},
+    {"move": "X-Scissor", "level": 29},
+    {"move": "Dig", "level": 32},
     {"move": "Captivate", "level": 35},
     {"move": "Flail", "level": 38},
     {"move": "Attract", "level": 41},
     {"move": "Psychic", "level": 44},
-    {"move": "Leaf Storm", "level": 47}
+    {"move": "Drill Run", "level": 47}
   ]
 },
 {
@@ -10904,15 +10947,15 @@
     {"move": "Protect", "level": 10},
     {"move": "Bug Bite", "level": 15},
     {"move": "Hidden Power", "level": 20},
-    {"move": "Confusion", "level": 23},
+    {"move": "Metal Claw", "level": 23},
     {"move": "Razor Leaf", "level": 26},
     {"move": "Growth", "level": 29},
-    {"move": "Psybeam", "level": 32},
+    {"move": "Mirror Shot", "level": 32},
     {"move": "Captivate", "level": 35},
     {"move": "Flail", "level": 38},
     {"move": "Attract", "level": 41},
-    {"move": "Psychic", "level": 44},
-    {"move": "Leaf Storm", "level": 47}
+    {"move": "Flash Cannon", "level": 44},
+    {"move": "Iron Head", "level": 47}
   ]
 },
 {
@@ -11979,17 +12022,17 @@
   "stats": {"hp": 48, "atk": 61, "def": 40, "spa": 61, "spd": 40, "spe": 50},
   "abilities": ["Limber", "Anticipation"],
   "moves": [
-    {"move": "Astonish", "level": 1},
+    {"move": "Poison Sting", "level": 1},
     {"move": "Mud-Slap", "level": 3},
     {"move": "Karate Chop", "level": 6},
     {"move": "Taunt", "level": 10},
-    {"move": "Shadow Sneak", "level": 10},
+    {"move": "Acid Spray", "level": 10},
     {"move": "Pursuit", "level": 15},
     {"move": "Brick Break", "level": 17},
-    {"move": "Shadow Punch", "level": 19},
+    {"move": "Sludge", "level": 19},
     {"move": "Revenge", "level": 22},
     {"move": "Swagger", "level": 24},
-    {"move": "Shadow Claw", "level": 28},
+    {"move": "Poison Jab", "level": 28},
     {"move": "Drain Punch", "level": 29},
     {"move": "Sucker Punch", "level": 31},
     {"move": "Nasty Plot", "level": 38},
@@ -12007,20 +12050,20 @@
   "abilities": ["Limber", "Rattled"],
   "evo": {"from": "Croagunk", "method": "Level 37"},
   "moves": [
-    {"move": "Astonish", "level": 1},
+    {"move": "Poison Sting", "level": 1},
     {"move": "Mud-Slap", "level": 3},
     {"move": "Karate Chop", "level": 6},
     {"move": "Taunt", "level": 10},
-    {"move": "Shadow Sneak", "level": 10},
+    {"move": "Acid Spray", "level": 10},
     {"move": "Pursuit", "level": 15},
     {"move": "Brick Break", "level": 17},
-    {"move": "Shadow Punch", "level": 19},
+    {"move": "Sludge", "level": 19},
     {"move": "Revenge", "level": 22},
     {"move": "Swagger", "level": 24},
-    {"move": "Shadow Claw", "level": 28},
+    {"move": "Poison Jab", "level": 28},
     {"move": "Drain Punch", "level": 29},
     {"move": "Sucker Punch", "level": 31},
-    {"move": "Shadow Ball", "level": 40},
+    {"move": "Sludge Bomb", "level": 40},
     {"move": "Nasty Plot", "level": 41},
     {"move": "Cross Chop", "level": 46},
     {"move": "Focus Blast", "level": 54},
@@ -12624,6 +12667,7 @@
     {"move": "Leer", "level": 1},
     {"move": "Night Slash", "level": 1},
     {"move": "Teleport", "level": 1},
+    {"move": "Brick Break", "level": 1},
     {"move": "Fury Cutter", "level": 17},
     {"move": "Slash", "level": 22},
     {"move": "Heal Pulse", "level": 25},
@@ -12648,7 +12692,7 @@
   "abilities": ["Justified", "Inner Focus"],
   "evo": {"from": "Kirlia", "method": "Level up knowing Aerial Ace"},
   "variant": "Unova",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/201-question.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/201-question.png",
   "moves": [
     {"move": "Leer", "level": 1},
     {"move": "Quick Attack", "level": 1},
@@ -12797,7 +12841,7 @@
   "abilities": ["Motor Drive"],
   "evo": {"from": "Rotom", "method": "Change form"},
   "form_of": "Rotom",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10011.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10011.png",
   "moves": [
     {"move": "Astonish", "level": 1},
     {"move": "Confuse Ray", "level": 1},
@@ -12826,7 +12870,7 @@
   "abilities": ["Levitate"],
   "evo": {"from": "Rotom", "method": "Change form"},
   "form_of": "Rotom",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10010.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10010.png",
   "moves": [
     {"move": "Astonish", "level": 1},
     {"move": "Confuse Ray", "level": 1},
@@ -12855,7 +12899,7 @@
   "abilities": ["Levitate"],
   "evo": {"from": "Rotom", "method": "Change form"},
   "form_of": "Rotom",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10008.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10008.png",
   "moves": [
     {"move": "Astonish", "level": 1},
     {"move": "Confuse Ray", "level": 1},
@@ -12884,7 +12928,7 @@
   "abilities": ["Levitate"],
   "evo": {"from": "Rotom", "method": "Change form"},
   "form_of": "Rotom",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10012.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10012.png",
   "moves": [
     {"move": "Astonish", "level": 1},
     {"move": "Confuse Ray", "level": 1},
@@ -12913,7 +12957,7 @@
   "abilities": ["Levitate"],
   "evo": {"from": "Rotom", "method": "Change form"},
   "form_of": "Rotom",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10009.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10009.png",
   "moves": [
     {"move": "Astonish", "level": 1},
     {"move": "Confuse Ray", "level": 1},
@@ -14201,7 +14245,7 @@
   "stats": {"hp": 70, "atk": 105, "def": 75, "spa": 50, "spd": 75, "spe": 105},
   "abilities": ["Chlorophyll", "Hustle"],
   "evo": {"from": "Petilil", "method": "Use Dawn Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10237.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10237.png",
   "moves": [
     {"move": "Absorb", "level": 1},
     {"move": "After You", "level": 1},
@@ -14417,7 +14461,7 @@
   "abilities": ["Zen Mode"],
   "evo": {"from": "Darmanitan", "method": "Zen Mode (below half HP)"},
   "form_of": "Darmanitan",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10017.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10017.png",
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Rollout", "level": 3},
@@ -14889,7 +14933,7 @@
   "bst": 330,
   "stats": {"hp": 35, "atk": 60, "def": 40, "spa": 85, "spd": 40, "spe": 70},
   "abilities": ["Illusion"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10238.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10238.png",
   "moves": [
     {"move": "Leer", "level": 1},
     {"move": "Scratch", "level": 1},
@@ -14951,7 +14995,7 @@
   "stats": {"hp": 55, "atk": 100, "def": 60, "spa": 125, "spd": 60, "spe": 110},
   "abilities": ["Illusion"],
   "evo": {"from": "Zorua (Hisui)", "method": "Level 30"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10239.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10239.png",
   "moves": [
     {"move": "Hone Claws", "level": 1},
     {"move": "Leer", "level": 1},
@@ -15695,6 +15739,7 @@
     {"move": "Tackle", "level": 1},
     {"move": "Rollout", "level": 6},
     {"move": "Curse", "level": 9},
+    {"move": "Bullet Seed", "level": 9},
     {"move": "Metal Claw", "level": 14},
     {"move": "Pin Missile", "level": 18},
     {"move": "Gyro Ball", "level": 21},
@@ -16055,6 +16100,7 @@
     {"move": "Assurance", "level": 7},
     {"move": "Dragon Rage", "level": 10},
     {"move": "Dual Chop", "level": 13},
+    {"move": "Metal Claw", "level": 15},
     {"move": "Scary Face", "level": 16},
     {"move": "Slash", "level": 20},
     {"move": "False Swipe", "level": 24},
@@ -16083,6 +16129,7 @@
     {"move": "Assurance", "level": 7},
     {"move": "Dragon Rage", "level": 10},
     {"move": "Dual Chop", "level": 13},
+    {"move": "Metal Claw", "level": 15},
     {"move": "Scary Face", "level": 16},
     {"move": "Slash", "level": 20},
     {"move": "False Swipe", "level": 24},
@@ -16112,6 +16159,7 @@
     {"move": "Assurance", "level": 7},
     {"move": "Dragon Rage", "level": 10},
     {"move": "Dual Chop", "level": 13},
+    {"move": "Metal Claw", "level": 15},
     {"move": "Scary Face", "level": 16},
     {"move": "Slash", "level": 20},
     {"move": "False Swipe", "level": 24},
@@ -16119,8 +16167,8 @@
     {"move": "Dragon Dance", "level": 32},
     {"move": "Taunt", "level": 36},
     {"move": "Dragon Pulse", "level": 42},
+    {"move": "Iron Head", "level": 45},
     {"move": "Swords Dance", "level": 50},
-    {"move": "Iron Head", "level": 50},
     {"move": "Iron Tail", "level": 55},
     {"move": "Guillotine", "level": 58},
     {"move": "Meteor Mash", "level": 61},
@@ -16316,7 +16364,7 @@
   "bst": 471,
   "stats": {"hp": 109, "atk": 81, "def": 99, "spa": 66, "spd": 84, "spe": 32},
   "abilities": ["Color Change"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10180.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10180.png",
   "moves": [
     {"move": "Metal Claw", "level": 1},
     {"move": "Mud-Slap", "level": 1},
@@ -16637,7 +16685,7 @@
   "stats": {"hp": 110, "atk": 83, "def": 70, "spa": 112, "spd": 70, "spe": 65},
   "abilities": ["Keen Eye", "Sheer Force"],
   "evo": {"from": "Rufflet", "method": "Use Moon Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10240.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10240.png",
   "moves": [
     {"move": "Extrasensory", "level": 1},
     {"move": "Hone Claws", "level": 1},
@@ -17305,7 +17353,7 @@
   "stats": {"hp": 58, "atk": 75, "def": 83, "spa": 83, "spd": 113, "spe": 40},
   "abilities": ["Sap Sipper", "Shell Armor"],
   "evo": {"from": "Goomy", "method": "Use Metal Stone"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10241.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10241.png",
   "moves": [
     {"move": "Absorb", "level": 1},
     {"move": "Acid Armor", "level": 1},
@@ -17360,7 +17408,7 @@
   "stats": {"hp": 80, "atk": 90, "def": 90, "spa": 100, "spd": 140, "spe": 50},
   "abilities": ["Sap Sipper", "Shell Armor"],
   "evo": {"from": "Sliggoo (Hisui)", "method": "Level 42"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10242.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10242.png",
   "moves": [
     {"move": "Absorb", "level": 1},
     {"move": "Acid Spray", "level": 1},
@@ -17471,7 +17519,7 @@
   "bst": 476,
   "stats": {"hp": 75, "atk": 70, "def": 70, "spa": 98, "spd": 70, "spe": 93},
   "abilities": ["Own Tempo"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10124.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10124.png",
   "moves": [
     {"move": "Pound", "level": 1},
     {"move": "Growl", "level": 4},
@@ -17500,7 +17548,7 @@
   "bst": 476,
   "stats": {"hp": 75, "atk": 70, "def": 70, "spa": 98, "spd": 70, "spe": 93},
   "abilities": ["Own Tempo"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10123.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10123.png",
   "moves": [
     {"move": "Pound", "level": 1},
     {"move": "Growl", "level": 4},
@@ -17529,7 +17577,7 @@
   "bst": 476,
   "stats": {"hp": 75, "atk": 70, "def": 70, "spa": 98, "spd": 70, "spe": 93},
   "abilities": ["Own Tempo"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10125.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10125.png",
   "moves": [
     {"move": "Pound", "level": 1},
     {"move": "Growl", "level": 4},
@@ -18096,6 +18144,7 @@
     {"move": "Fake Out", "level": 1},
     {"move": "Bite", "level": 4},
     {"move": "Flatter", "level": 8},
+    {"move": "Disarming Voice", "level": 8},
     {"move": "Fake Tears", "level": 12},
     {"move": "Assurance", "level": 16},
     {"move": "Swagger", "level": 20},
@@ -18123,6 +18172,7 @@
     {"move": "Fake Out", "level": 1},
     {"move": "Feint Attack", "level": 1},
     {"move": "Flatter", "level": 1},
+    {"move": "Disarming Voice", "level": 1},
     {"move": "Fake Tears", "level": 12},
     {"move": "Assurance", "level": 16},
     {"move": "Swagger", "level": 20},
@@ -18357,8 +18407,10 @@
     {"move": "Bug Bite", "level": 1},
     {"move": "Quick Attack", "level": 1},
     {"move": "Lock-On", "level": 6},
+    {"move": "Dragon Tail", "level": 9},
     {"move": "Assurance", "level": 12},
     {"move": "Hex", "level": 18},
+    {"move": "Dragon Breath", "level": 21},
     {"move": "Agility", "level": 24},
     {"move": "Double Hit", "level": 30},
     {"move": "U-turn", "level": 36},
@@ -18553,7 +18605,7 @@
   "abilities": ["Swift Swim", "Adaptability"],
   "evo": {"from": "Basculin", "method": "Use Reaper's Cloth (female)"},
   "form_of": "Basculegion",
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10248.gif",
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10248.png",
   "moves": [
     {"move": "Shadow Force", "level": 1},
     {"move": "Shadow Ball", "level": 1},
@@ -18978,13 +19030,14 @@
     {"move": "Sing", "level": 1},
     {"move": "Sunny Day", "level": 1},
     {"move": "Howl", "level": 7},
+    {"move": "Disarming Voice", "level": 7},
     {"move": "Growl", "level": 14},
-    {"move": "Bite", "level": 21},
+    {"move": "Psybeam", "level": 21},
     {"move": "Body Slam", "level": 28},
     {"move": "Rest", "level": 35},
     {"move": "Play Rough", "level": 42},
+    {"move": "Zen Headbutt", "level": 45},
     {"move": "Hyper Voice", "level": 49},
-    {"move": "Zen Headbutt", "level": 56},
     {"move": "Crunch", "level": 63},
     {"move": "Wish", "level": 70},
     {"move": "Gyro Ball", "level": 77},
@@ -19126,7 +19179,6 @@
   "abilities": ["Sand Veil", "Motor Drive"],
   "evo": {"from": "Donphan", "method": "Use Synthetic Gene"},
   "paradox": {"from": "Donphan", "gene": "Synthetic Gene", "revert": "Primal Gene"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/990.png",
   "moves": [
     {"move": "Defense Curl", "level": 1},
     {"move": "Charge", "level": 1},
@@ -19155,7 +19207,6 @@
   "abilities": ["Vital Spirit", "Motor Drive"],
   "evo": {"from": "Delibird", "method": "Use Synthetic Gene"},
   "paradox": {"from": "Delibird", "gene": "Synthetic Gene", "revert": "Primal Gene"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/991.png",
   "moves": [
     {"move": "Charge", "level": 1},
     {"move": "Present", "level": 1},
@@ -19185,7 +19236,6 @@
   "abilities": ["Thick Fat", "Motor Drive"],
   "evo": {"from": "Hariyama", "method": "Use Synthetic Gene"},
   "paradox": {"from": "Hariyama", "gene": "Synthetic Gene", "revert": "Primal Gene"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/992.gif",
   "moves": [
     {"move": "Arm Thrust", "level": 1},
     {"move": "Charge", "level": 1},
@@ -19217,7 +19267,6 @@
   "abilities": ["Poison Point", "Motor Drive"],
   "evo": {"from": "Hydreigon", "method": "Use Synthetic Gene"},
   "paradox": {"from": "Hydreigon", "gene": "Synthetic Gene", "revert": "Primal Gene"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/993.png",
   "moves": [
     {"move": "Air Cutter", "level": 1},
     {"move": "Charge", "level": 1},
@@ -19249,7 +19298,6 @@
   "abilities": ["Flame Body", "Motor Drive"],
   "evo": {"from": "Volcarona", "method": "Use Synthetic Gene"},
   "paradox": {"from": "Volcarona", "gene": "Synthetic Gene", "revert": "Primal Gene"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/994.gif",
   "moves": [
     {"move": "Acid Spray", "level": 1},
     {"move": "Charge", "level": 1},
@@ -19282,7 +19330,6 @@
   "abilities": ["Sand Rush", "Motor Drive"],
   "evo": {"from": "Tyranitar", "method": "Use Synthetic Gene"},
   "paradox": {"from": "Tyranitar", "gene": "Synthetic Gene", "revert": "Primal Gene"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/995.gif",
   "moves": [
     {"move": "Charge", "level": 1},
     {"move": "Fire Fang", "level": 1},
@@ -19315,6 +19362,7 @@
     {"move": "Astonish", "level": 1},
     {"move": "Tackle", "level": 1},
     {"move": "Night Shade", "level": 7},
+    {"move": "Mirror Shot", "level": 9},
     {"move": "Confuse Ray", "level": 14},
     {"move": "Substitute", "level": 21},
     {"move": "Metal Sound", "level": 28},
@@ -19340,13 +19388,14 @@
     {"move": "Astonish", "level": 1},
     {"move": "Tackle", "level": 1},
     {"move": "Night Shade", "level": 7},
+    {"move": "Mirror Shot", "level": 9},
     {"move": "Confuse Ray", "level": 14},
     {"move": "Substitute", "level": 21},
     {"move": "Metal Sound", "level": 28},
     {"move": "Shadow Ball", "level": 35},
     {"move": "Recover", "level": 42},
+    {"move": "Flash Cannon", "level": 45},
     {"move": "Power Gem", "level": 49},
-    {"move": "Flash Cannon", "level": 56},
     {"move": "Nasty Plot", "level": 63},
     {"move": "Memento", "level": 70}
   ]
@@ -19396,27 +19445,27 @@
   "abilities": ["Synchronize", "Motor Drive"],
   "evo": {"from": "Gardevoir", "method": "Use Synthetic Gene"},
   "paradox": {"from": "Gardevoir", "gene": "Synthetic Gene", "revert": "Primal Gene"},
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1006.gif",
   "moves": [
     {"move": "Disable", "level": 1},
     {"move": "Double Team", "level": 1},
     {"move": "Charge", "level": 1},
-    {"move": "Fury Cutter", "level": 1},
+    {"move": "Karate Chop", "level": 1},
     {"move": "Shadow Sneak", "level": 1},
     {"move": "Hypnosis", "level": 7},
+    {"move": "Covet", "level": 9},
     {"move": "Feint", "level": 14},
     {"move": "Future Sight", "level": 21},
     {"move": "Dazzling Gleam", "level": 28},
-    {"move": "Psycho Cut", "level": 35},
+    {"move": "Brick Break", "level": 35},
     {"move": "Night Slash", "level": 42},
-    {"move": "Leaf Blade", "level": 49},
+    {"move": "Drain Punch", "level": 49},
     {"move": "Moonblast", "level": 56},
-    {"move": "Close Combat", "level": 63},
+    {"move": "Close Combat", "level": 60},
+    {"move": "Play Rough", "level": 66},
     {"move": "Knock Off", "level": 70},
     {"move": "Destiny Bond", "level": 77},
     {"move": "Quick Guard", "level": 84},
-    {"move": "Wide Guard", "level": 84},
-    {"move": "Play Rough", "level": 91}
+    {"move": "Wide Guard", "level": 84}
   ]
 }
 ]
