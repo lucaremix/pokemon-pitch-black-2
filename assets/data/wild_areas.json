@@ -2,10 +2,9 @@
  "meta": {
   "title": "Wild Areas",
   "urls": {
-   "pokemon": "https://play.pokemonshowdown.com/sprites/gen5/{sprite}.png",
-   "pokemonAnimated": "https://play.pokemonshowdown.com/sprites/gen5ani/{sprite}.gif"
+   "pokemon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{sprite}.png"
   },
-  "howTo": "Each area has tables (one per encounter method). Encounter: name (key of species), min/max level, rate in % (null = event / gift). version: B2 or W2 = only in that version. species: sprite slug + types shown on the page."
+  "howTo": "Each area has tables (one per encounter method). Encounter: name (key of species), min/max level, rate in % (null = event / gift). version: B2 or W2 = only in that version. species: sprite path (PokeAPI sprites/pokemon/<sprite>.png) + types shown on the page."
  },
  "intro": [
   "",
@@ -80,13 +79,13 @@
        "name": "Surskit",
        "min": 2,
        "max": 8,
-       "rate": 35
+       "rate": 30
       },
       {
        "name": "Feebas",
        "min": 2,
        "max": 8,
-       "rate": 5
+       "rate": 10
       }
      ]
     },
@@ -103,13 +102,13 @@
        "name": "Surskit",
        "min": 6,
        "max": 14,
-       "rate": 30
+       "rate": 35
       },
       {
        "name": "Feebas",
        "min": 6,
        "max": 14,
-       "rate": 10
+       "rate": 5
       }
      ]
     }
@@ -142,13 +141,7 @@
        "rate": 10
       },
       {
-       "name": "Pidgey",
-       "min": 3,
-       "max": 5,
-       "rate": 10
-      },
-      {
-       "name": "Kricketot",
+       "name": "Fletchling",
        "min": 3,
        "max": 5,
        "rate": 10
@@ -160,13 +153,13 @@
        "rate": 10
       },
       {
-       "name": "Venonat",
+       "name": "Kricketot",
        "min": 3,
        "max": 5,
-       "rate": 5
+       "rate": 10
       },
       {
-       "name": "Bidoof",
+       "name": "Venonat",
        "min": 3,
        "max": 5,
        "rate": 5
@@ -179,6 +172,12 @@
       },
       {
        "name": "Hoppip",
+       "min": 3,
+       "max": 5,
+       "rate": 5
+      },
+      {
+       "name": "Zigzagoon (Galar)",
        "min": 3,
        "max": 5,
        "rate": 5
@@ -252,13 +251,13 @@
        "rate": 90
       },
       {
-       "name": "Surskit",
+       "name": "Staryu",
        "min": 5,
        "max": 5,
        "rate": 5
       },
       {
-       "name": "Staryu",
+       "name": "Surskit",
        "min": 5,
        "max": 5,
        "rate": 5
@@ -305,7 +304,7 @@
        "rate": 20
       },
       {
-       "name": "Cubone",
+       "name": "Rookidee",
        "min": 5,
        "max": 7,
        "rate": 10
@@ -418,16 +417,16 @@
        "rate": 4
       },
       {
-       "name": "Budew",
+       "name": "Snom",
        "min": 11,
        "max": 14,
-       "rate": 4
+       "rate": 5
       },
       {
        "name": "Bagon",
        "min": 11,
        "max": 14,
-       "rate": 2
+       "rate": 1
       }
      ]
     },
@@ -436,21 +435,15 @@
      "encounters": [
       {
        "name": "Audino",
-       "min": 4,
-       "max": 4,
-       "rate": 50
+       "min": 5,
+       "max": 5,
+       "rate": 80
       },
       {
        "name": "Dunsparce",
-       "min": 4,
-       "max": 4,
-       "rate": 10
-      },
-      {
-       "name": "Audino",
        "min": 5,
        "max": 5,
-       "rate": 30
+       "rate": 10
       },
       {
        "name": "Audino",
@@ -480,12 +473,6 @@
        "min": 5,
        "max": 35,
        "rate": 5
-      },
-      {
-       "name": "Dragonair",
-       "min": 35,
-       "max": 45,
-       "rate": 5
       }
      ]
     },
@@ -509,6 +496,12 @@
        "min": 30,
        "max": 40,
        "rate": 5
+      },
+      {
+       "name": "Dragonair",
+       "min": 35,
+       "max": 45,
+       "rate": 5
       }
      ]
     },
@@ -516,15 +509,15 @@
      "method": "Fish, Normal",
      "encounters": [
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 5,
-       "max": 15,
+       "max": 5,
        "rate": 60
       },
       {
        "name": "Dratini",
        "min": 5,
-       "max": 15,
+       "max": 5,
        "rate": 40
       }
      ]
@@ -533,7 +526,7 @@
      "method": "Fish, Dark Spot",
      "encounters": [
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 5,
        "max": 15,
        "rate": 60
@@ -569,7 +562,7 @@
        "rate": 20
       },
       {
-       "name": "Cubone",
+       "name": "Rookidee",
        "min": 5,
        "max": 7,
        "rate": 10
@@ -682,16 +675,16 @@
        "rate": 4
       },
       {
-       "name": "Budew",
+       "name": "Snom",
        "min": 11,
        "max": 14,
-       "rate": 4
+       "rate": 5
       },
       {
        "name": "Bagon",
        "min": 11,
        "max": 14,
-       "rate": 2
+       "rate": 1
       }
      ]
     },
@@ -702,19 +695,13 @@
        "name": "Audino",
        "min": 5,
        "max": 5,
-       "rate": 50
+       "rate": 80
       },
       {
        "name": "Dunsparce",
        "min": 5,
        "max": 5,
        "rate": 10
-      },
-      {
-       "name": "Audino",
-       "min": 5,
-       "max": 5,
-       "rate": 30
       },
       {
        "name": "Audino",
@@ -744,12 +731,6 @@
        "min": 5,
        "max": 35,
        "rate": 5
-      },
-      {
-       "name": "Dragonair",
-       "min": 35,
-       "max": 45,
-       "rate": 5
       }
      ]
     },
@@ -773,6 +754,12 @@
        "min": 30,
        "max": 40,
        "rate": 5
+      },
+      {
+       "name": "Dragonair",
+       "min": 35,
+       "max": 45,
+       "rate": 5
       }
      ]
     },
@@ -780,15 +767,15 @@
      "method": "Fish, Normal",
      "encounters": [
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 5,
-       "max": 15,
+       "max": 5,
        "rate": 60
       },
       {
        "name": "Dratini",
        "min": 5,
-       "max": 15,
+       "max": 5,
        "rate": 40
       }
      ]
@@ -797,7 +784,7 @@
      "method": "Fish, Dark Spot",
      "encounters": [
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 5,
        "max": 15,
        "rate": 60
@@ -833,7 +820,7 @@
        "rate": 20
       },
       {
-       "name": "Cubone",
+       "name": "Rookidee",
        "min": 5,
        "max": 7,
        "rate": 10
@@ -946,16 +933,16 @@
        "rate": 4
       },
       {
-       "name": "Budew",
+       "name": "Snom",
        "min": 11,
        "max": 14,
-       "rate": 4
+       "rate": 5
       },
       {
        "name": "Bagon",
        "min": 11,
        "max": 14,
-       "rate": 2
+       "rate": 1
       }
      ]
     },
@@ -966,19 +953,13 @@
        "name": "Audino",
        "min": 5,
        "max": 5,
-       "rate": 50
+       "rate": 80
       },
       {
        "name": "Dunsparce",
        "min": 5,
        "max": 5,
        "rate": 10
-      },
-      {
-       "name": "Audino",
-       "min": 5,
-       "max": 5,
-       "rate": 30
       },
       {
        "name": "Audino",
@@ -1008,12 +989,6 @@
        "min": 5,
        "max": 35,
        "rate": 5
-      },
-      {
-       "name": "Dragonair",
-       "min": 35,
-       "max": 45,
-       "rate": 5
       }
      ]
     },
@@ -1037,6 +1012,12 @@
        "min": 30,
        "max": 40,
        "rate": 5
+      },
+      {
+       "name": "Dragonair",
+       "min": 35,
+       "max": 45,
+       "rate": 5
       }
      ]
     },
@@ -1044,15 +1025,15 @@
      "method": "Fish, Normal",
      "encounters": [
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 5,
-       "max": 15,
+       "max": 5,
        "rate": 60
       },
       {
        "name": "Dratini",
        "min": 5,
-       "max": 15,
+       "max": 5,
        "rate": 40
       }
      ]
@@ -1061,7 +1042,7 @@
      "method": "Fish, Dark Spot",
      "encounters": [
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 5,
        "max": 15,
        "rate": 60
@@ -1097,7 +1078,7 @@
        "rate": 20
       },
       {
-       "name": "Cubone",
+       "name": "Rookidee",
        "min": 5,
        "max": 7,
        "rate": 10
@@ -1210,16 +1191,16 @@
        "rate": 4
       },
       {
-       "name": "Budew",
+       "name": "Snom",
        "min": 11,
        "max": 14,
-       "rate": 4
+       "rate": 5
       },
       {
        "name": "Bagon",
        "min": 11,
        "max": 14,
-       "rate": 2
+       "rate": 1
       }
      ]
     },
@@ -1228,27 +1209,15 @@
      "encounters": [
       {
        "name": "Audino",
-       "min": 4,
-       "max": 4,
-       "rate": 50
+       "min": 5,
+       "max": 5,
+       "rate": 80
       },
       {
        "name": "Dunsparce",
-       "min": 4,
-       "max": 4,
+       "min": 5,
+       "max": 5,
        "rate": 10
-      },
-      {
-       "name": "Audino",
-       "min": 5,
-       "max": 5,
-       "rate": 30
-      },
-      {
-       "name": "Audino",
-       "min": 5,
-       "max": 5,
-       "rate": 30
       },
       {
        "name": "Audino",
@@ -1278,12 +1247,6 @@
        "min": 5,
        "max": 35,
        "rate": 5
-      },
-      {
-       "name": "Dewgong",
-       "min": 35,
-       "max": 45,
-       "rate": 5
       }
      ]
     },
@@ -1307,6 +1270,12 @@
        "min": 30,
        "max": 40,
        "rate": 5
+      },
+      {
+       "name": "Dewgong",
+       "min": 35,
+       "max": 45,
+       "rate": 5
       }
      ]
     },
@@ -1314,15 +1283,15 @@
      "method": "Fish, Normal",
      "encounters": [
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 5,
-       "max": 15,
+       "max": 5,
        "rate": 60
       },
       {
        "name": "Dratini",
        "min": 5,
-       "max": 15,
+       "max": 5,
        "rate": 40
       }
      ]
@@ -1331,7 +1300,7 @@
      "method": "Fish, Dark Spot",
      "encounters": [
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 5,
        "max": 15,
        "rate": 60
@@ -1391,19 +1360,13 @@
        "rate": 10
       },
       {
-       "name": "Psyduck",
+       "name": "Impidimp",
        "min": 7,
        "max": 9,
-       "rate": 5
+       "rate": 9
       },
       {
        "name": "Taillow",
-       "min": 7,
-       "max": 9,
-       "rate": 5
-      },
-      {
-       "name": "Poochyena",
        "min": 7,
        "max": 9,
        "rate": 5
@@ -1413,6 +1376,12 @@
        "min": 7,
        "max": 9,
        "rate": 5
+      },
+      {
+       "name": "Poochyena",
+       "min": 7,
+       "max": 9,
+       "rate": 1
       }
      ]
     },
@@ -1438,13 +1407,13 @@
        "rate": 20
       },
       {
-       "name": "Happiny",
+       "name": "Togepi",
        "min": 10,
        "max": 12,
        "rate": 5
       },
       {
-       "name": "Togepi",
+       "name": "Happiny",
        "min": 10,
        "max": 12,
        "rate": 5
@@ -1458,13 +1427,19 @@
        "name": "Magikarp",
        "min": 20,
        "max": 30,
-       "rate": 70
+       "rate": 60
       },
       {
-       "name": "Basculin (Red-Striped)",
+       "name": "Basculin (Blue-Striped)",
        "min": 20,
        "max": 30,
        "rate": 30
+      },
+      {
+       "name": "Magikarp",
+       "min": 25,
+       "max": 35,
+       "rate": 10
       }
      ]
     },
@@ -1475,13 +1450,19 @@
        "name": "Magikarp",
        "min": 30,
        "max": 40,
-       "rate": 70
+       "rate": 65
       },
       {
        "name": "Basculin (Blue-Striped)",
        "min": 30,
        "max": 40,
        "rate": 30
+      },
+      {
+       "name": "Magikarp",
+       "min": 35,
+       "max": 45,
+       "rate": 5
       }
      ]
     },
@@ -1492,13 +1473,13 @@
        "name": "Poliwag",
        "min": 5,
        "max": 15,
-       "rate": 70
+       "rate": 65
       },
       {
        "name": "Goldeen",
        "min": 5,
        "max": 15,
-       "rate": 30
+       "rate": 35
       }
      ]
     },
@@ -1536,7 +1517,7 @@
        "name": "Frillish",
        "min": 40,
        "max": 40,
-       "rate": 70
+       "rate": 60
       },
       {
        "name": "Basculin (Red-Striped)",
@@ -1548,7 +1529,7 @@
        "name": "Tentacool",
        "min": 40,
        "max": 40,
-       "rate": 30
+       "rate": 10
       }
      ]
     },
@@ -1559,19 +1540,19 @@
        "name": "Alomomola",
        "min": 40,
        "max": 40,
-       "rate": 70
-      },
-      {
-       "name": "Jellicent",
-       "min": 40,
-       "max": 40,
-       "rate": 30
+       "rate": 90
       },
       {
        "name": "Tentacruel",
        "min": 40,
        "max": 40,
-       "rate": 30
+       "rate": 5
+      },
+      {
+       "name": "Jellicent",
+       "min": 40,
+       "max": 40,
+       "rate": 5
       }
      ]
     },
@@ -1585,7 +1566,7 @@
        "rate": 60
       },
       {
-       "name": "Krabby",
+       "name": "Clauncher",
        "min": 13,
        "max": 15,
        "rate": 30
@@ -1628,7 +1609,7 @@
       {
        "name": "Finneon",
        "min": 13,
-       "max": 15,
+       "max": 17,
        "rate": 5
       }
      ]
@@ -1644,13 +1625,13 @@
      "method": "Grass, Normal",
      "encounters": [
       {
-       "name": "Spearow",
+       "name": "Ekans",
        "min": 14,
        "max": 15,
        "rate": 20
       },
       {
-       "name": "Ekans",
+       "name": "Spearow",
        "min": 14,
        "max": 15,
        "rate": 20
@@ -1668,19 +1649,19 @@
        "rate": 10
       },
       {
-       "name": "Nidoran♂",
-       "min": 14,
-       "max": 15,
-       "rate": 10
-      },
-      {
        "name": "Nidoran♀",
        "min": 14,
        "max": 15,
        "rate": 10
       },
       {
-       "name": "Shellos (West)",
+       "name": "Nidoran♂",
+       "min": 14,
+       "max": 15,
+       "rate": 10
+      },
+      {
+       "name": "Shellos",
        "min": 14,
        "max": 15,
        "rate": 5
@@ -1698,7 +1679,7 @@
        "rate": 5
       },
       {
-       "name": "Buizel",
+       "name": "Wattrel",
        "min": 14,
        "max": 15,
        "rate": 5
@@ -1849,7 +1830,7 @@
        "rate": 10
       },
       {
-       "name": "Croagunk",
+       "name": "Toxel",
        "min": 14,
        "max": 15,
        "rate": 10
@@ -1914,7 +1895,7 @@
        "rate": 10
       },
       {
-       "name": "Koffing",
+       "name": "Meowth (Galar)",
        "min": 15,
        "max": 16,
        "rate": 10
@@ -1926,7 +1907,7 @@
        "rate": 5
       },
       {
-       "name": "Magnemite",
+       "name": "Pichu",
        "min": 15,
        "max": 16,
        "rate": 5
@@ -1938,7 +1919,7 @@
        "rate": 5
       },
       {
-       "name": "Pichu",
+       "name": "Magnemite",
        "min": 15,
        "max": 16,
        "rate": 5
@@ -1952,13 +1933,7 @@
        "name": "Audino",
        "min": 16,
        "max": 16,
-       "rate": 55
-      },
-      {
-       "name": "Voltorb",
-       "min": 16,
-       "max": 16,
-       "rate": 15
+       "rate": 50
       },
       {
        "name": "Porygon",
@@ -1977,6 +1952,18 @@
        "min": 16,
        "max": 16,
        "rate": 10
+      },
+      {
+       "name": "Voltorb",
+       "min": 16,
+       "max": 16,
+       "rate": 15
+      },
+      {
+       "name": "Rotom",
+       "min": 16,
+       "max": 16,
+       "rate": 5
       }
      ]
     }
@@ -2139,25 +2126,25 @@
      "method": "Sewer, Normal",
      "encounters": [
       {
-       "name": "Grimer",
-       "min": 19,
-       "max": 20,
-       "rate": 20
-      },
-      {
        "name": "Koffing",
        "min": 19,
        "max": 20,
        "rate": 20
       },
       {
-       "name": "Rattata",
+       "name": "Grimer (Alola)",
+       "min": 19,
+       "max": 20,
+       "rate": 20
+      },
+      {
+       "name": "Zubat",
        "min": 19,
        "max": 20,
        "rate": 10
       },
       {
-       "name": "Zubat",
+       "name": "Rattata",
        "min": 19,
        "max": 20,
        "rate": 10
@@ -2175,19 +2162,25 @@
        "rate": 10
       },
       {
-       "name": "Spinarak",
-       "min": 19,
-       "max": 20,
-       "rate": 10
-      },
-      {
        "name": "Gastly",
        "min": 19,
        "max": 20,
        "rate": 5
       },
       {
-       "name": "Slowpoke",
+       "name": "Spinarak",
+       "min": 19,
+       "max": 20,
+       "rate": 5
+      },
+      {
+       "name": "Wooper (Paldea)",
+       "min": 19,
+       "max": 20,
+       "rate": 5
+      },
+      {
+       "name": "Rattata (Alola)",
        "min": 19,
        "max": 20,
        "rate": 5
@@ -2201,13 +2194,7 @@
        "name": "Grimer",
        "min": 25,
        "max": 35,
-       "rate": 60
-      },
-      {
-       "name": "Stunfisk",
-       "min": 25,
-       "max": 35,
-       "rate": 30
+       "rate": 90
       },
       {
        "name": "Palpitoad",
@@ -2239,7 +2226,7 @@
        "rate": 30
       },
       {
-       "name": "Seismitoad",
+       "name": "Stunfisk (Galar)",
        "min": 35,
        "max": 45,
        "rate": 5
@@ -2275,14 +2262,26 @@
       {
        "name": "Grimer",
        "min": 10,
-       "max": 23,
-       "rate": 65
+       "max": 20,
+       "rate": 60
       },
       {
        "name": "Stunfisk",
        "min": 17,
        "max": 23,
        "rate": 35
+      },
+      {
+       "name": "Grimer",
+       "min": 5,
+       "max": 25,
+       "rate": 4
+      },
+      {
+       "name": "Grimer",
+       "min": 20,
+       "max": 20,
+       "rate": 1
       }
      ]
     }
@@ -2365,7 +2364,13 @@
        "name": "Diglett",
        "min": 19,
        "max": 20,
-       "rate": 40
+       "rate": 20
+      },
+      {
+       "name": "Diglett (Alola)",
+       "min": 19,
+       "max": 20,
+       "rate": 20
       },
       {
        "name": "Onix",
@@ -2428,7 +2433,7 @@
        "rate": 10
       },
       {
-       "name": "Sandshrew",
+       "name": "Helioptile",
        "min": 19,
        "max": 20,
        "rate": 10
@@ -2485,13 +2490,19 @@
        "name": "Tentacool",
        "min": 15,
        "max": 35,
-       "rate": 70
+       "rate": 60
       },
       {
-       "name": "Frillish",
+       "name": "Wimpod",
        "min": 15,
        "max": 35,
        "rate": 30
+      },
+      {
+       "name": "Tentacool",
+       "min": 20,
+       "max": 40,
+       "rate": 10
       }
      ]
     },
@@ -2529,8 +2540,8 @@
       },
       {
        "name": "Clamperl",
-       "min": 15,
-       "max": 25,
+       "min": 10,
+       "max": 20,
        "rate": 10
       }
      ]
@@ -2581,13 +2592,13 @@
        "rate": 20
       },
       {
-       "name": "Sandile",
+       "name": "Vullaby",
        "min": 22,
        "max": 24,
        "rate": 10
       },
       {
-       "name": "Vullaby",
+       "name": "Sandile",
        "min": 22,
        "max": 24,
        "rate": 10
@@ -2605,7 +2616,7 @@
        "rate": 10
       },
       {
-       "name": "Cacnea",
+       "name": "Capsakid",
        "min": 22,
        "max": 24,
        "rate": 5
@@ -2617,13 +2628,13 @@
        "rate": 5
       },
       {
-       "name": "Trapinch",
+       "name": "Silicobra",
        "min": 22,
        "max": 24,
        "rate": 5
       },
       {
-       "name": "Elgyem",
+       "name": "Trapinch",
        "min": 22,
        "max": 24,
        "rate": 5
@@ -2682,7 +2693,7 @@
        "rate": 5
       },
       {
-       "name": "Trapinch",
+       "name": "Sandygast",
        "min": 24,
        "max": 26,
        "rate": 5
@@ -2745,13 +2756,19 @@
        "name": "Chingling",
        "min": 23,
        "max": 25,
-       "rate": 10
+       "rate": 5
       },
       {
        "name": "Cubone",
        "min": 23,
        "max": 25,
        "rate": 10
+      },
+      {
+       "name": "Gimmighoul",
+       "min": 23,
+       "max": 25,
+       "rate": 5
       }
      ]
     },
@@ -2783,13 +2800,13 @@
        "rate": 10
       },
       {
-       "name": "Bronzor",
+       "name": "Chingling",
        "min": 24,
        "max": 26,
        "rate": 10
       },
       {
-       "name": "Chingling",
+       "name": "Bronzor",
        "min": 24,
        "max": 26,
        "rate": 10
@@ -2798,13 +2815,19 @@
        "name": "Onix",
        "min": 24,
        "max": 26,
-       "rate": 10
+       "rate": 5
       },
       {
        "name": "Litwick",
        "min": 24,
        "max": 26,
        "rate": 10
+      },
+      {
+       "name": "Charcadet",
+       "min": 24,
+       "max": 26,
+       "rate": 5
       }
      ]
     }
@@ -2896,7 +2919,7 @@
        "rate": 20
       },
       {
-       "name": "Ponyta",
+       "name": "Ponyta (Galar)",
        "min": 27,
        "max": 30,
        "rate": 10
@@ -2914,7 +2937,7 @@
        "rate": 10
       },
       {
-       "name": "Farfetch'd",
+       "name": "Farfetch'd (Galar)",
        "min": 27,
        "max": 30,
        "rate": 10
@@ -3024,12 +3047,6 @@
        "rate": 5
       },
       {
-       "name": "Tympole",
-       "min": 27,
-       "max": 29,
-       "rate": 5
-      },
-      {
        "name": "Minccino",
        "min": 27,
        "max": 29,
@@ -3037,6 +3054,12 @@
       },
       {
        "name": "Pineco",
+       "min": 27,
+       "max": 29,
+       "rate": 5
+      },
+      {
+       "name": "Tympole",
        "min": 27,
        "max": 29,
        "rate": 5
@@ -3124,16 +3147,16 @@
        "rate": 10
       },
       {
-       "name": "Cinccino",
-       "min": 27,
-       "max": 30,
-       "rate": 10
-      },
-      {
        "name": "Lickilicky",
        "min": 27,
        "max": 30,
        "rate": 5
+      },
+      {
+       "name": "Cinccino",
+       "min": 27,
+       "max": 30,
+       "rate": 10
       }
      ]
     }
@@ -3178,7 +3201,7 @@
        "rate": 10
       },
       {
-       "name": "Roselia",
+       "name": "Voltorb (Hisui)",
        "min": 27,
        "max": 29,
        "rate": 10
@@ -3196,14 +3219,14 @@
        "rate": 5
       },
       {
-       "name": "Scyther",
-       "min": 27,
+       "name": "Zarude",
+       "min": 29,
        "max": 29,
        "rate": 5
       },
       {
-       "name": "Misdreavus",
-       "min": 27,
+       "name": "Zeraora",
+       "min": 29,
        "max": 29,
        "rate": 5
       }
@@ -3308,13 +3331,13 @@
        "rate": 10
       },
       {
-       "name": "Vespiquen",
+       "name": "Nidorina",
        "min": 27,
        "max": 30,
        "rate": 5
       },
       {
-       "name": "Nidorina",
+       "name": "Vespiquen",
        "min": 27,
        "max": 30,
        "rate": 5
@@ -3349,9 +3372,9 @@
        "rate": 30
       },
       {
-       "name": "Buizel",
-       "min": 29,
-       "max": 31,
+       "name": "Dewpider",
+       "min": 24,
+       "max": 28,
        "rate": 10
       }
      ]
@@ -3459,62 +3482,68 @@
       {
        "name": "Deerling",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 20
       },
       {
        "name": "Foongus",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 20
       },
       {
        "name": "Yanma",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 10
       },
       {
        "name": "Shelmet",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
        "name": "Karrablast",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
        "name": "Pidgeotto",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 10
       },
       {
-       "name": "Tranquill",
-       "min": 32,
-       "max": 36,
-       "rate": 5
-      },
-      {
-       "name": "Marill",
-       "min": 32,
-       "max": 36,
-       "rate": 5
-      },
-      {
        "name": "Bonsly",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 5
       },
       {
        "name": "Mime Jr.",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 5
+      },
+      {
+       "name": "Marill",
+       "min": 32,
+       "max": 35,
+       "rate": 4
+      },
+      {
+       "name": "Goomy",
+       "min": 32,
+       "max": 35,
+       "rate": 5
+      },
+      {
+       "name": "Marill",
+       "min": 33,
+       "max": 36,
+       "rate": 1
       }
      ]
     },
@@ -3524,62 +3553,74 @@
       {
        "name": "Deerling",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 20
       },
       {
        "name": "Foongus",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 20
       },
       {
        "name": "Tranquill",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 10
       },
       {
        "name": "Shelmet",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
        "name": "Karrablast",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
        "name": "Pidgeotto",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 10
       },
       {
        "name": "Sudowoodo",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 5
       },
       {
        "name": "Mr. Mime",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 5
       },
       {
        "name": "Marill",
        "min": 32,
-       "max": 36,
-       "rate": 5
+       "max": 35,
+       "rate": 4
       },
       {
        "name": "Yanma",
        "min": 32,
+       "max": 35,
+       "rate": 4
+      },
+      {
+       "name": "Marill",
+       "min": 33,
        "max": 36,
-       "rate": 5
+       "rate": 1
+      },
+      {
+       "name": "Yanma",
+       "min": 33,
+       "max": 36,
+       "rate": 1
       }
      ]
     },
@@ -3589,42 +3630,48 @@
       {
        "name": "Audino",
        "min": 32,
-       "max": 36,
-       "rate": 60
+       "max": 35,
+       "rate": 40
       },
       {
        "name": "Emolga",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
        "name": "Dunsparce",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
-       "name": "Unfezant",
-       "min": 32,
+       "name": "Audino",
+       "min": 33,
        "max": 36,
-       "rate": 5
+       "rate": 20
       },
       {
        "name": "Castform",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 5
       },
       {
        "name": "Yanmega",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 5
       },
       {
        "name": "Azumarill",
-       "min": 32,
+       "min": 33,
+       "max": 36,
+       "rate": 5
+      },
+      {
+       "name": "Unfezant",
+       "min": 33,
        "max": 36,
        "rate": 5
       }
@@ -3717,7 +3764,13 @@
        "name": "Barboach",
        "min": 30,
        "max": 30,
-       "rate": 10
+       "rate": 6
+      },
+      {
+       "name": "Barboach",
+       "min": 25,
+       "max": 35,
+       "rate": 4
       }
      ]
     }
@@ -3738,62 +3791,68 @@
       {
        "name": "Deerling",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 20
       },
       {
        "name": "Foongus",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 20
       },
       {
        "name": "Vanillite",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 10
       },
       {
        "name": "Shelmet",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
        "name": "Karrablast",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
        "name": "Snover",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 10
       },
       {
-       "name": "Yanma",
-       "min": 32,
-       "max": 36,
-       "rate": 5
-      },
-      {
-       "name": "Marill",
-       "min": 32,
-       "max": 36,
-       "rate": 5
-      },
-      {
        "name": "Bonsly",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 5
       },
       {
        "name": "Mime Jr.",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 5
+      },
+      {
+       "name": "Marill",
+       "min": 32,
+       "max": 35,
+       "rate": 4
+      },
+      {
+       "name": "Goomy",
+       "min": 32,
+       "max": 35,
+       "rate": 5
+      },
+      {
+       "name": "Marill",
+       "min": 33,
+       "max": 36,
+       "rate": 1
       }
      ]
     },
@@ -3803,62 +3862,74 @@
       {
        "name": "Deerling",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 20
       },
       {
        "name": "Foongus",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 20
       },
       {
        "name": "Vanillite",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 10
       },
       {
        "name": "Shelmet",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
        "name": "Karrablast",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
        "name": "Snover",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 10
       },
       {
        "name": "Sudowoodo",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 5
       },
       {
        "name": "Mr. Mime",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 5
       },
       {
        "name": "Marill",
        "min": 32,
-       "max": 36,
-       "rate": 5
+       "max": 35,
+       "rate": 4
       },
       {
        "name": "Yanma",
        "min": 32,
+       "max": 35,
+       "rate": 4
+      },
+      {
+       "name": "Marill",
+       "min": 33,
        "max": 36,
-       "rate": 5
+       "rate": 1
+      },
+      {
+       "name": "Yanma",
+       "min": 33,
+       "max": 36,
+       "rate": 1
       }
      ]
     },
@@ -3868,36 +3939,42 @@
       {
        "name": "Audino",
        "min": 32,
-       "max": 36,
-       "rate": 65
+       "max": 35,
+       "rate": 40
       },
       {
        "name": "Emolga",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
        "name": "Dunsparce",
        "min": 32,
-       "max": 36,
+       "max": 35,
        "rate": 10
       },
       {
-       "name": "Azumarill",
-       "min": 32,
+       "name": "Audino",
+       "min": 33,
        "max": 36,
-       "rate": 5
+       "rate": 25
       },
       {
        "name": "Castform",
-       "min": 32,
+       "min": 33,
        "max": 36,
        "rate": 5
       },
       {
        "name": "Yanmega",
-       "min": 32,
+       "min": 33,
+       "max": 36,
+       "rate": 5
+      },
+      {
+       "name": "Azumarill",
+       "min": 33,
        "max": 36,
        "rate": 5
       }
@@ -3952,13 +4029,13 @@
      "method": "Fish, Normal",
      "encounters": [
       {
-       "name": "Chinchou",
+       "name": "Tentacool",
        "min": 25,
        "max": 25,
        "rate": 60
       },
       {
-       "name": "Tentacool",
+       "name": "Chinchou",
        "min": 25,
        "max": 25,
        "rate": 30
@@ -3990,7 +4067,13 @@
        "name": "Barboach",
        "min": 30,
        "max": 30,
-       "rate": 10
+       "rate": 6
+      },
+      {
+       "name": "Barboach",
+       "min": 25,
+       "max": 35,
+       "rate": 4
       }
      ]
     }
@@ -4045,16 +4128,16 @@
        "rate": 10
       },
       {
-       "name": "Onix",
-       "min": 33,
-       "max": 36,
-       "rate": 10
-      },
-      {
        "name": "Azumarill",
        "min": 33,
        "max": 36,
        "rate": 5
+      },
+      {
+       "name": "Onix",
+       "min": 33,
+       "max": 36,
+       "rate": 10
       },
       {
        "name": "Palpitoad",
@@ -4167,56 +4250,56 @@
      "encounters": [
       {
        "name": "Boldore",
-       "min": 31,
-       "max": 34,
+       "min": 37,
+       "max": 40,
        "rate": 20
       },
       {
        "name": "Woobat",
-       "min": 29,
-       "max": 32,
+       "min": 35,
+       "max": 38,
        "rate": 20
       },
       {
        "name": "Gurdurr",
-       "min": 31,
-       "max": 34,
+       "min": 37,
+       "max": 37,
        "rate": 10
       },
       {
        "name": "Loudred",
-       "min": 31,
-       "max": 34,
+       "min": 37,
+       "max": 40,
        "rate": 10
       },
       {
        "name": "Graveler",
-       "min": 31,
-       "max": 34,
+       "min": 37,
+       "max": 40,
        "rate": 10
       },
       {
        "name": "Rhyhorn",
-       "min": 31,
-       "max": 34,
+       "min": 37,
+       "max": 40,
        "rate": 10
       },
       {
        "name": "Meditite",
-       "min": 29,
-       "max": 32,
+       "min": 35,
+       "max": 38,
        "rate": 10
       },
       {
        "name": "Parasect",
-       "min": 31,
-       "max": 34,
+       "min": 37,
+       "max": 40,
        "rate": 5
       },
       {
        "name": "Clefairy",
-       "min": 29,
-       "max": 32,
+       "min": 35,
+       "max": 38,
        "rate": 5
       }
      ]
@@ -4225,28 +4308,28 @@
      "method": "Cave, Dust Cloud",
      "encounters": [
       {
-       "name": "Drilbur",
-       "min": 30,
-       "max": 32,
-       "rate": 50
-      },
-      {
        "name": "Onix",
-       "min": 30,
-       "max": 32,
+       "min": 36,
+       "max": 41,
        "rate": 20
       },
       {
        "name": "Nincada",
-       "min": 30,
-       "max": 32,
+       "min": 36,
+       "max": 41,
        "rate": 20
       },
       {
        "name": "Dugtrio",
-       "min": 32,
-       "max": 34,
+       "min": 38,
+       "max": 40,
        "rate": 10
+      },
+      {
+       "name": "Drilbur",
+       "min": 36,
+       "max": 41,
+       "rate": 50
       }
      ]
     }
@@ -4262,68 +4345,68 @@
      "encounters": [
       {
        "name": "Boldore",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 20
       },
       {
        "name": "Gurdurr",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 20
       },
       {
        "name": "Rhyhorn",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 10
       },
       {
        "name": "Machoke",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 10
       },
       {
        "name": "Loudred",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 10
       },
       {
        "name": "Graveler",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 10
       },
       {
        "name": "Mawile",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 5
       },
       {
        "name": "Sableye",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 5
       },
       {
        "name": "Gabite",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 4
       },
       {
        "name": "Pupitar",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 4
       },
       {
        "name": "Swoobat",
-       "min": 32,
-       "max": 36,
+       "min": 38,
+       "max": 42,
        "rate": 2
       }
      ]
@@ -4332,28 +4415,28 @@
      "method": "Cave, Dust Cloud",
      "encounters": [
       {
-       "name": "Excadrill",
-       "min": 32,
-       "max": 34,
-       "rate": 50
-      },
-      {
        "name": "Onix",
-       "min": 30,
-       "max": 32,
+       "min": 39,
+       "max": 41,
        "rate": 20
       },
       {
        "name": "Nincada",
-       "min": 30,
-       "max": 32,
+       "min": 39,
+       "max": 41,
        "rate": 20
       },
       {
        "name": "Dugtrio",
-       "min": 32,
-       "max": 34,
+       "min": 39,
+       "max": 41,
        "rate": 10
+      },
+      {
+       "name": "Excadrill",
+       "min": 39,
+       "max": 41,
+       "rate": 50
       }
      ]
     },
@@ -4361,7 +4444,7 @@
      "method": "Surf, Normal",
      "encounters": [
       {
-       "name": "Shellos (West)",
+       "name": "Shellos",
        "min": 25,
        "max": 35,
        "rate": 70
@@ -4371,12 +4454,6 @@
        "min": 25,
        "max": 35,
        "rate": 30
-      },
-      {
-       "name": "Gastrodon (West)",
-       "min": 25,
-       "max": 35,
-       "rate": 10
       }
      ]
     },
@@ -4384,7 +4461,7 @@
      "method": "Surf, Dark Spot",
      "encounters": [
       {
-       "name": "Shellos (West)",
+       "name": "Shellos",
        "min": 25,
        "max": 35,
        "rate": 60
@@ -4394,6 +4471,12 @@
        "min": 25,
        "max": 35,
        "rate": 30
+      },
+      {
+       "name": "Gastrodon",
+       "min": 25,
+       "max": 35,
+       "rate": 10
       }
      ]
     },
@@ -4448,28 +4531,10 @@
        "rate": 20
       },
       {
-       "name": "Unown-H",
+       "name": "Unown",
        "min": 30,
        "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-O",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-E",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-N",
-       "min": 30,
-       "max": 30,
-       "rate": 10
+       "rate": 50
       },
       {
        "name": "Lileep",
@@ -4479,18 +4544,6 @@
       },
       {
        "name": "Anorith",
-       "min": 30,
-       "max": 30,
-       "rate": 5
-      },
-      {
-       "name": "Unown-A",
-       "min": 30,
-       "max": 30,
-       "rate": 5
-      },
-      {
-       "name": "Unown-Z",
        "min": 30,
        "max": 30,
        "rate": 5
@@ -4513,28 +4566,10 @@
        "rate": 20
       },
       {
-       "name": "Unown-K",
+       "name": "Unown",
        "min": 30,
        "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-N",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-T",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-O",
-       "min": 30,
-       "max": 30,
-       "rate": 10
+       "rate": 50
       },
       {
        "name": "Omanyte",
@@ -4544,18 +4579,6 @@
       },
       {
        "name": "Kabuto",
-       "min": 30,
-       "max": 30,
-       "rate": 5
-      },
-      {
-       "name": "Unown-C",
-       "min": 30,
-       "max": 30,
-       "rate": 5
-      },
-      {
-       "name": "Unown-X",
        "min": 30,
        "max": 30,
        "rate": 5
@@ -4578,28 +4601,10 @@
        "rate": 20
       },
       {
-       "name": "Unown-S",
+       "name": "Unown",
        "min": 30,
        "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-N",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-O",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-H",
-       "min": 30,
-       "max": 30,
-       "rate": 10
+       "rate": 50
       },
       {
        "name": "Cranidos",
@@ -4612,18 +4617,6 @@
        "min": 30,
        "max": 30,
        "rate": 5
-      },
-      {
-       "name": "Unown-B",
-       "min": 30,
-       "max": 30,
-       "rate": 5
-      },
-      {
-       "name": "Unown-Y",
-       "min": 30,
-       "max": 30,
-       "rate": 5
       }
      ]
     },
@@ -4631,40 +4624,22 @@
      "method": "Floor, Furthest Room Left",
      "encounters": [
       {
-       "name": "Krokorok",
-       "min": 34,
-       "max": 37,
-       "rate": 20
-      },
-      {
        "name": "Cofagrigus",
        "min": 34,
        "max": 37,
        "rate": 20
       },
       {
-       "name": "Unown-I",
-       "min": 30,
-       "max": 30,
-       "rate": 10
+       "name": "Krokorok",
+       "min": 34,
+       "max": 37,
+       "rate": 20
       },
       {
-       "name": "Unown-S",
+       "name": "Unown",
        "min": 30,
        "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-H",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-U",
-       "min": 30,
-       "max": 30,
-       "rate": 10
+       "rate": 50
       },
       {
        "name": "Tirtouga",
@@ -4674,18 +4649,6 @@
       },
       {
        "name": "Archen",
-       "min": 30,
-       "max": 30,
-       "rate": 5
-      },
-      {
-       "name": "Unown-D",
-       "min": 30,
-       "max": 30,
-       "rate": 5
-      },
-      {
-       "name": "Unown-W",
        "min": 30,
        "max": 30,
        "rate": 5
@@ -4702,34 +4665,10 @@
        "rate": 40
       },
       {
-       "name": "Unown-F",
+       "name": "Unown",
        "min": 30,
        "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-P",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-G",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-Q",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-M",
-       "min": 30,
-       "max": 30,
-       "rate": 10
+       "rate": 50
       },
       {
        "name": "Aerodactyl",
@@ -4738,7 +4677,7 @@
        "rate": 5
       },
       {
-       "name": "Darmanitan (Zen)",
+       "name": "Darmanitan",
        "min": 35,
        "max": 35,
        "rate": 5
@@ -4755,40 +4694,22 @@
        "rate": 40
       },
       {
-       "name": "Unown-J",
+       "name": "Unown",
        "min": 30,
        "max": 30,
-       "rate": 10
+       "rate": 52
       },
       {
-       "name": "Unown-R",
+       "name": "Tyrunt",
        "min": 30,
        "max": 30,
-       "rate": 10
+       "rate": 4
       },
       {
-       "name": "Unown-L",
+       "name": "Amaura",
        "min": 30,
        "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-V",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-!",
-       "min": 30,
-       "max": 30,
-       "rate": 10
-      },
-      {
-       "name": "Unown-?",
-       "min": 30,
-       "max": 30,
-       "rate": 10
+       "rate": 4
       },
       {
        "name": "Volcarona",
@@ -4822,10 +4743,10 @@
        "rate": 20
       },
       {
-       "name": "Kangaskhan",
+       "name": "Axew",
        "min": 34,
        "max": 36,
-       "rate": 15
+       "rate": 10
       },
       {
        "name": "Wynaut",
@@ -4834,7 +4755,7 @@
        "rate": 10
       },
       {
-       "name": "Axew",
+       "name": "Kangaskhan",
        "min": 34,
        "max": 36,
        "rate": 10
@@ -4859,6 +4780,12 @@
       },
       {
        "name": "Larvitar",
+       "min": 34,
+       "max": 36,
+       "rate": 5
+      },
+      {
+       "name": "Jangmo-o",
        "min": 34,
        "max": 36,
        "rate": 5
@@ -4892,10 +4819,10 @@
        "rate": 20
       },
       {
-       "name": "Kangaskhan",
+       "name": "Axew",
        "min": 35,
        "max": 37,
-       "rate": 15
+       "rate": 10
       },
       {
        "name": "Wobbuffet",
@@ -4904,7 +4831,7 @@
        "rate": 10
       },
       {
-       "name": "Axew",
+       "name": "Kangaskhan",
        "min": 35,
        "max": 37,
        "rate": 10
@@ -4929,6 +4856,12 @@
       },
       {
        "name": "Larvitar",
+       "min": 35,
+       "max": 37,
+       "rate": 5
+      },
+      {
+       "name": "Jangmo-o",
        "min": 35,
        "max": 37,
        "rate": 5
@@ -4962,10 +4895,10 @@
        "rate": 20
       },
       {
-       "name": "Kangaskhan",
+       "name": "Axew",
        "min": 36,
        "max": 38,
-       "rate": 15
+       "rate": 10
       },
       {
        "name": "Wobbuffet",
@@ -4974,10 +4907,10 @@
        "rate": 10
       },
       {
-       "name": "Axew",
+       "name": "Kangaskhan",
        "min": 36,
        "max": 38,
-       "rate": 10
+       "rate": 15
       },
       {
        "name": "Ursaring",
@@ -5006,7 +4939,7 @@
      ]
     },
     {
-     "method": "Cave, Dust Cloud",
+     "method": "Cave, Dust Cloud, 3F",
      "encounters": [
       {
        "name": "Kangaskhan",
@@ -5098,16 +5031,28 @@
        "rate": 50
       },
       {
+       "name": "Geodude (Alola)",
+       "min": 32,
+       "max": 36,
+       "rate": 20
+      },
+      {
        "name": "Geodude",
        "min": 32,
        "max": 36,
-       "rate": 30
+       "rate": 10
       },
       {
        "name": "Diglett",
        "min": 32,
        "max": 36,
-       "rate": 20
+       "rate": 15
+      },
+      {
+       "name": "Dugtrio",
+       "min": 32,
+       "max": 36,
+       "rate": 5
       }
      ]
     },
@@ -5151,12 +5096,6 @@
        "rate": 10
       },
       {
-       "name": "Tynamo",
-       "min": 36,
-       "max": 40,
-       "rate": 6
-      },
-      {
        "name": "Heatmor",
        "min": 36,
        "max": 40,
@@ -5173,6 +5112,12 @@
        "min": 36,
        "max": 40,
        "rate": 4
+      },
+      {
+       "name": "Tynamo",
+       "min": 36,
+       "max": 40,
+       "rate": 6
       }
      ]
     },
@@ -5239,12 +5184,6 @@
        "rate": 10
       },
       {
-       "name": "Tynamo",
-       "min": 38,
-       "max": 41,
-       "rate": 6
-      },
-      {
        "name": "Heatmor",
        "min": 38,
        "max": 41,
@@ -5261,6 +5200,12 @@
        "min": 38,
        "max": 41,
        "rate": 4
+      },
+      {
+       "name": "Tynamo",
+       "min": 38,
+       "max": 41,
+       "rate": 6
       }
      ]
     },
@@ -5660,6 +5605,12 @@
        "rate": 10
       },
       {
+       "name": "Chimecho",
+       "min": 39,
+       "max": 42,
+       "rate": 5
+      },
+      {
        "name": "Bronzor",
        "min": 39,
        "max": 42,
@@ -5672,13 +5623,7 @@
        "rate": 5
       },
       {
-       "name": "Misdreavus",
-       "min": 39,
-       "max": 42,
-       "rate": 5
-      },
-      {
-       "name": "Chimecho",
+       "name": "Dreepy",
        "min": 39,
        "max": 42,
        "rate": 5
@@ -5743,7 +5688,7 @@
        "rate": 5
       },
       {
-       "name": "Shuppet",
+       "name": "Dreepy",
        "min": 40,
        "max": 43,
        "rate": 5
@@ -5772,7 +5717,7 @@
        "rate": 10
       },
       {
-       "name": "Marowak",
+       "name": "Marowak (Alola)",
        "min": 40,
        "max": 43,
        "rate": 10
@@ -5796,6 +5741,12 @@
        "rate": 5
       },
       {
+       "name": "Banette",
+       "min": 40,
+       "max": 43,
+       "rate": 5
+      },
+      {
        "name": "Misdreavus",
        "min": 40,
        "max": 43,
@@ -5803,12 +5754,6 @@
       },
       {
        "name": "Murkrow",
-       "min": 40,
-       "max": 43,
-       "rate": 5
-      },
-      {
-       "name": "Banette",
        "min": 40,
        "max": 43,
        "rate": 5
@@ -5873,7 +5818,7 @@
        "rate": 5
       },
       {
-       "name": "Bronzong",
+       "name": "Oricorio (Sensu)",
        "min": 40,
        "max": 44,
        "rate": 5
@@ -5909,7 +5854,7 @@
        "rate": 10
       },
       {
-       "name": "Skorupi",
+       "name": "Growlithe (Hisui)",
        "min": 39,
        "max": 42,
        "rate": 10
@@ -5974,25 +5919,25 @@
        "rate": 20
       },
       {
-       "name": "Drapion",
-       "min": 40,
-       "max": 43,
-       "rate": 10
-      },
-      {
        "name": "Rhydon",
        "min": 40,
        "max": 43,
        "rate": 10
       },
       {
-       "name": "Skarmory",
+       "name": "Drapion",
        "min": 40,
        "max": 43,
        "rate": 10
       },
       {
        "name": "Cacturne",
+       "min": 40,
+       "max": 43,
+       "rate": 10
+      },
+      {
+       "name": "Skarmory",
        "min": 40,
        "max": 43,
        "rate": 10
@@ -6009,10 +5954,16 @@
        "rate": 70
       },
       {
+       "name": "Oricorio (Baile)",
+       "min": 40,
+       "max": 43,
+       "rate": 10
+      },
+      {
        "name": "Cacturne",
        "min": 40,
        "max": 43,
-       "rate": 30
+       "rate": 20
       }
      ]
     }
@@ -6039,7 +5990,7 @@
        "rate": 20
       },
       {
-       "name": "Spoink",
+       "name": "Sizzlipede",
        "min": 40,
        "max": 43,
        "rate": 10
@@ -6105,61 +6056,61 @@
       {
        "name": "Mienfoo",
        "min": 41,
-       "max": 44,
+       "max": 45,
        "rate": 20
       },
       {
        "name": "Quagsire",
        "min": 41,
-       "max": 44,
+       "max": 45,
        "rate": 20
       },
       {
        "name": "Grumpig",
        "min": 41,
-       "max": 44,
+       "max": 45,
        "rate": 10
       },
       {
        "name": "Camerupt",
        "min": 41,
-       "max": 44,
+       "max": 45,
        "rate": 10
       },
       {
        "name": "Boldore",
        "min": 41,
-       "max": 44,
+       "max": 45,
        "rate": 10
       },
       {
        "name": "Druddigon",
        "min": 41,
-       "max": 44,
+       "max": 45,
        "rate": 10
       },
       {
        "name": "Magcargo",
        "min": 41,
-       "max": 44,
+       "max": 45,
        "rate": 5
       },
       {
        "name": "Golduck",
        "min": 41,
-       "max": 44,
+       "max": 45,
        "rate": 5
       },
       {
        "name": "Throh",
        "min": 41,
-       "max": 44,
+       "max": 45,
        "rate": 5
       },
       {
-       "name": "Sawk",
+       "name": "Sizzlipede",
        "min": 41,
-       "max": 44,
+       "max": 45,
        "rate": 5
       }
      ]
@@ -6225,7 +6176,7 @@
        "name": "Kirlia",
        "min": 40,
        "max": 43,
-       "rate": 10
+       "rate": 5
       },
       {
        "name": "Bronzong",
@@ -6235,6 +6186,12 @@
       },
       {
        "name": "Spiritomb",
+       "min": 40,
+       "max": 43,
+       "rate": 5
+      },
+      {
+       "name": "Zorua (Hisui)",
        "min": 40,
        "max": 43,
        "rate": 5
@@ -6284,7 +6241,7 @@
        "name": "Kirlia",
        "min": 40,
        "max": 43,
-       "rate": 10
+       "rate": 5
       },
       {
        "name": "Bronzong",
@@ -6294,6 +6251,12 @@
       },
       {
        "name": "Spiritomb",
+       "min": 40,
+       "max": 43,
+       "rate": 5
+      },
+      {
+       "name": "Zorua (Hisui)",
        "min": 40,
        "max": 43,
        "rate": 5
@@ -6340,7 +6303,7 @@
        "rate": 60
       },
       {
-       "name": "Basculin (Red-Striped)",
+       "name": "Basculin (Blue-Striped)",
        "min": 40,
        "max": 46,
        "rate": 30
@@ -6453,52 +6416,6 @@
      ]
     },
     {
-     "method": "Surf, Normal, Bay (Winter)",
-     "encounters": [
-      {
-       "name": "Frillish",
-       "min": 40,
-       "max": 46,
-       "rate": 60
-      },
-      {
-       "name": "Spheal",
-       "min": 40,
-       "max": 46,
-       "rate": 30
-      },
-      {
-       "name": "Wailmer",
-       "min": 40,
-       "max": 46,
-       "rate": 10
-      }
-     ]
-    },
-    {
-     "method": "Surf, Dark Spot, Bay (Winter)",
-     "encounters": [
-      {
-       "name": "Sealeo",
-       "min": 40,
-       "max": 46,
-       "rate": 65
-      },
-      {
-       "name": "Wailmer",
-       "min": 40,
-       "max": 46,
-       "rate": 30
-      },
-      {
-       "name": "Wailord",
-       "min": 40,
-       "max": 46,
-       "rate": 5
-      }
-     ]
-    },
-    {
      "method": "Fish, Normal, Undella Bay",
      "encounters": [
       {
@@ -6548,18 +6465,56 @@
      "method": "Special Event, Undella Bay",
      "encounters": [
       {
-       "name": "Jellicent ♂",
+       "name": "Jellicent",
        "min": 45,
        "max": 45,
-       "rate": null,
-       "version": "B2"
+       "rate": null
+      }
+     ]
+    },
+    {
+     "method": "Surf, Normal, Bay (Winter)",
+     "encounters": [
+      {
+       "name": "Frillish",
+       "min": 40,
+       "max": 46,
+       "rate": 60
       },
       {
-       "name": "Jellicent ♀",
-       "min": 45,
-       "max": 45,
-       "rate": null,
-       "version": "W2"
+       "name": "Spheal",
+       "min": 40,
+       "max": 46,
+       "rate": 30
+      },
+      {
+       "name": "Wailmer",
+       "min": 40,
+       "max": 46,
+       "rate": 10
+      }
+     ]
+    },
+    {
+     "method": "Surf, Dark Spot, Bay (Winter)",
+     "encounters": [
+      {
+       "name": "Spheal",
+       "min": 40,
+       "max": 46,
+       "rate": 65
+      },
+      {
+       "name": "Wailmer",
+       "min": 40,
+       "max": 46,
+       "rate": 30
+      },
+      {
+       "name": "Wailord",
+       "min": 40,
+       "max": 46,
+       "rate": 5
       }
      ]
     }
@@ -6622,7 +6577,7 @@
        "rate": 5
       },
       {
-       "name": "Chansey",
+       "name": "Slowpoke (Galar)",
        "min": 41,
        "max": 44,
        "rate": 5
@@ -6642,7 +6597,7 @@
        "name": "Altaria",
        "min": 42,
        "max": 46,
-       "rate": 20
+       "rate": 25
       },
       {
        "name": "Absol",
@@ -6673,12 +6628,6 @@
        "min": 42,
        "max": 46,
        "rate": 5
-      },
-      {
-       "name": "Altaria",
-       "min": 42,
-       "max": 46,
-       "rate": 5
       }
      ]
     },
@@ -6689,7 +6638,7 @@
        "name": "Audino",
        "min": 42,
        "max": 46,
-       "rate": 80
+       "rate": 72
       },
       {
        "name": "Emolga",
@@ -6708,6 +6657,12 @@
        "min": 42,
        "max": 46,
        "rate": 5
+      },
+      {
+       "name": "Raichu (Alola)",
+       "min": 42,
+       "max": 46,
+       "rate": 8
       }
      ]
     },
@@ -6725,12 +6680,6 @@
        "min": 40,
        "max": 46,
        "rate": 30
-      },
-      {
-       "name": "Floatzel",
-       "min": 40,
-       "max": 46,
-       "rate": 10
       }
      ]
     },
@@ -6748,6 +6697,12 @@
        "min": 40,
        "max": 46,
        "rate": 30
+      },
+      {
+       "name": "Floatzel",
+       "min": 40,
+       "max": 46,
+       "rate": 10
       }
      ]
     },
@@ -6814,12 +6769,6 @@
        "rate": 10
       },
       {
-       "name": "Gloom",
-       "min": 41,
-       "max": 44,
-       "rate": 10
-      },
-      {
        "name": "Marill",
        "min": 41,
        "max": 44,
@@ -6827,6 +6776,12 @@
       },
       {
        "name": "Swablu",
+       "min": 41,
+       "max": 44,
+       "rate": 10
+      },
+      {
+       "name": "Gloom",
        "min": 41,
        "max": 44,
        "rate": 10
@@ -6879,10 +6834,10 @@
        "rate": 15
       },
       {
-       "name": "Altaria",
+       "name": "Gloom",
        "min": 42,
        "max": 46,
-       "rate": 15
+       "rate": 10
       },
       {
        "name": "Marill",
@@ -6891,10 +6846,10 @@
        "rate": 10
       },
       {
-       "name": "Gloom",
+       "name": "Altaria",
        "min": 42,
        "max": 46,
-       "rate": 10
+       "rate": 15
       },
       {
        "name": "Pineco",
@@ -6917,28 +6872,34 @@
        "name": "Audino",
        "min": 45,
        "max": 46,
-       "rate": 60
+       "rate": 50
+      },
+      {
+       "name": "Oricorio (Pa'u)",
+       "min": 42,
+       "max": 46,
+       "rate": 10
       },
       {
        "name": "Whimsicott",
-       "min": 42,
+       "min": 45,
        "max": 46,
        "rate": 10
       },
       {
-       "name": "Lilligant",
-       "min": 42,
+       "name": "Lilligant (Hisui)",
+       "min": 45,
        "max": 46,
        "rate": 10
       },
       {
-       "name": "Vileplume",
+       "name": "Emolga",
        "min": 42,
        "max": 46,
        "rate": 5
       },
       {
-       "name": "Bellossom",
+       "name": "Vileplume",
        "min": 42,
        "max": 46,
        "rate": 5
@@ -6950,7 +6911,7 @@
        "rate": 5
       },
       {
-       "name": "Emolga",
+       "name": "Bellossom",
        "min": 42,
        "max": 46,
        "rate": 5
@@ -7011,12 +6972,6 @@
        "min": 40,
        "max": 46,
        "rate": 30
-      },
-      {
-       "name": "Crawdaunt",
-       "min": 40,
-       "max": 46,
-       "rate": 10
       }
      ]
     },
@@ -7034,6 +6989,12 @@
        "min": 40,
        "max": 46,
        "rate": 30
+      },
+      {
+       "name": "Crawdaunt",
+       "min": 40,
+       "max": 46,
+       "rate": 10
       }
      ]
     }
@@ -7129,20 +7090,20 @@
      "encounters": [
       {
        "name": "Frillish",
-       "min": 40,
-       "max": 46,
+       "min": 36,
+       "max": 40,
        "rate": 60
       },
       {
        "name": "Seel",
-       "min": 40,
-       "max": 46,
+       "min": 36,
+       "max": 40,
        "rate": 30
       },
       {
        "name": "Frillish",
-       "min": 40,
-       "max": 46,
+       "min": 38,
+       "max": 40,
        "rate": 10
       }
      ]
@@ -7153,13 +7114,13 @@
       {
        "name": "Seel",
        "min": 40,
-       "max": 46,
+       "max": 40,
        "rate": 60
       },
       {
        "name": "Jellicent",
        "min": 40,
-       "max": 46,
+       "max": 40,
        "rate": 30
       },
       {
@@ -7175,21 +7136,21 @@
      "encounters": [
       {
        "name": "Luvdisc",
-       "min": 35,
-       "max": 45,
-       "rate": 70
+       "min": 40,
+       "max": 60,
+       "rate": 60
       },
       {
        "name": "Shellder",
-       "min": 30,
-       "max": 40,
+       "min": 40,
+       "max": 60,
        "rate": 30
       },
       {
-       "name": "Cloyster",
-       "min": 40,
-       "max": 50,
-       "rate": 5
+       "name": "Luvdisc",
+       "min": 50,
+       "max": 70,
+       "rate": 10
       }
      ]
     },
@@ -7199,14 +7160,26 @@
       {
        "name": "Shellder",
        "min": 40,
-       "max": 46,
+       "max": 60,
        "rate": 60
       },
       {
        "name": "Luvdisc",
        "min": 40,
-       "max": 50,
-       "rate": 35
+       "max": 60,
+       "rate": 30
+      },
+      {
+       "name": "Cloyster",
+       "min": 50,
+       "max": 70,
+       "rate": 5
+      },
+      {
+       "name": "Luvdisc",
+       "min": 50,
+       "max": 70,
+       "rate": 5
       }
      ]
     },
@@ -7345,13 +7318,19 @@
        "rate": 10
       },
       {
+       "name": "Crabrawler",
+       "min": 41,
+       "max": 44,
+       "rate": 5
+      },
+      {
        "name": "Hoppip",
        "min": 41,
        "max": 44,
-       "rate": 10
+       "rate": 5
       },
       {
-       "name": "Wingull",
+       "name": "Exeggutor (Alola)",
        "min": 41,
        "max": 44,
        "rate": 5
@@ -7398,10 +7377,16 @@
        "rate": 10
       },
       {
+       "name": "Crabrawler",
+       "min": 42,
+       "max": 45,
+       "rate": 5
+      },
+      {
        "name": "Skiploom",
        "min": 42,
        "max": 45,
-       "rate": 10
+       "rate": 5
       },
       {
        "name": "Linoone",
@@ -7462,10 +7447,16 @@
        "rate": 30
       },
       {
+       "name": "Corsola (Galar)",
+       "min": 40,
+       "max": 46,
+       "rate": 5
+      },
+      {
        "name": "Corsola",
        "min": 40,
        "max": 46,
-       "rate": 10
+       "rate": 5
       }
      ]
     },
@@ -7482,7 +7473,13 @@
        "name": "Corsola",
        "min": 40,
        "max": 46,
-       "rate": 35
+       "rate": 30
+      },
+      {
+       "name": "Corsola (Galar)",
+       "min": 40,
+       "max": 46,
+       "rate": 5
       }
      ]
     },
@@ -7506,12 +7503,6 @@
        "min": 40,
        "max": 46,
        "rate": 5
-      },
-      {
-       "name": "Starmie",
-       "min": 40,
-       "max": 46,
-       "rate": 5
       }
      ]
     },
@@ -7532,6 +7523,12 @@
       },
       {
        "name": "Luvdisc",
+       "min": 40,
+       "max": 46,
+       "rate": 5
+      },
+      {
+       "name": "Starmie",
        "min": 40,
        "max": 46,
        "rate": 5
@@ -7659,7 +7656,7 @@
        "rate": 10
       },
       {
-       "name": "Cherrim (Sunshine)",
+       "name": "Cherrim",
        "min": 44,
        "max": 46,
        "rate": 10
@@ -7697,7 +7694,7 @@
        "name": "Audino",
        "min": 44,
        "max": 46,
-       "rate": 75
+       "rate": 65
       },
       {
        "name": "Emolga",
@@ -7707,6 +7704,12 @@
       },
       {
        "name": "Dunsparce",
+       "min": 44,
+       "max": 46,
+       "rate": 10
+      },
+      {
+       "name": "Oricorio (Pom-Pom)",
        "min": 44,
        "max": 46,
        "rate": 10
@@ -7733,13 +7736,19 @@
        "name": "Exeggcute",
        "min": 45,
        "max": 47,
-       "rate": 30
+       "rate": 20
       },
       {
        "name": "Ducklett",
        "min": 46,
        "max": 48,
        "rate": 20
+      },
+      {
+       "name": "Exeggcute",
+       "min": 46,
+       "max": 48,
+       "rate": 10
       },
       {
        "name": "Bibarel",
@@ -7792,40 +7801,40 @@
        "name": "Exeggcute",
        "min": 47,
        "max": 49,
-       "rate": 40
+       "rate": 30
       },
       {
-       "name": "Bibarel",
+       "name": "Ducklett",
        "min": 47,
        "max": 49,
        "rate": 20
       },
       {
-       "name": "Marill",
+       "name": "Bibarel",
        "min": 47,
        "max": 49,
        "rate": 10
       },
       {
-       "name": "Braviary",
+       "name": "Rufflet",
        "min": 47,
        "max": 49,
        "rate": 10
       },
       {
-       "name": "Mandibuzz",
+       "name": "Vullaby",
        "min": 47,
        "max": 49,
        "rate": 10
       },
       {
-       "name": "Zangoose",
+       "name": "Volbeat",
        "min": 47,
        "max": 49,
        "rate": 5
       },
       {
-       "name": "Seviper",
+       "name": "Illumise",
        "min": 47,
        "max": 49,
        "rate": 5
@@ -7893,12 +7902,6 @@
        "min": 42,
        "max": 48,
        "rate": 30
-      },
-      {
-       "name": "Lapras",
-       "min": 42,
-       "max": 48,
-       "rate": 5
       }
      ]
     },
@@ -7921,7 +7924,7 @@
        "name": "Azumarill",
        "min": 42,
        "max": 48,
-       "rate": 5
+       "rate": 10
       }
      ]
     },
@@ -8263,13 +8266,13 @@
        "rate": 5
       },
       {
-       "name": "Kirlia",
+       "name": "Weezing (Galar)",
        "min": 49,
        "max": 51,
        "rate": 5
       },
       {
-       "name": "Munchlax",
+       "name": "Kirlia",
        "min": 49,
        "max": 51,
        "rate": 5
@@ -8345,13 +8348,13 @@
        "rate": 20
       },
       {
-       "name": "Gothitelle",
+       "name": "Reuniclus",
        "min": 53,
        "max": 56,
        "rate": 5
       },
       {
-       "name": "Reuniclus",
+       "name": "Gothitelle",
        "min": 53,
        "max": 56,
        "rate": 5
@@ -8384,7 +8387,7 @@
        "rate": 30
       },
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 50,
        "max": 55,
        "rate": 10
@@ -8401,7 +8404,7 @@
        "rate": 60
       },
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 50,
        "max": 55,
        "rate": 30
@@ -8444,13 +8447,19 @@
        "name": "Cloyster",
        "min": 50,
        "max": 55,
-       "rate": 70
+       "rate": 60
       },
       {
        "name": "Relicanth",
        "min": 50,
        "max": 55,
        "rate": 30
+      },
+      {
+       "name": "Dhelmise",
+       "min": 50,
+       "max": 55,
+       "rate": 10
       }
      ]
     }
@@ -8477,7 +8486,7 @@
        "rate": 30
       },
       {
-       "name": "Tentacruel",
+       "name": "Qwilfish (Hisui)",
        "min": 50,
        "max": 55,
        "rate": 10
@@ -8490,8 +8499,14 @@
       {
        "name": "Alomomola",
        "min": 50,
+       "max": 5,
+       "rate": 60
+      },
+      {
+       "name": "Alomomola",
+       "min": 50,
        "max": 55,
-       "rate": 90
+       "rate": 30
       },
       {
        "name": "Tentacruel",
@@ -8508,7 +8523,7 @@
        "name": "Luvdisc",
        "min": 50,
        "max": 55,
-       "rate": 70
+       "rate": 60
       },
       {
        "name": "Clamperl",
@@ -8543,7 +8558,7 @@
        "name": "Luvdisc",
        "min": 50,
        "max": 55,
-       "rate": 30
+       "rate": 40
       }
      ]
     }
@@ -8691,13 +8706,7 @@
        "name": "Audino",
        "min": 54,
        "max": 58,
-       "rate": 50
-      },
-      {
-       "name": "Audino",
-       "min": 54,
-       "max": 58,
-       "rate": 20
+       "rate": 70
       },
       {
        "name": "Emolga",
@@ -8718,13 +8727,13 @@
        "rate": 5
       },
       {
-       "name": "Bellossom",
+       "name": "Mamoswine",
        "min": 54,
        "max": 58,
        "rate": 5
       },
       {
-       "name": "Mamoswine",
+       "name": "Bellossom",
        "min": 54,
        "max": 58,
        "rate": 5
@@ -8790,12 +8799,6 @@
        "min": 50,
        "max": 55,
        "rate": 30
-      },
-      {
-       "name": "Seaking",
-       "min": 50,
-       "max": 55,
-       "rate": 10
       }
      ]
     },
@@ -8813,6 +8816,12 @@
        "min": 50,
        "max": 55,
        "rate": 30
+      },
+      {
+       "name": "Seaking",
+       "min": 50,
+       "max": 55,
+       "rate": 10
       }
      ]
     }
@@ -8833,19 +8842,13 @@
        "name": "Tangela",
        "min": 53,
        "max": 56,
-       "rate": 20
+       "rate": 30
       },
       {
        "name": "Swellow",
        "min": 53,
        "max": 56,
        "rate": 20
-      },
-      {
-       "name": "Tangela",
-       "min": 53,
-       "max": 56,
-       "rate": 10
       },
       {
        "name": "Golbat",
@@ -8866,12 +8869,6 @@
        "rate": 10
       },
       {
-       "name": "Clefairy",
-       "min": 53,
-       "max": 56,
-       "rate": 10
-      },
-      {
        "name": "Vanillish",
        "min": 53,
        "max": 56,
@@ -8879,6 +8876,18 @@
       },
       {
        "name": "Piloswine",
+       "min": 53,
+       "max": 56,
+       "rate": 5
+      },
+      {
+       "name": "Sandshrew (Alola)",
+       "min": 53,
+       "max": 56,
+       "rate": 5
+      },
+      {
+       "name": "Vulpix (Alola)",
        "min": 53,
        "max": 56,
        "rate": 5
@@ -8892,19 +8901,13 @@
        "name": "Tangela",
        "min": 54,
        "max": 58,
-       "rate": 20
+       "rate": 30
       },
       {
        "name": "Swellow",
        "min": 54,
        "max": 58,
        "rate": 20
-      },
-      {
-       "name": "Tangela",
-       "min": 54,
-       "max": 58,
-       "rate": 10
       },
       {
        "name": "Golbat",
@@ -8925,12 +8928,6 @@
        "rate": 10
       },
       {
-       "name": "Clefairy",
-       "min": 54,
-       "max": 58,
-       "rate": 10
-      },
-      {
        "name": "Vanillish",
        "min": 54,
        "max": 58,
@@ -8938,6 +8935,18 @@
       },
       {
        "name": "Piloswine",
+       "min": 54,
+       "max": 58,
+       "rate": 5
+      },
+      {
+       "name": "Sandshrew (Alola)",
+       "min": 54,
+       "max": 58,
+       "rate": 5
+      },
+      {
+       "name": "Vulpix (Alola)",
        "min": 54,
        "max": 58,
        "rate": 5
@@ -8963,16 +8972,10 @@
        "name": "Mamoswine",
        "min": 54,
        "max": 58,
-       "rate": 5
+       "rate": 10
       },
       {
        "name": "Clefable",
-       "min": 54,
-       "max": 58,
-       "rate": 5
-      },
-      {
-       "name": "Crobat",
        "min": 54,
        "max": 58,
        "rate": 5
@@ -9038,13 +9041,13 @@
        "rate": 5
       },
       {
-       "name": "Solrock",
+       "name": "Lunatone",
        "min": 53,
        "max": 56,
        "rate": 5
       },
       {
-       "name": "Lunatone",
+       "name": "Solrock",
        "min": 53,
        "max": 56,
        "rate": 5
@@ -9072,10 +9075,10 @@
      "method": "Surf, Normal",
      "encounters": [
       {
-       "name": "Shellos (East)",
+       "name": "Shellos",
        "min": 50,
        "max": 60,
-       "rate": 70
+       "rate": 60
       },
       {
        "name": "Seel",
@@ -9101,7 +9104,7 @@
        "rate": 70
       },
       {
-       "name": "Gastrodon (East)",
+       "name": "Gastrodon",
        "min": 50,
        "max": 60,
        "rate": 30
@@ -9118,7 +9121,7 @@
        "rate": 70
       },
       {
-       "name": "Shellos (East)",
+       "name": "Shellos",
        "min": 50,
        "max": 60,
        "rate": 30
@@ -9132,10 +9135,10 @@
        "name": "Cloyster",
        "min": 50,
        "max": 60,
-       "rate": 90
+       "rate": 95
       },
       {
-       "name": "Gastrodon (East)",
+       "name": "Gastrodon",
        "min": 50,
        "max": 60,
        "rate": 5
@@ -9156,19 +9159,13 @@
        "name": "Piloswine",
        "min": 53,
        "max": 56,
-       "rate": 20
+       "rate": 30
       },
       {
        "name": "Clefairy",
        "min": 53,
        "max": 56,
        "rate": 20
-      },
-      {
-       "name": "Piloswine",
-       "min": 53,
-       "max": 56,
-       "rate": 10
       },
       {
        "name": "Ditto",
@@ -9201,13 +9198,13 @@
        "rate": 5
       },
       {
-       "name": "Solrock",
+       "name": "Lunatone",
        "min": 53,
        "max": 56,
        "rate": 5
       },
       {
-       "name": "Lunatone",
+       "name": "Solrock",
        "min": 53,
        "max": 56,
        "rate": 5
@@ -9221,19 +9218,13 @@
        "name": "Piloswine",
        "min": 54,
        "max": 58,
-       "rate": 20
+       "rate": 30
       },
       {
        "name": "Clefairy",
        "min": 54,
        "max": 58,
        "rate": 20
-      },
-      {
-       "name": "Piloswine",
-       "min": 54,
-       "max": 58,
-       "rate": 10
       },
       {
        "name": "Ditto",
@@ -9248,7 +9239,7 @@
        "rate": 10
       },
       {
-       "name": "Abomasnow",
+       "name": "Snorunt",
        "min": 54,
        "max": 58,
        "rate": 10
@@ -9260,19 +9251,19 @@
        "rate": 5
       },
       {
-       "name": "Snover",
-       "min": 54,
-       "max": 58,
-       "rate": 5
-      },
-      {
-       "name": "Solrock",
+       "name": "Abomasnow",
        "min": 54,
        "max": 58,
        "rate": 5
       },
       {
        "name": "Lunatone",
+       "min": 54,
+       "max": 58,
+       "rate": 5
+      },
+      {
+       "name": "Solrock",
        "min": 54,
        "max": 58,
        "rate": 5
@@ -9284,20 +9275,20 @@
      "encounters": [
       {
        "name": "Audino",
-       "min": 49,
-       "max": 49,
+       "min": 54,
+       "max": 58,
        "rate": 90
       },
       {
        "name": "Mamoswine",
-       "min": 50,
-       "max": 50,
+       "min": 54,
+       "max": 58,
        "rate": 5
       },
       {
        "name": "Vanilluxe",
-       "min": 50,
-       "max": 50,
+       "min": 54,
+       "max": 58,
        "rate": 5
       }
      ]
@@ -9358,19 +9349,19 @@
        "rate": 5
       },
       {
-       "name": "Sneasel",
-       "min": 53,
-       "max": 56,
-       "rate": 5
-      },
-      {
-       "name": "Solrock",
+       "name": "Sneasel (Hisui)",
        "min": 53,
        "max": 56,
        "rate": 5
       },
       {
        "name": "Lunatone",
+       "min": 53,
+       "max": 56,
+       "rate": 5
+      },
+      {
+       "name": "Solrock",
        "min": 53,
        "max": 56,
        "rate": 5
@@ -9409,10 +9400,10 @@
      "method": "Surf, Normal",
      "encounters": [
       {
-       "name": "Shellos (East)",
+       "name": "Shellos",
        "min": 50,
        "max": 60,
-       "rate": 70
+       "rate": 60
       },
       {
        "name": "Seel",
@@ -9438,7 +9429,7 @@
        "rate": 70
       },
       {
-       "name": "Gastrodon (East)",
+       "name": "Gastrodon",
        "min": 50,
        "max": 60,
        "rate": 30
@@ -9455,7 +9446,7 @@
        "rate": 70
       },
       {
-       "name": "Shellos (East)",
+       "name": "Shellos",
        "min": 50,
        "max": 60,
        "rate": 30
@@ -9469,10 +9460,10 @@
        "name": "Cloyster",
        "min": 50,
        "max": 60,
-       "rate": 90
+       "rate": 95
       },
       {
-       "name": "Gastrodon (East)",
+       "name": "Gastrodon",
        "min": 50,
        "max": 60,
        "rate": 5
@@ -9532,19 +9523,19 @@
        "rate": 5
       },
       {
+       "name": "Tauros",
+       "min": 58,
+       "max": 61,
+       "rate": 5
+      },
+      {
        "name": "Amoonguss",
        "min": 58,
        "max": 61,
        "rate": 5
       },
       {
-       "name": "Gligar",
-       "min": 58,
-       "max": 61,
-       "rate": 5
-      },
-      {
-       "name": "Tauros",
+       "name": "Tauros (Paldea Combat)",
        "min": 58,
        "max": 61,
        "rate": 5
@@ -9594,13 +9585,25 @@
        "name": "Tropius",
        "min": 59,
        "max": 62,
-       "rate": 10
+       "rate": 5
+      },
+      {
+       "name": "Tauros (Paldea Blaze)",
+       "min": 59,
+       "max": 62,
+       "rate": 5
       },
       {
        "name": "Amoonguss",
        "min": 59,
        "max": 62,
-       "rate": 10
+       "rate": 5
+      },
+      {
+       "name": "Tauros (Paldea Aqua)",
+       "min": 59,
+       "max": 62,
+       "rate": 5
       }
      ]
     },
@@ -9631,13 +9634,13 @@
        "rate": 60
       },
       {
-       "name": "Shellos (East)",
+       "name": "Shellos",
        "min": 55,
        "max": 65,
        "rate": 30
       },
       {
-       "name": "Gastrodon (East)",
+       "name": "Gastrodon",
        "min": 55,
        "max": 65,
        "rate": 5
@@ -9654,7 +9657,7 @@
      "method": "Surf, Dark Spot",
      "encounters": [
       {
-       "name": "Shellos (East)",
+       "name": "Shellos",
        "min": 55,
        "max": 65,
        "rate": 60
@@ -9666,7 +9669,7 @@
        "rate": 30
       },
       {
-       "name": "Gastrodon (East)",
+       "name": "Gastrodon",
        "min": 55,
        "max": 65,
        "rate": 10
@@ -9796,12 +9799,6 @@
        "min": 60,
        "max": 70,
        "rate": 30
-      },
-      {
-       "name": "Azumarill",
-       "min": 60,
-       "max": 70,
-       "rate": 10
       }
      ]
     },
@@ -9819,6 +9816,12 @@
        "min": 60,
        "max": 70,
        "rate": 30
+      },
+      {
+       "name": "Azumarill",
+       "min": 60,
+       "max": 70,
+       "rate": 10
       }
      ]
     },
@@ -9846,7 +9849,7 @@
        "name": "Frillish",
        "min": 60,
        "max": 70,
-       "rate": 65
+       "rate": 70
       },
       {
        "name": "Basculin (Red-Striped)",
@@ -9915,7 +9918,7 @@
        "rate": 5
       },
       {
-       "name": "Braviary",
+       "name": "Braviary (Hisui)",
        "min": 59,
        "max": 62,
        "rate": 5
@@ -9962,6 +9965,12 @@
        "rate": 10
       },
       {
+       "name": "Fearow",
+       "min": 60,
+       "max": 65,
+       "rate": 10
+      },
+      {
        "name": "Mandibuzz",
        "min": 60,
        "max": 65,
@@ -9969,12 +9978,6 @@
       },
       {
        "name": "Braviary",
-       "min": 60,
-       "max": 65,
-       "rate": 5
-      },
-      {
-       "name": "Fearow",
        "min": 60,
        "max": 65,
        "rate": 5
@@ -9986,20 +9989,20 @@
      "encounters": [
       {
        "name": "Audino",
-       "min": 56,
-       "max": 56,
+       "min": 60,
+       "max": 65,
        "rate": 80
       },
       {
        "name": "Dunsparce",
-       "min": 56,
-       "max": 56,
+       "min": 60,
+       "max": 65,
        "rate": 10
       },
       {
        "name": "Unfezant",
-       "min": 57,
-       "max": 57,
+       "min": 60,
+       "max": 65,
        "rate": 10
       }
      ]
@@ -10143,13 +10146,13 @@
        "rate": 5
       },
       {
-       "name": "Venomoth",
+       "name": "Forretress",
        "min": 59,
        "max": 62,
        "rate": 5
       },
       {
-       "name": "Forretress",
+       "name": "Venomoth",
        "min": 59,
        "max": 62,
        "rate": 5
@@ -10208,13 +10211,13 @@
        "rate": 5
       },
       {
-       "name": "Venomoth",
+       "name": "Forretress",
        "min": 60,
        "max": 65,
        "rate": 5
       },
       {
-       "name": "Forretress",
+       "name": "Venomoth",
        "min": 60,
        "max": 65,
        "rate": 5
@@ -10226,56 +10229,56 @@
      "encounters": [
       {
        "name": "Audino",
-       "min": 56,
-       "max": 56,
+       "min": 60,
+       "max": 65,
        "rate": 40
       },
       {
        "name": "Dunsparce",
-       "min": 56,
-       "max": 56,
+       "min": 60,
+       "max": 65,
        "rate": 10
       },
       {
        "name": "Panpour",
-       "min": 56,
-       "max": 56,
+       "min": 60,
+       "max": 65,
        "rate": 10
       },
       {
        "name": "Pansear",
-       "min": 56,
-       "max": 56,
+       "min": 60,
+       "max": 65,
        "rate": 10
       },
       {
        "name": "Pansage",
-       "min": 56,
-       "max": 56,
+       "min": 60,
+       "max": 65,
        "rate": 10
       },
       {
        "name": "Roserade",
-       "min": 59,
-       "max": 59,
+       "min": 60,
+       "max": 65,
        "rate": 5
       },
       {
        "name": "Slaking",
-       "min": 59,
-       "max": 59,
-       "rate": 5
-      },
-      {
-       "name": "Ludicolo",
-       "min": 59,
-       "max": 59,
+       "min": 60,
+       "max": 65,
        "rate": 5
       },
       {
        "name": "Shiftry",
-       "min": 59,
-       "max": 59,
+       "min": 60,
+       "max": 65,
+       "rate": 5
+      },
+      {
+       "name": "Ludicolo",
+       "min": 60,
+       "max": 65,
        "rate": 5
       }
      ]
@@ -10336,19 +10339,19 @@
        "name": "Ursaring",
        "min": 59,
        "max": 62,
-       "rate": 10
+       "rate": 5
+      },
+      {
+       "name": "Sliggoo (Hisui)",
+       "min": 59,
+       "max": 62,
+       "rate": 5
       }
      ]
     },
     {
      "method": "Cave, Main, Dust Cloud",
      "encounters": [
-      {
-       "name": "Donphan",
-       "min": 60,
-       "max": 65,
-       "rate": 60
-      },
       {
        "name": "Durant",
        "min": 60,
@@ -10360,6 +10363,12 @@
        "min": 60,
        "max": 65,
        "rate": 20
+      },
+      {
+       "name": "Donphan",
+       "min": 60,
+       "max": 65,
+       "rate": 60
       }
      ]
     },
@@ -10403,13 +10412,13 @@
        "rate": 10
       },
       {
-       "name": "Golbat",
+       "name": "Electrode",
        "min": 59,
        "max": 62,
        "rate": 5
       },
       {
-       "name": "Electrode",
+       "name": "Golbat",
        "min": 59,
        "max": 62,
        "rate": 5
@@ -10432,16 +10441,90 @@
      "method": "Cave, Dark, Dust Cloud",
      "encounters": [
       {
-       "name": "Parasect",
-       "min": 60,
-       "max": 65,
-       "rate": 60
-      },
-      {
        "name": "Ursaring",
        "min": 60,
        "max": 65,
        "rate": 40
+      },
+      {
+       "name": "Parasect",
+       "min": 60,
+       "max": 65,
+       "rate": 60
+      }
+     ]
+    },
+    {
+     "method": "Surf, Normal, Dark",
+     "encounters": [
+      {
+       "name": "Basculin (Red-Striped)",
+       "min": 60,
+       "max": 70,
+       "rate": 70
+      },
+      {
+       "name": "Marill",
+       "min": 60,
+       "max": 70,
+       "rate": 30
+      }
+     ]
+    },
+    {
+     "method": "Surf, Dark Spot, Dark",
+     "encounters": [
+      {
+       "name": "Marill",
+       "min": 60,
+       "max": 70,
+       "rate": 60
+      },
+      {
+       "name": "Basculin (Blue-Striped)",
+       "min": 60,
+       "max": 70,
+       "rate": 35
+      },
+      {
+       "name": "Azumarill",
+       "min": 60,
+       "max": 70,
+       "rate": 5
+      }
+     ]
+    },
+    {
+     "method": "Fish, Normal, Dark",
+     "encounters": [
+      {
+       "name": "Frillish",
+       "min": 60,
+       "max": 70,
+       "rate": 70
+      },
+      {
+       "name": "Basculin (Red-Striped)",
+       "min": 60,
+       "max": 70,
+       "rate": 30
+      }
+     ]
+    },
+    {
+     "method": "Fish, Dark Spot, Dark",
+     "encounters": [
+      {
+       "name": "Frillish",
+       "min": 60,
+       "max": 70,
+       "rate": 70
+      },
+      {
+       "name": "Basculin (Blue-Striped)",
+       "min": 60,
+       "max": 70,
+       "rate": 30
       }
      ]
     }
@@ -10575,7 +10658,7 @@
        "rate": 5
       },
       {
-       "name": "Riolu",
+       "name": "Tyrogue",
        "min": 60,
        "max": 65,
        "rate": 5
@@ -10587,18 +10670,18 @@
      "encounters": [
       {
        "name": "Audino",
-       "min": 65,
+       "min": 60,
        "max": 65,
        "rate": 85
       },
       {
-       "name": "Nidoqueen",
+       "name": "Nidoking",
        "min": 60,
        "max": 65,
        "rate": 5
       },
       {
-       "name": "Nidoking",
+       "name": "Nidoqueen",
        "min": 60,
        "max": 65,
        "rate": 5
@@ -10628,6 +10711,18 @@
        "rate": 40
       },
       {
+       "name": "Drampa",
+       "min": 59,
+       "max": 62,
+       "rate": 10
+      },
+      {
+       "name": "Arbok",
+       "min": 59,
+       "max": 62,
+       "rate": 10
+      },
+      {
        "name": "Magmar",
        "min": 59,
        "max": 62,
@@ -10635,18 +10730,6 @@
       },
       {
        "name": "Electabuzz",
-       "min": 59,
-       "max": 62,
-       "rate": 10
-      },
-      {
-       "name": "Kangaskhan",
-       "min": 59,
-       "max": 62,
-       "rate": 10
-      },
-      {
-       "name": "Arbok",
        "min": 59,
        "max": 62,
        "rate": 10
@@ -10781,16 +10864,10 @@
      "method": "Cave, Top, Dust Cloud",
      "encounters": [
       {
-       "name": "Swoobat",
+       "name": "Dugtrio",
        "min": 60,
        "max": 65,
-       "rate": 60
-      },
-      {
-       "name": "Hariyama",
-       "min": 60,
-       "max": 65,
-       "rate": 40
+       "rate": 100
       }
      ]
     }
@@ -10860,8 +10937,8 @@
       },
       {
        "name": "Ursaring",
-       "min": 78,
-       "max": 78,
+       "min": 68,
+       "max": 68,
        "rate": 5
       }
      ]
@@ -10877,15 +10954,15 @@
       },
       {
        "name": "Excadrill",
-       "min": 68,
-       "max": 68,
-       "rate": 30
-      },
-      {
-       "name": "Excadrill",
        "min": 67,
        "max": 67,
        "rate": 20
+      },
+      {
+       "name": "Excadrill",
+       "min": 68,
+       "max": 68,
+       "rate": 30
       },
       {
        "name": "Excadrill",
@@ -10960,7 +11037,7 @@
        "rate": 4
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 65,
        "max": 65,
        "rate": 4
@@ -10972,7 +11049,7 @@
        "rate": 1
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 66,
        "max": 66,
        "rate": 1
@@ -10992,13 +11069,13 @@
        "name": "Stunfisk",
        "min": 55,
        "max": 65,
-       "rate": 30
+       "rate": 36
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 55,
        "max": 65,
-       "rate": 5
+       "rate": 4
       }
      ]
     },
@@ -11012,7 +11089,7 @@
        "rate": 65
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 60,
        "max": 70,
        "rate": 30
@@ -11118,37 +11195,37 @@
        "rate": 10
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 64,
        "max": 64,
        "rate": 5
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 65,
        "max": 65,
        "rate": 5
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 66,
        "max": 66,
        "rate": 4
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 67,
        "max": 67,
        "rate": 4
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 68,
        "max": 68,
        "rate": 1
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 63,
        "max": 63,
        "rate": 1
@@ -11171,7 +11248,7 @@
        "rate": 35
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 55,
        "max": 65,
        "rate": 5
@@ -11188,7 +11265,7 @@
        "rate": 65
       },
       {
-       "name": "Gastrodon (West)",
+       "name": "Gastrodon",
        "min": 60,
        "max": 70,
        "rate": 30
@@ -11197,7 +11274,7 @@
        "name": "Seismitoad",
        "min": 60,
        "max": 70,
-       "rate": 10
+       "rate": 5
       }
      ]
     },
@@ -11406,16 +11483,16 @@
        "rate": 50
       },
       {
-       "name": "Audino",
-       "min": 66,
-       "max": 66,
-       "rate": 30
-      },
-      {
        "name": "Emolga",
        "min": 65,
        "max": 65,
        "rate": 10
+      },
+      {
+       "name": "Audino",
+       "min": 66,
+       "max": 66,
+       "rate": 25
       },
       {
        "name": "Alakazam",
@@ -11427,6 +11504,12 @@
        "name": "Unfezant",
        "min": 68,
        "max": 68,
+       "rate": 5
+      },
+      {
+       "name": "Roaring Moon",
+       "min": 66,
+       "max": 66,
        "rate": 5
       }
      ]
@@ -11468,6 +11551,12 @@
        "min": 60,
        "max": 70,
        "rate": 30
+      },
+      {
+       "name": "Basculin (Red-Striped)",
+       "min": 55,
+       "max": 65,
+       "rate": 4
       }
      ]
     },
@@ -11559,8 +11648,8 @@
       },
       {
        "name": "Beartic",
-       "min": 66,
-       "max": 66,
+       "min": 65,
+       "max": 65,
        "rate": 10
       },
       {
@@ -11638,25 +11727,25 @@
        "name": "Mienshao",
        "min": 69,
        "max": 69,
-       "rate": 5
+       "rate": 10
       },
       {
        "name": "Kadabra",
        "min": 67,
        "max": 67,
-       "rate": 5
+       "rate": 4
       },
       {
        "name": "Altaria",
        "min": 68,
        "max": 68,
-       "rate": 5
+       "rate": 4
       },
       {
        "name": "Kadabra",
        "min": 68,
        "max": 68,
-       "rate": 4
+       "rate": 1
       },
       {
        "name": "Altaria",
@@ -11676,16 +11765,16 @@
        "rate": 50
       },
       {
-       "name": "Audino",
-       "min": 66,
-       "max": 66,
-       "rate": 26
-      },
-      {
        "name": "Emolga",
        "min": 65,
        "max": 65,
        "rate": 10
+      },
+      {
+       "name": "Audino",
+       "min": 66,
+       "max": 66,
+       "rate": 25
       },
       {
        "name": "Alakazam",
@@ -11697,6 +11786,12 @@
        "name": "Vanilluxe",
        "min": 68,
        "max": 68,
+       "rate": 5
+      },
+      {
+       "name": "Roaring Moon",
+       "min": 66,
+       "max": 66,
        "rate": 5
       }
      ]
@@ -11899,7 +11994,7 @@
        "rate": 10
       },
       {
-       "name": "Druddigon",
+       "name": "Flutter Mane",
        "min": 67,
        "max": 67,
        "rate": 5
@@ -11996,21 +12091,15 @@
        "rate": 4
       },
       {
-       "name": "Onix",
-       "min": 66,
-       "max": 66,
-       "rate": 4
+       "name": "Iron Treads",
+       "min": 68,
+       "max": 68,
+       "rate": 5
       },
       {
        "name": "Azumarill",
        "min": 69,
        "max": 69,
-       "rate": 1
-      },
-      {
-       "name": "Onix",
-       "min": 68,
-       "max": 68,
        "rate": 1
       }
      ]
@@ -12096,7 +12185,7 @@
        "rate": 5
       },
       {
-       "name": "Vanillish",
+       "name": "Ninetales (Alola)",
        "min": 68,
        "max": 68,
        "rate": 5
@@ -12191,19 +12280,13 @@
        "rate": 4
       },
       {
-       "name": "Dusclops",
+       "name": "Great Tusk",
        "min": 67,
-       "max": 67,
-       "rate": 4
+       "max": 69,
+       "rate": 5
       },
       {
        "name": "Claydol",
-       "min": 69,
-       "max": 69,
-       "rate": 1
-      },
-      {
-       "name": "Dusclops",
        "min": 69,
        "max": 69,
        "rate": 1
@@ -12238,50 +12321,50 @@
      "encounters": [
       {
        "name": "Graveler",
-       "min": 67,
-       "max": 67,
+       "min": 66,
+       "max": 66,
        "rate": 20
       },
       {
        "name": "Golbat",
-       "min": 67,
-       "max": 67,
+       "min": 66,
+       "max": 66,
        "rate": 20
       },
       {
        "name": "Sandslash",
-       "min": 68,
-       "max": 68,
-       "rate": 10
-      },
-      {
-       "name": "Lairon",
        "min": 67,
        "max": 67,
        "rate": 10
       },
       {
-       "name": "Durant",
-       "min": 69,
-       "max": 69,
+       "name": "Lairon",
+       "min": 66,
+       "max": 66,
        "rate": 10
       },
       {
-       "name": "Nosepass",
+       "name": "Durant",
        "min": 68,
        "max": 68,
        "rate": 10
       },
       {
+       "name": "Nosepass",
+       "min": 67,
+       "max": 67,
+       "rate": 10
+      },
+      {
        "name": "Lunatone",
-       "min": 70,
-       "max": 70,
+       "min": 68,
+       "max": 69,
        "rate": 5
       },
       {
        "name": "Solrock",
-       "min": 70,
-       "max": 70,
+       "min": 68,
+       "max": 69,
        "rate": 5
       },
       {
@@ -12294,13 +12377,7 @@
        "name": "Claydol",
        "min": 69,
        "max": 69,
-       "rate": 1
-      },
-      {
-       "name": "Claydol",
-       "min": 70,
-       "max": 70,
-       "rate": 1
+       "rate": 2
       }
      ]
     },
@@ -12309,14 +12386,14 @@
      "encounters": [
       {
        "name": "Excadrill",
-       "min": 70,
-       "max": 70,
+       "min": 69,
+       "max": 69,
        "rate": 75
       },
       {
        "name": "Onix",
-       "min": 68,
-       "max": 68,
+       "min": 67,
+       "max": 67,
        "rate": 20
       },
       {
@@ -12368,13 +12445,13 @@
        "rate": 10
       },
       {
-       "name": "Farfetch'd",
+       "name": "Chatot",
        "min": 67,
        "max": 67,
        "rate": 9
       },
       {
-       "name": "Chatot",
+       "name": "Farfetch'd",
        "min": 67,
        "max": 67,
        "rate": 9
@@ -12564,16 +12641,16 @@
        "rate": 50
       },
       {
-       "name": "Audino",
-       "min": 66,
-       "max": 66,
-       "rate": 25
-      },
-      {
        "name": "Emolga",
        "min": 65,
        "max": 65,
        "rate": 10
+      },
+      {
+       "name": "Audino",
+       "min": 66,
+       "max": 66,
+       "rate": 25
       },
       {
        "name": "Snorlax",
@@ -12582,13 +12659,13 @@
        "rate": 5
       },
       {
-       "name": "Tyranitar",
+       "name": "Gliscor",
        "min": 68,
        "max": 68,
        "rate": 5
       },
       {
-       "name": "Gliscor",
+       "name": "Tyranitar",
        "min": 68,
        "max": 68,
        "rate": 5
@@ -12790,19 +12867,19 @@
        "rate": 5
       },
       {
-       "name": "Slaking",
+       "name": "Scolipede",
+       "min": 68,
+       "max": 68,
+       "rate": 5
+      },
+      {
+       "name": "Brute Bonnet",
        "min": 68,
        "max": 68,
        "rate": 5
       },
       {
        "name": "Raichu",
-       "min": 68,
-       "max": 68,
-       "rate": 5
-      },
-      {
-       "name": "Scolipede",
        "min": 68,
        "max": 68,
        "rate": 5
@@ -12994,75 +13071,63 @@
      "encounters": [
       {
        "name": "Ariados",
-       "min": 68,
-       "max": 68,
+       "min": 64,
+       "max": 64,
        "rate": 20
       },
       {
        "name": "Ledian",
-       "min": 68,
-       "max": 68,
+       "min": 64,
+       "max": 64,
        "rate": 20
       },
       {
        "name": "Wormadam",
-       "min": 68,
-       "max": 68,
+       "min": 63,
+       "max": 63,
        "rate": 10
       },
       {
        "name": "Mothim",
-       "min": 68,
-       "max": 68,
+       "min": 63,
+       "max": 63,
        "rate": 10
       },
       {
        "name": "Gurdurr",
-       "min": 67,
-       "max": 67,
+       "min": 63,
+       "max": 63,
        "rate": 10
       },
       {
        "name": "Palpitoad",
-       "min": 67,
-       "max": 67,
+       "min": 64,
+       "max": 64,
        "rate": 10
       },
       {
        "name": "Throh",
-       "min": 69,
-       "max": 69,
+       "min": 63,
+       "max": 63,
        "rate": 5
       },
       {
        "name": "Sawk",
-       "min": 69,
-       "max": 69,
+       "min": 63,
+       "max": 63,
        "rate": 5
       },
       {
        "name": "Hariyama",
-       "min": 69,
-       "max": 69,
-       "rate": 4
+       "min": 65,
+       "max": 65,
+       "rate": 5
       },
       {
        "name": "Medicham",
-       "min": 69,
-       "max": 69,
-       "rate": 4
-      },
-      {
-       "name": "Hariyama",
-       "min": 70,
-       "max": 70,
-       "rate": 1
-      },
-      {
-       "name": "Medicham",
-       "min": 70,
-       "max": 70,
-       "rate": 1
+       "min": 65,
+       "max": 65,
+       "rate": 5
       }
      ]
     },
@@ -13082,13 +13147,13 @@
        "rate": 30
       },
       {
-       "name": "Seismitoad",
+       "name": "Yanmega",
        "min": 68,
        "max": 68,
        "rate": 5
       },
       {
-       "name": "Yanmega",
+       "name": "Seismitoad",
        "min": 68,
        "max": 68,
        "rate": 5
@@ -13264,13 +13329,13 @@
        "rate": 10
       },
       {
-       "name": "Yanmega",
+       "name": "Arcanine",
        "min": 68,
        "max": 68,
        "rate": 5
       },
       {
-       "name": "Ludicolo",
+       "name": "Yanmega",
        "min": 68,
        "max": 68,
        "rate": 5
@@ -13282,7 +13347,7 @@
        "rate": 5
       },
       {
-       "name": "Arcanine",
+       "name": "Ludicolo",
        "min": 68,
        "max": 68,
        "rate": 5
@@ -13342,13 +13407,19 @@
        "name": "Corphish",
        "min": 50,
        "max": 60,
-       "rate": 65
+       "rate": 60
       },
       {
        "name": "Basculin (Blue-Striped)",
        "min": 50,
        "max": 60,
        "rate": 30
+      },
+      {
+       "name": "Corphish",
+       "min": 55,
+       "max": 55,
+       "rate": 5
       },
       {
        "name": "Crawdaunt",
@@ -13488,7 +13559,13 @@
        "name": "Onix",
        "min": 68,
        "max": 68,
-       "rate": 20
+       "rate": 15
+      },
+      {
+       "name": "Sandy Shocks",
+       "min": 68,
+       "max": 68,
+       "rate": 5
       }
      ]
     },
@@ -13528,13 +13605,19 @@
        "name": "Basculin (Red-Striped)",
        "min": 60,
        "max": 70,
-       "rate": 35
+       "rate": 34
       },
       {
        "name": "Quagsire",
        "min": 60,
        "max": 70,
        "rate": 5
+      },
+      {
+       "name": "Quagsire",
+       "min": 75,
+       "max": 75,
+       "rate": 1
       }
      ]
     },
@@ -13595,7 +13678,7 @@
      "method": "Surf, Normal",
      "encounters": [
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 35,
        "max": 65,
        "rate": 70
@@ -13632,13 +13715,13 @@
        "name": "Goldeen",
        "min": 35,
        "max": 55,
-       "rate": 95
+       "rate": 70
       },
       {
        "name": "Psyduck",
        "min": 35,
        "max": 55,
-       "rate": 5
+       "rate": 30
       }
      ]
     },
@@ -13771,13 +13854,13 @@
        "rate": 10
       },
       {
-       "name": "Ledian",
+       "name": "Ariados",
        "min": 69,
        "max": 69,
        "rate": 5
       },
       {
-       "name": "Ariados",
+       "name": "Ledian",
        "min": 69,
        "max": 69,
        "rate": 5
@@ -13806,16 +13889,22 @@
        "rate": 50
       },
       {
-       "name": "Audino",
-       "min": 66,
-       "max": 66,
-       "rate": 30
-      },
-      {
        "name": "Dunsparce",
        "min": 65,
        "max": 65,
        "rate": 10
+      },
+      {
+       "name": "Audino",
+       "min": 66,
+       "max": 66,
+       "rate": 25
+      },
+      {
+       "name": "Musharna",
+       "min": 68,
+       "max": 68,
+       "rate": 5
       },
       {
        "name": "Wigglytuff",
@@ -13824,9 +13913,9 @@
        "rate": 5
       },
       {
-       "name": "Musharna",
-       "min": 68,
-       "max": 68,
+       "name": "Scream Tail",
+       "min": 66,
+       "max": 66,
        "rate": 5
       }
      ]
@@ -13978,28 +14067,28 @@
        "rate": 50
       },
       {
-       "name": "Audino",
-       "min": 65,
-       "max": 65,
-       "rate": 30
-      },
-      {
-       "name": "Audino",
-       "min": 66,
-       "max": 66,
-       "rate": 5
-      },
-      {
        "name": "Dunsparce",
        "min": 65,
        "max": 65,
        "rate": 10
       },
       {
+       "name": "Audino",
+       "min": 65,
+       "max": 65,
+       "rate": 25
+      },
+      {
        "name": "Stoutland",
-       "min": 68,
-       "max": 68,
+       "min": 65,
+       "max": 65,
        "rate": 5
+      },
+      {
+       "name": "Audino",
+       "min": 66,
+       "max": 66,
+       "rate": 10
       }
      ]
     }
@@ -14141,16 +14230,16 @@
        "rate": 50
       },
       {
-       "name": "Audino",
-       "min": 66,
-       "max": 66,
-       "rate": 20
-      },
-      {
        "name": "Dunsparce",
        "min": 65,
        "max": 65,
        "rate": 10
+      },
+      {
+       "name": "Audino",
+       "min": 66,
+       "max": 66,
+       "rate": 20
       },
       {
        "name": "Pidgeot",
@@ -14162,13 +14251,7 @@
        "name": "Stoutland",
        "min": 68,
        "max": 68,
-       "rate": 5
-      },
-      {
-       "name": "Staraptor",
-       "min": 68,
-       "max": 68,
-       "rate": 5
+       "rate": 10
       },
       {
        "name": "Wigglytuff",
@@ -14185,13 +14268,19 @@
        "name": "Basculin (Blue-Striped)",
        "min": 55,
        "max": 55,
-       "rate": 70
+       "rate": 69
       },
       {
        "name": "Basculin (Blue-Striped)",
        "min": 65,
        "max": 65,
        "rate": 30
+      },
+      {
+       "name": "Basculin (Blue-Striped)",
+       "min": 50,
+       "max": 60,
+       "rate": 1
       }
      ]
     },
@@ -14202,13 +14291,13 @@
        "name": "Basculin (Red-Striped)",
        "min": 45,
        "max": 60,
-       "rate": 66
+       "rate": 90
       },
       {
-       "name": "Basculin (Red-Striped)",
-       "min": 50,
-       "max": 60,
-       "rate": 30
+       "name": "Basculegion",
+       "min": 55,
+       "max": 65,
+       "rate": 10
       }
      ]
     },
@@ -14216,7 +14305,7 @@
      "method": "Fish, Normal",
      "encounters": [
       {
-       "name": "Basculin (Red-Striped)",
+       "name": "Basculin (Blue-Striped)",
        "min": 55,
        "max": 55,
        "rate": 60
@@ -14228,7 +14317,7 @@
        "rate": 30
       },
       {
-       "name": "Basculin (Red-Striped)",
+       "name": "Basculin (Blue-Striped)",
        "min": 60,
        "max": 70,
        "rate": 10
@@ -14245,7 +14334,7 @@
        "rate": 65
       },
       {
-       "name": "Basculin (Blue-Striped)",
+       "name": "Basculin (Red-Striped)",
        "min": 65,
        "max": 65,
        "rate": 30
@@ -14281,7 +14370,7 @@
        "rate": 30
       },
       {
-       "name": "Phione",
+       "name": "Araquanid",
        "min": 55,
        "max": 65,
        "rate": 10
@@ -14292,16 +14381,22 @@
      "method": "Surf, Dark Spot",
      "encounters": [
       {
-       "name": "Phione",
+       "name": "Araquanid",
        "min": 60,
        "max": 70,
-       "rate": 65
+       "rate": 60
       },
       {
        "name": "Mantine",
        "min": 60,
        "max": 70,
        "rate": 30
+      },
+      {
+       "name": "Araquanid",
+       "min": 65,
+       "max": 65,
+       "rate": 5
       },
       {
        "name": "Jellicent",
@@ -14325,18 +14420,6 @@
        "min": 55,
        "max": 65,
        "rate": 30
-      },
-      {
-       "name": "Lumineon",
-       "min": 65,
-       "max": 75,
-       "rate": 5
-      },
-      {
-       "name": "Kingdra",
-       "min": 65,
-       "max": 75,
-       "rate": 5
       }
      ]
     },
@@ -14354,6 +14437,18 @@
        "min": 65,
        "max": 65,
        "rate": 30
+      },
+      {
+       "name": "Lumineon",
+       "min": 65,
+       "max": 75,
+       "rate": 5
+      },
+      {
+       "name": "Kingdra",
+       "min": 65,
+       "max": 75,
+       "rate": 5
       }
      ]
     }
@@ -14407,13 +14502,19 @@
        "name": "Carnivine",
        "min": 66,
        "max": 66,
-       "rate": 10
+       "rate": 6
       },
       {
        "name": "Tropius",
        "min": 67,
        "max": 67,
        "rate": 10
+      },
+      {
+       "name": "Carnivine",
+       "min": 66,
+       "max": 65,
+       "rate": 4
       }
      ]
     },
@@ -14480,22 +14581,40 @@
        "rate": 50
       },
       {
+       "name": "Dunsparce",
+       "min": 66,
+       "max": 66,
+       "rate": 10
+      },
+      {
        "name": "Audino",
        "min": 66,
        "max": 66,
-       "rate": 30
+       "rate": 20
+      },
+      {
+       "name": "Slowbro (Galar)",
+       "min": 66,
+       "max": 66,
+       "rate": 5
+      },
+      {
+       "name": "Slowking (Galar)",
+       "min": 66,
+       "max": 66,
+       "rate": 5
+      },
+      {
+       "name": "Slither Wing",
+       "min": 67,
+       "max": 67,
+       "rate": 5
       },
       {
        "name": "Audino",
        "min": 67,
        "max": 67,
-       "rate": 10
-      },
-      {
-       "name": "Dunsparce",
-       "min": 66,
-       "max": 66,
-       "rate": 10
+       "rate": 5
       }
      ]
     },
@@ -14565,12 +14684,6 @@
        "min": 60,
        "max": 60,
        "rate": 5
-      },
-      {
-       "name": "Lanturn",
-       "min": 55,
-       "max": 75,
-       "rate": 5
       }
      ]
     },
@@ -14590,10 +14703,16 @@
        "rate": 30
       },
       {
+       "name": "Lanturn",
+       "min": 55,
+       "max": 75,
+       "rate": 5
+      },
+      {
        "name": "Kingdra",
        "min": 55,
        "max": 75,
-       "rate": 10
+       "rate": 5
       }
      ]
     }
@@ -14653,15 +14772,15 @@
        "rate": 10
       },
       {
-       "name": "Klink",
-       "min": 63,
-       "max": 63,
+       "name": "Iron Hands",
+       "min": 65,
+       "max": 65,
        "rate": 4
       },
       {
-       "name": "Magnemite",
-       "min": 63,
-       "max": 63,
+       "name": "Iron Thorns",
+       "min": 65,
+       "max": 65,
        "rate": 4
       }
      ]
@@ -14673,18 +14792,30 @@
        "name": "Audino",
        "min": 65,
        "max": 65,
-       "rate": 50
-      },
-      {
-       "name": "Audino",
-       "min": 66,
-       "max": 66,
-       "rate": 20
+       "rate": 40
       },
       {
        "name": "Porygon",
        "min": 63,
        "max": 63,
+       "rate": 10
+      },
+      {
+       "name": "Iron Valiant",
+       "min": 66,
+       "max": 66,
+       "rate": 10
+      },
+      {
+       "name": "Iron Moth",
+       "min": 66,
+       "max": 66,
+       "rate": 10
+      },
+      {
+       "name": "Iron Jugulis",
+       "min": 66,
+       "max": 66,
        "rate": 10
       },
       {
@@ -14700,13 +14831,13 @@
        "rate": 5
       },
       {
-       "name": "Stoutland",
+       "name": "Porygon2",
        "min": 68,
        "max": 68,
        "rate": 5
       },
       {
-       "name": "Porygon2",
+       "name": "Stoutland",
        "min": 68,
        "max": 68,
        "rate": 5
@@ -14755,7 +14886,13 @@
        "name": "Jellicent",
        "min": 65,
        "max": 65,
-       "rate": 10
+       "rate": 5
+      },
+      {
+       "name": "Iron Bundle",
+       "min": 65,
+       "max": 65,
+       "rate": 5
       }
      ]
     },
@@ -14766,7 +14903,7 @@
        "name": "Finneon",
        "min": 55,
        "max": 55,
-       "rate": 65
+       "rate": 60
       },
       {
        "name": "Chinchou",
@@ -14778,13 +14915,7 @@
        "name": "Seadra",
        "min": 60,
        "max": 60,
-       "rate": 5
-      },
-      {
-       "name": "Lanturn",
-       "min": 65,
-       "max": 65,
-       "rate": 5
+       "rate": 10
       }
      ]
     },
@@ -14804,10 +14935,16 @@
        "rate": 30
       },
       {
+       "name": "Lanturn",
+       "min": 65,
+       "max": 65,
+       "rate": 5
+      },
+      {
        "name": "Kingdra",
        "min": 65,
        "max": 65,
-       "rate": 10
+       "rate": 5
       }
      ]
     }
@@ -14822,19 +14959,19 @@
      "method": "Grass, Normal",
      "encounters": [
       {
-       "name": "Servine",
+       "name": "Perrserker",
        "min": 17,
        "max": 100,
        "rate": 20
       },
       {
-       "name": "Pignite",
+       "name": "Sliggoo",
        "min": 17,
        "max": 100,
        "rate": 20
       },
       {
-       "name": "Dewott",
+       "name": "Clodsire",
        "min": 17,
        "max": 100,
        "rate": 20
@@ -14846,26 +14983,26 @@
        "rate": 20
       },
       {
+       "name": "Kecleon",
+       "min": 40,
+       "max": 100,
+       "rate": 5
+      },
+      {
        "name": "Fraxure",
        "min": 38,
        "max": 100,
        "rate": 5
       },
       {
-       "name": "Kecleon",
-       "min": 1,
+       "name": "Nuzleaf",
+       "min": 14,
        "max": 100,
        "rate": 5
       },
       {
        "name": "Girafarig",
        "min": 1,
-       "max": 100,
-       "rate": 5
-      },
-      {
-       "name": "Nuzleaf",
-       "min": 14,
        "max": 100,
        "rate": 5
       }
@@ -14920,7 +15057,13 @@
        "name": "Glaceon",
        "min": 2,
        "max": 100,
-       "rate": 10
+       "rate": 5
+      },
+      {
+       "name": "Sylveon",
+       "min": 2,
+       "max": 100,
+       "rate": 5
       }
      ]
     },
@@ -14940,19 +15083,19 @@
        "rate": 10
       },
       {
-       "name": "Serperior",
+       "name": "Oricorio (Baile)",
        "min": 36,
        "max": 100,
        "rate": 5
       },
       {
-       "name": "Samurott",
+       "name": "Drampa",
        "min": 36,
        "max": 100,
        "rate": 5
       },
       {
-       "name": "Emboar",
+       "name": "Heliolisk",
        "min": 36,
        "max": 100,
        "rate": 5
@@ -14962,17 +15105,6 @@
        "min": 2,
        "max": 100,
        "rate": 5
-      }
-     ]
-    },
-    {
-     "method": "Special Event",
-     "encounters": [
-      {
-       "name": "Arceus",
-       "min": 80,
-       "max": 80,
-       "rate": null
       }
      ]
     },
@@ -15036,18 +15168,6 @@
        "min": 1,
        "max": 100,
        "rate": 5
-      },
-      {
-       "name": "Gyarados",
-       "min": 1,
-       "max": 100,
-       "rate": 5
-      },
-      {
-       "name": "Milotic",
-       "min": 1,
-       "max": 100,
-       "rate": 5
       }
      ]
     },
@@ -15065,6 +15185,18 @@
        "min": 1,
        "max": 100,
        "rate": 30
+      },
+      {
+       "name": "Milotic",
+       "min": 1,
+       "max": 100,
+       "rate": 5
+      },
+      {
+       "name": "Gyarados",
+       "min": 1,
+       "max": 100,
+       "rate": 5
       }
      ]
     }
@@ -15099,8 +15231,8 @@
     "Duosion"
    ],
    "rare": [
-    "Squirtle",
-    "Totodile",
+    "Impidimp",
+    "Dreepy",
     "Stantler"
    ]
   },
@@ -15122,8 +15254,8 @@
     "Exeggcute"
    ],
    "rare": [
-    "Bulbasaur",
-    "Treecko",
+    "Fletchling",
+    "Jangmo-o",
     "Scyther"
    ]
   },
@@ -15146,8 +15278,8 @@
    ],
    "rare": [
     "Snover",
-    "Chikorita",
-    "Turtwig"
+    "Capsakid",
+    "Goomy"
    ]
   },
   {
@@ -15169,8 +15301,8 @@
    ],
    "rare": [
     "Gible",
-    "Cyndaquil",
-    "Torchic"
+    "Charcadet",
+    "Helioptile"
    ]
   },
   {
@@ -15215,8 +15347,8 @@
    ],
    "rare": [
     "Sneasel",
-    "Charmander",
-    "Chimchar"
+    "Rookidee",
+    "Dewpider"
    ]
   },
   {
@@ -15281,8 +15413,8 @@
     "Wingull"
    ],
    "rare": [
-    "Mudkip",
-    "Piplup",
+    "Wattrel",
+    "Gimmighoul",
     "Staryu"
    ]
   },
@@ -15366,8 +15498,7 @@
    "common": [
     "Kecleon",
     "Farfetch'd",
-    "Shellos (East)",
-    "Shellos (West)"
+    "Shellos"
    ],
    "uncommon": [
     "Seel",
@@ -15529,3546 +15660,3799 @@
  ],
  "species": {
   "Abomasnow": {
-   "sprite": "abomasnow",
+   "sprite": "460",
    "types": [
     "Grass",
     "Ice"
    ]
   },
   "Abra": {
-   "sprite": "abra",
+   "sprite": "63",
    "types": [
     "Psychic"
    ]
   },
   "Absol": {
-   "sprite": "absol",
+   "sprite": "359",
    "types": [
     "Dark",
     "Ice"
    ]
   },
   "Aerodactyl": {
-   "sprite": "aerodactyl",
+   "sprite": "142",
    "types": [
     "Rock",
     "Dragon"
    ]
   },
   "Aipom": {
-   "sprite": "aipom",
+   "sprite": "190",
    "types": [
     "Normal"
    ]
   },
   "Alakazam": {
-   "sprite": "alakazam",
+   "sprite": "65",
    "types": [
     "Psychic"
    ]
   },
   "Alomomola": {
-   "sprite": "alomomola",
+   "sprite": "594",
    "types": [
     "Water",
     "Fairy"
    ]
   },
   "Altaria": {
-   "sprite": "altaria",
+   "sprite": "334",
    "types": [
     "Dragon",
     "Flying"
    ]
   },
+  "Amaura": {
+   "sprite": "698",
+   "types": [
+    "Rock",
+    "Ice"
+   ]
+  },
   "Amoonguss": {
-   "sprite": "amoonguss",
+   "sprite": "591",
    "types": [
     "Grass",
     "Poison"
    ]
   },
   "Anorith": {
-   "sprite": "anorith",
+   "sprite": "347",
    "types": [
     "Rock",
     "Bug"
    ]
   },
+  "Araquanid": {
+   "sprite": "752",
+   "types": [
+    "Water",
+    "Bug"
+   ]
+  },
   "Arbok": {
-   "sprite": "arbok",
+   "sprite": "24",
    "types": [
     "Poison"
    ]
   },
   "Arcanine": {
-   "sprite": "arcanine",
+   "sprite": "59",
    "types": [
     "Fire",
     "Normal"
    ]
   },
-  "Arceus": {
-   "sprite": "arceus",
-   "types": [
-    "Normal"
-   ]
-  },
   "Archen": {
-   "sprite": "archen",
+   "sprite": "566",
    "types": [
     "Rock",
     "Flying"
    ]
   },
   "Ariados": {
-   "sprite": "ariados",
+   "sprite": "168",
    "types": [
     "Bug",
     "Dark"
    ]
   },
   "Aron": {
-   "sprite": "aron",
+   "sprite": "304",
    "types": [
     "Steel",
     "Rock"
    ]
   },
   "Audino": {
-   "sprite": "audino",
+   "sprite": "531",
    "types": [
     "Normal",
     "Fairy"
    ]
   },
   "Axew": {
-   "sprite": "axew",
+   "sprite": "610",
    "types": [
     "Dragon"
    ]
   },
   "Azumarill": {
-   "sprite": "azumarill",
+   "sprite": "184",
    "types": [
     "Water",
     "Fairy"
    ]
   },
   "Azurill": {
-   "sprite": "azurill",
+   "sprite": "298",
    "types": [
     "Normal",
     "Fairy"
    ]
   },
   "Bagon": {
-   "sprite": "bagon",
+   "sprite": "371",
    "types": [
     "Dragon"
    ]
   },
   "Baltoy": {
-   "sprite": "baltoy",
+   "sprite": "343",
    "types": [
     "Ground",
     "Psychic"
    ]
   },
   "Banette": {
-   "sprite": "banette",
+   "sprite": "354",
    "types": [
     "Ghost",
     "Normal"
    ]
   },
   "Barboach": {
-   "sprite": "barboach",
+   "sprite": "339",
    "types": [
     "Water",
     "Ground"
    ]
   },
+  "Basculegion": {
+   "sprite": "902",
+   "types": [
+    "Water",
+    "Ghost"
+   ]
+  },
   "Basculin": {
-   "sprite": "basculin",
+   "sprite": "550",
    "types": [
     "Water",
     "Ghost"
    ]
   },
   "Basculin (Blue-Striped)": {
-   "sprite": "basculin-bluestriped",
+   "sprite": "10016",
    "types": [
     "Water"
    ]
   },
   "Basculin (Red-Striped)": {
-   "sprite": "basculin",
+   "sprite": "550",
    "types": [
     "Water",
     "Ghost"
    ]
   },
   "Beartic": {
-   "sprite": "beartic",
+   "sprite": "614",
    "types": [
     "Ice",
     "Fighting"
    ]
   },
   "Beautifly": {
-   "sprite": "beautifly",
+   "sprite": "267",
    "types": [
     "Bug",
     "Fairy"
    ]
   },
   "Beedrill": {
-   "sprite": "beedrill",
+   "sprite": "15",
    "types": [
     "Bug",
     "Steel"
    ]
   },
   "Beheeyem": {
-   "sprite": "beheeyem",
+   "sprite": "606",
    "types": [
     "Psychic"
    ]
   },
   "Beldum": {
-   "sprite": "beldum",
+   "sprite": "374",
    "types": [
     "Steel",
     "Psychic"
    ]
   },
   "Bellossom": {
-   "sprite": "bellossom",
+   "sprite": "182",
    "types": [
     "Grass",
     "Fairy"
    ]
   },
   "Bellsprout": {
-   "sprite": "bellsprout",
+   "sprite": "69",
    "types": [
     "Grass",
     "Poison"
    ]
   },
   "Bibarel": {
-   "sprite": "bibarel",
+   "sprite": "400",
    "types": [
     "Normal",
     "Water"
    ]
   },
   "Bidoof": {
-   "sprite": "bidoof",
+   "sprite": "399",
    "types": [
     "Normal"
    ]
   },
   "Bisharp": {
-   "sprite": "bisharp",
+   "sprite": "625",
    "types": [
     "Dark",
     "Steel"
    ]
   },
   "Blissey": {
-   "sprite": "blissey",
+   "sprite": "242",
    "types": [
     "Normal"
    ]
   },
   "Blitzle": {
-   "sprite": "blitzle",
+   "sprite": "522",
    "types": [
     "Electric"
    ]
   },
   "Boldore": {
-   "sprite": "boldore",
+   "sprite": "525",
    "types": [
     "Rock"
    ]
   },
   "Bonsly": {
-   "sprite": "bonsly",
+   "sprite": "438",
    "types": [
     "Rock"
    ]
   },
   "Bouffalant": {
-   "sprite": "bouffalant",
+   "sprite": "626",
    "types": [
     "Normal"
    ]
   },
   "Braviary": {
-   "sprite": "braviary",
+   "sprite": "628",
    "types": [
     "Normal",
     "Flying"
    ]
   },
+  "Braviary (Hisui)": {
+   "sprite": "10240",
+   "types": [
+    "Psychic",
+    "Flying"
+   ]
+  },
   "Breloom": {
-   "sprite": "breloom",
+   "sprite": "286",
    "types": [
     "Grass",
     "Fighting"
    ]
   },
   "Bronzong": {
-   "sprite": "bronzong",
+   "sprite": "437",
    "types": [
     "Steel",
     "Psychic"
    ]
   },
   "Bronzor": {
-   "sprite": "bronzor",
+   "sprite": "436",
    "types": [
     "Steel",
     "Psychic"
    ]
   },
+  "Brute Bonnet": {
+   "sprite": "986",
+   "types": [
+    "Grass",
+    "Dark"
+   ]
+  },
   "Budew": {
-   "sprite": "budew",
+   "sprite": "406",
    "types": [
     "Grass",
     "Poison"
    ]
   },
   "Buizel": {
-   "sprite": "buizel",
+   "sprite": "418",
    "types": [
     "Water"
    ]
   },
-  "Bulbasaur": {
-   "sprite": "bulbasaur",
-   "types": [
-    "Grass",
-    "Poison"
-   ]
-  },
   "Buneary": {
-   "sprite": "buneary",
+   "sprite": "427",
    "types": [
     "Normal"
    ]
   },
   "Burmy": {
-   "sprite": "burmy",
+   "sprite": "412",
    "types": [
     "Bug"
    ]
   },
   "Butterfree": {
-   "sprite": "butterfree",
+   "sprite": "12",
    "types": [
     "Bug",
     "Flying"
    ]
   },
   "Cacnea": {
-   "sprite": "cacnea",
+   "sprite": "331",
    "types": [
     "Grass"
    ]
   },
   "Cacturne": {
-   "sprite": "cacturne",
+   "sprite": "332",
    "types": [
     "Grass",
     "Dark"
    ]
   },
   "Camerupt": {
-   "sprite": "camerupt",
+   "sprite": "323",
    "types": [
     "Fire",
     "Ground"
    ]
   },
+  "Capsakid": {
+   "sprite": "951",
+   "types": [
+    "Grass"
+   ]
+  },
   "Carnivine": {
-   "sprite": "carnivine",
+   "sprite": "455",
    "types": [
     "Grass"
    ]
   },
   "Carvanha": {
-   "sprite": "carvanha",
+   "sprite": "318",
    "types": [
     "Water",
     "Dark"
    ]
   },
   "Castform": {
-   "sprite": "castform",
+   "sprite": "351",
    "types": [
     "Normal"
    ]
   },
   "Caterpie": {
-   "sprite": "caterpie",
+   "sprite": "10",
    "types": [
     "Bug"
    ]
   },
   "Chansey": {
-   "sprite": "chansey",
+   "sprite": "113",
    "types": [
     "Normal"
    ]
   },
-  "Charmander": {
-   "sprite": "charmander",
+  "Charcadet": {
+   "sprite": "935",
    "types": [
     "Fire"
    ]
   },
   "Chatot": {
-   "sprite": "chatot",
+   "sprite": "441",
    "types": [
     "Normal",
     "Flying"
    ]
   },
-  "Cherrim (Sunshine)": {
-   "sprite": "cherrim-sunshine",
+  "Cherrim": {
+   "sprite": "421",
    "types": [
     "Grass"
    ]
   },
   "Cherubi": {
-   "sprite": "cherubi",
+   "sprite": "420",
    "types": [
     "Grass"
-   ]
-  },
-  "Chikorita": {
-   "sprite": "chikorita",
-   "types": [
-    "Grass"
-   ]
-  },
-  "Chimchar": {
-   "sprite": "chimchar",
-   "types": [
-    "Fire"
    ]
   },
   "Chimecho": {
-   "sprite": "chimecho",
+   "sprite": "358",
    "types": [
     "Psychic",
     "Flying"
    ]
   },
   "Chinchou": {
-   "sprite": "chinchou",
+   "sprite": "170",
    "types": [
     "Water",
     "Electric"
    ]
   },
   "Chingling": {
-   "sprite": "chingling",
+   "sprite": "433",
    "types": [
     "Psychic"
    ]
   },
   "Cinccino": {
-   "sprite": "cinccino",
+   "sprite": "573",
    "types": [
     "Normal",
     "Fairy"
    ]
   },
   "Clamperl": {
-   "sprite": "clamperl",
+   "sprite": "366",
+   "types": [
+    "Water"
+   ]
+  },
+  "Clauncher": {
+   "sprite": "692",
    "types": [
     "Water"
    ]
   },
   "Claydol": {
-   "sprite": "claydol",
+   "sprite": "344",
    "types": [
     "Psychic",
     "Rock"
    ]
   },
   "Clefable": {
-   "sprite": "clefable",
+   "sprite": "36",
    "types": [
     "Fairy"
    ]
   },
   "Clefairy": {
-   "sprite": "clefairy",
+   "sprite": "35",
    "types": [
     "Fairy"
    ]
   },
+  "Clodsire": {
+   "sprite": "980",
+   "types": [
+    "Poison",
+    "Ground"
+   ]
+  },
   "Cloyster": {
-   "sprite": "cloyster",
+   "sprite": "91",
    "types": [
     "Ice",
     "Dark"
    ]
   },
   "Cobalion": {
-   "sprite": "cobalion",
+   "sprite": "638",
    "types": [
     "Steel",
     "Fighting"
    ]
   },
   "Cofagrigus": {
-   "sprite": "cofagrigus",
+   "sprite": "563",
    "types": [
     "Ghost",
     "Steel"
    ]
   },
   "Combee": {
-   "sprite": "combee",
+   "sprite": "415",
    "types": [
     "Bug",
     "Flying"
    ]
   },
   "Corphish": {
-   "sprite": "corphish",
+   "sprite": "341",
    "types": [
     "Water"
    ]
   },
   "Corsola": {
-   "sprite": "corsola",
+   "sprite": "222",
    "types": [
     "Water",
     "Rock"
    ]
   },
+  "Corsola (Galar)": {
+   "sprite": "10173",
+   "types": [
+    "Ghost"
+   ]
+  },
   "Cottonee": {
-   "sprite": "cottonee",
+   "sprite": "546",
    "types": [
     "Grass",
     "Fairy"
    ]
   },
+  "Crabrawler": {
+   "sprite": "739",
+   "types": [
+    "Fighting"
+   ]
+  },
   "Cranidos": {
-   "sprite": "cranidos",
+   "sprite": "408",
    "types": [
     "Rock"
    ]
   },
   "Crawdaunt": {
-   "sprite": "crawdaunt",
+   "sprite": "342",
    "types": [
     "Water",
     "Dark"
    ]
   },
   "Croagunk": {
-   "sprite": "croagunk",
+   "sprite": "453",
    "types": [
     "Poison",
     "Fighting"
    ]
   },
   "Crobat": {
-   "sprite": "crobat",
+   "sprite": "169",
    "types": [
     "Poison",
     "Flying"
    ]
   },
   "Crustle": {
-   "sprite": "crustle",
+   "sprite": "558",
    "types": [
     "Bug",
     "Rock"
    ]
   },
   "Cryogonal": {
-   "sprite": "cryogonal",
+   "sprite": "615",
    "types": [
     "Ice",
     "Flying"
    ]
   },
   "Cubchoo": {
-   "sprite": "cubchoo",
+   "sprite": "613",
    "types": [
     "Ice"
    ]
   },
   "Cubone": {
-   "sprite": "cubone",
+   "sprite": "104",
    "types": [
     "Ground"
    ]
   },
-  "Cyndaquil": {
-   "sprite": "cyndaquil",
+  "Darmanitan": {
+   "sprite": "555",
    "types": [
     "Fire"
    ]
   },
-  "Darmanitan (Zen)": {
-   "sprite": "darmanitan-zen",
-   "types": [
-    "Fire",
-    "Psychic"
-   ]
-  },
   "Darumaka": {
-   "sprite": "darumaka",
+   "sprite": "554",
    "types": [
     "Fire"
    ]
   },
   "Deerling": {
-   "sprite": "deerling",
+   "sprite": "585",
    "types": [
     "Normal",
     "Grass"
    ]
   },
   "Deino": {
-   "sprite": "deino",
+   "sprite": "633",
    "types": [
     "Dark",
     "Dragon"
    ]
   },
   "Delibird": {
-   "sprite": "delibird",
+   "sprite": "225",
    "types": [
     "Ice",
     "Flying"
    ]
   },
   "Dewgong": {
-   "sprite": "dewgong",
+   "sprite": "87",
    "types": [
     "Water",
     "Ice"
    ]
   },
-  "Dewott": {
-   "sprite": "dewott",
+  "Dewpider": {
+   "sprite": "751",
    "types": [
-    "Water"
+    "Water",
+    "Bug"
+   ]
+  },
+  "Dhelmise": {
+   "sprite": "781",
+   "types": [
+    "Ghost",
+    "Grass"
    ]
   },
   "Diglett": {
-   "sprite": "diglett",
+   "sprite": "50",
    "types": [
     "Ground"
    ]
   },
+  "Diglett (Alola)": {
+   "sprite": "10105",
+   "types": [
+    "Ground",
+    "Steel"
+   ]
+  },
   "Ditto": {
-   "sprite": "ditto",
+   "sprite": "132",
    "types": [
     "Normal"
    ]
   },
   "Dodrio": {
-   "sprite": "dodrio",
+   "sprite": "85",
    "types": [
     "Flying",
     "Ground"
    ]
   },
   "Doduo": {
-   "sprite": "doduo",
+   "sprite": "84",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Donphan": {
-   "sprite": "donphan",
+   "sprite": "232",
    "types": [
     "Ground"
    ]
   },
   "Dragonair": {
-   "sprite": "dragonair",
+   "sprite": "148",
    "types": [
     "Dragon"
    ]
   },
   "Dragonite": {
-   "sprite": "dragonite",
+   "sprite": "149",
    "types": [
     "Dragon",
     "Water"
    ]
   },
+  "Drampa": {
+   "sprite": "780",
+   "types": [
+    "Normal",
+    "Dragon"
+   ]
+  },
   "Drapion": {
-   "sprite": "drapion",
+   "sprite": "452",
    "types": [
     "Poison",
     "Dark"
    ]
   },
   "Dratini": {
-   "sprite": "dratini",
+   "sprite": "147",
    "types": [
     "Dragon"
    ]
   },
+  "Dreepy": {
+   "sprite": "885",
+   "types": [
+    "Dragon",
+    "Ghost"
+   ]
+  },
   "Drifblim": {
-   "sprite": "drifblim",
+   "sprite": "426",
    "types": [
     "Ghost",
     "Flying"
    ]
   },
   "Drifloon": {
-   "sprite": "drifloon",
+   "sprite": "425",
    "types": [
     "Ghost",
     "Flying"
    ]
   },
   "Drilbur": {
-   "sprite": "drilbur",
+   "sprite": "529",
    "types": [
     "Ground"
    ]
   },
   "Drowzee": {
-   "sprite": "drowzee",
+   "sprite": "96",
    "types": [
     "Psychic"
    ]
   },
   "Druddigon": {
-   "sprite": "druddigon",
+   "sprite": "621",
    "types": [
     "Dragon",
     "Fighting"
    ]
   },
   "Ducklett": {
-   "sprite": "ducklett",
+   "sprite": "580",
    "types": [
     "Water",
     "Flying"
    ]
   },
   "Dugtrio": {
-   "sprite": "dugtrio",
+   "sprite": "51",
    "types": [
     "Ground"
    ]
   },
   "Dunsparce": {
-   "sprite": "dunsparce",
+   "sprite": "206",
    "types": [
     "Normal",
     "Dragon"
    ]
   },
   "Duosion": {
-   "sprite": "duosion",
+   "sprite": "578",
    "types": [
     "Psychic"
    ]
   },
   "Durant": {
-   "sprite": "durant",
+   "sprite": "632",
    "types": [
     "Bug",
     "Steel"
    ]
   },
   "Dusclops": {
-   "sprite": "dusclops",
+   "sprite": "356",
    "types": [
     "Ghost"
    ]
   },
   "Duskull": {
-   "sprite": "duskull",
+   "sprite": "355",
    "types": [
     "Ghost"
    ]
   },
   "Dustox": {
-   "sprite": "dustox",
+   "sprite": "269",
    "types": [
     "Bug",
     "Poison"
    ]
   },
   "Dwebble": {
-   "sprite": "dwebble",
+   "sprite": "557",
    "types": [
     "Bug",
     "Rock"
    ]
   },
   "Eelektrik": {
-   "sprite": "eelektrik",
+   "sprite": "603",
    "types": [
     "Electric"
    ]
   },
   "Eevee": {
-   "sprite": "eevee",
+   "sprite": "133",
    "types": [
     "Normal"
    ]
   },
   "Ekans": {
-   "sprite": "ekans",
+   "sprite": "23",
    "types": [
     "Poison"
    ]
   },
   "Electabuzz": {
-   "sprite": "electabuzz",
+   "sprite": "125",
    "types": [
     "Electric"
    ]
   },
   "Electrike": {
-   "sprite": "electrike",
+   "sprite": "309",
    "types": [
     "Electric"
    ]
   },
   "Electrode": {
-   "sprite": "electrode",
+   "sprite": "101",
    "types": [
     "Electric",
     "Steel"
    ]
   },
   "Elekid": {
-   "sprite": "elekid",
+   "sprite": "239",
    "types": [
     "Electric"
    ]
   },
   "Elgyem": {
-   "sprite": "elgyem",
+   "sprite": "605",
    "types": [
     "Psychic"
    ]
   },
-  "Emboar": {
-   "sprite": "emboar",
-   "types": [
-    "Fire",
-    "Ground"
-   ]
-  },
   "Emolga": {
-   "sprite": "emolga",
+   "sprite": "587",
    "types": [
     "Electric",
     "Flying"
    ]
   },
   "Espeon": {
-   "sprite": "espeon",
+   "sprite": "196",
    "types": [
     "Psychic"
    ]
   },
   "Excadrill": {
-   "sprite": "excadrill",
+   "sprite": "530",
    "types": [
     "Ground",
     "Steel"
    ]
   },
   "Exeggcute": {
-   "sprite": "exeggcute",
+   "sprite": "102",
    "types": [
     "Grass",
     "Psychic"
    ]
   },
   "Exeggutor": {
-   "sprite": "exeggutor",
+   "sprite": "103",
    "types": [
     "Grass",
     "Psychic"
    ]
   },
+  "Exeggutor (Alola)": {
+   "sprite": "10114",
+   "types": [
+    "Grass",
+    "Dragon"
+   ]
+  },
   "Farfetch'd": {
-   "sprite": "farfetchd",
+   "sprite": "83",
    "types": [
     "Normal",
     "Flying"
    ]
   },
+  "Farfetch'd (Galar)": {
+   "sprite": "10166",
+   "types": [
+    "Fighting"
+   ]
+  },
   "Fearow": {
-   "sprite": "fearow",
+   "sprite": "22",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Feebas": {
-   "sprite": "feebas",
+   "sprite": "349",
    "types": [
     "Water"
    ]
   },
   "Ferroseed": {
-   "sprite": "ferroseed",
+   "sprite": "597",
    "types": [
     "Grass",
     "Steel"
    ]
   },
   "Finneon": {
-   "sprite": "finneon",
+   "sprite": "456",
    "types": [
     "Water"
    ]
   },
   "Flaaffy": {
-   "sprite": "flaaffy",
+   "sprite": "180",
    "types": [
     "Electric"
    ]
   },
   "Flareon": {
-   "sprite": "flareon",
+   "sprite": "136",
    "types": [
     "Fire"
    ]
   },
+  "Fletchling": {
+   "sprite": "661",
+   "types": [
+    "Normal",
+    "Flying"
+   ]
+  },
   "Floatzel": {
-   "sprite": "floatzel",
+   "sprite": "419",
    "types": [
     "Water",
     "Fighting"
    ]
   },
+  "Flutter Mane": {
+   "sprite": "987",
+   "types": [
+    "Ghost",
+    "Fairy"
+   ]
+  },
   "Foongus": {
-   "sprite": "foongus",
+   "sprite": "590",
    "types": [
     "Grass",
     "Poison"
    ]
   },
   "Forretress": {
-   "sprite": "forretress",
+   "sprite": "205",
    "types": [
     "Bug",
     "Steel"
    ]
   },
   "Fraxure": {
-   "sprite": "fraxure",
+   "sprite": "611",
    "types": [
     "Dragon"
    ]
   },
   "Frillish": {
-   "sprite": "frillish",
+   "sprite": "592",
    "types": [
     "Water",
     "Ghost"
    ]
   },
   "Furret": {
-   "sprite": "furret",
+   "sprite": "162",
    "types": [
     "Normal"
    ]
   },
   "Gabite": {
-   "sprite": "gabite",
+   "sprite": "444",
    "types": [
     "Dragon",
     "Ground"
    ]
   },
   "Galvantula": {
-   "sprite": "galvantula",
+   "sprite": "596",
    "types": [
     "Bug",
     "Electric"
    ]
   },
   "Garbodor": {
-   "sprite": "garbodor",
+   "sprite": "569",
    "types": [
     "Poison",
     "Steel"
    ]
   },
   "Gastly": {
-   "sprite": "gastly",
+   "sprite": "92",
    "types": [
     "Ghost",
     "Poison"
    ]
   },
-  "Gastrodon (East)": {
-   "sprite": "gastrodon-east",
-   "types": [
-    "Ground",
-    "Poison"
-   ]
-  },
-  "Gastrodon (West)": {
-   "sprite": "gastrodon",
+  "Gastrodon": {
+   "sprite": "423",
    "types": [
     "Ground",
     "Poison"
    ]
   },
   "Geodude": {
-   "sprite": "geodude",
+   "sprite": "74",
    "types": [
     "Rock",
     "Ground"
    ]
   },
+  "Geodude (Alola)": {
+   "sprite": "10109",
+   "types": [
+    "Rock",
+    "Electric"
+   ]
+  },
   "Gible": {
-   "sprite": "gible",
+   "sprite": "443",
    "types": [
     "Dragon",
     "Ground"
    ]
   },
+  "Gimmighoul": {
+   "sprite": "999",
+   "types": [
+    "Ghost"
+   ]
+  },
   "Girafarig": {
-   "sprite": "girafarig",
+   "sprite": "203",
    "types": [
     "Normal",
     "Psychic"
    ]
   },
   "Glaceon": {
-   "sprite": "glaceon",
+   "sprite": "471",
    "types": [
     "Ice"
    ]
   },
   "Glalie": {
-   "sprite": "glalie",
+   "sprite": "362",
    "types": [
     "Ice",
     "Rock"
    ]
   },
   "Glameow": {
-   "sprite": "glameow",
+   "sprite": "431",
    "types": [
     "Normal"
    ]
   },
   "Gligar": {
-   "sprite": "gligar",
+   "sprite": "207",
    "types": [
     "Ground",
     "Flying"
    ]
   },
   "Gliscor": {
-   "sprite": "gliscor",
+   "sprite": "472",
    "types": [
     "Ground",
     "Flying"
    ]
   },
   "Gloom": {
-   "sprite": "gloom",
+   "sprite": "44",
    "types": [
     "Grass",
     "Poison"
    ]
   },
   "Golbat": {
-   "sprite": "golbat",
+   "sprite": "42",
    "types": [
     "Poison",
     "Flying"
    ]
   },
   "Goldeen": {
-   "sprite": "goldeen",
+   "sprite": "118",
    "types": [
     "Water"
    ]
   },
   "Golduck": {
-   "sprite": "golduck",
+   "sprite": "55",
    "types": [
     "Water"
    ]
   },
   "Golett": {
-   "sprite": "golett",
+   "sprite": "622",
    "types": [
     "Ground",
     "Ghost"
    ]
   },
   "Golurk": {
-   "sprite": "golurk",
+   "sprite": "623",
    "types": [
     "Ghost",
     "Steel"
    ]
   },
+  "Goomy": {
+   "sprite": "704",
+   "types": [
+    "Dragon"
+   ]
+  },
   "Gorebyss": {
-   "sprite": "gorebyss",
+   "sprite": "368",
    "types": [
     "Water",
     "Fairy"
    ]
   },
   "Gothita": {
-   "sprite": "gothita",
+   "sprite": "574",
    "types": [
     "Psychic"
    ]
   },
   "Gothitelle": {
-   "sprite": "gothitelle",
+   "sprite": "576",
    "types": [
     "Psychic",
     "Dark"
    ]
   },
   "Gothorita": {
-   "sprite": "gothorita",
+   "sprite": "575",
    "types": [
     "Psychic"
    ]
   },
   "Granbull": {
-   "sprite": "granbull",
+   "sprite": "210",
    "types": [
     "Steel",
     "Fairy"
    ]
   },
   "Graveler": {
-   "sprite": "graveler",
+   "sprite": "75",
    "types": [
     "Rock",
     "Ground"
    ]
   },
+  "Great Tusk": {
+   "sprite": "984",
+   "types": [
+    "Ground",
+    "Fighting"
+   ]
+  },
   "Grimer": {
-   "sprite": "grimer",
+   "sprite": "88",
    "types": [
     "Poison"
    ]
   },
+  "Grimer (Alola)": {
+   "sprite": "10112",
+   "types": [
+    "Poison",
+    "Dark"
+   ]
+  },
   "Growlithe": {
-   "sprite": "growlithe",
+   "sprite": "58",
    "types": [
     "Fire"
    ]
   },
+  "Growlithe (Hisui)": {
+   "sprite": "10229",
+   "types": [
+    "Fire",
+    "Rock"
+   ]
+  },
   "Grumpig": {
-   "sprite": "grumpig",
+   "sprite": "326",
    "types": [
     "Psychic",
     "Ground"
    ]
   },
   "Gulpin": {
-   "sprite": "gulpin",
+   "sprite": "316",
    "types": [
     "Poison"
    ]
   },
   "Gurdurr": {
-   "sprite": "gurdurr",
+   "sprite": "533",
    "types": [
     "Fighting"
    ]
   },
   "Gyarados": {
-   "sprite": "gyarados",
+   "sprite": "130",
    "types": [
     "Water",
     "Flying"
    ]
   },
   "Happiny": {
-   "sprite": "happiny",
+   "sprite": "440",
    "types": [
     "Normal"
    ]
   },
   "Hariyama": {
-   "sprite": "hariyama",
+   "sprite": "297",
    "types": [
     "Fighting"
    ]
   },
   "Haunter": {
-   "sprite": "haunter",
+   "sprite": "93",
    "types": [
     "Ghost",
     "Poison"
    ]
   },
   "Heatmor": {
-   "sprite": "heatmor",
+   "sprite": "631",
    "types": [
     "Fire"
    ]
   },
+  "Heliolisk": {
+   "sprite": "695",
+   "types": [
+    "Electric",
+    "Normal"
+   ]
+  },
+  "Helioptile": {
+   "sprite": "694",
+   "types": [
+    "Electric",
+    "Normal"
+   ]
+  },
   "Heracross": {
-   "sprite": "heracross",
+   "sprite": "214",
    "types": [
     "Bug",
     "Fighting"
    ]
   },
   "Herdier": {
-   "sprite": "herdier",
+   "sprite": "507",
    "types": [
     "Normal"
    ]
   },
   "Hippopotas": {
-   "sprite": "hippopotas",
+   "sprite": "449",
    "types": [
     "Ground"
    ]
   },
   "Hoothoot": {
-   "sprite": "hoothoot",
+   "sprite": "163",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Hoppip": {
-   "sprite": "hoppip",
+   "sprite": "187",
    "types": [
     "Grass",
     "Flying"
    ]
   },
   "Horsea": {
-   "sprite": "horsea",
+   "sprite": "116",
    "types": [
     "Water"
    ]
   },
   "Houndoom": {
-   "sprite": "houndoom",
+   "sprite": "229",
    "types": [
     "Dark",
     "Fire"
    ]
   },
   "Houndour": {
-   "sprite": "houndour",
+   "sprite": "228",
    "types": [
     "Dark",
     "Fire"
    ]
   },
   "Huntail": {
-   "sprite": "huntail",
+   "sprite": "367",
    "types": [
     "Water",
     "Dragon"
    ]
   },
   "Hypno": {
-   "sprite": "hypno",
+   "sprite": "97",
    "types": [
     "Psychic",
     "Ghost"
    ]
   },
   "Illumise": {
-   "sprite": "illumise",
+   "sprite": "314",
    "types": [
     "Bug"
    ]
   },
+  "Impidimp": {
+   "sprite": "859",
+   "types": [
+    "Dark",
+    "Fairy"
+   ]
+  },
+  "Iron Bundle": {
+   "sprite": "991",
+   "types": [
+    "Ice",
+    "Water"
+   ]
+  },
+  "Iron Hands": {
+   "sprite": "992",
+   "types": [
+    "Fighting",
+    "Electric"
+   ]
+  },
+  "Iron Jugulis": {
+   "sprite": "993",
+   "types": [
+    "Dark",
+    "Flying"
+   ]
+  },
+  "Iron Moth": {
+   "sprite": "994",
+   "types": [
+    "Fire",
+    "Poison"
+   ]
+  },
+  "Iron Thorns": {
+   "sprite": "995",
+   "types": [
+    "Rock",
+    "Electric"
+   ]
+  },
+  "Iron Treads": {
+   "sprite": "990",
+   "types": [
+    "Ground",
+    "Steel"
+   ]
+  },
+  "Iron Valiant": {
+   "sprite": "1006",
+   "types": [
+    "Fairy",
+    "Fighting"
+   ]
+  },
+  "Jangmo-o": {
+   "sprite": "782",
+   "types": [
+    "Dragon"
+   ]
+  },
   "Jellicent": {
-   "sprite": "jellicent",
-   "types": [
-    "Poison",
-    "Water"
-   ]
-  },
-  "Jellicent ♀": {
-   "sprite": "jellicent-f",
-   "types": [
-    "Poison",
-    "Water"
-   ]
-  },
-  "Jellicent ♂": {
-   "sprite": "jellicent",
+   "sprite": "593",
    "types": [
     "Poison",
     "Water"
    ]
   },
   "Jigglypuff": {
-   "sprite": "jigglypuff",
+   "sprite": "39",
    "types": [
     "Normal",
     "Fairy"
    ]
   },
   "Jolteon": {
-   "sprite": "jolteon",
+   "sprite": "135",
    "types": [
     "Electric"
    ]
   },
   "Joltik": {
-   "sprite": "joltik",
+   "sprite": "595",
    "types": [
     "Bug",
     "Electric"
    ]
   },
   "Jumpluff": {
-   "sprite": "jumpluff",
+   "sprite": "189",
    "types": [
     "Grass",
     "Flying"
    ]
   },
   "Jynx": {
-   "sprite": "jynx",
+   "sprite": "124",
    "types": [
     "Ice",
     "Psychic"
    ]
   },
   "Kabuto": {
-   "sprite": "kabuto",
+   "sprite": "140",
    "types": [
     "Rock",
     "Water"
    ]
   },
   "Kadabra": {
-   "sprite": "kadabra",
+   "sprite": "64",
    "types": [
     "Psychic"
    ]
   },
   "Kangaskhan": {
-   "sprite": "kangaskhan",
+   "sprite": "115",
    "types": [
     "Normal"
    ]
   },
   "Karrablast": {
-   "sprite": "karrablast",
+   "sprite": "588",
    "types": [
     "Bug"
    ]
   },
   "Kecleon": {
-   "sprite": "kecleon",
+   "sprite": "352",
    "types": [
     "Normal"
    ]
   },
   "Kingdra": {
-   "sprite": "kingdra",
+   "sprite": "230",
    "types": [
     "Water",
     "Dragon"
    ]
   },
   "Kingler": {
-   "sprite": "kingler",
+   "sprite": "99",
    "types": [
     "Water",
     "Ground"
    ]
   },
   "Kirlia": {
-   "sprite": "kirlia",
+   "sprite": "281",
    "types": [
     "Psychic",
     "Fairy"
    ]
   },
   "Klang": {
-   "sprite": "klang",
+   "sprite": "600",
    "types": [
     "Steel"
    ]
   },
   "Klink": {
-   "sprite": "klink",
+   "sprite": "599",
    "types": [
     "Steel"
    ]
   },
   "Klinklang": {
-   "sprite": "klinklang",
+   "sprite": "601",
    "types": [
     "Steel",
     "Electric"
    ]
   },
   "Koffing": {
-   "sprite": "koffing",
+   "sprite": "109",
    "types": [
     "Poison"
    ]
   },
   "Krabby": {
-   "sprite": "krabby",
+   "sprite": "98",
    "types": [
     "Water"
    ]
   },
   "Kricketot": {
-   "sprite": "kricketot",
+   "sprite": "401",
    "types": [
     "Bug"
    ]
   },
   "Kricketune": {
-   "sprite": "kricketune",
+   "sprite": "402",
    "types": [
     "Bug"
    ]
   },
   "Krokorok": {
-   "sprite": "krokorok",
+   "sprite": "552",
    "types": [
     "Ground",
     "Dark"
    ]
   },
   "Kyurem": {
-   "sprite": "kyurem",
+   "sprite": "646",
    "types": [
     "Dragon",
     "Ice"
    ]
   },
   "Lairon": {
-   "sprite": "lairon",
+   "sprite": "305",
    "types": [
     "Steel",
     "Rock"
    ]
   },
   "Lampent": {
-   "sprite": "lampent",
+   "sprite": "608",
    "types": [
     "Ghost",
     "Fire"
    ]
   },
   "Lanturn": {
-   "sprite": "lanturn",
+   "sprite": "171",
    "types": [
     "Water",
     "Electric"
    ]
   },
   "Lapras": {
-   "sprite": "lapras",
+   "sprite": "131",
    "types": [
     "Water",
     "Ice"
    ]
   },
   "Larvitar": {
-   "sprite": "larvitar",
+   "sprite": "246",
    "types": [
     "Rock",
     "Ground"
    ]
   },
   "Leafeon": {
-   "sprite": "leafeon",
+   "sprite": "470",
    "types": [
     "Grass"
    ]
   },
   "Ledian": {
-   "sprite": "ledian",
+   "sprite": "166",
    "types": [
     "Bug",
     "Flying"
    ]
   },
   "Ledyba": {
-   "sprite": "ledyba",
+   "sprite": "165",
    "types": [
     "Bug",
     "Flying"
    ]
   },
   "Lickilicky": {
-   "sprite": "lickilicky",
+   "sprite": "463",
    "types": [
     "Normal"
    ]
   },
   "Lickitung": {
-   "sprite": "lickitung",
+   "sprite": "108",
    "types": [
     "Normal"
    ]
   },
   "Liepard": {
-   "sprite": "liepard",
+   "sprite": "510",
    "types": [
     "Dark"
    ]
   },
   "Lileep": {
-   "sprite": "lileep",
+   "sprite": "345",
    "types": [
     "Rock",
     "Grass"
    ]
   },
   "Lilligant": {
-   "sprite": "lilligant",
+   "sprite": "549",
    "types": [
     "Grass",
     "Fairy"
    ]
   },
+  "Lilligant (Hisui)": {
+   "sprite": "10237",
+   "types": [
+    "Grass",
+    "Fighting"
+   ]
+  },
   "Lillipup": {
-   "sprite": "lillipup",
+   "sprite": "506",
    "types": [
     "Normal"
    ]
   },
   "Linoone": {
-   "sprite": "linoone",
+   "sprite": "264",
    "types": [
     "Normal"
    ]
   },
   "Litwick": {
-   "sprite": "litwick",
+   "sprite": "607",
    "types": [
     "Ghost",
     "Fire"
    ]
   },
   "Lombre": {
-   "sprite": "lombre",
+   "sprite": "271",
    "types": [
     "Water",
     "Grass"
    ]
   },
   "Lotad": {
-   "sprite": "lotad",
+   "sprite": "270",
    "types": [
     "Water",
     "Grass"
    ]
   },
   "Loudred": {
-   "sprite": "loudred",
+   "sprite": "294",
    "types": [
     "Normal"
    ]
   },
   "Lucario": {
-   "sprite": "lucario",
+   "sprite": "448",
    "types": [
     "Fighting",
     "Steel"
    ]
   },
   "Ludicolo": {
-   "sprite": "ludicolo",
+   "sprite": "272",
    "types": [
     "Water",
     "Grass"
    ]
   },
   "Lumineon": {
-   "sprite": "lumineon",
+   "sprite": "457",
    "types": [
     "Water",
     "Electric"
    ]
   },
   "Lunatone": {
-   "sprite": "lunatone",
+   "sprite": "337",
    "types": [
     "Rock",
     "Dark"
    ]
   },
   "Luvdisc": {
-   "sprite": "luvdisc",
+   "sprite": "370",
    "types": [
     "Water"
    ]
   },
   "Luxray": {
-   "sprite": "luxray",
+   "sprite": "405",
    "types": [
     "Electric",
     "Dark"
    ]
   },
   "Machoke": {
-   "sprite": "machoke",
+   "sprite": "67",
    "types": [
     "Fighting"
    ]
   },
   "Machop": {
-   "sprite": "machop",
+   "sprite": "66",
    "types": [
     "Fighting"
    ]
   },
   "Magby": {
-   "sprite": "magby",
+   "sprite": "240",
    "types": [
     "Fire"
    ]
   },
   "Magcargo": {
-   "sprite": "magcargo",
+   "sprite": "219",
    "types": [
     "Fire",
     "Rock"
    ]
   },
   "Magikarp": {
-   "sprite": "magikarp",
+   "sprite": "129",
    "types": [
     "Water"
    ]
   },
   "Magmar": {
-   "sprite": "magmar",
+   "sprite": "126",
    "types": [
     "Fire"
    ]
   },
   "Magnemite": {
-   "sprite": "magnemite",
+   "sprite": "81",
    "types": [
     "Electric",
     "Steel"
    ]
   },
   "Magneton": {
-   "sprite": "magneton",
+   "sprite": "82",
    "types": [
     "Electric",
     "Steel"
    ]
   },
   "Magnezone": {
-   "sprite": "magnezone",
+   "sprite": "462",
    "types": [
     "Electric",
     "Steel"
    ]
   },
   "Makuhita": {
-   "sprite": "makuhita",
+   "sprite": "296",
    "types": [
     "Fighting"
    ]
   },
   "Mamoswine": {
-   "sprite": "mamoswine",
+   "sprite": "473",
    "types": [
     "Ice",
     "Ground"
    ]
   },
   "Mandibuzz": {
-   "sprite": "mandibuzz",
+   "sprite": "630",
    "types": [
     "Dark",
     "Flying"
    ]
   },
   "Manectric": {
-   "sprite": "manectric",
+   "sprite": "310",
    "types": [
     "Electric"
    ]
   },
   "Mankey": {
-   "sprite": "mankey",
+   "sprite": "56",
    "types": [
     "Fighting"
    ]
   },
   "Mantine": {
-   "sprite": "mantine",
+   "sprite": "226",
    "types": [
     "Water",
     "Flying"
    ]
   },
   "Mantyke": {
-   "sprite": "mantyke",
+   "sprite": "458",
    "types": [
     "Water",
     "Flying"
    ]
   },
   "Maractus": {
-   "sprite": "maractus",
+   "sprite": "556",
    "types": [
     "Grass",
     "Ground"
    ]
   },
   "Mareep": {
-   "sprite": "mareep",
+   "sprite": "179",
    "types": [
     "Electric"
    ]
   },
   "Marill": {
-   "sprite": "marill",
+   "sprite": "183",
    "types": [
     "Water",
     "Fairy"
    ]
   },
   "Marowak": {
-   "sprite": "marowak",
+   "sprite": "105",
    "types": [
     "Ground"
    ]
   },
+  "Marowak (Alola)": {
+   "sprite": "10115",
+   "types": [
+    "Fire",
+    "Ghost"
+   ]
+  },
   "Masquerain": {
-   "sprite": "masquerain",
+   "sprite": "284",
    "types": [
     "Bug",
     "Water"
    ]
   },
   "Mawile": {
-   "sprite": "mawile",
+   "sprite": "303",
    "types": [
     "Steel",
     "Fairy"
    ]
   },
   "Medicham": {
-   "sprite": "medicham",
+   "sprite": "308",
    "types": [
     "Fighting",
     "Psychic"
    ]
   },
   "Meditite": {
-   "sprite": "meditite",
+   "sprite": "307",
    "types": [
     "Fighting",
     "Psychic"
    ]
   },
   "Meowth": {
-   "sprite": "meowth",
+   "sprite": "52",
    "types": [
     "Normal"
    ]
   },
+  "Meowth (Galar)": {
+   "sprite": "10161",
+   "types": [
+    "Steel"
+   ]
+  },
   "Metang": {
-   "sprite": "metang",
+   "sprite": "375",
    "types": [
     "Steel",
     "Psychic"
    ]
   },
   "Mienfoo": {
-   "sprite": "mienfoo",
+   "sprite": "619",
    "types": [
     "Fighting"
    ]
   },
   "Mienshao": {
-   "sprite": "mienshao",
+   "sprite": "620",
    "types": [
     "Fighting"
    ]
   },
   "Mightyena": {
-   "sprite": "mightyena",
+   "sprite": "262",
    "types": [
     "Dark"
    ]
   },
   "Milotic": {
-   "sprite": "milotic",
+   "sprite": "350",
    "types": [
     "Water"
    ]
   },
   "Miltank": {
-   "sprite": "miltank",
+   "sprite": "241",
    "types": [
     "Normal",
     "Ground"
    ]
   },
   "Mime Jr.": {
-   "sprite": "mimejr",
+   "sprite": "439",
    "types": [
     "Psychic",
     "Fairy"
    ]
   },
   "Minccino": {
-   "sprite": "minccino",
+   "sprite": "572",
    "types": [
     "Normal"
    ]
   },
   "Minun": {
-   "sprite": "minun",
+   "sprite": "312",
    "types": [
     "Electric"
    ]
   },
   "Misdreavus": {
-   "sprite": "misdreavus",
+   "sprite": "200",
    "types": [
     "Ghost"
    ]
   },
   "Mothim": {
-   "sprite": "mothim",
+   "sprite": "414",
    "types": [
     "Bug",
     "Flying"
    ]
   },
   "Mr. Mime": {
-   "sprite": "mrmime",
+   "sprite": "122",
    "types": [
     "Psychic",
     "Fairy"
    ]
   },
-  "Mudkip": {
-   "sprite": "mudkip",
-   "types": [
-    "Water"
-   ]
-  },
   "Muk": {
-   "sprite": "muk",
+   "sprite": "89",
    "types": [
     "Poison",
     "Ground"
    ]
   },
   "Munchlax": {
-   "sprite": "munchlax",
+   "sprite": "446",
    "types": [
     "Normal"
    ]
   },
   "Munna": {
-   "sprite": "munna",
+   "sprite": "517",
    "types": [
     "Psychic"
    ]
   },
   "Murkrow": {
-   "sprite": "murkrow",
+   "sprite": "198",
    "types": [
     "Dark",
     "Flying"
    ]
   },
   "Musharna": {
-   "sprite": "musharna",
+   "sprite": "518",
    "types": [
     "Psychic",
     "Fairy"
    ]
   },
   "Natu": {
-   "sprite": "natu",
+   "sprite": "177",
    "types": [
     "Psychic",
     "Flying"
    ]
   },
   "Nidoking": {
-   "sprite": "nidoking",
+   "sprite": "34",
    "types": [
     "Ground",
     "Dark"
    ]
   },
   "Nidoqueen": {
-   "sprite": "nidoqueen",
+   "sprite": "31",
    "types": [
     "Poison",
     "Psychic"
    ]
   },
   "Nidoran♀": {
-   "sprite": "nidoranf",
+   "sprite": "29",
    "types": [
     "Poison"
    ]
   },
   "Nidoran♂": {
-   "sprite": "nidoranm",
+   "sprite": "32",
    "types": [
     "Poison"
    ]
   },
   "Nidorina": {
-   "sprite": "nidorina",
+   "sprite": "30",
    "types": [
     "Poison"
    ]
   },
   "Nidorino": {
-   "sprite": "nidorino",
+   "sprite": "33",
    "types": [
     "Poison"
    ]
   },
   "Nincada": {
-   "sprite": "nincada",
+   "sprite": "290",
    "types": [
     "Bug",
     "Ground"
    ]
   },
   "Ninetales": {
-   "sprite": "ninetales",
+   "sprite": "38",
    "types": [
     "Fire",
     "Ice"
    ]
   },
+  "Ninetales (Alola)": {
+   "sprite": "10104",
+   "types": [
+    "Ice",
+    "Fairy"
+   ]
+  },
   "Noctowl": {
-   "sprite": "noctowl",
+   "sprite": "164",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Nosepass": {
-   "sprite": "nosepass",
+   "sprite": "299",
    "types": [
     "Rock"
    ]
   },
   "Numel": {
-   "sprite": "numel",
+   "sprite": "322",
    "types": [
     "Fire",
     "Ground"
    ]
   },
   "Nuzleaf": {
-   "sprite": "nuzleaf",
+   "sprite": "274",
    "types": [
     "Grass",
     "Dark"
    ]
   },
   "Octillery": {
-   "sprite": "octillery",
+   "sprite": "224",
    "types": [
     "Water",
     "Fire"
    ]
   },
   "Oddish": {
-   "sprite": "oddish",
+   "sprite": "43",
    "types": [
     "Grass",
     "Poison"
    ]
   },
   "Omanyte": {
-   "sprite": "omanyte",
+   "sprite": "138",
    "types": [
     "Rock",
     "Water"
    ]
   },
   "Onix": {
-   "sprite": "onix",
+   "sprite": "95",
    "types": [
     "Rock",
     "Ground"
    ]
   },
+  "Oricorio (Baile)": {
+   "sprite": "741",
+   "types": [
+    "Fire",
+    "Flying"
+   ]
+  },
+  "Oricorio (Pa'u)": {
+   "sprite": "10124",
+   "types": [
+    "Psychic",
+    "Flying"
+   ]
+  },
+  "Oricorio (Pom-Pom)": {
+   "sprite": "10123",
+   "types": [
+    "Electric",
+    "Flying"
+   ]
+  },
+  "Oricorio (Sensu)": {
+   "sprite": "10125",
+   "types": [
+    "Ghost",
+    "Flying"
+   ]
+  },
   "Pachirisu": {
-   "sprite": "pachirisu",
+   "sprite": "417",
    "types": [
     "Electric",
     "Grass"
    ]
   },
   "Palpitoad": {
-   "sprite": "palpitoad",
+   "sprite": "536",
    "types": [
     "Water",
     "Ground"
    ]
   },
   "Panpour": {
-   "sprite": "panpour",
+   "sprite": "515",
    "types": [
     "Water"
    ]
   },
   "Pansage": {
-   "sprite": "pansage",
+   "sprite": "511",
    "types": [
     "Grass"
    ]
   },
   "Pansear": {
-   "sprite": "pansear",
+   "sprite": "513",
    "types": [
     "Fire"
    ]
   },
   "Paras": {
-   "sprite": "paras",
+   "sprite": "46",
    "types": [
     "Bug",
     "Grass"
    ]
   },
   "Parasect": {
-   "sprite": "parasect",
+   "sprite": "47",
    "types": [
     "Bug",
     "Ghost"
    ]
   },
   "Patrat": {
-   "sprite": "patrat",
+   "sprite": "504",
    "types": [
     "Normal"
    ]
   },
   "Pawniard": {
-   "sprite": "pawniard",
+   "sprite": "624",
    "types": [
     "Dark",
     "Steel"
    ]
   },
   "Pelipper": {
-   "sprite": "pelipper",
+   "sprite": "279",
    "types": [
     "Water",
     "Flying"
    ]
   },
+  "Perrserker": {
+   "sprite": "863",
+   "types": [
+    "Steel"
+   ]
+  },
   "Persian": {
-   "sprite": "persian",
+   "sprite": "53",
    "types": [
     "Ice"
    ]
   },
   "Petilil": {
-   "sprite": "petilil",
+   "sprite": "548",
    "types": [
     "Grass"
    ]
   },
   "Phanpy": {
-   "sprite": "phanpy",
+   "sprite": "231",
    "types": [
     "Ground"
    ]
   },
-  "Phione": {
-   "sprite": "phione",
-   "types": [
-    "Water"
-   ]
-  },
   "Pichu": {
-   "sprite": "pichu",
+   "sprite": "172",
    "types": [
     "Electric"
    ]
   },
   "Pidgeot": {
-   "sprite": "pidgeot",
+   "sprite": "18",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Pidgeotto": {
-   "sprite": "pidgeotto",
+   "sprite": "17",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Pidgey": {
-   "sprite": "pidgey",
+   "sprite": "16",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Pidove": {
-   "sprite": "pidove",
+   "sprite": "519",
    "types": [
     "Normal",
     "Flying"
    ]
   },
-  "Pignite": {
-   "sprite": "pignite",
-   "types": [
-    "Fire",
-    "Fighting"
-   ]
-  },
   "Pikachu": {
-   "sprite": "pikachu",
+   "sprite": "25",
    "types": [
     "Electric"
    ]
   },
   "Piloswine": {
-   "sprite": "piloswine",
+   "sprite": "221",
    "types": [
     "Ice",
     "Ground"
    ]
   },
   "Pineco": {
-   "sprite": "pineco",
+   "sprite": "204",
    "types": [
     "Bug"
    ]
   },
   "Pinsir": {
-   "sprite": "pinsir",
+   "sprite": "127",
    "types": [
     "Bug"
    ]
   },
-  "Piplup": {
-   "sprite": "piplup",
-   "types": [
-    "Water"
-   ]
-  },
   "Plusle": {
-   "sprite": "plusle",
+   "sprite": "311",
    "types": [
     "Electric"
    ]
   },
   "Poliwag": {
-   "sprite": "poliwag",
+   "sprite": "60",
    "types": [
     "Water"
    ]
   },
   "Poliwhirl": {
-   "sprite": "poliwhirl",
+   "sprite": "61",
    "types": [
     "Water"
    ]
   },
   "Ponyta": {
-   "sprite": "ponyta",
+   "sprite": "77",
    "types": [
     "Fire"
    ]
   },
+  "Ponyta (Galar)": {
+   "sprite": "10162",
+   "types": [
+    "Psychic"
+   ]
+  },
   "Poochyena": {
-   "sprite": "poochyena",
+   "sprite": "261",
    "types": [
     "Dark"
    ]
   },
   "Porygon": {
-   "sprite": "porygon",
+   "sprite": "137",
    "types": [
     "Normal"
    ]
   },
   "Porygon2": {
-   "sprite": "porygon2",
+   "sprite": "233",
    "types": [
     "Normal"
    ]
   },
   "Primeape": {
-   "sprite": "primeape",
+   "sprite": "57",
    "types": [
     "Fighting"
    ]
   },
   "Probopass": {
-   "sprite": "probopass",
+   "sprite": "476",
    "types": [
     "Rock",
     "Flying"
    ]
   },
   "Psyduck": {
-   "sprite": "psyduck",
+   "sprite": "54",
    "types": [
     "Water"
    ]
   },
   "Pupitar": {
-   "sprite": "pupitar",
+   "sprite": "247",
    "types": [
     "Rock",
     "Ground"
    ]
   },
   "Purrloin": {
-   "sprite": "purrloin",
+   "sprite": "509",
    "types": [
     "Dark"
    ]
   },
   "Quagsire": {
-   "sprite": "quagsire",
+   "sprite": "195",
    "types": [
     "Water",
     "Ground"
    ]
   },
   "Qwilfish": {
-   "sprite": "qwilfish",
+   "sprite": "211",
    "types": [
     "Water",
     "Poison"
    ]
   },
+  "Qwilfish (Hisui)": {
+   "sprite": "10234",
+   "types": [
+    "Dark",
+    "Poison"
+   ]
+  },
   "Raichu": {
-   "sprite": "raichu",
+   "sprite": "26",
+   "types": [
+    "Electric",
+    "Psychic"
+   ]
+  },
+  "Raichu (Alola)": {
+   "sprite": "10100",
    "types": [
     "Electric",
     "Psychic"
    ]
   },
   "Ralts": {
-   "sprite": "ralts",
+   "sprite": "280",
    "types": [
     "Psychic",
     "Fairy"
    ]
   },
   "Rapidash": {
-   "sprite": "rapidash",
+   "sprite": "78",
    "types": [
     "Fire",
     "Fairy"
    ]
   },
   "Raticate": {
-   "sprite": "raticate",
+   "sprite": "20",
    "types": [
     "Normal"
    ]
   },
   "Rattata": {
-   "sprite": "rattata",
+   "sprite": "19",
    "types": [
     "Normal"
    ]
   },
+  "Rattata (Alola)": {
+   "sprite": "10091",
+   "types": [
+    "Dark",
+    "Normal"
+   ]
+  },
   "Relicanth": {
-   "sprite": "relicanth",
+   "sprite": "369",
    "types": [
     "Water",
     "Rock"
    ]
   },
   "Remoraid": {
-   "sprite": "remoraid",
+   "sprite": "223",
    "types": [
     "Water"
    ]
   },
   "Reshiram": {
-   "sprite": "reshiram",
+   "sprite": "643",
    "types": [
     "Dragon",
     "Fire"
    ]
   },
   "Reuniclus": {
-   "sprite": "reuniclus",
+   "sprite": "579",
    "types": [
     "Psychic"
    ]
   },
   "Rhydon": {
-   "sprite": "rhydon",
+   "sprite": "112",
    "types": [
     "Ground",
     "Rock"
    ]
   },
   "Rhyhorn": {
-   "sprite": "rhyhorn",
+   "sprite": "111",
    "types": [
     "Ground",
     "Rock"
    ]
   },
   "Riolu": {
-   "sprite": "riolu",
+   "sprite": "447",
    "types": [
     "Fighting"
    ]
   },
+  "Roaring Moon": {
+   "sprite": "1005",
+   "types": [
+    "Dragon",
+    "Dark"
+   ]
+  },
   "Roggenrola": {
-   "sprite": "roggenrola",
+   "sprite": "524",
    "types": [
     "Rock"
    ]
   },
+  "Rookidee": {
+   "sprite": "821",
+   "types": [
+    "Flying"
+   ]
+  },
   "Roselia": {
-   "sprite": "roselia",
+   "sprite": "315",
    "types": [
     "Grass",
     "Poison"
    ]
   },
   "Roserade": {
-   "sprite": "roserade",
+   "sprite": "407",
    "types": [
     "Grass",
     "Poison"
    ]
   },
+  "Rotom": {
+   "sprite": "479",
+   "types": [
+    "Electric",
+    "Ghost"
+   ]
+  },
   "Rufflet": {
-   "sprite": "rufflet",
+   "sprite": "627",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Sableye": {
-   "sprite": "sableye",
+   "sprite": "302",
    "types": [
     "Ghost",
     "Rock"
    ]
   },
-  "Samurott": {
-   "sprite": "samurott",
-   "types": [
-    "Water",
-    "Fighting"
-   ]
-  },
   "Sandile": {
-   "sprite": "sandile",
+   "sprite": "551",
    "types": [
     "Ground",
     "Dark"
    ]
   },
   "Sandshrew": {
-   "sprite": "sandshrew",
+   "sprite": "27",
    "types": [
     "Ground"
    ]
   },
-  "Sandslash": {
-   "sprite": "sandslash",
+  "Sandshrew (Alola)": {
+   "sprite": "10101",
    "types": [
+    "Ice",
+    "Steel"
+   ]
+  },
+  "Sandslash": {
+   "sprite": "28",
+   "types": [
+    "Ground"
+   ]
+  },
+  "Sandy Shocks": {
+   "sprite": "989",
+   "types": [
+    "Electric",
+    "Ground"
+   ]
+  },
+  "Sandygast": {
+   "sprite": "769",
+   "types": [
+    "Ghost",
     "Ground"
    ]
   },
   "Sawk": {
-   "sprite": "sawk",
+   "sprite": "539",
    "types": [
     "Fighting",
     "Water"
    ]
   },
   "Sawsbuck": {
-   "sprite": "sawsbuck",
+   "sprite": "586",
    "types": [
     "Normal",
     "Grass"
    ]
   },
   "Scizor": {
-   "sprite": "scizor",
+   "sprite": "212",
    "types": [
     "Bug",
     "Steel"
    ]
   },
   "Scolipede": {
-   "sprite": "scolipede",
+   "sprite": "545",
    "types": [
     "Bug",
     "Poison"
    ]
   },
   "Scrafty": {
-   "sprite": "scrafty",
+   "sprite": "560",
    "types": [
     "Dark",
     "Fighting"
    ]
   },
   "Scraggy": {
-   "sprite": "scraggy",
+   "sprite": "559",
    "types": [
     "Dark",
     "Fighting"
    ]
   },
+  "Scream Tail": {
+   "sprite": "985",
+   "types": [
+    "Fairy",
+    "Psychic"
+   ]
+  },
   "Scyther": {
-   "sprite": "scyther",
+   "sprite": "123",
    "types": [
     "Bug",
     "Fighting"
    ]
   },
   "Seadra": {
-   "sprite": "seadra",
+   "sprite": "117",
    "types": [
     "Water"
    ]
   },
   "Seaking": {
-   "sprite": "seaking",
+   "sprite": "119",
    "types": [
     "Water"
    ]
   },
   "Sealeo": {
-   "sprite": "sealeo",
+   "sprite": "364",
    "types": [
     "Ice",
     "Water"
    ]
   },
   "Seedot": {
-   "sprite": "seedot",
+   "sprite": "273",
    "types": [
     "Grass"
    ]
   },
   "Seel": {
-   "sprite": "seel",
+   "sprite": "86",
    "types": [
     "Water"
    ]
   },
   "Seismitoad": {
-   "sprite": "seismitoad",
+   "sprite": "537",
    "types": [
     "Water",
     "Poison"
    ]
   },
   "Sentret": {
-   "sprite": "sentret",
+   "sprite": "161",
    "types": [
     "Normal"
    ]
   },
-  "Serperior": {
-   "sprite": "serperior",
-   "types": [
-    "Grass",
-    "Dragon"
-   ]
-  },
-  "Servine": {
-   "sprite": "servine",
-   "types": [
-    "Grass"
-   ]
-  },
   "Seviper": {
-   "sprite": "seviper",
+   "sprite": "336",
    "types": [
     "Poison",
     "Dark"
    ]
   },
   "Sewaddle": {
-   "sprite": "sewaddle",
+   "sprite": "540",
    "types": [
     "Bug",
     "Grass"
    ]
   },
   "Sharpedo": {
-   "sprite": "sharpedo",
+   "sprite": "319",
    "types": [
     "Water",
     "Dark"
    ]
   },
   "Shelgon": {
-   "sprite": "shelgon",
+   "sprite": "372",
    "types": [
     "Dragon"
    ]
   },
   "Shellder": {
-   "sprite": "shellder",
+   "sprite": "90",
    "types": [
     "Water"
    ]
   },
-  "Shellos (East)": {
-   "sprite": "shellos-east",
-   "types": [
-    "Water"
-   ]
-  },
-  "Shellos (West)": {
-   "sprite": "shellos",
+  "Shellos": {
+   "sprite": "422",
    "types": [
     "Water"
    ]
   },
   "Shelmet": {
-   "sprite": "shelmet",
+   "sprite": "616",
    "types": [
     "Bug"
    ]
   },
   "Shieldon": {
-   "sprite": "shieldon",
+   "sprite": "410",
    "types": [
     "Rock",
     "Steel"
    ]
   },
   "Shiftry": {
-   "sprite": "shiftry",
+   "sprite": "275",
    "types": [
     "Grass",
     "Ghost"
    ]
   },
   "Shinx": {
-   "sprite": "shinx",
+   "sprite": "403",
    "types": [
     "Electric"
    ]
   },
   "Shroomish": {
-   "sprite": "shroomish",
+   "sprite": "285",
    "types": [
     "Grass"
    ]
   },
   "Shuckle": {
-   "sprite": "shuckle",
+   "sprite": "213",
    "types": [
     "Bug",
     "Water"
    ]
   },
   "Shuppet": {
-   "sprite": "shuppet",
+   "sprite": "353",
    "types": [
     "Ghost"
    ]
   },
   "Sigilyph": {
-   "sprite": "sigilyph",
+   "sprite": "561",
    "types": [
     "Psychic",
     "Flying"
    ]
   },
+  "Silicobra": {
+   "sprite": "843",
+   "types": [
+    "Ground"
+   ]
+  },
   "Simipour": {
-   "sprite": "simipour",
+   "sprite": "516",
    "types": [
     "Water"
    ]
   },
   "Simisage": {
-   "sprite": "simisage",
+   "sprite": "512",
    "types": [
     "Grass"
    ]
   },
   "Simisear": {
-   "sprite": "simisear",
+   "sprite": "514",
    "types": [
     "Fire"
    ]
   },
+  "Sizzlipede": {
+   "sprite": "850",
+   "types": [
+    "Fire",
+    "Bug"
+   ]
+  },
   "Skarmory": {
-   "sprite": "skarmory",
+   "sprite": "227",
    "types": [
     "Steel",
     "Flying"
    ]
   },
   "Skiploom": {
-   "sprite": "skiploom",
+   "sprite": "188",
    "types": [
     "Grass",
     "Flying"
    ]
   },
   "Skitty": {
-   "sprite": "skitty",
+   "sprite": "300",
    "types": [
     "Normal"
    ]
   },
   "Skorupi": {
-   "sprite": "skorupi",
+   "sprite": "451",
    "types": [
     "Poison",
     "Bug"
    ]
   },
   "Slaking": {
-   "sprite": "slaking",
+   "sprite": "289",
    "types": [
     "Normal",
     "Grass"
    ]
   },
   "Slakoth": {
-   "sprite": "slakoth",
+   "sprite": "287",
    "types": [
     "Normal"
    ]
   },
+  "Sliggoo": {
+   "sprite": "705",
+   "types": [
+    "Dragon"
+   ]
+  },
+  "Sliggoo (Hisui)": {
+   "sprite": "10241",
+   "types": [
+    "Steel",
+    "Dragon"
+   ]
+  },
+  "Slither Wing": {
+   "sprite": "988",
+   "types": [
+    "Bug",
+    "Fighting"
+   ]
+  },
+  "Slowbro (Galar)": {
+   "sprite": "10165",
+   "types": [
+    "Poison",
+    "Psychic"
+   ]
+  },
+  "Slowking (Galar)": {
+   "sprite": "10172",
+   "types": [
+    "Poison",
+    "Psychic"
+   ]
+  },
   "Slowpoke": {
-   "sprite": "slowpoke",
+   "sprite": "79",
    "types": [
     "Water",
     "Psychic"
    ]
   },
+  "Slowpoke (Galar)": {
+   "sprite": "10164",
+   "types": [
+    "Psychic"
+   ]
+  },
   "Slugma": {
-   "sprite": "slugma",
+   "sprite": "218",
    "types": [
     "Fire"
    ]
   },
   "Smeargle": {
-   "sprite": "smeargle",
+   "sprite": "235",
    "types": [
     "Normal"
    ]
   },
   "Sneasel": {
-   "sprite": "sneasel",
+   "sprite": "215",
    "types": [
     "Dark",
     "Ice"
    ]
   },
+  "Sneasel (Hisui)": {
+   "sprite": "10235",
+   "types": [
+    "Fighting",
+    "Poison"
+   ]
+  },
+  "Snom": {
+   "sprite": "872",
+   "types": [
+    "Ice",
+    "Bug"
+   ]
+  },
   "Snorlax": {
-   "sprite": "snorlax",
+   "sprite": "143",
    "types": [
     "Normal"
    ]
   },
   "Snorunt": {
-   "sprite": "snorunt",
+   "sprite": "361",
    "types": [
     "Ice"
    ]
   },
   "Snover": {
-   "sprite": "snover",
+   "sprite": "459",
    "types": [
     "Grass",
     "Ice"
    ]
   },
   "Snubbull": {
-   "sprite": "snubbull",
+   "sprite": "209",
    "types": [
     "Fairy"
    ]
   },
   "Solosis": {
-   "sprite": "solosis",
+   "sprite": "577",
    "types": [
     "Psychic"
    ]
   },
   "Solrock": {
-   "sprite": "solrock",
+   "sprite": "338",
    "types": [
     "Rock",
     "Fire"
    ]
   },
   "Spearow": {
-   "sprite": "spearow",
+   "sprite": "21",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Spheal": {
-   "sprite": "spheal",
+   "sprite": "363",
    "types": [
     "Ice",
     "Water"
    ]
   },
   "Spinarak": {
-   "sprite": "spinarak",
+   "sprite": "167",
    "types": [
     "Bug",
     "Poison"
    ]
   },
   "Spinda": {
-   "sprite": "spinda",
+   "sprite": "327",
    "types": [
     "Normal",
     "Psychic"
    ]
   },
   "Spiritomb": {
-   "sprite": "spiritomb",
+   "sprite": "442",
    "types": [
     "Ghost",
     "Rock"
    ]
   },
   "Spoink": {
-   "sprite": "spoink",
+   "sprite": "325",
    "types": [
     "Psychic"
    ]
   },
-  "Squirtle": {
-   "sprite": "squirtle",
-   "types": [
-    "Water"
-   ]
-  },
   "Stantler": {
-   "sprite": "stantler",
+   "sprite": "234",
    "types": [
     "Normal"
    ]
   },
   "Staraptor": {
-   "sprite": "staraptor",
+   "sprite": "398",
    "types": [
     "Flying",
     "Fighting"
    ]
   },
   "Staravia": {
-   "sprite": "staravia",
+   "sprite": "397",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Starly": {
-   "sprite": "starly",
+   "sprite": "396",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Starmie": {
-   "sprite": "starmie",
+   "sprite": "121",
    "types": [
     "Water",
     "Psychic"
    ]
   },
   "Staryu": {
-   "sprite": "staryu",
+   "sprite": "120",
    "types": [
     "Water"
    ]
   },
   "Steelix": {
-   "sprite": "steelix",
+   "sprite": "208",
    "types": [
     "Steel",
     "Ground"
    ]
   },
   "Stoutland": {
-   "sprite": "stoutland",
+   "sprite": "508",
    "types": [
     "Normal",
     "Ice"
    ]
   },
   "Stunfisk": {
-   "sprite": "stunfisk",
+   "sprite": "618",
    "types": [
     "Ground",
     "Electric"
    ]
   },
+  "Stunfisk (Galar)": {
+   "sprite": "10180",
+   "types": [
+    "Ground",
+    "Steel"
+   ]
+  },
   "Stunky": {
-   "sprite": "stunky",
+   "sprite": "434",
    "types": [
     "Poison",
     "Dark"
    ]
   },
   "Sudowoodo": {
-   "sprite": "sudowoodo",
+   "sprite": "185",
    "types": [
     "Rock",
     "Grass"
    ]
   },
   "Sunkern": {
-   "sprite": "sunkern",
+   "sprite": "191",
    "types": [
     "Grass"
    ]
   },
   "Surskit": {
-   "sprite": "surskit",
+   "sprite": "283",
    "types": [
     "Bug",
     "Water"
    ]
   },
   "Swablu": {
-   "sprite": "swablu",
+   "sprite": "333",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Swadloon": {
-   "sprite": "swadloon",
+   "sprite": "541",
    "types": [
     "Bug",
     "Grass"
    ]
   },
   "Swalot": {
-   "sprite": "swalot",
+   "sprite": "317",
    "types": [
     "Poison"
    ]
   },
   "Swanna": {
-   "sprite": "swanna",
+   "sprite": "581",
    "types": [
     "Water",
     "Flying"
    ]
   },
   "Swellow": {
-   "sprite": "swellow",
+   "sprite": "277",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Swinub": {
-   "sprite": "swinub",
+   "sprite": "220",
    "types": [
     "Ice",
     "Ground"
    ]
   },
   "Swoobat": {
-   "sprite": "swoobat",
+   "sprite": "528",
    "types": [
     "Flying",
     "Fairy"
    ]
   },
+  "Sylveon": {
+   "sprite": "700",
+   "types": [
+    "Fairy"
+   ]
+  },
   "Taillow": {
-   "sprite": "taillow",
+   "sprite": "276",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Tangela": {
-   "sprite": "tangela",
+   "sprite": "114",
    "types": [
     "Grass"
    ]
   },
   "Tangrowth": {
-   "sprite": "tangrowth",
+   "sprite": "465",
    "types": [
     "Grass"
    ]
   },
   "Tauros": {
-   "sprite": "tauros",
+   "sprite": "128",
    "types": [
     "Normal"
    ]
   },
+  "Tauros (Paldea Aqua)": {
+   "sprite": "10252",
+   "types": [
+    "Fighting",
+    "Water"
+   ]
+  },
+  "Tauros (Paldea Blaze)": {
+   "sprite": "10251",
+   "types": [
+    "Fighting",
+    "Fire"
+   ]
+  },
+  "Tauros (Paldea Combat)": {
+   "sprite": "10250",
+   "types": [
+    "Fighting"
+   ]
+  },
   "Teddiursa": {
-   "sprite": "teddiursa",
+   "sprite": "216",
    "types": [
     "Normal"
    ]
   },
   "Tentacool": {
-   "sprite": "tentacool",
+   "sprite": "72",
    "types": [
     "Water",
     "Poison"
    ]
   },
   "Tentacruel": {
-   "sprite": "tentacruel",
+   "sprite": "73",
    "types": [
     "Water",
     "Poison"
    ]
   },
   "Terrakion": {
-   "sprite": "terrakion",
+   "sprite": "639",
    "types": [
     "Rock",
     "Fighting"
    ]
   },
   "Throh": {
-   "sprite": "throh",
+   "sprite": "538",
    "types": [
     "Fighting",
     "Fire"
    ]
   },
   "Timburr": {
-   "sprite": "timburr",
+   "sprite": "532",
    "types": [
     "Fighting"
    ]
   },
   "Tirtouga": {
-   "sprite": "tirtouga",
+   "sprite": "564",
    "types": [
     "Water",
     "Rock"
    ]
   },
   "Togepi": {
-   "sprite": "togepi",
+   "sprite": "175",
    "types": [
     "Fairy"
    ]
   },
-  "Torchic": {
-   "sprite": "torchic",
-   "types": [
-    "Fire"
-   ]
-  },
   "Torkoal": {
-   "sprite": "torkoal",
+   "sprite": "324",
    "types": [
     "Fire"
    ]
   },
-  "Totodile": {
-   "sprite": "totodile",
+  "Toxel": {
+   "sprite": "848",
    "types": [
-    "Water"
+    "Electric",
+    "Poison"
    ]
   },
   "Toxicroak": {
-   "sprite": "toxicroak",
+   "sprite": "454",
    "types": [
     "Fighting",
     "Ghost"
    ]
   },
   "Tranquill": {
-   "sprite": "tranquill",
+   "sprite": "520",
    "types": [
     "Normal",
     "Flying"
    ]
   },
   "Trapinch": {
-   "sprite": "trapinch",
+   "sprite": "328",
    "types": [
     "Ground"
    ]
   },
-  "Treecko": {
-   "sprite": "treecko",
-   "types": [
-    "Grass"
-   ]
-  },
   "Tropius": {
-   "sprite": "tropius",
+   "sprite": "357",
    "types": [
     "Grass",
     "Dragon"
    ]
   },
   "Trubbish": {
-   "sprite": "trubbish",
+   "sprite": "568",
    "types": [
     "Poison"
    ]
   },
-  "Turtwig": {
-   "sprite": "turtwig",
-   "types": [
-    "Grass"
-   ]
-  },
   "Tympole": {
-   "sprite": "tympole",
+   "sprite": "535",
    "types": [
     "Water"
    ]
   },
   "Tynamo": {
-   "sprite": "tynamo",
+   "sprite": "602",
    "types": [
     "Electric"
    ]
   },
   "Tyranitar": {
-   "sprite": "tyranitar",
+   "sprite": "248",
    "types": [
     "Dragon",
     "Rock"
    ]
   },
   "Tyrogue": {
-   "sprite": "tyrogue",
+   "sprite": "236",
    "types": [
     "Fighting"
    ]
   },
+  "Tyrunt": {
+   "sprite": "696",
+   "types": [
+    "Rock",
+    "Dragon"
+   ]
+  },
   "Umbreon": {
-   "sprite": "umbreon",
+   "sprite": "197",
    "types": [
     "Dark"
    ]
   },
   "Unfezant": {
-   "sprite": "unfezant",
+   "sprite": "521",
    "types": [
     "Normal",
     "Flying"
    ]
   },
-  "Unown-!": {
-   "sprite": "unown-exclamation",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-?": {
-   "sprite": "unown-question",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-A": {
-   "sprite": "unown",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-B": {
-   "sprite": "unown-b",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-C": {
-   "sprite": "unown-c",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-D": {
-   "sprite": "unown-d",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-E": {
-   "sprite": "unown-e",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-F": {
-   "sprite": "unown-f",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-G": {
-   "sprite": "unown-g",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-H": {
-   "sprite": "unown-h",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-I": {
-   "sprite": "unown-i",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-J": {
-   "sprite": "unown-j",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-K": {
-   "sprite": "unown-k",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-L": {
-   "sprite": "unown-l",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-M": {
-   "sprite": "unown-m",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-N": {
-   "sprite": "unown-n",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-O": {
-   "sprite": "unown-o",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-P": {
-   "sprite": "unown-p",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-Q": {
-   "sprite": "unown-q",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-R": {
-   "sprite": "unown-r",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-S": {
-   "sprite": "unown-s",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-T": {
-   "sprite": "unown-t",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-U": {
-   "sprite": "unown-u",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-V": {
-   "sprite": "unown-v",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-W": {
-   "sprite": "unown-w",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-X": {
-   "sprite": "unown-x",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-Y": {
-   "sprite": "unown-y",
-   "types": [
-    "Psychic"
-   ]
-  },
-  "Unown-Z": {
-   "sprite": "unown-z",
+  "Unown": {
+   "sprite": "201",
    "types": [
     "Psychic"
    ]
   },
   "Ursaring": {
-   "sprite": "ursaring",
+   "sprite": "217",
    "types": [
     "Fighting",
     "Ground"
    ]
   },
   "Vanillish": {
-   "sprite": "vanillish",
+   "sprite": "583",
    "types": [
     "Ice"
    ]
   },
   "Vanillite": {
-   "sprite": "vanillite",
+   "sprite": "582",
    "types": [
     "Ice"
    ]
   },
   "Vanilluxe": {
-   "sprite": "vanilluxe",
+   "sprite": "584",
    "types": [
     "Ice",
     "Fairy"
    ]
   },
   "Vaporeon": {
-   "sprite": "vaporeon",
+   "sprite": "134",
    "types": [
     "Water"
    ]
   },
   "Venipede": {
-   "sprite": "venipede",
+   "sprite": "543",
    "types": [
     "Bug",
     "Poison"
    ]
   },
   "Venomoth": {
-   "sprite": "venomoth",
+   "sprite": "49",
    "types": [
     "Bug",
     "Psychic"
    ]
   },
   "Venonat": {
-   "sprite": "venonat",
+   "sprite": "48",
    "types": [
     "Bug",
     "Poison"
    ]
   },
   "Vespiquen": {
-   "sprite": "vespiquen",
+   "sprite": "416",
    "types": [
     "Bug",
     "Flying"
    ]
   },
   "Victreebel": {
-   "sprite": "victreebel",
+   "sprite": "71",
    "types": [
     "Grass",
     "Poison"
    ]
   },
   "Vigoroth": {
-   "sprite": "vigoroth",
+   "sprite": "288",
    "types": [
     "Normal"
    ]
   },
   "Vileplume": {
-   "sprite": "vileplume",
+   "sprite": "45",
    "types": [
     "Grass",
     "Poison"
    ]
   },
   "Virizion": {
-   "sprite": "virizion",
+   "sprite": "640",
    "types": [
     "Grass",
     "Fighting"
    ]
   },
   "Volbeat": {
-   "sprite": "volbeat",
+   "sprite": "313",
    "types": [
     "Bug"
    ]
   },
   "Volcarona": {
-   "sprite": "volcarona",
+   "sprite": "637",
    "types": [
     "Bug",
     "Fire"
    ]
   },
   "Voltorb": {
-   "sprite": "voltorb",
+   "sprite": "100",
    "types": [
     "Electric"
    ]
   },
+  "Voltorb (Hisui)": {
+   "sprite": "10231",
+   "types": [
+    "Electric",
+    "Grass"
+   ]
+  },
   "Vullaby": {
-   "sprite": "vullaby",
+   "sprite": "629",
    "types": [
     "Dark",
     "Flying"
    ]
   },
   "Vulpix": {
-   "sprite": "vulpix",
+   "sprite": "37",
    "types": [
     "Fire"
    ]
   },
+  "Vulpix (Alola)": {
+   "sprite": "10103",
+   "types": [
+    "Ice"
+   ]
+  },
   "Wailmer": {
-   "sprite": "wailmer",
+   "sprite": "320",
    "types": [
     "Water"
    ]
   },
   "Wailord": {
-   "sprite": "wailord",
+   "sprite": "321",
    "types": [
     "Water",
     "Flying"
    ]
   },
   "Watchog": {
-   "sprite": "watchog",
+   "sprite": "505",
    "types": [
     "Dark",
     "Psychic"
    ]
   },
+  "Wattrel": {
+   "sprite": "940",
+   "types": [
+    "Electric",
+    "Flying"
+   ]
+  },
   "Weedle": {
-   "sprite": "weedle",
+   "sprite": "13",
    "types": [
     "Bug",
     "Poison"
    ]
   },
   "Weepinbell": {
-   "sprite": "weepinbell",
+   "sprite": "70",
    "types": [
     "Grass",
     "Poison"
    ]
   },
   "Weezing": {
-   "sprite": "weezing",
+   "sprite": "110",
    "types": [
     "Poison"
    ]
   },
+  "Weezing (Galar)": {
+   "sprite": "10167",
+   "types": [
+    "Poison",
+    "Fairy"
+   ]
+  },
   "Whimsicott": {
-   "sprite": "whimsicott",
+   "sprite": "547",
    "types": [
     "Grass",
     "Fairy"
    ]
   },
   "Whirlipede": {
-   "sprite": "whirlipede",
+   "sprite": "544",
    "types": [
     "Bug",
     "Poison"
    ]
   },
   "Whiscash": {
-   "sprite": "whiscash",
+   "sprite": "340",
    "types": [
     "Water",
     "Ground"
    ]
   },
   "Whismur": {
-   "sprite": "whismur",
+   "sprite": "293",
    "types": [
     "Normal"
    ]
   },
   "Wigglytuff": {
-   "sprite": "wigglytuff",
+   "sprite": "40",
    "types": [
     "Normal",
     "Fairy"
    ]
   },
+  "Wimpod": {
+   "sprite": "767",
+   "types": [
+    "Bug",
+    "Water"
+   ]
+  },
   "Wingull": {
-   "sprite": "wingull",
+   "sprite": "278",
    "types": [
     "Water",
     "Flying"
    ]
   },
   "Wobbuffet": {
-   "sprite": "wobbuffet",
+   "sprite": "202",
    "types": [
     "Psychic"
    ]
   },
   "Woobat": {
-   "sprite": "woobat",
+   "sprite": "527",
    "types": [
     "Psychic",
     "Flying"
    ]
   },
   "Wooper": {
-   "sprite": "wooper",
+   "sprite": "194",
    "types": [
     "Water",
     "Ground"
    ]
   },
+  "Wooper (Paldea)": {
+   "sprite": "10253",
+   "types": [
+    "Poison",
+    "Ground"
+   ]
+  },
   "Wormadam": {
-   "sprite": "wormadam",
+   "sprite": "413",
    "types": [
     "Bug",
     "Grass"
    ]
   },
   "Wurmple": {
-   "sprite": "wurmple",
+   "sprite": "265",
    "types": [
     "Bug"
    ]
   },
   "Wynaut": {
-   "sprite": "wynaut",
+   "sprite": "360",
    "types": [
     "Psychic"
    ]
   },
   "Yamask": {
-   "sprite": "yamask",
+   "sprite": "562",
    "types": [
     "Ghost"
    ]
   },
   "Yanma": {
-   "sprite": "yanma",
+   "sprite": "193",
    "types": [
     "Bug",
     "Flying"
    ]
   },
   "Yanmega": {
-   "sprite": "yanmega",
+   "sprite": "469",
    "types": [
     "Bug",
     "Dragon"
    ]
   },
   "Zangoose": {
-   "sprite": "zangoose",
+   "sprite": "335",
    "types": [
     "Fighting",
     "Dark"
    ]
   },
+  "Zarude": {
+   "sprite": "893",
+   "types": [
+    "Dark",
+    "Grass"
+   ]
+  },
   "Zebstrika": {
-   "sprite": "zebstrika",
+   "sprite": "523",
    "types": [
     "Electric",
     "Normal"
    ]
   },
   "Zekrom": {
-   "sprite": "zekrom",
+   "sprite": "644",
    "types": [
     "Dragon",
     "Electric"
    ]
   },
+  "Zeraora": {
+   "sprite": "807",
+   "types": [
+    "Electric"
+   ]
+  },
   "Zigzagoon": {
-   "sprite": "zigzagoon",
+   "sprite": "263",
    "types": [
     "Normal"
    ]
   },
+  "Zigzagoon (Galar)": {
+   "sprite": "10174",
+   "types": [
+    "Dark",
+    "Normal"
+   ]
+  },
+  "Zorua (Hisui)": {
+   "sprite": "10238",
+   "types": [
+    "Normal",
+    "Ghost"
+   ]
+  },
   "Zubat": {
-   "sprite": "zubat",
+   "sprite": "41",
    "types": [
     "Poison",
     "Flying"
    ]
   },
   "Zweilous": {
-   "sprite": "zweilous",
+   "sprite": "634",
    "types": [
     "Dark",
     "Dragon"
