@@ -395,7 +395,7 @@
         "abilities": [
           "Shed Skin"
         ],
-        "evo": "Level 10",
+        "evo": "Use Metal Stone",
         "moves": [
           {
             "move": "Harden",
@@ -671,7 +671,7 @@
         "abilities": [
           "Shed Skin"
         ],
-        "evo": "Level 10",
+        "evo": "Use Metal Stone",
         "moves": [
           {
             "move": "Harden",
@@ -5483,7 +5483,7 @@
       "spe": 65
     },
     "preevo": [],
-    "evo": "Level up knowing Aurora Beam",
+    "evo": "Use Fire Stone",
     "next": [
       {
         "name": "Ninetales",
@@ -5812,7 +5812,7 @@
           "Magic Guard",
           "Own Tempo"
         ],
-        "evo": "Level up knowing Aurora Beam",
+        "evo": "Use Fire Stone",
         "moves": [
           {
             "move": "Ember",
