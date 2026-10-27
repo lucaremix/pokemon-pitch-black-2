@@ -398,5 +398,159 @@
       "to": 10
     },
     "effect": "30% chance to make the target flinch."
+  },
+  
+[
+  {
+    "name": "Fire Fang",
+    "new": false,
+    "type": {
+      "from": "Fire",
+      "to": "Fire"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 65,
+      "to": 70
+    },
+    "accuracy": {
+      "from": 95,
+      "to": 95
+    },
+    "pp": {
+      "from": 15,
+      "to": 15
+    },
+    "effect": "10% chance to burn and 10% chance to make the target flinch."
+  },
+  {
+    "name": "Ice Fang",
+    "new": false,
+    "type": {
+      "from": "Ice",
+      "to": "Ice"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 65,
+      "to": 70
+    },
+    "accuracy": {
+      "from": 95,
+      "to": 95
+    },
+    "pp": {
+      "from": 15,
+      "to": 15
+    },
+    "effect": "10% chance to freeze and 10% chance to make the target flinch."
+  },
+  {
+    "name": "Power Gem",
+    "new": false,
+    "type": {
+      "from": "Rock",
+      "to": "Rock"
+    },
+    "category": {
+      "from": "Special",
+      "to": "Special"
+    },
+    "power": {
+      "from": 70,
+      "to": 80
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 20,
+      "to": 20
+    },
+    "effect": ""
+  },
+  {
+    "name": "Shadow Punch",
+    "new": false,
+    "type": {
+      "from": "Ghost",
+      "to": "Ghost"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 60,
+      "to": 75
+    },
+    "accuracy": {
+      "from": null,
+      "to": 100
+    },
+    "pp": {
+      "from": 20,
+      "to": 20
+    },
+    "effect": ""
+  },
+  {
+    "name": "Thunder Fang",
+    "new": false,
+    "type": {
+      "from": "Electric",
+      "to": "Electric"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 65,
+      "to": 70
+    },
+    "accuracy": {
+      "from": 95,
+      "to": 95
+    },
+    "pp": {
+      "from": 15,
+      "to": 15
+    },
+    "effect": "10% chance to paralyze and 10% chance to make the target flinch."
+  },
+  {
+    "name": "Wing Attack",
+    "new": false,
+    "type": {
+      "from": "Flying",
+      "to": "Flying"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 60,
+      "to": 70
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 35,
+      "to": 35
+    },
+    "effect": ""
   }
+]
+
 ]
