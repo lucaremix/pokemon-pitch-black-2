@@ -438,6 +438,8 @@
   }
   .tm-no img { width: 30px; height: 30px; flex: none; display: block; margin: -6px -3px -6px -4px; image-rendering: pixelated; }
   .tm-no small { font-family: var(--body); font-weight: 600; font-size: 10.5px; opacity: .85; margin-right: -2px; }
+  .tm.tut .tm-no { min-width: 52px; justify-content: center; padding: 4px 8px; font-size: 13px; letter-spacing: .02em; }
+  .tut-box .tm-disc svg { display: block; }
   .tm.hm .tm-no { background: linear-gradient(135deg, color-mix(in srgb, var(--volt) 80%, #000), color-mix(in srgb, var(--mc) 55%, #0a0d13)); border-color: var(--volt); }
   .tm .mname { flex: 1; min-width: 0; overflow-wrap: normal; word-break: normal; line-height: 1.2; }
   .cat { width: 20px; height: 20px; flex: none; display: block; }
@@ -584,6 +586,194 @@
   .tag.paradox { border-color: color-mix(in srgb, var(--c1) 70%, var(--line)); background: color-mix(in srgb, var(--c1) 18%, var(--panel-2)); }
   .card .stage, .card .body { transition: none; }
 
+
+  /* ═════════════ Redesign (Oct 2026): same palette and fonts, more depth ═════════════ */
+  :root { --glass: rgba(16,20,28,.72); --r-lg: 20px; --shadow: 0 18px 44px rgba(0,0,0,.42); }
+  body { background:
+    radial-gradient(1200px 600px at 50% -200px, rgba(47,123,255,.10), transparent 70%),
+    var(--ink); }
+
+  /* hero: smaller, with the headline numbers */
+  .hero { padding: 0 0 26px; }
+  .hero .logo { width: min(300px, 70vw); margin-bottom: 2px; }
+  h1 { font-size: clamp(30px, 5vw, 46px); }
+  .hero-stats { margin: 14px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+  .hero-stats:empty { display: none; }
+  .hero-stats span {
+    padding: 6px 14px; border-radius: 999px; font-size: 14px; color: var(--muted);
+    background: rgba(16,20,28,.6); border: 1px solid var(--line-2); backdrop-filter: blur(8px);
+  }
+  .hero-stats b { color: var(--text); font-family: var(--display); font-weight: 800; font-size: 16px; font-variant-numeric: tabular-nums; }
+
+  /* sticky search bar */
+  .searchbar { transition: box-shadow .2s, background .2s; }
+  .searchbar.stuck { background: rgba(7,9,13,.94); box-shadow: 0 12px 30px rgba(0,0,0,.45); }
+  .sort {
+    position: relative; flex: none; display: flex; align-items: center; height: 46px; border-radius: 12px;
+    background: var(--panel); border: 1px solid var(--line);
+  }
+  .sort span { padding: 0 2px 0 14px; color: var(--muted); font-size: 13px; font-weight: 600; white-space: nowrap; }
+  .sort select {
+    height: 100%; padding: 0 34px 0 8px; border: 0; background: transparent; color: var(--text);
+    font: 600 14.5px var(--body); cursor: pointer; -webkit-appearance: none; appearance: none;
+  }
+  .sort::after {
+    content: ""; position: absolute; right: 14px; top: 50%; width: 7px; height: 7px; margin-top: -5px; pointer-events: none;
+    border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg);
+  }
+  .sort select:focus-visible { outline: none; }
+  .sort:focus-within { border-color: var(--bolt); box-shadow: 0 0 0 3px rgba(47,123,255,.35); }
+  .sort option { background: var(--panel); color: var(--text); }
+  .filters { gap: 12px; padding-top: 18px; }
+  .count { font-size: 14px; }
+  .count b { color: var(--text); font-family: var(--display); font-weight: 800; }
+
+  /* grid & cards */
+  main { padding-top: 24px; }
+  .grid { gap: 20px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .card {
+    border-radius: var(--r-lg);
+    background: linear-gradient(180deg, color-mix(in srgb, var(--c1) 7%, var(--panel)) 0%, var(--panel) 46%);
+    box-shadow: 0 1px 0 rgba(255,255,255,.04) inset, 0 8px 22px rgba(0,0,0,.28);
+    transition: border-color .2s, transform .25s cubic-bezier(.2,.7,.2,1), box-shadow .25s;
+  }
+  .card:not(.open):hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1px 0 rgba(255,255,255,.05) inset, 0 20px 40px rgba(0,0,0,.45), 0 0 0 1px color-mix(in srgb, var(--c1) 40%, transparent), 0 12px 40px -12px color-mix(in srgb, var(--c1) 55%, transparent);
+  }
+
+  /* stage: the type split + a Poké Ball watermark */
+  .stage { height: 196px; overflow: hidden; }
+  .stage::before {
+    content: ""; position: absolute; right: -46px; top: -40px; width: 200px; height: 200px; z-index: 0; opacity: .13; pointer-events: none;
+    background: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='white' stroke-width='7'%3E%3Ccircle cx='50' cy='50' r='44'/%3E%3Cpath d='M6 50h28M66 50h28'/%3E%3Ccircle cx='50' cy='50' r='15'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+    transform: rotate(-18deg); transition: transform .6s cubic-bezier(.2,.7,.2,1);
+  }
+  .card:hover .stage::before { transform: rotate(10deg); }
+  .id {
+    display: inline-flex; align-items: center; top: 12px; left: 12px; padding: 3px 10px 3px 11px; border-radius: 999px;
+    font-size: 17px; background: rgba(7,9,13,.42); border: 1px solid rgba(255,255,255,.14); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  }
+  .chg { margin-left: 7px; vertical-align: 0; }
+  .sprite img { transition: transform .35s cubic-bezier(.2,.7,.2,1), filter .35s; filter: drop-shadow(0 6px 8px rgba(0,0,0,.35)); }
+  .card:not(.open):hover .sprite img { transform: translateY(-6px) scale(1.06); }
+  .stage::after { transition: width .35s, opacity .35s; }
+  .card:not(.open):hover .stage::after { width: 84px; opacity: .7; }
+  .types { gap: 5px; }
+  .type { padding: 3px 11px 3px 4px; font-size: 13px; }
+  .expander { top: 11px; right: 11px; height: 30px; padding: 0 8px 0 12px; font-size: 12.5px; }
+  .ex-l { letter-spacing: .02em; }
+
+  /* body */
+  .body { gap: 12px; padding: 14px 16px 16px; }
+  .name { font-size: 25px; }
+  .line-mini { display: flex; flex-wrap: wrap; gap: 5px; margin-top: -4px; }
+  .line-mini i { display: none; }
+  .lm {
+    display: inline-flex; align-items: center; gap: 5px; height: 30px; padding: 0 10px 0 3px; border-radius: 999px; cursor: pointer;
+    font: 600 12.5px var(--body); color: var(--muted); background: var(--panel-2); border: 1px solid var(--line);
+    transition: color .15s, background .15s, border-color .15s;
+  }
+  .lm:hover { color: var(--text); border-color: color-mix(in srgb, var(--c1) 55%, var(--line)); }
+  .lm.on { color: var(--text); background: color-mix(in srgb, var(--c1) 24%, var(--panel-2)); border-color: color-mix(in srgb, var(--c1) 70%, transparent); box-shadow: none; }
+  .lm-s { width: 24px; height: 24px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.06); }
+  .lm-s img { display: block; }
+  .abilities { gap: 5px; }
+  .ability { font-size: 13px; padding: 4px 10px 4px 8px; }
+
+  .b-stats { display: grid; gap: 14px; }
+  .b-radar { display: none; }
+  .stats { gap: 7px; }
+  .stat { grid-template-columns: 50px 30px 1fr; gap: 9px; font-size: 12.5px; }
+  .stat .k { letter-spacing: .03em; }
+  .bar { height: 8px; background: rgba(255,255,255,.06); }
+  .bar > i { background: linear-gradient(90deg, color-mix(in srgb, var(--k) 55%, #0b0e14), var(--k)); box-shadow: 0 0 12px -2px color-mix(in srgb, var(--k) 60%, transparent); }
+  .total { gap: 10px; padding-top: 12px; margin-top: 14px; font-size: 13.5px; }
+  .total span:first-child { margin-right: auto; }
+  .total b { font-size: 28px; }
+  .tier {
+    display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 7px;
+    font: 800 13px var(--display); color: #0b0e14; background: #6b7a9c;
+  }
+  .tier.t-S { background: linear-gradient(135deg, #ffe066, #ffcb05); box-shadow: 0 0 14px rgba(255,203,5,.45); }
+  .tier.t-A { background: #38c6ff; } .tier.t-B { background: #6f9cff; } .tier.t-C { background: #8e9ab2; } .tier.t-D { background: #5b6680; color: #e6ebf5; }
+  .bst-meter { display: block; height: 4px; margin-top: 8px; border-radius: 99px; background: rgba(255,255,255,.06); overflow: hidden; }
+  .bst-meter i { display: block; height: 100%; width: var(--w); border-radius: 99px; background: linear-gradient(90deg, var(--c1), var(--c2)); }
+
+  /* radar */
+  .radar { display: block; width: 100%; max-width: 280px; height: auto; margin: 0 auto; overflow: visible; }
+  .r-ring { fill: rgba(255,255,255,.02); stroke: rgba(255,255,255,.1); stroke-width: 1; }
+  .r-axis { stroke: rgba(255,255,255,.08); stroke-width: 1; }
+  .r-val { fill: color-mix(in srgb, var(--rc) 34%, transparent); stroke: var(--rc); stroke-width: 2.2; stroke-linejoin: round; filter: drop-shadow(0 0 10px color-mix(in srgb, var(--rc) 55%, transparent)); }
+  .r-lbl { fill: var(--muted); font: 700 10.5px var(--body); letter-spacing: .05em; text-anchor: middle; text-transform: uppercase; }
+  .r-num { font: 800 13px var(--display); text-anchor: middle; }
+  .js .card:not(.in) .r-val { opacity: 0; }
+  .r-val { transition: opacity .6s; }
+
+  /* open card */
+  .card.open { border-radius: 24px; }
+  .card.open .b-radar { display: block; }
+  @media (min-width: 700px) {
+    .card.open { grid-template-columns: 320px minmax(0, 1fr); }
+    .card.open .stage { min-height: 420px; }
+    .card.open .stage::before { width: 300px; height: 300px; right: -90px; top: -70px; opacity: .08; }
+    .card.open .body { padding: 26px 28px 24px; gap: 14px; }
+    .card.open .name { font-size: 34px; }
+    .card.open .b-stats { grid-template-columns: minmax(0, 1fr) 260px; align-items: center; gap: 26px; }
+  }
+  @media (min-width: 1100px) { .card.open .b-stats { grid-template-columns: minmax(0, 1fr) 300px; } }
+  .card.open .b-radar { padding: 6px; border-radius: 18px; background: radial-gradient(circle at 50% 48%, color-mix(in srgb, var(--c1) 12%, transparent), transparent 70%); }
+  .detail { padding: 22px 24px 26px; background: linear-gradient(180deg, color-mix(in srgb, var(--c1) 9%, var(--panel)), var(--panel) 60%); }
+  .d-sec + .d-sec { margin-top: 26px; }
+  .detail h3 { font-size: 18px; }
+  .h-ico { width: 26px; height: 26px; display: inline-grid; place-items: center; border-radius: 8px; color: var(--volt); background: rgba(255,203,5,.1); border: 1px solid rgba(255,203,5,.3); }
+  .h-ico svg { width: 15px; height: 10px; }
+  .evo-node { border-radius: 16px; transition: border-color .15s, background .15s, transform .15s; }
+  .evo-node:hover { transform: translateY(-2px); }
+  .thumb { border-radius: 14px; }
+
+  /* moves: one panel with tabs */
+  .learn-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+  .learn-head h3 { margin: 0; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: 14px; background: #0b0e14; border: 1px solid var(--line); }
+  .learn-tab {
+    display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 12px 0 9px; border-radius: 10px; cursor: pointer;
+    font: 700 14px var(--body); color: var(--muted); background: transparent; border: 1px solid transparent;
+    transition: color .15s, background .15s, border-color .15s;
+  }
+  .learn-tab:hover { color: var(--text); background: rgba(255,255,255,.04); }
+  .learn-tab[aria-selected="true"] {
+    color: var(--text); background: color-mix(in srgb, var(--tc) 26%, #121722);
+    border-color: color-mix(in srgb, var(--tc) 65%, transparent); box-shadow: 0 6px 18px -8px color-mix(in srgb, var(--tc) 70%, transparent);
+  }
+  .lt-ico { width: 22px; height: 22px; display: grid; place-items: center; }
+  .lt-ico svg { width: 17px; height: 17px; }
+  .lt-ico img { width: 22px; height: 22px; image-rendering: pixelated; }
+  .lt-n { min-width: 24px; padding: 1px 7px; border-radius: 999px; font: 700 12px var(--body); text-align: center; color: var(--text); background: rgba(255,255,255,.08); font-variant-numeric: tabular-nums; }
+  .lt-new { padding: 1px 8px; border-radius: 999px; font: 800 11.5px var(--body); color: #0b0e14; background: var(--volt); }
+  .tab-panel { display: none; animation: panelIn .28s cubic-bezier(.2,.7,.2,1); }
+  .learn[data-tab="lv"] [data-p="lv"], .learn[data-tab="tm"] [data-p="tm"], .learn[data-tab="tut"] [data-p="tut"] { display: block; }
+  @keyframes panelIn { from { opacity: 0; transform: translateY(6px); } }
+  .tab-panel .tm-inner { overflow: visible; border-radius: 16px; border: 1px solid var(--line); background: color-mix(in srgb, var(--tc) 5%, #0b0e14); }
+  .tab-panel .tms li { animation: tmIn .32s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(min(var(--i), 24) * 12ms); }
+  .moves-wrap { height: auto; max-height: 330px; min-height: 120px; border-radius: 16px; }
+  .moves-scroll { max-height: 330px; height: auto; }
+
+  @media (max-width: 699px) {
+    .search-row { flex-wrap: wrap; }
+    .search { flex-basis: 100%; }
+    .sort { flex: 1; }
+    .sort select { flex: 1; }
+    .card.open .b-radar { margin-top: 4px; }
+    .learn-head { align-items: stretch; }
+    .tabs { width: 100%; }
+    .learn-tab { flex: 1 1 auto; justify-content: center; padding: 0 8px; gap: 6px; font-size: 13px; }
+    .lt-new { display: none; }
+    .detail { padding: 18px 14px 20px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .stage::before, .sprite img, .card, .tab-panel, .tab-panel .tms li { transition: none; animation: none; }
+  }
 </style>
 </head>
 <body>
@@ -600,6 +790,7 @@
     <header class="hero">
       <img class="logo" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/logofull.png" alt="Pokémon Pitch Black 2" width="1774" height="887" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='assets/images/logofull.png'}">
       <h1>Pokédex</h1>
+      <p class="hero-stats" id="heroStats" aria-label="Pokédex in numbers"></p>
     </header>
   </div>
 </div>
@@ -611,6 +802,13 @@
       <input id="q" type="search" placeholder="Search by name, ability or #ID" aria-label="Search Pokémon" autocomplete="off" spellcheck="false">
       <kbd aria-hidden="true">/</kbd>
     </div>
+    <label class="sort" for="sort"><span>Sort</span>
+      <select id="sort" aria-label="Sort Pokémon">
+        <option value="dex">Pokédex #</option>
+        <option value="bst">Base stat total</option>
+        <option value="name">Name A–Z</option>
+      </select>
+    </label>
     <button class="reset" id="reset" type="button" hidden>Clear filters</button>
   </div>
 </div>
@@ -654,6 +852,7 @@
 const RAW = "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/";
 const DATA_URLS = [RAW + "assets/data/pokedex.json", "assets/data/pokedex.json"];
 const TM_URLS = [RAW + "assets/data/tms.json", "assets/data/tms.json"];
+const TUTOR_URLS = [RAW + "assets/data/tutors.json", "assets/data/tutors.json"];
 const MOVE_CHANGES_URLS = [RAW + "assets/data/move_changes.json", "assets/data/move_changes.json"];
 
 const TYPE_ICONS = {};
@@ -876,7 +1075,7 @@ function tmSectionHTML(p, key, open) {
   const filters = TM_FILTERS.filter(([k]) => k === "all" || counts[k]).map(([k, label]) =>
     '<button class="tm-filter' + (k === "new" ? " new-f" : "") + '" type="button" data-f="' + k + '" aria-pressed="' + (k === "all") + '">' +
       (CAT_ICONS[k] || (k === "new" ? STAR : "")) + label + ' <span class="n">' + counts[k] + "</span></button>").join("");
-  return '<section class="d-sec tm-sec' + (open ? " open" : "") + '" style="--tc:' + c1 + '">' +
+  return '<section class="d-sec tm-sec tm-box' + (open ? " open" : "") + '" style="--tc:' + c1 + '">' +
     '<h3 class="tm-h"><button class="tm-toggle" type="button" aria-expanded="' + !!open + '" aria-controls="tm-' + key + '">' +
       '<span class="tm-disc" aria-hidden="true"><img src="' + TM_ICON(p.type1) + '" alt="" width="30" height="30" onerror="this.onerror=null;this.src=TM_FALLBACK"></span>' +
       '<span class="tm-title"><b>TMs &amp; HMs</b><span class="who">' + esc(p.name) + "</span>" +
@@ -899,8 +1098,55 @@ function filterTM(sec, btn) {
   const f = btn.dataset.f;
   sec.querySelectorAll(".tm-filter").forEach((b) => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
   sec.querySelectorAll(".tms li").forEach((li) => {
-    li.hidden = !(f === "all" || (f === "hm" ? li.dataset.hm : f === "new" ? li.dataset.new : li.dataset.cat === f));
+    li.hidden = !(f === "all" || (f === "hm" ? li.dataset.hm : f === "new" ? li.dataset.new : li.dataset.tut ? li.dataset.tut === f : li.dataset.cat === f));
   });
+}
+
+// ───────── move tutors (assets/data/tutors.json) ─────────
+let TUTDATA = null;
+const TUTOR_ICON = '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+  '<path d="M2 9.5 12 5l10 4.5-10 4.5z" fill="rgba(255,255,255,.18)"/><path d="M6 11.3V16c0 1.4 2.7 3 6 3s6-1.6 6-3v-4.7"/><path d="M22 9.5v5"/></svg>';
+function tutorEntry(name) {
+  if (!TUTDATA || !TUTDATA.pokemon) return null;
+  const e = TUTDATA.pokemon[name];
+  if (!e) return null;
+  const isNew = new Set(e.new || []);
+  return e.tutor.filter((id) => TUTDATA.list[id]).map((id) => Object.assign({ id, isNew: isNew.has(id) }, TUTDATA.list[id]));
+}
+function tutorSectionHTML(p, key, open) {
+  const list = tutorEntry(p.name);
+  if (!list) return "";
+  const c1 = colorsOf(typesOf(p))[0], nNew = list.filter((t) => t.isNew).length;
+  const tutors = Object.keys(TUTDATA.tutors || {});
+  const counts = { all: list.length, new: nNew };
+  tutors.forEach((t) => { counts[t] = list.filter((x) => x.tutor === t).length; });
+  const filters = [["all", "All"]].concat(tutors.map((t) => [t, t]), [["new", "New"]]).filter(([k]) => k === "all" || counts[k]).map(([k, label]) =>
+    '<button class="tm-filter' + (k === "new" ? " new-f" : "") + '" type="button" data-f="' + esc(k) + '" aria-pressed="' + (k === "all") + '">' +
+      (k === "new" ? STAR : "") + esc(label) + ' <span class="n">' + counts[k] + "</span></button>").join("");
+  const items = !list.length ? '<p class="tm-empty">This Pokémon can\'t learn any move from a tutor.</p>' :
+    '<ul class="tms">' + list.map((t, i) => {
+      const c = TYPE_COLORS[t.type] || "#6b7a9c";
+      return '<li data-tut="' + esc(t.tutor) + '"' + (t.isNew ? ' data-new="1"' : "") + ' style="--i:' + i + '">' +
+        '<a class="tm tut" style="--mc:' + c + '" href="' + moveURL(t.move) + '" target="_blank" rel="noopener noreferrer" ' +
+          'title="' + esc(t.tutor + " tutor · " + t.move + " · " + t.type + " · " + t.cat + (t.isNew ? " · new in Pitch Black 2" : "")) + '">' +
+          '<span class="tm-no">' + esc(t.id) + "</span>" +
+          '<span class="mname">' + esc(t.move) + "</span>" +
+          (t.isNew ? '<span class="new" aria-label="New"></span>' : "") + (CAT_ICONS[t.cat] || "") +
+        "</a></li>";
+    }).join("") + "</ul>";
+  return '<section class="d-sec tm-sec tut-box' + (open ? " open" : "") + '" style="--tc:' + c1 + '">' +
+    '<h3 class="tm-h"><button class="tm-toggle" type="button" aria-expanded="' + !!open + '" aria-controls="tut-' + key + '">' +
+      '<span class="tm-disc" aria-hidden="true">' + TUTOR_ICON + "</span>" +
+      '<span class="tm-title"><b>Move Tutors</b><span class="who">' + esc(p.name) + "</span>" +
+        '<span class="tm-sub">' + list.length + " move" + (list.length === 1 ? "" : "s") + "</span></span>" +
+      '<span class="tm-new-n"' + (nNew ? "" : " hidden") + ">" + nNew + " new</span>" +
+      '<span class="tm-chev" aria-hidden="true">' + CHEVRON + "</span>" +
+    "</button></h3>" +
+    '<div class="tm-panel" id="tut-' + key + '"><div class="tm-inner">' +
+      (list.length ? '<div class="tm-filters" role="group" aria-label="Filter tutor moves">' + filters + "</div>" : "") +
+      '<div class="tm-scroll" tabindex="0" role="region" aria-label="Tutor moves">' + items + "</div>" +
+      (nNew ? '<div class="tm-legend"><span><i class="new"></i>New in Pitch Black 2</span></div>' : "") +
+    "</div></div></section>";
 }
 
 // ───────── boxes ─────────
@@ -926,41 +1172,59 @@ function buildBoxes(LIST) {
 }
 
 // ───────── card (box) ─────────
+// classic stat colours: they read at a glance and match every type colour
+const STAT_COLORS = { hp: "#ff5959", atk: "#f5ac78", def: "#fae078", spa: "#9db7f5", spd: "#a7db8d", spe: "#fa92b2" };
+const EXPAND = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>';
+
 function stageInner(p, more, key) {
-  const types = typesOf(p);
   return '<span class="id">#' + String(p.pokedex_id).padStart(3, "0") +
-    (p.changed ? '<span class="chg" title="Changed in Pitch Black 2">PB2</span>' : "") + "</span>" +
+      (p.changed ? '<span class="chg" title="Changed in Pitch Black 2">PB2</span>' : "") + "</span>" +
     '<div class="sprite">' + spriteImg(p, 0, 'alt="' + esc(p.name) + ' sprite"') + "</div>" +
-    '<div class="types">' + types.map(typeBadge).join("") + "</div>" +
-    (more ? '<button class="expander" type="button" aria-expanded="false" aria-controls="detail-' + key + '">Evolution &amp; moves' + CHEVRON + "</button>" : "");
+    '<div class="types">' + typesOf(p).map(typeBadge).join("") + "</div>" +
+    (more ? '<button class="expander" type="button" aria-expanded="false" aria-controls="detail-' + key + '"><span class="ex-l">Details</span>' + CHEVRON + "</button>" : "");
 }
 
-function tagsHTML(p, box) {
-  const t = [];
-  if (p.paradox) t.push('<span class="tag paradox">Paradox · from ' + esc(p.paradox.from) + (p.paradox.revert ? " · revert with " + esc(p.paradox.revert) : "") + "</span>");
-  if (p.variant) t.push('<span class="tag">' + esc(p.variant) + " variant</span>");
-  if (p.form_of) t.push('<span class="tag">Form of ' + esc(p.form_of) + "</span>");
-  if (p.ev_note) t.push('<span class="tag">EV yield: ' + esc(p.ev_note) + "</span>");
-  return t.length ? '<div class="tags">' + t.join("") + "</div>" : "";
-}
-
+// the Pokémon in this box as little sprite chips: click one to see it in the card
 function lineMiniHTML(box, active) {
   if (box.members.length < 2) return "";
-  return '<div class="line-mini" aria-label="Pokémon in this box">' + box.members.map((m, k) =>
-    '<span class="lm' + (m === active ? " on" : "") + '" data-k="' + k + '">' + esc(m.name) + "</span>").join('<i aria-hidden="true">›</i>') + "</div>";
+  return '<div class="line-mini" role="group" aria-label="Pokémon in this box">' + box.members.map((m, k) =>
+    '<button type="button" class="lm' + (m === active ? " on" : "") + '" data-k="' + k + '" aria-pressed="' + (m === active) + '" title="' + esc(m.name) + '">' +
+      '<span class="lm-s">' + spriteImg(m, 22) + '</span><span class="lm-n">' + esc(m.name) + "</span></button>").join("") + "</div>";
+}
+
+// hexagon of the six base stats (shown in the open card)
+function radarSVG(p, color) {
+  const K = [["hp", "HP"], ["atk", "Atk"], ["def", "Def"], ["spe", "Spe"], ["spd", "SpD"], ["spa", "SpA"]];
+  const cx = 120, cy = 112, R = 80, MAX = 160;
+  const pt = (i, r) => { const a = -Math.PI / 2 + i * Math.PI / 3; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; };
+  const ring = (f) => K.map((_, i) => pt(i, R * f).map((v) => v.toFixed(1)).join(",")).join(" ");
+  const poly = K.map(([k], i) => pt(i, R * Math.min(p.stats[k], MAX) / MAX).map((v) => v.toFixed(1)).join(",")).join(" ");
+  let s = '<svg class="radar" viewBox="0 0 240 230" role="img" aria-label="Base stats chart">';
+  [1, .75, .5, .25].forEach((f) => { s += '<polygon class="r-ring" points="' + ring(f) + '"/>'; });
+  K.forEach((_, i) => { const [x, y] = pt(i, R); s += '<line class="r-axis" x1="' + cx + '" y1="' + cy + '" x2="' + x.toFixed(1) + '" y2="' + y.toFixed(1) + '"/>'; });
+  s += '<polygon class="r-val" points="' + poly + '" style="--rc:' + color + '"/>';
+  K.forEach(([k, l], i) => {
+    const [x, y] = pt(i, R + 22);
+    s += '<text class="r-lbl" x="' + x.toFixed(1) + '" y="' + (y - 2).toFixed(1) + '">' + l + '</text>' +
+         '<text class="r-num" x="' + x.toFixed(1) + '" y="' + (y + 11).toFixed(1) + '" style="fill:' + STAT_COLORS[k] + '">' + p.stats[k] + "</text>";
+  });
+  return s + "</svg>";
 }
 
 function bodyInner(p, box) {
   const stats = STATS.map(([k, label], n) => {
     const v = p.stats[k];
-    const w = Math.max(4, Math.min(100, (v / 200) * 100));
+    const w = Math.max(4, Math.min(100, (v / 180) * 100));
     return '<li class="stat' + (v >= 110 ? " hi" : "") + '"><span class="k">' + label + '</span><span class="v">' + v +
-      '</span><span class="bar" aria-hidden="true"><i style="--w:' + w + "%;--k:" + statColor(v) + ";--d:" + n * 45 + 'ms"></i></span></li>';
+      '</span><span class="bar" aria-hidden="true"><i style="--w:' + w + "%;--k:" + STAT_COLORS[k] + ";--d:" + n * 45 + 'ms"></i></span></li>';
   }).join("");
-  return '<h2 class="name">' + esc(p.name) + "</h2>" + lineMiniHTML(box, p) + tagsHTML(p, box) +
+  const tier = p.bst >= 600 ? "S" : p.bst >= 520 ? "A" : p.bst >= 450 ? "B" : p.bst >= 360 ? "C" : "D";
+  return '<div class="b-head"><h2 class="name">' + esc(p.name) + "</h2></div>" + lineMiniHTML(box, p) +
     '<div class="abilities" role="group" aria-label="Abilities">' + p.abilities.map(abilityLink).join("") + "</div>" +
-    '<ul class="stats" aria-label="Base stats">' + stats + "</ul>" +
-    '<div class="total"><span>Total</span><b>' + p.bst + "</b></div>";
+    '<div class="b-stats"><div class="b-bars"><ul class="stats" aria-label="Base stats">' + stats + "</ul>" +
+      '<div class="total"><span>Base stat total</span><span class="tier t-' + tier + '" title="Tier by total">' + tier + "</span><b>" + p.bst + "</b></div>" +
+      '<span class="bst-meter" aria-hidden="true"><i style="--w:' + Math.min(100, p.bst / 7.2).toFixed(1) + '%"></i></span></div>' +
+    '<div class="b-radar">' + radarSVG(p, colorsOf(typesOf(p))[0]) + "</div></div>";
 }
 
 function evoNodeHTML(n, k, active) {
@@ -978,7 +1242,7 @@ function evoNodeHTML(n, k, active) {
 
 function evoLineHTML(box, active) {
   if (box.members.length < 2) return "";
-  let h = '<section class="d-sec"><h3>Evolution line<span class="count">click a Pokémon to see its data</span></h3><div class="evo">';
+  let h = '<section class="d-sec evo-sec2"><h3><span class="h-ico" aria-hidden="true">' + ARROW + '</span>Evolution line<span class="count">click a Pokémon to see its data</span></h3><div class="evo">';
   box.line.forEach((n, k) => {
     if (k) h += '<div class="evo-arrow">' + ARROW + methodPill(n.evo ? n.evo.method : "Evolves") + "</div>";
     h += evoNodeHTML(n, k, n === active);
@@ -992,22 +1256,65 @@ function evoLineHTML(box, active) {
   return h + "</div></section>";
 }
 
-function movesSecHTML(p) {
-  return '<section class="d-sec mv-sec"><h3>Level-up moves<span class="who">' + esc(p.name) + '</span><span class="count">' + (p.moves || []).length + " moves</span></h3>" +
-    '<div class="moves-wrap" style="--c1:' + colorsOf(typesOf(p))[0] + '">' + movesHTML(p.moves) + "</div></section>";
+// ───────── learnsets: one panel with three tabs (level-up / TMs & HMs / tutors) ─────────
+function filtersHTML(defs, counts, label) {
+  return '<div class="tm-filters" role="group" aria-label="' + label + '">' + defs.filter(([k]) => k === "all" || counts[k]).map(([k, l]) =>
+    '<button class="tm-filter' + (k === "new" ? " new-f" : "") + '" type="button" data-f="' + esc(k) + '" aria-pressed="' + (k === "all") + '">' +
+      (CAT_ICONS[k] || (k === "new" ? STAR : "")) + esc(l) + ' <span class="n">' + counts[k] + "</span></button>").join("") + "</div>";
+}
+function tmPanelHTML(list) {
+  const counts = { all: list.length, hm: list.filter((t) => t.hm).length, new: list.filter((t) => t.isNew).length };
+  ["Physical", "Special", "Status"].forEach((k) => { counts[k] = list.filter((t) => t.cat === k).length; });
+  return (list.length ? filtersHTML(TM_FILTERS, counts, "Filter TMs") : "") +
+    '<div class="tm-scroll" tabindex="0" role="region" aria-label="TMs and HMs">' + tmItemsHTML(list, "all") + "</div>" +
+    (counts.new ? '<div class="tm-legend"><span><i class="new"></i>New in Pitch Black 2</span></div>' : "");
+}
+function tutPanelHTML(list) {
+  const tutors = Object.keys(TUTDATA.tutors || {});
+  const counts = { all: list.length, new: list.filter((t) => t.isNew).length };
+  tutors.forEach((t) => { counts[t] = list.filter((x) => x.tutor === t).length; });
+  const items = !list.length ? '<p class="tm-empty">This Pokémon can\'t learn any move from a tutor.</p>' :
+    '<ul class="tms">' + list.map((t, i) =>
+      '<li data-tut="' + esc(t.tutor) + '"' + (t.isNew ? ' data-new="1"' : "") + ' style="--i:' + i + '">' +
+        '<a class="tm tut" style="--mc:' + (TYPE_COLORS[t.type] || "#6b7a9c") + '" href="' + moveURL(t.move) + '" target="_blank" rel="noopener noreferrer" ' +
+          'title="' + esc(t.tutor + " tutor · " + t.move + " · " + t.type + " · " + t.cat + (t.isNew ? " · new in Pitch Black 2" : "")) + '">' +
+          '<span class="tm-no">' + esc(t.id) + '</span><span class="mname">' + esc(t.move) + "</span>" +
+          (t.isNew ? '<span class="new" aria-label="New"></span>' : "") + (CAT_ICONS[t.cat] || "") +
+        "</a></li>").join("") + "</ul>";
+  return (list.length ? filtersHTML([["all", "All"]].concat(tutors.map((t) => [t, t]), [["new", "New"]]), counts, "Filter tutor moves") : "") +
+    '<div class="tm-scroll" tabindex="0" role="region" aria-label="Tutor moves">' + items + "</div>" +
+    (counts.new ? '<div class="tm-legend"><span><i class="new"></i>New in Pitch Black 2</span></div>' : "");
+}
+function learnHTML(p, key, tab) {
+  const tm = tmEntry(p.name), tut = tutorEntry(p.name), lv = p.moves || [];
+  const tabs = [["lv", "Level-up", lv.length, 0, '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>']];
+  if (tm) tabs.push(["tm", "TMs & HMs", tm.length, tm.filter((t) => t.isNew).length, '<img src="' + TM_ICON(p.type1) + '" alt="" width="22" height="22" onerror="this.onerror=null;this.src=TM_FALLBACK">']);
+  if (tut) tabs.push(["tut", "Tutors", tut.length, tut.filter((t) => t.isNew).length, TUTOR_ICON.replace('width="28" height="28"', 'width="20" height="20"')]);
+  if (!tabs.some((t) => t[0] === tab)) tab = "lv";
+  const c1 = colorsOf(typesOf(p))[0];
+  let h = '<section class="d-sec learn" data-tab="' + tab + '" style="--tc:' + c1 + '">' +
+    '<div class="learn-head"><h3>Moves<span class="who">' + esc(p.name) + "</span></h3>" +
+    '<div class="tabs" role="tablist" aria-label="Moves">' + tabs.map(([k, l, n, nn, ico]) =>
+      '<button class="learn-tab" type="button" role="tab" id="tab-' + k + "-" + key + '" aria-controls="pan-' + k + "-" + key + '" aria-selected="' + (k === tab) + '" data-t="' + k + '">' +
+        '<span class="lt-ico">' + ico + "</span>" + esc(l) + '<span class="lt-n">' + n + "</span>" + (nn ? '<span class="lt-new" title="' + nn + ' new in Pitch Black 2">' + nn + " new</span>" : "") + "</button>").join("") +
+    "</div></div>";
+  h += '<div class="tab-panel" role="tabpanel" data-p="lv" id="pan-lv-' + key + '" aria-labelledby="tab-lv-' + key + '"><div class="moves-wrap" style="--c1:' + c1 + '">' + movesHTML(lv) + "</div></div>";
+  if (tm) h += '<div class="tab-panel" role="tabpanel" data-p="tm" id="pan-tm-' + key + '" aria-labelledby="tab-tm-' + key + '"><div class="tm-inner">' + tmPanelHTML(tm) + "</div></div>";
+  if (tut) h += '<div class="tab-panel" role="tabpanel" data-p="tut" id="pan-tut-' + key + '" aria-labelledby="tab-tut-' + key + '"><div class="tm-inner">' + tutPanelHTML(tut) + "</div></div>";
+  return h + "</section>";
 }
 
 function cardHTML(box, i) {
   const p = box.head, [c1, c2] = colorsOf(typesOf(p));
-  const more = box.members.length > 1 || (p.moves && p.moves.length) || tmEntry(p.name);
-  return '<li class="card' + (typesOf(p).length < 2 ? " mono" : "") + (more ? " can-open" : "") + '" data-i="' + i + '" data-k="' + (box.members.length - 1 - box.forms.length) + '" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
+  const more = box.members.length > 1 || (p.moves && p.moves.length) || tmEntry(p.name) || tutorEntry(p.name);
+  return '<li class="card' + (typesOf(p).length < 2 ? " mono" : "") + (more ? " can-open" : "") + '" data-i="' + i + '" data-k="' + box.members.indexOf(p) + '" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
     '<div class="stage">' + stageInner(p, more, i) + "</div>" +
     '<div class="body">' + bodyInner(p, box) + "</div>" +
-    (more ? '<div class="detail" id="detail-' + i + '">' + evoLineHTML(box, p) + movesSecHTML(p) + tmSectionHTML(p, i, false) + "</div>" : "") +
+    (more ? '<div class="detail" id="detail-' + i + '">' + evoLineHTML(box, p) + learnHTML(p, i, "lv") + "</div>" : "") +
   "</li>";
 }
 
-// put Pokémon k of the box in the card: sprite, types, name, abilities, stats, BST, moves, TMs
+// put Pokémon k of the box in the card: sprite, types, name, abilities, stats, BST, moves, TMs, tutors
 function showMember(card, box, k) {
   const p = box.members[k];
   if (!p || +card.dataset.k === k) return;
@@ -1026,12 +1333,14 @@ function showMember(card, box, k) {
     n.classList.toggle("active", on);
     n.querySelector(".evo-pick").setAttribute("aria-pressed", on ? "true" : "false");
   });
-  const mv = det.querySelector(".mv-sec"), tmp = document.createElement("div");
-  tmp.innerHTML = movesSecHTML(p); mv.replaceWith(tmp.firstElementChild);
-  const oldTM = det.querySelector(".tm-sec");
-  tmp.innerHTML = tmSectionHTML(p, card.dataset.i, oldTM ? oldTM.classList.contains("open") : false);
-  if (oldTM) { if (tmp.firstElementChild) oldTM.replaceWith(tmp.firstElementChild); else oldTM.remove(); }
-  else if (tmp.firstElementChild) det.appendChild(tmp.firstElementChild);
+  const old = det.querySelector(".learn"), tmp = document.createElement("div");
+  tmp.innerHTML = learnHTML(p, card.dataset.i, old ? old.dataset.tab : "lv");
+  if (old) old.replaceWith(tmp.firstElementChild); else det.appendChild(tmp.firstElementChild);
+}
+
+function pickTab(sec, btn) {
+  sec.dataset.tab = btn.dataset.t;
+  sec.querySelectorAll(".learn-tab").forEach((b) => b.setAttribute("aria-selected", String(b === btn)));
 }
 
 function init(LIST) {
@@ -1042,12 +1351,18 @@ const grid = document.getElementById("grid");
 const empty = document.getElementById("empty");
 const countEl = document.getElementById("count");
 const q = document.getElementById("q");
+const sortEl = document.getElementById("sort");
 const chipsEl = document.getElementById("chips");
 const resetBtns = [document.getElementById("reset"), document.getElementById("reset2")];
 const toTop = document.getElementById("toTop");
 const selected = new Set();
 let onlyChanged = false;
 let openCard = null;
+
+// headline numbers
+const hs = document.getElementById("heroStats");
+if (hs) hs.innerHTML = [[LIST.length, "Pokémon"], [BOXES.length, "boxes"], [LIST.filter((p) => p.changed).length, "changed in Pitch Black 2"]]
+  .map(([n, l]) => '<span><b>' + n + "</b> " + l + "</span>").join("");
 
 // search text of each Pokémon (name, abilities, moves, id)
 const HAY = new Map(LIST.map((p) => [p, (p.name + " " + p.abilities.join(" ") + " " + (p.moves || []).map((m) => m.move).join(" ") + " " +
@@ -1057,7 +1372,6 @@ const HAY = new Map(LIST.map((p) => [p, (p.name + " " + p.abilities.join(" ") + 
 const ORDER = Object.keys(TYPE_ICONS);
 const typeCount = {};
 BOXES.forEach((b) => new Set(b.members.flatMap(typesOf)).forEach((t) => { typeCount[t] = (typeCount[t] || 0) + 1; }));
-const nChanged = BOXES.filter((b) => b.members.some((m) => m.changed)).length;
 const cb = document.createElement("button");
 cb.type = "button"; cb.className = "chip chg-chip"; cb.setAttribute("aria-pressed", "false");
 cb.innerHTML = '<span class="chg">PB2</span>Changed <span class="n">' + LIST.filter((p) => p.changed).length + "</span>";
@@ -1079,20 +1393,37 @@ ORDER.filter((t) => typeCount[t]).forEach((t) => {
 
 grid.innerHTML = BOXES.map(cardHTML).join("");
 const cards = Array.from(grid.children);
+let order = cards.slice();          // current display order (changes with "Sort by")
 
 const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
 if ("IntersectionObserver" in window && !reduce) {
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
-  }, { threshold: 0.2 });
+  }, { threshold: 0.15 });
   cards.forEach((c) => io.observe(c));
 } else {
   cards.forEach((c) => c.classList.add("in"));
 }
 
+function shownPokemon(i) { return BOXES[i].members[+cards[i].dataset.k] || BOXES[i].head; }
+function sortCards() {
+  const mode = sortEl ? sortEl.value : "dex";
+  const key = {
+    dex: (i) => [BOXES[i].head.pokedex_id, i],
+    bst: (i) => [-shownPokemon(i).bst, BOXES[i].head.pokedex_id],
+    name: (i) => [BOXES[i].head.name.toLowerCase(), 0],
+  }[mode] || ((i) => [i, 0]);
+  const idx = cards.map((_, i) => i).sort((a, b) => { const A = key(a), B = key(b); return A[0] < B[0] ? -1 : A[0] > B[0] ? 1 : A[1] - B[1]; });
+  const wasOpen = openCard;
+  if (wasOpen) wasOpen.classList.remove("open");
+  order = idx.map((i) => cards[i]);
+  order.forEach((c) => grid.appendChild(c));
+  if (wasOpen) { wasOpen.classList.add("open"); placeOpen(wasOpen); }
+}
+
 function apply() {
   const term = q.value.trim().toLowerCase().replace(/^#/, "");
-  let shown = 0, shownMons = 0;
+  let shown = 0;
   BOXES.forEach((b, i) => {
     const okType = !selected.size || b.members.some((m) => [...selected].every((t) => typesOf(m).includes(t)));
     const okChg = !onlyChanged || b.members.some((m) => m.changed);
@@ -1100,16 +1431,17 @@ function apply() {
     const ok = okType && okChg && hit.length > 0;
     cards[i].hidden = !ok;
     if (!ok) return;
-    shown++; shownMons += b.members.length;
+    shown++;
     // searching a pre-evolution by name shows it in the box ("oddish" -> Oddish in Vileplume and Bellossom)
     const byName = term && b.members.find((m) => m.name.toLowerCase().startsWith(term));
     showMember(cards[i], b, byName ? b.members.indexOf(byName) : headK(b));
   });
-  countEl.textContent = (shown === BOXES.length ? BOXES.length + " boxes · " + LIST.length + " Pokémon"
-    : shown + " of " + BOXES.length + " boxes");
+  countEl.innerHTML = shown === BOXES.length ? "<b>" + BOXES.length + "</b> boxes · <b>" + LIST.length + "</b> Pokémon"
+    : "<b>" + shown + "</b> of " + BOXES.length + " boxes";
   grid.hidden = shown === 0;
   empty.hidden = shown !== 0;
   resetBtns[0].hidden = !(selected.size || term || onlyChanged);
+  if (sortEl && sortEl.value === "bst") sortCards();
   if (openCard) { if (openCard.hidden) closeCard(openCard); else placeOpen(openCard); }
 }
 
@@ -1120,20 +1452,27 @@ function clearAll() {
 }
 
 q.addEventListener("input", apply);
+if (sortEl) sortEl.addEventListener("change", () => { sortCards(); try { localStorage.setItem("pb2-dex-sort", sortEl.value); } catch (e) {} });
 resetBtns.forEach((b) => b.addEventListener("click", clearAll));
 
 document.addEventListener("keydown", (e) => {
   if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
   const tag = (document.activeElement && document.activeElement.tagName) || "";
-  if (tag === "INPUT" || tag === "TEXTAREA") return;
+  if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
   e.preventDefault(); q.focus();
 });
 
-window.addEventListener("scroll", () => toTop.classList.toggle("show", window.scrollY > 900), { passive: true });
+const bar = document.querySelector(".searchbar");
+window.addEventListener("scroll", () => {
+  toTop.classList.toggle("show", window.scrollY > 900);
+  if (bar) bar.classList.toggle("stuck", bar.getBoundingClientRect().top <= 0.5 && window.scrollY > 40);
+}, { passive: true });
 toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" }));
 
 // ───────── expandable cards ─────────
-function homeSlot(card) { grid.insertBefore(card, cards[+card.dataset.i + 1] || null); }
+// The open card takes the whole row. It moves to the start of its row so the grid never has gaps
+// and every other card keeps its place in the current order.
+function homeSlot(card) { const n = order[order.indexOf(card) + 1]; grid.insertBefore(card, n || null); }
 function placeOpen(card) {
   homeSlot(card);
   card.classList.remove("open");
@@ -1183,12 +1522,21 @@ grid.addEventListener("click", (e) => {
   const lm = e.target.closest(".lm");
   if (lm) { showMember(card, box, +lm.dataset.k); if (!card.classList.contains("open") && card.classList.contains("can-open")) openCardEl(card); return; }
   if (!card.classList.contains("can-open")) return;
-  const tmT = e.target.closest(".tm-toggle");
-  if (tmT) { toggleTM(tmT.closest(".tm-sec")); return; }
+  const tab = e.target.closest(".learn-tab");
+  if (tab) { pickTab(tab.closest(".learn"), tab); return; }
   const tmF = e.target.closest(".tm-filter");
-  if (tmF) { filterTM(tmF.closest(".tm-sec"), tmF); return; }
+  if (tmF) { filterTM(tmF.closest(".tab-panel"), tmF); return; }
   if (e.target.closest(".detail")) return;
   toggleCard(card);
+});
+
+// arrow keys move between the move tabs
+grid.addEventListener("keydown", (e) => {
+  const t = e.target.closest && e.target.closest(".learn-tab");
+  if (!t || (e.key !== "ArrowRight" && e.key !== "ArrowLeft")) return;
+  const all = Array.from(t.parentElement.children), i = all.indexOf(t);
+  const n = all[(i + (e.key === "ArrowRight" ? 1 : all.length - 1)) % all.length];
+  pickTab(t.closest(".learn"), n); n.focus(); e.preventDefault();
 });
 
 document.addEventListener("keydown", (e) => {
@@ -1206,7 +1554,9 @@ window.addEventListener("resize", () => {
 });
 
 q.placeholder = "Search by name, ability, move or #ID";
+try { const s = localStorage.getItem("pb2-dex-sort"); if (s && sortEl && sortEl.querySelector('option[value="' + s + '"]')) sortEl.value = s; } catch (e) {}
 apply();
+if (sortEl && sortEl.value !== "dex") sortCards();
 }
 
 // ───────── load the JSON ─────────
@@ -1225,8 +1575,9 @@ async function fetchFirst(urls) {
 const statusEl = document.getElementById("count");
 statusEl.textContent = "Loading Pokémon…";
 (async function load() {
-  const [dex, tms, mc] = await Promise.allSettled([fetchFirst(DATA_URLS), fetchFirst(TM_URLS), fetchFirst(MOVE_CHANGES_URLS)]);
+  const [dex, tms, mc, tut] = await Promise.allSettled([fetchFirst(DATA_URLS), fetchFirst(TM_URLS), fetchFirst(MOVE_CHANGES_URLS), fetchFirst(TUTOR_URLS)]);
   if (tms.status === "fulfilled") TMDATA = tms.value;
+  if (tut.status === "fulfilled") TUTDATA = tut.value;
   if (mc.status === "fulfilled" && Array.isArray(mc.value)) {
     mc.value.forEach((m) => { if (m && m.name && m.type && m.type.to) MOVE_TYPES[m.name] = m.type.to; });
   }
