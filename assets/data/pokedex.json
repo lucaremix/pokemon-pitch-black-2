@@ -2386,7 +2386,7 @@
   "bst": 490,
   "stats": {"hp": 95, "atk": 100, "def": 95, "spa": 100, "spd": 70, "spe": 30},
   "abilities": ["Regenerator", "Own Tempo"],
-  "evo": {"from": "Slowpoke (Galar)", "method": "Use Poison Stone"},
+  "evo": {"from": "Slowpoke (Galar)", "method": "Level 37"},
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10165.png",
   "moves": [
     {"move": "Acid", "level": 1},
