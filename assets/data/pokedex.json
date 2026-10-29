@@ -5450,8 +5450,8 @@
   "changed": true,
   "type1": "Grass",
   "type2": "Fire",
-  "bst": 505,
-  "stats": {"hp": 95, "atk": 55, "def": 95, "spa": 125, "spd": 105, "spe": 30},
+  "bst": 485,
+  "stats": {"hp": 75, "atk": 55, "def": 95, "spa": 125, "spd": 105, "spe": 30},
   "abilities": ["Chlorophyll", "Solar Power"],
   "evo": {"from": "Sunkern", "method": "Use Sun Stone"},
   "moves": [
@@ -6184,23 +6184,23 @@
   "abilities": ["Sturdy", "Shell Armor"],
   "moves": [
     {"move": "Withdraw", "level": 1},
-    {"move": "Constrict", "level": 1},
-    {"move": "Bide", "level": 1},
     {"move": "Encore", "level": 5},
-    {"move": "Aqua Jet", "level": 6},
-    {"move": "Wrap", "level": 9},
-    {"move": "Struggle Bug", "level": 12},
-    {"move": "Safeguard", "level": 16},
-    {"move": "Dive", "level": 16},
-    {"move": "Rest", "level": 20},
-    {"move": "Gastro Acid", "level": 27},
-    {"move": "Waterfall", "level": 28},
-    {"move": "Power Trick", "level": 31},
-    {"move": "Shell Smash", "level": 34},
-    {"move": "Hydro Pump", "level": 38},
-    {"move": "Bug Bite", "level": 42},
-    {"move": "Power Split", "level": 45},
-    {"move": "Guard Split", "level": 45}
+    {"move": "Toxic", "level": 9},
+    {"move": "Safeguard", "level": 13},
+    {"move": "Protect", "level": 16},
+    {"move": "Taunt", "level": 19},
+    {"move": "Rest", "level": 22},
+    {"move": "Gastro Acid", "level": 25},
+    {"move": "Spider Web", "level": 28},
+    {"move": "Toxic Spikes", "level": 31},
+    {"move": "Stealth Rock", "level": 34},
+    {"move": "Aqua Ring", "level": 37},
+    {"move": "Pain Split", "level": 40},
+    {"move": "Guard Split", "level": 43},
+    {"move": "Baton Pass", "level": 46},
+    {"move": "Soak", "level": 49},
+    {"move": "Shell Smash", "level": 52},
+    {"move": "Memento", "level": 58}
   ]
 },
 {
@@ -6411,8 +6411,8 @@
   "changed": true,
   "type1": "Fire",
   "type2": "Rock",
-  "bst": 505,
-  "stats": {"hp": 80, "atk": 50, "def": 120, "spa": 115, "spd": 110, "spe": 30},
+  "bst": 500,
+  "stats": {"hp": 75, "atk": 50, "def": 120, "spa": 115, "spd": 100, "spe": 40},
   "abilities": ["Magma Armor", "Flame Body"],
   "evo": {"from": "Slugma", "method": "Level 38"},
   "moves": [
@@ -6914,13 +6914,22 @@
 {
   "name": "Smeargle",
   "pokedex_id": 235,
-  "changed": false,
+  "changed": true,
   "type1": "Normal",
-  "bst": 250,
-  "stats": {"hp": 55, "atk": 20, "def": 35, "spa": 20, "spd": 45, "spe": 75},
+  "bst": 430,
+  "stats": {"hp": 85, "atk": 50, "def": 65, "spa": 50, "spd": 75, "spe": 105},
   "abilities": ["Own Tempo", "Technician"],
   "moves": [
-    {"move": "Sketch", "level": 1}
+    {"move": "Sketch", "level": 1},
+    {"move": "Sketch", "level": 11},
+    {"move": "Sketch", "level": 21},
+    {"move": "Sketch", "level": 31},
+    {"move": "Sketch", "level": 41},
+    {"move": "Sketch", "level": 51},
+    {"move": "Sketch", "level": 61},
+    {"move": "Sketch", "level": 71},
+    {"move": "Sketch", "level": 81},
+    {"move": "Sketch", "level": 91}
   ]
 },
 {
@@ -7930,7 +7939,7 @@
   "type2": "Grass",
   "bst": 490,
   "stats": {"hp": 70, "atk": 120, "def": 80, "spa": 70, "spd": 80, "spe": 70},
-  "abilities": ["Honey Gather"],
+  "abilities": ["Gluttony"],
   "evo": {"from": "Vigoroth", "method": "Level 36"},
   "moves": [
     {"move": "Scratch", "level": 1},
