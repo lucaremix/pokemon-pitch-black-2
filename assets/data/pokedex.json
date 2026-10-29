@@ -19485,6 +19485,69 @@
     {"move": "Quick Guard", "level": 84},
     {"move": "Wide Guard", "level": 84}
   ]
+},
+{
+  "name": "Zeraora",
+  "pokedex_id": 807,
+  "changed": true,
+  "type1": "Electric",
+  "type2": "Fighting",
+  "bst": 550,
+  "stats": {"hp": 88, "atk": 102, "def": 65, "spa": 92, "spd": 70, "spe": 133},
+  "abilities": ["Volt Absorb", "Flare Boost"],
+  "moves": [
+    {"move": "Scratch", "level": 1},
+    {"move": "Spark", "level": 1},
+    {"move": "Vacuum Wave", "level": 1},
+    {"move": "Hone Claws", "level": 5},
+    {"move": "Quick Attack", "level": 8},
+    {"move": "Fury Swipes", "level": 12},
+    {"move": "Volt Switch", "level": 15},
+    {"move": "Snarl", "level": 19},
+    {"move": "Fake Out", "level": 22},
+    {"move": "Charge", "level": 26},
+    {"move": "Thunder Punch", "level": 29},
+    {"move": "Slash", "level": 33},
+    {"move": "Wild Charge", "level": 36},
+    {"move": "Quick Guard", "level": 40},
+    {"move": "Aura Sphere", "level": 40},
+    {"move": "Close Combat", "level": 47},
+    {"move": "Discharge", "level": 50},
+    {"move": "Focus Blast", "level": 64}
+  ]
+},
+{
+  "name": "Zarude",
+  "pokedex_id": 893,
+  "changed": true,
+  "type1": "Dark",
+  "type2": "Grass",
+  "bst": 550,
+  "stats": {"hp": 105, "atk": 110, "def": 95, "spa": 60, "spd": 85, "spe": 95},
+  "abilities": ["Leaf Guard", "Intimidate"],
+  "moves": [
+    {"move": "Bind", "level": 1},
+    {"move": "Scratch", "level": 1},
+    {"move": "Leer", "level": 1},
+    {"move": "Vine Whip", "level": 6},
+    {"move": "Bite", "level": 10},
+    {"move": "Fury Swipes", "level": 14},
+    {"move": "Hone Claws", "level": 18},
+    {"move": "Razor Leaf", "level": 22},
+    {"move": "Bullet Seed", "level": 26},
+    {"move": "Scary Face", "level": 30},
+    {"move": "Night Slash", "level": 33},
+    {"move": "Seed Bomb", "level": 36},
+    {"move": "Crunch", "level": 40},
+    {"move": "U-turn", "level": 44},
+    {"move": "Swords Dance", "level": 48},
+    {"move": "Leaf Blade", "level": 52},
+    {"move": "Knock Off", "level": 56},
+    {"move": "Synthesis", "level": 60},
+    {"move": "Hammer Arm", "level": 64},
+    {"move": "Sucker Punch", "level": 68},
+    {"move": "Power Whip", "level": 72}
+  ]
 }
 ]
 }
