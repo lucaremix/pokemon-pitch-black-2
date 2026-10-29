@@ -771,11 +771,6 @@
 
   /* ───────── motion: short, soft, never in the way ───────── */
   @media (prefers-reduced-motion: no-preference) {
-    /* cards rise in as they scroll into view */
-    .js .card { opacity: 0; transform: translateY(14px); }
-    .js .card.in { opacity: 1; transform: none;
-      transition: opacity .45s ease, transform .5s cubic-bezier(.2,.7,.2,1), border-color .2s, box-shadow .25s; }
-    .js .card.in:not(.open):hover { transform: translateY(-4px); }
     /* the sprite pops in whenever the card shows another Pokémon */
     .sprite img, .thumb img, .lm-s img { animation: spriteIn .42s cubic-bezier(.2,.8,.2,1.2) both; }
     @keyframes spriteIn { from { opacity: 0; transform: translateY(6px) scale(.9); } }
