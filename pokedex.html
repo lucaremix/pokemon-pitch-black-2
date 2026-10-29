@@ -691,12 +691,6 @@
   .total { gap: 10px; padding-top: 12px; margin-top: 14px; font-size: 13.5px; }
   .total span:first-child { margin-right: auto; }
   .total b { font-size: 28px; }
-  .tier {
-    display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 7px;
-    font: 800 13px var(--display); color: #0b0e14; background: #6b7a9c;
-  }
-  .tier.t-S { background: linear-gradient(135deg, #ffe066, #ffcb05); box-shadow: 0 0 14px rgba(255,203,5,.45); }
-  .tier.t-A { background: #38c6ff; } .tier.t-B { background: #6f9cff; } .tier.t-C { background: #8e9ab2; } .tier.t-D { background: #5b6680; color: #e6ebf5; }
   .bst-meter { display: block; height: 4px; margin-top: 8px; border-radius: 99px; background: rgba(255,255,255,.06); overflow: hidden; }
   .bst-meter i { display: block; height: 100%; width: var(--w); border-radius: 99px; background: linear-gradient(90deg, var(--c1), var(--c2)); }
 
@@ -773,6 +767,43 @@
   }
   @media (prefers-reduced-motion: reduce) {
     .stage::before, .sprite img, .card, .tab-panel, .tab-panel .tms li { transition: none; animation: none; }
+  }
+
+  /* ───────── motion: short, soft, never in the way ───────── */
+  @media (prefers-reduced-motion: no-preference) {
+    /* cards rise in as they scroll into view */
+    .js .card { opacity: 0; transform: translateY(14px); }
+    .js .card.in { opacity: 1; transform: none;
+      transition: opacity .45s ease, transform .5s cubic-bezier(.2,.7,.2,1), border-color .2s, box-shadow .25s; }
+    .js .card.in:not(.open):hover { transform: translateY(-4px); }
+    /* the sprite pops in whenever the card shows another Pokémon */
+    .sprite img, .thumb img, .lm-s img { animation: spriteIn .42s cubic-bezier(.2,.8,.2,1.2) both; }
+    @keyframes spriteIn { from { opacity: 0; transform: translateY(6px) scale(.9); } }
+    .b-head .name { animation: fadeUp .35s ease both; }
+    .types .type { animation: fadeUp .35s ease both; }
+    .types .type + .type { animation-delay: .05s; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(4px); } }
+    /* bars and the BST meter fill when the card appears */
+    .bst-meter i { transition: width .8s cubic-bezier(.2,.7,.2,1) .25s; }
+    .js .card:not(.in) .bst-meter i { width: 0; }
+    /* radar grows from the centre */
+    .card.open .r-val { transform-origin: 120px 112px; animation: radarIn .6s cubic-bezier(.2,.8,.2,1) both; }
+    @keyframes radarIn { from { opacity: 0; transform: scale(.4); } }
+    /* opening a card */
+    .card.open .detail { animation: detailIn .4s cubic-bezier(.2,.7,.2,1) both; }
+    @keyframes detailIn { from { opacity: 0; transform: translateY(10px); } }
+    .card.open .d-sec { animation: fadeUp .4s ease both; }
+    .card.open .d-sec + .d-sec { animation-delay: .08s; }
+    .expander svg { transition: transform .3s cubic-bezier(.2,.7,.2,1); }
+    /* small presses */
+    .chip, .lm, .learn-tab, .tm-filter, .reset, .expander { transition: transform .15s, background .15s, border-color .15s, color .15s; }
+    .chip:active, .lm:active, .learn-tab:active, .tm-filter:active, .reset:active, .expander:active { transform: scale(.96); }
+    .chip[aria-pressed="true"] img { animation: chipPop .3s cubic-bezier(.2,.8,.2,1.4); }
+    @keyframes chipPop { 50% { transform: scale(1.18); } }
+    .move, .tm { transition: background .15s, border-color .15s, transform .15s; }
+    .hero .logo { animation: heroIn .7s cubic-bezier(.2,.7,.2,1) both; }
+    .hero h1, .hero-stats { animation: fadeUp .6s ease .12s both; }
+    @keyframes heroIn { from { opacity: 0; transform: translateY(-8px) scale(.98); } }
   }
 </style>
 </head>
@@ -1218,11 +1249,10 @@ function bodyInner(p, box) {
     return '<li class="stat' + (v >= 110 ? " hi" : "") + '"><span class="k">' + label + '</span><span class="v">' + v +
       '</span><span class="bar" aria-hidden="true"><i style="--w:' + w + "%;--k:" + STAT_COLORS[k] + ";--d:" + n * 45 + 'ms"></i></span></li>';
   }).join("");
-  const tier = p.bst >= 600 ? "S" : p.bst >= 520 ? "A" : p.bst >= 450 ? "B" : p.bst >= 360 ? "C" : "D";
   return '<div class="b-head"><h2 class="name">' + esc(p.name) + "</h2></div>" + lineMiniHTML(box, p) +
     '<div class="abilities" role="group" aria-label="Abilities">' + p.abilities.map(abilityLink).join("") + "</div>" +
     '<div class="b-stats"><div class="b-bars"><ul class="stats" aria-label="Base stats">' + stats + "</ul>" +
-      '<div class="total"><span>Base stat total</span><span class="tier t-' + tier + '" title="Tier by total">' + tier + "</span><b>" + p.bst + "</b></div>" +
+      '<div class="total"><span>Base stat total</span><b>' + p.bst + "</b></div>" +
       '<span class="bst-meter" aria-hidden="true"><i style="--w:' + Math.min(100, p.bst / 7.2).toFixed(1) + '%"></i></span></div>' +
     '<div class="b-radar">' + radarSVG(p, colorsOf(typesOf(p))[0]) + "</div></div>";
 }
