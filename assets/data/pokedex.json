@@ -18045,10 +18045,10 @@
   "abilities": ["Rattled", "Static"],
   "moves": [
     {"move": "Acid", "level": 1},
-    {"move": "Sludge Bomb", "level": 1},
+    {"move": "Acid Spray", "level": 1},
     {"move": "Flail", "level": 1},
     {"move": "Growl", "level": 1},
-    {"move": "Spark", "level": 1},
+    {"move": "Thunder Shock", "level": 1},
     {"move": "Fake Tears", "level": 1},
     {"move": "Charge", "level": 4},
     {"move": "Shock Wave", "level": 8},
