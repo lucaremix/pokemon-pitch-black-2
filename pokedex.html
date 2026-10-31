@@ -625,6 +625,26 @@
   .sort:focus-within { border-color: var(--bolt); box-shadow: 0 0 0 3px rgba(47,123,255,.35); }
   .sort option { background: var(--panel); color: var(--text); }
   .filters { gap: 12px; padding-top: 18px; }
+
+  /* BST range: one track, two handles */
+  .bst-filter { display: flex; align-items: center; gap: 12px; max-width: 560px; }
+  .bst-lbl { font: 800 12px var(--display); letter-spacing: .08em; color: var(--muted); }
+  .bst-val { min-width: 34px; text-align: center; font: 800 15px var(--display); font-variant-numeric: tabular-nums; color: var(--text); }
+  .dual { position: relative; flex: 1 1 auto; height: 28px; }
+  .dual-track { position: absolute; left: 0; right: 0; top: 50%; height: 6px; margin-top: -3px; border-radius: 99px; background: var(--line-2); }
+  .dual-fill { position: absolute; top: 0; bottom: 0; border-radius: 99px; background: linear-gradient(90deg, var(--bolt), var(--volt)); }
+  .dual input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
+  .dual input::-webkit-slider-runnable-track { background: none; border: 0; }
+  .dual input::-moz-range-track { background: none; border: 0; }
+  .dual input::-webkit-slider-thumb { -webkit-appearance: none; pointer-events: auto; width: 20px; height: 20px; border-radius: 50%; cursor: grab;
+    background: #fff; border: 3px solid var(--bolt); box-shadow: 0 2px 8px rgba(0,0,0,.45); transition: transform .15s; }
+  .dual input::-moz-range-thumb { pointer-events: auto; width: 14px; height: 14px; border-radius: 50%; cursor: grab;
+    background: #fff; border: 3px solid var(--bolt); box-shadow: 0 2px 8px rgba(0,0,0,.45); }
+  .dual input:active::-webkit-slider-thumb { transform: scale(1.15); cursor: grabbing; }
+  .dual input:focus-visible { outline: none; }
+  .dual input:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px rgba(255,203,5,.45); }
+  .dual input:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 4px rgba(255,203,5,.45); }
+  .bst-filter.on .bst-val { color: var(--volt); }
   .count { font-size: 14px; }
   .count b { color: var(--text); font-family: var(--display); font-weight: 800; }
 
@@ -816,7 +836,6 @@
     <header class="hero">
       <img class="logo" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/logofull.png" alt="Pokémon Pitch Black 2" width="1774" height="887" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='assets/images/logofull.png'}">
       <h1>Pokédex</h1>
-      <p class="hero-stats" id="heroStats" aria-label="Pokédex in numbers"></p>
     </header>
   </div>
 </div>
@@ -842,6 +861,16 @@
 <section class="wrap filters" aria-label="Filters">
   <span class="count" id="count" role="status" aria-live="polite"></span>
   <div class="chips" id="chips" role="group" aria-label="Filter by type"></div>
+  <div class="bst-filter" id="bstFilter">
+    <span class="bst-lbl">BST</span>
+    <output class="bst-val" id="bstMinOut"></output>
+    <div class="dual" id="bstDual">
+      <div class="dual-track"><div class="dual-fill" id="bstFill"></div></div>
+      <input type="range" id="bstMin" aria-label="Minimum base stat total">
+      <input type="range" id="bstMax" aria-label="Maximum base stat total">
+    </div>
+    <output class="bst-val" id="bstMaxOut"></output>
+  </div>
 </section>
 
 <main class="wrap">
@@ -849,7 +878,7 @@
   <ul class="grid" id="grid"></ul>
   <div class="empty" id="empty" hidden>
     <strong>No Pokémon match your filters.</strong>
-    Remove a type or change your search.
+    Remove a type, widen the BST range or change your search.
     <div><button class="reset" id="reset2" type="button">Clear filters</button></div>
   </div>
   <noscript><p class="empty">Turn on JavaScript to see the Pokémon list.</p></noscript>
@@ -1384,10 +1413,29 @@ const selected = new Set();
 let onlyChanged = false;
 let openCard = null;
 
-// headline numbers
-const hs = document.getElementById("heroStats");
-if (hs) hs.innerHTML = [[LIST.length, "Pokémon"], [BOXES.length, "boxes"], [LIST.filter((p) => p.changed).length, "changed in Pitch Black 2"]]
-  .map(([n, l]) => '<span><b>' + n + "</b> " + l + "</span>").join("");
+// BST range slider (one track, two handles)
+const bMin = document.getElementById("bstMin"), bMax = document.getElementById("bstMax");
+const BST_LO = Math.floor(Math.min(...LIST.map((p) => p.bst)) / 10) * 10, BST_HI = Math.ceil(Math.max(...LIST.map((p) => p.bst)) / 10) * 10;
+[bMin, bMax].forEach((r) => { r.min = BST_LO; r.max = BST_HI; r.step = 5; });
+bMin.value = BST_LO; bMax.value = BST_HI;
+function bstRange() { return [+bMin.value, +bMax.value]; }
+function bstActive() { return +bMin.value > BST_LO || +bMax.value < BST_HI; }
+function drawBst() {
+  const [lo, hi] = bstRange(), w = BST_HI - BST_LO, fill = document.getElementById("bstFill");
+  fill.style.left = ((lo - BST_LO) / w * 100) + "%"; fill.style.right = ((BST_HI - hi) / w * 100) + "%";
+  document.getElementById("bstMinOut").textContent = lo; document.getElementById("bstMaxOut").textContent = hi;
+  document.getElementById("bstFilter").classList.toggle("on", bstActive());
+  // the handle you touched last stays on top, so two handles at the same value can still be pulled apart
+}
+[bMin, bMax].forEach((r) => {
+  r.addEventListener("input", () => {
+    if (+bMin.value > +bMax.value) { if (r === bMin) bMin.value = bMax.value; else bMax.value = bMin.value; }
+    bMin.style.zIndex = r === bMin ? 2 : 1; bMax.style.zIndex = r === bMax ? 2 : 1;
+    drawBst(); apply();
+  });
+});
+drawBst();
+
 
 // search text of each Pokémon (name, abilities, moves, id)
 const HAY = new Map(LIST.map((p) => [p, (p.name + " " + p.abilities.join(" ") + " " + (p.moves || []).map((m) => m.move).join(" ") + " " +
@@ -1452,26 +1500,30 @@ function apply() {
   BOXES.forEach((b, i) => {
     const okType = !selected.size || b.members.some((m) => [...selected].every((t) => typesOf(m).includes(t)));
     const okChg = !onlyChanged || b.members.some((m) => m.changed);
-    const hit = term ? b.members.filter((m) => HAY.get(m).includes(term)) : b.members;
+    const [lo, hi] = bstRange();
+    const hit = b.members.filter((m) => (!term || HAY.get(m).includes(term)) && m.bst >= lo && m.bst <= hi);
     const ok = okType && okChg && hit.length > 0;
     cards[i].hidden = !ok;
     if (!ok) return;
     shown++;
     // searching a pre-evolution by name shows it in the box ("oddish" -> Oddish in Vileplume and Bellossom)
-    const byName = term && b.members.find((m) => m.name.toLowerCase().startsWith(term));
-    showMember(cards[i], b, byName ? b.members.indexOf(byName) : headK(b));
+    const byName = term && hit.find((m) => m.name.toLowerCase().startsWith(term));
+    // with the BST range on, show a Pokémon of the box that is inside the range
+    const pick = byName || (bstActive() && !hit.includes(b.members[headK(b)]) ? hit[hit.length - 1] : null);
+    showMember(cards[i], b, pick ? b.members.indexOf(pick) : headK(b));
   });
   countEl.innerHTML = shown === BOXES.length ? "<b>" + BOXES.length + "</b> boxes · <b>" + LIST.length + "</b> Pokémon"
     : "<b>" + shown + "</b> of " + BOXES.length + " boxes";
   grid.hidden = shown === 0;
   empty.hidden = shown !== 0;
-  resetBtns[0].hidden = !(selected.size || term || onlyChanged);
+  resetBtns[0].hidden = !(selected.size || term || onlyChanged || bstActive());
   if (sortEl && sortEl.value === "bst") sortCards();
   if (openCard) { if (openCard.hidden) closeCard(openCard); else placeOpen(openCard); }
 }
 
 function clearAll() {
   q.value = ""; selected.clear(); onlyChanged = false;
+  bMin.value = BST_LO; bMax.value = BST_HI; drawBst();
   chipsEl.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", "false"));
   apply(); q.focus();
 }
