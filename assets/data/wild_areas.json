@@ -393,7 +393,7 @@
        "rate": 10
       },
       {
-       "name": "Sewaddle",
+       "name": "Slakoth",
        "min": 11,
        "max": 14,
        "rate": 10
@@ -651,7 +651,7 @@
        "rate": 10
       },
       {
-       "name": "Sewaddle",
+       "name": "Slakoth",
        "min": 11,
        "max": 14,
        "rate": 10
@@ -909,7 +909,7 @@
        "rate": 10
       },
       {
-       "name": "Sewaddle",
+       "name": "Slakoth",
        "min": 11,
        "max": 14,
        "rate": 10
@@ -1782,7 +1782,7 @@
        "rate": 30
       },
       {
-       "name": "Finneon",
+       "name": "Carvanha",
        "min": 13,
        "max": 17,
        "rate": 10
@@ -1919,7 +1919,7 @@
        "rate": 5
       },
       {
-       "name": "Magnemite",
+       "name": "Tynamo",
        "min": 15,
        "max": 16,
        "rate": 5
@@ -2033,8 +2033,8 @@
       },
       {
        "name": "Abra",
-       "min": 22,
-       "max": 24,
+       "min": 14,
+       "max": 16,
        "rate": 5
       }
      ]
@@ -2098,8 +2098,8 @@
       },
       {
        "name": "Abra",
-       "min": 23,
-       "max": 25,
+       "min": 14,
+       "max": 16,
        "rate": 5
       }
      ]
@@ -2338,7 +2338,7 @@
        "rate": 5
       },
       {
-       "name": "Clefairy",
+       "name": "Sandshrew (Alola)",
        "min": 19,
        "max": 20,
        "rate": 5
@@ -2421,7 +2421,7 @@
        "rate": 10
       },
       {
-       "name": "Scraggy",
+       "name": "Phanpy",
        "min": 19,
        "max": 20,
        "rate": 10
@@ -2499,9 +2499,9 @@
        "rate": 30
       },
       {
-       "name": "Tentacool",
-       "min": 20,
-       "max": 40,
+       "name": "Mantyke",
+       "min": 22,
+       "max": 26,
        "rate": 10
       }
      ]
@@ -2622,7 +2622,7 @@
        "rate": 5
       },
       {
-       "name": "Numel",
+       "name": "Sizzlipede",
        "min": 22,
        "max": 24,
        "rate": 5
@@ -2812,7 +2812,7 @@
        "rate": 10
       },
       {
-       "name": "Onix",
+       "name": "Dreepy",
        "min": 24,
        "max": 26,
        "rate": 5
@@ -2854,7 +2854,7 @@
        "rate": 20
       },
       {
-       "name": "Ponyta",
+       "name": "Vulpix",
        "min": 27,
        "max": 29,
        "rate": 10
@@ -3036,8 +3036,8 @@
       },
       {
        "name": "Hoothoot",
-       "min": 27,
-       "max": 29,
+       "min": 18,
+       "max": 20,
        "rate": 10
       },
       {
@@ -3172,8 +3172,8 @@
      "encounters": [
       {
        "name": "Combee",
-       "min": 27,
-       "max": 29,
+       "min": 19,
+       "max": 21,
        "rate": 20
       },
       {
@@ -3183,7 +3183,7 @@
        "rate": 20
       },
       {
-       "name": "Pinsir",
+       "name": "Zorua",
        "min": 27,
        "max": 29,
        "rate": 10
@@ -3213,7 +3213,7 @@
        "rate": 5
       },
       {
-       "name": "Murkrow",
+       "name": "Zorua (Hisui)",
        "min": 27,
        "max": 29,
        "rate": 5
@@ -3698,7 +3698,7 @@
        "rate": 70
       },
       {
-       "name": "Marill",
+       "name": "Spheal",
        "min": 30,
        "max": 30,
        "rate": 30
@@ -4744,8 +4744,8 @@
       },
       {
        "name": "Axew",
-       "min": 34,
-       "max": 36,
+       "min": 26,
+       "max": 28,
        "rate": 10
       },
       {
@@ -4768,8 +4768,8 @@
       },
       {
        "name": "Deino",
-       "min": 34,
-       "max": 36,
+       "min": 26,
+       "max": 28,
        "rate": 5
       },
       {
@@ -4786,8 +4786,8 @@
       },
       {
        "name": "Jangmo-o",
-       "min": 34,
-       "max": 36,
+       "min": 26,
+       "max": 28,
        "rate": 5
       }
      ]
@@ -5032,8 +5032,8 @@
       },
       {
        "name": "Geodude (Alola)",
-       "min": 32,
-       "max": 36,
+       "min": 23,
+       "max": 25,
        "rate": 20
       },
       {
@@ -5594,8 +5594,8 @@
       },
       {
        "name": "Duskull",
-       "min": 39,
-       "max": 42,
+       "min": 30,
+       "max": 32,
        "rate": 10
       },
       {
@@ -5837,8 +5837,8 @@
      "encounters": [
       {
        "name": "Spoink",
-       "min": 39,
-       "max": 42,
+       "min": 30,
+       "max": 32,
        "rate": 20
       },
       {
@@ -5879,8 +5879,8 @@
       },
       {
        "name": "Gligar",
-       "min": 39,
-       "max": 42,
+       "min": 30,
+       "max": 32,
        "rate": 5
       },
       {
@@ -19492,6 +19492,12 @@
    "types": [
     "Dark",
     "Normal"
+   ]
+  },
+  "Zorua": {
+   "sprite": "570",
+   "types": [
+    "Dark"
    ]
   },
   "Zorua (Hisui)": {
