@@ -2890,7 +2890,7 @@
        "rate": 5
       },
       {
-       "name": "Bouffalant",
+       "name": "Tauros (Paldea Combat)",
        "min": 27,
        "max": 29,
        "rate": 5
@@ -3029,7 +3029,7 @@
        "rate": 10
       },
       {
-       "name": "Drowzee",
+       "name": "Ditto",
        "min": 27,
        "max": 29,
        "rate": 10
@@ -3581,7 +3581,7 @@
        "rate": 10
       },
       {
-       "name": "Pidgeotto",
+       "name": "Delibird",
        "min": 33,
        "max": 36,
        "rate": 10
@@ -3890,7 +3890,7 @@
        "rate": 10
       },
       {
-       "name": "Snover",
+       "name": "Delibird",
        "min": 33,
        "max": 36,
        "rate": 10
@@ -4749,7 +4749,7 @@
        "rate": 10
       },
       {
-       "name": "Wynaut",
+       "name": "Sandshrew (Alola)",
        "min": 34,
        "max": 36,
        "rate": 10
@@ -4825,7 +4825,7 @@
        "rate": 10
       },
       {
-       "name": "Wobbuffet",
+       "name": "Vulpix (Alola)",
        "min": 35,
        "max": 37,
        "rate": 10
@@ -5096,7 +5096,7 @@
        "rate": 10
       },
       {
-       "name": "Heatmor",
+       "name": "Cryogonal",
        "min": 36,
        "max": 40,
        "rate": 5
@@ -5884,7 +5884,7 @@
        "rate": 5
       },
       {
-       "name": "Trapinch",
+       "name": "Sneasel (Hisui)",
        "min": 39,
        "max": 42,
        "rate": 5
@@ -5919,7 +5919,7 @@
        "rate": 20
       },
       {
-       "name": "Rhydon",
+       "name": "Tauros (Paldea Blaze)",
        "min": 40,
        "max": 43,
        "rate": 10
@@ -6232,7 +6232,7 @@
        "rate": 10
       },
       {
-       "name": "Hypno",
+       "name": "Jynx",
        "min": 40,
        "max": 43,
        "rate": 10
@@ -6385,7 +6385,7 @@
        "rate": 30
       },
       {
-       "name": "Wailmer",
+       "name": "Qwilfish (Hisui)",
        "min": 40,
        "max": 46,
        "rate": 10
@@ -6454,7 +6454,7 @@
        "rate": 30
       },
       {
-       "name": "Lanturn",
+       "name": "Dhelmise",
        "min": 40,
        "max": 46,
        "rate": 10
@@ -6488,7 +6488,7 @@
        "rate": 30
       },
       {
-       "name": "Wailmer",
+       "name": "Qwilfish (Hisui)",
        "min": 40,
        "max": 46,
        "rate": 10
@@ -6565,7 +6565,7 @@
        "rate": 10
       },
       {
-       "name": "Jigglypuff",
+       "name": "Drampa",
        "min": 41,
        "max": 44,
        "rate": 5
@@ -6624,7 +6624,7 @@
        "rate": 10
       },
       {
-       "name": "Jigglypuff",
+       "name": "Tauros (Paldea Aqua)",
        "min": 42,
        "max": 46,
        "rate": 5
