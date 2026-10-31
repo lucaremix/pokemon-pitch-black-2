@@ -1330,7 +1330,7 @@
        "rate": 20
       },
       {
-       "name": "Azurill",
+       "name": "Wingull",
        "min": 7,
        "max": 9,
        "rate": 20
@@ -1595,7 +1595,7 @@
        "rate": 60
       },
       {
-       "name": "Chinchou",
+       "name": "Corsola (Galar)",
        "min": 13,
        "max": 17,
        "rate": 30
@@ -2008,7 +2008,7 @@
        "rate": 10
       },
       {
-       "name": "Snubbull",
+       "name": "Munchlax",
        "min": 22,
        "max": 24,
        "rate": 10
@@ -2073,7 +2073,7 @@
        "rate": 10
       },
       {
-       "name": "Skitty",
+       "name": "Farfetch'd",
        "min": 23,
        "max": 25,
        "rate": 10
@@ -2403,7 +2403,7 @@
      "method": "Sand, Normal",
      "encounters": [
       {
-       "name": "Dwebble",
+       "name": "Crabrawler",
        "min": 19,
        "max": 20,
        "rate": 20
@@ -3153,7 +3153,7 @@
        "rate": 5
       },
       {
-       "name": "Cinccino",
+       "name": "Oricorio (Pom-Pom)",
        "min": 27,
        "max": 30,
        "rate": 10
@@ -3195,7 +3195,7 @@
        "rate": 10
       },
       {
-       "name": "Carnivine",
+       "name": "Heracross (Unova)",
        "min": 27,
        "max": 29,
        "rate": 10
