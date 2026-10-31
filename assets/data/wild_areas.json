@@ -5261,7 +5261,7 @@
        "rate": 10
       },
       {
-       "name": "Watchog",
+       "name": "Hawlucha",
        "min": 38,
        "max": 41,
        "rate": 10
@@ -5332,7 +5332,7 @@
        "rate": 10
       },
       {
-       "name": "Watchog",
+       "name": "Hawlucha",
        "min": 38,
        "max": 42,
        "rate": 10
@@ -5424,7 +5424,7 @@
        "rate": 10
       },
       {
-       "name": "Watchog",
+       "name": "Hawlucha",
        "min": 38,
        "max": 41,
        "rate": 10
@@ -5495,7 +5495,7 @@
        "rate": 10
       },
       {
-       "name": "Watchog",
+       "name": "Hawlucha",
        "min": 38,
        "max": 42,
        "rate": 10
@@ -15057,13 +15057,7 @@
        "name": "Glaceon",
        "min": 2,
        "max": 100,
-       "rate": 5
-      },
-      {
-       "name": "Sylveon",
-       "min": 2,
-       "max": 100,
-       "rate": 5
+       "rate": 10
       }
      ]
     },
@@ -16985,6 +16979,13 @@
    "types": [
     "Ghost",
     "Dark"
+   ]
+  },
+  "Hawlucha": {
+   "sprite": "701",
+   "types": [
+    "Fighting",
+    "Flying"
    ]
   },
   "Heatmor": {
@@ -18937,12 +18938,6 @@
    "sprite": "528",
    "types": [
     "Flying",
-    "Fairy"
-   ]
-  },
-  "Sylveon": {
-   "sprite": "700",
-   "types": [
     "Fairy"
    ]
   },
