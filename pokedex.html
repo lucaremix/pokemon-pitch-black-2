@@ -626,6 +626,21 @@
   .sort option { background: var(--panel); color: var(--text); }
   .filters { gap: 12px; padding-top: 18px; }
 
+  /* game box icons in the evolution-line chips: a 36×28 window on the icon, no scaling (crisp pixels) */
+  .lm-s { width: 40px !important; height: 30px !important; border-radius: 8px !important; background: transparent !important; overflow: hidden; }
+  .gi { position: relative; display: grid; place-items: center; width: 40px; height: 30px; overflow: hidden; }
+  .gi img { display: block; max-width: none; image-rendering: pixelated; animation: none !important; transition: opacity .2s; }
+  .gi img.raw { position: absolute; left: -14px; top: -24px; }
+  .gi-sheet { background: url("https://play.pokemonshowdown.com/sprites/pokemonicons-sheet.png") no-repeat; image-rendering: pixelated; }
+  .gi-sprite { display: grid; place-items: center; }
+  .gi-alt, .no-sheet .gi-sheet { display: none; }
+  .no-sheet .gi-alt { display: grid; }
+  .gi-sprite img { position: static; width: auto; height: auto; max-width: 24px; max-height: 24px; image-rendering: auto; }
+  .gi-gone::after { content: ""; position: absolute; left: 14px; top: 9px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--line-2); }
+  .lm:hover .gi, .lm.on .gi { animation: giHop .5s ease; }
+  @keyframes giHop { 0%,100% { transform: translateY(0); } 40% { transform: translateY(-3px); } }
+  @media (prefers-reduced-motion: reduce) { .lm:hover .gi, .lm.on .gi { animation: none; } }
+
   /* ───────── type matchups + where to find (open card) ───────── */
   .duo { display: grid; gap: 22px; grid-template-columns: minmax(0, 1fr); }
   @media (min-width: 980px) { .duo { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: start; } }
@@ -648,9 +663,14 @@
     background: color-mix(in srgb, var(--tc) 70%, #0b0e14); border: 1px solid color-mix(in srgb, var(--tc) 85%, #fff 10%);
   }
   .mu-t img { width: 20px; height: 20px; }
-  .mu-row.neutral .mu-t { height: 26px; padding: 0 5px; background: transparent; border-color: var(--line); }
-  .mu-row.neutral .mu-t span { display: none; }
+  .mu-t { height: 30px; padding: 0 5px; background: transparent; border-color: var(--line); }
+  .mu-t span { display: none; }
+  .mu-t img { width: 20px; height: 20px; transition: transform .15s; }
+  .mu-t:hover img { transform: scale(1.15); }
+  .mu-row.neutral .mu-t { height: 26px; }
   .mu-row.neutral .mu-t img { opacity: .8; }
+  .mu-row .mu-t { border-color: color-mix(in srgb, var(--rx) 45%, var(--line)); }
+  .mu-row.neutral .mu-t { border-color: var(--line); }
   .mu-sum { display: flex; flex-wrap: wrap; gap: 6px; margin: -2px 0 12px; }
   .mu-sum span { padding: 3px 10px; border-radius: 999px; font: 600 12.5px var(--body); color: var(--muted); background: #0b0e14; border: 1px solid var(--line); }
   .mu-sum b { color: var(--text); font-family: var(--display); }
@@ -1325,12 +1345,77 @@ function stageInner(p, more, key) {
     (more ? '<button class="expander" type="button" aria-expanded="false" aria-controls="detail-' + key + '"><span class="ex-l">Details</span>' + CHEVRON + "</button>" : "");
 }
 
+
+// ───────── small game icons (box icons) for the evolution-line chips ─────────
+// Sword/Shield box icons from PokéSprite (68×56 canvas), Gen 9 Pokémon from the Showdown icon sheet (40×30 cells).
+// Paldean forms have no icon anywhere: they keep their Gen 5 sprite, scaled down.
+const ICON_PS = "https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/regular/";
+const ICON_SHEET = "https://play.pokemonshowdown.com/sprites/pokemonicons-sheet.png";
+const ICON_SHEET_NAMES = ["Charcadet","Armarouge","Ceruledge","Wattrel","Kilowattrel","Capsakid","Scovillain","Annihilape","Clodsire","Farigiraf",
+  "Kingambit","Great Tusk","Scream Tail","Brute Bonnet","Flutter Mane","Slither Wing","Sandy Shocks","Iron Treads","Iron Bundle","Iron Hands",
+  "Iron Jugulis","Iron Moth","Iron Thorns","Gimmighoul","Gholdengo","Roaring Moon","Iron Valiant"];
+(function () {
+  const t = new Image();
+  t.onerror = () => document.documentElement.classList.add("no-sheet");
+  t.src = ICON_SHEET;
+})();
+const ICON_NONE = new Set(["Tauros (Paldea Combat)", "Tauros (Paldea Blaze)", "Tauros (Paldea Aqua)", "Wooper (Paldea)"]);
+function iconSlug(name) {
+  let n = name.replace(/’/g, "'").replace(/^Unovan /, ""), form = "";
+  const m = n.match(/^(.+?) \((.+)\)$/);
+  if (m) { n = m[1]; form = m[2]; }
+  const s = (x) => x.toLowerCase().replace(/♀/g, "-f").replace(/♂/g, "-m").replace(/ /g, "-").replace(/[.']/g, "").replace(/[^a-z0-9-]/g, "");
+  let b = s(n);
+  if (b === "porygonz") b = "porygon-z";
+  if (b === "basculegion") return b;          // the female form has no icon of its own
+  return form ? b + "-" + s(form).replace(/^paus$/, "pau") : b;
+}
+function iconHTML(m) {
+  if (ICON_NONE.has(m.name)) return '<span class="gi gi-sprite">' + spriteImg(m, 22) + "</span>";
+  if (ICON_SHEET_NAMES.includes(m.name)) {
+    const num = m.pokedex_id;
+    // if the Showdown sheet can't load, the Gen 5 sprite shows instead
+    return '<span class="gi gi-sheet" style="background-position:' + (-(num % 12) * 40) + "px " + (-Math.floor(num / 12) * 30) + 'px"></span>' +
+      '<span class="gi gi-sprite gi-alt">' + spriteImg(m, 22) + "</span>";
+  }
+  const url = ICON_PS + iconSlug(m.name) + ".png", c = ICON_CROP.get(url);
+  if (c) return '<span class="gi"><img src="' + c.src + '" alt="" width="' + c.w + '" height="' + c.h + '" data-c="1"></span>';
+  return '<span class="gi"><img src="' + url + '" alt="" crossorigin="anonymous" loading="lazy" decoding="async" style="opacity:0" ' +
+    'onload="fitIcon(this)" onerror="this.onerror=null;this.parentNode.className=\'gi gi-gone\'"></span>';
+}
+// the icons sit in a big empty canvas: crop each one to the Pokémon (once), then fit it in a 40×30 box at pixel scale
+const ICON_CROP = new Map();
+function fitIcon(img) {
+  if (img.dataset.c) return;
+  img.dataset.c = "1";
+  const src = img.currentSrc || img.src;
+  try {
+    const w = img.naturalWidth, h = img.naturalHeight, cv = document.createElement("canvas");
+    cv.width = w; cv.height = h;
+    const cx = cv.getContext("2d"); cx.drawImage(img, 0, 0);
+    const a = cx.getImageData(0, 0, w, h).data;
+    let x0 = w, y0 = h, x1 = -1, y1 = -1;
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) if (a[(y * w + x) * 4 + 3] > 8) {
+      if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y;
+    }
+    if (x1 < 0) throw 0;
+    const cw = x1 - x0 + 1, ch = y1 - y0 + 1, out = document.createElement("canvas");
+    out.width = cw; out.height = ch;
+    out.getContext("2d").drawImage(cv, x0, y0, cw, ch, 0, 0, cw, ch);
+    const k = Math.min(1, 40 / cw, 30 / ch);
+    const c = { src: out.toDataURL(), w: Math.round(cw * k), h: Math.round(ch * k) };
+    ICON_CROP.set(src, c);
+    img.width = c.w; img.height = c.h; img.src = c.src;
+  } catch (e) { img.width = 68; img.height = 56; img.classList.add("raw"); }   // no CORS: show the icon as it is
+  img.style.opacity = "";
+}
+
 // the Pokémon in this box as little sprite chips: click one to see it in the card
 function lineMiniHTML(box, active) {
   if (box.members.length < 2) return "";
   return '<div class="line-mini" role="group" aria-label="Pokémon in this box">' + box.members.map((m, k) =>
     '<button type="button" class="lm' + (m === active ? " on" : "") + '" data-k="' + k + '" aria-pressed="' + (m === active) + '" title="' + esc(m.name) + '">' +
-      '<span class="lm-s">' + spriteImg(m, 22) + '</span><span class="lm-n">' + esc(m.name) + "</span></button>").join("") + "</div>";
+      '<span class="lm-s">' + iconHTML(m) + '</span><span class="lm-n">' + esc(m.name) + "</span></button>").join("") + "</div>";
 }
 
 // hexagon of the six base stats (shown in the open card)
@@ -1492,7 +1577,7 @@ function matchupHTML(p) {
   const rows = MU_GROUPS.map(([m, l, c]) => {
     const list = DEF_TYPES.filter((x) => dmg[x] === m);
     if (!list.length) return "";
-    return '<div class="mu-row' + (m === 1 ? " neutral" : "") + '"><span class="mu-x" style="--mx:' + (c || "#1a2130") + '">' + l + "</span>" +
+    return '<div class="mu-row' + (m === 1 ? " neutral" : "") + '" style="--rx:' + (c || "#34405a") + '"><span class="mu-x" style="--mx:' + (c || "#1a2130") + '">' + l + "</span>" +
       '<div class="mu-types">' + list.map(t).join("") + "</div></div>";
   }).join("");
   const fx = p.abilities.filter((a) => ABILITY_FX[a]).map((a) => "<p><b>" + esc(a) + "</b>: " + ABILITY_FX[a] + ".</p>").join("");
@@ -1585,7 +1670,7 @@ function whereHTML(p, box) {
     body = '<div class="wa-none"><strong>Not found in the wild</strong>' +
       (others.length ? "Catch another Pokémon of its line and evolve it:" : "It is obtained another way (evolution, trade, gift or event).") +
       (others.length ? '<div class="wa-jumps">' + others.map((m) =>
-        '<button type="button" class="lm" data-k="' + box.members.indexOf(m) + '" title="See where to find ' + esc(m.name) + '"><span class="lm-s">' + spriteImg(m, 22) + '</span><span class="lm-n">' + esc(m.name) + "</span></button>").join("") + "</div>" : "") +
+        '<button type="button" class="lm" data-k="' + box.members.indexOf(m) + '" title="See where to find ' + esc(m.name) + '"><span class="lm-s">' + iconHTML(m) + '</span><span class="lm-n">' + esc(m.name) + "</span></button>").join("") + "</div>" : "") +
       "</div>";
   } else {
     const main = list.filter((a) => a.section !== "postgame"), post = list.filter((a) => a.section === "postgame");
