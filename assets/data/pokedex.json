@@ -17319,6 +17319,7 @@
     {"move": "Encore", "level": 20},
     {"move": "Fling", "level": 24},
     {"move": "Acrobatics", "level": 28},
+    {"move": "Brick Break", "level": 28},
     {"move": "Taunt", "level": 30},
     {"move": "Bounce", "level": 32},
     {"move": "Endeavor", "level": 36},
