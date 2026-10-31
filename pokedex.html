@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#07090d">
 <title>Pokédex – Pokémon Pitch Black 2</title>
-<meta name="description" content="The Pokédex of Pokémon Pitch Black 2: one box per final evolution, with types, abilities, base stats, evolutions, level-up moves and TMs for every stage.">
+<meta name="description" content="The Pokédex of Pokémon Pitch Black 2: one box per final evolution, with types, abilities, base stats, type matchups, where to find it, evolutions, level-up moves, TMs and tutors for every stage.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow:wght@400;500;600;700&display=swap">
@@ -626,6 +626,91 @@
   .sort option { background: var(--panel); color: var(--text); }
   .filters { gap: 12px; padding-top: 18px; }
 
+  /* ───────── type matchups + where to find (open card) ───────── */
+  .duo { display: grid; gap: 22px; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 980px) { .duo { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: start; } }
+  .duo > section { min-width: 0; }
+  .h-ico.sq svg { width: 15px; height: 15px; }
+  .panel-box { border-radius: 16px; background: color-mix(in srgb, var(--c1) 5%, #0c1018); border: 1px solid var(--line); padding: 14px; }
+
+  .mu-rows { display: grid; gap: 10px; }
+  .mu-row { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 10px; align-items: start; }
+  .mu-x {
+    display: grid; place-items: center; height: 30px; border-radius: 9px; font: 800 15px var(--display); font-variant-numeric: tabular-nums;
+    color: #0b0e14; background: var(--mx); box-shadow: 0 0 16px color-mix(in srgb, var(--mx) 35%, transparent);
+  }
+  .mu-x small { font: 700 9.5px var(--body); letter-spacing: .06em; text-transform: uppercase; margin-top: -4px; opacity: .75; }
+  .mu-row.neutral .mu-x { background: #1a2130; color: var(--muted); box-shadow: none; }
+  .mu-types { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 1px; }
+  .mu-t {
+    display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px 0 4px; border-radius: 999px;
+    font: 700 13px var(--body); color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.45);
+    background: color-mix(in srgb, var(--tc) 70%, #0b0e14); border: 1px solid color-mix(in srgb, var(--tc) 85%, #fff 10%);
+  }
+  .mu-t img { width: 20px; height: 20px; }
+  .mu-row.neutral .mu-t { height: 26px; padding: 0 5px; background: transparent; border-color: var(--line); }
+  .mu-row.neutral .mu-t span { display: none; }
+  .mu-row.neutral .mu-t img { opacity: .8; }
+  .mu-sum { display: flex; flex-wrap: wrap; gap: 6px; margin: -2px 0 12px; }
+  .mu-sum span { padding: 3px 10px; border-radius: 999px; font: 600 12.5px var(--body); color: var(--muted); background: #0b0e14; border: 1px solid var(--line); }
+  .mu-sum b { color: var(--text); font-family: var(--display); }
+  .mu-abil { display: grid; gap: 6px; margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line-2); }
+  .mu-abil p { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.4; }
+  .mu-abil b { color: var(--text); }
+
+  .wa-first {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: -2px 0 12px; padding: 10px 12px; border-radius: 12px;
+    background: linear-gradient(90deg, rgba(255,203,5,.12), rgba(255,203,5,.02)); border: 1px solid rgba(255,203,5,.28);
+    font-size: 13.5px; color: var(--muted);
+  }
+  .wa-first b { color: var(--text); }
+  .wa-first .lvl { color: var(--volt); font: 800 14px var(--display); }
+  .wa-scroll { max-height: 470px; overflow: auto; padding-right: 4px; scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; }
+  .wa-group + .wa-group { margin-top: 14px; }
+  .wa-gh { margin: 0 0 8px; font: 700 11.5px var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+  .wa-gh::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .wa-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .wa-area {
+    padding: 10px 12px; border-radius: 13px; background: var(--panel-2); border: 1px solid var(--line);
+    transition: border-color .15s, transform .15s;
+  }
+  .wa-area:hover { border-color: color-mix(in srgb, var(--c1) 55%, var(--line)); }
+  .wa-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 7px; }
+  .wa-name { font: 700 14.5px var(--body); color: var(--text); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+  .wa-name:hover { color: var(--volt); }
+  .wa-name svg { width: 11px; height: 11px; opacity: .6; }
+  .wa-lv { margin-left: auto; font: 800 13px var(--display); font-variant-numeric: tabular-nums; color: var(--text);
+    padding: 2px 9px; border-radius: 999px; background: #0b0e14; border: 1px solid var(--line); }
+  .wa-rows { display: grid; gap: 5px; }
+  .wa-row { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto minmax(64px, max-content); align-items: center; gap: 8px; font-size: 13px; color: #c9d3e6; }
+  .wa-ico { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 7px; color: var(--mk); background: color-mix(in srgb, var(--mk) 16%, transparent); }
+  .wa-ico svg { width: 14px; height: 14px; }
+  .wa-m { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .wa-m small { color: var(--muted); font-size: 12px; }
+  .wa-l { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+  .wa-r { display: grid; gap: 3px; justify-items: end; font: 800 12.5px var(--display); font-variant-numeric: tabular-nums; color: var(--text); }
+  .wa-r i { display: block; width: 100%; height: 4px; border-radius: 9px; background: #0b0e14; overflow: hidden; }
+  .wa-r i::after { content: ""; display: block; height: 100%; width: var(--w); border-radius: inherit; background: linear-gradient(90deg, var(--bolt), var(--volt)); }
+  .wa-pill { padding: 1px 8px; border-radius: 999px; font: 800 10.5px var(--display); letter-spacing: .06em; text-transform: uppercase; }
+  .wa-pill.post { color: #d9c2ff; background: rgba(150,100,255,.16); border: 1px solid rgba(150,100,255,.45); }
+  .wa-pill.grotto { color: #9ef0c0; background: rgba(60,200,120,.14); border: 1px solid rgba(60,200,120,.4); }
+  .wa-pill.v-B2 { color: #fff; background: #1d1f24; border: 1px solid #5a5f6b; }
+  .wa-pill.v-W2 { color: #111; background: #eef1f6; border: 1px solid #fff; }
+  .wa-pill.ev { color: #0b0e14; background: var(--volt); }
+  .wa-pill.rar-common { color: #b9c6dc; background: #0b0e14; border: 1px solid var(--line-2); }
+  .wa-pill.rar-uncommon { color: #8fd0ff; background: rgba(47,123,255,.14); border: 1px solid rgba(47,123,255,.45); }
+  .wa-pill.rar-rare { color: #ffd76a; background: rgba(255,203,5,.12); border: 1px solid rgba(255,203,5,.45); }
+  .wa-pill.rar-guaranteed { color: #0b0e14; background: #9ef0c0; }
+  .wa-none { padding: 16px; border-radius: 13px; background: var(--panel-2); border: 1px dashed var(--line-2); color: var(--muted); font-size: 14px; text-align: center; }
+  .wa-none strong { display: block; color: var(--text); font-size: 15px; margin-bottom: 4px; }
+  .wa-jumps { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 10px; }
+  @media (max-width: 520px) {
+    .wa-row { grid-template-columns: 22px minmax(0, 1fr) minmax(56px, max-content); }
+    .wa-l { grid-column: 2; grid-row: 2; margin-top: -4px; }
+    .wa-row .wa-r { grid-row: 1 / span 2; grid-column: 3; }
+    .mu-row { grid-template-columns: 50px minmax(0, 1fr); }
+  }
+
   /* BST range: one track, two handles */
   .bst-filter { display: flex; align-items: center; gap: 12px; max-width: 560px; }
   .bst-lbl { font: 800 12px var(--display); letter-spacing: .08em; color: var(--muted); }
@@ -909,6 +994,7 @@ const DATA_URLS = [RAW + "assets/data/pokedex.json", "assets/data/pokedex.json"]
 const TM_URLS = [RAW + "assets/data/tms.json", "assets/data/tms.json"];
 const TUTOR_URLS = [RAW + "assets/data/tutors.json", "assets/data/tutors.json"];
 const MOVE_CHANGES_URLS = [RAW + "assets/data/move_changes.json", "assets/data/move_changes.json"];
+const WILD_URLS = [RAW + "assets/data/wild_areas.json", "assets/data/wild_areas.json"];
 
 const TYPE_ICONS = {};
 ["Normal","Fighting","Flying","Poison","Ground","Rock","Bug","Ghost","Fire","Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Steel","Fairy","Sound"]
@@ -1358,13 +1444,172 @@ function learnHTML(p, key, tab) {
   return h + "</section>";
 }
 
+
+// ───────── type matchups (damage taken, Gen 6+ chart) ─────────
+const DEF_TYPES = ["Normal","Fire","Water","Electric","Grass","Ice","Fighting","Poison","Ground","Flying","Psychic","Bug","Rock","Ghost","Dragon","Dark","Steel","Fairy"];
+const CHART = (() => {
+  const se = { Fire: "Grass Ice Bug Steel", Water: "Fire Ground Rock", Electric: "Water Flying", Grass: "Water Ground Rock",
+    Ice: "Grass Ground Flying Dragon", Fighting: "Normal Ice Rock Dark Steel", Poison: "Grass Fairy", Ground: "Fire Electric Poison Rock Steel",
+    Flying: "Grass Fighting Bug", Psychic: "Fighting Poison", Bug: "Grass Psychic Dark", Rock: "Fire Ice Flying Bug", Ghost: "Psychic Ghost",
+    Dragon: "Dragon", Dark: "Psychic Ghost", Steel: "Ice Rock Fairy", Fairy: "Fighting Dragon Dark" };
+  const nve = { Normal: "Rock Steel", Fire: "Fire Water Rock Dragon", Water: "Water Grass Dragon", Electric: "Electric Grass Dragon",
+    Grass: "Fire Grass Poison Flying Bug Dragon Steel", Ice: "Fire Water Ice Steel", Fighting: "Poison Flying Psychic Bug Fairy",
+    Poison: "Poison Ground Rock Ghost", Ground: "Grass Bug", Flying: "Electric Rock Steel", Psychic: "Psychic Steel",
+    Bug: "Fire Fighting Poison Flying Ghost Steel Fairy", Rock: "Fighting Ground Steel", Ghost: "Dark", Dragon: "Steel",
+    Dark: "Fighting Dark Fairy", Steel: "Fire Water Electric Steel", Fairy: "Fire Poison Steel" };
+  const no = { Normal: "Ghost", Electric: "Ground", Fighting: "Ghost", Poison: "Steel", Ground: "Flying", Psychic: "Dark", Ghost: "Normal", Dragon: "Fairy" };
+  const c = {};
+  DEF_TYPES.forEach((a) => {
+    c[a] = {};
+    [[se, 2], [nve, .5], [no, 0]].forEach(([tbl, m]) => (tbl[a] || "").split(" ").filter(Boolean).forEach((d) => { c[a][d] = m; }));
+  });
+  return c;
+})();
+function damageTaken(types) {
+  const out = {};
+  DEF_TYPES.forEach((a) => { out[a] = types.reduce((m, d) => m * (CHART[a][d] === undefined ? 1 : CHART[a][d]), 1); });
+  return out;
+}
+// abilities that change what hits the Pokémon (shown as a note, the chart stays the plain typing)
+const ABILITY_FX = {
+  "Levitate": "immune to Ground", "Flash Fire": "immune to Fire (powers up its Fire moves)", "Well-Baked Body": "immune to Fire",
+  "Volt Absorb": "immune to Electric, heals instead", "Motor Drive": "immune to Electric, Speed +1 instead", "Lightning Rod": "immune to Electric, Sp. Atk +1 instead",
+  "Water Absorb": "immune to Water, heals instead", "Storm Drain": "immune to Water, Sp. Atk +1 instead", "Dry Skin": "immune to Water, takes 25% more from Fire",
+  "Sap Sipper": "immune to Grass, Attack +1 instead", "Earth Eater": "immune to Ground, heals instead", "Thick Fat": "takes half damage from Fire and Ice",
+  "Heatproof": "takes half damage from Fire", "Water Bubble": "takes half damage from Fire", "Purifying Salt": "takes half damage from Ghost",
+  "Filter": "super-effective hits do 25% less", "Solid Rock": "super-effective hits do 25% less", "Prism Armor": "super-effective hits do 25% less",
+  "Wonder Guard": "only super-effective moves can hit it", "Fluffy": "takes half from contact moves, double from Fire", "Wind Rider": "immune to wind moves",
+  "Bulletproof": "immune to ball and bomb moves", "Soundproof": "immune to sound moves", "Fur Coat": "takes half damage from physical moves",
+  "Ice Scales": "takes half damage from special moves", "Multiscale": "takes half damage at full HP"
+};
+const MU_GROUPS = [[4, "×4", "#ff4d5e"], [2, "×2", "#ff9a3c"], [1, "×1", ""], [.5, "×½", "#5fd38a"], [.25, "×¼", "#35c9b4"], [0, "×0", "#9aa7c2"]];
+const SHIELD = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.6-3.4 8-8 9-4.6-1-8-4.4-8-9V6z"/></svg>';
+const PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>';
+function matchupHTML(p) {
+  const types = typesOf(p), dmg = damageTaken(types);
+  const t = (x) => '<span class="mu-t" style="--tc:' + (TYPE_COLORS[x] || "#6b7a9c") + '" title="' + esc(x) + ' ×' + dmg[x] + '"><img src="' + TYPE_ICONS[x] + '" alt="" width="20" height="20" loading="lazy"><span>' + esc(x) + "</span></span>";
+  const weak = DEF_TYPES.filter((x) => dmg[x] > 1).length, res = DEF_TYPES.filter((x) => dmg[x] > 0 && dmg[x] < 1).length, imm = DEF_TYPES.filter((x) => dmg[x] === 0).length;
+  const rows = MU_GROUPS.map(([m, l, c]) => {
+    const list = DEF_TYPES.filter((x) => dmg[x] === m);
+    if (!list.length) return "";
+    return '<div class="mu-row' + (m === 1 ? " neutral" : "") + '"><span class="mu-x" style="--mx:' + (c || "#1a2130") + '">' + l + "</span>" +
+      '<div class="mu-types">' + list.map(t).join("") + "</div></div>";
+  }).join("");
+  const fx = p.abilities.filter((a) => ABILITY_FX[a]).map((a) => "<p><b>" + esc(a) + "</b>: " + ABILITY_FX[a] + ".</p>").join("");
+  return '<section class="d-sec mu"><h3><span class="h-ico sq" aria-hidden="true">' + SHIELD + '</span>Type matchups<span class="count">damage taken</span></h3>' +
+    '<div class="panel-box"><div class="mu-sum"><span><b>' + weak + "</b> weak</span><span><b>" + res + "</b> resists</span>" + (imm ? "<span><b>" + imm + "</b> immune</span>" : "") + "</div>" +
+    '<div class="mu-rows">' + rows + "</div>" + (fx ? '<div class="mu-abil">' + fx + "</div>" : "") + "</div></section>";
+}
+
+// ───────── where to find (assets/data/wild_areas.json) ─────────
+let WILD = new Map();   // pokedex name -> [{ id, name, section, order, grotto, rows: [{ method, min, max, rate, version, event, note }] }]
+const WILD_ALIAS = { "Nidoran♀": "Nidoran-F", "Nidoran♂": "Nidoran-M", "Farfetch'd": "Farfetch’d", "Farfetch'd (Galar)": "Farfetch’d (Galar)",
+  "Basculin (Blue-Striped)": "Basculin", "Basculin (Red-Striped)": "Basculin", "Heracross (Unova)": "Unovan Heracross", "Oricorio (Baile)": "Oricorio" };
+function wildName(n) { return WILD_ALIAS[n] || n; }
+function buildWild(w) {
+  const map = new Map();
+  const get = (n) => { if (!map.has(n)) map.set(n, new Map()); return map.get(n); };
+  (w.areas || []).forEach((a, ai) => (a.tables || []).forEach((t) => (t.encounters || []).forEach((e) => {
+    const n = wildName(e.name), areas = get(n);
+    if (!areas.has(a.id)) areas.set(a.id, { id: a.id, name: a.name, section: a.section || "main", order: ai, rows: [] });
+    const rows = areas.get(a.id).rows, note = n !== e.name && /\(/.test(e.name) ? e.name.replace(/^.*\((.*)\)$/, "$1") : "";
+    const same = rows.find((r) => r.method === t.method && r.min === e.min && r.max === e.max && r.version === (e.version || "") && r.note === note);
+    if (same && e.rate != null && same.rate != null) same.rate += e.rate;
+    else rows.push({ method: t.method, min: e.min, max: e.max, rate: e.rate, version: e.version || "", event: !!e.event || e.rate == null, note });
+  })));
+  const areaOrder = (name) => { const i = (w.areas || []).findIndex((a) => a.name === name || a.name.startsWith(name + " ")); return i < 0 ? 999 : i + .5; };
+  (w.grottos || []).forEach((g) => {
+    const add = (n, rarity, level) => {
+      const areas = get(wildName(n)), id = g.id;
+      if (!areas.has(id)) areas.set(id, { id, name: g.name, section: "main", order: areaOrder(g.name), grotto: true, rows: [] });
+      areas.get(id).rows.push({ method: "Hidden Grotto", rarity, min: level || null, max: level || null, rate: null, version: "", event: false, note: "" });
+    };
+    (g.guaranteed || []).forEach((x) => add(x.name, "guaranteed", x.level));
+    ["common", "uncommon", "rare"].forEach((r) => (g[r] || []).forEach((n) => add(n, r)));
+  });
+  WILD = new Map([...map].map(([n, areas]) => [n, [...areas.values()].sort((a, b) => a.order - b.order)]));
+}
+const M_ICON = {
+  grass: ["#7ac74c", '<path d="M5 20c0-6 1-10 3-13M10 20c0-5 .5-9 2-14M15 20c0-5 1-8 4-11"/>'],
+  surf: ["#4f9dff", '<path d="M3 15c2 0 2-2 4.5-2S10 15 12 15s2-2 4.5-2S19 15 21 15M3 19c2 0 2-2 4.5-2S10 19 12 19s2-2 4.5-2S19 19 21 19M8 10l4-5 4 5"/>'],
+  fish: ["#5fd3e0", '<path d="M14 3v9a4 4 0 1 1-8 0"/><path d="M6 12l-2-2"/><circle cx="14" cy="3" r="1"/>'],
+  cave: ["#c9a46a", '<path d="M3 20 9 8l3 5 3-4 6 11z"/><path d="M10 20c0-2 1-3 2-3s2 1 2 3"/>'],
+  sand: ["#e2bf65", '<path d="M3 17c3-3 6-3 9 0s6 3 9 0M3 12c3-3 6-3 9 0s6 3 9 0"/><circle cx="18" cy="5" r="2"/>'],
+  build: ["#a3b1cc", '<path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6"/>'],
+  bridge: ["#b7b7ce", '<path d="M3 17h18M5 17V9M19 17V9M5 9c4 4 10 4 14 0M9 17v-5M15 17v-5"/>'],
+  swamp: ["#6fbf8f", '<path d="M3 18c3-2 6-2 9 0s6 2 9 0M8 14V6M12 14V4M16 14V7"/>'],
+  event: ["#ffcb05", '<path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/>'],
+  grotto: ["#9ef0c0", '<path d="M4 20c0-6 3-11 8-11s8 5 8 11z"/><path d="M12 9V4M9 6l3-2 3 2"/>']
+};
+function methodKind(m) {
+  const k = m.toLowerCase();
+  if (k.startsWith("hidden grotto")) return "grotto";
+  if (k.startsWith("special")) return "event";
+  if (k.startsWith("grass")) return "grass";
+  if (k.startsWith("surf")) return "surf";
+  if (k.startsWith("fish")) return "fish";
+  if (k.startsWith("cave")) return "cave";
+  if (k.startsWith("sand")) return "sand";
+  if (k.startsWith("bridge")) return "bridge";
+  if (k.startsWith("swamp")) return "swamp";
+  return "build";
+}
+function waIcon(kind) {
+  const [c, path] = M_ICON[kind] || M_ICON.build;
+  return '<span class="wa-ico" style="--mk:' + c + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + path + "</svg></span>";
+}
+const lvTxt = (a, b) => a == null ? "" : a === b ? "Lv " + a : "Lv " + a + "–" + b;
+const EXT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+function areaHTML(a) {
+  const lv = a.rows.filter((r) => r.min != null), lo = lv.length ? Math.min(...lv.map((r) => r.min)) : null, hi = lv.length ? Math.max(...lv.map((r) => r.max)) : null;
+  const rows = a.rows.map((r) => {
+    const kind = methodKind(r.method), label = r.rarity ? "Grotto encounter" : r.method;
+    const right = r.rarity ? '<span class="wa-r"><span class="wa-pill rar-' + r.rarity + '">' + r.rarity + "</span></span>"
+      : r.event || r.rate == null ? '<span class="wa-r"><span class="wa-pill ev">' + (/gift/i.test(r.method) ? "Gift" : "Event") + "</span></span>"
+      : '<span class="wa-r">' + r.rate + '%<i style="--w:' + Math.min(100, r.rate) + '%"></i></span>';
+    return '<div class="wa-row">' + waIcon(kind) +
+      '<span class="wa-m">' + esc(label) + (r.note ? " <small>· " + esc(r.note) + "</small>" : "") +
+        (r.version ? ' <span class="wa-pill v-' + r.version + '" title="Only in ' + (r.version === "B2" ? "Black 2" : "White 2") + '">' + r.version + "</span>" : "") + "</span>" +
+      '<span class="wa-l">' + lvTxt(r.min, r.max) + "</span>" + right + "</div>";
+  }).join("");
+  return '<li class="wa-area"><div class="wa-top"><a class="wa-name" href="wild_areas.html#' + encodeURIComponent(a.id) + '" target="_blank" rel="noopener" title="Open ' + esc(a.name) + ' in Wild Areas">' +
+      esc(a.name) + EXT + "</a>" + (a.grotto ? '<span class="wa-pill grotto">Hidden Grotto</span>' : "") +
+      (lo != null ? '<span class="wa-lv">' + lvTxt(lo, hi) + "</span>" : "") + "</div>" +
+    '<div class="wa-rows">' + rows + "</div></li>";
+}
+function whereHTML(p, box) {
+  const list = WILD.get(p.name) || [];
+  let body;
+  if (!list.length) {
+    const others = box.members.filter((m) => m !== p && (WILD.get(m.name) || []).length);
+    body = '<div class="wa-none"><strong>Not found in the wild</strong>' +
+      (others.length ? "Catch another Pokémon of its line and evolve it:" : "It is obtained another way (evolution, trade, gift or event).") +
+      (others.length ? '<div class="wa-jumps">' + others.map((m) =>
+        '<button type="button" class="lm" data-k="' + box.members.indexOf(m) + '" title="See where to find ' + esc(m.name) + '"><span class="lm-s">' + spriteImg(m, 22) + '</span><span class="lm-n">' + esc(m.name) + "</span></button>").join("") + "</div>" : "") +
+      "</div>";
+  } else {
+    const main = list.filter((a) => a.section !== "postgame"), post = list.filter((a) => a.section === "postgame");
+    const first = (main[0] || post[0]), fr = first.rows.filter((r) => r.min != null);
+    const firstLv = fr.length ? Math.min(...fr.map((r) => r.min)) : null;
+    const group = (title, arr) => arr.length ? '<div class="wa-group"><h4 class="wa-gh">' + title + " · " + arr.length + '</h4><ul class="wa-list">' + arr.map(areaHTML).join("") + "</ul></div>" : "";
+    body = '<div class="wa-first">' + PIN.replace("<svg", '<svg width="16" height="16" style="color:var(--volt)"') +
+        "<span>First found in <b>" + esc(first.name) + "</b>" + (first.section === "postgame" ? " (postgame)" : "") + "</span>" +
+        (firstLv != null ? '<span class="lvl">Lv ' + firstLv + "</span>" : "") + "</div>" +
+      '<div class="wa-scroll" tabindex="0" role="region" aria-label="Where to find ' + esc(p.name) + '">' +
+        group("Main story", main) + group("Postgame", post) + "</div>";
+  }
+  return '<section class="d-sec wa"><h3><span class="h-ico sq" aria-hidden="true">' + PIN + '</span>Where to find<span class="who">' + esc(p.name) + "</span>" +
+    (list.length ? '<span class="count">' + list.length + (list.length === 1 ? " area" : " areas") + "</span>" : "") + "</h3>" + body + "</section>";
+}
+function duoHTML(p, box) { return '<div class="d-sec duo">' + matchupHTML(p) + whereHTML(p, box) + "</div>"; }
+
 function cardHTML(box, i) {
   const p = box.head, [c1, c2] = colorsOf(typesOf(p));
-  const more = box.members.length > 1 || (p.moves && p.moves.length) || tmEntry(p.name) || tutorEntry(p.name);
+  const more = true;   // every card opens: type matchups and where to find
   return '<li class="card' + (typesOf(p).length < 2 ? " mono" : "") + (more ? " can-open" : "") + '" data-i="' + i + '" data-k="' + box.members.indexOf(p) + '" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
     '<div class="stage">' + stageInner(p, more, i) + "</div>" +
     '<div class="body">' + bodyInner(p, box) + "</div>" +
-    (more ? '<div class="detail" id="detail-' + i + '">' + evoLineHTML(box, p) + learnHTML(p, i, "lv") + "</div>" : "") +
+    (more ? '<div class="detail" id="detail-' + i + '">' + evoLineHTML(box, p) + duoHTML(p, box) + learnHTML(p, i, "lv") + "</div>" : "") +
   "</li>";
 }
 
@@ -1387,6 +1632,9 @@ function showMember(card, box, k) {
     n.classList.toggle("active", on);
     n.querySelector(".evo-pick").setAttribute("aria-pressed", on ? "true" : "false");
   });
+  const oldDuo = det.querySelector(".duo"), tmpDuo = document.createElement("div");
+  tmpDuo.innerHTML = duoHTML(p, box);
+  if (oldDuo) oldDuo.replaceWith(tmpDuo.firstElementChild);
   const old = det.querySelector(".learn"), tmp = document.createElement("div");
   tmp.innerHTML = learnHTML(p, card.dataset.i, old ? old.dataset.tab : "lv");
   if (old) old.replaceWith(tmp.firstElementChild); else det.appendChild(tmp.firstElementChild);
@@ -1439,7 +1687,7 @@ drawBst();
 
 // search text of each Pokémon (name, abilities, moves, id)
 const HAY = new Map(LIST.map((p) => [p, (p.name + " " + p.abilities.join(" ") + " " + (p.moves || []).map((m) => m.move).join(" ") + " " +
-  (p.evo ? p.evo.method : "") + " " + p.pokedex_id + " " + String(p.pokedex_id).padStart(3, "0")).toLowerCase()]));
+  (p.evo ? p.evo.method : "") + " " + (WILD.get(p.name) || []).map((a) => a.name).join(" ") + " " + p.pokedex_id + " " + String(p.pokedex_id).padStart(3, "0")).toLowerCase()]));
 
 // type chips: a box counts for a type if any Pokémon in it has that type
 const ORDER = Object.keys(TYPE_ICONS);
@@ -1630,7 +1878,7 @@ window.addEventListener("resize", () => {
   resizeTimer = setTimeout(() => { if (openCard) placeOpen(openCard); }, 120);
 });
 
-q.placeholder = "Search by name, ability, move or #ID";
+q.placeholder = "Search by name, ability, move, area or #ID";
 try { const s = localStorage.getItem("pb2-dex-sort"); if (s && sortEl && sortEl.querySelector('option[value="' + s + '"]')) sortEl.value = s; } catch (e) {}
 apply();
 if (sortEl && sortEl.value !== "dex") sortCards();
@@ -1652,7 +1900,8 @@ async function fetchFirst(urls) {
 const statusEl = document.getElementById("count");
 statusEl.textContent = "Loading Pokémon…";
 (async function load() {
-  const [dex, tms, mc, tut] = await Promise.allSettled([fetchFirst(DATA_URLS), fetchFirst(TM_URLS), fetchFirst(MOVE_CHANGES_URLS), fetchFirst(TUTOR_URLS)]);
+  const [dex, tms, mc, tut, wild] = await Promise.allSettled([fetchFirst(DATA_URLS), fetchFirst(TM_URLS), fetchFirst(MOVE_CHANGES_URLS), fetchFirst(TUTOR_URLS), fetchFirst(WILD_URLS)]);
+  if (wild.status === "fulfilled") { try { buildWild(wild.value); } catch (e) { console.warn("wild_areas.json", e); } }
   if (tms.status === "fulfilled") TMDATA = tms.value;
   if (tut.status === "fulfilled") TUTDATA = tut.value;
   if (mc.status === "fulfilled" && Array.isArray(mc.value)) {
