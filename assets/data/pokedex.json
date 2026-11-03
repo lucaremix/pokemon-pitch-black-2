@@ -513,12 +513,12 @@
 {
   "name": "Sandshrew (Alola)",
   "pokedex_id": 27,
-  "changed": false,
+  "changed": true,
   "type1": "Ice",
   "type2": "Steel",
   "bst": 300,
   "stats": {"hp": 50, "atk": 75, "def": 90, "spa": 10, "spd": 35, "spe": 40},
-  "abilities": ["Snow Cloak"],
+  "abilities": ["Snow Cloak", "Slush Rush"],
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10101.png",
   "moves": [
     {"move": "Defense Curl", "level": 1},
@@ -582,7 +582,7 @@
   "type2": "Steel",
   "bst": 450,
   "stats": {"hp": 75, "atk": 100, "def": 120, "spa": 25, "spd": 65, "spe": 65},
-  "abilities": ["Snow Cloak"],
+  "abilities": ["Snow Cloak", "Slush Rush"],
   "evo": {"from": "Sandshrew (Alola)", "method": "Level 22"},
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10102.png",
   "moves": [
@@ -1229,7 +1229,7 @@
   "type2": "Steel",
   "bst": 265,
   "stats": {"hp": 10, "atk": 55, "def": 25, "spa": 35, "spd": 45, "spe": 95},
-  "abilities": ["Sand Veil", "Sand Force"],
+  "abilities": ["Sand Veil", "Tangling Hair"],
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10105.png",
   "moves": [
     {"move": "Metal Claw", "level": 1},
@@ -1285,7 +1285,7 @@
   "type2": "Steel",
   "bst": 455,
   "stats": {"hp": 45, "atk": 100, "def": 60, "spa": 50, "spd": 80, "spe": 120},
-  "abilities": ["Sand Veil", "Sand Force"],
+  "abilities": ["Sand Veil", "Tangling Hair"],
   "evo": {"from": "Diglett (Alola)", "method": "Level 26"},
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10106.png",
   "moves": [
@@ -1339,11 +1339,11 @@
 {
   "name": "Meowth (Galar)",
   "pokedex_id": 52,
-  "changed": false,
+  "changed": true,
   "type1": "Steel",
   "bst": 290,
   "stats": {"hp": 50, "atk": 65, "def": 55, "spa": 40, "spd": 40, "spe": 40},
-  "abilities": ["Pickup", "Technician"],
+  "abilities": ["Pickup", "Tough Claws"],
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10161.png",
   "moves": [
     {"move": "Fake Out", "level": 1},
@@ -2002,12 +2002,12 @@
 {
   "name": "Geodude (Alola)",
   "pokedex_id": 74,
-  "changed": false,
+  "changed": true,
   "type1": "Rock",
   "type2": "Electric",
   "bst": 300,
   "stats": {"hp": 40, "atk": 80, "def": 100, "spa": 30, "spd": 30, "spe": 20},
-  "abilities": ["Magnet Pull", "Sturdy"],
+  "abilities": ["Magnet Pull", "Galvanize"],
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10109.png",
   "moves": [
     {"move": "Defense Curl", "level": 1},
@@ -2059,12 +2059,12 @@
 {
   "name": "Graveler (Alola)",
   "pokedex_id": 75,
-  "changed": false,
+  "changed": true,
   "type1": "Rock",
   "type2": "Electric",
   "bst": 390,
   "stats": {"hp": 55, "atk": 95, "def": 115, "spa": 45, "spd": 45, "spe": 35},
-  "abilities": ["Magnet Pull", "Sturdy"],
+  "abilities": ["Magnet Pull", "Galvanize"],
   "evo": {"from": "Geodude (Alola)", "method": "Level 25"},
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10110.png",
   "moves": [
@@ -2119,12 +2119,12 @@
 {
   "name": "Golem (Alola)",
   "pokedex_id": 76,
-  "changed": false,
+  "changed": true,
   "type1": "Rock",
   "type2": "Electric",
   "bst": 495,
   "stats": {"hp": 80, "atk": 120, "def": 130, "spa": 55, "spd": 65, "spe": 45},
-  "abilities": ["Magnet Pull", "Sturdy"],
+  "abilities": ["Magnet Pull", "Galvanize"],
   "evo": {"from": "Graveler (Alola)", "method": "Level 35"},
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10111.png",
   "moves": [
@@ -2175,11 +2175,11 @@
 {
   "name": "Ponyta (Galar)",
   "pokedex_id": 77,
-  "changed": false,
+  "changed": true,
   "type1": "Psychic",
   "bst": 410,
   "stats": {"hp": 50, "atk": 85, "def": 55, "spa": 65, "spd": 65, "spe": 90},
-  "abilities": ["Run Away", "Immunity"],
+  "abilities": ["Run Away", "Pastel Veil"],
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10162.png",
   "moves": [
     {"move": "Growl", "level": 1},
@@ -2233,12 +2233,12 @@
 {
   "name": "Rapidash (Galar)",
   "pokedex_id": 78,
-  "changed": false,
+  "changed": true,
   "type1": "Psychic",
   "type2": "Fairy",
   "bst": 500,
   "stats": {"hp": 65, "atk": 100, "def": 70, "spa": 80, "spd": 80, "spe": 105},
-  "abilities": ["Run Away", "Immunity"],
+  "abilities": ["Run Away", "Pastel Veil"],
   "evo": {"from": "Ponyta (Galar)", "method": "Level 35"},
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10163.png",
   "moves": [
@@ -5717,7 +5717,7 @@
   "type2": "Psychic",
   "bst": 490,
   "stats": {"hp": 95, "atk": 65, "def": 80, "spa": 110, "spd": 110, "spe": 30},
-  "abilities": ["Regenerator", "Own Tempo"],
+  "abilities": ["Curious Medicine", "Own Tempo"],
   "evo": {"from": "Slowpoke (Galar)", "method": "Use King's Rock"},
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10172.png",
   "moves": [
@@ -6447,7 +6447,7 @@
   "type1": "Poison",
   "type2": "Ground",
   "bst": 500,
-  "stats": {"hp": 80, "atk": 50, "def": 80, "spa": 115, "spd": 110, "spe": 65},
+  "stats": {"hp": 60, "atk": 50, "def": 80, "spa": 115, "spd": 110, "spe": 85},
   "abilities": ["Aftermath", "Stench"],
   "evo": {"from": "Slugma", "method": "Use Poison Stone"},
   "variant": "Unova",
@@ -6835,8 +6835,8 @@
   "changed": true,
   "type1": "Ground",
   "type2": "Rock",
-  "bst": 555,
-  "stats": {"hp": 95, "atk": 120, "def": 120, "spa": 70, "spd": 80, "spe": 70},
+  "bst": 500,
+  "stats": {"hp": 90, "atk": 120, "def": 120, "spa": 50, "spd": 60, "spe": 60},
   "abilities": ["Sand Veil", "Anger Point"],
   "evo": {"from": "Phanpy", "method": "Level 25"},
   "moves": [
@@ -9142,8 +9142,8 @@
   "changed": true,
   "type1": "Bug",
   "type2": "Ground",
-  "bst": 550,
-  "stats": {"hp": 85, "atk": 85, "def": 80, "spa": 110, "spd": 80, "spe": 110},
+  "bst": 555,
+  "stats": {"hp": 90, "atk": 85, "def": 80, "spa": 110, "spd": 80, "spe": 110},
   "abilities": ["Levitate", "Compound Eyes"],
   "evo": {"from": "Vibrava", "method": "Level 38"},
   "moves": [
@@ -10372,7 +10372,7 @@
   "type1": "Dragon",
   "type2": "Fire",
   "bst": 555,
-  "stats": {"hp": 105, "atk": 135, "def": 70, "spa": 50, "spd": 90, "spe": 105},
+  "stats": {"hp": 95, "atk": 125, "def": 70, "spa": 90, "spd": 90, "spe": 85},
   "abilities": ["Rock Head", "Intimidate"],
   "evo": {"from": "Shelgon", "method": "Use Fire Stone"},
   "variant": "Unova",
@@ -10708,7 +10708,7 @@
   "type1": "Electric",
   "type2": "Fire",
   "bst": 523,
-  "stats": {"hp": 80, "atk": 120, "def": 79, "spa": 95, "spd": 79, "spe": 70},
+  "stats": {"hp": 80, "atk": 120, "def": 95, "spa": 79, "spd": 70, "spe": 79},
   "abilities": ["Rivalry", "Intimidate"],
   "evo": {"from": "Luxio", "method": "Use Fire Stone"},
   "variant": "Unova",
@@ -16177,8 +16177,8 @@
   "changed": true,
   "type1": "Dragon",
   "type2": "Steel",
-  "bst": 550,
-  "stats": {"hp": 86, "atk": 147, "def": 90, "spa": 60, "spd": 70, "spe": 97},
+  "bst": 555,
+  "stats": {"hp": 91, "atk": 147, "def": 90, "spa": 60, "spd": 70, "spe": 97},
   "abilities": ["Rivalry", "Mold Breaker"],
   "evo": {"from": "Fraxure", "method": "Level 42"},
   "moves": [
@@ -16965,8 +16965,8 @@
   "changed": true,
   "type1": "Bug",
   "type2": "Fire",
-  "bst": 550,
-  "stats": {"hp": 85, "atk": 60, "def": 65, "spa": 135, "spd": 105, "spe": 100},
+  "bst": 555,
+  "stats": {"hp": 90, "atk": 60, "def": 65, "spa": 135, "spd": 105, "spe": 100},
   "abilities": ["Flame Body", "Swarm"],
   "evo": {"from": "Larvesta", "method": "Level 38"},
   "moves": [
@@ -16988,12 +16988,12 @@
 {
   "name": "Fletchling",
   "pokedex_id": 661,
-  "changed": false,
+  "changed": true,
   "type1": "Normal",
   "type2": "Flying",
   "bst": 278,
   "stats": {"hp": 45, "atk": 50, "def": 43, "spa": 40, "spd": 38, "spe": 62},
-  "abilities": ["Big Pecks", "Quick Feet"],
+  "abilities": ["Big Pecks", "Gale Wings"],
   "moves": [
     {"move": "Growl", "level": 1},
     {"move": "Tackle", "level": 1},
@@ -17014,12 +17014,12 @@
 {
   "name": "Fletchinder",
   "pokedex_id": 662,
-  "changed": false,
+  "changed": true,
   "type1": "Fire",
   "type2": "Flying",
   "bst": 382,
   "stats": {"hp": 62, "atk": 73, "def": 55, "spa": 56, "spd": 52, "spe": 84},
-  "abilities": ["Flame Body", "Quick Feet"],
+  "abilities": ["Flame Body", "Gale Wings"],
   "evo": {"from": "Fletchling", "method": "Level 17"},
   "moves": [
     {"move": "Ember", "level": 1},
@@ -17042,12 +17042,12 @@
 {
   "name": "Talonflame",
   "pokedex_id": 663,
-  "changed": false,
+  "changed": true,
   "type1": "Fire",
   "type2": "Flying",
   "bst": 499,
   "stats": {"hp": 78, "atk": 81, "def": 71, "spa": 74, "spd": 69, "spe": 126},
-  "abilities": ["Flame Body", "Quick Feet"],
+  "abilities": ["Flame Body", "Gale Wings"],
   "evo": {"from": "Fletchinder", "method": "Level 35"},
   "moves": [
     {"move": "Brave Bird", "level": 1},
@@ -17077,7 +17077,7 @@
   "type2": "Dark",
   "bst": 330,
   "stats": {"hp": 50, "atk": 53, "def": 62, "spa": 58, "spd": 63, "spe": 44},
-  "abilities": ["Technician", "Super Luck"],
+  "abilities": ["Mega Launcher"],
   "moves": [
     {"move": "Splash", "level": 1},
     {"move": "Water Gun", "level": 1},
@@ -17105,7 +17105,7 @@
   "type2": "Dark",
   "bst": 500,
   "stats": {"hp": 71, "atk": 73, "def": 88, "spa": 120, "spd": 89, "spe": 59},
-  "abilities": ["Technician", "Super Luck"],
+  "abilities": ["Mega Launcher"],
   "evo": {"from": "Clauncher", "method": "Level 37"},
   "moves": [
     {"move": "Aura Sphere", "level": 1},
@@ -17176,12 +17176,12 @@
 {
   "name": "Tyrunt",
   "pokedex_id": 696,
-  "changed": false,
+  "changed": true,
   "type1": "Rock",
   "type2": "Dragon",
   "bst": 362,
   "stats": {"hp": 58, "atk": 89, "def": 77, "spa": 45, "spd": 45, "spe": 48},
-  "abilities": ["Sheer Force", "Sturdy"],
+  "abilities": ["Strong Jaw", "Sturdy"],
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Tail Whip", "level": 1},
@@ -17203,12 +17203,12 @@
 {
   "name": "Tyrantrum",
   "pokedex_id": 697,
-  "changed": false,
+  "changed": true,
   "type1": "Rock",
   "type2": "Dragon",
   "bst": 521,
   "stats": {"hp": 82, "atk": 121, "def": 119, "spa": 69, "spd": 59, "spe": 71},
-  "abilities": ["Sheer Force", "Rock Head"],
+  "abilities": ["Strong Jaw", "Rock Head"],
   "evo": {"from": "Tyrunt", "method": "Level 39"},
   "moves": [
     {"move": "Head Smash", "level": 1},
@@ -17239,7 +17239,7 @@
   "type2": "Ice",
   "bst": 362,
   "stats": {"hp": 75, "atk": 47, "def": 55, "spa": 70, "spd": 65, "spe": 50},
-  "abilities": ["Serene Grace", "Solar Power"],
+  "abilities": ["Refrigerate", "Snow Warning"],
   "moves": [
     {"move": "Growl", "level": 1},
     {"move": "Powder Snow", "level": 1},
@@ -17272,7 +17272,7 @@
   "type2": "Ice",
   "bst": 521,
   "stats": {"hp": 120, "atk": 65, "def": 80, "spa": 101, "spd": 95, "spe": 60},
-  "abilities": ["Serene Grace", "Solar Power"],
+  "abilities": ["Refrigerate", "Snow Warning"],
   "evo": {"from": "Amaura", "method": "Level 39"},
   "moves": [
     {"move": "Frost Breath", "level": 1},
@@ -17333,11 +17333,11 @@
 {
   "name": "Goomy",
   "pokedex_id": 704,
-  "changed": false,
+  "changed": true,
   "type1": "Dragon",
   "bst": 300,
   "stats": {"hp": 45, "atk": 50, "def": 35, "spa": 55, "spd": 75, "spe": 40},
-  "abilities": ["Sap Sipper", "Hydration"],
+  "abilities": ["Sap Sipper", "Gooey"],
   "moves": [
     {"move": "Bubble", "level": 1},
     {"move": "Tackle", "level": 1},
@@ -17359,7 +17359,7 @@
   "type1": "Dragon",
   "bst": 452,
   "stats": {"hp": 68, "atk": 75, "def": 53, "spa": 83, "spd": 113, "spe": 60},
-  "abilities": ["Sap Sipper", "Hydration"],
+  "abilities": ["Sap Sipper", "Gooey"],
   "evo": {"from": "Goomy", "method": "Level 28"},
   "moves": [
     {"move": "Absorb", "level": 1},
@@ -17383,7 +17383,7 @@
   "type2": "Dragon",
   "bst": 452,
   "stats": {"hp": 58, "atk": 75, "def": 83, "spa": 83, "spd": 113, "spe": 40},
-  "abilities": ["Sap Sipper", "Shell Armor"],
+  "abilities": ["Sap Sipper", "Gooey"],
   "evo": {"from": "Goomy", "method": "Use Metal Stone"},
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10241.png",
   "moves": [
@@ -17410,7 +17410,7 @@
   "type1": "Dragon",
   "bst": 555,
   "stats": {"hp": 90, "atk": 90, "def": 65, "spa": 100, "spd": 140, "spe": 70},
-  "abilities": ["Sap Sipper", "Hydration"],
+  "abilities": ["Sap Sipper", "Gooey"],
   "evo": {"from": "Sliggoo", "method": "Level 42"},
   "moves": [
     {"move": "Absorb", "level": 1},
@@ -17437,9 +17437,9 @@
   "changed": true,
   "type1": "Steel",
   "type2": "Dragon",
-  "bst": 550,
-  "stats": {"hp": 80, "atk": 90, "def": 90, "spa": 100, "spd": 140, "spe": 50},
-  "abilities": ["Sap Sipper", "Shell Armor"],
+  "bst": 555,
+  "stats": {"hp": 85, "atk": 90, "def": 90, "spa": 100, "spd": 140, "spe": 50},
+  "abilities": ["Sap Sipper", "Gooey"],
   "evo": {"from": "Sliggoo (Hisui)", "method": "Level 42"},
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10242.png",
   "moves": [
@@ -17633,12 +17633,12 @@
 {
   "name": "Dewpider",
   "pokedex_id": 751,
-  "changed": false,
+  "changed": true,
   "type1": "Water",
   "type2": "Bug",
   "bst": 269,
   "stats": {"hp": 38, "atk": 40, "def": 52, "spa": 40, "spd": 72, "spe": 27},
-  "abilities": ["Water Veil", "Water Absorb"],
+  "abilities": ["Water Bubble", "Water Absorb"],
   "moves": [
     {"move": "Bubble", "level": 1},
     {"move": "Water Sport", "level": 1},
@@ -17658,12 +17658,12 @@
 {
   "name": "Araquanid",
   "pokedex_id": 752,
-  "changed": false,
+  "changed": true,
   "type1": "Water",
   "type2": "Bug",
   "bst": 454,
   "stats": {"hp": 68, "atk": 70, "def": 92, "spa": 50, "spd": 132, "spe": 42},
-  "abilities": ["Water Veil", "Water Absorb"],
+  "abilities": ["Water Bubble", "Water Absorb"],
   "evo": {"from": "Dewpider", "method": "Level 22"},
   "moves": [
     {"move": "Bubble", "level": 1},
@@ -17732,12 +17732,12 @@
 {
   "name": "Sandygast",
   "pokedex_id": 769,
-  "changed": false,
+  "changed": true,
   "type1": "Ghost",
   "type2": "Ground",
   "bst": 320,
   "stats": {"hp": 55, "atk": 55, "def": 80, "spa": 70, "spd": 45, "spe": 15},
-  "abilities": ["Water Absorb", "Sand Veil"],
+  "abilities": ["Water Compaction", "Sand Veil"],
   "moves": [
     {"move": "Absorb", "level": 1},
     {"move": "Harden", "level": 1},
@@ -17758,12 +17758,12 @@
 {
   "name": "Palossand",
   "pokedex_id": 770,
-  "changed": false,
+  "changed": true,
   "type1": "Ghost",
   "type2": "Ground",
   "bst": 480,
   "stats": {"hp": 85, "atk": 75, "def": 110, "spa": 100, "spd": 75, "spe": 35},
-  "abilities": ["Water Absorb", "Sand Veil"],
+  "abilities": ["Water Compaction", "Sand Veil"],
   "evo": {"from": "Sandygast", "method": "Level 42"},
   "moves": [
     {"move": "Absorb", "level": 1},
@@ -17790,7 +17790,7 @@
   "type2": "Dragon",
   "bst": 485,
   "stats": {"hp": 78, "atk": 60, "def": 85, "spa": 135, "spd": 91, "spe": 36},
-  "abilities": ["Anger Point", "Sap Sipper"],
+  "abilities": ["Berserk", "Sap Sipper"],
   "moves": [
     {"move": "Echoed Voice", "level": 1},
     {"move": "Growl", "level": 1},
@@ -17812,12 +17812,12 @@
 {
   "name": "Dhelmise",
   "pokedex_id": 781,
-  "changed": false,
+  "changed": true,
   "type1": "Ghost",
   "type2": "Grass",
   "bst": 517,
   "stats": {"hp": 70, "atk": 131, "def": 100, "spa": 86, "spd": 90, "spe": 40},
-  "abilities": ["Heavy Metal"],
+  "abilities": ["Steelworker"],
   "moves": [
     {"move": "Absorb", "level": 1},
     {"move": "Astonish", "level": 1},
@@ -17842,11 +17842,11 @@
 {
   "name": "Jangmo-o",
   "pokedex_id": 782,
-  "changed": false,
+  "changed": true,
   "type1": "Dragon",
   "bst": 300,
   "stats": {"hp": 45, "atk": 55, "def": 65, "spa": 45, "spd": 45, "spe": 45},
-  "abilities": ["Overcoat", "Soundproof"],
+  "abilities": ["Bulletproof", "Soundproof"],
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Leer", "level": 5},
@@ -17872,7 +17872,7 @@
   "type2": "Fighting",
   "bst": 420,
   "stats": {"hp": 55, "atk": 75, "def": 90, "spa": 65, "spd": 70, "spe": 65},
-  "abilities": ["Overcoat", "Soundproof"],
+  "abilities": ["Bulletproof", "Soundproof"],
   "evo": {"from": "Jangmo-o", "method": "Level 28"},
   "moves": [
     {"move": "Autotomize", "level": 1},
@@ -17902,7 +17902,7 @@
   "type2": "Fighting",
   "bst": 555,
   "stats": {"hp": 75, "atk": 100, "def": 110, "spa": 90, "spd": 95, "spe": 85},
-  "abilities": ["Overcoat", "Soundproof"],
+  "abilities": ["Bulletproof", "Soundproof"],
   "evo": {"from": "Hakamo-o", "method": "Level 45"},
   "moves": [
     {"move": "Autotomize", "level": 1},
@@ -17974,12 +17974,12 @@
 {
   "name": "Corviknight",
   "pokedex_id": 823,
-  "changed": false,
+  "changed": true,
   "type1": "Flying",
   "type2": "Steel",
   "bst": 495,
   "stats": {"hp": 98, "atk": 87, "def": 105, "spa": 53, "spd": 85, "spe": 67},
-  "abilities": ["Pressure", "Unnerve"],
+  "abilities": ["Pressure", "Mirror Armor"],
   "evo": {"from": "Corvisquire", "method": "Level 38"},
   "moves": [
     {"move": "Hone Claws", "level": 1},
@@ -18007,7 +18007,7 @@
   "type2": "Poison",
   "bst": 315,
   "stats": {"hp": 52, "atk": 57, "def": 75, "spa": 35, "spd": 50, "spe": 46},
-  "abilities": ["Sand Veil", "Shed Skin"],
+  "abilities": ["Sand Spit", "Shed Skin"],
   "moves": [
     {"move": "Sand Attack", "level": 1},
     {"move": "Wrap", "level": 1},
@@ -18036,7 +18036,7 @@
   "type2": "Poison",
   "bst": 510,
   "stats": {"hp": 72, "atk": 107, "def": 125, "spa": 65, "spd": 70, "spe": 71},
-  "abilities": ["Sand Veil", "Shed Skin"],
+  "abilities": ["Sand Spit", "Shed Skin"],
   "evo": {"from": "Silicobra", "method": "Level 36"},
   "moves": [
     {"move": "Feint Attack", "level": 1},
@@ -18083,12 +18083,12 @@
 {
   "name": "Toxtricity",
   "pokedex_id": 849,
-  "changed": false,
+  "changed": true,
   "type1": "Electric",
   "type2": "Poison",
   "bst": 502,
   "stats": {"hp": 75, "atk": 98, "def": 70, "spa": 114, "spd": 70, "spe": 75},
-  "abilities": ["Soundproof", "Plus"],
+  "abilities": ["Punk Rock", "Plus"],
   "evo": {"from": "Toxel", "method": "Level 30"},
   "moves": [
     {"move": "Acid", "level": 1},
@@ -18290,7 +18290,7 @@
   "type1": "Steel",
   "bst": 460,
   "stats": {"hp": 70, "atk": 110, "def": 100, "spa": 50, "spd": 80, "spe": 50},
-  "abilities": ["Battle Armor", "Technician"],
+  "abilities": ["Tough Claws", "Steely Spirit"],
   "evo": {"from": "Meowth (Galar)", "method": "Level up knowing Iron Head"},
   "moves": [
     {"move": "Fake Out", "level": 1},
@@ -18318,7 +18318,7 @@
   "type1": "Ghost",
   "bst": 510,
   "stats": {"hp": 60, "atk": 95, "def": 50, "spa": 145, "spd": 130, "spe": 30},
-  "abilities": ["Weak Armor", "Cursed Body"],
+  "abilities": ["Weak Armor", "Perish Body"],
   "evo": {"from": "Corsola (Galar)", "method": "Level up knowing Curse"},
   "moves": [
     {"move": "Astonish", "level": 1},
@@ -18374,12 +18374,12 @@
 {
   "name": "Snom",
   "pokedex_id": 872,
-  "changed": false,
+  "changed": true,
   "type1": "Ice",
   "type2": "Bug",
   "bst": 185,
   "stats": {"hp": 30, "atk": 25, "def": 35, "spa": 45, "spd": 30, "spe": 20},
-  "abilities": ["Shield Dust", "Ice Body"],
+  "abilities": ["Shield Dust", "Ice Scales"],
   "moves": [
     {"move": "Powder Snow", "level": 1},
     {"move": "Struggle Bug", "level": 1},
@@ -18401,12 +18401,12 @@
 {
   "name": "Frosmoth",
   "pokedex_id": 873,
-  "changed": false,
+  "changed": true,
   "type1": "Ice",
   "type2": "Bug",
   "bst": 475,
   "stats": {"hp": 70, "atk": 65, "def": 60, "spa": 125, "spd": 90, "spe": 65},
-  "abilities": ["Shield Dust", "Ice Body"],
+  "abilities": ["Shield Dust", "Ice Scales"],
   "evo": {"from": "Snom", "method": "Level up with high friendship at night"},
   "moves": [
     {"move": "Attract", "level": 1},
@@ -18491,8 +18491,8 @@
   "changed": true,
   "type1": "Dragon",
   "type2": "Ghost",
-  "bst": 550,
-  "stats": {"hp": 88, "atk": 100, "def": 65, "spa": 90, "spd": 65, "spe": 142},
+  "bst": 555,
+  "stats": {"hp": 93, "atk": 100, "def": 65, "spa": 90, "spd": 65, "spe": 142},
   "abilities": ["Clear Body", "Infiltrator"],
   "evo": {"from": "Drakloak", "method": "Level 42"},
   "moves": [
@@ -18551,7 +18551,7 @@
   "type2": "Rock",
   "bst": 500,
   "stats": {"hp": 70, "atk": 135, "def": 95, "spa": 45, "spd": 70, "spe": 85},
-  "abilities": ["Swarm", "Sheer Force"],
+  "abilities": ["Swarm", "Sharpness"],
   "evo": {"from": "Scyther", "method": "Use Dusk Stone"},
   "moves": [
     {"move": "Leer", "level": 1},
@@ -18572,12 +18572,12 @@
 {
   "name": "Ursaluna",
   "pokedex_id": 901,
-  "changed": false,
+  "changed": true,
   "type1": "Ground",
   "type2": "Normal",
   "bst": 550,
   "stats": {"hp": 130, "atk": 140, "def": 105, "spa": 45, "spd": 80, "spe": 50},
-  "abilities": ["Guts", "Overcoat"],
+  "abilities": ["Guts", "Bulletproof"],
   "evo": {"from": "Ursaring", "method": "Use Moon Stone"},
   "moves": [
     {"move": "Covet", "level": 1},
@@ -18969,12 +18969,12 @@
 {
   "name": "Farigiraf",
   "pokedex_id": 981,
-  "changed": false,
+  "changed": true,
   "type1": "Normal",
   "type2": "Psychic",
   "bst": 520,
   "stats": {"hp": 120, "atk": 90, "def": 70, "spa": 110, "spd": 70, "spe": 60},
-  "abilities": ["Gluttony", "Inner Focus"],
+  "abilities": ["Gluttony", "Armor Tail"],
   "evo": {"from": "Girafarig", "method": "Level up knowing Double Hit"},
   "moves": [
     {"move": "Astonish", "level": 1},
@@ -19002,7 +19002,7 @@
   "type2": "Steel",
   "bst": 550,
   "stats": {"hp": 100, "atk": 135, "def": 120, "spa": 60, "spd": 85, "spe": 50},
-  "abilities": ["Defiant", "Pressure"],
+  "abilities": ["Defiant", "Supreme Overlord"],
   "evo": {"from": "Bisharp", "method": "Use King's Rock"},
   "moves": [
     {"move": "Fury Cutter", "level": 1},
@@ -19421,7 +19421,7 @@
   "type2": "Ghost",
   "bst": 550,
   "stats": {"hp": 87, "atk": 60, "def": 95, "spa": 133, "spd": 91, "spe": 84},
-  "abilities": ["Magic Bounce"],
+  "abilities": ["Good as Gold"],
   "evo": {"from": "Gimmighoul", "method": "Level 40"},
   "moves": [
     {"move": "Astonish", "level": 1},
