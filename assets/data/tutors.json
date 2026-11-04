@@ -688,6 +688,7 @@
   "Tyrantrum": {"tutor": ["SP7", "LE9", "LE14", "LE15", "LE17"], "new": []},
   "Amaura": {"tutor": ["LE3", "LE11", "LE12", "LE13", "LE15", "LE16", "LE17"], "new": ["LE15"]},
   "Aurorus": {"tutor": ["LE3", "LE11", "LE12", "LE13", "LE15", "LE16", "LE17"], "new": ["LE15"]},
+  "Hawlucha": {"tutor": ["DR6", "DR9", "DR10", "DR13", "DR14", "DR15", "LE9", "LE14", "HU8", "HU9", "HU12", "HU13"], "new": ["DR15"]},
   "Sylveon": {"tutor": ["DR2", "LE16", "LE17"], "new": []},
   "Goomy": {"tutor": ["SP7", "LE15", "LE17"], "new": []},
   "Sliggoo": {"tutor": ["SP7", "LE15", "LE17"], "new": []},
