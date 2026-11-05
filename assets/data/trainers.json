@@ -3567,7 +3567,7 @@
       "id": "gym-psychic-2",
       "name": "Psychic Gym Leader – Team 2",
       "location": "Psychic Gym",
-      "levelCap": 74,
+      "levelCap": "??",
       "sprite": "???",
       "hidden": false,
       "order": 38,
