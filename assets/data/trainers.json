@@ -2702,8 +2702,8 @@
     {
       "id": "gym-ground-2",
       "name": "Ground Gym Leader – Team 2 (Sand)",
-      "location": "Ground Gym – ???",
-      "levelCap": "??",
+      "location": "Ground Gym",
+      "levelCap": 43,
       "sprite": "???",
       "hidden": false,
       "order": 29,
@@ -2712,7 +2712,7 @@
         {
           "species": "Hippowdon",
           "sprite": "hippowdon",
-          "level": "??",
+          "level": 41,
           "types": ["Ground", "Water"],
           "ability": "Sand Stream",
           "item": "Leftovers",
@@ -2726,7 +2726,7 @@
         {
           "species": "Excadrill",
           "sprite": "excadrill",
-          "level": "??",
+          "level": 42,
           "types": ["Ground", "Steel"],
           "ability": "Sand Rush",
           "item": "Life Orb",
@@ -2738,23 +2738,23 @@
           ]
         },
         {
-          "species": "Dugtrio (Alola)",
-          "sprite": "dugtrio-alola",
-          "level": "??",
-          "types": ["Ground", "Steel"],
-          "ability": "Sand Force",
-          "item": "Focus Sash",
+          "species": "Flygon",
+          "sprite": "flygon",
+          "level": 41,
+          "types": ["Bug", "Ground"],
+          "ability": "Levitate",
+          "item": "White Herb",
           "moves": [
-            {"name": "Earthquake", "type": "Ground"},
-            {"name": "Iron Head", "type": "Steel"},
-            {"name": "Sucker Punch", "type": "Dark"},
-            {"name": "Stone Edge", "type": "Rock"}
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Draco Meteor", "type": "Dragon"},
+            {"name": "Signal Beam", "type": "Bug"},
+            {"name": "Flamethrower", "type": "Fire"}
           ]
         },
         {
           "species": "Rhyperior",
           "sprite": "rhyperior",
-          "level": "??",
+          "level": 41,
           "types": ["Ground", "Rock"],
           "ability": "Solid Rock",
           "item": "Choice Band",
@@ -2768,7 +2768,7 @@
         {
           "species": "Iron Treads",
           "sprite": "irontreads",
-          "level": "??",
+          "level": 42,
           "types": ["Ground", "Steel"],
           "ability": "Sand Veil",
           "item": "Leftovers",
@@ -2782,7 +2782,7 @@
         {
           "species": "Sandy Shocks",
           "sprite": "sandyshocks",
-          "level": "??",
+          "level": 43,
           "types": ["Electric", "Ground"],
           "ability": "Chlorophyll",
           "item": "Rocky Helmet",
@@ -2806,17 +2806,17 @@
       "bag": [{"item": "???", "count": 0}],
       "pokemon": [
         {
-          "species": "Flygon",
-          "sprite": "flygon",
+          "species": "Dugtrio (Alola)",
+          "sprite": "dugtrio-alola",
           "level": "??",
-          "types": ["Bug", "Ground"],
-          "ability": "Levitate",
-          "item": "Lum Berry",
+          "types": ["Ground", "Steel"],
+          "ability": "Sand Veil",
+          "item": "Focus Sash",
           "moves": [
-            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Iron Head", "type": "Steel"},
             {"name": "Earthquake", "type": "Ground"},
-            {"name": "X-Scissor", "type": "Bug"},
-            {"name": "Dragon Claw", "type": "Dragon"}
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Sucker Punch", "type": "Dark"}
           ]
         },
         {
