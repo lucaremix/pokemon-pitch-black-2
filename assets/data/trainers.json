@@ -4142,59 +4142,59 @@
     {
       "id": "gym-bug-2",
       "name": "Bug Gym Leader – Team 2",
-      "location": "Bug Gym – ???",
-      "levelCap": "??",
+      "location": "Bug Gym",
+      "levelCap": 27,
       "sprite": "???",
       "hidden": false,
       "order": 44,
       "bag": [{"item": "???", "count": 0}],
       "pokemon": [
         {
-          "species": "Parasect",
-          "sprite": "parasect",
-          "level": "??",
-          "types": ["Bug", "Ghost"],
-          "ability": "Effect Spore",
-          "item": "Focus Sash",
+          "species": "Shuckle",
+          "sprite": "shuckle",
+          "level": 25,
+          "types": ["Bug", "Water"],
+          "ability": "Shell Armor",
+          "item": "Leftovers",
           "moves": [
-            {"name": "Spore", "type": "Grass"},
-            {"name": "X-Scissor", "type": "Bug"},
-            {"name": "Shadow Claw", "type": "Ghost"},
-            {"name": "Swords Dance", "type": "Normal"}
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Spider Web", "type": "Bug"},
+            {"name": "Pain Split", "type": "Normal"},
+            {"name": "Rain Dance", "type": "Water"}
           ]
         },
         {
           "species": "Crustle",
           "sprite": "crustle",
-          "level": "??",
+          "level": 25,
           "types": ["Bug", "Rock"],
           "ability": "Sturdy",
           "item": "White Herb",
           "moves": [
-            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Cut", "type": "Grass"},
             {"name": "Shell Smash", "type": "Normal"},
             {"name": "X-Scissor", "type": "Bug"},
             {"name": "Rock Blast", "type": "Rock"}
           ]
         },
         {
-          "species": "Shuckle",
-          "sprite": "shuckle",
-          "level": "??",
-          "types": ["Bug", "Water"],
-          "ability": "Sturdy",
-          "item": "Leftovers",
+          "species": "Centiskorch",
+          "sprite": "centiskorch",
+          "level": 25,
+          "types": ["Fire", "Bug"],
+          "ability": "Flash Fire",
+          "item": "Focus Sash",
           "moves": [
-            {"name": "Toxic", "type": "Poison"},
-            {"name": "Rest", "type": "Psychic"},
-            {"name": "Encore", "type": "Normal"},
-            {"name": "Gastro Acid", "type": "Poison"}
+            {"name": "Flame Wheel", "type": "Fire"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Venoshock", "type": "Poison"},
+            {"name": "Coil", "type": "Poison"}
           ]
         },
         {
           "species": "Galvantula",
           "sprite": "galvantula",
-          "level": "??",
+          "level": 26,
           "types": ["Bug", "Electric"],
           "ability": "Compound Eyes",
           "item": "Life Orb",
@@ -4208,10 +4208,10 @@
         {
           "species": "Accelgor",
           "sprite": "accelgor",
-          "level": "??",
+          "level": 26,
           "types": ["Bug", "Dark"],
           "ability": "Unburden",
-          "item": "Choice Scarf",
+          "item": "Bright Powder",
           "moves": [
             {"name": "U-turn", "type": "Bug"},
             {"name": "Bug Buzz", "type": "Bug"},
@@ -4222,7 +4222,7 @@
         {
           "species": "Unovan Heracross",
           "sprite": "unown-question",
-          "level": "??",
+          "level": 27,
           "types": ["Bug", "Steel"],
           "ability": "Mold Breaker",
           "item": "Occa Berry",
