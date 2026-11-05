@@ -974,59 +974,59 @@
     {
       "id": "gym-dragon-2",
       "name": "Dragon Gym Leader – Team 2",
-      "location": "Dragon Gym – ???",
-      "levelCap": "??",
+      "location": "Dragon Gym",
+      "levelCap": 59,
       "sprite": "???",
       "hidden": false,
       "order": 11,
       "bag": [{"item": "???", "count": 0}],
       "pokemon": [
         {
-          "species": "Haxorus",
-          "sprite": "haxorus",
-          "level": "??",
-          "types": ["Dragon", "Steel"],
-          "ability": "Mold Breaker",
-          "item": "Life Orb",
+          "species": "Druddigon",
+          "sprite": "druddigon",
+          "level": 59,
+          "types": ["Dragon", "Fighting"],
+          "ability": "Rough Skin",
+          "item": "Rocky Helmet",
           "moves": [
-            {"name": "Dragon Dance", "type": "Dragon"},
-            {"name": "Outrage", "type": "Dragon"},
-            {"name": "Iron Head", "type": "Steel"},
-            {"name": "Earthquake", "type": "Ground"}
+            {"name": "Fire Punch", "type": "Fire"},
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Revenge", "type": "Fighting"},
+            {"name": "Dragon Tail", "type": "Dragon"}
           ]
         },
         {
           "species": "Roaring Moon",
           "sprite": "roaringmoon",
-          "level": "??",
+          "level": 60,
           "types": ["Dragon", "Dark"],
           "ability": "Intimidate",
-          "item": "Leftovers",
+          "item": "Expert Belt",
           "moves": [
-            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Flame Charge", "type": "Fire"},
             {"name": "Dragon Claw", "type": "Dragon"},
             {"name": "Crunch", "type": "Dark"},
             {"name": "Roost", "type": "Flying"}
           ]
         },
         {
-          "species": "Altaria",
-          "sprite": "altaria",
-          "level": "??",
-          "types": ["Dragon", "Fairy"],
-          "ability": "Natural Cure",
-          "item": "Leftovers",
+          "species": "Exeggutor (Alola)",
+          "sprite": "exeggutor-alola",
+          "level": 59,
+          "types": ["Grass", "Dragon"],
+          "ability": "Harvest",
+          "item": "Sitrus Berry",
           "moves": [
-            {"name": "Dragon Dance", "type": "Dragon"},
-            {"name": "Dragon Claw", "type": "Dragon"},
-            {"name": "Earthquake", "type": "Ground"},
-            {"name": "Roost", "type": "Flying"}
+            {"name": "Dragon Tail", "type": "Dragon"},
+            {"name": "Light Screen", "type": "Psychic"},
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "Explosion", "type": "Normal"}
           ]
         },
         {
           "species": "Archeops",
           "sprite": "archeops",
-          "level": "??",
+          "level": 59,
           "types": ["Rock", "Dragon"],
           "ability": "Levitate",
           "item": "Choice Scarf",
@@ -1038,26 +1038,26 @@
           ]
         },
         {
-          "species": "Druddigon",
-          "sprite": "druddigon",
-          "level": "??",
-          "types": ["Dragon", "Fighting"],
-          "ability": "Iron Fist",
-          "item": "Choice Band",
+          "species": "Haxorus",
+          "sprite": "haxorus",
+          "level": 60,
+          "types": ["Dragon", "Steel"],
+          "ability": "Mold Breaker",
+          "item": "Life Orb",
           "moves": [
-            {"name": "Outrage", "type": "Dragon"},
-            {"name": "Mach Punch", "type": "Fighting"},
-            {"name": "Ice Punch", "type": "Ice"},
-            {"name": "Superpower", "type": "Fighting"}
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Dragon Tail", "type": "Dragon"},
+            {"name": "Protect", "type": "Normal"}
           ]
         },
         {
           "species": "Unovan Salamence",
           "sprite": "unown-question",
-          "level": "??",
+          "level": 61,
           "types": ["Dragon", "Fire"],
           "ability": "Rock Head",
-          "item": "Life Orb",
+          "item": "Charcoal",
           "moves": [
             {"name": "Dragon Dance", "type": "Dragon"},
             {"name": "Flare Blitz", "type": "Fire"},
