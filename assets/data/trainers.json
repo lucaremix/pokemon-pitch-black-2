@@ -3567,24 +3567,24 @@
       "id": "gym-psychic-2",
       "name": "Psychic Gym Leader – Team 2",
       "location": "Psychic Gym",
-      "levelCap": "??",
+      "levelCap": 72,
       "sprite": "???",
       "hidden": false,
       "order": 38,
       "bag": [{"item": "???", "count": 0}],
       "pokemon": [
         {
-          "species": "Gardevoir",
-          "sprite": "gardevoir",
+          "species": "Starmie",
+          "sprite": "starmie",
           "level": 72,
-          "types": ["Psychic", "Fairy"],
-          "ability": "Trace",
-          "item": "Leftovers",
+          "types": ["Water", "Psychic"],
+          "ability": "Natural Cure",
+          "item": "Light Clay",
           "moves": [
-            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Scald", "type": "Water"},
             {"name": "Psychic", "type": "Psychic"},
-            {"name": "Moonblast", "type": "Fairy"},
-            {"name": "Focus Blast", "type": "Fighting"}
+            {"name": "Dazzling Gleam", "type": "Fairy"},
+            {"name": "Reflect", "type": "Psychic"}
           ]
         },
         {
@@ -3630,17 +3630,17 @@
           ]
         },
         {
-          "species": "Rapidash (Galar)",
-          "sprite": "rapidash-galar",
+          "species": "Armarouge",
+          "sprite": "armarouge",
           "level": 72,
-          "types": ["Psychic", "Fairy"],
-          "ability": "Run Away",
+          "types": ["Fire", "Psychic"],
+          "ability": "Flash Fire",
           "item": "Expert Belt",
           "moves": [
-            {"name": "Swords Dance", "type": "Normal"},
-            {"name": "Psycho Cut", "type": "Psychic"},
-            {"name": "Megahorn", "type": "Bug"},
-            {"name": "Play Rough", "type": "Fairy"}
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "Will-O-Wisp", "type": "Fire"}
           ]
         },
         {
