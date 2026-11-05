@@ -3232,17 +3232,17 @@
           ]
         },
         {
-          "species": "Frillish",
-          "sprite": "frillish",
+          "species": "Palpitoad",
+          "sprite": "palpitoad",
           "level": 19,
           "types": ["Water", "Poison"],
-          "ability": "Cursed Body",
-          "item": "Oran Berry",
+          "ability": "Swift Swim",
+          "item": "Poison Barb",
           "moves": [
             {"name": "Bubble Beam", "type": "Water"},
-            {"name": "Absorb", "type": "Grass"},
-            {"name": "Recover", "type": "Normal"},
-            {"name": "Sludge", "type": "Poison"}
+            {"name": "Icy Wind", "type": "Ice"},
+            {"name": "Uproar", "type": "Normal"},
+            {"name": "Sludge Bomb", "type": "Poison"}
           ]
         },
         {
