@@ -1359,44 +1359,44 @@
       "id": "gym-fighting-3",
       "name": "Fighting Gym Leader – Team 3",
       "location": "Fighting Gym – ???",
-      "levelCap": "??",
+      "levelCap": 72,
       "sprite": "???",
       "hidden": false,
       "order": 15,
       "bag": [{"item": "???", "count": 0}],
       "pokemon": [
         {
-          "species": "Tauros (Paldea Combat)",
-          "sprite": "tauros-paldeacombat",
-          "level": "??",
-          "types": ["Fighting"],
-          "ability": "Intimidate",
-          "item": "Choice Scarf",
+          "species": "Sawk",
+          "sprite": "sawk",
+          "level": 72,
+          "types": ["Fighting", "Water"],
+          "ability": "Inner Focus",
+          "item": "Expert Belt",
           "moves": [
-            {"name": "Close Combat", "type": "Fighting"},
-            {"name": "Zen Headbutt", "type": "Psychic"},
-            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Brick Break", "type": "Fighting"},
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Poison Jab", "type": "Poison"},
             {"name": "Stone Edge", "type": "Rock"}
           ]
         },
         {
-          "species": "Mienshao",
-          "sprite": "mienshao",
-          "level": "??",
-          "types": ["Fighting"],
-          "ability": "Regenerator",
+          "species": "Annihilape",
+          "sprite": "annihilape",
+          "level": 72,
+          "types": ["Fighting", "Ghost"],
+          "ability": "Vital Spirit",
           "item": "Life Orb",
           "moves": [
             {"name": "U-turn", "type": "Bug"},
-            {"name": "High Jump Kick", "type": "Fighting"},
-            {"name": "Drain Punch", "type": "Fighting"},
-            {"name": "Knock Off", "type": "Dark"}
+            {"name": "Shadow Claw", "type": "Ghost"},
+            {"name": "Final Gambit", "type": "Fighting"},
+            {"name": "Brick Break", "type": "Fighting"}
           ]
         },
         {
           "species": "Scyther",
           "sprite": "scyther",
-          "level": "??",
+          "level": 72,
           "types": ["Bug", "Fighting"],
           "ability": "Technician",
           "item": "Choice Band",
@@ -1408,12 +1408,12 @@
           ]
         },
         {
-          "species": "Sneasel (Hisui)",
-          "sprite": "sneasel-hisui",
-          "level": "??",
+          "species": "Sneasler",
+          "sprite": "sneasler",
+          "level": 73,
           "types": ["Fighting", "Poison"],
-          "ability": "Inner Focus",
-          "item": "Lum Berry",
+          "ability": "Unburden",
+          "item": "White Herb",
           "moves": [
             {"name": "Swords Dance", "type": "Normal"},
             {"name": "Close Combat", "type": "Fighting"},
@@ -1424,7 +1424,7 @@
         {
           "species": "Iron Hands",
           "sprite": "ironhands",
-          "level": "??",
+          "level": 73,
           "types": ["Fighting", "Electric"],
           "ability": "Motor Drive",
           "item": "Sitrus Berry",
@@ -1436,17 +1436,17 @@
           ]
         },
         {
-          "species": "Kommo-o",
-          "sprite": "kommoo",
-          "level": "??",
-          "types": ["Dragon", "Fighting"],
-          "ability": "Soundproof",
-          "item": "Focus Sash",
+          "species": "Metagross",
+          "sprite": "metagross",
+          "level": 74,
+          "types": ["Steel", "Fighting"],
+          "ability": "Clear Body",
+          "item": "Rocky Helmet",
           "moves": [
-            {"name": "Close Combat", "type": "Fighting"},
-            {"name": "Dragon Claw", "type": "Dragon"},
-            {"name": "Iron Defense", "type": "Steel"},
-            {"name": "Poison Jab", "type": "Poison"}
+            {"name": "Hammer Arm", "type": "Fighting"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Meteor Mash", "type": "Steel"},
+            {"name": "Agility", "type": "Psychic"}
           ]
         }
       ]
@@ -2258,7 +2258,7 @@
           ]
         },
         {
-          "species": "Metagross",
+          "species": "",
           "sprite": "metagross",
           "level": "??",
           "types": ["Steel", "Fighting"],
