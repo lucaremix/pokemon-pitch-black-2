@@ -3086,8 +3086,8 @@
     {
       "id": "gym-dark-3",
       "name": "Dark Gym Leader – Team 3",
-      "location": "Dark Gym – ???",
-      "levelCap": "??",
+      "location": "Dark Gym",
+      "levelCap": 72,
       "sprite": "???",
       "hidden": false,
       "order": 33,
@@ -3096,10 +3096,10 @@
         {
           "species": "Liepard",
           "sprite": "liepard",
-          "level": "??",
+          "level": 72,
           "types": ["Dark"],
           "ability": "Prankster",
-          "item": "Sitrus Berry",
+          "item": "Focus Sash",
           "moves": [
             {"name": "Thunder Wave", "type": "Electric"},
             {"name": "Encore", "type": "Normal"},
@@ -3110,7 +3110,7 @@
         {
           "species": "Zoroark",
           "sprite": "zoroark",
-          "level": "??",
+          "level": 72,
           "types": ["Dark", "Fairy"],
           "ability": "Prankster",
           "item": "Focus Sash",
@@ -3124,7 +3124,7 @@
         {
           "species": "Gothitelle",
           "sprite": "gothitelle",
-          "level": "??",
+          "level": 72,
           "types": ["Psychic", "Dark"],
           "ability": "Shadow Tag",
           "item": "Leftovers",
@@ -3132,33 +3132,33 @@
             {"name": "Calm Mind", "type": "Psychic"},
             {"name": "Psyshock", "type": "Psychic"},
             {"name": "Dark Pulse", "type": "Dark"},
-            {"name": "Rest", "type": "Psychic"}
+            {"name": "Charm", "type": "Fairy"}
           ]
         },
         {
           "species": "Umbreon",
           "sprite": "umbreon",
-          "level": "??",
+          "level": 73,
           "types": ["Dark", "Fighting"],
           "ability": "Synchronize",
-          "item": "Leftovers",
+          "item": "White Herb",
           "moves": [
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Assurance", "type": "Dark"},
             {"name": "Mean Look", "type": "Normal"},
-            {"name": "Toxic", "type": "Poison"},
-            {"name": "Protect", "type": "Normal"},
             {"name": "Moonlight", "type": "Fairy"}
           ]
         },
         {
           "species": "Gengar",
           "sprite": "gengar",
-          "level": "??",
+          "level": 73,
           "types": ["Ghost", "Dark"],
           "ability": "Cursed Body",
-          "item": "Focus Sash",
+          "item": "Life Orb",
           "moves": [
             {"name": "Hypnosis", "type": "Psychic"},
-            {"name": "Destiny Bond", "type": "Ghost"},
+            {"name": "Dream Eater", "type": "Psychic"},
             {"name": "Shadow Ball", "type": "Ghost"},
             {"name": "Dark Pulse", "type": "Dark"}
           ]
@@ -3166,7 +3166,7 @@
         {
           "species": "Tyranitar",
           "sprite": "tyranitar",
-          "level": "??",
+          "level": 74,
           "types": ["Dark", "Dragon"],
           "ability": "Moxie",
           "item": "Lum Berry",
