@@ -4718,8 +4718,8 @@
     {
       "id": "gym-water-2",
       "name": "Water Gym Leader – Team 2",
-      "location": "Water Gym – ???",
-      "levelCap": "??",
+      "location": "Water Gym",
+      "levelCap": 62,
       "sprite": "???",
       "hidden": false,
       "order": 50,
@@ -4728,7 +4728,7 @@
         {
           "species": "Slowking",
           "sprite": "slowking",
-          "level": "??",
+          "level": 62,
           "types": ["Water", "Psychic"],
           "ability": "Own Tempo",
           "item": "Mental Herb",
@@ -4736,13 +4736,13 @@
             {"name": "Trick Room", "type": "Psychic"},
             {"name": "Scald", "type": "Water"},
             {"name": "Psychic", "type": "Psychic"},
-            {"name": "Protect", "type": "Normal"}
+            {"name": "Rain Dance", "type": "Water"}
           ]
         },
         {
           "species": "Jellicent",
           "sprite": "jellicent",
-          "level": "??",
+          "level": 63,
           "types": ["Poison", "Water"],
           "ability": "Cursed Body",
           "item": "Leftovers",
@@ -4756,7 +4756,7 @@
         {
           "species": "Wailord",
           "sprite": "wailord",
-          "level": "??",
+          "level": 62,
           "types": ["Water", "Flying"],
           "ability": "Adaptability",
           "item": "Choice Specs",
@@ -4770,7 +4770,7 @@
         {
           "species": "Clawitzer",
           "sprite": "clawitzer",
-          "level": "??",
+          "level": 63,
           "types": ["Water", "Dark"],
           "ability": "Mega Launcher",
           "item": "Wise Glasses",
@@ -4778,27 +4778,27 @@
             {"name": "Water Pulse", "type": "Water"},
             {"name": "Dark Pulse", "type": "Dark"},
             {"name": "Aura Sphere", "type": "Fighting"},
-            {"name": "Heal Pulse", "type": "Psychic"}
+            {"name": "Rain Dance", "type": "Water"}
           ]
         },
         {
           "species": "Araquanid",
           "sprite": "araquanid",
-          "level": "??",
+          "level": 63,
           "types": ["Water", "Bug"],
           "ability": "Water Bubble",
           "item": "Sitrus Berry",
           "moves": [
             {"name": "Waterfall", "type": "Water"},
             {"name": "X-Scissor", "type": "Bug"},
-            {"name": "Wide Guard", "type": "Rock"},
+            {"name": "Poison Jab", "type": "Poison"},
             {"name": "Protect", "type": "Normal"}
           ]
         },
         {
           "species": "Unovan Steelix",
           "sprite": "unown-question",
-          "level": "??",
+          "level": 64,
           "types": ["Steel", "Water"],
           "ability": "Rock Head",
           "item": "Metal Coat",
