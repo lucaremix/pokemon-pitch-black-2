@@ -1647,7 +1647,7 @@
       "id": "gym-ghost-3",
       "name": "Ghost Gym Leader – Team 3",
       "location": "Ghost Gym – ???",
-      "levelCap": "??",
+      "levelCap": 72,
       "sprite": "???",
       "hidden": false,
       "order": 18,
@@ -1656,13 +1656,13 @@
         {
           "species": "Dragapult",
           "sprite": "dragapult",
-          "level": "??",
+          "level": 72,
           "types": ["Dragon", "Ghost"],
           "ability": "Infiltrator",
           "item": "Life Orb",
           "moves": [
-            {"name": "Dragon Dance", "type": "Dragon"},
-            {"name": "Dragon Rush", "type": "Dragon"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Dragon Pulse", "type": "Dragon"},
             {"name": "Shadow Ball", "type": "Ghost"},
             {"name": "U-turn", "type": "Bug"}
           ]
@@ -1670,21 +1670,21 @@
         {
           "species": "Flutter Mane",
           "sprite": "fluttermane",
-          "level": "??",
+          "level": 72,
           "types": ["Ghost", "Fairy"],
           "ability": "Levitate",
           "item": "Focus Sash",
           "moves": [
-            {"name": "Calm Mind", "type": "Psychic"},
+            {"name": "Wish", "type": "Normal"},
             {"name": "Moonblast", "type": "Fairy"},
-            {"name": "Shadow Ball", "type": "Ghost"},
-            {"name": "Psyshock", "type": "Psychic"}
+            {"name": "Shadow Force", "type": "Ghost"},
+            {"name": "Perish Song", "type": "Normal"}
           ]
         },
         {
           "species": "Mismagius",
           "sprite": "mismagius",
-          "level": "??",
+          "level": 72,
           "types": ["Ghost", "Fairy"],
           "ability": "Insomnia",
           "item": "Spell Tag",
@@ -1698,7 +1698,7 @@
         {
           "species": "Basculegion",
           "sprite": "basculegion",
-          "level": "??",
+          "level": 73,
           "types": ["Water", "Ghost"],
           "ability": "Adaptability",
           "item": "Choice Band",
@@ -1710,23 +1710,23 @@
           ]
         },
         {
-          "species": "Annihilape",
-          "sprite": "annihilape",
-          "level": "??",
-          "types": ["Fighting", "Ghost"],
-          "ability": "Inner Focus",
+          "species": "Dusknoir",
+          "sprite": "dusknoir",
+          "level": 73,
+          "types": ["Ghost", "Fighting"],
+          "ability": "Iron Fist",
           "item": "Lum Berry",
           "moves": [
-            {"name": "Bulk Up", "type": "Fighting"},
-            {"name": "Close Combat", "type": "Fighting"},
-            {"name": "Shadow Claw", "type": "Ghost"},
-            {"name": "Earthquake", "type": "Ground"}
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Shadow Punch", "type": "Ghost"},
+            {"name": "Shadow Sneak", "type": "Ghost"}
           ]
         },
         {
           "species": "Gholdengo",
           "sprite": "gholdengo",
-          "level": "??",
+          "level": 74,
           "types": ["Steel", "Ghost"],
           "ability": "Good as Gold",
           "item": "Leftovers",
