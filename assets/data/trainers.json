@@ -1646,7 +1646,7 @@
     {
       "id": "gym-ghost-3",
       "name": "Ghost Gym Leader – Team 3",
-      "location": "Ghost Gym – ???",
+      "location": "Ghost Gym",
       "levelCap": 72,
       "sprite": "???",
       "hidden": false,
