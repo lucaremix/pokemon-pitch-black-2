@@ -24,13 +24,13 @@
         {
           "species": "Kecleon",
           "sprite": "kecleon",
-          "level": "??",
+          "level": 11,
           "types": ["Normal"],
           "ability": "Color Change",
           "item": "Sitrus Berry",
           "moves": [
-            {"name": "Fake Out", "type": "Normal"},
-            {"name": "Shadow Sneak", "type": "Ghost"},
+            {"name": "Fury Swipes", "type": "Normal"},
+            {"name": "Feint Attack", "type": "Dark"},
             {"name": "Rock Tomb", "type": "Rock"},
             {"name": "Thunder Wave", "type": "Electric"}
           ]
@@ -38,13 +38,13 @@
         {
           "species": "Zorua (Hisui)",
           "sprite": "zorua-hisui",
-          "level": "??",
+          "level": 11,
           "types": ["Normal", "Ghost"],
           "ability": "Illusion",
           "item": "Focus Sash",
           "moves": [
             {"name": "Hex", "type": "Ghost"},
-            {"name": "Shadow Sneak", "type": "Ghost"},
+            {"name": "Scratch", "type": "Normal"},
             {"name": "Will-O-Wisp", "type": "Fire"},
             {"name": "Taunt", "type": "Dark"}
           ]
@@ -52,7 +52,7 @@
         {
           "species": "Zigzagoon (Galar)",
           "sprite": "zigzagoon-galar",
-          "level": "??",
+          "level": 11,
           "types": ["Dark", "Normal"],
           "ability": "Pickup",
           "item": "Eviolite",
@@ -66,13 +66,13 @@
         {
           "species": "Patrat",
           "sprite": "patrat",
-          "level": "??",
+          "level": 11,
           "types": ["Normal", "Psychic"],
           "ability": "Keen Eye",
           "item": "Oran Berry",
           "moves": [
             {"name": "Retaliate", "type": "Normal"},
-            {"name": "Bite", "type": "Dark"},
+            {"name": "Heart Stamp", "type": "Psychic"},
             {"name": "Work Up", "type": "Normal"},
             {"name": "Detect", "type": "Fighting"}
           ]
@@ -80,7 +80,7 @@
         {
           "species": "Tranquill",
           "sprite": "tranquill",
-          "level": "??",
+          "level": 11,
           "types": ["Normal", "Flying"],
           "ability": "Super Luck",
           "item": "Sharp Beak",
@@ -94,9 +94,9 @@
         {
           "species": "Unovan Slowbro",
           "sprite": "unown-question",
-          "level": "??",
+          "level": 13,
           "types": ["Normal", "Bug"],
-          "ability": "Honey Gather",
+          "ability": "Swarm",
           "item": "Leftovers",
           "moves": [
             {"name": "Bug Bite", "type": "Bug"},
