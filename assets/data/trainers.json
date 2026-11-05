@@ -14,7 +14,7 @@
     {
       "id": "gym-normal-1",
       "name": "Normal Gym Leader – Team 1",
-      "location": "Normal Gym – ???",
+      "location": "Normal Gym",
       "levelCap": 11,
       "sprite": "???",
       "hidden": false,
