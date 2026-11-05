@@ -4754,17 +4754,17 @@
           ]
         },
         {
-          "species": "Wailord",
-          "sprite": "wailord",
+          "species": "Eelektross",
+          "sprite": "eelektross",
           "level": 62,
-          "types": ["Water", "Flying"],
-          "ability": "Adaptability",
-          "item": "Choice Specs",
+          "types": ["Electric", "Water"],
+          "ability": "Volt Absorb",
+          "item": "Air Balloon",
           "moves": [
-            {"name": "Water Spout", "type": "Water"},
-            {"name": "Hydro Pump", "type": "Water"},
-            {"name": "Hurricane", "type": "Flying"},
-            {"name": "Ice Beam", "type": "Ice"}
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Acrobatics", "type": "Flying"}
           ]
         },
         {
