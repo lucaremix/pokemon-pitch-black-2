@@ -192,7 +192,7 @@
           "sprite": "unown-question",
           "level": "??",
           "types": ["Normal", "Bug"],
-          "ability": "Honey Gather",
+          "ability": "Swarm",
           "item": "Chesto Berry",
           "moves": [
             {"name": "Attack Order", "type": "Bug"},
@@ -288,7 +288,7 @@
           "sprite": "unown-question",
           "level": "??",
           "types": ["Normal", "Bug"],
-          "ability": "Honey Gather",
+          "ability": "Swarm",
           "item": "Leftovers",
           "moves": [
             {"name": "X-Scissor", "type": "Bug"},
