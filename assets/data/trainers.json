@@ -3566,8 +3566,8 @@
     {
       "id": "gym-psychic-2",
       "name": "Psychic Gym Leader – Team 2",
-      "location": "Psychic Gym – ???",
-      "levelCap": "??",
+      "location": "Psychic Gym",
+      "levelCap": 74,
       "sprite": "???",
       "hidden": false,
       "order": 38,
@@ -3576,12 +3576,12 @@
         {
           "species": "Gardevoir",
           "sprite": "gardevoir",
-          "level": "??",
+          "level": 72,
           "types": ["Psychic", "Fairy"],
           "ability": "Trace",
           "item": "Leftovers",
           "moves": [
-            {"name": "Calm Mind", "type": "Psychic"},
+            {"name": "Thunderbolt", "type": "Electric"},
             {"name": "Psychic", "type": "Psychic"},
             {"name": "Moonblast", "type": "Fairy"},
             {"name": "Focus Blast", "type": "Fighting"}
@@ -3590,7 +3590,7 @@
         {
           "species": "Espeon",
           "sprite": "espeon",
-          "level": "??",
+          "level": 73,
           "types": ["Psychic", "Ghost"],
           "ability": "Magic Bounce",
           "item": "Focus Sash",
@@ -3598,13 +3598,13 @@
             {"name": "Calm Mind", "type": "Psychic"},
             {"name": "Baton Pass", "type": "Normal"},
             {"name": "Psychic", "type": "Psychic"},
-            {"name": "Morning Sun", "type": "Normal"}
+            {"name": "Shadow Ball", "type": "Ghost"}
           ]
         },
         {
           "species": "Alakazam",
           "sprite": "alakazam",
-          "level": "??",
+          "level": 72,
           "types": ["Psychic"],
           "ability": "Synchronize",
           "item": "Choice Specs",
@@ -3618,7 +3618,7 @@
         {
           "species": "Lucario",
           "sprite": "lucario",
-          "level": "??",
+          "level": 73,
           "types": ["Fighting", "Psychic"],
           "ability": "Steadfast",
           "item": "Life Orb",
@@ -3632,7 +3632,7 @@
         {
           "species": "Rapidash (Galar)",
           "sprite": "rapidash-galar",
-          "level": "??",
+          "level": 72,
           "types": ["Psychic", "Fairy"],
           "ability": "Run Away",
           "item": "Expert Belt",
@@ -3646,7 +3646,7 @@
         {
           "species": "Scream Tail",
           "sprite": "screamtail",
-          "level": "??",
+          "level": 74,
           "types": ["Fairy", "Psychic"],
           "ability": "Cute Charm",
           "item": "???",
