@@ -66,7 +66,7 @@
         {
           "species": "Patrat",
           "sprite": "patrat",
-          "level": 11,
+          "level": 12,
           "types": ["Normal", "Psychic"],
           "ability": "Keen Eye",
           "item": "Oran Berry",
@@ -80,7 +80,7 @@
         {
           "species": "Tranquill",
           "sprite": "tranquill",
-          "level": 11,
+          "level": 12,
           "types": ["Normal", "Flying"],
           "ability": "Super Luck",
           "item": "Sharp Beak",
@@ -3182,7 +3182,7 @@
     {
       "id": "gym-poison-1",
       "name": "Poison Gym Leader – Team 1",
-      "location": "Poison Gym – ???",
+      "location": "Poison Gym",
       "levelCap": "??",
       "sprite": "???",
       "hidden": false,
@@ -3192,77 +3192,77 @@
         {
           "species": "Koffing",
           "sprite": "koffing",
-          "level": "??",
+          "level": 18,
           "types": ["Poison"],
           "ability": "Levitate",
           "item": "Black Sludge",
           "moves": [
             {"name": "Poison Gas", "type": "Poison"},
-            {"name": "Smog", "type": "Poison"},
-            {"name": "Sludge", "type": "Poison"},
+            {"name": "Smokescreen", "type": "Normal"},
+            {"name": "Assurance", "type": "Dark"},
             {"name": "Clear Smog", "type": "Poison"}
           ]
         },
         {
           "species": "Ekans",
           "sprite": "ekans",
-          "level": "??",
+          "level": 18,
           "types": ["Poison"],
           "ability": "Intimidate",
           "item": "Quick Claw",
           "moves": [
             {"name": "Glare", "type": "Normal"},
             {"name": "Bite", "type": "Dark"},
-            {"name": "Acid", "type": "Poison"},
+            {"name": "Venoshock", "type": "Poison"},
             {"name": "Acid Spray", "type": "Poison"}
           ]
         },
         {
-          "species": "Zubat",
-          "sprite": "zubat",
-          "level": "??",
+          "species": "Golbat",
+          "sprite": "golbat",
+          "level": 18,
           "types": ["Poison", "Flying"],
           "ability": "Inner Focus",
           "item": "Sitrus Berry",
           "moves": [
-            {"name": "Supersonic", "type": "Normal"},
+            {"name": "Leech Life", "type": "Bug"},
             {"name": "Confuse Ray", "type": "Ghost"},
             {"name": "Wing Attack", "type": "Flying"},
             {"name": "Poison Fang", "type": "Poison"}
           ]
         },
         {
-          "species": "Gulpin",
-          "sprite": "gulpin",
-          "level": "??",
-          "types": ["Poison"],
-          "ability": "Liquid Ooze",
+          "species": "Frillish",
+          "sprite": "frillish",
+          "level": 19,
+          "types": ["Water", "Poison"],
+          "ability": "Cursed Body",
           "item": "Oran Berry",
           "moves": [
-            {"name": "Poison Gas", "type": "Poison"},
-            {"name": "Sludge", "type": "Poison"},
-            {"name": "Yawn", "type": "Normal"},
-            {"name": "Toxic", "type": "Poison"}
+            {"name": "Bubble Beam", "type": "Water"},
+            {"name": "Absorb", "type": "Grass"},
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Sludge", "type": "Poison"}
           ]
         },
         {
           "species": "Skorupi",
           "sprite": "skorupi",
-          "level": "??",
+          "level": 19,
           "types": ["Poison", "Bug"],
           "ability": "Battle Armor",
           "item": "Focus Band",
           "moves": [
-            {"name": "Toxic Spikes", "type": "Poison"},
+            {"name": "Bug Bite", "type": "Bug"},
             {"name": "Poison Fang", "type": "Poison"},
             {"name": "Knock Off", "type": "Dark"},
-            {"name": "Venoshock", "type": "Poison"}
+            {"name": "Swords Dance", "type": "Normal"}
           ]
         },
         {
           "species": "Unovan Magcargo",
           "sprite": "unown-question",
-          "level": "??",
+          "level": 20,
           "types": ["Poison", "Ground"],
           "ability": "Stench",
           "item": "Leftovers",
