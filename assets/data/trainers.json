@@ -324,17 +324,17 @@
           ]
         },
         {
-          "species": "Weepinbell",
-          "sprite": "weepinbell",
+          "species": "Flaaffy",
+          "sprite": "flaaffy",
           "level": "??",
-          "types": ["Grass", "Poison"],
-          "ability": "Chlorophyll",
+          "types": ["Electric", "Grass"],
+          "ability": "Static",
           "item": "Miracle Seed",
           "moves": [
-            {"name": "Sleep Powder", "type": "Grass"},
-            {"name": "Razor Leaf", "type": "Grass"},
-            {"name": "Acid", "type": "Poison"},
-            {"name": "Knock Off", "type": "Dark"}
+            {"name": "Thunder Shock", "type": "Electric"},
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Mega Drain", "type": "Grass"},
+            {"name": "Light Screen", "type": "Psychic"}
           ]
         },
         {
