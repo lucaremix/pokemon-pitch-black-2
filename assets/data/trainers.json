@@ -2717,8 +2717,8 @@
           "ability": "Sand Stream",
           "item": "Leftovers",
           "moves": [
-            {"name": "Earthquake", "type": "Ground"},
-            {"name": "Crunch", "type": "Dark"},
+            {"name": "Bulldoze", "type": "Ground"},
+            {"name": "Waterfall", "type": "Water"},
             {"name": "Slack Off", "type": "Normal"},
             {"name": "Stealth Rock", "type": "Rock"}
           ]
@@ -2732,7 +2732,7 @@
           "item": "Life Orb",
           "moves": [
             {"name": "Swords Dance", "type": "Normal"},
-            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Drill Run", "type": "Ground"},
             {"name": "Iron Head", "type": "Steel"},
             {"name": "Rock Slide", "type": "Rock"}
           ]
@@ -2752,17 +2752,17 @@
           ]
         },
         {
-          "species": "Rhyperior",
-          "sprite": "rhyperior",
+          "species": "Mamoswine",
+          "sprite": "mamoswine",
           "level": 41,
-          "types": ["Ground", "Rock"],
-          "ability": "Solid Rock",
-          "item": "Choice Band",
+          "types": ["Ice", "Ground"],
+          "ability": "Oblivious",
+          "item": "Choice Scarf",
           "moves": [
             {"name": "Earthquake", "type": "Ground"},
-            {"name": "Stone Edge", "type": "Rock"},
-            {"name": "Megahorn", "type": "Bug"},
-            {"name": "Hammer Arm", "type": "Fighting"}
+            {"name": "Ice Fang", "type": "Ice"},
+            {"name": "Strength", "type": "Rock"},
+            {"name": "Giga Impact", "type": "Normal"}
           ]
         },
         {
@@ -2771,9 +2771,9 @@
           "level": 42,
           "types": ["Ground", "Steel"],
           "ability": "Sand Veil",
-          "item": "Leftovers",
+          "item": "Bright Powder",
           "moves": [
-            {"name": "Rapid Spin", "type": "Normal"},
+            {"name": "Flame Charge", "type": "Fire"},
             {"name": "Earthquake", "type": "Ground"},
             {"name": "Iron Head", "type": "Steel"},
             {"name": "Knock Off", "type": "Dark"}
