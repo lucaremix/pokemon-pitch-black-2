@@ -2510,8 +2510,8 @@
     {
       "id": "gym-electric-3",
       "name": "Electric Gym Leader – Team 3",
-      "location": "Electric Gym – ???",
-      "levelCap": "??",
+      "location": "Electric Gym",
+      "levelCap": 36,
       "sprite": "???",
       "hidden": false,
       "order": 27,
@@ -2520,23 +2520,23 @@
         {
           "species": "Raichu (Alola)",
           "sprite": "raichu-alola",
-          "level": "??",
+          "level": 34,
           "types": ["Electric", "Psychic"],
           "ability": "Motor Drive",
-          "item": "Life Orb",
+          "item": "Light Clay",
           "moves": [
-            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Reflect", "type": "Psychic"},
             {"name": "Thunderbolt", "type": "Electric"},
             {"name": "Psychic", "type": "Psychic"},
-            {"name": "Focus Blast", "type": "Fighting"}
+            {"name": "Surf", "type": "Water"}
           ]
         },
         {
           "species": "PorygonZ",
           "sprite": "porygonz",
-          "level": "??",
+          "level": 34,
           "types": ["Psychic", "Electric"],
-          "ability": "Adaptability",
+          "ability": "Download",
           "item": "Life Orb",
           "moves": [
             {"name": "Nasty Plot", "type": "Dark"},
@@ -2548,24 +2548,24 @@
         {
           "species": "Toxtricity",
           "sprite": "toxtricity",
-          "level": "??",
+          "level": 34,
           "types": ["Electric", "Poison"],
-          "ability": "Plus",
-          "item": "Expert Belt",
+          "ability": "Punk Rock",
+          "item": "Focus Sash",
           "moves": [
-            {"name": "Shift Gear", "type": "Steel"},
-            {"name": "Poison Jab", "type": "Poison"},
-            {"name": "Wild Charge", "type": "Electric"},
-            {"name": "Discharge", "type": "Electric"}
+            {"name": "Swagger", "type": "Normal"},
+            {"name": "Venoshock", "type": "Poison"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Toxic", "type": "Poison"}
           ]
         },
         {
           "species": "Electivire",
           "sprite": "electivire",
-          "level": "??",
+          "level": 35,
           "types": ["Electric", "Fighting"],
           "ability": "Motor Drive",
-          "item": "Choice Band",
+          "item": "Expert Belt",
           "moves": [
             {"name": "Wild Charge", "type": "Electric"},
             {"name": "Cross Chop", "type": "Fighting"},
@@ -2576,7 +2576,7 @@
         {
           "species": "Rotom (Fan)",
           "sprite": "rotom-fan",
-          "level": "??",
+          "level": 35,
           "types": ["Electric", "Flying"],
           "ability": "Motor Drive",
           "item": "Focus Sash",
@@ -2590,14 +2590,14 @@
         {
           "species": "Unovan Altaria",
           "sprite": "unown-question",
-          "level": "??",
+          "level": 36,
           "types": ["Fairy", "Electric"],
           "ability": "Levitate",
           "item": "Leftovers",
           "moves": [
-            {"name": "Roost", "type": "Flying"},
-            {"name": "Heal Bell", "type": "Normal"},
-            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Flamethrower", "type": "Fire"},
             {"name": "Moonblast", "type": "Fairy"}
           ]
         }
