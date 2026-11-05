@@ -5035,10 +5035,10 @@
           "ability": "Super Luck",
           "item": "Scope Lens",
           "moves": [
-            {"name": "Tailwind", "type": "Flying"},
+            {"name": "U-turn", "type": "Bug"},
             {"name": "Air Slash", "type": "Flying"},
-            {"name": "Taunt", "type": "Dark"},
-            {"name": "Detect", "type": "Fighting"}
+            {"name": "Hyper Beam", "type": "Normal"},
+            {"name": "Tailwind", "type": "Flying"}
           ]
         },
         {
@@ -5051,7 +5051,7 @@
           "moves": [
             {"name": "Acrobatics", "type": "Flying"},
             {"name": "High Jump Kick", "type": "Fighting"},
-            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Strength", "type": "Rock"},
             {"name": "Detect", "type": "Fighting"}
           ]
         },
@@ -5066,7 +5066,7 @@
             {"name": "Waterfall", "type": "Water"},
             {"name": "Earthquake", "type": "Ground"},
             {"name": "Ice Fang", "type": "Ice"},
-            {"name": "Thunder Wave", "type": "Electric"}
+            {"name": "Dragon Dance", "type": "Dragon"}
           ]
         },
         {
@@ -5078,8 +5078,8 @@
           "item": "Life Orb",
           "moves": [
             {"name": "Dragon Claw", "type": "Dragon"},
-            {"name": "Earthquake", "type": "Ground"},
             {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Flamethrower", "type": "Fire"},
             {"name": "Protect", "type": "Normal"}
           ]
         },
@@ -5089,10 +5089,10 @@
           "level": 52,
           "types": ["Flying", "Fighting"],
           "ability": "Inner Focus",
-          "item": "Expert Belt",
+          "item": "White Herb",
           "moves": [
             {"name": "Close Combat", "type": "Fighting"},
-            {"name": "Brave Bird", "type": "Flying"},
+            {"name": "Acrobatics", "type": "Flying"},
             {"name": "Psycho Cut", "type": "Psychic"},
             {"name": "Protect", "type": "Normal"}
           ]
