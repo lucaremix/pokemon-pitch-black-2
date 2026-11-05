@@ -1358,7 +1358,7 @@
     {
       "id": "gym-fighting-3",
       "name": "Fighting Gym Leader – Team 3",
-      "location": "Fighting Gym – ???",
+      "location": "Fighting Gym",
       "levelCap": 72,
       "sprite": "???",
       "hidden": false,
