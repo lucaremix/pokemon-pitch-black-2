@@ -5194,6 +5194,670 @@
           ]
         }
       ]
+    },
+    {
+      "id": "colress-1",
+      "name": "Colress",
+      "role": "Scientist",
+      "location": "Route 4",
+      "levelCap": 30,
+      "sprite": "colress",
+      "hidden": false,
+      "order": 55,
+      "bag": [{"item": "Hyper Potion", "count": 1}],
+      "pokemon": [
+        {
+          "species": "Spinda",
+          "sprite": "spinda",
+          "level": 28,
+          "types": ["Normal", "Psychic"],
+          "ability": "Contrary",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Dizzy Punch", "type": "Normal"},
+            {"name": "Zen Headbutt", "type": "Psychic"},
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Teeter Dance", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Graveler (Alola)",
+          "sprite": "graveler-alola",
+          "level": 28,
+          "types": ["Rock", "Electric"],
+          "ability": "Galvanize",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Rock Throw", "type": "Rock"},
+            {"name": "Thunder Punch", "type": "Electric"},
+            {"name": "Rock Polish", "type": "Rock"},
+            {"name": "Self-Destruct", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Perrserker",
+          "sprite": "perrserker",
+          "level": 28,
+          "types": ["Steel"],
+          "ability": "Tough Claws",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Taunt", "type": "Dark"},
+            {"name": "Hone Claws", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Metang",
+          "sprite": "metang",
+          "level": 29,
+          "types": ["Steel", "Fighting"],
+          "ability": "Clear Body",
+          "item": "Bright Powder",
+          "moves": [
+            {"name": "Metal Claw", "type": "Steel"},
+            {"name": "Storm Throw", "type": "Fighting"},
+            {"name": "Pursuit", "type": "Dark"},
+            {"name": "Magnet Rise", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Klang",
+          "sprite": "klang",
+          "level": 29,
+          "types": ["Steel", "Electric"],
+          "ability": "Plus",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Gear Grind", "type": "Steel"},
+            {"name": "Electroweb", "type": "Electric"},
+            {"name": "Charge Beam", "type": "Electric"},
+            {"name": "Thunder Shock", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Porygon2",
+          "sprite": "porygon2",
+          "level": 30,
+          "types": ["Normal", "Electric"],
+          "ability": "Download",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Psybeam", "type": "Psychic"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Magnet Rise", "type": "Electric"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colress-2",
+      "name": "Colress",
+      "role": "Scientist",
+      "location": "Control Room",
+      "levelCap": 66,
+      "sprite": "colress",
+      "hidden": false,
+      "order": 56,
+      "bag": [{"item": "Full Restore", "count": 1}],
+      "pokemon": [
+        {
+          "species": "Beheeyem",
+          "sprite": "beheeyem",
+          "level": 64,
+          "types": ["Psychic"],
+          "ability": "Analytic",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Trick Room", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Golem (Alola)",
+          "sprite": "golem-alola",
+          "level": 64,
+          "types": ["Rock", "Electric"],
+          "ability": "Galvanize",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Double-Edge", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Fire Punch", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Rotom (Wash)",
+          "sprite": "rotom-wash",
+          "level": 65,
+          "types": ["Electric", "Water"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Volt Switch", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Klinklang",
+          "sprite": "klinklang",
+          "level": 65,
+          "types": ["Steel", "Electric"],
+          "ability": "Clear Body",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Shift Gear", "type": "Steel"},
+            {"name": "Gear Grind", "type": "Steel"},
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Return", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Metagross",
+          "sprite": "metagross",
+          "level": 65,
+          "types": ["Steel", "Fighting"],
+          "ability": "Clear Body",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Meteor Mash", "type": "Steel"},
+            {"name": "Hammer Arm", "type": "Fighting"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Bullet Punch", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "PorygonZ",
+          "sprite": "porygonz",
+          "level": 66,
+          "types": ["Psychic", "Electric"],
+          "ability": "Adaptability",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Trick", "type": "Psychic"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rival-hugh-1",
+      "name": "Hugh",
+      "role": "Rival",
+      "location": "Aspertia City",
+      "levelCap": 5,
+      "sprite": "hugh",
+      "hidden": false,
+      "order": 57,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Lillipup",
+          "sprite": "lillipup",
+          "level": 5,
+          "types": ["Normal", "Ice"],
+          "ability": "Vital Spirit",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Tackle", "type": "Normal"},
+            {"name": "Leer", "type": "Normal"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Baby-Doll Eyes", "type": "Fairy"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rival-hugh-2",
+      "name": "Hugh",
+      "role": "Rival",
+      "location": "Floccesy Ranch",
+      "levelCap": 8,
+      "sprite": "hugh",
+      "hidden": false,
+      "order": 58,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Lillipup",
+          "sprite": "lillipup",
+          "level": 8,
+          "types": ["Normal", "Ice"],
+          "ability": "Intimidate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Tackle", "type": "Normal"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Baby-Doll Eyes", "type": "Fairy"},
+            {"name": "Ice Fang", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Pidove",
+          "sprite": "pidove",
+          "level": 6,
+          "types": ["Normal", "Flying"],
+          "ability": "Super Luck",
+          "item": "Bright Powder",
+          "moves": [
+            {"name": "Gust", "type": "Flying"},
+            {"name": "Quick Attack", "type": "Normal"},
+            {"name": "Leer", "type": "Normal"},
+            {"name": "Air Cutter", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Pansage",
+          "sprite": "pansage",
+          "level": 6,
+          "types": ["Grass", "Fighting"],
+          "ability": "Overgrow",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Scratch", "type": "Normal"},
+            {"name": "Vine Whip", "type": "Grass"},
+            {"name": "Leer", "type": "Normal"},
+            {"name": "Low Kick", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rival-hugh-3",
+      "name": "Hugh",
+      "role": "Rival",
+      "location": "Undella Town",
+      "levelCap": 54,
+      "sprite": "hugh",
+      "hidden": false,
+      "order": 59,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Unfezant",
+          "sprite": "unfezant",
+          "level": 53,
+          "types": ["Normal", "Flying"],
+          "ability": "Super Luck",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Brave Bird", "type": "Flying"},
+            {"name": "Return", "type": "Normal"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Roost", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Flygon",
+          "sprite": "flygon",
+          "level": 52,
+          "types": ["Bug", "Ground"],
+          "ability": "Levitate",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Volcarona",
+          "sprite": "volcarona",
+          "level": 52,
+          "types": ["Bug", "Fire"],
+          "ability": "Flame Body",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Fiery Dance", "type": "Fire"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Simisage",
+          "sprite": "simisage",
+          "level": 53,
+          "types": ["Grass", "Fighting"],
+          "ability": "Overgrow",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Leaf Storm", "type": "Grass"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "sprite": "eelektross",
+          "level": 52,
+          "types": ["Electric", "Water"],
+          "ability": "Levitate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Stoutland",
+          "sprite": "stoutland",
+          "level": 54,
+          "types": ["Normal", "Ice"],
+          "ability": "Intimidate",
+          "item": "Bright Powder",
+          "moves": [
+            {"name": "Return", "type": "Normal"},
+            {"name": "Ice Fang", "type": "Ice"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Superpower", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rival-hugh-4",
+      "name": "Hugh",
+      "role": "Rival",
+      "location": "Victory Road",
+      "levelCap": 71,
+      "sprite": "hugh",
+      "hidden": false,
+      "order": 60,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Unfezant",
+          "sprite": "unfezant",
+          "level": 69,
+          "types": ["Normal", "Flying"],
+          "ability": "Super Luck",
+          "item": "Bright Powder",
+          "moves": [
+            {"name": "Brave Bird", "type": "Flying"},
+            {"name": "Return", "type": "Normal"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Steel Wing", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Flygon",
+          "sprite": "flygon",
+          "level": 69,
+          "types": ["Bug", "Ground"],
+          "ability": "Levitate",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Iron Moth",
+          "sprite": "ironmoth",
+          "level": 71,
+          "types": ["Fire", "Poison"],
+          "ability": "Quark Drive",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Sludge Wave", "type": "Poison"},
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Simisage",
+          "sprite": "simisage",
+          "level": 70,
+          "types": ["Grass", "Fighting"],
+          "ability": "Overgrow",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Leaf Storm", "type": "Grass"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "sprite": "eelektross",
+          "level": 70,
+          "types": ["Electric", "Water"],
+          "ability": "Levitate",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Stoutland",
+          "sprite": "stoutland",
+          "level": 71,
+          "types": ["Normal", "Ice"],
+          "ability": "Intimidate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Return", "type": "Normal"},
+            {"name": "Ice Fang", "type": "Ice"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Superpower", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ghetsis",
+      "name": "Ghetsis",
+      "role": "Team Plasma",
+      "location": "Giant Chasm",
+      "levelCap": 67,
+      "sprite": "ghetsis",
+      "hidden": false,
+      "order": 61,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Grimmsnarl",
+          "sprite": "grimmsnarl",
+          "level": 67,
+          "types": ["Dark", "Fairy"],
+          "ability": "Prankster",
+          "item": "Light Clay",
+          "moves": [
+            {"name": "Reflect", "type": "Psychic"},
+            {"name": "Light Screen", "type": "Psychic"},
+            {"name": "Spirit Break", "type": "Fairy"},
+            {"name": "Thunder Wave", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Cofagrigus",
+          "sprite": "cofagrigus",
+          "level": 67,
+          "types": ["Ghost", "Steel"],
+          "ability": "Mummy",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Iron Defense", "type": "Steel"},
+            {"name": "Body Press", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Toxtricity",
+          "sprite": "toxtricity",
+          "level": 67,
+          "types": ["Electric", "Poison"],
+          "ability": "Punk Rock",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Overdrive", "type": "Electric"},
+            {"name": "Sludge Wave", "type": "Poison"},
+            {"name": "Boomburst", "type": "Normal"},
+            {"name": "Shift Gear", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Scovillain",
+          "sprite": "scovillain",
+          "level": 67,
+          "types": ["Grass", "Fire"],
+          "ability": "Chlorophyll",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Solar Beam", "type": "Grass"},
+            {"name": "Growth", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Golisopod",
+          "sprite": "golisopod",
+          "level": 67,
+          "types": ["Bug", "Water"],
+          "ability": "Emergency Exit",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "First Impression", "type": "Bug"},
+            {"name": "Liquidation", "type": "Water"},
+            {"name": "Leech Life", "type": "Bug"},
+            {"name": "Aqua Jet", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Iron Jugulis",
+          "sprite": "ironjugulis",
+          "level": 67,
+          "types": ["Dark", "Flying"],
+          "ability": "Quark Drive",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Hurricane", "type": "Flying"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "champion-iris",
+      "name": "Iris",
+      "role": "Champion",
+      "location": "Pokémon League",
+      "levelCap": 74,
+      "sprite": "iris",
+      "hidden": false,
+      "order": 62,
+      "bag": [{"item": "Full Restore", "count": 3}],
+      "pokemon": [
+        {
+          "species": "Jolteon",
+          "sprite": "jolteon",
+          "level": 74,
+          "types": ["Electric", "Ground"],
+          "ability": "Volt Absorb",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Volt Switch", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Lilligant",
+          "sprite": "lilligant",
+          "level": 74,
+          "types": ["Grass", "Fairy"],
+          "ability": "Own Tempo",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Sleep Powder", "type": "Grass"},
+            {"name": "Hidden Power Ice", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Conkeldurr",
+          "sprite": "conkeldurr",
+          "level": 74,
+          "types": ["Fighting", "Rock"],
+          "ability": "Guts",
+          "item": "Flame Orb",
+          "moves": [
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Mach Punch", "type": "Fighting"},
+            {"name": "Facade", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Armarouge",
+          "sprite": "armarouge",
+          "level": 74,
+          "types": ["Fire", "Psychic"],
+          "ability": "Flash Fire",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Energy Ball", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Haxorus",
+          "sprite": "haxorus",
+          "level": 74,
+          "types": ["Dragon", "Steel"],
+          "ability": "Mold Breaker",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Dragonite",
+          "sprite": "dragonite",
+          "level": 74,
+          "types": ["Dragon", "Water"],
+          "ability": "Multiscale",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Aqua Tail", "type": "Water"},
+            {"name": "Extreme Speed", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        }
+      ]
     }
   ]
 }
