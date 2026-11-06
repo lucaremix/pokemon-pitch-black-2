@@ -3204,8 +3204,8 @@
           ]
         },
         {
-          "species": "Ekans",
-          "sprite": "ekans",
+          "species": "Arbok",
+          "sprite": "arbok",
           "level": 18,
           "types": ["Poison"],
           "ability": "Intimidate",
