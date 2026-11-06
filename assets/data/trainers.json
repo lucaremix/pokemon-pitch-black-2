@@ -303,7 +303,7 @@
       "id": "gym-grass-1",
       "name": "Grass Gym Leader – Team 1",
       "location": "Grass Gym – ???",
-      "levelCap": "??",
+      "levelCap": 11,
       "sprite": "???",
       "hidden": false,
       "order": 4,
@@ -312,7 +312,7 @@
         {
           "species": "Roselia",
           "sprite": "roselia",
-          "level": "??",
+          "level": 11,
           "types": ["Grass", "Poison"],
           "ability": "Natural Cure",
           "item": "Sitrus Berry",
@@ -326,7 +326,7 @@
         {
           "species": "Flaaffy",
           "sprite": "flaaffy",
-          "level": "??",
+          "level": 11,
           "types": ["Electric", "Grass"],
           "ability": "Static",
           "item": "Miracle Seed",
@@ -340,7 +340,7 @@
         {
           "species": "Pansear",
           "sprite": "pansear",
-          "level": "??",
+          "level": 12,
           "types": ["Fire", "Grass"],
           "ability": "Gluttony",
           "item": "Focus Band",
@@ -354,7 +354,7 @@
         {
           "species": "Panpour",
           "sprite": "panpour",
-          "level": "??",
+          "level": 12,
           "types": ["Water", "Grass"],
           "ability": "Gluttony",
           "item": "Oran Berry",
@@ -368,7 +368,7 @@
         {
           "species": "Pansage",
           "sprite": "pansage",
-          "level": "??",
+          "level": 12,
           "types": ["Grass", "Fighting"],
           "ability": "Gluttony",
           "item": "Cheri Berry",
@@ -382,7 +382,7 @@
         {
           "species": "Unovan Camerupt",
           "sprite": "unown-question",
-          "level": "??",
+          "level": 13,
           "types": ["Ground", "Grass"],
           "ability": "Chlorophyll",
           "item": "Sitrus Berry",
