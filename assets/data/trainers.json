@@ -78,14 +78,14 @@
           ]
         },
         {
-          "species": "Tranquill",
-          "sprite": "tranquill",
+          "species": "Fearow",
+          "sprite": "fearow",
           "level": 12,
           "types": ["Normal", "Flying"],
-          "ability": "Super Luck",
+          "ability": "Keen Eye",
           "item": "Sharp Beak",
           "moves": [
-            {"name": "Air Cutter", "type": "Flying"},
+            {"name": "Aerial Ace", "type": "Flying"},
             {"name": "Quick Attack", "type": "Normal"},
             {"name": "U-turn", "type": "Bug"},
             {"name": "Roost", "type": "Flying"}
