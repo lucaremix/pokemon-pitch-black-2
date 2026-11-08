@@ -926,7 +926,7 @@
             {"name": "Dragon Pulse", "type": "Dragon"},
             {"name": "Energy Ball", "type": "Grass"},
             {"name": "Strength", "type": "Rock"},
-            {"name": "???", "type": "???"}
+            {"name": "Protect", "type": "Normal"}
           ]
         },
         {
@@ -1033,7 +1033,7 @@
           "sprite": "simisage",
           "level": 53,
           "types": ["Grass", "Fighting"],
-          "ability": "Overgrow",
+          "ability": "Gluttony",
           "item": "Life Orb",
           "moves": [
             {"name": "Leaf Storm", "type": "Grass"},
@@ -1090,7 +1090,7 @@
           "sprite": "cryogonal",
           "level": 54,
           "types": ["Ice", "Flying"],
-          "ability": "Levitate",
+          "ability": "Snow Warning",
           "item": "Focus Sash",
           "moves": [
             {"name": "Blizzard", "type": "Ice"},
@@ -1132,7 +1132,7 @@
           "sprite": "delibird",
           "level": 54,
           "types": ["Ice", "Flying"],
-          "ability": "Technician",
+          "ability": "Hustle",
           "item": "",
           "moves": [
             {"name": "Icy Wind", "type": "Ice"},
@@ -1286,7 +1286,7 @@
           "sprite": "cryogonal",
           "level": 59,
           "types": ["Ice", "Flying"],
-          "ability": "Levitate",
+          "ability": "Snow Warning",
           "item": "Light Clay",
           "moves": [
             {"name": "Blizzard", "type": "Ice"},
@@ -1556,7 +1556,7 @@
           "moves": [
             {"name": "Reflect", "type": "Psychic"},
             {"name": "Light Screen", "type": "Psychic"},
-            {"name": "Spirit Break", "type": "Fairy"},
+            {"name": "Play Rough", "type": "Fairy"},
             {"name": "Thunder Wave", "type": "Electric"}
           ]
         },
@@ -1571,7 +1571,7 @@
             {"name": "Will-O-Wisp", "type": "Fire"},
             {"name": "Shadow Ball", "type": "Ghost"},
             {"name": "Iron Defense", "type": "Steel"},
-            {"name": "Body Press", "type": "Fighting"}
+            {"name": "Flash Cannon", "type": "Steel"}
           ]
         },
         {
@@ -1582,9 +1582,9 @@
           "ability": "Punk Rock",
           "item": "Focus Sash",
           "moves": [
-            {"name": "Overdrive", "type": "Electric"},
+            {"name": "Discharge", "type": "Electric"},
             {"name": "Sludge Wave", "type": "Poison"},
-            {"name": "Boomburst", "type": "Normal"},
+            {"name": "Hyper Voice", "type": "Normal"},
             {"name": "Shift Gear", "type": "Steel"}
           ]
         },
@@ -1610,10 +1610,10 @@
           "ability": "Battle Armor",
           "item": "Sitrus Berry",
           "moves": [
-            {"name": "First Impression", "type": "Bug"},
-            {"name": "Liquidation", "type": "Water"},
+            {"name": "Sucker Punch", "type": "Dark"},
+            {"name": "Razor Shell", "type": "Water"},
             {"name": "Leech Life", "type": "Bug"},
-            {"name": "Aqua Jet", "type": "Water"}
+            {"name": "Rock Slide", "type": "Rock"}
           ]
         },
         {
