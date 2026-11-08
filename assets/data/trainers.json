@@ -22,7 +22,7 @@
       "color": "#26468f",
       "hidden": false,
       "order": 1,
-      "bag": [{"item": "Potion", "count": 1}],
+      "bag": [],
       "pokemon": [
         {
           "species": "Lillipup",
@@ -99,14 +99,14 @@
     },
     {
       "id": "gym1-cheren",
-      "game-id": [156],
+      "game-id": [156,764],
       "name": "Cheren",
       "location": "Aspertia City",
-      "levelCap": 11,
+      "levelCap": 13,
       "sprite": "cheren",
       "hidden": false,
       "order": 3,
-      "bag": [{"item": "Potion", "count": 2}],
+      "bag": [{"item": "Super Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Kecleon",
@@ -196,14 +196,14 @@
     },
     {
       "id": "gym2-roxie",
-      "game-id": [157],
+      "game-id": [157,765],
       "name": "Roxie",
       "location": "Virbank City",
-      "levelCap": 18,
+      "levelCap": 20,
       "sprite": "roxie",
       "hidden": false,
       "order": 4,
-      "bag": [{"item": "Super Potion", "count": 1}],
+      "bag": [{"item": "Super Potion", "count": 2}],
       "pokemon": [
         {
           "species": "Koffing",
@@ -293,14 +293,14 @@
     },
     {
       "id": "gym3-burgh",
-      "game-id": [154],
+      "game-id": [154,766],
       "name": "Burgh",
       "location": "Castelia City",
       "levelCap": 27,
       "sprite": "burgh",
       "hidden": false,
       "order": 5,
-      "bag": [{"item": "Super Potion", "count": 2}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Shuckle",
@@ -398,7 +398,7 @@
       "sprite": "colress",
       "hidden": false,
       "order": 6,
-      "bag": [{"item": "Super Potion", "count": 2}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Spinda",
@@ -488,14 +488,14 @@
     },
     {
       "id": "gym4-elesa",
-      "game-id": [153],
+      "game-id": [153,767],
       "name": "Elesa",
       "location": "Nimbasa City",
-      "levelCap": 34,
+      "levelCap": 36,
       "sprite": "elesa",
       "hidden": false,
       "order": 7,
-      "bag": [{"item": "Hyper Potion", "count": 1}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Raichu (Alola)",
@@ -585,14 +585,14 @@
     },
     {
       "id": "gym5-clay",
-      "game-id": [158],
+      "game-id": [158,768],
       "name": "Clay",
       "location": "Driftveil City",
-      "levelCap": 41,
+      "levelCap": 43,
       "sprite": "clay",
       "hidden": false,
       "order": 8,
-      "bag": [{"item": "Hyper Potion", "count": 1}, {"item": "Super Potion", "count": 1}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Hippowdon",
@@ -690,7 +690,7 @@
       "sprite": "n",
       "hidden": true,
       "order": 9,
-      "bag": [{"item": "Hyper Potion", "count": 2}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Ferrothorn",
@@ -780,14 +780,14 @@
     },
     {
       "id": "gym6-skyla",
-      "game-id": [155],
+      "game-id": [155,769],
       "name": "Skyla",
       "location": "Mistralton City",
-      "levelCap": 50,
+      "levelCap": 52,
       "sprite": "skyla",
       "hidden": false,
       "order": 10,
-      "bag": [{"item": "Hyper Potion", "count": 2}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Talonflame",
@@ -886,7 +886,7 @@
       "color": "#26468f",
       "hidden": false,
       "order": 11,
-      "bag": [{"item": "Hyper Potion", "count": 2}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Unfezant",
@@ -985,7 +985,7 @@
       "hidden": false,
       "double": true,
       "order": 12,
-      "bag": [{"item": "Hyper Potion", "count": 2}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Cryogonal",
@@ -1061,14 +1061,14 @@
     },
     {
       "id": "gym7-drayden",
-      "game-id": [],
+      "game-id": [159,770],
       "name": "Drayden",
       "location": "Opelucid City",
-      "levelCap": 59,
+      "levelCap": 61,
       "sprite": "drayden",
       "hidden": false,
       "order": 13,
-      "bag": [{"item": "Max Potion", "count": 1}, {"item": "Hyper Potion", "count": 1}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Druddigon",
@@ -1167,7 +1167,7 @@
       "hidden": false,
       "double": true,
       "order": 14,
-      "bag": [{"item": "Max Potion", "count": 1}, {"item": "Hyper Potion", "count": 1}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Abomasnow",
@@ -1243,14 +1243,14 @@
     },
     {
       "id": "gym8-marlon",
-      "game-id": [160],
+      "game-id": [160,771],
       "name": "Marlon",
       "location": "Humilau City",
-      "levelCap": 62,
+      "levelCap": 64,
       "sprite": "marlon",
       "hidden": false,
       "order": 15,
-      "bag": [{"item": "Max Potion", "count": 2}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Slowking",
@@ -1348,7 +1348,7 @@
       "sprite": "colress",
       "hidden": false,
       "order": 16,
-      "bag": [{"item": "Full Restore", "count": 1}, {"item": "Max Potion", "count": 1}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Beheeyem",
@@ -1446,7 +1446,7 @@
       "sprite": "ghetsis",
       "hidden": false,
       "order": 17,
-      "bag": [{"item": "Full Restore", "count": 1}, {"item": "Max Potion", "count": 1}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Grimmsnarl",
@@ -1536,7 +1536,7 @@
     },
     {
       "id": "rival-hugh-4",
-      "game-id": [],
+      "game-id": [684,685,686],
       "name": "Hugh",
       "role": "Rival",
       "location": "Victory Road",
@@ -1545,7 +1545,7 @@
       "color": "#26468f",
       "hidden": false,
       "order": 18,
-      "bag": [{"item": "Full Restore", "count": 1}, {"item": "Max Potion", "count": 1}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Unfezant",
@@ -1635,11 +1635,11 @@
     },
     {
       "id": "e4-shauntal",
-      "game-id": [38],
+      "game-id": [38,772],
       "name": "Shauntal",
       "role": "Elite Four",
       "location": "Pokémon League",
-      "levelCap": 72,
+      "levelCap": 74,
       "sprite": "shauntal",
       "hidden": false,
       "order": 19,
@@ -1733,11 +1733,11 @@
     },
     {
       "id": "e4-grimsley",
-      "game-id": [40],
+      "game-id": [40,773],
       "name": "Grimsley",
       "role": "Elite Four",
       "location": "Pokémon League",
-      "levelCap": 72,
+      "levelCap": 74,
       "sprite": "grimsley",
       "hidden": false,
       "order": 20,
@@ -1831,11 +1831,11 @@
     },
     {
       "id": "e4-caitlin",
-      "game-id": [41],
+      "game-id": [41,775],
       "name": "Caitlin",
       "role": "Elite Four",
       "location": "Pokémon League",
-      "levelCap": 72,
+      "levelCap": 74,
       "sprite": "caitlin",
       "hidden": false,
       "order": 21,
@@ -1929,11 +1929,11 @@
     },
     {
       "id": "e4-marshal",
-      "game-id": [39],
+      "game-id": [39,774],
       "name": "Marshal",
       "role": "Elite Four",
       "location": "Pokémon League",
-      "levelCap": 72,
+      "levelCap": 74,
       "sprite": "marshal",
       "hidden": false,
       "order": 22,
@@ -2027,7 +2027,7 @@
     },
     {
       "id": "champion-iris",
-      "game-id": [341,536,776],
+      "game-id": [341,776],
       "name": "Iris",
       "role": "Champion",
       "location": "Pokémon League",
