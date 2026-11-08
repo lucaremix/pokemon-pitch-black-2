@@ -58,7 +58,7 @@
           "sprite": "lillipup",
           "level": 8,
           "types": ["Normal", "Ice"],
-          "ability": "Intimidate",
+          "ability": "Vital Spirit",
           "item": "Sitrus Berry",
           "moves": [
             {"name": "Tackle", "type": "Normal"},
@@ -86,7 +86,7 @@
           "sprite": "pansage",
           "level": 6,
           "types": ["Grass", "Fighting"],
-          "ability": "Overgrow",
+          "ability": "Gluttony",
           "item": "Expert Belt",
           "moves": [
             {"name": "Scratch", "type": "Normal"},
