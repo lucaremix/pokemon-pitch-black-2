@@ -1891,10 +1891,10 @@
           "ability": "Steadfast",
           "item": "Life Orb",
           "moves": [
-            {"name": "Swords Dance", "type": "Normal"},
-            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Retaliate", "type": "Normal"},
+            {"name": "Aura Sphere", "type": "Fighting"},
             {"name": "Extreme Speed", "type": "Normal"},
-            {"name": "Zen Headbutt", "type": "Psychic"}
+            {"name": "Extrasensory", "type": "Psychic"}
           ]
         },
         {
