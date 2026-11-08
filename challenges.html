@@ -1,634 +1,2029 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#07090d">
-<title>Trainers – Pokémon Pitch Black 2</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-<meta name="description" content="Every important battle of Pokémon Pitch Black 2 in order: gym leaders, rivals, Team Plasma, Elite Four and Champion, with their teams.">
-<!--
-  Everything on this page comes from assets/data/trainers.json in the repo (read only here).
-  Battles are shown in "order". "hidden": true = spoiler, unlocked by clicking it.
--->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow:wght@400;500;600;700&display=swap">
-<style>
-  :root {
-    --ink: #07090d;
-    --panel: #10141c;
-    --panel-2: #161b26;
-    --line: #232b3a;
-    --line-2: #34405a;
-    --text: #eaf0fb;
-    --muted: #8e9ab2;
-    --bolt: #2f7bff;
-    --volt: #ffcb05;
-    --display: "Anybody", "Arial Narrow", system-ui, sans-serif;
-    --body: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0; background: var(--ink); color: var(--text);
-    font-family: var(--body); font-size: 16px; line-height: 1.45;
-    -webkit-font-smoothing: antialiased;
-  }
-  button, input { font-family: inherit; }
-  :focus-visible { outline: 3px solid var(--volt); outline-offset: 2px; }
-  .wrap { width: min(1240px, 100% - 32px); margin-inline: auto; }
-
-  /* ───────── hero ───────── */
-  .hero-zone { position: relative; isolation: isolate; overflow: hidden; }
-  .hero-zone::before {
-    content: ""; position: absolute; inset: 0; z-index: -2;
-    background:
-      radial-gradient(760px 380px at 50% 18%, rgba(47,123,255,.34), transparent 70%),
-      radial-gradient(420px 260px at 88% 8%, rgba(255,203,5,.07), transparent 70%);
-  }
-  .hero-zone::after {
-    content: ""; position: absolute; inset: 0; z-index: -1;
-    background: repeating-linear-gradient(115deg, rgba(255,255,255,.04) 0 2px, transparent 2px 24px);
-    -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 25%, #000 0%, transparent 75%);
-            mask-image: radial-gradient(ellipse 70% 80% at 50% 25%, #000 0%, transparent 75%);
-  }
-  .topbar { padding-top: 16px; }
-  .home-link {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 9px 16px 9px 12px; border-radius: 999px;
-    background: rgba(16,20,28,.7); border: 1px solid var(--line-2);
-    color: var(--text); text-decoration: none; font-size: 14.5px; font-weight: 600;
-    backdrop-filter: blur(8px);
-    transition: border-color .15s, background .15s;
-  }
-  .home-link:hover { border-color: var(--volt); background: rgba(22,27,38,.9); }
-  .home-link svg { width: 16px; height: 16px; }
-
-  .hero { text-align: center; padding: 6px 0 38px; }
-  .hero .logo {
-    display: block; margin: 0 auto 8px; width: min(380px, 80vw); height: auto;
-    filter: drop-shadow(0 0 26px rgba(47,123,255,.55)) drop-shadow(0 6px 14px rgba(0,0,0,.5));
-  }
-  h1 {
-    margin: 0; font-family: var(--display); font-weight: 800; font-stretch: 125%;
-    font-size: clamp(30px, 5.6vw, 54px); line-height: 1.05; letter-spacing: .005em;
-    text-shadow: 0 3px 0 rgba(0,0,0,.35), 0 0 40px rgba(47,123,255,.35);
-  }
-
-  /* ───────── toolbar ───────── */
-  .searchbar {
-    position: sticky; top: 0; z-index: 30; padding: 10px 0;
-    background: rgba(7,9,13,.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-    border-block: 1px solid var(--line);
-  }
-  .search-row { display: flex; gap: 10px; align-items: center; }
-  .search { position: relative; flex: 1 1 auto; min-width: 0; }
-  .search svg.glass { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
-  .search input {
-    width: 100%; height: 46px; padding: 0 50px 0 44px; border-radius: 12px;
-    background: var(--panel); border: 1px solid var(--line); color: var(--text);
-    font-size: 16px; font-weight: 500; -webkit-appearance: none; appearance: none;
-    transition: border-color .15s, box-shadow .15s;
-  }
-  .search input::-webkit-search-cancel-button { display: none; }
-  .search input::placeholder { color: #67738c; }
-  .search input:focus-visible { outline: none; border-color: var(--bolt); box-shadow: 0 0 0 3px rgba(47,123,255,.35); }
-  .search kbd {
-    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
-    min-width: 24px; padding: 2px 7px; text-align: center; border-radius: 6px;
-    border: 1px solid var(--line-2); background: var(--panel-2); color: var(--muted);
-    font: 600 12px var(--body); pointer-events: none;
-  }
-  .search input:focus ~ kbd, .search input:not(:placeholder-shown) ~ kbd { display: none; }
-  @media (hover: none) { .search kbd { display: none; } }
-  .reset {
-    background: transparent; border: 1px solid var(--line-2); color: var(--text);
-    padding: 0 14px; height: 46px; border-radius: 12px; font-size: 14px; font-weight: 600; cursor: pointer; flex: none;
-    transition: border-color .15s, background .15s;
-  }
-  .reset:hover { border-color: var(--volt); background: var(--panel); }
-  .reset[hidden] { display: none; }
-  .filters { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 16px; }
-  .count { color: var(--muted); font-weight: 600; font-size: 14.5px; font-variant-numeric: tabular-nums; }
-  .collapse {
-    height: 34px; padding: 0 14px; border-radius: 999px; cursor: pointer;
-    background: var(--panel); border: 1px solid var(--line); color: var(--text); font-size: 13.5px; font-weight: 600;
-    transition: border-color .15s;
-  }
-  .collapse:hover { border-color: var(--volt); }
-  .collapse[hidden] { display: none; }
-
-  /* ───────── trainer rows (always one per row) ───────── */
-  main { padding: 18px 0 48px; }
-  .trainers { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
-  .trainer {
-    --a: #6b7a9c;
-    background: var(--panel); border-radius: 16px; overflow: hidden; scroll-margin-top: 84px;
-    border: 1px solid color-mix(in srgb, var(--a) 30%, var(--line));
-    transition: border-color .2s, box-shadow .2s;
-  }
-  .trainer[hidden] { display: none; }
-  .trainer:hover { border-color: color-mix(in srgb, var(--a) 75%, var(--line)); }
-  .trainer.open {
-    border-color: color-mix(in srgb, var(--a) 80%, #fff 6%);
-    box-shadow: 0 18px 50px rgba(0,0,0,.4), 0 0 0 1px color-mix(in srgb, var(--a) 30%, transparent);
-  }
-  .t-head {
-    width: 100%; display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto auto auto; align-items: center; gap: 16px;
-    padding: 12px 18px 12px 14px; border: 0; color: inherit; text-align: left; cursor: pointer;
-    background: linear-gradient(90deg, color-mix(in srgb, var(--a) 22%, var(--panel)), var(--panel) 62%);
-  }
-  .t-head:focus-visible { outline-offset: -3px; }
-  .t-num {
-    font-family: var(--display); font-weight: 800; font-size: 15px; letter-spacing: .02em; color: var(--muted);
-    min-width: 30px; font-variant-numeric: tabular-nums;
-  }
-  .t-sprite {
-    width: 80px; height: 80px; display: grid; place-items: center; border-radius: 14px; overflow: hidden;
-    background: radial-gradient(circle at 50% 78%, rgba(255,255,255,.2), transparent 70%), color-mix(in srgb, var(--a) 34%, #0a0d13);
-    border: 1px solid color-mix(in srgb, var(--a) 45%, transparent);
-  }
-  .t-sprite img { display: block; max-width: 100%; max-height: 100%; image-rendering: pixelated; }
-  .t-sprite.duo { display: flex; justify-content: center; align-items: flex-end; }
-  .t-sprite.duo img { max-width: 62%; margin: 0 -9%; }
-  .dbl { display: inline-block; vertical-align: middle; margin-left: 6px; padding: 1px 8px; border-radius: 999px; font: 800 13px var(--display);
-    color: #0a0d13; background: var(--volt); letter-spacing: .02em; }
-  .t-sprite svg { width: 46px; height: 46px; color: rgba(255,255,255,.35); }
-  .t-id { min-width: 0; }
-  .t-name {
-    margin: 0; font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1.1; letter-spacing: .005em;
-    overflow-wrap: anywhere;
-  }
-  .t-role { margin-top: 3px; color: var(--muted); font-size: 14.5px; font-weight: 500; }
-  .t-team { display: flex; gap: 2px; }
-  .t-team .mini { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 10px; background: color-mix(in srgb, var(--a) 14%, #0a0d13); }
-  .t-team .mini img { display: block; image-rendering: pixelated; }
-  .cap {
-    flex: none; display: inline-flex; flex-direction: column; align-items: center; line-height: 1; padding: 7px 12px 8px;
-    border-radius: 12px; background: color-mix(in srgb, var(--a) 24%, #0b0e14); border: 1px solid color-mix(in srgb, var(--a) 55%, transparent);
-  }
-  .cap small { font: 600 10.5px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
-  .cap b { font-family: var(--display); font-weight: 800; font-size: 24px; font-variant-numeric: tabular-nums; }
-  .chev { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); }
-  .chev svg { width: 18px; height: 18px; transition: transform .25s; }
-  .trainer.open .chev svg { transform: rotate(180deg); }
-
-  /* hidden (spoiler) trainers */
-  .trainer.locked { --a: #8e9ab2; border-style: dashed; }
-  .trainer.locked .t-head { background: repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 10px, transparent 10px 20px), var(--panel); }
-  .trainer.locked .t-name { color: #cdd6e8; }
-  .lock {
-    display: inline-flex; align-items: center; gap: 7px; margin-top: 6px; padding: 3px 11px 3px 8px; border-radius: 999px;
-    font-size: 12.5px; font-weight: 600; color: var(--volt);
-    background: rgba(255,203,5,.1); border: 1px solid rgba(255,203,5,.4);
-  }
-  .lock svg { width: 14px; height: 14px; }
-
-  /* the drop-down */
-  .t-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .32s cubic-bezier(.2,.7,.2,1); }
-  .trainer.open .t-panel { grid-template-rows: 1fr; }
-  .t-inner { overflow: hidden; min-height: 0; visibility: hidden; transition: visibility 0s .32s; }
-  .trainer.open .t-inner { visibility: visible; transition-delay: 0s; }
-  .t-body { padding: 18px 18px 22px; border-top: 1px solid var(--line); background: linear-gradient(180deg, color-mix(in srgb, var(--a) 7%, var(--panel)), var(--panel) 70%); }
-  .t-notes { margin: 0 0 16px; padding: 10px 14px; border-radius: 12px; font-size: 14.5px; color: #cdd6e8; background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--a); }
-  .t-notes b { color: var(--text); }
-  .bag { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 16px; padding: 0; list-style: none; }
-  .bag-label { font: 700 11px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
-  .bag .item { padding-right: 10px; }
-  .bag .cnt { font-family: var(--display); font-weight: 800; font-variant-numeric: tabular-nums; color: var(--text); }
-  .team { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
-
-  /* a Pokémon of the team */
-  .mon {
-    --c1: #6b7a9c; --c2: #6b7a9c;
-    display: flex; flex-direction: column; overflow: hidden; border-radius: 14px; background: var(--panel-2);
-    border: 1px solid color-mix(in srgb, var(--c1) 32%, var(--line));
-  }
-  .m-stage {
-    --t1: color-mix(in srgb, var(--c1) 46%, #0a0d13);
-    --t2: color-mix(in srgb, var(--c2) 46%, #0a0d13);
-    position: relative; height: 150px;
-    background:
-      radial-gradient(110px 80px at 50% 68%, rgba(255,255,255,.2), transparent 72%),
-      linear-gradient(to top, rgba(7,9,13,.7), transparent 55%),
-      linear-gradient(112deg, var(--t1) 0 49.3%, rgba(255,255,255,.38) 49.3% 50.2%, var(--t2) 50.2% 100%);
-  }
-  .mon.mono .m-stage { background:
-      radial-gradient(110px 80px at 50% 68%, rgba(255,255,255,.2), transparent 72%),
-      linear-gradient(to top, rgba(7,9,13,.7), transparent 55%),
-      linear-gradient(112deg, var(--t1), color-mix(in srgb, var(--c1) 26%, #0a0d13)); }
-  .m-sprite { position: absolute; inset: 12px 0 34px; display: grid; justify-items: center; align-items: end; }
-  .m-sprite img { display: block; }
-  .m-lv {
-    position: absolute; top: 10px; left: 12px; z-index: 2; padding: 2px 10px; border-radius: 8px;
-    font-family: var(--display); font-weight: 800; font-size: 15px; font-variant-numeric: tabular-nums;
-    background: rgba(7,9,13,.66); border: 1px solid rgba(255,255,255,.25); backdrop-filter: blur(6px);
-  }
-  .m-lv small { font: 600 11px var(--body); margin-right: 4px; opacity: .8; }
-  .m-types { position: absolute; z-index: 2; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; align-items: flex-end; }
-  .type { display: inline-flex; align-items: center; gap: 6px; padding: 3px 12px 3px 4px; border-radius: 999px; background: rgba(7,9,13,.62); border: 1px solid rgba(255,255,255,.2); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-size: 13.5px; font-weight: 600; }
-  .type img { width: 24px; height: 24px; display: block; }
-  .tico { display: block; width: 22px; height: 22px; flex: none; }
-  .tfb { display: inline-block; padding: 1px 7px; border-radius: 4px; font: 700 10px var(--body); letter-spacing: .04em; text-transform: uppercase; color: #fff; background: var(--tc, #6b7a9c); border: 1px solid rgba(255,255,255,.35); }
-  .m-body { display: flex; flex-direction: column; gap: 10px; padding: 12px 14px 14px; }
-  .m-name { margin: 0; font-family: var(--display); font-weight: 800; font-size: 21px; line-height: 1.1; overflow-wrap: anywhere; }
-  .m-meta { display: flex; flex-wrap: wrap; gap: 6px; }
-  .ability {
-    display: inline-flex; align-items: center; gap: 7px; padding: 4px 11px 4px 9px; border-radius: 8px;
-    background: var(--panel); border: 1px solid var(--line); color: #dbe3f4;
-    font-size: 13.5px; font-weight: 500; text-decoration: none; transition: border-color .15s, background .15s;
-  }
-  a.ability:hover { border-color: color-mix(in srgb, var(--c1) 70%, var(--line)); background: color-mix(in srgb, var(--c1) 16%, var(--panel)); color: #fff; }
-  .ability svg { width: 9px; height: 9px; flex: none; color: color-mix(in srgb, var(--c1) 62%, #fff); }
-  .item {
-    display: inline-flex; align-items: center; gap: 6px; padding: 0 12px 0 2px; height: 36px; border-radius: 8px;
-    background: var(--panel); border: 1px solid var(--line); color: #dbe3f4; font-size: 13.5px; font-weight: 500;
-  }
-  .item img { width: 32px; height: 32px; display: block; image-rendering: pixelated; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; image-rendering: pixelated; object-fit: contain; }
-  .m-moves { list-style: none; margin: 2px 0 0; padding: 0; display: grid; gap: 6px; }
-  .move {
-    display: flex; align-items: center; gap: 10px; padding: 5px 12px 5px 7px; border-radius: 10px;
-    color: var(--text); text-decoration: none; font-size: 14.5px; font-weight: 600; min-height: 34px;
-    background: color-mix(in srgb, var(--mc) 15%, var(--panel));
-    border: 1px solid color-mix(in srgb, var(--mc) 38%, transparent);
-    transition: background .15s, border-color .15s, transform .15s;
-  }
-  a.move:hover { background: color-mix(in srgb, var(--mc) 28%, var(--panel)); border-color: color-mix(in srgb, var(--mc) 80%, #fff 5%); transform: translateY(-1px); }
-  .move .tico, .move .tfb { flex: none; }
-  .mname { min-width: 0; overflow-wrap: anywhere; }
-
-  .empty { text-align: center; color: var(--muted); padding: 70px 0 30px; font-size: 17px; }
-  .empty strong { display: block; color: var(--text); font-size: 20px; margin-bottom: 4px; }
-  .empty .reset { margin-top: 16px; height: 42px; }
-  .empty[hidden] { display: none; }
-  .error { margin: 24px 0; padding: 16px 18px; border-radius: 12px; background: #2a1216; border: 1px solid #7a2a35; color: #ffd3d8; }
-  .error code { display: block; margin-top: 8px; white-space: pre-wrap; font-size: 13.5px; color: #fff; }
-
-  /* ───────── footer ───────── */
-  .site-footer {
-    padding: 34px 0 44px; text-align: center; border-top: 1px solid var(--line);
-    background: linear-gradient(180deg, rgba(47,123,255,.12), transparent 80%);
-  }
-  .credits {
-    margin: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
-    gap: 8px 18px; color: var(--muted); font-size: 14.5px;
-  }
-  .credits .game { color: var(--volt); font-family: var(--display); font-weight: 800; font-stretch: 112%; letter-spacing: .01em; font-size: 15.5px; }
-  .credits strong { color: var(--text); font-weight: 700; }
-  .credits .rule { width: 1px; height: 16px; background: var(--line-2); }
-
-  .to-top {
-    position: fixed; right: 18px; bottom: 18px; z-index: 40; width: 48px; height: 48px; border-radius: 50%;
-    display: grid; place-items: center; border: 0; cursor: pointer;
-    background: var(--volt); color: #0a0d13; box-shadow: 0 10px 28px rgba(0,0,0,.5);
-    opacity: 0; visibility: hidden; transform: translateY(8px);
-    transition: opacity .2s, transform .2s, visibility .2s;
-  }
-  .to-top.show { opacity: 1; visibility: visible; transform: none; }
-  .to-top svg { width: 20px; height: 20px; }
-
-
-  @media (max-width: 900px) { .t-team { display: none; } .t-head { grid-template-columns: auto auto minmax(0, 1fr) auto auto; } }
-  @media (max-width: 560px) {
-    .t-head { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "spr id chev" "spr cap cap"; gap: 6px 12px; padding: 12px; }
-    .t-num { display: none; }
-    .t-sprite { grid-area: spr; width: 64px; height: 64px; }
-    .t-id { grid-area: id; }
-    .cap { grid-area: cap; flex-direction: row; gap: 8px; justify-self: start; padding: 4px 10px; }
-    .cap small { margin: 0; }
-    .cap b { font-size: 18px; }
-    .chev { grid-area: chev; }
-    .t-name { font-size: 22px; }
-    .team { grid-template-columns: 1fr; }
-    .credits { flex-direction: column; gap: 6px; }
-    .credits .rule { display: none; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .t-panel, .chev svg, .to-top, .t-inner { transition: none; }
-  }
-</style>
-</head>
-<body>
-
-<div class="hero-zone">
-  <div class="wrap">
-    <div class="topbar">
-      <a class="home-link" href="index.html">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
-        Home
-      </a>
-    </div>
-    <header class="hero">
-      <img class="logo" id="logo" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/logofull.png" alt="Pokémon Pitch Black 2" width="1774" height="887" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='assets/images/logofull.png'}">
-      <h1>Trainers</h1>
-    </header>
-  </div>
-</div>
-
-<div class="searchbar">
-  <div class="wrap search-row">
-    <div class="search">
-      <svg class="glass" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="q" type="search" placeholder="Search trainer, place, Pokémon, move, item or ability" aria-label="Search trainers" autocomplete="off" spellcheck="false">
-      <kbd aria-hidden="true">/</kbd>
-    </div>
-    <button class="reset" id="reset" type="button" hidden>Clear</button>
-  </div>
-</div>
-
-<section class="wrap filters" aria-label="Status">
-  <span class="count" id="count" role="status" aria-live="polite"></span>
-  <button class="collapse" id="collapse" type="button" hidden>Collapse all</button>
-</section>
-
-<main class="wrap">
-  <div id="error" class="error" hidden></div>
-  <ol class="trainers" id="list"></ol>
-  <div class="empty" id="empty" hidden>
-    <strong>No trainer matches your search.</strong>
-    Try another name, Pokémon or move.
-    <div><button class="reset" id="reset2" type="button">Clear search</button></div>
-  </div>
-  <noscript><p class="empty">Turn on JavaScript to see the trainers.</p></noscript>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p class="credits">
-      <span class="game">Pokémon Pitch Black 2</span>
-      <span class="rule" aria-hidden="true"></span>
-      <span>Pokémon &copy; Nintendo / Game Freak</span>
-      <span class="rule" aria-hidden="true"></span>
-      <span>created by <strong>lucaremix</strong></span>
-    </p>
-  </div>
-</footer>
-
-<button class="to-top" id="toTop" type="button" aria-label="Back to top">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 15 7-7 7 7"/></svg>
-</button>
-
-<script>
-// Data lives in assets/data/trainers.json (same repo). This page only shows it.
-const REPO = { owner: "lucaremix", repo: "pokemon-pitch-black-2", branch: "main", path: "assets/data/trainers.json" };
-const RAW = "https://raw.githubusercontent.com/" + REPO.owner + "/" + REPO.repo + "/" + REPO.branch + "/";
-const DATA_URLS = [RAW + "assets/data/trainers.json", "assets/data/trainers.json"];
-const DEX_URLS = [RAW + "assets/data/pokedex.json", "assets/data/pokedex.json"];
-function start(DB, DEX) {
-  "use strict";
-  var $ = function (id) { return document.getElementById(id); };
-  var list = $("list"), empty = $("empty"), countEl = $("count"), q = $("q"), errBox = $("error");
-  var resetBtns = [$("reset"), $("reset2")], collapseBtn = $("collapse"), toTop = $("toTop");
-
-  var TYPE_COLORS = {
-    Normal: "#a8a77a", Fire: "#ee8130", Water: "#6390f0", Electric: "#f7d02c", Grass: "#7ac74c",
-    Ice: "#96d9d6", Fighting: "#c22e28", Poison: "#a33ea1", Ground: "#e2bf65", Flying: "#a98ff3",
-    Psychic: "#f95587", Bug: "#a6b91a", Rock: "#b6a136", Ghost: "#735797", Dragon: "#6f35fc",
-    Dark: "#705746", Steel: "#b7b7ce", Fairy: "#d685ad"
-  };
-  var TYPE_ICONS = {};
-["Normal","Fighting","Flying","Poison","Ground","Rock","Bug","Ghost","Fire","Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Steel","Fairy","Sound"]
-  .forEach(function (t) { TYPE_ICONS[t] = RAW + "assets/images/typinglogos/" + t.toLowerCase() + ".svg"; });
-  var CHEV = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
-  var LOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
-  var DIAMOND = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 0l5 5-5 5-5-5z" fill="currentColor"/></svg>';
-  var MYSTERY = '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><circle cx="24" cy="14" r="8"/><path d="M8 42c0-9 7-15 16-15s16 6 16 15"/></svg>';
-  var XICON_UNUSED = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
-  var PLACEHOLDER = "data:image/svg+xml;utf8," + encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 96 96"><circle cx="48" cy="48" r="30" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="4"/><path d="M18 48h60" stroke="#fff" stroke-opacity=".55" stroke-width="4"/><circle cx="48" cy="48" r="8" fill="#10141c" stroke="#fff" stroke-opacity=".55" stroke-width="4"/></svg>');
-
-  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
-
-  // ── data ──
-  DB = DB || {};
-  var META = DB.meta || {};
-  var URLS = Object.assign({
-    trainer: "https://play.pokemonshowdown.com/sprites/trainers/{sprite}.png",
-    item: "https://play.pokemonshowdown.com/sprites/itemicons/{item}.png"
-  }, META.urls || {});
-  var fill = function (kind, vars) { return URLS[kind].replace(/\{(\w+)\}/g, function (m, k) { return encodeURIComponent(vars[k] == null ? "" : vars[k]); }); };
-  var itemSlug = function (n) { return String(n).toLowerCase().replace(/['’.]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, ""); };
-  var TRAINERS = (DB.trainers || []).slice().sort(function (a, b) { return (a.order || 0) - (b.order || 0); });
-  var abilityURL = function (a) { return "https://bulbapedia.bulbagarden.net/wiki/" + encodeURIComponent(a.trim().replace(/\s+/g, "_")) + "_(Ability)"; };
-  var moveURL = function (n) {
-    if (!n || /\(TBD\)|^\?+$/i.test(n)) return "";
-    if (/^Hidden Power/i.test(n)) n = "Hidden Power";
-    return "https://bulbapedia.bulbagarden.net/wiki/" + encodeURIComponent(n.trim().replace(/\s+/g, "_")) + "_(move)";
-  };
-
-  // Pokémon come from pokedex.json; sprites are the same static Gen 5 sprites as the Pokédex
-  var DEXMAP = new Map((DEX || []).map(function (p) { return [p.name, p]; }));
-  var norm = function (s) { return String(s || "").toLowerCase().replace(/[’']/g, "'").replace(/[^a-z0-9']/g, ""); };
-  var DEXNORM = new Map((DEX || []).map(function (p) { return [norm(p.name), p]; }));
-  function dexOf(species) { return DEXMAP.get(species) || DEXNORM.get(norm(species)) || DEXNORM.get(norm(String(species).replace(/^(.+?) \(Unova\)$/, "Unovan $1"))); }
-  var BW = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/";
-  function spriteURL(p) { var d = dexOf(p.species); return d ? (d.sprite || BW + d.pokedex_id + ".png") : PLACEHOLDER; }
-  // Gen 5 sprites sit in a 96×96 canvas with empty margins: crop once, then scale to the box
-  var CROP = new Map();
-  window.__fit = function (img) {
-    var box = +img.dataset.box || 96, src = img.currentSrc || img.src;
-    if (!img.dataset.c && !src.startsWith("data:")) {
-      img.dataset.c = "1";
-      try {
-        var w = img.naturalWidth, h = img.naturalHeight, cv = document.createElement("canvas");
-        cv.width = w; cv.height = h; var cx = cv.getContext("2d"); cx.drawImage(img, 0, 0);
-        var a = cx.getImageData(0, 0, w, h).data, x0 = w, y0 = h, x1 = -1, y1 = -1;
-        for (var y = 0; y < h; y++) for (var x = 0; x < w; x++) if (a[(y * w + x) * 4 + 3] > 8) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
-        if (x1 >= 0) {
-          var o = document.createElement("canvas"); o.width = x1 - x0 + 1; o.height = y1 - y0 + 1;
-          o.getContext("2d").drawImage(cv, x0, y0, o.width, o.height, 0, 0, o.width, o.height);
-          var u = o.toDataURL(); CROP.set(src, u); img.src = u; return;
+{
+  "_readme": "Edit freely: species, level, types, ability, item, moves, location. 'sprite' is the slug for the Pokemon GIF (variants use 'unown-question' until real sprites exist). Each move's type is in its 'type' field. 'hidden': true = spoiler battle, opens only after clicking. 'role' is optional (gym leaders have none). 'game-id' = the trainer IDs in the game's trainer data (all the variants of that battle; not shown on the site). 'double': true = double battle; 'sprite' can be a list for two trainers. 'color' (optional) = accent colour of the trainer's row, instead of the colour of the team's main type.",
+  "meta": {
+    "game": "Pokemon Pitch Black 2",
+    "urls": {
+      "trainer": "https://play.pokemonshowdown.com/sprites/trainers/{sprite}.png",
+      "pokemon": "https://play.pokemonshowdown.com/sprites/gen5ani/{sprite}.gif",
+      "item": "https://play.pokemonshowdown.com/sprites/itemicons/{item}.png"
+    },
+    "itemSlugRule": "lowercase item name, spaces become hyphens, apostrophes/periods removed (e.g. 'Sitrus Berry' -> 'sitrus-berry', 'Never-Melt Ice' -> 'never-melt-ice')",
+    "levelRule": "the highest-level Pokemon of each trainer is exactly the level cap; the others are 1-2 levels below"
+  },
+  "trainers": [
+    {
+      "id": "rival-hugh-1",
+      "game-id": [161, 162, 163],
+      "name": "Hugh",
+      "role": "Rival",
+      "location": "Aspertia City",
+      "levelCap": 5,
+      "sprite": "hugh",
+      "color": "#26468f",
+      "hidden": false,
+      "order": 1,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Lillipup",
+          "sprite": "lillipup",
+          "level": 5,
+          "types": ["Normal", "Ice"],
+          "ability": "Vital Spirit",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Tackle", "type": "Normal"},
+            {"name": "Leer", "type": "Normal"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Baby-Doll Eyes", "type": "Fairy"}
+          ]
         }
-      } catch (e) {}
+      ]
+    },
+    {
+      "id": "rival-hugh-2",
+      "game-id": [166, 167, 168],
+      "name": "Hugh",
+      "role": "Rival",
+      "location": "Floccesy Ranch",
+      "levelCap": 8,
+      "sprite": "hugh",
+      "color": "#26468f",
+      "hidden": false,
+      "order": 2,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Lillipup",
+          "sprite": "lillipup",
+          "level": 8,
+          "types": ["Normal", "Ice"],
+          "ability": "Intimidate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Tackle", "type": "Normal"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Baby-Doll Eyes", "type": "Fairy"},
+            {"name": "Ice Fang", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Pidove",
+          "sprite": "pidove",
+          "level": 6,
+          "types": ["Normal", "Flying"],
+          "ability": "Super Luck",
+          "item": "Bright Powder",
+          "moves": [
+            {"name": "Gust", "type": "Flying"},
+            {"name": "Quick Attack", "type": "Normal"},
+            {"name": "Leer", "type": "Normal"},
+            {"name": "Air Cutter", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Pansage",
+          "sprite": "pansage",
+          "level": 6,
+          "types": ["Grass", "Fighting"],
+          "ability": "Overgrow",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Scratch", "type": "Normal"},
+            {"name": "Vine Whip", "type": "Grass"},
+            {"name": "Leer", "type": "Normal"},
+            {"name": "Low Kick", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym1-cheren",
+      "game-id": [156],
+      "name": "Cheren",
+      "location": "Aspertia City",
+      "levelCap": 11,
+      "sprite": "cheren",
+      "hidden": false,
+      "order": 3,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Kecleon",
+          "sprite": "kecleon",
+          "level": 11,
+          "types": ["Normal"],
+          "ability": "Color Change",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Fury Swipes", "type": "Normal"},
+            {"name": "Feint Attack", "type": "Dark"},
+            {"name": "Rock Tomb", "type": "Rock"},
+            {"name": "Thunder Wave", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Zorua (Hisui)",
+          "sprite": "zorua-hisui",
+          "level": 11,
+          "types": ["Normal", "Ghost"],
+          "ability": "Illusion",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Hex", "type": "Ghost"},
+            {"name": "Scratch", "type": "Normal"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Taunt", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Zigzagoon (Galar)",
+          "sprite": "zigzagoon-galar",
+          "level": 11,
+          "types": ["Dark", "Normal"],
+          "ability": "Pickup",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Headbutt", "type": "Normal"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Baby-Doll Eyes", "type": "Fairy"},
+            {"name": "Sand Attack", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Patrat",
+          "sprite": "patrat",
+          "level": 12,
+          "types": ["Normal", "Psychic"],
+          "ability": "Keen Eye",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Retaliate", "type": "Normal"},
+            {"name": "Heart Stamp", "type": "Psychic"},
+            {"name": "Work Up", "type": "Normal"},
+            {"name": "Detect", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Fearow",
+          "sprite": "fearow",
+          "level": 12,
+          "types": ["Normal", "Flying"],
+          "ability": "Keen Eye",
+          "item": "Sharp Beak",
+          "moves": [
+            {"name": "Aerial Ace", "type": "Flying"},
+            {"name": "Quick Attack", "type": "Normal"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Roost", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Unovan Slowbro",
+          "sprite": "unown-question",
+          "level": 13,
+          "types": ["Normal", "Bug"],
+          "ability": "Swarm",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Bug Bite", "type": "Bug"},
+            {"name": "Body Slam", "type": "Normal"},
+            {"name": "Slack Off", "type": "Normal"},
+            {"name": "Aqua Jet", "type": "Water"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym2-roxie",
+      "game-id": [157],
+      "name": "Roxie",
+      "location": "Virbank City",
+      "levelCap": 18,
+      "sprite": "roxie",
+      "hidden": false,
+      "order": 4,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Koffing",
+          "sprite": "koffing",
+          "level": 18,
+          "types": ["Poison"],
+          "ability": "Levitate",
+          "item": "Black Sludge",
+          "moves": [
+            {"name": "Poison Gas", "type": "Poison"},
+            {"name": "Smokescreen", "type": "Normal"},
+            {"name": "Assurance", "type": "Dark"},
+            {"name": "Clear Smog", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Arbok",
+          "sprite": "arbok",
+          "level": 18,
+          "types": ["Poison"],
+          "ability": "Intimidate",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Glare", "type": "Normal"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Venoshock", "type": "Poison"},
+            {"name": "Acid Spray", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Golbat",
+          "sprite": "golbat",
+          "level": 18,
+          "types": ["Poison", "Flying"],
+          "ability": "Inner Focus",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Leech Life", "type": "Bug"},
+            {"name": "Confuse Ray", "type": "Ghost"},
+            {"name": "Wing Attack", "type": "Flying"},
+            {"name": "Poison Fang", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Palpitoad",
+          "sprite": "palpitoad",
+          "level": 19,
+          "types": ["Water", "Poison"],
+          "ability": "Swift Swim",
+          "item": "Poison Barb",
+          "moves": [
+            {"name": "Bubble Beam", "type": "Water"},
+            {"name": "Icy Wind", "type": "Ice"},
+            {"name": "Uproar", "type": "Normal"},
+            {"name": "Sludge Bomb", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Skorupi",
+          "sprite": "skorupi",
+          "level": 19,
+          "types": ["Poison", "Bug"],
+          "ability": "Battle Armor",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Bug Bite", "type": "Bug"},
+            {"name": "Poison Fang", "type": "Poison"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Swords Dance", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Unovan Magcargo",
+          "sprite": "unown-question",
+          "level": 20,
+          "types": ["Poison", "Ground"],
+          "ability": "Stench",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Yawn", "type": "Normal"},
+            {"name": "Toxic", "type": "Poison"},
+            {"name": "Venoshock", "type": "Poison"},
+            {"name": "Mud Bomb", "type": "Ground"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym3-burgh",
+      "game-id": [154],
+      "name": "Burgh",
+      "location": "Castelia City",
+      "levelCap": 27,
+      "sprite": "burgh",
+      "hidden": false,
+      "order": 5,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Shuckle",
+          "sprite": "shuckle",
+          "level": 25,
+          "types": ["Bug", "Water"],
+          "ability": "Shell Armor",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Spider Web", "type": "Bug"},
+            {"name": "Pain Split", "type": "Normal"},
+            {"name": "Rain Dance", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Crustle",
+          "sprite": "crustle",
+          "level": 25,
+          "types": ["Bug", "Rock"],
+          "ability": "Sturdy",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Cut", "type": "Grass"},
+            {"name": "Shell Smash", "type": "Normal"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Rock Blast", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Centiskorch",
+          "sprite": "centiskorch",
+          "level": 25,
+          "types": ["Fire", "Bug"],
+          "ability": "Flash Fire",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Flame Wheel", "type": "Fire"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Venoshock", "type": "Poison"},
+            {"name": "Coil", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Galvantula",
+          "sprite": "galvantula",
+          "level": 26,
+          "types": ["Bug", "Electric"],
+          "ability": "Compound Eyes",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Thunder", "type": "Electric"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Sucker Punch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Accelgor",
+          "sprite": "accelgor",
+          "level": 26,
+          "types": ["Bug", "Dark"],
+          "ability": "Unburden",
+          "item": "Bright Powder",
+          "moves": [
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Focus Blast", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Unovan Heracross",
+          "sprite": "unown-question",
+          "level": 27,
+          "types": ["Bug", "Steel"],
+          "ability": "Mold Breaker",
+          "item": "Occa Berry",
+          "moves": [
+            {"name": "Megahorn", "type": "Bug"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Bullet Punch", "type": "Steel"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colress-1",
+      "game-id": [358],
+      "name": "Colress",
+      "role": "Scientist",
+      "location": "Route 4",
+      "levelCap": 30,
+      "sprite": "colress",
+      "hidden": false,
+      "order": 6,
+      "bag": [{"item": "Hyper Potion", "count": 1}],
+      "pokemon": [
+        {
+          "species": "Spinda",
+          "sprite": "spinda",
+          "level": 28,
+          "types": ["Normal", "Psychic"],
+          "ability": "Contrary",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Dizzy Punch", "type": "Normal"},
+            {"name": "Zen Headbutt", "type": "Psychic"},
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Teeter Dance", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Graveler (Alola)",
+          "sprite": "graveler-alola",
+          "level": 28,
+          "types": ["Rock", "Electric"],
+          "ability": "Galvanize",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Rock Throw", "type": "Rock"},
+            {"name": "Thunder Punch", "type": "Electric"},
+            {"name": "Rock Polish", "type": "Rock"},
+            {"name": "Self-Destruct", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Perrserker",
+          "sprite": "perrserker",
+          "level": 28,
+          "types": ["Steel"],
+          "ability": "Tough Claws",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Taunt", "type": "Dark"},
+            {"name": "Hone Claws", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Metang",
+          "sprite": "metang",
+          "level": 29,
+          "types": ["Steel", "Fighting"],
+          "ability": "Clear Body",
+          "item": "Bright Powder",
+          "moves": [
+            {"name": "Metal Claw", "type": "Steel"},
+            {"name": "Storm Throw", "type": "Fighting"},
+            {"name": "Pursuit", "type": "Dark"},
+            {"name": "Magnet Rise", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Klang",
+          "sprite": "klang",
+          "level": 29,
+          "types": ["Steel", "Electric"],
+          "ability": "Plus",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Gear Grind", "type": "Steel"},
+            {"name": "Electroweb", "type": "Electric"},
+            {"name": "Charge Beam", "type": "Electric"},
+            {"name": "Thunder Shock", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Porygon2",
+          "sprite": "porygon2",
+          "level": 30,
+          "types": ["Normal", "Electric"],
+          "ability": "Download",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Psybeam", "type": "Psychic"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Magnet Rise", "type": "Electric"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym4-elesa",
+      "game-id": [153],
+      "name": "Elesa",
+      "location": "Nimbasa City",
+      "levelCap": 34,
+      "sprite": "elesa",
+      "hidden": false,
+      "order": 7,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Raichu (Alola)",
+          "sprite": "raichu-alola",
+          "level": 34,
+          "types": ["Electric", "Psychic"],
+          "ability": "Motor Drive",
+          "item": "Light Clay",
+          "moves": [
+            {"name": "Reflect", "type": "Psychic"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Surf", "type": "Water"}
+          ]
+        },
+        {
+          "species": "PorygonZ",
+          "sprite": "porygonz",
+          "level": 34,
+          "types": ["Psychic", "Electric"],
+          "ability": "Download",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Psyshock", "type": "Psychic"},
+            {"name": "Discharge", "type": "Electric"},
+            {"name": "Tri Attack", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Toxtricity",
+          "sprite": "toxtricity",
+          "level": 34,
+          "types": ["Electric", "Poison"],
+          "ability": "Punk Rock",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Swagger", "type": "Normal"},
+            {"name": "Venoshock", "type": "Poison"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Toxic", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Electivire",
+          "sprite": "electivire",
+          "level": 35,
+          "types": ["Electric", "Fighting"],
+          "ability": "Motor Drive",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Cross Chop", "type": "Fighting"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Rotom (Fan)",
+          "sprite": "rotom-fan",
+          "level": 35,
+          "types": ["Electric", "Flying"],
+          "ability": "Motor Drive",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Hidden Power Ice", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Unovan Altaria",
+          "sprite": "unown-question",
+          "level": 36,
+          "types": ["Fairy", "Electric"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Moonblast", "type": "Fairy"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym5-clay",
+      "game-id": [158],
+      "name": "Clay",
+      "location": "Driftveil City",
+      "levelCap": 41,
+      "sprite": "clay",
+      "hidden": false,
+      "order": 8,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Hippowdon",
+          "sprite": "hippowdon",
+          "level": 41,
+          "types": ["Ground", "Water"],
+          "ability": "Sand Stream",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Bulldoze", "type": "Ground"},
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Slack Off", "type": "Normal"},
+            {"name": "Stealth Rock", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Excadrill",
+          "sprite": "excadrill",
+          "level": 42,
+          "types": ["Ground", "Steel"],
+          "ability": "Sand Rush",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Drill Run", "type": "Ground"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Rock Slide", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Flygon",
+          "sprite": "flygon",
+          "level": 41,
+          "types": ["Bug", "Ground"],
+          "ability": "Levitate",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Draco Meteor", "type": "Dragon"},
+            {"name": "Signal Beam", "type": "Bug"},
+            {"name": "Flamethrower", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Mamoswine",
+          "sprite": "mamoswine",
+          "level": 41,
+          "types": ["Ice", "Ground"],
+          "ability": "Oblivious",
+          "item": "Choice Scarf",
+          "moves": [
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Ice Fang", "type": "Ice"},
+            {"name": "Strength", "type": "Rock"},
+            {"name": "Giga Impact", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Iron Treads",
+          "sprite": "irontreads",
+          "level": 42,
+          "types": ["Ground", "Steel"],
+          "ability": "Sand Veil",
+          "item": "Bright Powder",
+          "moves": [
+            {"name": "Flame Charge", "type": "Fire"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Sandy Shocks",
+          "sprite": "sandyshocks",
+          "level": 43,
+          "types": ["Electric", "Ground"],
+          "ability": "Chlorophyll",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Tri Attack", "type": "Normal"},
+            {"name": "Discharge", "type": "Electric"},
+            {"name": "Flash Cannon", "type": "Steel"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym6-skyla",
+      "game-id": [155],
+      "name": "Skyla",
+      "location": "Mistralton City",
+      "levelCap": 50,
+      "sprite": "skyla",
+      "hidden": false,
+      "order": 9,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Talonflame",
+          "sprite": "talonflame",
+          "level": 50,
+          "types": ["Fire", "Flying"],
+          "ability": "Gale Wings",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Tailwind", "type": "Flying"},
+            {"name": "Brave Bird", "type": "Flying"},
+            {"name": "Flare Blitz", "type": "Fire"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Unfezant",
+          "sprite": "unfezant",
+          "level": 50,
+          "types": ["Normal", "Flying"],
+          "ability": "Super Luck",
+          "item": "Scope Lens",
+          "moves": [
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Hyper Beam", "type": "Normal"},
+            {"name": "Tailwind", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Hawlucha",
+          "sprite": "hawlucha",
+          "level": 50,
+          "types": ["Fighting", "Flying"],
+          "ability": "Unburden",
+          "item": "Flying Gem",
+          "moves": [
+            {"name": "Acrobatics", "type": "Flying"},
+            {"name": "High Jump Kick", "type": "Fighting"},
+            {"name": "Strength", "type": "Rock"},
+            {"name": "Detect", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Gyarados",
+          "sprite": "gyarados",
+          "level": 51,
+          "types": ["Water", "Flying"],
+          "ability": "Intimidate",
+          "item": "Wacan Berry",
+          "moves": [
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Ice Fang", "type": "Ice"},
+            {"name": "Dragon Dance", "type": "Dragon"}
+          ]
+        },
+        {
+          "species": "Salamence",
+          "sprite": "salamence",
+          "level": 51,
+          "types": ["Dragon", "Flying"],
+          "ability": "Moxie",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Unovan Gallade",
+          "sprite": "unown-question",
+          "level": 52,
+          "types": ["Flying", "Fighting"],
+          "ability": "Inner Focus",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Acrobatics", "type": "Flying"},
+            {"name": "Psycho Cut", "type": "Psychic"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rival-hugh-3",
+      "game-id": [378, 379, 380],
+      "name": "Hugh",
+      "role": "Rival",
+      "location": "Undella Town",
+      "levelCap": 54,
+      "sprite": "hugh",
+      "color": "#26468f",
+      "hidden": false,
+      "order": 10,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Unfezant",
+          "sprite": "unfezant",
+          "level": 53,
+          "types": ["Normal", "Flying"],
+          "ability": "Super Luck",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Brave Bird", "type": "Flying"},
+            {"name": "Return", "type": "Normal"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Roost", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Flygon",
+          "sprite": "flygon",
+          "level": 52,
+          "types": ["Bug", "Ground"],
+          "ability": "Levitate",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Volcarona",
+          "sprite": "volcarona",
+          "level": 52,
+          "types": ["Bug", "Fire"],
+          "ability": "Flame Body",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Fiery Dance", "type": "Fire"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Simisage",
+          "sprite": "simisage",
+          "level": 53,
+          "types": ["Grass", "Fighting"],
+          "ability": "Overgrow",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Leaf Storm", "type": "Grass"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "sprite": "eelektross",
+          "level": 52,
+          "types": ["Electric", "Water"],
+          "ability": "Levitate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Stoutland",
+          "sprite": "stoutland",
+          "level": 54,
+          "types": ["Normal", "Ice"],
+          "ability": "Intimidate",
+          "item": "Bright Powder",
+          "moves": [
+            {"name": "Return", "type": "Normal"},
+            {"name": "Ice Fang", "type": "Ice"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Superpower", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plasma-lacunosa",
+      "game-id": [704, 705],
+      "name": "Zinzolin & Grunt",
+      "role": "Team Plasma",
+      "location": "Lacunosa Town",
+      "levelCap": 56,
+      "sprite": ["zinzolin", "plasmagrunt"],
+      "hidden": false,
+      "double": true,
+      "order": 11,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Cryogonal",
+          "sprite": "cryogonal",
+          "level": 54,
+          "types": ["Ice", "Flying"],
+          "ability": "Levitate",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Hail", "type": "Ice"},
+            {"name": "Dazzling Gleam", "type": "Fairy"},
+            {"name": "Explosion", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Swalot",
+          "sprite": "swalot",
+          "level": 54,
+          "types": ["Poison"],
+          "ability": "Liquid Ooze",
+          "item": "",
+          "moves": [
+            {"name": "Acid Spray", "type": "Poison"},
+            {"name": "Toxic", "type": "Poison"},
+            {"name": "Stockpile", "type": "Normal"},
+            {"name": "Destiny Bond", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Walrein",
+          "sprite": "walrein",
+          "level": 54,
+          "types": ["Ice", "Water"],
+          "ability": "Ice Body",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Brine", "type": "Water"},
+            {"name": "Protect", "type": "Normal"},
+            {"name": "Substitute", "type": "Normal"},
+            {"name": "Toxic", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Delibird",
+          "sprite": "delibird",
+          "level": 54,
+          "types": ["Ice", "Flying"],
+          "ability": "Technician",
+          "item": "",
+          "moves": [
+            {"name": "Icy Wind", "type": "Ice"},
+            {"name": "Frost Breath", "type": "Ice"},
+            {"name": "Acrobatics", "type": "Flying"},
+            {"name": "Tailwind", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Weavile",
+          "sprite": "weavile",
+          "level": 56,
+          "types": ["Dark", "Ice"],
+          "ability": "Pressure",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Night Slash", "type": "Dark"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Low Kick", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym7-drayden",
+      "game-id": [],
+      "name": "Drayden",
+      "location": "Opelucid City",
+      "levelCap": 59,
+      "sprite": "drayden",
+      "hidden": false,
+      "order": 12,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Druddigon",
+          "sprite": "druddigon",
+          "level": 59,
+          "types": ["Dragon", "Fighting"],
+          "ability": "Rough Skin",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Fire Punch", "type": "Fire"},
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Revenge", "type": "Fighting"},
+            {"name": "Dragon Tail", "type": "Dragon"}
+          ]
+        },
+        {
+          "species": "Roaring Moon",
+          "sprite": "roaringmoon",
+          "level": 60,
+          "types": ["Dragon", "Dark"],
+          "ability": "Intimidate",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Flame Charge", "type": "Fire"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Roost", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Exeggutor (Alola)",
+          "sprite": "exeggutor-alola",
+          "level": 59,
+          "types": ["Grass", "Dragon"],
+          "ability": "Harvest",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Dragon Tail", "type": "Dragon"},
+            {"name": "Light Screen", "type": "Psychic"},
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "Explosion", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Archeops",
+          "sprite": "archeops",
+          "level": 59,
+          "types": ["Rock", "Dragon"],
+          "ability": "Levitate",
+          "item": "Choice Scarf",
+          "moves": [
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Crunch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Haxorus",
+          "sprite": "haxorus",
+          "level": 60,
+          "types": ["Dragon", "Steel"],
+          "ability": "Mold Breaker",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Dragon Tail", "type": "Dragon"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Unovan Salamence",
+          "sprite": "unown-question",
+          "level": 61,
+          "types": ["Dragon", "Fire"],
+          "ability": "Rock Head",
+          "item": "Charcoal",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Flare Blitz", "type": "Fire"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Dragon Claw", "type": "Dragon"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plasma-opelucid",
+      "game-id": [583, 584],
+      "name": "Zinzolin & Shadow",
+      "role": "Team Plasma",
+      "location": "Opelucid City",
+      "levelCap": 60,
+      "sprite": ["zinzolin", "shadowtriad"],
+      "hidden": false,
+      "double": true,
+      "order": 13,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Abomasnow",
+          "sprite": "abomasnow",
+          "level": 59,
+          "types": ["Grass", "Ice"],
+          "ability": "Snow Warning",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Wood Hammer", "type": "Grass"},
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Thunder Punch", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Cryogonal",
+          "sprite": "cryogonal",
+          "level": 59,
+          "types": ["Ice", "Flying"],
+          "ability": "Levitate",
+          "item": "Light Clay",
+          "moves": [
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Reflect", "type": "Psychic"},
+            {"name": "Light Screen", "type": "Psychic"},
+            {"name": "Explosion", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Walrein",
+          "sprite": "walrein",
+          "level": 59,
+          "types": ["Ice", "Water"],
+          "ability": "Ice Body",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Surf", "type": "Water"},
+            {"name": "Protect", "type": "Normal"},
+            {"name": "Substitute", "type": "Normal"},
+            {"name": "Toxic", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Weavile",
+          "sprite": "weavile",
+          "level": 60,
+          "types": ["Dark", "Ice"],
+          "ability": "Pressure",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Night Slash", "type": "Dark"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Ice Shard", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Drifblim",
+          "sprite": "drifblim",
+          "level": 59,
+          "types": ["Ghost", "Flying"],
+          "ability": "Unburden",
+          "item": "Flying Gem",
+          "moves": [
+            {"name": "Acrobatics", "type": "Flying"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Destiny Bond", "type": "Ghost"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym8-marlon",
+      "game-id": [160],
+      "name": "Marlon",
+      "location": "Humilau City",
+      "levelCap": 62,
+      "sprite": "marlon",
+      "hidden": false,
+      "order": 14,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Slowking",
+          "sprite": "slowking",
+          "level": 62,
+          "types": ["Water", "Psychic"],
+          "ability": "Own Tempo",
+          "item": "Mental Herb",
+          "moves": [
+            {"name": "Trick Room", "type": "Psychic"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Rain Dance", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Jellicent",
+          "sprite": "jellicent",
+          "level": 63,
+          "types": ["Poison", "Water"],
+          "ability": "Cursed Body",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Trick Room", "type": "Psychic"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Will-O-Wisp", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "sprite": "eelektross",
+          "level": 62,
+          "types": ["Electric", "Water"],
+          "ability": "Volt Absorb",
+          "item": "Air Balloon",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Acrobatics", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Clawitzer",
+          "sprite": "clawitzer",
+          "level": 63,
+          "types": ["Water", "Dark"],
+          "ability": "Mega Launcher",
+          "item": "Wise Glasses",
+          "moves": [
+            {"name": "Water Pulse", "type": "Water"},
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Aura Sphere", "type": "Fighting"},
+            {"name": "Rain Dance", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Araquanid",
+          "sprite": "araquanid",
+          "level": 63,
+          "types": ["Water", "Bug"],
+          "ability": "Water Bubble",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Poison Jab", "type": "Poison"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Unovan Steelix",
+          "sprite": "unown-question",
+          "level": 64,
+          "types": ["Steel", "Water"],
+          "ability": "Rock Head",
+          "item": "Metal Coat",
+          "moves": [
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Recover", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colress-2",
+      "game-id": [344],
+      "name": "Colress",
+      "role": "Scientist",
+      "location": "Control Room",
+      "levelCap": 66,
+      "sprite": "colress",
+      "hidden": false,
+      "order": 15,
+      "bag": [{"item": "Full Restore", "count": 1}],
+      "pokemon": [
+        {
+          "species": "Beheeyem",
+          "sprite": "beheeyem",
+          "level": 64,
+          "types": ["Psychic"],
+          "ability": "Analytic",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Trick Room", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Golem (Alola)",
+          "sprite": "golem-alola",
+          "level": 64,
+          "types": ["Rock", "Electric"],
+          "ability": "Galvanize",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Double-Edge", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Fire Punch", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Rotom (Wash)",
+          "sprite": "rotom-wash",
+          "level": 65,
+          "types": ["Electric", "Water"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Volt Switch", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Klinklang",
+          "sprite": "klinklang",
+          "level": 65,
+          "types": ["Steel", "Electric"],
+          "ability": "Clear Body",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Shift Gear", "type": "Steel"},
+            {"name": "Gear Grind", "type": "Steel"},
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Return", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Metagross",
+          "sprite": "metagross",
+          "level": 65,
+          "types": ["Steel", "Fighting"],
+          "ability": "Clear Body",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Meteor Mash", "type": "Steel"},
+            {"name": "Hammer Arm", "type": "Fighting"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Bullet Punch", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "PorygonZ",
+          "sprite": "porygonz",
+          "level": 66,
+          "types": ["Psychic", "Electric"],
+          "ability": "Adaptability",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Trick", "type": "Psychic"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ghetsis",
+      "game-id": [345],
+      "name": "Ghetsis",
+      "role": "Team Plasma",
+      "location": "Giant Chasm",
+      "levelCap": 67,
+      "sprite": "ghetsis",
+      "hidden": false,
+      "order": 16,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Grimmsnarl",
+          "sprite": "grimmsnarl",
+          "level": 67,
+          "types": ["Dark", "Fairy"],
+          "ability": "Prankster",
+          "item": "Light Clay",
+          "moves": [
+            {"name": "Reflect", "type": "Psychic"},
+            {"name": "Light Screen", "type": "Psychic"},
+            {"name": "Spirit Break", "type": "Fairy"},
+            {"name": "Thunder Wave", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Cofagrigus",
+          "sprite": "cofagrigus",
+          "level": 67,
+          "types": ["Ghost", "Steel"],
+          "ability": "Mummy",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Iron Defense", "type": "Steel"},
+            {"name": "Body Press", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Toxtricity",
+          "sprite": "toxtricity",
+          "level": 67,
+          "types": ["Electric", "Poison"],
+          "ability": "Punk Rock",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Overdrive", "type": "Electric"},
+            {"name": "Sludge Wave", "type": "Poison"},
+            {"name": "Boomburst", "type": "Normal"},
+            {"name": "Shift Gear", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Scovillain",
+          "sprite": "scovillain",
+          "level": 67,
+          "types": ["Grass", "Fire"],
+          "ability": "Chlorophyll",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Solar Beam", "type": "Grass"},
+            {"name": "Growth", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Golisopod",
+          "sprite": "golisopod",
+          "level": 67,
+          "types": ["Bug", "Water"],
+          "ability": "Emergency Exit",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "First Impression", "type": "Bug"},
+            {"name": "Liquidation", "type": "Water"},
+            {"name": "Leech Life", "type": "Bug"},
+            {"name": "Aqua Jet", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Iron Jugulis",
+          "sprite": "ironjugulis",
+          "level": 67,
+          "types": ["Dark", "Flying"],
+          "ability": "Quark Drive",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Hurricane", "type": "Flying"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rival-hugh-4",
+      "game-id": [],
+      "name": "Hugh",
+      "role": "Rival",
+      "location": "Victory Road",
+      "levelCap": 71,
+      "sprite": "hugh",
+      "color": "#26468f",
+      "hidden": false,
+      "order": 17,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Unfezant",
+          "sprite": "unfezant",
+          "level": 69,
+          "types": ["Normal", "Flying"],
+          "ability": "Super Luck",
+          "item": "Bright Powder",
+          "moves": [
+            {"name": "Brave Bird", "type": "Flying"},
+            {"name": "Return", "type": "Normal"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Steel Wing", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Flygon",
+          "sprite": "flygon",
+          "level": 69,
+          "types": ["Bug", "Ground"],
+          "ability": "Levitate",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Iron Moth",
+          "sprite": "ironmoth",
+          "level": 71,
+          "types": ["Fire", "Poison"],
+          "ability": "Quark Drive",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Sludge Wave", "type": "Poison"},
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Simisage",
+          "sprite": "simisage",
+          "level": 70,
+          "types": ["Grass", "Fighting"],
+          "ability": "Overgrow",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Leaf Storm", "type": "Grass"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "sprite": "eelektross",
+          "level": 70,
+          "types": ["Electric", "Water"],
+          "ability": "Levitate",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Stoutland",
+          "sprite": "stoutland",
+          "level": 71,
+          "types": ["Normal", "Ice"],
+          "ability": "Intimidate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Return", "type": "Normal"},
+            {"name": "Ice Fang", "type": "Ice"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Superpower", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4-shauntal",
+      "game-id": [38],
+      "name": "Shauntal",
+      "role": "Elite Four",
+      "location": "Pokémon League",
+      "levelCap": 72,
+      "sprite": "shauntal",
+      "hidden": false,
+      "order": 18,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Dragapult",
+          "sprite": "dragapult",
+          "level": 72,
+          "types": ["Dragon", "Ghost"],
+          "ability": "Infiltrator",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Flutter Mane",
+          "sprite": "fluttermane",
+          "level": 72,
+          "types": ["Ghost", "Fairy"],
+          "ability": "Levitate",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Wish", "type": "Normal"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Shadow Force", "type": "Ghost"},
+            {"name": "Perish Song", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Mismagius",
+          "sprite": "mismagius",
+          "level": 72,
+          "types": ["Ghost", "Fairy"],
+          "ability": "Insomnia",
+          "item": "Spell Tag",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Thunderbolt", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Basculegion",
+          "sprite": "basculegion",
+          "level": 73,
+          "types": ["Water", "Ghost"],
+          "ability": "Adaptability",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Shadow Claw", "type": "Ghost"},
+            {"name": "Aqua Jet", "type": "Water"},
+            {"name": "Crunch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Dusknoir",
+          "sprite": "dusknoir",
+          "level": 73,
+          "types": ["Ghost", "Fighting"],
+          "ability": "Iron Fist",
+          "item": "Lum Berry",
+          "moves": [
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Shadow Punch", "type": "Ghost"},
+            {"name": "Shadow Sneak", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Gholdengo",
+          "sprite": "gholdengo",
+          "level": 74,
+          "types": ["Steel", "Ghost"],
+          "ability": "Good as Gold",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Flash Cannon", "type": "Steel"},
+            {"name": "Recover", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4-grimsley",
+      "game-id": [39],
+      "name": "Grimsley",
+      "role": "Elite Four",
+      "location": "Pokémon League",
+      "levelCap": 72,
+      "sprite": "grimsley",
+      "hidden": false,
+      "order": 19,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Liepard",
+          "sprite": "liepard",
+          "level": 72,
+          "types": ["Dark"],
+          "ability": "Prankster",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Encore", "type": "Normal"},
+            {"name": "Taunt", "type": "Dark"},
+            {"name": "Foul Play", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Zoroark",
+          "sprite": "zoroark",
+          "level": 72,
+          "types": ["Dark", "Fairy"],
+          "ability": "Prankster",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Night Daze", "type": "Dark"},
+            {"name": "Focus Blast", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Gothitelle",
+          "sprite": "gothitelle",
+          "level": 72,
+          "types": ["Psychic", "Dark"],
+          "ability": "Shadow Tag",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Calm Mind", "type": "Psychic"},
+            {"name": "Psyshock", "type": "Psychic"},
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Charm", "type": "Fairy"}
+          ]
+        },
+        {
+          "species": "Umbreon",
+          "sprite": "umbreon",
+          "level": 73,
+          "types": ["Dark", "Fighting"],
+          "ability": "Synchronize",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Assurance", "type": "Dark"},
+            {"name": "Mean Look", "type": "Normal"},
+            {"name": "Moonlight", "type": "Fairy"}
+          ]
+        },
+        {
+          "species": "Gengar",
+          "sprite": "gengar",
+          "level": 73,
+          "types": ["Ghost", "Dark"],
+          "ability": "Cursed Body",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Dream Eater", "type": "Psychic"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Dark Pulse", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Tyranitar",
+          "sprite": "tyranitar",
+          "level": 74,
+          "types": ["Dark", "Dragon"],
+          "ability": "Moxie",
+          "item": "Lum Berry",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4-caitlin",
+      "game-id": [40],
+      "name": "Caitlin",
+      "role": "Elite Four",
+      "location": "Pokémon League",
+      "levelCap": 72,
+      "sprite": "caitlin",
+      "hidden": false,
+      "order": 20,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Starmie",
+          "sprite": "starmie",
+          "level": 72,
+          "types": ["Water", "Psychic"],
+          "ability": "Natural Cure",
+          "item": "Light Clay",
+          "moves": [
+            {"name": "Scald", "type": "Water"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Dazzling Gleam", "type": "Fairy"},
+            {"name": "Reflect", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Espeon",
+          "sprite": "espeon",
+          "level": 73,
+          "types": ["Psychic", "Ghost"],
+          "ability": "Magic Bounce",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Calm Mind", "type": "Psychic"},
+            {"name": "Baton Pass", "type": "Normal"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Shadow Ball", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Alakazam",
+          "sprite": "alakazam",
+          "level": 72,
+          "types": ["Psychic"],
+          "ability": "Synchronize",
+          "item": "Choice Specs",
+          "moves": [
+            {"name": "Psyshock", "type": "Psychic"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Trick", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Lucario",
+          "sprite": "lucario",
+          "level": 73,
+          "types": ["Fighting", "Psychic"],
+          "ability": "Steadfast",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Extreme Speed", "type": "Normal"},
+            {"name": "Zen Headbutt", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Armarouge",
+          "sprite": "armarouge",
+          "level": 72,
+          "types": ["Fire", "Psychic"],
+          "ability": "Flash Fire",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "Will-O-Wisp", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Scream Tail",
+          "sprite": "screamtail",
+          "level": 74,
+          "types": ["Fairy", "Psychic"],
+          "ability": "Cute Charm",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Zen Headbutt", "type": "Psychic"},
+            {"name": "Body Slam", "type": "Normal"},
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Perish Song", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4-marshal",
+      "game-id": [41],
+      "name": "Marshal",
+      "role": "Elite Four",
+      "location": "Pokémon League",
+      "levelCap": 72,
+      "sprite": "marshal",
+      "hidden": false,
+      "order": 21,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Sawk",
+          "sprite": "sawk",
+          "level": 72,
+          "types": ["Fighting", "Water"],
+          "ability": "Inner Focus",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Brick Break", "type": "Fighting"},
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Poison Jab", "type": "Poison"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Annihilape",
+          "sprite": "annihilape",
+          "level": 72,
+          "types": ["Fighting", "Ghost"],
+          "ability": "Vital Spirit",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Shadow Claw", "type": "Ghost"},
+            {"name": "Final Gambit", "type": "Fighting"},
+            {"name": "Brick Break", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Scyther",
+          "sprite": "scyther",
+          "level": 72,
+          "types": ["Bug", "Fighting"],
+          "ability": "Technician",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Brick Break", "type": "Fighting"},
+            {"name": "Quick Attack", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Sneasler",
+          "sprite": "sneasler",
+          "level": 73,
+          "types": ["Fighting", "Poison"],
+          "ability": "Unburden",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Poison Jab", "type": "Poison"},
+            {"name": "Quick Attack", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Iron Hands",
+          "sprite": "ironhands",
+          "level": 73,
+          "types": ["Fighting", "Electric"],
+          "ability": "Motor Drive",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Wild Charge", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Metagross",
+          "sprite": "metagross",
+          "level": 74,
+          "types": ["Steel", "Fighting"],
+          "ability": "Clear Body",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Hammer Arm", "type": "Fighting"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Meteor Mash", "type": "Steel"},
+            {"name": "Agility", "type": "Psychic"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "champion-iris",
+      "game-id": [341, 536, 776],
+      "name": "Iris",
+      "role": "Champion",
+      "location": "Pokémon League",
+      "levelCap": 74,
+      "sprite": "iris",
+      "hidden": false,
+      "order": 22,
+      "bag": [{"item": "Full Restore", "count": 3}],
+      "pokemon": [
+        {
+          "species": "Jolteon",
+          "sprite": "jolteon",
+          "level": 74,
+          "types": ["Electric", "Ground"],
+          "ability": "Volt Absorb",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Volt Switch", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Lilligant",
+          "sprite": "lilligant",
+          "level": 74,
+          "types": ["Grass", "Fairy"],
+          "ability": "Own Tempo",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Sleep Powder", "type": "Grass"},
+            {"name": "Hidden Power Ice", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Conkeldurr",
+          "sprite": "conkeldurr",
+          "level": 74,
+          "types": ["Fighting", "Rock"],
+          "ability": "Guts",
+          "item": "Flame Orb",
+          "moves": [
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Mach Punch", "type": "Fighting"},
+            {"name": "Facade", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Armarouge",
+          "sprite": "armarouge",
+          "level": 74,
+          "types": ["Fire", "Psychic"],
+          "ability": "Flash Fire",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Energy Ball", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Haxorus",
+          "sprite": "haxorus",
+          "level": 74,
+          "types": ["Dragon", "Steel"],
+          "ability": "Mold Breaker",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Dragonite",
+          "sprite": "dragonite",
+          "level": 74,
+          "types": ["Dragon", "Water"],
+          "ability": "Multiscale",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Aqua Tail", "type": "Water"},
+            {"name": "Extreme Speed", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        }
+      ]
     }
-    var W = img.naturalWidth, H = img.naturalHeight; if (!W || !H) return;
-    var k = Math.min(box / Math.max(W, H), box <= 40 ? 1.5 : 2);
-    img.style.width = Math.round(W * k) + "px"; img.style.height = Math.round(H * k) + "px";
-  };
-  function monImg(p, box) {
-    var u = spriteURL(p), c = CROP.get(u);
-    return '<img data-box="' + box + '" src="' + esc(c || u) + '"' + (c ? ' data-c="1"' : ' crossorigin="anonymous"') + ' alt="' + esc(p.species) + '" loading="lazy" ' +
-      'onload="window.__fit(this)" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">';
-  }
-
-  // ── small renderers ──
-  function typeBadge(t) {
-    var icon = TYPE_ICONS[t] || "";
-    return '<span class="type">' + (icon ? '<img src="' + icon + '" alt="" width="24" height="24" loading="lazy">' : "") + esc(t) + "</span>";
-  }
-  function typeImg(t) {
-    var icon = TYPE_ICONS[t];
-    return icon ? '<img class="tico" src="' + icon + '" alt="' + esc(t) + '" title="' + esc(t) + '" width="22" height="22" loading="lazy">' : '<span class="tfb" style="--tc:' + (TYPE_COLORS[t] || "#6b7a9c") + '">' + esc(t || "?") + "</span>";
-  }
-  function accentOf(t) {
-    var n = {}, order = [];
-    (t.pokemon || []).forEach(function (p) { (p.types || []).forEach(function (ty) { if (!(ty in n)) { n[ty] = 0; order.push(ty); } n[ty]++; }); });
-    order.sort(function (a, b) { return n[b] - n[a] || order.indexOf(a) - order.indexOf(b); });
-    return TYPE_COLORS[order[0]] || "#6b7a9c";
-  }
-  function moveHTML(m) {
-    var c = TYPE_COLORS[m.type] || "#6b7a9c", url = moveURL(m.name);
-    var inner = typeImg(m.type) + '<span class="mname">' + esc(m.name) + "</span>";
-    return "<li>" + (url
-      ? '<a class="move" style="--mc:' + c + '" href="' + url + '" target="_blank" rel="noopener noreferrer" title="' + esc(m.name) + ' on Bulbapedia">' + inner + "</a>"
-      : '<span class="move" style="--mc:' + c + '">' + inner + "</span>") + "</li>";
-  }
-  function monHTML(p) {
-    var ty = p.types || [], c1 = TYPE_COLORS[ty[0]] || "#6b7a9c", c2 = TYPE_COLORS[ty[1]] || c1;
-    return '<li class="mon' + (ty.length < 2 ? " mono" : "") + '" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
-      '<div class="m-stage"><span class="m-lv"><small>Lv</small>' + esc(p.level) + "</span>" +
-        '<div class="m-types">' + ty.map(typeBadge).join("") + "</div>" +
-        '<div class="m-sprite">' + monImg(p, 96) + "</div></div>" +
-      '<div class="m-body"><h4 class="m-name">' + esc(p.species) + "</h4>" +
-        '<div class="m-meta">' +
-          (p.ability && !/^\?+$/.test(p.ability) ? '<a class="ability" href="' + abilityURL(p.ability) + '" target="_blank" rel="noopener noreferrer" title="' + esc(p.ability) + ' on Bulbapedia">' + DIAMOND + esc(p.ability) + "</a>" : "") +
-          (p.item && !/^\?+$/.test(p.item) ? '<span class="item"><img src="' + esc(fill("item", { item: itemSlug(p.item) })) + '" alt="" width="32" height="32" loading="lazy" onerror="this.style.display=\'none\'">' + esc(p.item) + "</span>" : "") +
-        "</div>" +
-        '<ul class="m-moves" aria-label="Moves">' + (p.moves || []).map(moveHTML).join("") + "</ul></div></li>";
-  }
-
-  // ── trainer rows ──
-  var revealed = new Set();
-  var num2 = function (n) { return String(n).padStart(2, "0"); };
-  function isLocked(t) { return !!t.hidden && !revealed.has(t.id); }
-
-  function headHTML(t, i, panelId) {
-    if (isLocked(t)) {
-      return '<button class="t-head" type="button" aria-expanded="false" aria-controls="' + panelId + '" aria-label="Hidden battle, number ' + (i + 1) + '. Click to reveal the spoiler">' +
-        '<span class="t-num">#' + num2(i + 1) + "</span>" +
-        '<span class="t-sprite">' + MYSTERY + "</span>" +
-        '<span class="t-id"><h3 class="t-name">Hidden battle</h3><span class="lock">' + LOCK + "Spoiler · click to reveal</span></span>" +
-        '<span class="t-team"></span>' +
-        '<span class="cap"><small>Lv cap</small><b>' + esc(t.levelCap) + "</b></span>" +
-        '<span class="chev">' + CHEV + "</span></button>";
-    }
-    var team = (t.pokemon || []).map(function (p) { return '<span class="mini">' + monImg(p, 38) + "</span>"; }).join("");
-    var sprites = [].concat(t.sprite || "");
-    return '<button class="t-head" type="button" aria-expanded="false" aria-controls="' + panelId + '">' +
-      '<span class="t-num">#' + num2(i + 1) + "</span>" +
-      '<span class="t-sprite' + (sprites.length > 1 ? " duo" : "") + '">' + sprites.map(function (sp) {
-        return '<img src="' + esc(fill("trainer", { sprite: sp })) + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">'; }).join("") + "</span>" +
-      '<span class="t-id"><h3 class="t-name">' + esc(t.name) + (t.double ? ' <span class="dbl" title="Double battle">2×</span>' : "") + '</h3><div class="t-role">' + esc(t.location || "") + "</div></span>" +
-      '<span class="t-team" aria-hidden="true">' + team + "</span>" +
-      '<span class="cap"><small>Lv cap</small><b>' + esc(t.levelCap) + "</b></span>" +
-      '<span class="chev">' + CHEV + "</span></button>";
-  }
-  function liHTML(t, i) {
-    var id = "panel-" + i;
-    return headHTML(t, i, id) + '<div class="t-panel" id="' + id + '"><div class="t-inner"><div class="t-body"></div></div></div>';
-  }
-  function bagHTML(t) {
-    var b = (t.bag || []).filter(function (x) { return x.item && !/^\?+$/.test(x.item) && x.count; }); if (!b.length) return "";
-    return '<ul class="bag" aria-label="Healing items"><li class="bag-label">Bag</li>' + b.map(function (x) {
-      return '<li class="item"><img src="' + esc(fill("item", { item: itemSlug(x.item) })) + '" alt="" width="32" height="32" loading="lazy" onerror="this.style.display=\'none\'">' +
-        esc(x.item) + ' <span class="cnt">×' + esc(x.count) + "</span></li>";
-    }).join("") + "</ul>";
-  }
-
-  function fillPanel(li) {
-    var body = li.querySelector(".t-body");
-    if (body.dataset.ready) return;
-    var t = TRAINERS[+li.dataset.i];
-    body.innerHTML = bagHTML(t) + '<ul class="team" aria-label="' + esc(t.name) + ' team">' + (t.pokemon || []).map(monHTML).join("") + "</ul>";
-    body.dataset.ready = "1";
-  }
-  function render() {
-    list.innerHTML = TRAINERS.map(function (t, i) {
-      return '<li class="trainer' + (isLocked(t) ? " locked" : "") + '" data-i="' + i + '" style="--a:' + (isLocked(t) ? "#8e9ab2" : accentOf(t)) + '">' + liHTML(t, i) + "</li>";
-    }).join("");
-  }
-  render();
-  var items = Array.prototype.slice.call(list.children);
-
-  function setOpen(li, on) {
-    li.classList.toggle("open", on);
-    var b = li.querySelector(".t-head"); if (b) b.setAttribute("aria-expanded", on ? "true" : "false");
-    if (on) fillPanel(li);
-    collapseBtn.hidden = !list.querySelector(".trainer.open");
-  }
-  function reveal(li) {
-    var i = +li.dataset.i, t = TRAINERS[i];
-    revealed.add(t.id);
-    li.classList.remove("locked");
-    li.style.setProperty("--a", accentOf(t));
-    li.innerHTML = liHTML(t, i);
-    setOpen(li, true);
-  }
-  list.addEventListener("click", function (e) {
-    var head = e.target.closest(".t-head"); if (!head) return;
-    var li = head.closest(".trainer");
-    if (li.classList.contains("locked")) { reveal(li); return; }
-    setOpen(li, !li.classList.contains("open"));
-  });
-  collapseBtn.addEventListener("click", function () { items.forEach(function (li) { if (li.classList.contains("open")) setOpen(li, false); }); });
-
-  // ── search (spoiler trainers never match until they are revealed) ──
-  function hayOf(t) {
-    var parts = [t.name, t.role, t.location, t.id];
-    (t.bag || []).forEach(function (x) { parts.push(x.item); });
-    (t.pokemon || []).forEach(function (p) {
-      parts.push(p.species, p.ability, p.item); (p.types || []).forEach(function (x) { parts.push(x); });
-      (p.moves || []).forEach(function (m) { parts.push(m.name); });
-    });
-    return parts.join(" ").toLowerCase();
-  }
-  var HAY = TRAINERS.map(hayOf);
-  function apply() {
-    var term = q.value.trim().toLowerCase(), shown = 0;
-    TRAINERS.forEach(function (t, i) {
-      var ok = !term || (!isLocked(t) && HAY[i].indexOf(term) !== -1);
-      items[i].hidden = !ok; if (ok) shown++;
-    });
-    countEl.textContent = (shown === TRAINERS.length ? TRAINERS.length : shown + " of " + TRAINERS.length) + " trainers";
-    empty.hidden = shown !== 0;
-    resetBtns[0].hidden = !term;
-  }
-  apply();
-  q.addEventListener("input", apply);
-  resetBtns.forEach(function (b) { b.addEventListener("click", function () { q.value = ""; apply(); q.focus(); }); });
-  document.addEventListener("keydown", function (e) {
-    if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
-    var tag = (document.activeElement && document.activeElement.tagName) || "";
-    if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
-    e.preventDefault(); q.focus();
-  });
-  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-  window.addEventListener("scroll", function () { toTop.classList.toggle("show", window.scrollY > 900); }, { passive: true });
-  toTop.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" }); });
-
-
+  ]
 }
-
-// ───────── load the JSON ─────────
-async function fetchFirst(urls, asText) {
-  let lastErr;
-  for (const url of urls) {
-    try {
-      const res = await fetch(url, { cache: "no-cache" });
-      if (!res.ok) throw new Error("HTTP " + res.status + " on " + url);
-      return asText ? await res.text() : await res.json();
-    } catch (err) { lastErr = err; }
-  }
-  throw lastErr || new Error("no data");
-}
-(async function load() {
-  const statusEl = document.getElementById("count");
-  statusEl.textContent = "Loading trainers…";
-  const [tr, dex] = await Promise.allSettled([fetchFirst(DATA_URLS), fetchFirst(DEX_URLS)]);
-  if (tr.status === "fulfilled") {
-    const json = tr.value;
-    const D = dex.status === "fulfilled" ? (Array.isArray(dex.value) ? dex.value : dex.value.pokemon || []) : [];
-    start(Array.isArray(json) ? { trainers: json } : json, D);
-    return;
-  }
-  statusEl.textContent = "";
-  const box = document.getElementById("error");
-  box.hidden = false;
-  box.innerHTML = "<strong>Could not load the trainers data.</strong> Check that assets/data/trainers.json exists and is valid JSON." +
-    "<code>" + String(tr.reason ? tr.reason.message : "unknown error").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])) + "</code>";
-})();
-</script>
-</body>
-</html>
