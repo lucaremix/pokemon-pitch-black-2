@@ -219,7 +219,7 @@
       linear-gradient(to top, rgba(7,9,13,.7), transparent 55%),
       linear-gradient(112deg, var(--t1), color-mix(in srgb, var(--c1) 26%, #0a0d13)); }
   .m-sprite { position: absolute; inset: 12px 0 34px; display: grid; justify-items: center; align-items: end; }
-  .m-sprite img { display: block; }
+  .m-sprite img { display: block; image-rendering: pixelated; }
   .m-lv {
     position: absolute; top: 10px; left: 12px; z-index: 2; padding: 2px 10px; border-radius: 8px;
     font-family: var(--display); font-weight: 800; font-size: 15px; font-variant-numeric: tabular-nums;
@@ -444,8 +444,10 @@ function start(DB, DEX) {
       } catch (e) {}
     }
     var W = img.naturalWidth, H = img.naturalHeight; if (!W || !H) return;
-    var k = Math.min(box / Math.max(W, H), box <= 40 ? 1.5 : 2);
+    // whole-number zoom keeps the pixels square and sharp; only shrink smoothly when the sprite is bigger than the box
+    var fit = box / Math.max(W, H), k = fit >= 1 ? Math.min(Math.floor(fit), 2) : fit;
     img.style.width = Math.round(W * k) + "px"; img.style.height = Math.round(H * k) + "px";
+    img.style.imageRendering = k >= 1 ? "pixelated" : "auto";
   };
   function monImg(p, box) {
     var u = spriteURL(p), c = CROP.get(u);
