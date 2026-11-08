@@ -13,7 +13,7 @@
   "trainers": [
     {
       "id": "rival-hugh-1",
-      "game-id": [161, 162, 163],
+      "game-id": [161,162,163],
       "name": "Hugh",
       "role": "Rival",
       "location": "Aspertia City",
@@ -42,7 +42,7 @@
     },
     {
       "id": "rival-hugh-2",
-      "game-id": [166, 167, 168],
+      "game-id": [166,167,168],
       "name": "Hugh",
       "role": "Rival",
       "location": "Floccesy Ranch",
@@ -779,7 +779,7 @@
     },
     {
       "id": "rival-hugh-3",
-      "game-id": [378, 379, 380],
+      "game-id": [378,379,380],
       "name": "Hugh",
       "role": "Rival",
       "location": "Undella Town",
@@ -883,7 +883,7 @@
       "role": "Team Plasma",
       "location": "Lacunosa Town",
       "levelCap": 56,
-      "sprite": ["zinzolin", "plasmagrunt"],
+      "sprite": ["zinzolin","plasmagrunt"],
       "hidden": false,
       "double": true,
       "order": 11,
@@ -1065,7 +1065,7 @@
       "role": "Team Plasma",
       "location": "Opelucid City",
       "levelCap": 60,
-      "sprite": ["zinzolin", "shadowtriad"],
+      "sprite": ["zinzolin","shadowtriad"],
       "hidden": false,
       "double": true,
       "order": 13,
@@ -1929,7 +1929,7 @@
     },
     {
       "id": "champion-iris",
-      "game-id": [341, 536, 776],
+      "game-id": [341,536,776],
       "name": "Iris",
       "role": "Champion",
       "location": "Pokémon League",
@@ -1958,13 +1958,13 @@
           "sprite": "lilligant",
           "level": 74,
           "types": ["Grass", "Fairy"],
-          "ability": "Own Tempo",
-          "item": "Leftovers",
+          "ability": "Chlorophyll",
+          "item": "Big Root",
           "moves": [
             {"name": "Quiver Dance", "type": "Bug"},
             {"name": "Giga Drain", "type": "Grass"},
-            {"name": "Sleep Powder", "type": "Grass"},
-            {"name": "Hidden Power Ice", "type": "Ice"}
+            {"name": "Draining Kiss", "type": "Fairy"},
+            {"name": "Protect", "type": "Normal"}
           ]
         },
         {
@@ -2001,7 +2001,7 @@
           "level": 74,
           "types": ["Dragon", "Steel"],
           "ability": "Mold Breaker",
-          "item": "White Herb",
+          "item": "Sitrus Berry",
           "moves": [
             {"name": "Dragon Dance", "type": "Dragon"},
             {"name": "Dragon Claw", "type": "Dragon"},
@@ -2015,12 +2015,12 @@
           "level": 74,
           "types": ["Dragon", "Water"],
           "ability": "Multiscale",
-          "item": "Sitrus Berry",
+          "item": "Leftovers",
           "moves": [
-            {"name": "Dragon Dance", "type": "Dragon"},
-            {"name": "Aqua Tail", "type": "Water"},
-            {"name": "Extreme Speed", "type": "Normal"},
-            {"name": "Earthquake", "type": "Ground"}
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Surf", "type": "Water"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Thunder Wave", "type": "Electric"}
           ]
         }
       ]
