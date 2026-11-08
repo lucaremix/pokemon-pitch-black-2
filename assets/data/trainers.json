@@ -888,87 +888,87 @@
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
-          "species": "???",
-          "sprite": "???",
-          "level": "??",
-          "types": [],
-          "ability": "???",
-          "item": "???",
+          "species": "Cradily",
+          "sprite": "cradily",
+          "level": 53,
+          "types": ["Rock", "Poison"],
+          "ability": "Arena Trap",
+          "item": "Black Sludge",
           "moves": [
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
+            {"name": "Ancient Power", "type": "Rock"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "Confuse Ray", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Armaldo",
+          "sprite": "armaldo",
+          "level": 53,
+          "types": ["Rock", "Bug"],
+          "ability": "Battle Armor",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Aqua Jet", "type": "Water"},
+            {"name": "Low Kick", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Tropius",
+          "sprite": "tropius",
+          "level": 53,
+          "types": ["Grass", "Dragon"],
+          "ability": "Levitate",
+          "item": "Yache Berry",
+          "moves": [
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "Strength", "type": "Rock"},
             {"name": "???", "type": "???"}
           ]
         },
         {
-          "species": "???",
-          "sprite": "???",
-          "level": "??",
-          "types": [],
-          "ability": "???",
-          "item": "???",
+          "species": "Rapidash",
+          "sprite": "rapidash",
+          "level": 53,
+          "types": ["Fire", "Fairy"],
+          "ability": "Flash Fire",
+          "item": "Charcoal",
           "moves": [
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"}
+            {"name": "Flame Charge", "type": "Fire"},
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Attract", "type": "Normal"}
           ]
         },
         {
-          "species": "???",
-          "sprite": "???",
-          "level": "??",
-          "types": [],
-          "ability": "???",
-          "item": "???",
+          "species": "Sandslash (Alola)",
+          "sprite": "sandslash-alola",
+          "level": 53,
+          "types": ["Ice", "Steel"],
+          "ability": "Snow Cloak",
+          "item": "Focus Sash",
           "moves": [
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"}
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Icicle Crash", "type": "Ice"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Drill Run", "type": "Ground"}
           ]
         },
         {
-          "species": "???",
-          "sprite": "???",
-          "level": "??",
-          "types": [],
-          "ability": "???",
-          "item": "???",
+          "species": "Metagross",
+          "sprite": "metagross",
+          "level": 54,
+          "types": ["Steel", "Fighting"],
+          "ability": "Clear Body",
+          "item": "Sitrus Berry",
           "moves": [
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"}
-          ]
-        },
-        {
-          "species": "???",
-          "sprite": "???",
-          "level": "??",
-          "types": [],
-          "ability": "???",
-          "item": "???",
-          "moves": [
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"}
-          ]
-        },
-        {
-          "species": "???",
-          "sprite": "???",
-          "level": "??",
-          "types": [],
-          "ability": "???",
-          "item": "???",
-          "moves": [
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"},
-            {"name": "???", "type": "???"}
+            {"name": "Meteor Mash", "type": "Steel"},
+            {"name": "Sky Uppercut", "type": "Fighting"},
+            {"name": "Aerial Ace", "type": "Flying"},
+            {"name": "Agility", "type": "Psychic"}
           ]
         }
       ]
@@ -989,7 +989,7 @@
         {
           "species": "Unfezant",
           "sprite": "unfezant",
-          "level": 53,
+          "level": 52,
           "types": ["Normal", "Flying"],
           "ability": "Super Luck",
           "item": "Bright Powder",
@@ -1045,7 +1045,7 @@
         {
           "species": "Eelektross",
           "sprite": "eelektross",
-          "level": 52,
+          "level": 53,
           "types": ["Electric", "Water"],
           "ability": "Levitate",
           "item": "Rocky Helmet",
