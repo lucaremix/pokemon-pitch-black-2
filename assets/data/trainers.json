@@ -763,17 +763,17 @@
           ]
         },
         {
-          "species": "Volcarona",
-          "sprite": "volcarona",
-          "level": 49,
-          "types": ["Bug", "Fire"],
-          "ability": "Flame Body",
-          "item": "Lum Berry",
+          "species": "Iron Valiant",
+          "sprite": "ironvaliant",
+          "level": 50,
+          "types": ["Fairy", "Fighting"],
+          "ability": "Motor Drive",
+          "item": "Expert Belt",
           "moves": [
-            {"name": "Quiver Dance", "type": "Bug"},
-            {"name": "Fiery Dance", "type": "Fire"},
-            {"name": "Bug Buzz", "type": "Bug"},
-            {"name": "Giga Drain", "type": "Grass"}
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Dazzling Gleam", "type": "Fairy"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Shadow Sneak", "type": "Ghost"}
           ]
         }
       ]
