@@ -1397,8 +1397,8 @@
           "sprite": "scovillain",
           "level": 67,
           "types": ["Grass", "Fire"],
-          "ability": "Chlorophyll",
-          "item": "White Herb",
+          "ability": "Moody",
+          "item": "Power Herb",
           "moves": [
             {"name": "Flamethrower", "type": "Fire"},
             {"name": "Giga Drain", "type": "Grass"},
