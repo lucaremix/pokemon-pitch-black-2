@@ -35,7 +35,7 @@
             {"name": "Tackle", "type": "Normal"},
             {"name": "Leer", "type": "Normal"},
             {"name": "Bite", "type": "Dark"},
-            {"name": "Baby-Doll Eyes", "type": "Fairy"}
+            {"name": "Charm", "type": "Fairy"}
           ]
         }
       ]
@@ -63,7 +63,7 @@
           "moves": [
             {"name": "Tackle", "type": "Normal"},
             {"name": "Bite", "type": "Dark"},
-            {"name": "Baby-Doll Eyes", "type": "Fairy"},
+            {"name": "Charm", "type": "Fairy"},
             {"name": "Ice Fang", "type": "Ice"}
           ]
         },
@@ -146,7 +146,7 @@
           "moves": [
             {"name": "Headbutt", "type": "Normal"},
             {"name": "Knock Off", "type": "Dark"},
-            {"name": "Baby-Doll Eyes", "type": "Fairy"},
+            {"name": "Charm", "type": "Fairy"},
             {"name": "Sand Attack", "type": "Ground"}
           ]
         },
