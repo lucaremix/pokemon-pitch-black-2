@@ -721,17 +721,17 @@
           ]
         },
         {
-          "species": "Iron Thorns",
-          "sprite": "ironthorns",
+          "species": "Iron Bundle",
+          "sprite": "ironbundle",
           "level": 48,
-          "types": ["Rock", "Electric"],
+          "types": ["Ice", "Water"],
           "ability": "Motor Drive",
-          "item": "Shuca Berry",
+          "item": "Focus Sash",
           "moves": [
-            {"name": "Rock Slide", "type": "Rock"},
-            {"name": "Thunder Fang", "type": "Electric"},
-            {"name": "Earthquake", "type": "Ground"},
-            {"name": "Dragon Dance", "type": "Dragon"}
+            {"name": "Aqua Jet", "type": "Water"},
+            {"name": "Drill Peck", "type": "Flying"},
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Agility", "type": "Psychic"}
           ]
         },
         {
@@ -763,17 +763,14 @@
           ]
         },
         {
-          "species": "Iron Bundle",
+          "species": "Zekrom",
           "sprite": "ironbundle",
           "level": 49,
           "types": ["Ice", "Water"],
           "ability": "Motor Drive",
           "item": "Focus Sash",
           "moves": [
-            {"name": "Aqua Jet", "type": "Water"},
-            {"name": "Drill Peck", "type": "Flying"},
-            {"name": "Blizzard", "type": "Ice"},
-            {"name": "Agility", "type": "Psychic"}
+
           ]
         }
       ]
