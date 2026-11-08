@@ -22,7 +22,7 @@
       "color": "#26468f",
       "hidden": false,
       "order": 1,
-      "bag": [{"item": "???", "count": 0}],
+      "bag": [{"item": "Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Lillipup",
@@ -51,7 +51,7 @@
       "color": "#26468f",
       "hidden": false,
       "order": 2,
-      "bag": [{"item": "???", "count": 0}],
+      "bag": [{"item": "Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Lillipup",
@@ -106,7 +106,7 @@
       "sprite": "cheren",
       "hidden": false,
       "order": 3,
-      "bag": [{"item": "???", "count": 0}],
+      "bag": [{"item": "Potion", "count": 2}],
       "pokemon": [
         {
           "species": "Kecleon",
@@ -203,7 +203,7 @@
       "sprite": "roxie",
       "hidden": false,
       "order": 4,
-      "bag": [{"item": "???", "count": 0}],
+      "bag": [{"item": "Super Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Koffing",
@@ -300,7 +300,7 @@
       "sprite": "burgh",
       "hidden": false,
       "order": 5,
-      "bag": [{"item": "???", "count": 0}],
+      "bag": [{"item": "Super Potion", "count": 2}],
       "pokemon": [
         {
           "species": "Shuckle",
@@ -398,7 +398,7 @@
       "sprite": "colress",
       "hidden": false,
       "order": 6,
-      "bag": [{"item": "Hyper Potion", "count": 1}],
+      "bag": [{"item": "Super Potion", "count": 2}],
       "pokemon": [
         {
           "species": "Spinda",
@@ -495,7 +495,7 @@
       "sprite": "elesa",
       "hidden": false,
       "order": 7,
-      "bag": [{"item": "???", "count": 0}],
+      "bag": [{"item": "Hyper Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Raichu (Alola)",
@@ -592,7 +592,7 @@
       "sprite": "clay",
       "hidden": false,
       "order": 8,
-      "bag": [{"item": "???", "count": 0}],
+      "bag": [{"item": "Hyper Potion", "count": 1}, {"item": "Super Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Hippowdon",
@@ -681,6 +681,104 @@
       ]
     },
     {
+      "id": "rival-n",
+      "game-id": [],
+      "name": "N",
+      "role": "Rival",
+      "location": "Celestial Tower",
+      "levelCap": 50,
+      "sprite": "n",
+      "hidden": true,
+      "order": 9,
+      "bag": [{"item": "Hyper Potion", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Ferrothorn",
+          "sprite": "ferrothorn",
+          "level": 48,
+          "types": ["Grass", "Steel"],
+          "ability": "Iron Barbs",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Leech Seed", "type": "Grass"},
+            {"name": "Power Whip", "type": "Grass"},
+            {"name": "Gyro Ball", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Zoroark (Hisui)",
+          "sprite": "zoroark-hisui",
+          "level": 50,
+          "types": ["Normal", "Ghost"],
+          "ability": "Illusion",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Shadow Sneak", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Iron Thorns",
+          "sprite": "ironthorns",
+          "level": 48,
+          "types": ["Rock", "Electric"],
+          "ability": "Motor Drive",
+          "item": "Shuca Berry",
+          "moves": [
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Thunder Fang", "type": "Electric"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Dragon Dance", "type": "Dragon"}
+          ]
+        },
+        {
+          "species": "Zoroark",
+          "sprite": "zoroark",
+          "level": 49,
+          "types": ["Dark", "Fairy"],
+          "ability": "Prankster",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Night Daze", "type": "Dark"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Nasty Plot", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Iron Bundle",
+          "sprite": "ironbundle",
+          "level": 49,
+          "types": ["Ice", "Water"],
+          "ability": "Motor Drive",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Drill Peck", "type": "Flying"},
+            {"name": "Encore", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Volcarona",
+          "sprite": "volcarona",
+          "level": 49,
+          "types": ["Bug", "Fire"],
+          "ability": "Flame Body",
+          "item": "Lum Berry",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Fiery Dance", "type": "Fire"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        }
+      ]
+    },
+    {
       "id": "gym6-skyla",
       "game-id": [155],
       "name": "Skyla",
@@ -688,8 +786,8 @@
       "levelCap": 50,
       "sprite": "skyla",
       "hidden": false,
-      "order": 9,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 10,
+      "bag": [{"item": "Hyper Potion", "count": 2}],
       "pokemon": [
         {
           "species": "Talonflame",
@@ -787,8 +885,8 @@
       "sprite": "hugh",
       "color": "#26468f",
       "hidden": false,
-      "order": 10,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 11,
+      "bag": [{"item": "Hyper Potion", "count": 2}],
       "pokemon": [
         {
           "species": "Unfezant",
@@ -886,8 +984,8 @@
       "sprite": ["zinzolin","plasmagrunt"],
       "hidden": false,
       "double": true,
-      "order": 11,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 12,
+      "bag": [{"item": "Hyper Potion", "count": 2}],
       "pokemon": [
         {
           "species": "Cryogonal",
@@ -969,8 +1067,8 @@
       "levelCap": 59,
       "sprite": "drayden",
       "hidden": false,
-      "order": 12,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 13,
+      "bag": [{"item": "Max Potion", "count": 1}, {"item": "Hyper Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Druddigon",
@@ -1068,8 +1166,8 @@
       "sprite": ["zinzolin","shadowtriad"],
       "hidden": false,
       "double": true,
-      "order": 13,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 14,
+      "bag": [{"item": "Max Potion", "count": 1}, {"item": "Hyper Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Abomasnow",
@@ -1151,8 +1249,8 @@
       "levelCap": 62,
       "sprite": "marlon",
       "hidden": false,
-      "order": 14,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 15,
+      "bag": [{"item": "Max Potion", "count": 2}],
       "pokemon": [
         {
           "species": "Slowking",
@@ -1249,8 +1347,8 @@
       "levelCap": 66,
       "sprite": "colress",
       "hidden": false,
-      "order": 15,
-      "bag": [{"item": "Full Restore", "count": 1}],
+      "order": 16,
+      "bag": [{"item": "Full Restore", "count": 1}, {"item": "Max Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Beheeyem",
@@ -1347,8 +1445,8 @@
       "levelCap": 67,
       "sprite": "ghetsis",
       "hidden": false,
-      "order": 16,
-      "bag": [{"item": "Full Restore", "count": 2}],
+      "order": 17,
+      "bag": [{"item": "Full Restore", "count": 1}, {"item": "Max Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Grimmsnarl",
@@ -1446,8 +1544,8 @@
       "sprite": "hugh",
       "color": "#26468f",
       "hidden": false,
-      "order": 17,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 18,
+      "bag": [{"item": "Full Restore", "count": 1}, {"item": "Max Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Unfezant",
@@ -1544,8 +1642,8 @@
       "levelCap": 72,
       "sprite": "shauntal",
       "hidden": false,
-      "order": 18,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 19,
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Dragapult",
@@ -1642,8 +1740,8 @@
       "levelCap": 72,
       "sprite": "grimsley",
       "hidden": false,
-      "order": 19,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 20,
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Liepard",
@@ -1740,8 +1838,8 @@
       "levelCap": 72,
       "sprite": "caitlin",
       "hidden": false,
-      "order": 20,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 21,
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Starmie",
@@ -1838,8 +1936,8 @@
       "levelCap": 72,
       "sprite": "marshal",
       "hidden": false,
-      "order": 21,
-      "bag": [{"item": "???", "count": 0}],
+      "order": 22,
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Sawk",
@@ -1936,7 +2034,7 @@
       "levelCap": 74,
       "sprite": "iris",
       "hidden": false,
-      "order": 22,
+      "order": 23,
       "bag": [{"item": "Full Restore", "count": 3}],
       "pokemon": [
         {
