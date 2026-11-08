@@ -1,0 +1,4047 @@
+{
+  "_readme": "Edit freely: species, level, types, ability, item, moves, location. 'sprite' is the slug for the Pokemon GIF (variants use 'unown-question' until real sprites exist). Each move's type is in its 'type' field. 'hidden': true = spoiler battle, opens only after clicking. 'role' is optional (gym leaders have none).",
+  "meta": {
+    "game": "Pokemon Pitch Black 2",
+    "urls": {
+      "trainer": "https://play.pokemonshowdown.com/sprites/trainers/{sprite}.png",
+      "pokemon": "https://play.pokemonshowdown.com/sprites/gen5ani/{sprite}.gif",
+      "item": "https://play.pokemonshowdown.com/sprites/itemicons/{item}.png"
+    },
+    "itemSlugRule": "lowercase item name, spaces become hyphens, apostrophes/periods removed (e.g. 'Sitrus Berry' -> 'sitrus-berry', 'Never-Melt Ice' -> 'never-melt-ice')",
+    "levelRule": "the highest-level Pokemon of each trainer is exactly the level cap; the others are 1-2 levels below"
+  },
+  "trainers": [
+    {
+      "id": "gym-normal-2",
+      "name": "Normal Gym Leader – Team 2",
+      "location": "Normal Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 1,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Blissey",
+          "sprite": "blissey",
+          "level": "??",
+          "types": ["Normal"],
+          "ability": "Natural Cure",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Seismic Toss", "type": "Fighting"},
+            {"name": "Soft-Boiled", "type": "Normal"},
+            {"name": "Toxic", "type": "Poison"},
+            {"name": "Light Screen", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Miltank",
+          "sprite": "miltank",
+          "level": "??",
+          "types": ["Normal", "Ground"],
+          "ability": "Regenerator",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Body Slam", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Milk Drink", "type": "Normal"},
+            {"name": "Heal Bell", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Lickilicky",
+          "sprite": "lickilicky",
+          "level": "??",
+          "types": ["Normal"],
+          "ability": "Oblivious",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Gyro Ball", "type": "Steel"},
+            {"name": "Power Whip", "type": "Grass"},
+            {"name": "Rest", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Snorlax",
+          "sprite": "snorlax",
+          "level": "??",
+          "types": ["Normal"],
+          "ability": "Thick Fat",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Amnesia", "type": "Psychic"},
+            {"name": "Body Slam", "type": "Normal"},
+            {"name": "Rest", "type": "Psychic"},
+            {"name": "Sleep Talk", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Porygon2",
+          "sprite": "porygon2",
+          "level": "??",
+          "types": ["Normal", "Electric"],
+          "ability": "Download",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Toxic", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Unovan Slowbro",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Normal", "Bug"],
+          "ability": "Swarm",
+          "item": "Chesto Berry",
+          "moves": [
+            {"name": "Attack Order", "type": "Bug"},
+            {"name": "Double-Edge", "type": "Normal"},
+            {"name": "Defend Order", "type": "Bug"},
+            {"name": "Rest", "type": "Psychic"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-normal-3",
+      "name": "Normal Gym Leader – Team 3",
+      "location": "Normal Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 2,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Kangaskhan",
+          "sprite": "kangaskhan",
+          "level": "??",
+          "types": ["Normal"],
+          "ability": "Scrappy",
+          "item": "Silk Scarf",
+          "moves": [
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Return", "type": "Normal"},
+            {"name": "Sucker Punch", "type": "Dark"},
+            {"name": "Crunch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Ambipom",
+          "sprite": "ambipom",
+          "level": "??",
+          "types": ["Normal", "Fighting"],
+          "ability": "Technician",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Double Hit", "type": "Normal"},
+            {"name": "Low Sweep", "type": "Fighting"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Cinccino",
+          "sprite": "cinccino",
+          "level": "??",
+          "types": ["Normal", "Fairy"],
+          "ability": "Skill Link",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Tail Slap", "type": "Normal"},
+            {"name": "Bullet Seed", "type": "Grass"},
+            {"name": "Rock Blast", "type": "Rock"},
+            {"name": "Wake-Up Slap", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Ursaluna",
+          "sprite": "ursaluna",
+          "level": "??",
+          "types": ["Ground", "Normal"],
+          "ability": "Guts",
+          "item": "Flame Orb",
+          "moves": [
+            {"name": "Facade", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Hammer Arm", "type": "Fighting"},
+            {"name": "Play Rough", "type": "Fairy"}
+          ]
+        },
+        {
+          "species": "Zoroark (Hisui)",
+          "sprite": "zoroark-hisui",
+          "level": "??",
+          "types": ["Normal", "Ghost"],
+          "ability": "Illusion",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Unovan Slowbro",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Normal", "Bug"],
+          "ability": "Swarm",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Body Slam", "type": "Normal"},
+            {"name": "Hone Claws", "type": "Dark"},
+            {"name": "Slack Off", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-grass-1",
+      "name": "Grass Gym Leader – Team 1",
+      "location": "Grass Gym – ???",
+      "levelCap": 11,
+      "sprite": "???",
+      "hidden": false,
+      "order": 3,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Roselia",
+          "sprite": "roselia",
+          "level": 11,
+          "types": ["Grass", "Poison"],
+          "ability": "Natural Cure",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Leech Seed", "type": "Grass"},
+            {"name": "Magical Leaf", "type": "Grass"},
+            {"name": "Toxic Spikes", "type": "Poison"},
+            {"name": "Stun Spore", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Flaaffy",
+          "sprite": "flaaffy",
+          "level": 11,
+          "types": ["Electric", "Grass"],
+          "ability": "Static",
+          "item": "Miracle Seed",
+          "moves": [
+            {"name": "Thunder Shock", "type": "Electric"},
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Mega Drain", "type": "Grass"},
+            {"name": "Light Screen", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Pansear",
+          "sprite": "pansear",
+          "level": 12,
+          "types": ["Fire", "Grass"],
+          "ability": "Gluttony",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Incinerate", "type": "Fire"},
+            {"name": "Razor Leaf", "type": "Grass"},
+            {"name": "Yawn", "type": "Normal"},
+            {"name": "Amnesia", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Panpour",
+          "sprite": "panpour",
+          "level": 12,
+          "types": ["Water", "Grass"],
+          "ability": "Gluttony",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Mega Drain", "type": "Grass"},
+            {"name": "Water Gun", "type": "Water"},
+            {"name": "Fury Swipes", "type": "Normal"},
+            {"name": "Recycle", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Pansage",
+          "sprite": "pansage",
+          "level": 12,
+          "types": ["Grass", "Fighting"],
+          "ability": "Gluttony",
+          "item": "Cheri Berry",
+          "moves": [
+            {"name": "Vine Whip", "type": "Grass"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Leech Seed", "type": "Grass"},
+            {"name": "Torment", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Unovan Camerupt",
+          "sprite": "unown-question",
+          "level": 13,
+          "types": ["Ground", "Grass"],
+          "ability": "Chlorophyll",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Solar Beam", "type": "Grass"},
+            {"name": "Ancient Power", "type": "Rock"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-grass-2",
+      "name": "Grass Gym Leader – Team 2 (Sunny Day)",
+      "location": "Grass Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 4,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Whimsicott",
+          "sprite": "whimsicott",
+          "level": "??",
+          "types": ["Grass", "Fairy"],
+          "ability": "Prankster",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Leech Seed", "type": "Grass"},
+            {"name": "Encore", "type": "Normal"},
+            {"name": "Sunny Day", "type": "Fire"},
+            {"name": "Energy Ball", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Electrode (Hisui)",
+          "sprite": "electrode-hisui",
+          "level": "??",
+          "types": ["Electric", "Grass"],
+          "ability": "Aftermath",
+          "item": "Choice Specs",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Leaf Storm", "type": "Grass"},
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Energy Ball", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Lilligant (Hisui)",
+          "sprite": "lilligant-hisui",
+          "level": "??",
+          "types": ["Grass", "Fighting"],
+          "ability": "Chlorophyll",
+          "item": "Coba Berry",
+          "moves": [
+            {"name": "Sleep Powder", "type": "Grass"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Solar Blade", "type": "Grass"},
+            {"name": "After You", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Scovillain",
+          "sprite": "scovillain",
+          "level": "??",
+          "types": ["Grass", "Fire"],
+          "ability": "Chlorophyll",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Solar Beam", "type": "Grass"},
+            {"name": "Growth", "type": "Normal"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Brute Bonnet",
+          "sprite": "brutebonnet",
+          "level": "??",
+          "types": ["Grass", "Dark"],
+          "ability": "Chlorophyll",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Spore", "type": "Grass"},
+            {"name": "Sucker Punch", "type": "Dark"},
+            {"name": "Seed Bomb", "type": "Grass"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Unovan Camerupt",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Ground", "Grass"],
+          "ability": "Chlorophyll",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Solar Beam", "type": "Grass"},
+            {"name": "Ancient Power", "type": "Rock"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-grass-3",
+      "name": "Grass Gym Leader – Team 3 (Rain)",
+      "location": "Grass Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 5,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Politoed",
+          "sprite": "politoed",
+          "level": "??",
+          "types": ["Water", "Grass"],
+          "ability": "Drizzle",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Encore", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Ludicolo",
+          "sprite": "ludicolo",
+          "level": "??",
+          "types": ["Water", "Grass"],
+          "ability": "Swift Swim",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Focus Blast", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Simipour",
+          "sprite": "simipour",
+          "level": "??",
+          "types": ["Water", "Grass"],
+          "ability": "Gluttony",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Grass Knot", "type": "Grass"},
+            {"name": "Ice Beam", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Leafeon",
+          "sprite": "leafeon",
+          "level": "??",
+          "types": ["Grass", "Steel"],
+          "ability": "Technician",
+          "item": "Occa Berry",
+          "moves": [
+            {"name": "Cut", "type": "Grass"},
+            {"name": "Acrobatics", "type": "Flying"},
+            {"name": "Metal Claw", "type": "Steel"},
+            {"name": "Swords Dance", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Maractus",
+          "sprite": "maractus",
+          "level": "??",
+          "types": ["Grass", "Ground"],
+          "ability": "Water Absorb",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Sucker Punch", "type": "Dark"},
+            {"name": "Spikes", "type": "Ground"},
+            {"name": "Synthesis", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Unovan Camerupt",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Ground", "Grass"],
+          "ability": "Chlorophyll",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Solar Beam", "type": "Grass"},
+            {"name": "Ancient Power", "type": "Rock"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-fire-1",
+      "name": "Fire Gym Leader – Team 1",
+      "location": "Fire Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 6,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Lampent",
+          "sprite": "lampent",
+          "level": "??",
+          "types": ["Ghost", "Fire"],
+          "ability": "Flame Body",
+          "item": "Charcoal",
+          "moves": [
+            {"name": "Hex", "type": "Ghost"},
+            {"name": "Flame Burst", "type": "Fire"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Confuse Ray", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Oricorio",
+          "sprite": "oricorio",
+          "level": "??",
+          "types": ["Fire", "Flying"],
+          "ability": "Own Tempo",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Aerial Ace", "type": "Flying"},
+            {"name": "Flame Charge", "type": "Fire"},
+            {"name": "Agility", "type": "Psychic"},
+            {"name": "Baton Pass", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Volbeat",
+          "sprite": "volbeat",
+          "level": "??",
+          "types": ["Bug", "Fire"],
+          "ability": "Illuminate",
+          "item": "Charti Berry",
+          "moves": [
+            {"name": "Flame Burst", "type": "Fire"},
+            {"name": "Curse", "type": "Ghost"},
+            {"name": "Yawn", "type": "Normal"},
+            {"name": "Ember", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Houndour",
+          "sprite": "houndour",
+          "level": "??",
+          "types": ["Dark", "Fire"],
+          "ability": "Flash Fire",
+          "item": "Black Glasses",
+          "moves": [
+            {"name": "Fire Fang", "type": "Fire"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Feint Attack", "type": "Dark"},
+            {"name": "Howl", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Growlithe (Hisui)",
+          "sprite": "growlithe-hisui",
+          "level": "??",
+          "types": ["Fire", "Rock"],
+          "ability": "Intimidate",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Flame Wheel", "type": "Fire"},
+            {"name": "Fire Fang", "type": "Fire"},
+            {"name": "Retaliate", "type": "Normal"},
+            {"name": "Helping Hand", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Marowak (Alola)",
+          "sprite": "marowak-alola",
+          "level": "??",
+          "types": ["Fire", "Ghost"],
+          "ability": "Cursed Body",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Flame Wheel", "type": "Fire"},
+            {"name": "Rock Throw", "type": "Rock"},
+            {"name": "Bonemerang", "type": "Ground"},
+            {"name": "Shadow Claw", "type": "Ghost"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-fire-2",
+      "name": "Fire Gym Leader – Team 2 (Sunny Day)",
+      "location": "Fire Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 7,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Ninetales",
+          "sprite": "ninetales",
+          "level": "??",
+          "types": ["Fire", "Psychic"],
+          "ability": "Magic Guard",
+          "item": "???",
+          "moves": [
+            {"name": "Sunny Day", "type": "Fire"},
+            {"name": "Extrasensory", "type": "Psychic"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Confuse Ray", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Darmanitan",
+          "sprite": "darmanitan",
+          "level": "??",
+          "types": ["Fire", "Fighting"],
+          "ability": "Sheer Force",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "Flare Blitz", "type": "Fire"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Superpower", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Volcarona",
+          "sprite": "volcarona",
+          "level": "??",
+          "types": ["Bug", "Fire"],
+          "ability": "Flame Body",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Fiery Dance", "type": "Fire"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Ceruledge",
+          "sprite": "ceruledge",
+          "level": "??",
+          "types": ["Fire", "Ghost"],
+          "ability": "Flash Fire",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Flare Blitz", "type": "Fire"},
+            {"name": "Shadow Claw", "type": "Ghost"},
+            {"name": "Night Slash", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Rapidash",
+          "sprite": "rapidash",
+          "level": "??",
+          "types": ["Fire", "Fairy"],
+          "ability": "Flash Fire",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Flare Blitz", "type": "Fire"},
+            {"name": "Megahorn", "type": "Bug"},
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Poison Jab", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Unovan Luxray",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Electric", "Fire"],
+          "ability": "Intimidate",
+          "item": "Shuka Berry",
+          "moves": [
+            {"name": "Thunder Fang", "type": "Electric"},
+            {"name": "Fire Fang", "type": "Fire"},
+            {"name": "Roar", "type": "Normal"},
+            {"name": "Ice Fang", "type": "Ice"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-fire-3",
+      "name": "Fire Gym Leader – Team 3 (Trick Room)",
+      "location": "Fire Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 8,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Solrock",
+          "sprite": "solrock",
+          "level": "??",
+          "types": ["Rock", "Fire"],
+          "ability": "Levitate",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Trick Room", "type": "Psychic"},
+            {"name": "Reflect", "type": "Psychic"},
+            {"name": "Flare Blitz", "type": "Fire"},
+            {"name": "Explosion", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Torkoal",
+          "sprite": "torkoal",
+          "level": "??",
+          "types": ["Fire"],
+          "ability": "White Smoke",
+          "item": "Charcoal",
+          "moves": [
+            {"name": "Eruption", "type": "Fire"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Solar Beam", "type": "Grass"},
+            {"name": "Will-O-Wisp", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Octillery",
+          "sprite": "octillery",
+          "level": "??",
+          "types": ["Water", "Fire"],
+          "ability": "Sniper",
+          "item": "Choice Specs",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Overheat", "type": "Fire"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Energy Ball", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Throh",
+          "sprite": "throh",
+          "level": "??",
+          "types": ["Fighting", "Fire"],
+          "ability": "Guts",
+          "item": "Flame Orb",
+          "moves": [
+            {"name": "Facade", "type": "Normal"},
+            {"name": "Storm Throw", "type": "Fighting"},
+            {"name": "Flare Blitz", "type": "Fire"},
+            {"name": "Bulk Up", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Unovan Luxray",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Electric", "Fire"],
+          "ability": "Intimidate",
+          "item": "Iron Ball",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Fire Fang", "type": "Fire"},
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Ice Fang", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Sunflora",
+          "sprite": "sunflora",
+          "level": "??",
+          "types": ["Grass", "Fire"],
+          "ability": "Solar Power",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Sunny Day", "type": "Fire"},
+            {"name": "Solar Beam", "type": "Grass"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-dragon-1",
+      "name": "Dragon Gym Leader – Team 1",
+      "location": "Dragon Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 9,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Axew",
+          "sprite": "axew",
+          "level": "??",
+          "types": ["Dragon"],
+          "ability": "Mold Breaker",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Dragon Rage", "type": "Dragon"},
+            {"name": "Slash", "type": "Normal"},
+            {"name": "Scary Face", "type": "Normal"},
+            {"name": "Dual Chop", "type": "Dragon"}
+          ]
+        },
+        {
+          "species": "Bagon",
+          "sprite": "bagon",
+          "level": "??",
+          "types": ["Dragon"],
+          "ability": "Rock Head",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Dragon Breath", "type": "Dragon"},
+            {"name": "Headbutt", "type": "Normal"},
+            {"name": "Focus Energy", "type": "Normal"},
+            {"name": "Bite", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Deino",
+          "sprite": "deino",
+          "level": "??",
+          "types": ["Dragon", "Poison"],
+          "ability": "Hustle",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Dragon Rage", "type": "Dragon"},
+            {"name": "Dragon Breath", "type": "Dragon"},
+            {"name": "Clear Smog", "type": "Poison"},
+            {"name": "Roar", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Goomy",
+          "sprite": "goomy",
+          "level": "??",
+          "types": ["Dragon"],
+          "ability": "Hydration",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Rain Dance", "type": "Water"},
+            {"name": "Bubble", "type": "Water"},
+            {"name": "Dragon Breath", "type": "Dragon"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Jangmo-o",
+          "sprite": "jangmoo",
+          "level": "??",
+          "types": ["Dragon"],
+          "ability": "Soundproof",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Dragon Tail", "type": "Dragon"},
+            {"name": "Headbutt", "type": "Normal"},
+            {"name": "Screech", "type": "Normal"},
+            {"name": "Iron Defense", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Tyrunt",
+          "sprite": "tyrunt",
+          "level": "??",
+          "types": ["Rock", "Dragon"],
+          "ability": "Sturdy",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Dragon Tail", "type": "Dragon"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Ancient Power", "type": "Rock"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-dragon-3",
+      "name": "Dragon Gym Leader – Team 3 (Rain)",
+      "location": "Dragon Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 10,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Goodra",
+          "sprite": "goodra",
+          "level": "??",
+          "types": ["Dragon"],
+          "ability": "Hydration",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Rain Dance", "type": "Water"},
+            {"name": "Muddy Water", "type": "Water"},
+            {"name": "Draco Meteor", "type": "Dragon"},
+            {"name": "Sludge Bomb", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Vaporeon",
+          "sprite": "vaporeon",
+          "level": "??",
+          "types": ["Water", "Dragon"],
+          "ability": "Hydration",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Haze", "type": "Ice"},
+            {"name": "Wish", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Heliolisk",
+          "sprite": "heliolisk",
+          "level": "??",
+          "types": ["Electric", "Dragon"],
+          "ability": "Dry Skin",
+          "item": "Choice Specs",
+          "moves": [
+            {"name": "Thunder", "type": "Electric"},
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Surf", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Dragonite",
+          "sprite": "dragonite",
+          "level": "??",
+          "types": ["Dragon", "Water"],
+          "ability": "Marvel Scale",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Aqua Tail", "type": "Water"},
+            {"name": "Outrage", "type": "Dragon"},
+            {"name": "Thunder Wave", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Yanmega",
+          "sprite": "yanmega",
+          "level": "??",
+          "types": ["Bug", "Dragon"],
+          "ability": "Speed Boost",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "U-turn", "type": "Bug"},
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Unovan Salamence",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Dragon", "Fire"],
+          "ability": "Intimidate",
+          "item": "Lum Berry",
+          "moves": [
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Dragon Claw", "type": "Dragon"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-fighting-1",
+      "name": "Fighting Gym Leader – Team 1",
+      "location": "Fighting Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 11,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Mankey",
+          "sprite": "mankey",
+          "level": "??",
+          "types": ["Fighting"],
+          "ability": "Vital Spirit",
+          "item": "Scope Lens",
+          "moves": [
+            {"name": "Focus Energy", "type": "Normal"},
+            {"name": "Karate Chop", "type": "Fighting"},
+            {"name": "Fury Swipes", "type": "Normal"},
+            {"name": "Seismic Toss", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Machop",
+          "sprite": "machop",
+          "level": "??",
+          "types": ["Fighting"],
+          "ability": "Guts",
+          "item": "Black Belt",
+          "moves": [
+            {"name": "Karate Chop", "type": "Fighting"},
+            {"name": "Revenge", "type": "Fighting"},
+            {"name": "Vital Throw", "type": "Fighting"},
+            {"name": "Focus Energy", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Meditite",
+          "sprite": "meditite",
+          "level": "??",
+          "types": ["Fighting", "Psychic"],
+          "ability": "Pure Power",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Force Palm", "type": "Fighting"},
+            {"name": "Confusion", "type": "Psychic"},
+            {"name": "Calm Mind", "type": "Psychic"},
+            {"name": "Detect", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Riolu",
+          "sprite": "riolu",
+          "level": "??",
+          "types": ["Fighting"],
+          "ability": "Steadfast",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Quick Attack", "type": "Normal"},
+            {"name": "Force Palm", "type": "Fighting"},
+            {"name": "Counter", "type": "Fighting"},
+            {"name": "Endure", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Scraggy",
+          "sprite": "scraggy",
+          "level": "??",
+          "types": ["Dark", "Fighting"],
+          "ability": "Moxie",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Payback", "type": "Dark"},
+            {"name": "Chip Away", "type": "Normal"},
+            {"name": "Headbutt", "type": "Normal"},
+            {"name": "Swagger", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Croagunk",
+          "sprite": "croagunk",
+          "level": "??",
+          "types": ["Poison", "Fighting"],
+          "ability": "Anticipation",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Karate Chop", "type": "Fighting"},
+            {"name": "Shadow Sneak", "type": "Ghost"},
+            {"name": "Revenge", "type": "Fighting"},
+            {"name": "Taunt", "type": "Dark"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-fighting-2",
+      "name": "Fighting Gym Leader – Team 2",
+      "location": "Fighting Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 12,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Conkeldurr",
+          "sprite": "conkeldurr",
+          "level": "??",
+          "types": ["Fighting", "Rock"],
+          "ability": "Guts",
+          "item": "Flame Orb",
+          "moves": [
+            {"name": "Facade", "type": "Normal"},
+            {"name": "Mach Punch", "type": "Fighting"},
+            {"name": "Hammer Arm", "type": "Fighting"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Hariyama",
+          "sprite": "hariyama",
+          "level": "??",
+          "types": ["Fighting"],
+          "ability": "Guts",
+          "item": "Toxic Orb",
+          "moves": [
+            {"name": "Facade", "type": "Normal"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Bullet Punch", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Machamp",
+          "sprite": "machamp",
+          "level": "??",
+          "types": ["Fighting"],
+          "ability": "Guts",
+          "item": "Flame Orb",
+          "moves": [
+            {"name": "Cross Chop", "type": "Fighting"},
+            {"name": "Bullet Punch", "type": "Steel"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Ice Punch", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Heracross",
+          "sprite": "heracross",
+          "level": "??",
+          "types": ["Bug", "Fighting"],
+          "ability": "Guts",
+          "item": "Toxic Orb",
+          "moves": [
+            {"name": "Megahorn", "type": "Bug"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Facade", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Medicham",
+          "sprite": "medicham",
+          "level": "??",
+          "types": ["Fighting", "Psychic"],
+          "ability": "Pure Power",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Bulk Up", "type": "Fighting"},
+            {"name": "High Jump Kick", "type": "Fighting"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Recover", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Kommo-o",
+          "sprite": "kommoo",
+          "level": "??",
+          "types": ["Dragon", "Fighting"],
+          "ability": "Soundproof",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Iron Defense", "type": "Steel"},
+            {"name": "Poison Jab", "type": "Poison"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-ghost-1",
+      "name": "Ghost Gym Leader – Team 1",
+      "location": "Ghost Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 13,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Gastly",
+          "sprite": "gastly",
+          "level": "??",
+          "types": ["Ghost", "Dark"],
+          "ability": "Cursed Body",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Mean Look", "type": "Normal"},
+            {"name": "Curse", "type": "Ghost"},
+            {"name": "Night Shade", "type": "Ghost"},
+            {"name": "Confuse Ray", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Shuppet",
+          "sprite": "shuppet",
+          "level": "??",
+          "types": ["Ghost"],
+          "ability": "Frisk",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Screech", "type": "Normal"},
+            {"name": "Night Shade", "type": "Ghost"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Shadow Sneak", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Duskull",
+          "sprite": "duskull",
+          "level": "??",
+          "types": ["Ghost"],
+          "ability": "Levitate",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Confuse Ray", "type": "Ghost"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Hex", "type": "Ghost"},
+            {"name": "Pursuit", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Yamask",
+          "sprite": "yamask",
+          "level": "??",
+          "types": ["Ghost"],
+          "ability": "Mummy",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Disable", "type": "Normal"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Hex", "type": "Ghost"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Misdreavus",
+          "sprite": "misdreavus",
+          "level": "??",
+          "types": ["Ghost", "Fairy"],
+          "ability": "Levitate",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Confuse Ray", "type": "Ghost"},
+            {"name": "Psybeam", "type": "Psychic"},
+            {"name": "Hex", "type": "Ghost"},
+            {"name": "Pain Split", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Corsola (Galar)",
+          "sprite": "corsola-galar",
+          "level": "??",
+          "types": ["Ghost"],
+          "ability": "Cursed Body",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Curse", "type": "Ghost"},
+            {"name": "Night Shade", "type": "Ghost"},
+            {"name": "Power Gem", "type": "Rock"},
+            {"name": "Spite", "type": "Ghost"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-ghost-2",
+      "name": "Ghost Gym Leader – Team 2 (Trick Room)",
+      "location": "Ghost Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 14,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Cofagrigus",
+          "sprite": "cofagrigus",
+          "level": "??",
+          "types": ["Ghost", "Steel"],
+          "ability": "Mummy",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Trick Room", "type": "Psychic"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Flash Cannon", "type": "Steel"},
+            {"name": "Will-O-Wisp", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Dusknoir",
+          "sprite": "dusknoir",
+          "level": "??",
+          "types": ["Ghost", "Fighting"],
+          "ability": "Iron Fist",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Trick Room", "type": "Psychic"},
+            {"name": "Shadow Punch", "type": "Ghost"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Thunder Punch", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Golurk",
+          "sprite": "golurk",
+          "level": "??",
+          "types": ["Ghost", "Steel"],
+          "ability": "Iron Fist",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "Hammer Arm", "type": "Fighting"},
+            {"name": "Shadow Punch", "type": "Ghost"},
+            {"name": "Meteor Mash", "type": "Steel"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Spiritomb",
+          "sprite": "spiritomb",
+          "level": "??",
+          "types": ["Ghost", "Rock"],
+          "ability": "Infiltrator",
+          "item": "Lum Berry",
+          "moves": [
+            {"name": "Curse", "type": "Ghost"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Shadow Sneak", "type": "Ghost"},
+            {"name": "Pain Split", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Palossand",
+          "sprite": "palossand",
+          "level": "??",
+          "types": ["Ghost", "Ground"],
+          "ability": "Water Absorb",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Hypnosis", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Gholdengo",
+          "sprite": "gholdengo",
+          "level": "??",
+          "types": ["Steel", "Ghost"],
+          "ability": "Good as Gold",
+          "item": "Air Balloon",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Flash Cannon", "type": "Steel"},
+            {"name": "Recover", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-fairy-1",
+      "name": "Fairy Gym Leader – Team 1",
+      "location": "Fairy Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 15,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Marill",
+          "sprite": "marill",
+          "level": "??",
+          "types": ["Water", "Fairy"],
+          "ability": "Huge Power",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Defense Curl", "type": "Normal"},
+            {"name": "Rollout", "type": "Rock"},
+            {"name": "Bubble Beam", "type": "Water"},
+            {"name": "Aqua Ring", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Snubbull",
+          "sprite": "snubbull",
+          "level": "??",
+          "types": ["Fairy"],
+          "ability": "Intimidate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Charm", "type": "Fairy"},
+            {"name": "Disarming Voice", "type": "Fairy"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Scary Face", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Skitty",
+          "sprite": "skitty",
+          "level": "??",
+          "types": ["Fairy"],
+          "ability": "Cute Charm",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Attract", "type": "Normal"},
+            {"name": "Charm", "type": "Fairy"},
+            {"name": "Disarming Voice", "type": "Fairy"},
+            {"name": "Heal Bell", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Togepi",
+          "sprite": "togepi",
+          "level": "??",
+          "types": ["Fairy"],
+          "ability": "Serene Grace",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Sweet Kiss", "type": "Fairy"},
+            {"name": "Yawn", "type": "Normal"},
+            {"name": "Wish", "type": "Normal"},
+            {"name": "Ancient Power", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Ralts",
+          "sprite": "ralts",
+          "level": "??",
+          "types": ["Psychic", "Fairy"],
+          "ability": "Synchronize",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Confusion", "type": "Psychic"},
+            {"name": "Charm", "type": "Fairy"},
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Magical Leaf", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Wooper",
+          "sprite": "wooper",
+          "level": "??",
+          "types": ["Fairy", "Ground"],
+          "ability": "Water Absorb",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Disarming Voice", "type": "Fairy"},
+            {"name": "Mud Shot", "type": "Ground"},
+            {"name": "Draining Kiss", "type": "Fairy"},
+            {"name": "Yawn", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-fairy-2",
+      "name": "Fairy Gym Leader – Team 2",
+      "location": "Fairy Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 16,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Grimmsnarl",
+          "sprite": "grimmsnarl",
+          "level": "??",
+          "types": ["Dark", "Fairy"],
+          "ability": "Prankster",
+          "item": "Light Clay",
+          "moves": [
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Sucker Punch", "type": "Dark"},
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Reflect", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Mawile",
+          "sprite": "mawile",
+          "level": "??",
+          "types": ["Steel", "Fairy"],
+          "ability": "Intimidate",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Sucker Punch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Azumarill",
+          "sprite": "azumarill",
+          "level": "??",
+          "types": ["Water", "Fairy"],
+          "ability": "Huge Power",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Belly Drum", "type": "Normal"},
+            {"name": "Aqua Jet", "type": "Water"},
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Superpower", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Granbull",
+          "sprite": "granbull",
+          "level": "??",
+          "types": ["Steel", "Fairy"],
+          "ability": "Intimidate",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Sableye",
+          "sprite": "sableye",
+          "level": "??",
+          "types": ["Fairy", "Rock"],
+          "ability": "Solid Rock",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Iron Valiant",
+          "sprite": "ironvaliant",
+          "level": "??",
+          "types": ["Fairy", "Fighting"],
+          "ability": "Motor Drive",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-fairy-3",
+      "name": "Fairy Gym Leader – Team 3",
+      "location": "Fairy Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 17,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Alomomola",
+          "sprite": "alomomola",
+          "level": "??",
+          "types": ["Water", "Fairy"],
+          "ability": "Regenerator",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Wish", "type": "Normal"},
+            {"name": "Protect", "type": "Normal"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Toxic", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Milotic",
+          "sprite": "milotic",
+          "level": "??",
+          "types": ["Water", "Fairy"],
+          "ability": "Marvel Scale",
+          "item": "Flame Orb",
+          "moves": [
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Refresh", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Clefable",
+          "sprite": "clefable",
+          "level": "??",
+          "types": ["Fairy"],
+          "ability": "Magic Guard",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Calm Mind", "type": "Psychic"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Moonlight", "type": "Fairy"},
+            {"name": "Flamethrower", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Ninetales (Alola)",
+          "sprite": "ninetales-alola",
+          "level": "??",
+          "types": ["Ice", "Fairy"],
+          "ability": "Snow Cloak",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Dazzling Gleam", "type": "Fairy"},
+            {"name": "Ice Shard", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Beautifly",
+          "sprite": "beautifly",
+          "level": "??",
+          "types": ["Bug", "Fairy"],
+          "ability": "Magic Bounce",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Dazzling Gleam", "type": "Fairy"},
+            {"name": "Morning Sun", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Iron Valiant",
+          "sprite": "ironvaliant",
+          "level": "??",
+          "types": ["Fairy", "Fighting"],
+          "ability": "Motor Drive",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-steel-1",
+      "name": "Steel Gym Leader – Team 1",
+      "location": "Steel Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 18,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Aron",
+          "sprite": "aron",
+          "level": "??",
+          "types": ["Steel"],
+          "ability": "Sturdy",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Iron Defense", "type": "Steel"},
+            {"name": "Metal Claw", "type": "Steel"},
+            {"name": "Headbutt", "type": "Normal"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Shieldon",
+          "sprite": "shieldon",
+          "level": "??",
+          "types": ["Rock", "Steel"],
+          "ability": "Sturdy",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Iron Defense", "type": "Steel"},
+            {"name": "Metal Burst", "type": "Steel"},
+            {"name": "Ancient Power", "type": "Rock"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Magnemite",
+          "sprite": "magnemite",
+          "level": "??",
+          "types": ["Electric", "Steel"],
+          "ability": "Magnet Pull",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Spark", "type": "Electric"},
+            {"name": "Mirror Shot", "type": "Steel"},
+            {"name": "Magnet Rise", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Klink",
+          "sprite": "klink",
+          "level": "??",
+          "types": ["Steel", "Electric"],
+          "ability": "Plus",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Charge Beam", "type": "Electric"},
+            {"name": "Electroweb", "type": "Electric"},
+            {"name": "Gear Grind", "type": "Steel"},
+            {"name": "Shift Gear", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Sandshrew (Alola)",
+          "sprite": "sandshrew-alola",
+          "level": "??",
+          "types": ["Ice", "Steel"],
+          "ability": "Snow Cloak",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Powder Snow", "type": "Ice"},
+            {"name": "Metal Claw", "type": "Steel"},
+            {"name": "Fury Swipes", "type": "Normal"},
+            {"name": "Iron Defense", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Meowth (Galar)",
+          "sprite": "meowth-galar",
+          "level": "??",
+          "types": ["Steel"],
+          "ability": "Technician",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Metal Claw", "type": "Steel"},
+            {"name": "Pay Day", "type": "Normal"},
+            {"name": "Taunt", "type": "Dark"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-steel-2",
+      "name": "Steel Gym Leader – Team 2 (Stall)",
+      "location": "Steel Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 19,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Forretress",
+          "sprite": "forretress",
+          "level": "??",
+          "types": ["Bug", "Steel"],
+          "ability": "Sturdy",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Spikes", "type": "Ground"},
+            {"name": "Toxic Spikes", "type": "Poison"},
+            {"name": "Rapid Spin", "type": "Normal"},
+            {"name": "Gyro Ball", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Bastiodon",
+          "sprite": "bastiodon",
+          "level": "??",
+          "types": ["Rock", "Steel"],
+          "ability": "Sturdy",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Toxic", "type": "Poison"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Roar", "type": "Normal"},
+            {"name": "Rest", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Steelix",
+          "sprite": "steelix",
+          "level": "??",
+          "types": ["Steel", "Ground"],
+          "ability": "Sturdy",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Roar", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Toxic", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Aggron",
+          "sprite": "aggron",
+          "level": "??",
+          "types": ["Steel", "Fighting"],
+          "ability": "Battle Armor",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Roar", "type": "Normal"},
+            {"name": "Heavy Slam", "type": "Steel"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Metal Burst", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Sandslash (Alola)",
+          "sprite": "sandslash-alola",
+          "level": "??",
+          "types": ["Ice", "Steel"],
+          "ability": "Snow Cloak",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Icicle Crash", "type": "Ice"},
+            {"name": "Ice Shard", "type": "Ice"},
+            {"name": "Iron Head", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Iron Treads",
+          "sprite": "irontreads",
+          "level": "??",
+          "types": ["Ground", "Steel"],
+          "ability": "Sand Veil",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Iron Head", "type": "Steel"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-steel-3",
+      "name": "Steel Gym Leader – Team 3",
+      "location": "Steel Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 20,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Bisharp",
+          "sprite": "bisharp",
+          "level": "??",
+          "types": ["Dark", "Steel"],
+          "ability": "Defiant",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Sucker Punch", "type": "Dark"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Klinklang",
+          "sprite": "klinklang",
+          "level": "??",
+          "types": ["Steel", "Electric"],
+          "ability": "Motor Drive",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Shift Gear", "type": "Steel"},
+            {"name": "Gear Grind", "type": "Steel"},
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Substitute", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "",
+          "sprite": "metagross",
+          "level": "??",
+          "types": ["Steel", "Fighting"],
+          "ability": "Clear Body",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "Meteor Mash", "type": "Steel"},
+            {"name": "Bullet Punch", "type": "Steel"},
+            {"name": "Hammer Arm", "type": "Fighting"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Garchomp",
+          "sprite": "garchomp",
+          "level": "??",
+          "types": ["Flying", "Steel"],
+          "ability": "Rough Skin",
+          "item": "Lum Berry",
+          "moves": [
+            {"name": "Acrobatics", "type": "Flying"},
+            {"name": "Iron Tail", "type": "Steel"},
+            {"name": "Surf", "type": "Water"},
+            {"name": "Swords Dance", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Goodra (Hisui)",
+          "sprite": "goodra-hisui",
+          "level": "??",
+          "types": ["Steel", "Dragon"],
+          "ability": "Shell Armor",
+          "item": "Choice Specs",
+          "moves": [
+            {"name": "Draco Meteor", "type": "Dragon"},
+            {"name": "Flash Cannon", "type": "Steel"},
+            {"name": "Fire Blast", "type": "Fire"},
+            {"name": "Thunderbolt", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Iron Treads",
+          "sprite": "irontreads",
+          "level": "??",
+          "types": ["Ground", "Steel"],
+          "ability": "Sand Veil",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Iron Head", "type": "Steel"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-electric-1",
+      "name": "Electric Gym Leader – Team 1",
+      "location": "Electric Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 21,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Pikachu",
+          "sprite": "pikachu",
+          "level": "??",
+          "types": ["Electric"],
+          "ability": "Static",
+          "item": "Light Ball",
+          "moves": [
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Thunder Shock", "type": "Electric"},
+            {"name": "Quick Attack", "type": "Normal"},
+            {"name": "Agility", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Electrike",
+          "sprite": "electrike",
+          "level": "??",
+          "types": ["Electric"],
+          "ability": "Static",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Spark", "type": "Electric"},
+            {"name": "Quick Attack", "type": "Normal"},
+            {"name": "Bite", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Mareep",
+          "sprite": "mareep",
+          "level": "??",
+          "types": ["Electric", "Grass"],
+          "ability": "Static",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Thunder Shock", "type": "Electric"},
+            {"name": "Confuse Ray", "type": "Ghost"},
+            {"name": "Cotton Guard", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Shinx",
+          "sprite": "shinx",
+          "level": "??",
+          "types": ["Electric"],
+          "ability": "Intimidate",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Spark", "type": "Electric"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Swagger", "type": "Normal"},
+            {"name": "Charge", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Voltorb (Hisui)",
+          "sprite": "voltorb-hisui",
+          "level": "??",
+          "types": ["Electric", "Grass"],
+          "ability": "Static",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Stun Spore", "type": "Grass"},
+            {"name": "Charge Beam", "type": "Electric"},
+            {"name": "Swift", "type": "Normal"},
+            {"name": "Screech", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Geodude (Alola)",
+          "sprite": "geodude-alola",
+          "level": "??",
+          "types": ["Rock", "Electric"],
+          "ability": "Magnet Pull",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Spark", "type": "Electric"},
+            {"name": "Rock Throw", "type": "Rock"},
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Smack Down", "type": "Rock"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-electric-2",
+      "name": "Electric Gym Leader – Team 2",
+      "location": "Electric Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 22,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Magnezone",
+          "sprite": "magnezone",
+          "level": "??",
+          "types": ["Electric", "Steel"],
+          "ability": "Magnet Pull",
+          "item": "Choice Specs",
+          "moves": [
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Flash Cannon", "type": "Steel"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Hidden Power Fire", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Rotom (Heat)",
+          "sprite": "rotom-heat",
+          "level": "??",
+          "types": ["Electric", "Fire"],
+          "ability": "Levitate",
+          "item": "Choice Scarf",
+          "moves": [
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Overheat", "type": "Fire"},
+            {"name": "Trick", "type": "Psychic"},
+            {"name": "Hidden Power Ice", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Rotom (Frost)",
+          "sprite": "rotom-frost",
+          "level": "??",
+          "types": ["Electric", "Ice"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Substitute", "type": "Normal"},
+            {"name": "Pain Split", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Jolteon",
+          "sprite": "jolteon",
+          "level": "??",
+          "types": ["Electric", "Ground"],
+          "ability": "Volt Absorb",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Hidden Power Ice", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Oricorio (Pom-Pom)",
+          "sprite": "oricorio-pompom",
+          "level": "??",
+          "types": ["Electric", "Flying"],
+          "ability": "Own Tempo",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Baton Pass", "type": "Normal"},
+            {"name": "Hurricane", "type": "Flying"},
+            {"name": "Thunderbolt", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Unovan Altaria",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Fairy", "Electric"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Roost", "type": "Flying"},
+            {"name": "Heal Bell", "type": "Normal"},
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Moonblast", "type": "Fairy"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-ground-1",
+      "name": "Ground Gym Leader – Team 1",
+      "location": "Ground Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 23,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Sandshrew",
+          "sprite": "sandshrew",
+          "level": "??",
+          "types": ["Ground", "Steel"],
+          "ability": "Sand Veil",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Sand Attack", "type": "Ground"},
+            {"name": "Sand Tomb", "type": "Ground"},
+            {"name": "Slash", "type": "Normal"},
+            {"name": "Fury Swipes", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Diglett (Alola)",
+          "sprite": "diglett-alola",
+          "level": "??",
+          "types": ["Ground", "Steel"],
+          "ability": "Sand Veil",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Sand Attack", "type": "Ground"},
+            {"name": "Mud-Slap", "type": "Ground"},
+            {"name": "Metal Claw", "type": "Steel"},
+            {"name": "Growl", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Cubone",
+          "sprite": "cubone",
+          "level": "??",
+          "types": ["Ground"],
+          "ability": "Rock Head",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Leer", "type": "Normal"},
+            {"name": "Tail Whip", "type": "Normal"},
+            {"name": "Bone Club", "type": "Ground"},
+            {"name": "Headbutt", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Wooper (Paldea)",
+          "sprite": "wooper-paldea",
+          "level": "??",
+          "types": ["Poison", "Ground"],
+          "ability": "Poison Point",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Mud Shot", "type": "Ground"},
+            {"name": "Poison Tail", "type": "Poison"},
+            {"name": "Yawn", "type": "Normal"},
+            {"name": "Toxic Spikes", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Phanpy",
+          "sprite": "phanpy",
+          "level": "??",
+          "types": ["Ground"],
+          "ability": "Pickup",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Defense Curl", "type": "Normal"},
+            {"name": "Rollout", "type": "Rock"},
+            {"name": "Charm", "type": "Fairy"},
+            {"name": "Endure", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Barboach",
+          "sprite": "barboach",
+          "level": "??",
+          "types": ["Water", "Ground"],
+          "ability": "Anticipation",
+          "item": "Chesto Berry",
+          "moves": [
+            {"name": "Mud-Slap", "type": "Ground"},
+            {"name": "Mud Bomb", "type": "Ground"},
+            {"name": "Water Pulse", "type": "Water"},
+            {"name": "Rest", "type": "Psychic"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-ground-3",
+      "name": "Ground Gym Leader – Team 3",
+      "location": "Ground Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 24,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Dugtrio (Alola)",
+          "sprite": "dugtrio-alola",
+          "level": "??",
+          "types": ["Ground", "Steel"],
+          "ability": "Sand Veil",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Sucker Punch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Marowak",
+          "sprite": "marowak",
+          "level": "??",
+          "types": ["Ground", "Fighting"],
+          "ability": "Skill Link",
+          "item": "Thick Club",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Bone Rush", "type": "Ground"},
+            {"name": "Rock Blast", "type": "Rock"},
+            {"name": "Icicle Spear", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Great Tusk",
+          "sprite": "greattusk",
+          "level": "??",
+          "types": ["Ground", "Fighting"],
+          "ability": "Sand Veil",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Bulk Up", "type": "Fighting"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Rapid Spin", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Unovan Camerupt",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Ground", "Grass"],
+          "ability": "Chlorophyll",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Sunny Day", "type": "Fire"},
+            {"name": "Growth", "type": "Normal"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Solar Beam", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Mamoswine",
+          "sprite": "mamoswine",
+          "level": "??",
+          "types": ["Ice", "Ground"],
+          "ability": "Oblivious",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Icicle Crash", "type": "Ice"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Ice Shard", "type": "Ice"},
+            {"name": "Superpower", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Sandy Shocks",
+          "sprite": "sandyshocks",
+          "level": "??",
+          "types": ["Electric", "Ground"],
+          "ability": "Chlorophyll",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Tri Attack", "type": "Normal"},
+            {"name": "Discharge", "type": "Electric"},
+            {"name": "Flash Cannon", "type": "Steel"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-dark-1",
+      "name": "Dark Gym Leader – Team 1",
+      "location": "Dark Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 25,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Poochyena",
+          "sprite": "poochyena",
+          "level": "??",
+          "types": ["Dark"],
+          "ability": "Quick Feet",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Taunt", "type": "Dark"},
+            {"name": "Swagger", "type": "Normal"},
+            {"name": "Sand Attack", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Purrloin",
+          "sprite": "purrloin",
+          "level": "??",
+          "types": ["Dark"],
+          "ability": "Unburden",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Torment", "type": "Dark"},
+            {"name": "Pursuit", "type": "Dark"},
+            {"name": "Fury Swipes", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Zorua",
+          "sprite": "zorua",
+          "level": "??",
+          "types": ["Dark"],
+          "ability": "Prankster",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Taunt", "type": "Dark"},
+            {"name": "Torment", "type": "Dark"},
+            {"name": "Fake Tears", "type": "Dark"},
+            {"name": "Feint Attack", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Impidimp",
+          "sprite": "impidimp",
+          "level": "??",
+          "types": ["Dark", "Fairy"],
+          "ability": "Prankster",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Charm", "type": "Fairy"},
+            {"name": "Flatter", "type": "Dark"},
+            {"name": "Torment", "type": "Dark"},
+            {"name": "Bite", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Rattata (Alola)",
+          "sprite": "rattata-alola",
+          "level": "??",
+          "types": ["Dark", "Normal"],
+          "ability": "Gluttony",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Pursuit", "type": "Dark"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Quick Attack", "type": "Normal"},
+            {"name": "Focus Energy", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Linoone (Galar)",
+          "sprite": "linoone-galar",
+          "level": "??",
+          "types": ["Dark", "Normal"],
+          "ability": "Gluttony",
+          "item": "Black Glasses",
+          "moves": [
+            {"name": "Snarl", "type": "Dark"},
+            {"name": "Taunt", "type": "Dark"},
+            {"name": "Headbutt", "type": "Normal"},
+            {"name": "Rest", "type": "Psychic"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-dark-2",
+      "name": "Dark Gym Leader – Team 2",
+      "location": "Dark Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 26,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Kingambit",
+          "sprite": "kingambit",
+          "level": "??",
+          "types": ["Dark", "Steel"],
+          "ability": "Defiant",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Sucker Punch", "type": "Dark"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Low Kick", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Scrafty",
+          "sprite": "scrafty",
+          "level": "??",
+          "types": ["Dark", "Fighting"],
+          "ability": "Moxie",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "High Jump Kick", "type": "Fighting"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Krookodile",
+          "sprite": "krookodile",
+          "level": "??",
+          "types": ["Water", "Dark"],
+          "ability": "Moxie",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Outrage", "type": "Dragon"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Zangoose",
+          "sprite": "zangoose",
+          "level": "??",
+          "types": ["Fighting", "Dark"],
+          "ability": "Moxie",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Quick Attack", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Weavile",
+          "sprite": "weavile",
+          "level": "??",
+          "types": ["Dark", "Ice"],
+          "ability": "Pressure",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Icicle Crash", "type": "Ice"},
+            {"name": "Ice Shard", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Tyranitar",
+          "sprite": "tyranitar",
+          "level": "??",
+          "types": ["Dark", "Dragon"],
+          "ability": "Moxie",
+          "item": "Lum Berry",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-poison-2",
+      "name": "Poison Gym Leader – Team 2",
+      "location": "Poison Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 27,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Toxicroak",
+          "sprite": "toxicroak",
+          "level": "??",
+          "types": ["Poison", "Fighting"],
+          "ability": "Limber",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Sucker Punch", "type": "Dark"},
+            {"name": "Gunk Shot", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Scolipede",
+          "sprite": "scolipede",
+          "level": "??",
+          "types": ["Bug", "Poison"],
+          "ability": "Swarm",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Spikes", "type": "Ground"},
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Megahorn", "type": "Bug"},
+            {"name": "Poison Jab", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Overqwil",
+          "sprite": "overqwil",
+          "level": "??",
+          "types": ["Dark", "Poison"],
+          "ability": "Swift Swim",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "Gunk Shot", "type": "Poison"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Aqua Jet", "type": "Water"},
+            {"name": "Pursuit", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Muk (Alola)",
+          "sprite": "muk-alola",
+          "level": "??",
+          "types": ["Poison", "Dark"],
+          "ability": "Poison Touch",
+          "item": "Black Sludge",
+          "moves": [
+            {"name": "Gunk Shot", "type": "Poison"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Shadow Sneak", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Hydreigon",
+          "sprite": "hydreigon",
+          "level": "??",
+          "types": ["Dragon", "Poison"],
+          "ability": "Levitate",
+          "item": "Choice Specs",
+          "moves": [
+            {"name": "Draco Meteor", "type": "Dragon"},
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Flamethrower", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Unovan Magcargo",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Poison", "Ground"],
+          "ability": "Stench",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Solar Beam", "type": "Grass"},
+            {"name": "Toxic", "type": "Poison"},
+            {"name": "Sludge Wave", "type": "Poison"},
+            {"name": "Earth Power", "type": "Ground"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-poison-3",
+      "name": "Poison Gym Leader – Team 3",
+      "location": "Poison Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 28,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Qwilfish (Hisui)",
+          "sprite": "qwilfish-hisui",
+          "level": "??",
+          "types": ["Dark", "Poison"],
+          "ability": "Swift Swim",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Spikes", "type": "Ground"},
+            {"name": "Toxic Spikes", "type": "Poison"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Destiny Bond", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Garbodor",
+          "sprite": "garbodor",
+          "level": "??",
+          "types": ["Poison", "Steel"],
+          "ability": "Clear Body",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Toxic Spikes", "type": "Poison"},
+            {"name": "Gunk Shot", "type": "Poison"},
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Pain Split", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Tentacruel",
+          "sprite": "tentacruel",
+          "level": "??",
+          "types": ["Water", "Poison"],
+          "ability": "Liquid Ooze",
+          "item": "Black Sludge",
+          "moves": [
+            {"name": "Rapid Spin", "type": "Normal"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Sludge Wave", "type": "Poison"},
+            {"name": "Toxic Spikes", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Weezing (Galar)",
+          "sprite": "weezing-galar",
+          "level": "??",
+          "types": ["Poison", "Fairy"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Pain Split", "type": "Normal"},
+            {"name": "Defog", "type": "Flying"},
+            {"name": "Sludge Bomb", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Slowbro (Galar)",
+          "sprite": "slowbro-galar",
+          "level": "??",
+          "types": ["Poison", "Psychic"],
+          "ability": "Regenerator",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Slack Off", "type": "Normal"},
+            {"name": "Toxic", "type": "Poison"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Psychic", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Unovan Magcargo",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Poison", "Ground"],
+          "ability": "Stench",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Solar Beam", "type": "Grass"},
+            {"name": "Toxic", "type": "Poison"},
+            {"name": "Sludge Wave", "type": "Poison"},
+            {"name": "Earth Power", "type": "Ground"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-psychic-1",
+      "name": "Psychic Gym Leader – Team 1",
+      "location": "Psychic Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 29,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Slowpoke (Galar)",
+          "sprite": "slowpoke-galar",
+          "level": "??",
+          "types": ["Psychic"],
+          "ability": "Own Tempo",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Yawn", "type": "Normal"},
+            {"name": "Confusion", "type": "Psychic"},
+            {"name": "Water Pulse", "type": "Water"},
+            {"name": "Slack Off", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Drowzee",
+          "sprite": "drowzee",
+          "level": "??",
+          "types": ["Psychic"],
+          "ability": "Insomnia",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Confusion", "type": "Psychic"},
+            {"name": "Psybeam", "type": "Psychic"},
+            {"name": "Poison Gas", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Munna",
+          "sprite": "munna",
+          "level": "??",
+          "types": ["Psychic", "Fairy"],
+          "ability": "Synchronize",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Psybeam", "type": "Psychic"},
+            {"name": "Moonlight", "type": "Fairy"},
+            {"name": "Calm Mind", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Hoothoot",
+          "sprite": "hoothoot",
+          "level": "??",
+          "types": ["Psychic", "Flying"],
+          "ability": "Insomnia",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Confusion", "type": "Psychic"},
+            {"name": "Reflect", "type": "Psychic"},
+            {"name": "Peck", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Spoink",
+          "sprite": "spoink",
+          "level": "??",
+          "types": ["Psychic", "Ground"],
+          "ability": "Own Tempo",
+          "item": "Chesto Berry",
+          "moves": [
+            {"name": "Confuse Ray", "type": "Ghost"},
+            {"name": "Psybeam", "type": "Psychic"},
+            {"name": "Mud Shot", "type": "Ground"},
+            {"name": "Rest", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Baltoy",
+          "sprite": "baltoy",
+          "level": "??",
+          "types": ["Psychic", "Rock"],
+          "ability": "Levitate",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Psybeam", "type": "Psychic"},
+            {"name": "Rock Tomb", "type": "Rock"},
+            {"name": "Rapid Spin", "type": "Normal"},
+            {"name": "Cosmic Power", "type": "Psychic"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-psychic-3",
+      "name": "Psychic Gym Leader – Team 3 (Trick Room)",
+      "location": "Psychic Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 30,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Bronzong",
+          "sprite": "bronzong",
+          "level": "??",
+          "types": ["Steel", "Psychic"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Trick Room", "type": "Psychic"},
+            {"name": "Gyro Ball", "type": "Steel"},
+            {"name": "Extrasensory", "type": "Psychic"},
+            {"name": "Explosion", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Musharna",
+          "sprite": "musharna",
+          "level": "??",
+          "types": ["Psychic", "Fairy"],
+          "ability": "Magic Guard",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Trick Room", "type": "Psychic"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Hypnosis", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Reuniclus",
+          "sprite": "reuniclus",
+          "level": "??",
+          "types": ["Psychic"],
+          "ability": "Magic Guard",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Psyshock", "type": "Psychic"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Recover", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Beheeyem",
+          "sprite": "beheeyem",
+          "level": "??",
+          "types": ["Psychic"],
+          "ability": "Synchronize",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Calm Mind", "type": "Psychic"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Recover", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Slowking (Galar)",
+          "sprite": "slowking-galar",
+          "level": "??",
+          "types": ["Poison", "Psychic"],
+          "ability": "Regenerator",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Slack Off", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Scream Tail",
+          "sprite": "screamtail",
+          "level": "??",
+          "types": ["Fairy", "Psychic"],
+          "ability": "Cute Charm",
+          "item": "???",
+          "moves": [
+            {"name": "Zen Headbutt", "type": "Psychic"},
+            {"name": "Body Slam", "type": "Normal"},
+            {"name": "Play Rough", "type": "Fairy"},
+            {"name": "Perish Song", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-ice-1",
+      "name": "Ice Gym Leader – Team 1",
+      "location": "Ice Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 31,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Vulpix (Alola)",
+          "sprite": "vulpix-alola",
+          "level": "??",
+          "types": ["Ice"],
+          "ability": "Snow Cloak",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Powder Snow", "type": "Ice"},
+            {"name": "Icy Wind", "type": "Ice"},
+            {"name": "Confuse Ray", "type": "Ghost"},
+            {"name": "Ice Shard", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Snorunt",
+          "sprite": "snorunt",
+          "level": "??",
+          "types": ["Ice"],
+          "ability": "Inner Focus",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Icy Wind", "type": "Ice"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Protect", "type": "Normal"},
+            {"name": "Ice Shard", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Spheal",
+          "sprite": "spheal",
+          "level": "??",
+          "types": ["Ice", "Water"],
+          "ability": "Thick Fat",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Aurora Beam", "type": "Ice"},
+            {"name": "Water Gun", "type": "Water"},
+            {"name": "Encore", "type": "Normal"},
+            {"name": "Rest", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Swinub",
+          "sprite": "swinub",
+          "level": "??",
+          "types": ["Ice", "Ground"],
+          "ability": "Snow Cloak",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Ice Shard", "type": "Ice"},
+            {"name": "Mud Bomb", "type": "Ground"},
+            {"name": "Icy Wind", "type": "Ice"},
+            {"name": "Endure", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Cubchoo",
+          "sprite": "cubchoo",
+          "level": "??",
+          "types": ["Ice"],
+          "ability": "Snow Cloak",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Icy Wind", "type": "Ice"},
+            {"name": "Fury Swipes", "type": "Normal"},
+            {"name": "Charm", "type": "Fairy"},
+            {"name": "Slash", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Vanillite",
+          "sprite": "vanillite",
+          "level": "??",
+          "types": ["Ice"],
+          "ability": "Ice Body",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Icicle Spear", "type": "Ice"},
+            {"name": "Icy Wind", "type": "Ice"},
+            {"name": "Taunt", "type": "Dark"},
+            {"name": "Mirror Shot", "type": "Steel"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-ice-2",
+      "name": "Ice Gym Leader – Team 2 (Hail)",
+      "location": "Ice Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 32,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Aurorus",
+          "sprite": "aurorus",
+          "level": "??",
+          "types": ["Dragon", "Ice"],
+          "ability": "Snow Warning",
+          "item": "Light Clay",
+          "moves": [
+            {"name": "Hail", "type": "Ice"},
+            {"name": "Light Screen", "type": "Psychic"},
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Thunder Wave", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Froslass",
+          "sprite": "froslass",
+          "level": "??",
+          "types": ["Ice", "Ghost"],
+          "ability": "Snow Cloak",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Spikes", "type": "Ground"},
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Ice Shard", "type": "Ice"},
+            {"name": "Destiny Bond", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Vanilluxe",
+          "sprite": "vanilluxe",
+          "level": "??",
+          "types": ["Ice", "Fairy"],
+          "ability": "Ice Body",
+          "item": "Choice Specs",
+          "moves": [
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Weather Ball", "type": "Normal"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Flash Cannon", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Glaceon",
+          "sprite": "glaceon",
+          "level": "??",
+          "types": ["Ice", "Poison"],
+          "ability": "Ice Body",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Hidden Power", "type": "Normal"},
+            {"name": "Ice Shard", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Beartic",
+          "sprite": "beartic",
+          "level": "??",
+          "types": ["Ice", "Fighting"],
+          "ability": "Snow Cloak",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "Icicle Crash", "type": "Ice"},
+            {"name": "Superpower", "type": "Fighting"},
+            {"name": "Aqua Jet", "type": "Water"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Iron Bundle",
+          "sprite": "ironbundle",
+          "level": "??",
+          "types": ["Ice", "Water"],
+          "ability": "Motor Drive",
+          "item": "Choice Scarf",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Focus Blast", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-ice-3",
+      "name": "Ice Gym Leader – Team 3",
+      "location": "Ice Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 33,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Cloyster",
+          "sprite": "cloyster",
+          "level": "??",
+          "types": ["Ice", "Dark"],
+          "ability": "Skill Link",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Shell Smash", "type": "Normal"},
+            {"name": "Icicle Spear", "type": "Ice"},
+            {"name": "Rock Blast", "type": "Rock"},
+            {"name": "Crunch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Absol",
+          "sprite": "absol",
+          "level": "??",
+          "types": ["Dark", "Ice"],
+          "ability": "Steadfast",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Icicle Crash", "type": "Ice"},
+            {"name": "Sucker Punch", "type": "Dark"},
+            {"name": "Night Slash", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Sneasel",
+          "sprite": "sneasel",
+          "level": "??",
+          "types": ["Dark", "Ice"],
+          "ability": "Inner Focus",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Hone Claws", "type": "Dark"},
+            {"name": "Icicle Crash", "type": "Ice"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Ice Shard", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Frosmoth",
+          "sprite": "frosmoth",
+          "level": "??",
+          "types": ["Ice", "Bug"],
+          "ability": "Shield Dust",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Tailwind", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Crabominable",
+          "sprite": "crabominable",
+          "level": "??",
+          "types": ["Fighting", "Ice"],
+          "ability": "Iron Fist",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Mach Punch", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Iron Bundle",
+          "sprite": "ironbundle",
+          "level": "??",
+          "types": ["Ice", "Water"],
+          "ability": "Motor Drive",
+          "item": "Choice Scarf",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Focus Blast", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-bug-1",
+      "name": "Bug Gym Leader – Team 1",
+      "location": "Bug Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 34,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Venonat",
+          "sprite": "venonat",
+          "level": "??",
+          "types": ["Bug", "Poison"],
+          "ability": "Compound Eyes",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Sleep Powder", "type": "Grass"},
+            {"name": "Stun Spore", "type": "Grass"},
+            {"name": "Psybeam", "type": "Psychic"},
+            {"name": "Leech Life", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Spinarak",
+          "sprite": "spinarak",
+          "level": "??",
+          "types": ["Bug", "Dark"],
+          "ability": "Swarm",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Spider Web", "type": "Bug"},
+            {"name": "String Shot", "type": "Bug"},
+            {"name": "Night Shade", "type": "Ghost"},
+            {"name": "Shadow Sneak", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Surskit",
+          "sprite": "surskit",
+          "level": "??",
+          "types": ["Bug", "Water"],
+          "ability": "Swift Swim",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Agility", "type": "Psychic"},
+            {"name": "Baton Pass", "type": "Normal"},
+            {"name": "Bubble Beam", "type": "Water"},
+            {"name": "Struggle Bug", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Nincada",
+          "sprite": "nincada",
+          "level": "??",
+          "types": ["Bug", "Ground"],
+          "ability": "Compound Eyes",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Sand Attack", "type": "Ground"},
+            {"name": "Mud-Slap", "type": "Ground"},
+            {"name": "Fury Swipes", "type": "Normal"},
+            {"name": "Metal Claw", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Kricketot",
+          "sprite": "kricketot",
+          "level": "??",
+          "types": ["Bug"],
+          "ability": "Shed Skin",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Growl", "type": "Normal"},
+            {"name": "Struggle Bug", "type": "Bug"},
+            {"name": "Bug Bite", "type": "Bug"},
+            {"name": "Bide", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Karrablast",
+          "sprite": "karrablast",
+          "level": "??",
+          "types": ["Bug"],
+          "ability": "Swarm",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Fury Cutter", "type": "Bug"},
+            {"name": "Fury Attack", "type": "Normal"},
+            {"name": "Headbutt", "type": "Normal"},
+            {"name": "Scary Face", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-bug-3",
+      "name": "Bug Gym Leader – Team 3",
+      "location": "Bug Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 35,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Pinsir",
+          "sprite": "pinsir",
+          "level": "??",
+          "types": ["Bug"],
+          "ability": "Mold Breaker",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Superpower", "type": "Fighting"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Venomoth",
+          "sprite": "venomoth",
+          "level": "??",
+          "types": ["Bug", "Psychic"],
+          "ability": "Tinted Lens",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Sleep Powder", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Beedrill",
+          "sprite": "beedrill",
+          "level": "??",
+          "types": ["Bug", "Steel"],
+          "ability": "Levitate",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Bullet Punch", "type": "Steel"},
+            {"name": "Pin Missile", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Durant",
+          "sprite": "durant",
+          "level": "??",
+          "types": ["Bug", "Steel"],
+          "ability": "Hustle",
+          "item": "Choice Scarf",
+          "moves": [
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Metal Claw", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Slither Wing",
+          "sprite": "slitherwing",
+          "level": "??",
+          "types": ["Bug", "Fighting"],
+          "ability": "Flame Body",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Bulk Up", "type": "Fighting"},
+            {"name": "Superpower", "type": "Fighting"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Morning Sun", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Unovan Heracross",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Bug", "Steel"],
+          "ability": "Mold Breaker",
+          "item": "Occa Berry",
+          "moves": [
+            {"name": "Megahorn", "type": "Bug"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Bullet Punch", "type": "Steel"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-rock-1",
+      "name": "Rock Gym Leader – Team 1 (Sand)",
+      "location": "Rock Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 36,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Nosepass",
+          "sprite": "nosepass",
+          "level": "??",
+          "types": ["Rock"],
+          "ability": "Sand Stream",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Rock Throw", "type": "Rock"},
+            {"name": "Spark", "type": "Electric"},
+            {"name": "Power Gem", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Roggenrola",
+          "sprite": "roggenrola",
+          "level": "??",
+          "types": ["Rock"],
+          "ability": "Sturdy",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Iron Defense", "type": "Steel"},
+            {"name": "Rock Blast", "type": "Rock"},
+            {"name": "Smack Down", "type": "Rock"},
+            {"name": "Headbutt", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Geodude",
+          "sprite": "geodude",
+          "level": "??",
+          "types": ["Rock", "Fighting"],
+          "ability": "Sturdy",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Defense Curl", "type": "Normal"},
+            {"name": "Rollout", "type": "Rock"},
+            {"name": "Mach Punch", "type": "Fighting"},
+            {"name": "Rock Throw", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Rhyhorn",
+          "sprite": "rhyhorn",
+          "level": "??",
+          "types": ["Ground", "Rock"],
+          "ability": "Rock Head",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Stomp", "type": "Normal"},
+            {"name": "Chip Away", "type": "Normal"},
+            {"name": "Rock Blast", "type": "Rock"},
+            {"name": "Scary Face", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Dwebble",
+          "sprite": "dwebble",
+          "level": "??",
+          "types": ["Bug", "Rock"],
+          "ability": "Sturdy",
+          "item": "Focus Band",
+          "moves": [
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Rock Blast", "type": "Rock"},
+            {"name": "Bug Bite", "type": "Bug"},
+            {"name": "Withdraw", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Anorith",
+          "sprite": "anorith",
+          "level": "??",
+          "types": ["Rock", "Bug"],
+          "ability": "Battle Armor",
+          "item": "Quick Claw",
+          "moves": [
+            {"name": "Metal Claw", "type": "Steel"},
+            {"name": "Ancient Power", "type": "Rock"},
+            {"name": "Rock Blast", "type": "Rock"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-rock-2",
+      "name": "Rock Gym Leader – Team 2",
+      "location": "Rock Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 37,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Gigalith",
+          "sprite": "gigalith",
+          "level": "??",
+          "types": ["Rock"],
+          "ability": "Sturdy",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Explosion", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Claydol",
+          "sprite": "claydol",
+          "level": "??",
+          "types": ["Psychic", "Rock"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Rapid Spin", "type": "Normal"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Stealth Rock", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Cradily",
+          "sprite": "cradily",
+          "level": "??",
+          "types": ["Rock", "Poison"],
+          "ability": "Suction Cups",
+          "item": "Black Sludge",
+          "moves": [
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Toxic", "type": "Poison"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Stockpile", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Corsola",
+          "sprite": "corsola",
+          "level": "??",
+          "types": ["Water", "Rock"],
+          "ability": "Natural Cure",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Toxic", "type": "Poison"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Power Gem", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Lunatone",
+          "sprite": "lunatone",
+          "level": "??",
+          "types": ["Rock", "Dark"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Cosmic Power", "type": "Psychic"},
+            {"name": "Moonlight", "type": "Fairy"},
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Kleavor",
+          "sprite": "kleavor",
+          "level": "??",
+          "types": ["Bug", "Rock"],
+          "ability": "Sheer Force",
+          "item": "Lum Berry",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Quick Attack", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-rock-3",
+      "name": "Rock Gym Leader – Team 3",
+      "location": "Rock Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 38,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Omastar",
+          "sprite": "omastar",
+          "level": "??",
+          "types": ["Rock", "Water"],
+          "ability": "Shell Armor",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Shell Smash", "type": "Normal"},
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Ancient Power", "type": "Rock"},
+            {"name": "Ice Beam", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Armaldo",
+          "sprite": "armaldo",
+          "level": "??",
+          "types": ["Rock", "Bug"],
+          "ability": "Battle Armor",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Rampardos",
+          "sprite": "rampardos",
+          "level": "??",
+          "types": ["Rock", "Steel"],
+          "ability": "Reckless",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "Head Smash", "type": "Rock"},
+            {"name": "Superpower", "type": "Fighting"},
+            {"name": "Zen Headbutt", "type": "Psychic"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Iron Thorns",
+          "sprite": "ironthorns",
+          "level": "??",
+          "types": ["Rock", "Electric"],
+          "ability": "Motor Drive",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Wild Charge", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Donphan",
+          "sprite": "donphan",
+          "level": "??",
+          "types": ["Ground", "Rock"],
+          "ability": "Anger Point",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Rapid Spin", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Ice Shard", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Kleavor",
+          "sprite": "kleavor",
+          "level": "??",
+          "types": ["Bug", "Rock"],
+          "ability": "Sheer Force",
+          "item": "Lum Berry",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Quick Attack", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-water-1",
+      "name": "Water Gym Leader – Team 1",
+      "location": "Water Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 39,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Tentacool",
+          "sprite": "tentacool",
+          "level": "??",
+          "types": ["Water", "Poison"],
+          "ability": "Clear Body",
+          "item": "Black Sludge",
+          "moves": [
+            {"name": "Toxic Spikes", "type": "Poison"},
+            {"name": "Wrap", "type": "Normal"},
+            {"name": "Bubble Beam", "type": "Water"},
+            {"name": "Acid Spray", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Lanturn",
+          "sprite": "lanturn",
+          "level": "??",
+          "types": ["Water", "Electric"],
+          "ability": "Volt Absorb",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Confuse Ray", "type": "Ghost"},
+            {"name": "Spark", "type": "Electric"},
+            {"name": "Water Gun", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Frillish",
+          "sprite": "frillish",
+          "level": "??",
+          "types": ["Water", "Poison"],
+          "ability": "Cursed Body",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Toxic", "type": "Poison"},
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Water Pulse", "type": "Water"},
+            {"name": "Clear Smog", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Seel",
+          "sprite": "seel",
+          "level": "??",
+          "types": ["Water"],
+          "ability": "Thick Fat",
+          "item": "Chesto Berry",
+          "moves": [
+            {"name": "Encore", "type": "Normal"},
+            {"name": "Icy Wind", "type": "Ice"},
+            {"name": "Aurora Beam", "type": "Ice"},
+            {"name": "Rest", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Corsola",
+          "sprite": "corsola",
+          "level": "??",
+          "types": ["Water", "Rock"],
+          "ability": "Natural Cure",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Bubble Beam", "type": "Water"},
+            {"name": "Ancient Power", "type": "Rock"},
+            {"name": "Lucky Chant", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Azumarill",
+          "sprite": "azumarill",
+          "level": "??",
+          "types": ["Water", "Fairy"],
+          "ability": "Thick Fat",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Aqua Ring", "type": "Water"},
+            {"name": "Bubble Beam", "type": "Water"},
+            {"name": "Disarming Voice", "type": "Fairy"},
+            {"name": "Rollout", "type": "Rock"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-water-3",
+      "name": "Water Gym Leader – Team 3",
+      "location": "Water Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 40,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Politoed",
+          "sprite": "politoed",
+          "level": "??",
+          "types": ["Water", "Grass"],
+          "ability": "Drizzle",
+          "item": "Damp Rock",
+          "moves": [
+            {"name": "Scald", "type": "Water"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Perish Song", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Unovan Steelix",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Steel", "Water"],
+          "ability": "Swift Swim",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Heavy Slam", "type": "Steel"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Recover", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Kingdra",
+          "sprite": "kingdra",
+          "level": "??",
+          "types": ["Water", "Dragon"],
+          "ability": "Swift Swim",
+          "item": "Choice Specs",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Surf", "type": "Water"},
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Ice Beam", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Rotom (Wash)",
+          "sprite": "rotom-wash",
+          "level": "??",
+          "types": ["Electric", "Water"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Thunder", "type": "Electric"},
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Volt Switch", "type": "Electric"},
+            {"name": "Will-O-Wisp", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Basculegion (Female)",
+          "sprite": "basculegion-f",
+          "level": "??",
+          "types": ["Water", "Ghost"],
+          "ability": "Swift Swim",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Aqua Jet", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Floatzel",
+          "sprite": "floatzel",
+          "level": "??",
+          "types": ["Water", "Ice"],
+          "ability": "Swift Swim",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Hammer Arm", "type": "Fighting"},
+            {"name": "Double Team", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-flying-1",
+      "name": "Flying Gym Leader – Team 1",
+      "location": "Flying Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 41,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Taillow",
+          "sprite": "taillow",
+          "level": "??",
+          "types": ["Normal", "Flying"],
+          "ability": "Guts",
+          "item": "Scope Lens",
+          "moves": [
+            {"name": "Wing Attack", "type": "Flying"},
+            {"name": "Quick Attack", "type": "Normal"},
+            {"name": "Focus Energy", "type": "Normal"},
+            {"name": "Double Team", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Hoothoot",
+          "sprite": "hoothoot",
+          "level": "??",
+          "types": ["Psychic", "Flying"],
+          "ability": "Insomnia",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Confusion", "type": "Psychic"},
+            {"name": "Reflect", "type": "Psychic"},
+            {"name": "Peck", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Wattrel",
+          "sprite": "wattrel",
+          "level": "??",
+          "types": ["Electric", "Flying"],
+          "ability": "Volt Absorb",
+          "item": "Magnet",
+          "moves": [
+            {"name": "Spark", "type": "Electric"},
+            {"name": "Pluck", "type": "Flying"},
+            {"name": "Quick Attack", "type": "Normal"},
+            {"name": "Roost", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Butterfree",
+          "sprite": "butterfree",
+          "level": "??",
+          "types": ["Bug", "Flying"],
+          "ability": "Compound Eyes",
+          "item": "Silver Powder",
+          "moves": [
+            {"name": "Stun Spore", "type": "Grass"},
+            {"name": "Poison Powder", "type": "Poison"},
+            {"name": "Gust", "type": "Flying"},
+            {"name": "Psybeam", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Farfetch’d",
+          "sprite": "farfetchd",
+          "level": 25,
+          "types": ["Fighting", "Flying"],
+          "ability": "Inner Focus",
+          "item": "Stick",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Aerial Ace", "type": "Flying"},
+            {"name": "Slash", "type": "Normal"},
+            {"name": "Rock Smash", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Oricorio",
+          "sprite": "oricorio",
+          "level": "??",
+          "types": ["Fire", "Flying"],
+          "ability": "Own Tempo",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Teeter Dance", "type": "Normal"},
+            {"name": "Air Cutter", "type": "Flying"},
+            {"name": "Flame Charge", "type": "Fire"},
+            {"name": "Feather Dance", "type": "Flying"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym-flying-3",
+      "name": "Flying Gym Leader – Team 3",
+      "location": "Flying Gym – ???",
+      "levelCap": "??",
+      "sprite": "???",
+      "hidden": false,
+      "order": 42,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Ninjask",
+          "sprite": "ninjask",
+          "level": "??",
+          "types": ["Flying", "Electric"],
+          "ability": "Speed Boost",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Substitute", "type": "Normal"},
+            {"name": "Protect", "type": "Normal"},
+            {"name": "Baton Pass", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Dodrio",
+          "sprite": "dodrio",
+          "level": "??",
+          "types": ["Flying", "Ground"],
+          "ability": "Anger Point",
+          "item": "Choice Band",
+          "moves": [
+            {"name": "Drill Peck", "type": "Flying"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Double Hit", "type": "Normal"},
+            {"name": "Pursuit", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Iron Jugulis",
+          "sprite": "ironjugulis",
+          "level": "??",
+          "types": ["Dark", "Flying"],
+          "ability": "Motor Drive",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Togekiss",
+          "sprite": "togekiss",
+          "level": "??",
+          "types": ["Fairy", "Flying"],
+          "ability": "Serene Grace",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Roost", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Gliscor",
+          "sprite": "gliscor",
+          "level": "??",
+          "types": ["Poison", "Flying"],
+          "ability": "Immunity",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Poison Jab", "type": "Poison"},
+            {"name": "Roost", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Unovan Gallade",
+          "sprite": "unown-question",
+          "level": "??",
+          "types": ["Flying", "Fighting"],
+          "ability": "Inner Focus",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Brave Bird", "type": "Flying"},
+            {"name": "Psycho Cut", "type": "Psychic"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        }
+      ]
+    }
+  ]
+}
