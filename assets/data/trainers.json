@@ -1384,7 +1384,7 @@
           "level": 67,
           "types": ["Electric", "Poison"],
           "ability": "Punk Rock",
-          "item": "Life Orb",
+          "item": "Focus Sash",
           "moves": [
             {"name": "Overdrive", "type": "Electric"},
             {"name": "Sludge Wave", "type": "Poison"},
@@ -1411,7 +1411,7 @@
           "sprite": "golisopod",
           "level": 67,
           "types": ["Bug", "Water"],
-          "ability": "Emergency Exit",
+          "ability": "Battle Armor",
           "item": "Sitrus Berry",
           "moves": [
             {"name": "First Impression", "type": "Bug"},
@@ -1425,8 +1425,8 @@
           "sprite": "ironjugulis",
           "level": 67,
           "types": ["Dark", "Flying"],
-          "ability": "Quark Drive",
-          "item": "Focus Sash",
+          "ability": "Motor Drive",
+          "item": "Life Orb",
           "moves": [
             {"name": "Dark Pulse", "type": "Dark"},
             {"name": "Hurricane", "type": "Flying"},
