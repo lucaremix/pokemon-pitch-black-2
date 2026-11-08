@@ -2126,7 +2126,7 @@
       "name": "Iris",
       "role": "Champion",
       "location": "Pokémon League",
-      "levelCap": 74,
+      "levelCap": 75,
       "sprite": "iris",
       "hidden": false,
       "order": 24,
@@ -2135,7 +2135,7 @@
         {
           "species": "Jolteon",
           "sprite": "jolteon",
-          "level": 74,
+          "level": 75,
           "types": ["Electric", "Ground"],
           "ability": "Volt Absorb",
           "item": "Expert Belt",
@@ -2149,7 +2149,7 @@
         {
           "species": "Lilligant",
           "sprite": "lilligant",
-          "level": 74,
+          "level": 75,
           "types": ["Grass", "Fairy"],
           "ability": "Chlorophyll",
           "item": "Big Root",
@@ -2163,7 +2163,7 @@
         {
           "species": "Conkeldurr",
           "sprite": "conkeldurr",
-          "level": 74,
+          "level": 75,
           "types": ["Fighting", "Rock"],
           "ability": "Guts",
           "item": "Flame Orb",
@@ -2177,7 +2177,7 @@
         {
           "species": "Armarouge",
           "sprite": "armarouge",
-          "level": 74,
+          "level": 75,
           "types": ["Fire", "Psychic"],
           "ability": "Flash Fire",
           "item": "Life Orb",
@@ -2191,7 +2191,7 @@
         {
           "species": "Haxorus",
           "sprite": "haxorus",
-          "level": 74,
+          "level": 75,
           "types": ["Dragon", "Steel"],
           "ability": "Mold Breaker",
           "item": "Sitrus Berry",
@@ -2205,7 +2205,7 @@
         {
           "species": "Dragonite",
           "sprite": "dragonite",
-          "level": 74,
+          "level": 75,
           "types": ["Dragon", "Water"],
           "ability": "Multiscale",
           "item": "Leftovers",
