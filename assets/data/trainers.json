@@ -1469,7 +1469,7 @@
           "level": 69,
           "types": ["Bug", "Ground"],
           "ability": "Levitate",
-          "item": "Life Orb",
+          "item": "Sitrus Berry",
           "moves": [
             {"name": "Earthquake", "type": "Ground"},
             {"name": "U-turn", "type": "Bug"},
@@ -1482,7 +1482,7 @@
           "sprite": "ironmoth",
           "level": 71,
           "types": ["Fire", "Poison"],
-          "ability": "Quark Drive",
+          "ability": "Motor Drive",
           "item": "Focus Sash",
           "moves": [
             {"name": "Flamethrower", "type": "Fire"},
@@ -1496,8 +1496,8 @@
           "sprite": "simisage",
           "level": 70,
           "types": ["Grass", "Fighting"],
-          "ability": "Overgrow",
-          "item": "White Herb",
+          "ability": "Gluttony",
+          "item": "Life Orb",
           "moves": [
             {"name": "Leaf Storm", "type": "Grass"},
             {"name": "Focus Blast", "type": "Fighting"},
@@ -1525,7 +1525,7 @@
           "level": 71,
           "types": ["Normal", "Ice"],
           "ability": "Intimidate",
-          "item": "Sitrus Berry",
+          "item": "Chople Berry",
           "moves": [
             {"name": "Return", "type": "Normal"},
             {"name": "Ice Fang", "type": "Ice"},
