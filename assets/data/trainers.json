@@ -1,5 +1,5 @@
 {
-  "_readme": "Edit freely: species, level, types, ability, item, moves, location. 'sprite' is the slug for the Pokemon GIF (variants use 'unown-question' until real sprites exist). Each move's type is in its 'type' field. 'hidden': true = spoiler battle, opens only after clicking. 'role' is optional (gym leaders have none). 'game-id' = the trainer IDs in the game's trainer data (all the variants of that battle; not shown on the site). 'double': true = double battle; 'sprite' can be a list for two trainers.",
+  "_readme": "Edit freely: species, level, types, ability, item, moves, location. 'sprite' is the slug for the Pokemon GIF (variants use 'unown-question' until real sprites exist). Each move's type is in its 'type' field. 'hidden': true = spoiler battle, opens only after clicking. 'role' is optional (gym leaders have none). 'game-id' = the trainer IDs in the game's trainer data (all the variants of that battle; not shown on the site). 'double': true = double battle; 'sprite' can be a list for two trainers. 'color' (optional) = accent colour of the trainer's row, instead of the colour of the team's main type.",
   "meta": {
     "game": "Pokemon Pitch Black 2",
     "urls": {
@@ -19,6 +19,7 @@
       "location": "Aspertia City",
       "levelCap": 5,
       "sprite": "hugh",
+      "color": "#26468f",
       "hidden": false,
       "order": 1,
       "bag": [{"item": "???", "count": 0}],
@@ -47,6 +48,7 @@
       "location": "Floccesy Ranch",
       "levelCap": 8,
       "sprite": "hugh",
+      "color": "#26468f",
       "hidden": false,
       "order": 2,
       "bag": [{"item": "???", "count": 0}],
@@ -720,7 +722,7 @@
         {
           "species": "Hawlucha",
           "sprite": "hawlucha",
-          "level": 5,
+          "level": 50,
           "types": ["Fighting", "Flying"],
           "ability": "Unburden",
           "item": "Flying Gem",
@@ -783,6 +785,7 @@
       "location": "Undella Town",
       "levelCap": 54,
       "sprite": "hugh",
+      "color": "#26468f",
       "hidden": false,
       "order": 10,
       "bag": [{"item": "???", "count": 0}],
@@ -959,91 +962,6 @@
       ]
     },
     {
-      "id": "plasma-opelucid",
-      "game-id": [583, 584],
-      "name": "Zinzolin & Shadow",
-      "role": "Team Plasma",
-      "location": "Opelucid City",
-      "levelCap": 60,
-      "sprite": ["zinzolin", "shadowtriad"],
-      "hidden": false,
-      "double": true,
-      "order": 12,
-      "bag": [{"item": "???", "count": 0}],
-      "pokemon": [
-        {
-          "species": "Abomasnow",
-          "sprite": "abomasnow",
-          "level": 59,
-          "types": ["Grass", "Ice"],
-          "ability": "Snow Warning",
-          "item": "Life Orb",
-          "moves": [
-            {"name": "Wood Hammer", "type": "Grass"},
-            {"name": "Blizzard", "type": "Ice"},
-            {"name": "Focus Blast", "type": "Fighting"},
-            {"name": "Thunder Punch", "type": "Electric"}
-          ]
-        },
-        {
-          "species": "Cryogonal",
-          "sprite": "cryogonal",
-          "level": 59,
-          "types": ["Ice", "Flying"],
-          "ability": "Levitate",
-          "item": "Light Clay",
-          "moves": [
-            {"name": "Blizzard", "type": "Ice"},
-            {"name": "Reflect", "type": "Psychic"},
-            {"name": "Light Screen", "type": "Psychic"},
-            {"name": "Explosion", "type": "Normal"}
-          ]
-        },
-        {
-          "species": "Walrein",
-          "sprite": "walrein",
-          "level": 59,
-          "types": ["Ice", "Water"],
-          "ability": "Ice Body",
-          "item": "Leftovers",
-          "moves": [
-            {"name": "Surf", "type": "Water"},
-            {"name": "Protect", "type": "Normal"},
-            {"name": "Substitute", "type": "Normal"},
-            {"name": "Toxic", "type": "Poison"}
-          ]
-        },
-        {
-          "species": "Weavile",
-          "sprite": "weavile",
-          "level": 60,
-          "types": ["Dark", "Ice"],
-          "ability": "Pressure",
-          "item": "Focus Sash",
-          "moves": [
-            {"name": "Night Slash", "type": "Dark"},
-            {"name": "Ice Punch", "type": "Ice"},
-            {"name": "Fake Out", "type": "Normal"},
-            {"name": "Ice Shard", "type": "Ice"}
-          ]
-        },
-        {
-          "species": "Drifblim",
-          "sprite": "drifblim",
-          "level": 59,
-          "types": ["Ghost", "Flying"],
-          "ability": "Unburden",
-          "item": "Flying Gem",
-          "moves": [
-            {"name": "Acrobatics", "type": "Flying"},
-            {"name": "Shadow Ball", "type": "Ghost"},
-            {"name": "Thunderbolt", "type": "Electric"},
-            {"name": "Destiny Bond", "type": "Ghost"}
-          ]
-        }
-      ]
-    },
-    {
       "id": "gym7-drayden",
       "game-id": [],
       "name": "Drayden",
@@ -1051,7 +969,7 @@
       "levelCap": 59,
       "sprite": "drayden",
       "hidden": false,
-      "order": 13,
+      "order": 12,
       "bag": [{"item": "???", "count": 0}],
       "pokemon": [
         {
@@ -1136,6 +1054,91 @@
             {"name": "Flare Blitz", "type": "Fire"},
             {"name": "Earthquake", "type": "Ground"},
             {"name": "Dragon Claw", "type": "Dragon"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plasma-opelucid",
+      "game-id": [583, 584],
+      "name": "Zinzolin & Shadow",
+      "role": "Team Plasma",
+      "location": "Opelucid City",
+      "levelCap": 60,
+      "sprite": ["zinzolin", "shadowtriad"],
+      "hidden": false,
+      "double": true,
+      "order": 13,
+      "bag": [{"item": "???", "count": 0}],
+      "pokemon": [
+        {
+          "species": "Abomasnow",
+          "sprite": "abomasnow",
+          "level": 59,
+          "types": ["Grass", "Ice"],
+          "ability": "Snow Warning",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Wood Hammer", "type": "Grass"},
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Thunder Punch", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Cryogonal",
+          "sprite": "cryogonal",
+          "level": 59,
+          "types": ["Ice", "Flying"],
+          "ability": "Levitate",
+          "item": "Light Clay",
+          "moves": [
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Reflect", "type": "Psychic"},
+            {"name": "Light Screen", "type": "Psychic"},
+            {"name": "Explosion", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Walrein",
+          "sprite": "walrein",
+          "level": 59,
+          "types": ["Ice", "Water"],
+          "ability": "Ice Body",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Surf", "type": "Water"},
+            {"name": "Protect", "type": "Normal"},
+            {"name": "Substitute", "type": "Normal"},
+            {"name": "Toxic", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Weavile",
+          "sprite": "weavile",
+          "level": 60,
+          "types": ["Dark", "Ice"],
+          "ability": "Pressure",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Night Slash", "type": "Dark"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Ice Shard", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Drifblim",
+          "sprite": "drifblim",
+          "level": 59,
+          "types": ["Ghost", "Flying"],
+          "ability": "Unburden",
+          "item": "Flying Gem",
+          "moves": [
+            {"name": "Acrobatics", "type": "Flying"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Destiny Bond", "type": "Ghost"}
           ]
         }
       ]
@@ -1441,6 +1444,7 @@
       "location": "Victory Road",
       "levelCap": 71,
       "sprite": "hugh",
+      "color": "#26468f",
       "hidden": false,
       "order": 17,
       "bag": [{"item": "???", "count": 0}],
@@ -1815,7 +1819,7 @@
           "level": 74,
           "types": ["Fairy", "Psychic"],
           "ability": "Cute Charm",
-          "item": "???",
+          "item": "Sitrus Berry",
           "moves": [
             {"name": "Zen Headbutt", "type": "Psychic"},
             {"name": "Body Slam", "type": "Normal"},
