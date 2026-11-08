@@ -559,12 +559,12 @@
           "level": 35,
           "types": ["Electric", "Flying"],
           "ability": "Motor Drive",
-          "item": "Focus Sash",
+          "item": "Magnet",
           "moves": [
             {"name": "Nasty Plot", "type": "Dark"},
             {"name": "Air Slash", "type": "Flying"},
             {"name": "Thunderbolt", "type": "Electric"},
-            {"name": "Hidden Power Ice", "type": "Ice"}
+            {"name": "Ice Beam", "type": "Ice"}
           ]
         },
         {
@@ -1524,7 +1524,7 @@
           "level": 66,
           "types": ["Psychic", "Electric"],
           "ability": "Adaptability",
-          "item": "Scope Lens",
+          "item": "Sticky Barb",
           "moves": [
             {"name": "Thunderbolt", "type": "Electric"},
             {"name": "Psychic", "type": "Psychic"},
