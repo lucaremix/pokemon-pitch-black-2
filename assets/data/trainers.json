@@ -894,12 +894,12 @@
           "level": 53,
           "types": ["Normal", "Flying"],
           "ability": "Super Luck",
-          "item": "Focus Sash",
+          "item": "Bright Powder",
           "moves": [
             {"name": "Brave Bird", "type": "Flying"},
             {"name": "Return", "type": "Normal"},
             {"name": "U-turn", "type": "Bug"},
-            {"name": "Roost", "type": "Flying"}
+            {"name": "Double Team", "type": "Normal"}
           ]
         },
         {
@@ -908,7 +908,7 @@
           "level": 52,
           "types": ["Bug", "Ground"],
           "ability": "Levitate",
-          "item": "White Herb",
+          "item": "Sitrus Berry",
           "moves": [
             {"name": "Earthquake", "type": "Ground"},
             {"name": "U-turn", "type": "Bug"},
@@ -922,7 +922,7 @@
           "level": 52,
           "types": ["Bug", "Fire"],
           "ability": "Flame Body",
-          "item": "Leftovers",
+          "item": "Focus Sash",
           "moves": [
             {"name": "Quiver Dance", "type": "Bug"},
             {"name": "Fiery Dance", "type": "Fire"},
@@ -950,7 +950,7 @@
           "level": 52,
           "types": ["Electric", "Water"],
           "ability": "Levitate",
-          "item": "Sitrus Berry",
+          "item": "Rocky Helmet",
           "moves": [
             {"name": "Thunderbolt", "type": "Electric"},
             {"name": "Scald", "type": "Water"},
@@ -964,7 +964,7 @@
           "level": 54,
           "types": ["Normal", "Ice"],
           "ability": "Intimidate",
-          "item": "Bright Powder",
+          "item": "Chople Berry",
           "moves": [
             {"name": "Return", "type": "Normal"},
             {"name": "Ice Fang", "type": "Ice"},
@@ -1355,8 +1355,8 @@
           "sprite": "beheeyem",
           "level": 64,
           "types": ["Psychic"],
-          "ability": "Analytic",
-          "item": "Life Orb",
+          "ability": "Synchronize",
+          "item": "Colbur Berry",
           "moves": [
             {"name": "Psychic", "type": "Psychic"},
             {"name": "Thunderbolt", "type": "Electric"},
@@ -1370,7 +1370,7 @@
           "level": 64,
           "types": ["Rock", "Electric"],
           "ability": "Galvanize",
-          "item": "Expert Belt",
+          "item": "Air Balloon",
           "moves": [
             {"name": "Double-Edge", "type": "Normal"},
             {"name": "Earthquake", "type": "Ground"},
@@ -1384,7 +1384,7 @@
           "level": 65,
           "types": ["Electric", "Water"],
           "ability": "Levitate",
-          "item": "Leftovers",
+          "item": "Sitrus Berry",
           "moves": [
             {"name": "Hydro Pump", "type": "Water"},
             {"name": "Thunderbolt", "type": "Electric"},
@@ -1398,7 +1398,7 @@
           "level": 65,
           "types": ["Steel", "Electric"],
           "ability": "Clear Body",
-          "item": "White Herb",
+          "item": "Focus Sash",
           "moves": [
             {"name": "Shift Gear", "type": "Steel"},
             {"name": "Gear Grind", "type": "Steel"},
@@ -1412,7 +1412,7 @@
           "level": 65,
           "types": ["Steel", "Fighting"],
           "ability": "Clear Body",
-          "item": "Rocky Helmet",
+          "item": "White Herb",
           "moves": [
             {"name": "Meteor Mash", "type": "Steel"},
             {"name": "Hammer Arm", "type": "Fighting"},
@@ -1426,7 +1426,7 @@
           "level": 66,
           "types": ["Psychic", "Electric"],
           "ability": "Adaptability",
-          "item": "Focus Sash",
+          "item": "Scope Lens",
           "moves": [
             {"name": "Thunderbolt", "type": "Electric"},
             {"name": "Psychic", "type": "Psychic"},
