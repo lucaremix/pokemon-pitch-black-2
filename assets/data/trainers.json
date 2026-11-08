@@ -749,20 +749,6 @@
           ]
         },
         {
-          "species": "Iron Bundle",
-          "sprite": "ironbundle",
-          "level": 49,
-          "types": ["Ice", "Water"],
-          "ability": "Motor Drive",
-          "item": "Focus Sash",
-          "moves": [
-            {"name": "Ice Beam", "type": "Ice"},
-            {"name": "Scald", "type": "Water"},
-            {"name": "Drill Peck", "type": "Flying"},
-            {"name": "Encore", "type": "Normal"}
-          ]
-        },
-        {
           "species": "Iron Valiant",
           "sprite": "ironvaliant",
           "level": 50,
@@ -774,6 +760,20 @@
             {"name": "Dazzling Gleam", "type": "Fairy"},
             {"name": "Thunderbolt", "type": "Electric"},
             {"name": "Shadow Sneak", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Iron Bundle",
+          "sprite": "ironbundle",
+          "level": 49,
+          "types": ["Ice", "Water"],
+          "ability": "Motor Drive",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Aqua Jet", "type": "Water"},
+            {"name": "Drill Peck", "type": "Flying"},
+            {"name": "Blizzard", "type": "Ice"},
+            {"name": "Agility", "type": "Psychic"}
           ]
         }
       ]
