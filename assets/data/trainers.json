@@ -878,7 +878,7 @@
     },
     {
       "id": "plasma-lacunosa",
-      "game-id": [704, 705],
+      "game-id": [],
       "name": "Zinzolin & Grunt",
       "role": "Team Plasma",
       "location": "Lacunosa Town",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": "plasma-opelucid",
-      "game-id": [583, 584],
+      "game-id": [],
       "name": "Zinzolin & Shadow",
       "role": "Team Plasma",
       "location": "Opelucid City",
