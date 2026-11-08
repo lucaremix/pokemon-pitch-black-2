@@ -2881,7 +2881,7 @@
           "level": "??",
           "types": ["Fairy", "Psychic"],
           "ability": "Cute Charm",
-          "item": "???",
+          "item": "Sitrus Berry",
           "moves": [
             {"name": "Zen Headbutt", "type": "Psychic"},
             {"name": "Body Slam", "type": "Normal"},
