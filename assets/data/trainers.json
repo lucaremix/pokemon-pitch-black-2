@@ -1635,7 +1635,7 @@
     },
     {
       "id": "e4-grimsley",
-      "game-id": [39],
+      "game-id": [40],
       "name": "Grimsley",
       "role": "Elite Four",
       "location": "Pokémon League",
@@ -1733,7 +1733,7 @@
     },
     {
       "id": "e4-caitlin",
-      "game-id": [40],
+      "game-id": [41],
       "name": "Caitlin",
       "role": "Elite Four",
       "location": "Pokémon League",
@@ -1831,7 +1831,7 @@
     },
     {
       "id": "e4-marshal",
-      "game-id": [41],
+      "game-id": [39],
       "name": "Marshal",
       "role": "Elite Four",
       "location": "Pokémon League",
