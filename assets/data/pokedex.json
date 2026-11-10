@@ -18089,7 +18089,7 @@
   "bst": 502,
   "stats": {"hp": 75, "atk": 98, "def": 70, "spa": 114, "spd": 70, "spe": 75},
   "abilities": ["Punk Rock", "Plus"],
-  "evo": {"from": "Toxel", "method": "Level 30 during the day"},
+  "evo": {"from": "Toxel", "method": "Level 30 when Atk>Def"},
   "moves": [
     {"move": "Acid", "level": 1},
     {"move": "Acid Spray", "level": 1},
@@ -18123,7 +18123,7 @@
   "bst": 502,
   "stats": {"hp": 75, "atk": 98, "def": 70, "spa": 114, "spd": 70, "spe": 75},
   "abilities": ["Punk Rock", "Minus"],
-  "evo": {"from": "Toxel", "method": "Level 30 at night"},
+  "evo": {"from": "Toxel", "method": "Level 30 when Atk<Def"},
   "form_of": "Toxtricity",
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10184.png",
   "moves": [
