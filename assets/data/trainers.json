@@ -488,7 +488,7 @@
     },
         {
       "id": "subway-ingo-emmet",
-      "game-id": [],
+      "game-id": [732,733],
       "name": "Ingo & Emmet",
       "role": "Subway Bosses",
       "location": "Gear Station",
