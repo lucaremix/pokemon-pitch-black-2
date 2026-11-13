@@ -491,13 +491,13 @@
       "game-id": [732,733],
       "name": "Ingo & Emmet",
       "role": "Subway Bosses",
-      "location": "Gear Station",
+      "location": "Nimbasa City",
       "levelCap": 32,
       "sprite": ["ingo","emmet"],
       "hidden": false,
       "double": true,
       "order": 7,
-      "bag": [{"item": "Full Restore", "count": 2}],
+      "bag": [],
       "pokemon": [
         {
           "species": "Chandelure",
@@ -664,7 +664,7 @@
       "sprite": "biker",
       "hidden": false,
       "order": 8,
-      "bag": [{"item": "Full Restore", "count": 2}],
+      "bag": [],
       "pokemon": [
         {
           "species": "Accelgor",
@@ -762,7 +762,7 @@
       "sprite": "rood",
       "hidden": false,
       "order": 9,
-      "bag": [{"item": "Full Restore", "count": 2}],
+      "bag": [],
       "pokemon": [
         {
           "species": "Bouffalant",
@@ -844,7 +844,7 @@
       "levelCap": 43,
       "sprite": "clay",
       "hidden": false,
-      "order": 8,
+      "order": 10,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -942,7 +942,7 @@
       "levelCap": 50,
       "sprite": "n",
       "hidden": true,
-      "order": 9,
+      "order": 11,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1036,7 +1036,7 @@
       "levelCap": 52,
       "sprite": "skyla",
       "hidden": false,
-      "order": 10,
+      "order": 12,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1134,7 +1134,7 @@
       "levelCap": 54,
       "sprite": "steven",
       "hidden": true,
-      "order": 11,
+      "order": 13,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1233,7 +1233,7 @@
       "sprite": "hugh",
       "color": "#26468f",
       "hidden": false,
-      "order": 12,
+      "order": 14,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1332,7 +1332,7 @@
       "sprite": ["zinzolin","plasmagrunt"],
       "hidden": false,
       "double": true,
-      "order": 13,
+      "order": 15,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1415,7 +1415,7 @@
       "levelCap": 61,
       "sprite": "drayden",
       "hidden": false,
-      "order": 14,
+      "order": 16,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1514,7 +1514,7 @@
       "sprite": ["zinzolin","shadowtriad"],
       "hidden": false,
       "double": true,
-      "order": 15,
+      "order": 17,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1597,7 +1597,7 @@
       "levelCap": 64,
       "sprite": "marlon",
       "hidden": false,
-      "order": 16,
+      "order": 18,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1695,7 +1695,7 @@
       "levelCap": 66,
       "sprite": "colress",
       "hidden": false,
-      "order": 17,
+      "order": 19,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1793,7 +1793,7 @@
       "levelCap": 67,
       "sprite": "ghetsis",
       "hidden": false,
-      "order": 18,
+      "order": 20,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1892,7 +1892,7 @@
       "sprite": "hugh",
       "color": "#26468f",
       "hidden": false,
-      "order": 19,
+      "order": 21,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1990,7 +1990,7 @@
       "levelCap": 74,
       "sprite": "shauntal",
       "hidden": false,
-      "order": 20,
+      "order": 22,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -2088,7 +2088,7 @@
       "levelCap": 74,
       "sprite": "grimsley",
       "hidden": false,
-      "order": 21,
+      "order": 23,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -2186,7 +2186,7 @@
       "levelCap": 74,
       "sprite": "caitlin",
       "hidden": false,
-      "order": 22,
+      "order": 24,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -2284,7 +2284,7 @@
       "levelCap": 74,
       "sprite": "marshal",
       "hidden": false,
-      "order": 23,
+      "order": 25,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -2382,7 +2382,7 @@
       "levelCap": 75,
       "sprite": "iris",
       "hidden": false,
-      "order": 24,
+      "order": 26,
       "bag": [{"item": "Full Restore", "count": 3}],
       "pokemon": [
         {
