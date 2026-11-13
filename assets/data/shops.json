@@ -1258,18 +1258,6 @@
           "price": 1000,
           "icon": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/items/Poison-Stone.png"
         },
-        {
-          "name": "Honey",
-          "category": "Natural evolution items",
-          "price": 300,
-          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/honey.png"
-        },
-        {
-          "name": "Prism Scale",
-          "category": "Natural evolution items",
-          "price": 800,
-          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/prism-scale.png"
-        }
       ],
       "tms": []
     },
