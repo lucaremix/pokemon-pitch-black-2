@@ -486,6 +486,77 @@
         }
       ]
     },
+        {
+      "id": "subway-ingo-emmet",
+      "game-id": [],
+      "name": "Ingo & Emmet",
+      "role": "Subway Bosses",
+      "location": "Gear Station",
+      "levelCap": 32,
+      "sprite": ["ingo","emmet"],
+      "hidden": false,
+      "double": true,
+      "order": 7,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Chandelure",
+          "sprite": "chandelure",
+          "level": 32,
+          "types": ["Ghost", "Fire"],
+          "ability": "Flash Fire",
+          "item": "Charcoal",
+          "moves": [
+            {"name": "Heat Wave", "type": "Fire"},
+            {"name": "Hex", "type": "Ghost"},
+            {"name": "Protect", "type": "Normal"},
+            {"name": "Will-O-Wisp", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Espeon",
+          "sprite": "espeon",
+          "level": 32,
+          "types": ["Psychic", "Ghost"],
+          "ability": "Magic Bounce",
+          "item": "Psychic Gem",
+          "moves": [
+            {"name": "Luster Purge", "type": "Psychic"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Power Gem", "type": "Rock"},
+            {"name": "Aura Sphere", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "sprite": "eelektross",
+          "level": 32,
+          "types": ["Electric", "Water"],
+          "ability": "Levitate",
+          "item": "Magnet",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Brick Break", "type": "Fighting"},
+            {"name": "Protect", "type": "Normal"},
+            {"name": "Thunder Wave", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Umbreon",
+          "sprite": "umbreon",
+          "level": 32,
+          "types": ["Dark", "Fighting"],
+          "ability": "Synchronize",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Helping Hand", "type": "Normal"},
+            {"name": "Foul Play", "type": "Dark"},
+            {"name": "Fake Tears", "type": "Dark"},
+            {"name": "Assurance", "type": "Dark"}
+          ]
+        }
+      ]
+    },
     {
       "id": "gym4-elesa",
       "game-id": [153,767],
