@@ -583,6 +583,188 @@
         }
       ]
     },
+        {
+      "id": "biker-charles",
+      "game-id": [339,340],
+      "name": "Charles",
+      "role": "Biker",
+      "location": "Route 5",
+      "levelCap": 37,
+      "sprite": "biker",
+      "hidden": false,
+      "order": 8,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Accelgor",
+          "sprite": "accelgor",
+          "level": 37,
+          "types": ["Bug", "Dark"],
+          "ability": "Unburden",
+          "item": "Charti Berry",
+          "moves": [
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Final Gambit", "type": "Fighting"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Sludge Bomb", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Sigilyph",
+          "sprite": "sigilyph",
+          "level": 37,
+          "types": ["Psychic", "Flying"],
+          "ability": "Wonder Skin",
+          "item": "TwistedSpoon",
+          "moves": [
+            {"name": "Air Cutter", "type": "Flying"},
+            {"name": "Bubble", "type": "Water"},
+            {"name": "Icy Wind", "type": "Ice"},
+            {"name": "Heat Wave", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Krokorok",
+          "sprite": "krokorok",
+          "level": 37,
+          "types": ["Water", "Dark"],
+          "ability": "Intimidate",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Foul Play", "type": "Dark"},
+            {"name": "Mega Kick", "type": "Normal"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Thunder Fang", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Druddigon",
+          "sprite": "druddigon",
+          "level": 37,
+          "types": ["Dragon", "Fighting"],
+          "ability": "Iron Fist",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Dragon Rush", "type": "Dragon"},
+            {"name": "Thunder Punch", "type": "Electric"},
+            {"name": "Rock Climb", "type": "Normal"},
+            {"name": "Glare", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Bouffalant",
+          "sprite": "bouffalant",
+          "level": 37,
+          "types": ["Normal"],
+          "ability": "Reckless",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Head Charge", "type": "Normal"},
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Megahorn", "type": "Bug"},
+            {"name": "Mega Kick", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Crustle",
+          "sprite": "crustle",
+          "level": 37,
+          "types": ["Bug", "Rock"],
+          "ability": "Sturdy",
+          "item": "Custap Berry",
+          "moves": [
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Sand Tomb", "type": "Ground"},
+            {"name": "Shell Smash", "type": "Normal"},
+            {"name": "X-Scissor", "type": "Bug"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rood",
+      "game-id": [346],
+      "name": "Rood",
+      "role": "Sage",
+      "location": "Driftveil City",
+      "levelCap": 41,
+      "sprite": "rood",
+      "hidden": false,
+      "order": 9,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Bouffalant",
+          "sprite": "bouffalant",
+          "level": 41,
+          "types": ["Normal"],
+          "ability": "Reckless",
+          "item": "Chople Berry",
+          "moves": [
+            {"name": "Head Charge", "type": "Normal"},
+            {"name": "Zen Headbutt", "type": "Psychic"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Wild Charge", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Swoobat",
+          "sprite": "swoobat",
+          "level": 41,
+          "types": ["Flying", "Fairy"],
+          "ability": "Cute Charm",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Stored Power", "type": "Psychic"},
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Stoutland",
+          "sprite": "stoutland",
+          "level": 41,
+          "types": ["Normal", "Ice"],
+          "ability": "Intimidate",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Strength", "type": "Rock"},
+            {"name": "Fire Fang", "type": "Fire"},
+            {"name": "Ice Fang", "type": "Ice"},
+            {"name": "Thunder Fang", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Zoroark",
+          "sprite": "zoroark",
+          "level": 41,
+          "types": ["Dark", "Fairy"],
+          "ability": "Prankster",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Extrasensory", "type": "Psychic"},
+            {"name": "Grass Knot", "type": "Grass"},
+            {"name": "Sucker Punch", "type": "Dark"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Chandelure",
+          "sprite": "chandelure",
+          "level": 41,
+          "types": ["Ghost", "Fire"],
+          "ability": "Flash Fire",
+          "item": "Passho Berry",
+          "moves": [
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Sacred Fire", "type": "Fire"},
+            {"name": "Dark Pulse", "type": "Dark"}
+          ]
+        }
+      ]
+    },
     {
       "id": "gym5-clay",
       "game-id": [158,768],
