@@ -766,6 +766,8 @@
   "Gimmighoul": {"tutor": [], "new": []},
   "Gholdengo": {"tutor": ["DR6", "DR10", "DR13", "DR14", "DR15"], "new": ["DR14", "DR15"]},
   "Roaring Moon": {"tutor": ["SP7", "LE4", "LE13", "LE14", "LE15", "LE17", "HU3"], "new": ["LE4", "LE17"]},
-  "Iron Valiant": {"tutor": ["DR2", "DR10", "DR13", "DR14", "DR15", "LE9", "LE14", "HU3", "HU12"], "new": ["DR2", "LE9"]}
+  "Iron Valiant": {"tutor": ["DR2", "DR10", "DR13", "DR14", "DR15", "LE9", "LE14", "HU3", "HU12"], "new": ["DR2", "LE9"]},
+  "Zeraora": {"tutor": ["DR10", "DR13", "DR14", "DR15", "LE9", "LE10", "LE17", "HU3", "HU12"], "new": ["DR15"]},
+  "Zarude": {"tutor": ["DR7", "DR10", "LE4", "LE13", "LE17", "HU3", "HU4", "HU11"], "new": ["LE4"]}
 }
 }
