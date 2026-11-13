@@ -1257,7 +1257,7 @@
           "category": "Evolution stones",
           "price": 1000,
           "icon": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/items/Poison-Stone.png"
-        },
+        }
       ],
       "tms": []
     },
