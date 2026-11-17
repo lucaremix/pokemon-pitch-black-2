@@ -878,7 +878,7 @@
     .stage::before, .sprite img, .card, .tab-panel, .tab-panel .tms li { transition: none; animation: none; }
   }
 
-  /* ───────── Mega Evolution: a Mega Bracelet button on the stage, the Mega(s) inside the same box ───────── */
+  /* ───────── Mega Evolution: a Mega Bracelet button on the stage; the Mega takes the place of the Pokémon in the box ───────── */
   .types { align-items: center; }
   .mega-btn {
     margin-left: auto; width: 42px; height: 42px; flex: none; display: grid; place-items: center; padding: 0; cursor: pointer;
@@ -892,23 +892,8 @@
     border-color: var(--volt); background: radial-gradient(circle, rgba(255,203,5,.32), rgba(7,9,13,.78) 72%);
     box-shadow: 0 0 0 3px rgba(255,203,5,.2), 0 0 18px rgba(255,203,5,.4);
   }
-  .sprite.two { display: flex; justify-content: center; align-items: flex-end; gap: 14px; }
-  .card.open .sprite.two img { transform: scale(1.3); }
   .card.mega-on .stage::before { opacity: .2; }
-  .megas { display: grid; gap: 12px; }
-  .mega {
-    display: grid; gap: 10px; padding: 12px 13px 13px; border-radius: 14px;
-    background: linear-gradient(180deg, color-mix(in srgb, var(--c1) 13%, var(--panel-2)), var(--panel-2));
-    border: 1px solid color-mix(in srgb, var(--c1) 42%, var(--line));
-  }
-  .mega-head { display: flex; align-items: center; gap: 8px; }
-  .mega-name { margin: 0; min-width: 0; font: 800 21px/1.1 var(--display); letter-spacing: .005em; overflow-wrap: anywhere; }
-  .mega-types { display: flex; gap: 4px; margin-left: auto; flex: none; }
-  .mega-types img { width: 22px; height: 22px; display: block; }
-  .mega .stats { gap: 5px; }
-  .mega .total { margin-top: 0; padding-top: 9px; }
-  .mega .total b { font-size: 23px; }
-  .card.open .mega-name { font-size: 25px; }
+  .mega-pick .lm { padding: 0 13px; }
 
   /* ───────── finishing touches ───────── */
   .card { scroll-margin-top: 80px; }
@@ -1339,15 +1324,16 @@ const EXPAND = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strok
 const MEGA_ICON = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mega-bracelet.png";
 let MEGAS = new Map();   // base name -> [Mega entries]
 const megaBase = (n) => n.replace(/^Mega /, "").replace(/ [XYZ](?= \(|$)/, "");
-function megaLook(megas) { return megas.length > 1 ? [megas[0].type1, megas[1].type1] : typesOf(megas[0]); }
+// mi = index of the Mega shown instead of p (-1 = none)
+const megaOf = (p, mi) => (mi >= 0 && (MEGAS.get(p.name) || [])[mi]) || null;
 
-function stageInner(p, more, key, mega) {
-  const megas = MEGAS.get(p.name) || [], shown = mega && megas.length ? megas : [p];
+function stageInner(p, more, key, mi) {
+  const megas = MEGAS.get(p.name) || [], m = megaOf(p, mi), s = m || p;
   return '<span class="id">#' + String(p.pokedex_id).padStart(3, "0") +
-      (p.changed && shown[0] === p ? '<span class="chg" title="Changed in Pitch Black 2">PB2</span>' : "") + "</span>" +
-    '<div class="sprite' + (shown.length > 1 ? " two" : "") + '">' + shown.map((m) => spriteImg(m, shown.length > 1 ? 88 : 0, 'alt="' + esc(m.name) + ' sprite"')).join("") + "</div>" +
-    '<div class="types">' + (shown.length === 1 ? typesOf(shown[0]).map(typeBadge).join("") : "") +
-      (megas.length ? '<button class="mega-btn" type="button" aria-pressed="' + (shown[0] !== p) + '" title="' + (shown[0] !== p ? "Back to " + esc(p.name) : "Mega Evolution") + '" aria-label="Mega Evolution of ' + esc(p.name) + '">' +
+      (p.changed && !m ? '<span class="chg" title="Changed in Pitch Black 2">PB2</span>' : "") + "</span>" +
+    '<div class="sprite">' + spriteImg(s, 0, 'alt="' + esc(s.name) + ' sprite"') + "</div>" +
+    '<div class="types">' + typesOf(s).map(typeBadge).join("") +
+      (megas.length ? '<button class="mega-btn" type="button" aria-pressed="' + !!m + '" title="' + (m ? "Back to " + esc(p.name) : "Mega Evolution") + '" aria-label="Mega Evolution of ' + esc(p.name) + '">' +
         '<img src="' + MEGA_ICON + '" alt="" width="36" height="36" loading="lazy"></button>' : "") + "</div>" +
     (more ? '<button class="expander" type="button" aria-expanded="false" aria-controls="detail-' + key + '"><span class="ex-l">Details</span>' + CHEVRON + "</button>" : "");
 }
@@ -1452,24 +1438,18 @@ function statsHTML(p) {
       '</span><span class="bar" aria-hidden="true"><i style="--w:' + w + "%;--k:" + STAT_COLORS[k] + '"></i></span></li>';
   }).join("");
 }
-function megaHTML(m) {
-  const [c1, c2] = colorsOf(typesOf(m));
-  return '<article class="mega" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
-    '<div class="mega-head"><h3 class="mega-name">' + esc(m.name) + '</h3><span class="mega-types">' + typesOf(m).map((t) =>
-      '<img src="' + (TYPE_ICONS[t] || "") + '" alt="' + esc(t) + ' type" title="' + esc(t) + '" width="22" height="22" loading="lazy">').join("") + "</span></div>" +
-    '<div class="abilities" role="group" aria-label="Abilities">' + m.abilities.map(abilityLink).join("") + "</div>" +
-    '<ul class="stats" aria-label="Base stats">' + statsHTML(m) + "</ul>" +
-    '<div class="total"><span>Base stat total</span><b>' + m.bst + "</b></div></article>";
-}
-function bodyInner(p, box, mega) {
-  if (mega && MEGAS.has(p.name)) return '<div class="megas">' + MEGAS.get(p.name).map(megaHTML).join("") + "</div>";
-  const stats = statsHTML(p);
-  return '<div class="b-head"><h2 class="name">' + esc(p.name) + "</h2></div>" + lineMiniHTML(box, p) +
-    '<div class="abilities" role="group" aria-label="Abilities">' + p.abilities.map(abilityLink).join("") + "</div>" +
-    '<div class="b-stats"><div class="b-bars"><ul class="stats" aria-label="Base stats">' + stats + "</ul>" +
-      '<div class="total"><span>Base stat total</span><b>' + p.bst + "</b></div>" +
-      '<span class="bst-meter" aria-hidden="true"><i style="--w:' + Math.min(100, p.bst / 7.2).toFixed(1) + '%"></i></span></div>' +
-    '<div class="b-radar">' + radarSVG(p, colorsOf(typesOf(p))[0]) + "</div></div>";
+// the Pokémon (or, with mi >= 0, its Mega): name, line chips (or the Mega chips), abilities, stats, BST, radar
+function bodyInner(p, box, mi) {
+  const megas = MEGAS.get(p.name) || [], m = megaOf(p, mi), s = m || p;
+  const chips = !m ? lineMiniHTML(box, p) : megas.length < 2 ? "" :
+    '<div class="line-mini mega-pick" role="group" aria-label="Mega Evolutions">' + megas.map((x, j) =>
+      '<button type="button" class="lm' + (x === m ? " on" : "") + '" data-mega="' + j + '" aria-pressed="' + (x === m) + '"><span class="lm-n">' + esc(x.name) + "</span></button>").join("") + "</div>";
+  return '<div class="b-head"><h2 class="name">' + esc(s.name) + "</h2></div>" + chips +
+    '<div class="abilities" role="group" aria-label="Abilities">' + s.abilities.map(abilityLink).join("") + "</div>" +
+    '<div class="b-stats"><div class="b-bars"><ul class="stats" aria-label="Base stats">' + statsHTML(s) + "</ul>" +
+      '<div class="total"><span>Base stat total</span><b>' + s.bst + "</b></div>" +
+      '<span class="bst-meter" aria-hidden="true"><i style="--w:' + Math.min(100, s.bst / 7.2).toFixed(1) + '%"></i></span></div>' +
+    '<div class="b-radar">' + radarSVG(s, colorsOf(typesOf(s))[0]) + "</div></div>";
 }
 
 function evoNodeHTML(n, k, active) {
@@ -1719,22 +1699,23 @@ function cardHTML(box, i) {
 }
 
 // put Pokémon k of the box in the card: sprite, types, name, abilities, stats, BST, moves, TMs, tutors
-// mega = true shows its Mega Evolution(s) in the stage and the body (the details below stay the ones of the Pokémon)
-function showMember(card, box, k, mega) {
+// mi >= 0 puts its Mega Evolution in the stage and the body (the details below stay the ones of the Pokémon)
+function showMember(card, box, k, mi) {
   const p = box.members[k];
   if (!p) return;
-  mega = !!mega && MEGAS.has(p.name);
+  const m = megaOf(p, mi == null ? -1 : mi);
+  mi = m ? mi : -1;
   const sameMon = +card.dataset.k === k;
-  if (sameMon && (card.dataset.mega === "1") === mega) return;
-  card.dataset.k = k; card.dataset.mega = mega ? "1" : "";
-  const types = mega ? megaLook(MEGAS.get(p.name)) : typesOf(p), [c1, c2] = colorsOf(types);
+  if (sameMon && card.dataset.mega === (m ? String(mi) : "")) return;
+  card.dataset.k = k; card.dataset.mega = m ? String(mi) : "";
+  const types = typesOf(m || p), [c1, c2] = colorsOf(types);
   card.style.setProperty("--c1", c1); card.style.setProperty("--c2", c2);
-  card.classList.toggle("mono", types.length < 2 || types[0] === types[1]);
-  card.classList.toggle("mega-on", mega);
+  card.classList.toggle("mono", types.length < 2);
+  card.classList.toggle("mega-on", !!m);
   const open = card.classList.contains("open"), more = card.classList.contains("can-open");
-  card.querySelector(".stage").innerHTML = stageInner(p, more, card.dataset.i, mega);
+  card.querySelector(".stage").innerHTML = stageInner(p, more, card.dataset.i, mi);
   if (open) { const b = card.querySelector(".expander"); if (b) b.setAttribute("aria-expanded", "true"); }
-  card.querySelector(".body").innerHTML = bodyInner(p, box, mega);
+  card.querySelector(".body").innerHTML = bodyInner(p, box, mi);
   const det = card.querySelector(".detail");
   if (!det || sameMon) return;
   det.querySelectorAll(".evo-node").forEach((n) => {
@@ -1876,10 +1857,12 @@ function apply() {
     // searching a pre-evolution by name shows it in the box ("oddish" -> Oddish in Vileplume and Bellossom)
     const byName = term && hit.find((m) => m.name.toLowerCase().startsWith(term));
     // with the BST range on, show a Pokémon of the box that is inside the range
-    const byMega = !byName && /^mega /.test(term) && hit.find((m) => (MEGAS.get(m.name) || []).some((x) => x.name.toLowerCase().startsWith(term)));
+    const megaIdx = (m) => (MEGAS.get(m.name) || []).findIndex((x) => x.name.toLowerCase().startsWith(term));
+    const byMega = !byName && /^mega /.test(term) && hit.find((m) => megaIdx(m) >= 0);
     const pick = byName || byMega || (bstActive() && !hit.includes(b.members[headK(b)]) ? hit[hit.length - 1] : null);
     const kk = pick ? b.members.indexOf(pick) : headK(b);
-    showMember(cards[i], b, kk, !!byMega || (+cards[i].dataset.k === kk && cards[i].dataset.mega === "1"));
+    const cur = cards[i].dataset.mega;
+    showMember(cards[i], b, kk, byMega ? megaIdx(byMega) : +cards[i].dataset.k === kk && cur !== "" ? +cur : -1);
   });
   countEl.innerHTML = shown === BOXES.length ? "<b>" + BOXES.length + "</b> boxes · <b>" + LIST.length + "</b> Pokémon"
     : "<b>" + shown + "</b> of " + BOXES.length + " boxes";
@@ -1936,14 +1919,15 @@ const linkKey = (n) => String(n).replace(/_/g, " ").replace(/’/g, "'").trim().
 const LINKS = new Map();
 BOXES.forEach((b, i) => b.members.forEach((m, k) => {
   // a Pokémon in more than one box (a pre-evolution) links to the first one, its own box first
-  if (!LINKS.has(linkKey(m.name)) || m === b.head) LINKS.set(linkKey(m.name), { i, k, mega: false });
+  if (!LINKS.has(linkKey(m.name)) || m === b.head) LINKS.set(linkKey(m.name), { i, k, mega: -1 });
 }));
-BOXES.forEach((b, i) => b.members.forEach((m, k) => (MEGAS.get(m.name) || []).forEach((x) => {
-  if (!LINKS.has(linkKey(x.name))) LINKS.set(linkKey(x.name), { i, k, mega: true });
+BOXES.forEach((b, i) => b.members.forEach((m, k) => (MEGAS.get(m.name) || []).forEach((x, j) => {
+  if (!LINKS.has(linkKey(x.name))) LINKS.set(linkKey(x.name), { i, k, mega: j });
 })));
 function linkName(card) {
   const p = BOXES[+card.dataset.i].members[+card.dataset.k];
-  return card.dataset.mega === "1" ? MEGAS.get(p.name)[0].name : p.name;
+  const m = card.dataset.mega === "" ? null : megaOf(p, +card.dataset.mega);
+  return (m || p).name;
 }
 function setLink(card) {
   if (!card || openCard !== card) return;
@@ -1999,7 +1983,9 @@ grid.addEventListener("click", (e) => {
   if (e.target.closest("a")) return;
   const box = BOXES[+card.dataset.i];
   const mb = e.target.closest(".mega-btn");
-  if (mb) { showMember(card, box, +card.dataset.k, card.dataset.mega !== "1"); card.querySelector(".mega-btn").focus({ preventScroll: true }); setLink(card); return; }
+  if (mb) { showMember(card, box, +card.dataset.k, card.dataset.mega === "" ? 0 : -1); card.querySelector(".mega-btn").focus({ preventScroll: true }); setLink(card); return; }
+  const mz = e.target.closest("[data-mega]");
+  if (mz && mz.classList.contains("lm")) { showMember(card, box, +card.dataset.k, +mz.dataset.mega); setLink(card); return; }
   const pick = e.target.closest(".evo-pick");
   if (pick) { showMember(card, box, +pick.closest(".evo-node").dataset.k); setLink(card); return; }
   const lm = e.target.closest(".lm");
