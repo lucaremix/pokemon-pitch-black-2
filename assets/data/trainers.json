@@ -486,7 +486,7 @@
         }
       ]
     },
-        {
+    {
       "id": "subway-ingo-emmet",
       "game-id": [732,733],
       "name": "Ingo & Emmet",
@@ -565,7 +565,7 @@
       "levelCap": 36,
       "sprite": "elesa",
       "hidden": false,
-      "order": 7,
+      "order": 8,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -654,7 +654,7 @@
         }
       ]
     },
-        {
+    {
       "id": "biker-charles",
       "game-id": [339,340],
       "name": "Charles",
@@ -663,7 +663,7 @@
       "levelCap": 37,
       "sprite": "biker",
       "hidden": false,
-      "order": 8,
+      "order": 9,
       "bag": [],
       "pokemon": [
         {
@@ -761,7 +761,7 @@
       "levelCap": 41,
       "sprite": "rood",
       "hidden": false,
-      "order": 9,
+      "order": 10,
       "bag": [],
       "pokemon": [
         {
@@ -844,7 +844,7 @@
       "levelCap": 43,
       "sprite": "clay",
       "hidden": false,
-      "order": 10,
+      "order": 11,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -942,7 +942,7 @@
       "levelCap": 50,
       "sprite": "n",
       "hidden": true,
-      "order": 11,
+      "order": 12,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1036,7 +1036,7 @@
       "levelCap": 52,
       "sprite": "skyla",
       "hidden": false,
-      "order": 12,
+      "order": 13,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1134,7 +1134,7 @@
       "levelCap": 54,
       "sprite": "steven",
       "hidden": true,
-      "order": 13,
+      "order": 14,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1233,7 +1233,7 @@
       "sprite": "hugh",
       "color": "#26468f",
       "hidden": false,
-      "order": 14,
+      "order": 15,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1332,7 +1332,7 @@
       "sprite": ["zinzolin","plasmagrunt"],
       "hidden": false,
       "double": true,
-      "order": 15,
+      "order": 16,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1408,6 +1408,104 @@
       ]
     },
     {
+      "id": "bridge-unbeaten",
+      "game-id": [],
+      "name": "???",
+      "role": "Unbeaten for 100 battles",
+      "location": "Village Bridge",
+      "levelCap": 56,
+      "sprite": "???",
+      "hidden": false,
+      "order": 17,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Rotom",
+          "sprite": "rotom",
+          "level": 56,
+          "types": ["Electric", "Ghost"],
+          "ability": "Levitate",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Discharge", "type": "Electric"},
+            {"name": "Overheat", "type": "Fire"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Hex", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Gliscor",
+          "sprite": "gliscor",
+          "level": 56,
+          "types": ["Poison", "Flying"],
+          "ability": "Immunity",
+          "item": "Toxic Orb",
+          "moves": [
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Ice Fang", "type": "Ice"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Lucario",
+          "sprite": "lucario",
+          "level": 56,
+          "types": ["Fighting", "Psychic"],
+          "ability": "Steadfast",
+          "item": "Air Balloon",
+          "moves": [
+            {"name": "Meteor Mash", "type": "Steel"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Blaze Kick", "type": "Fire"},
+            {"name": "Bullet Punch", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Gyarados",
+          "sprite": "gyarados",
+          "level": 56,
+          "types": ["Water", "Flying"],
+          "ability": "Intimidate",
+          "item": "Lum Berry",
+          "moves": [
+            {"name": "Aqua Tail", "type": "Water"},
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Power Whip", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Gengar",
+          "sprite": "gengar",
+          "level": 56,
+          "types": ["Ghost", "Dark"],
+          "ability": "Cursed Body",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Substitute", "type": "Normal"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Shadow Ball", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Breloom",
+          "sprite": "breloom",
+          "level": 56,
+          "types": ["Grass", "Fighting"],
+          "ability": "Effect Spore",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Bullet Punch", "type": "Steel"},
+            {"name": "Force Palm", "type": "Fighting"},
+            {"name": "Protect", "type": "Normal"},
+            {"name": "Rock Tomb", "type": "Rock"}
+          ]
+        }
+      ]
+    },
+    {
       "id": "gym7-drayden",
       "game-id": [159,770],
       "name": "Drayden",
@@ -1415,7 +1513,7 @@
       "levelCap": 61,
       "sprite": "drayden",
       "hidden": false,
-      "order": 16,
+      "order": 18,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1514,7 +1612,7 @@
       "sprite": ["zinzolin"],
       "hidden": false,
       "double": true,
-      "order": 17,
+      "order": 19,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1597,7 +1695,7 @@
       "levelCap": 64,
       "sprite": "marlon",
       "hidden": false,
-      "order": 18,
+      "order": 20,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1695,7 +1793,7 @@
       "levelCap": 66,
       "sprite": "colress",
       "hidden": false,
-      "order": 19,
+      "order": 21,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1793,7 +1891,7 @@
       "levelCap": 67,
       "sprite": "ghetsis",
       "hidden": false,
-      "order": 20,
+      "order": 22,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1892,7 +1990,7 @@
       "sprite": "hugh",
       "color": "#26468f",
       "hidden": false,
-      "order": 21,
+      "order": 23,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -1990,7 +2088,7 @@
       "levelCap": 74,
       "sprite": "shauntal",
       "hidden": false,
-      "order": 22,
+      "order": 24,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -2088,7 +2186,7 @@
       "levelCap": 74,
       "sprite": "grimsley",
       "hidden": false,
-      "order": 23,
+      "order": 25,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -2186,7 +2284,7 @@
       "levelCap": 74,
       "sprite": "caitlin",
       "hidden": false,
-      "order": 24,
+      "order": 26,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -2284,7 +2382,7 @@
       "levelCap": 74,
       "sprite": "marshal",
       "hidden": false,
-      "order": 25,
+      "order": 27,
       "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
@@ -2382,7 +2480,7 @@
       "levelCap": 75,
       "sprite": "iris",
       "hidden": false,
-      "order": 26,
+      "order": 28,
       "bag": [{"item": "Full Restore", "count": 3}],
       "pokemon": [
         {
