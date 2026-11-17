@@ -125,6 +125,56 @@
     "effect": "10% chance to lower the target's Attack by 1."
   },
   {
+    "name": "Liquidation",
+    "new": true,
+    "type": {
+      "from": null,
+      "to": "Water"
+    },
+    "category": {
+      "from": null,
+      "to": "Physical"
+    },
+    "power": {
+      "from": null,
+      "to": 85
+    },
+    "accuracy": {
+      "from": null,
+      "to": 100
+    },
+    "pp": {
+      "from": null,
+      "to": 10
+    },
+    "effect": "Has a 20% chance of lowering the target's Defense stat by one stage."
+  },
+  {
+    "name": "Fire Lash",
+    "new": true,
+    "type": {
+      "from": null,
+      "to": "Fire"
+    },
+    "category": {
+      "from": null,
+      "to": "Physical"
+    },
+    "power": {
+      "from": null,
+      "to": 80
+    },
+    "accuracy": {
+      "from": null,
+      "to": 100
+    },
+    "pp": {
+      "from": null,
+      "to": 15
+    },
+    "effect": "Lowers the target's Defense stat by one stage."
+  },
+  {
     "name": "Charm",
     "new": false,
     "type": {
@@ -548,5 +598,80 @@
       "to": 35
     },
     "effect": ""
+  },
+  {
+    "name": "Sweet Kiss",
+    "new": false,
+    "type": {
+      "from": "Normal",
+      "to": "Fairy"
+    },
+    "category": {
+      "from": "Status",
+      "to": "Status"
+    },
+    "power": {
+      "from": null,
+      "to": null
+    },
+    "accuracy": {
+      "from": 75,
+      "to": 75
+    },
+    "pp": {
+      "from": 10,
+      "to": 10
+    },
+    "effect": "Confuses the target."
+  },
+  {
+    "name": "Leech Life",
+    "new": false,
+    "type": {
+      "from": "Bug",
+      "to": "Bug"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 20,
+      "to": 80
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 15,
+      "to": 10
+    },
+    "effect": "The user's HP is restored by half the damage taken by the target."
+  },
+  {
+    "name": "Knock Off",
+    "new": false,
+    "type": {
+      "from": "Dark",
+      "to": "Dark"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 20,
+      "to": 65
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 20,
+      "to": 20
+    },
+    "effect": "The user's HP is restored by half the damage taken by the target."
   }
 ]
