@@ -1410,11 +1410,11 @@
     {
       "id": "bridge-unbeaten",
       "game-id": [],
-      "name": "???",
+      "name": "Stonewall",
       "role": "Unbeaten for 100 battles",
       "location": "Village Bridge",
       "levelCap": 56,
-      "sprite": "???",
+      "sprite": "gentleman",
       "hidden": false,
       "order": 17,
       "bag": [{"item": "Full Restore", "count": 2}],
