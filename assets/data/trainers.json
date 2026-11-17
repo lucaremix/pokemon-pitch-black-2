@@ -1507,11 +1507,11 @@
     {
       "id": "plasma-opelucid",
       "game-id": [],
-      "name": "Zinzolin & Shadow",
+      "name": "Zinzolin",
       "role": "Team Plasma",
       "location": "Opelucid City",
       "levelCap": 60,
-      "sprite": ["zinzolin","shadowtriad"],
+      "sprite": ["zinzolin"],
       "hidden": false,
       "double": true,
       "order": 17,
