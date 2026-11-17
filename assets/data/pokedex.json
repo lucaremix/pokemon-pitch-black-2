@@ -2,53 +2,6 @@
 "_readme": "Pokédex of Pokémon Pitch Black 2. Every Pokémon appears ONCE. 'evo' = {from, method}: the Pokémon it evolves from and how. The page builds the boxes by itself: one box per final evolution (split evolutions = one box each, e.g. Vileplume and Bellossom both contain Oddish and Gloom); Paradox Pokémon get their own box with only the Pokémon they come from ('paradox.from'); alternate forms ('form_of', e.g. Rotom (Heat)) sit inside the box of their base form. 'changed' = true if the Pokémon is different from vanilla Black 2/White 2. 'sprite' only when the image is not the default one (PokeAPI Black/White sprite {pokedex_id}.png), e.g. regional forms. Mega Evolutions ('Mega X') are standalone entries: no 'evo', no moves, no TMs or tutors.",
 "pokemon": [
 {
-  "name": "Mega Venusaur",
-  "pokedex_id": 3,
-  "changed": false,
-  "type1": "Grass",
-  "type2": "Poison",
-  "bst": 625,
-  "stats": {"hp": 80, "atk": 100, "def": 123, "spa": 122, "spd": 120, "spe": 80},
-  "abilities": ["Thick Fat"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10033.png",
-  "moves": []
-},
-{
-  "name": "Mega Charizard X",
-  "pokedex_id": 6,
-  "changed": false,
-  "type1": "Fire",
-  "type2": "Dragon",
-  "bst": 634,
-  "stats": {"hp": 78, "atk": 130, "def": 111, "spa": 130, "spd": 85, "spe": 100},
-  "abilities": ["Tough Claws"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10034.png",
-  "moves": []
-},
-{
-  "name": "Mega Charizard Y",
-  "pokedex_id": 6,
-  "changed": false,
-  "type1": "Fire",
-  "type2": "Flying",
-  "bst": 634,
-  "stats": {"hp": 78, "atk": 104, "def": 78, "spa": 159, "spd": 115, "spe": 100},
-  "abilities": ["Drought"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10035.png",
-  "moves": []
-},
-{
-  "name": "Mega Blastoise",
-  "pokedex_id": 9,
-  "changed": false,
-  "type1": "Water",
-  "bst": 630,
-  "stats": {"hp": 79, "atk": 103, "def": 120, "spa": 135, "spd": 115, "spe": 78},
-  "abilities": ["Mega Launcher"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10036.png",
-  "moves": []
-},
-{
   "name": "Caterpie",
   "pokedex_id": 10,
   "changed": false,
@@ -4806,53 +4759,6 @@
   "moves": []
 },
 {
-  "name": "Mega Mewtwo X",
-  "pokedex_id": 150,
-  "changed": false,
-  "type1": "Psychic",
-  "type2": "Fighting",
-  "bst": 780,
-  "stats": {"hp": 106, "atk": 190, "def": 100, "spa": 154, "spd": 100, "spe": 130},
-  "abilities": ["Steadfast"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10043.png",
-  "moves": []
-},
-{
-  "name": "Mega Mewtwo Y",
-  "pokedex_id": 150,
-  "changed": false,
-  "type1": "Psychic",
-  "bst": 780,
-  "stats": {"hp": 106, "atk": 150, "def": 70, "spa": 194, "spd": 120, "spe": 140},
-  "abilities": ["Insomnia"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10044.png",
-  "moves": []
-},
-{
-  "name": "Mega Meganium",
-  "pokedex_id": 154,
-  "changed": false,
-  "type1": "Grass",
-  "type2": "Fairy",
-  "bst": 625,
-  "stats": {"hp": 80, "atk": 92, "def": 115, "spa": 143, "spd": 115, "spe": 80},
-  "abilities": ["Mega Sol"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10282.png",
-  "moves": []
-},
-{
-  "name": "Mega Feraligatr",
-  "pokedex_id": 160,
-  "changed": false,
-  "type1": "Water",
-  "type2": "Dragon",
-  "bst": 630,
-  "stats": {"hp": 85, "atk": 160, "def": 125, "spa": 89, "spd": 93, "spe": 78},
-  "abilities": ["Dragonize"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10283.png",
-  "moves": []
-},
-{
   "name": "Sentret",
   "pokedex_id": 161,
   "changed": false,
@@ -7569,42 +7475,6 @@
   "stats": {"hp": 100, "atk": 164, "def": 150, "spa": 95, "spd": 120, "spe": 71},
   "abilities": ["Sand Stream"],
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10049.png",
-  "moves": []
-},
-{
-  "name": "Mega Sceptile",
-  "pokedex_id": 254,
-  "changed": false,
-  "type1": "Grass",
-  "type2": "Dragon",
-  "bst": 630,
-  "stats": {"hp": 70, "atk": 110, "def": 75, "spa": 145, "spd": 85, "spe": 145},
-  "abilities": ["Lightning Rod"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10065.png",
-  "moves": []
-},
-{
-  "name": "Mega Blaziken",
-  "pokedex_id": 257,
-  "changed": false,
-  "type1": "Fire",
-  "type2": "Fighting",
-  "bst": 630,
-  "stats": {"hp": 80, "atk": 160, "def": 80, "spa": 130, "spd": 80, "spe": 100},
-  "abilities": ["Speed Boost"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10050.png",
-  "moves": []
-},
-{
-  "name": "Mega Swampert",
-  "pokedex_id": 260,
-  "changed": false,
-  "type1": "Water",
-  "type2": "Ground",
-  "bst": 635,
-  "stats": {"hp": 100, "atk": 150, "def": 110, "spa": 95, "spd": 110, "spe": 70},
-  "abilities": ["Swift Swim"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10064.png",
   "moves": []
 },
 {
@@ -11061,42 +10931,6 @@
   "moves": []
 },
 {
-  "name": "Mega Latias",
-  "pokedex_id": 380,
-  "changed": false,
-  "type1": "Dragon",
-  "type2": "Psychic",
-  "bst": 700,
-  "stats": {"hp": 80, "atk": 100, "def": 120, "spa": 140, "spd": 150, "spe": 110},
-  "abilities": ["Levitate"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10062.png",
-  "moves": []
-},
-{
-  "name": "Mega Latios",
-  "pokedex_id": 381,
-  "changed": false,
-  "type1": "Dragon",
-  "type2": "Psychic",
-  "bst": 700,
-  "stats": {"hp": 80, "atk": 130, "def": 100, "spa": 160, "spd": 120, "spe": 110},
-  "abilities": ["Levitate"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10063.png",
-  "moves": []
-},
-{
-  "name": "Mega Rayquaza",
-  "pokedex_id": 384,
-  "changed": false,
-  "type1": "Dragon",
-  "type2": "Flying",
-  "bst": 780,
-  "stats": {"hp": 105, "atk": 180, "def": 100, "spa": 180, "spd": 100, "spe": 115},
-  "abilities": ["Delta Stream"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10079.png",
-  "moves": []
-},
-{
   "name": "Starly",
   "pokedex_id": 396,
   "changed": false,
@@ -13748,41 +13582,6 @@
     {"move": "Charge", "level": 57},
     {"move": "Discharge", "level": 64}
   ]
-},
-{
-  "name": "Mega Heatran",
-  "pokedex_id": 485,
-  "changed": false,
-  "type1": "Fire",
-  "type2": "Steel",
-  "bst": 700,
-  "stats": {"hp": 91, "atk": 120, "def": 106, "spa": 175, "spd": 141, "spe": 67},
-  "abilities": ["Flash Fire", "Flame Body"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10311.png",
-  "moves": []
-},
-{
-  "name": "Mega Darkrai",
-  "pokedex_id": 491,
-  "changed": false,
-  "type1": "Dark",
-  "bst": 700,
-  "stats": {"hp": 70, "atk": 120, "def": 130, "spa": 165, "spd": 130, "spe": 85},
-  "abilities": ["Bad Dreams"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10312.png",
-  "moves": []
-},
-{
-  "name": "Mega Emboar",
-  "pokedex_id": 500,
-  "changed": false,
-  "type1": "Fire",
-  "type2": "Fighting",
-  "bst": 628,
-  "stats": {"hp": 110, "atk": 148, "def": 75, "spa": 110, "spd": 110, "spe": 75},
-  "abilities": ["Mold Breaker"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10286.png",
-  "moves": []
 },
 {
   "name": "Patrat",
@@ -17865,42 +17664,6 @@
   ]
 },
 {
-  "name": "Mega Chesnaught",
-  "pokedex_id": 652,
-  "changed": false,
-  "type1": "Grass",
-  "type2": "Fighting",
-  "bst": 630,
-  "stats": {"hp": 88, "atk": 137, "def": 172, "spa": 74, "spd": 115, "spe": 44},
-  "abilities": ["Bulletproof"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10292.png",
-  "moves": []
-},
-{
-  "name": "Mega Delphox",
-  "pokedex_id": 655,
-  "changed": false,
-  "type1": "Fire",
-  "type2": "Psychic",
-  "bst": 634,
-  "stats": {"hp": 75, "atk": 69, "def": 72, "spa": 159, "spd": 125, "spe": 134},
-  "abilities": ["Levitate"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10293.png",
-  "moves": []
-},
-{
-  "name": "Mega Greninja",
-  "pokedex_id": 658,
-  "changed": false,
-  "type1": "Water",
-  "type2": "Dark",
-  "bst": 630,
-  "stats": {"hp": 72, "atk": 125, "def": 77, "spa": 133, "spd": 81, "spe": 142},
-  "abilities": ["Protean"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10294.png",
-  "moves": []
-},
-{
   "name": "Fletchling",
   "pokedex_id": 661,
   "changed": true,
@@ -17984,87 +17747,6 @@
     {"move": "Tailwind", "level": 55},
     {"move": "Steel Wing", "level": 60}
   ]
-},
-{
-  "name": "Mega Pyroar",
-  "pokedex_id": 668,
-  "changed": false,
-  "type1": "Fire",
-  "type2": "Normal",
-  "bst": 607,
-  "stats": {"hp": 86, "atk": 88, "def": 92, "spa": 129, "spd": 86, "spe": 126},
-  "abilities": ["Fire Mane"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10295.png",
-  "moves": []
-},
-{
-  "name": "Mega Floette",
-  "pokedex_id": 670,
-  "changed": false,
-  "type1": "Fairy",
-  "bst": 651,
-  "stats": {"hp": 74, "atk": 85, "def": 87, "spa": 155, "spd": 148, "spe": 102},
-  "abilities": ["Fairy Aura"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10296.png",
-  "moves": []
-},
-{
-  "name": "Mega Meowstic (Male)",
-  "pokedex_id": 678,
-  "changed": false,
-  "type1": "Psychic",
-  "bst": 566,
-  "stats": {"hp": 74, "atk": 48, "def": 76, "spa": 143, "spd": 101, "spe": 124},
-  "abilities": ["Trace"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10314.png",
-  "moves": []
-},
-{
-  "name": "Mega Meowstic (Female)",
-  "pokedex_id": 678,
-  "changed": false,
-  "type1": "Psychic",
-  "bst": 566,
-  "stats": {"hp": 74, "atk": 48, "def": 76, "spa": 143, "spd": 101, "spe": 124},
-  "abilities": ["Trace"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10326.png",
-  "moves": []
-},
-{
-  "name": "Mega Malamar",
-  "pokedex_id": 687,
-  "changed": false,
-  "type1": "Dark",
-  "type2": "Psychic",
-  "bst": 582,
-  "stats": {"hp": 86, "atk": 102, "def": 88, "spa": 98, "spd": 120, "spe": 88},
-  "abilities": ["Contrary"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10297.png",
-  "moves": []
-},
-{
-  "name": "Mega Barbaracle",
-  "pokedex_id": 689,
-  "changed": false,
-  "type1": "Rock",
-  "type2": "Fighting",
-  "bst": 600,
-  "stats": {"hp": 72, "atk": 140, "def": 130, "spa": 64, "spd": 106, "spe": 88},
-  "abilities": ["Tough Claws"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10298.png",
-  "moves": []
-},
-{
-  "name": "Mega Dragalge",
-  "pokedex_id": 691,
-  "changed": false,
-  "type1": "Poison",
-  "type2": "Dragon",
-  "bst": 594,
-  "stats": {"hp": 65, "atk": 85, "def": 105, "spa": 132, "spd": 163, "spe": 44},
-  "abilities": ["Regenerator"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10299.png",
-  "moves": []
 },
 {
   "name": "Clauncher",
@@ -18472,30 +18154,6 @@
     {"move": "Muddy Water", "level": 58},
     {"move": "Heavy Slam", "level": 67}
   ]
-},
-{
-  "name": "Mega Zygarde",
-  "pokedex_id": 718,
-  "changed": false,
-  "type1": "Dragon",
-  "type2": "Ground",
-  "bst": 778,
-  "stats": {"hp": 216, "atk": 70, "def": 91, "spa": 216, "spd": 85, "spe": 100},
-  "abilities": ["Aura Break"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10301.png",
-  "moves": []
-},
-{
-  "name": "Mega Diancie",
-  "pokedex_id": 719,
-  "changed": false,
-  "type1": "Rock",
-  "type2": "Fairy",
-  "bst": 700,
-  "stats": {"hp": 50, "atk": 160, "def": 110, "spa": 160, "spd": 110, "spe": 110},
-  "abilities": ["Magic Bounce"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10075.png",
-  "moves": []
 },
 {
   "name": "Crabrawler",
@@ -18998,30 +18656,6 @@
     {"move": "Close Combat", "level": 63},
     {"move": "Outrage", "level": 67}
   ]
-},
-{
-  "name": "Mega Magearna",
-  "pokedex_id": 801,
-  "changed": false,
-  "type1": "Steel",
-  "type2": "Fairy",
-  "bst": 700,
-  "stats": {"hp": 80, "atk": 125, "def": 115, "spa": 170, "spd": 115, "spe": 95},
-  "abilities": ["Soul-Heart"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10317.png",
-  "moves": []
-},
-{
-  "name": "Mega Magearna (Original)",
-  "pokedex_id": 801,
-  "changed": false,
-  "type1": "Steel",
-  "type2": "Fairy",
-  "bst": 700,
-  "stats": {"hp": 80, "atk": 125, "def": 115, "spa": 170, "spd": 115, "spe": 95},
-  "abilities": ["Soul-Heart"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10318.png",
-  "moves": []
 },
 {
   "name": "Rookidee",
@@ -20686,17 +20320,6 @@
   "moves": []
 },
 {
-  "name": "Mega Falinks",
-  "pokedex_id": 870,
-  "changed": false,
-  "type1": "Fighting",
-  "bst": 570,
-  "stats": {"hp": 65, "atk": 135, "def": 135, "spa": 70, "spd": 65, "spe": 100},
-  "abilities": ["Defiant"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10303.png",
-  "moves": []
-},
-{
   "name": "Zarude",
   "pokedex_id": 893,
   "changed": true,
@@ -20739,66 +20362,6 @@
   "stats": {"hp": 65, "atk": 138, "def": 85, "spa": 138, "spd": 85, "spe": 75},
   "abilities": ["Spicy Spray"],
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10320.png",
-  "moves": []
-},
-{
-  "name": "Mega Glimmora",
-  "pokedex_id": 970,
-  "changed": false,
-  "type1": "Rock",
-  "type2": "Poison",
-  "bst": 625,
-  "stats": {"hp": 83, "atk": 90, "def": 105, "spa": 150, "spd": 96, "spe": 101},
-  "abilities": ["Adaptability"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10321.png",
-  "moves": []
-},
-{
-  "name": "Mega Tatsugiri (Curly)",
-  "pokedex_id": 978,
-  "changed": false,
-  "type1": "Dragon",
-  "type2": "Water",
-  "bst": 575,
-  "stats": {"hp": 68, "atk": 65, "def": 90, "spa": 135, "spd": 125, "spe": 92},
-  "abilities": ["Commander", "Storm Drain"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10322.png",
-  "moves": []
-},
-{
-  "name": "Mega Tatsugiri (Droopy)",
-  "pokedex_id": 978,
-  "changed": false,
-  "type1": "Dragon",
-  "type2": "Water",
-  "bst": 575,
-  "stats": {"hp": 68, "atk": 65, "def": 90, "spa": 135, "spd": 125, "spe": 92},
-  "abilities": ["Commander", "Storm Drain"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10323.png",
-  "moves": []
-},
-{
-  "name": "Mega Tatsugiri (Stretchy)",
-  "pokedex_id": 978,
-  "changed": false,
-  "type1": "Dragon",
-  "type2": "Water",
-  "bst": 575,
-  "stats": {"hp": 68, "atk": 65, "def": 90, "spa": 135, "spd": 125, "spe": 92},
-  "abilities": ["Commander", "Storm Drain"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10324.png",
-  "moves": []
-},
-{
-  "name": "Mega Baxcalibur",
-  "pokedex_id": 998,
-  "changed": false,
-  "type1": "Dragon",
-  "type2": "Ice",
-  "bst": 700,
-  "stats": {"hp": 115, "atk": 175, "def": 117, "spa": 105, "spd": 101, "spe": 87},
-  "abilities": ["Thermal Exchange"],
-  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10325.png",
   "moves": []
 }
 ]
