@@ -1,6 +1,53 @@
 {
-"_readme": "Pokédex of Pokémon Pitch Black 2. Every Pokémon appears ONCE. 'evo' = {from, method}: the Pokémon it evolves from and how. The page builds the boxes by itself: one box per final evolution (split evolutions = one box each, e.g. Vileplume and Bellossom both contain Oddish and Gloom); Paradox Pokémon get their own box with only the Pokémon they come from ('paradox.from'); alternate forms ('form_of', e.g. Rotom (Heat)) sit inside the box of their base form. 'changed' = true if the Pokémon is different from vanilla Black 2/White 2. 'sprite' only when the image is not the default one (PokeAPI Black/White sprite {pokedex_id}.png), e.g. regional forms.",
+"_readme": "Pokédex of Pokémon Pitch Black 2. Every Pokémon appears ONCE. 'evo' = {from, method}: the Pokémon it evolves from and how. The page builds the boxes by itself: one box per final evolution (split evolutions = one box each, e.g. Vileplume and Bellossom both contain Oddish and Gloom); Paradox Pokémon get their own box with only the Pokémon they come from ('paradox.from'); alternate forms ('form_of', e.g. Rotom (Heat)) sit inside the box of their base form. 'changed' = true if the Pokémon is different from vanilla Black 2/White 2. 'sprite' only when the image is not the default one (PokeAPI Black/White sprite {pokedex_id}.png), e.g. regional forms. Mega Evolutions ('Mega X') are standalone entries: no 'evo', no moves, no TMs or tutors.",
 "pokemon": [
+{
+  "name": "Mega Venusaur",
+  "pokedex_id": 3,
+  "changed": false,
+  "type1": "Grass",
+  "type2": "Poison",
+  "bst": 625,
+  "stats": {"hp": 80, "atk": 100, "def": 123, "spa": 122, "spd": 120, "spe": 80},
+  "abilities": ["Thick Fat"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10033.png",
+  "moves": []
+},
+{
+  "name": "Mega Charizard X",
+  "pokedex_id": 6,
+  "changed": false,
+  "type1": "Fire",
+  "type2": "Dragon",
+  "bst": 634,
+  "stats": {"hp": 78, "atk": 130, "def": 111, "spa": 130, "spd": 85, "spe": 100},
+  "abilities": ["Tough Claws"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10034.png",
+  "moves": []
+},
+{
+  "name": "Mega Charizard Y",
+  "pokedex_id": 6,
+  "changed": false,
+  "type1": "Fire",
+  "type2": "Flying",
+  "bst": 634,
+  "stats": {"hp": 78, "atk": 104, "def": 78, "spa": 159, "spd": 115, "spe": 100},
+  "abilities": ["Drought"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10035.png",
+  "moves": []
+},
+{
+  "name": "Mega Blastoise",
+  "pokedex_id": 9,
+  "changed": false,
+  "type1": "Water",
+  "bst": 630,
+  "stats": {"hp": 79, "atk": 103, "def": 120, "spa": 135, "spd": 115, "spe": 78},
+  "abilities": ["Mega Launcher"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10036.png",
+  "moves": []
+},
 {
   "name": "Caterpie",
   "pokedex_id": 10,
@@ -114,6 +161,18 @@
   ]
 },
 {
+  "name": "Mega Beedrill",
+  "pokedex_id": 15,
+  "changed": false,
+  "type1": "Bug",
+  "type2": "Poison",
+  "bst": 495,
+  "stats": {"hp": 65, "atk": 150, "def": 40, "spa": 15, "spd": 80, "spe": 145},
+  "abilities": ["Adaptability"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10090.png",
+  "moves": []
+},
+{
   "name": "Pidgey",
   "pokedex_id": 16,
   "changed": false,
@@ -192,6 +251,18 @@
     {"move": "Air Slash", "level": 62},
     {"move": "Hurricane", "level": 68}
   ]
+},
+{
+  "name": "Mega Pidgeot",
+  "pokedex_id": 18,
+  "changed": false,
+  "type1": "Normal",
+  "type2": "Flying",
+  "bst": 579,
+  "stats": {"hp": 83, "atk": 80, "def": 80, "spa": 135, "spd": 80, "spe": 121},
+  "abilities": ["No Guard"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10073.png",
+  "moves": []
 },
 {
   "name": "Rattata",
@@ -476,6 +547,28 @@
     {"move": "Thunderbolt", "level": 1},
     {"move": "Thunder Shock", "level": 1}
   ]
+},
+{
+  "name": "Mega Raichu X",
+  "pokedex_id": 26,
+  "changed": false,
+  "type1": "Electric",
+  "bst": 585,
+  "stats": {"hp": 60, "atk": 135, "def": 95, "spa": 90, "spd": 95, "spe": 110},
+  "abilities": ["Electric Surge"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10304.png",
+  "moves": []
+},
+{
+  "name": "Mega Raichu Y",
+  "pokedex_id": 26,
+  "changed": false,
+  "type1": "Electric",
+  "bst": 585,
+  "stats": {"hp": 60, "atk": 100, "def": 55, "spa": 160, "spd": 80, "spe": 130},
+  "abilities": ["No Guard"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10305.png",
+  "moves": []
 },
 {
   "name": "Sandshrew",
@@ -801,6 +894,18 @@
   ]
 },
 {
+  "name": "Mega Clefable",
+  "pokedex_id": 36,
+  "changed": false,
+  "type1": "Fairy",
+  "type2": "Flying",
+  "bst": 583,
+  "stats": {"hp": 95, "atk": 80, "def": 93, "spa": 135, "spd": 110, "spe": 70},
+  "abilities": ["Magic Bounce"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10278.png",
+  "moves": []
+},
+{
   "name": "Vulpix",
   "pokedex_id": 37,
   "changed": true,
@@ -971,12 +1076,12 @@
   "stats": {"hp": 40, "atk": 45, "def": 35, "spa": 30, "spd": 40, "spe": 55},
   "abilities": ["Inner Focus"],
   "moves": [
-    {"move": "Leech Life", "level": 1},
     {"move": "Supersonic", "level": 4},
     {"move": "Astonish", "level": 8},
     {"move": "Bite", "level": 12},
     {"move": "Wing Attack", "level": 15},
     {"move": "Confuse Ray", "level": 19},
+    {"move": "Leech Life", "level": 20},
     {"move": "Swift", "level": 23},
     {"move": "Air Cutter", "level": 25},
     {"move": "Mean Look", "level": 29},
@@ -998,12 +1103,12 @@
   "evo": {"from": "Zubat", "method": "Level 22"},
   "moves": [
     {"move": "Astonish", "level": 1},
-    {"move": "Leech Life", "level": 1},
     {"move": "Screech", "level": 1},
     {"move": "Supersonic", "level": 1},
     {"move": "Bite", "level": 12},
     {"move": "Wing Attack", "level": 15},
     {"move": "Confuse Ray", "level": 19},
+    {"move": "Leech Life", "level": 20},
     {"move": "Swift", "level": 24},
     {"move": "Air Cutter", "level": 27},
     {"move": "Acrobatics", "level": 33},
@@ -1097,8 +1202,8 @@
     {"move": "Scratch", "level": 1},
     {"move": "Stun Spore", "level": 6},
     {"move": "Poison Powder", "level": 6},
-    {"move": "Leech Life", "level": 11},
     {"move": "Fury Cutter", "level": 17},
+    {"move": "Leech Life", "level": 20},
     {"move": "Spore", "level": 22},
     {"move": "Slash", "level": 27},
     {"move": "Seed Bomb", "level": 27},
@@ -1125,8 +1230,8 @@
     {"move": "String Shot", "level": 1},
     {"move": "Poison Powder", "level": 6},
     {"move": "Confuse Ray", "level": 6},
-    {"move": "Leech Life", "level": 11},
     {"move": "Fury Cutter", "level": 17},
+    {"move": "Leech Life", "level": 20},
     {"move": "Curse", "level": 22},
     {"move": "Shadow Claw", "level": 26},
     {"move": "Slash", "level": 29},
@@ -1155,7 +1260,7 @@
     {"move": "Confusion", "level": 11},
     {"move": "Poison Fang", "level": 13},
     {"move": "Poison Powder", "level": 13},
-    {"move": "Leech Life", "level": 17},
+    {"move": "Leech Life", "level": 20},
     {"move": "Stun Spore", "level": 23},
     {"move": "Poison Jab", "level": 24},
     {"move": "Psybeam", "level": 25},
@@ -1183,7 +1288,7 @@
     {"move": "Supersonic", "level": 5},
     {"move": "Confusion", "level": 11},
     {"move": "Poison Powder", "level": 13},
-    {"move": "Leech Life", "level": 17},
+    {"move": "Leech Life", "level": 20},
     {"move": "Stun Spore", "level": 23},
     {"move": "Psybeam", "level": 25},
     {"move": "Sleep Powder", "level": 29},
@@ -1556,7 +1661,7 @@
     {"move": "Bite", "level": 8},
     {"move": "Flame Wheel", "level": 12},
     {"move": "Helping Hand", "level": 16},
-    {"move": "Fire Fang", "level": 24},
+    {"move": "Fire Lash", "level": 24},
     {"move": "Retaliate", "level": 28},
     {"move": "Crunch", "level": 32},
     {"move": "Take Down", "level": 36},
@@ -1588,6 +1693,7 @@
     {"move": "Retaliate", "level": 32},
     {"move": "Extreme Speed", "level": 34},
     {"move": "Flamethrower", "level": 34},
+    {"move": "Fire Lash", "level": 35},
     {"move": "Crunch", "level": 39},
     {"move": "Heat Wave", "level": 41},
     {"move": "Outrage", "level": 43},
@@ -1623,7 +1729,8 @@
     {"move": "Rock Slide", "level": 1},
     {"move": "Rock Throw", "level": 1},
     {"move": "Take Down", "level": 1},
-    {"move": "Flamethrower", "level": 5}
+    {"move": "Flamethrower", "level": 5},
+    {"move": "Fire Lash", "level": 22}
   ]
 },
 {
@@ -1643,6 +1750,7 @@
     {"move": "Rain Dance", "level": 18},
     {"move": "Body Slam", "level": 21},
     {"move": "Bubble Beam", "level": 25},
+    {"move": "Liquidation", "level": 25},
     {"move": "Mud Shot", "level": 28},
     {"move": "Belly Drum", "level": 31},
     {"move": "Wake-Up Slap", "level": 35},
@@ -1669,6 +1777,7 @@
     {"move": "Body Slam", "level": 21},
     {"move": "Bubble Beam", "level": 27},
     {"move": "Mud Shot", "level": 32},
+    {"move": "Liquidation", "level": 32},
     {"move": "Belly Drum", "level": 37},
     {"move": "Wake-Up Slap", "level": 43},
     {"move": "Hydro Pump", "level": 48},
@@ -1691,6 +1800,7 @@
     {"move": "Hypnosis", "level": 1},
     {"move": "Submission", "level": 1},
     {"move": "Dynamic Punch", "level": 32},
+    {"move": "Liquidation", "level": 32},
     {"move": "Mind Reader", "level": 43},
     {"move": "Circle Throw", "level": 53}
   ]
@@ -1760,6 +1870,17 @@
     {"move": "Future Sight", "level": 48},
     {"move": "Trick", "level": 52}
   ]
+},
+{
+  "name": "Mega Alakazam",
+  "pokedex_id": 65,
+  "changed": false,
+  "type1": "Psychic",
+  "bst": 600,
+  "stats": {"hp": 55, "atk": 50, "def": 65, "spa": 175, "spd": 105, "spe": 150},
+  "abilities": ["Trace"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10037.png",
+  "moves": []
 },
 {
   "name": "Machop",
@@ -1914,6 +2035,18 @@
     {"move": "Leaf Blade", "level": 47},
     {"move": "Leaf Storm", "level": 47}
   ]
+},
+{
+  "name": "Mega Victreebel",
+  "pokedex_id": 71,
+  "changed": false,
+  "type1": "Grass",
+  "type2": "Poison",
+  "bst": 590,
+  "stats": {"hp": 80, "atk": 125, "def": 85, "spa": 135, "spd": 95, "spe": 70},
+  "abilities": ["Innards Out"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10279.png",
+  "moves": []
 },
 {
   "name": "Tentacool",
@@ -2167,6 +2300,7 @@
     {"move": "Take Down", "level": 29},
     {"move": "Inferno", "level": 33},
     {"move": "Agility", "level": 37},
+    {"move": "Fire Lash", "level": 39},
     {"move": "Fire Blast", "level": 41},
     {"move": "Bounce", "level": 45},
     {"move": "Flare Blitz", "level": 49}
@@ -2221,6 +2355,7 @@
     {"move": "Take Down", "level": 29},
     {"move": "Inferno", "level": 33},
     {"move": "Agility", "level": 37},
+    {"move": "Fire Lash", "level": 39},
     {"move": "Fury Attack", "level": 40},
     {"move": "Fire Blast", "level": 41},
     {"move": "Covet", "level": 42},
@@ -2416,6 +2551,18 @@
   ]
 },
 {
+  "name": "Mega Slowbro",
+  "pokedex_id": 80,
+  "changed": false,
+  "type1": "Water",
+  "type2": "Psychic",
+  "bst": 590,
+  "stats": {"hp": 95, "atk": 75, "def": 180, "spa": 130, "spd": 80, "spe": 30},
+  "abilities": ["Shell Armor"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10071.png",
+  "moves": []
+},
+{
   "name": "Magnemite",
   "pokedex_id": 81,
   "changed": false,
@@ -2491,9 +2638,9 @@
     {"move": "Poison Jab", "level": 1},
     {"move": "Sand Attack", "level": 1},
     {"move": "Fury Attack", "level": 7},
-    {"move": "Knock Off", "level": 9},
     {"move": "Rock Smash", "level": 13},
     {"move": "Aerial Ace", "level": 13},
+    {"move": "Knock Off", "level": 18},
     {"move": "Slash", "level": 19},
     {"move": "Air Cutter", "level": 21},
     {"move": "Swords Dance", "level": 25},
@@ -2910,6 +3057,18 @@
   ]
 },
 {
+  "name": "Mega Gengar",
+  "pokedex_id": 94,
+  "changed": false,
+  "type1": "Ghost",
+  "type2": "Poison",
+  "bst": 600,
+  "stats": {"hp": 60, "atk": 65, "def": 80, "spa": 170, "spd": 95, "spe": 130},
+  "abilities": ["Shadow Tag"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10038.png",
+  "moves": []
+},
+{
   "name": "Onix",
   "pokedex_id": 95,
   "changed": true,
@@ -3023,6 +3182,7 @@
     {"move": "Stomp", "level": 25},
     {"move": "Protect", "level": 29},
     {"move": "Guillotine", "level": 31},
+    {"move": "Liquidation", "level": 33},
     {"move": "Slam", "level": 35},
     {"move": "Brine", "level": 39},
     {"move": "Crabhammer", "level": 41},
@@ -3056,6 +3216,7 @@
     {"move": "Guillotine", "level": 37},
     {"move": "Earthquake", "level": 41},
     {"move": "Slam", "level": 44},
+    {"move": "Liquidation", "level": 48},
     {"move": "Brine", "level": 51},
     {"move": "Crabhammer", "level": 56},
     {"move": "Flail", "level": 63}
@@ -3344,6 +3505,7 @@
     {"move": "Thrash", "level": 33},
     {"move": "Fling", "level": 37},
     {"move": "Fire Punch", "level": 43},
+    {"move": "Fire Lash", "level": 43},
     {"move": "Endeavor", "level": 49},
     {"move": "Flare Blitz", "level": 53},
     {"move": "Retaliate", "level": 59},
@@ -3421,8 +3583,8 @@
     {"move": "Lick", "level": 1},
     {"move": "Supersonic", "level": 5},
     {"move": "Defense Curl", "level": 9},
-    {"move": "Knock Off", "level": 13},
     {"move": "Wrap", "level": 17},
+    {"move": "Knock Off", "level": 18},
     {"move": "Stomp", "level": 21},
     {"move": "Disable", "level": 25},
     {"move": "Slam", "level": 29},
@@ -3660,6 +3822,17 @@
   ]
 },
 {
+  "name": "Mega Kangaskhan",
+  "pokedex_id": 115,
+  "changed": false,
+  "type1": "Normal",
+  "bst": 590,
+  "stats": {"hp": 105, "atk": 125, "def": 100, "spa": 60, "spd": 100, "spe": 100},
+  "abilities": ["Parental Bond"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10039.png",
+  "moves": []
+},
+{
   "name": "Horsea",
   "pokedex_id": 116,
   "changed": false,
@@ -3724,7 +3897,7 @@
     {"move": "Flail", "level": 21},
     {"move": "Aqua Ring", "level": 27},
     {"move": "Fury Attack", "level": 31},
-    {"move": "Waterfall", "level": 37},
+    {"move": "Liquidation", "level": 37},
     {"move": "Horn Drill", "level": 41},
     {"move": "Agility", "level": 47},
     {"move": "Soak", "level": 51},
@@ -3751,7 +3924,7 @@
     {"move": "Flail", "level": 21},
     {"move": "Aqua Ring", "level": 27},
     {"move": "Fury Attack", "level": 31},
-    {"move": "Waterfall", "level": 40},
+    {"move": "Liquidation", "level": 40},
     {"move": "Horn Drill", "level": 47},
     {"move": "Agility", "level": 56},
     {"move": "Soak", "level": 63},
@@ -3805,6 +3978,18 @@
     {"move": "Scald", "level": 33},
     {"move": "Psychic", "level": 40}
   ]
+},
+{
+  "name": "Mega Starmie",
+  "pokedex_id": 121,
+  "changed": false,
+  "type1": "Water",
+  "type2": "Psychic",
+  "bst": 620,
+  "stats": {"hp": 60, "atk": 100, "def": 105, "spa": 130, "spd": 105, "spe": 120},
+  "abilities": ["Huge Power"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10280.png",
+  "moves": []
 },
 {
   "name": "Mr. Mime",
@@ -3984,6 +4169,18 @@
   ]
 },
 {
+  "name": "Mega Pinsir",
+  "pokedex_id": 127,
+  "changed": false,
+  "type1": "Bug",
+  "type2": "Flying",
+  "bst": 600,
+  "stats": {"hp": 65, "atk": 155, "def": 120, "spa": 65, "spd": 90, "spe": 105},
+  "abilities": ["Aerilate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10040.png",
+  "moves": []
+},
+{
   "name": "Tauros",
   "pokedex_id": 128,
   "changed": false,
@@ -4030,6 +4227,7 @@
     {"move": "Body Slam", "level": 35},
     {"move": "Rest", "level": 40},
     {"move": "Swagger", "level": 45},
+    {"move": "Liquidation", "level": 49},
     {"move": "Thrash", "level": 50},
     {"move": "Aqua Tail", "level": 55},
     {"move": "Close Combat", "level": 60}
@@ -4057,6 +4255,7 @@
     {"move": "Body Slam", "level": 35},
     {"move": "Rest", "level": 40},
     {"move": "Swagger", "level": 45},
+    {"move": "Fire Lash", "level": 45},
     {"move": "Thrash", "level": 50},
     {"move": "Flare Blitz", "level": 55},
     {"move": "Close Combat", "level": 60}
@@ -4117,7 +4316,7 @@
     {"move": "Bite", "level": 20},
     {"move": "Dragon Rage", "level": 23},
     {"move": "Leer", "level": 26},
-    {"move": "Waterfall", "level": 26},
+    {"move": "Liquidation", "level": 26},
     {"move": "Twister", "level": 29},
     {"move": "Ice Fang", "level": 32},
     {"move": "Aqua Tail", "level": 35},
@@ -4127,6 +4326,18 @@
     {"move": "Dragon Dance", "level": 44},
     {"move": "Hyper Beam", "level": 47}
   ]
+},
+{
+  "name": "Mega Gyarados",
+  "pokedex_id": 130,
+  "changed": false,
+  "type1": "Water",
+  "type2": "Dark",
+  "bst": 640,
+  "stats": {"hp": 95, "atk": 155, "def": 109, "spa": 70, "spd": 130, "spe": 81},
+  "abilities": ["Mold Breaker"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10041.png",
+  "moves": []
 },
 {
   "name": "Lapras",
@@ -4272,7 +4483,7 @@
     {"move": "Ember", "level": 9},
     {"move": "Quick Attack", "level": 13},
     {"move": "Bite", "level": 17},
-    {"move": "Fire Fang", "level": 21},
+    {"move": "Fire Lash", "level": 21},
     {"move": "Fire Spin", "level": 25},
     {"move": "Scary Face", "level": 29},
     {"move": "Smog", "level": 33},
@@ -4386,6 +4597,7 @@
     {"move": "Waterfall", "level": 36},
     {"move": "Metal Sound", "level": 41},
     {"move": "Ancient Power", "level": 46},
+    {"move": "Liquidation", "level": 50},
     {"move": "Wring Out", "level": 51}
   ]
 },
@@ -4416,6 +4628,7 @@
     {"move": "Metal Sound", "level": 45},
     {"move": "Rock Slide", "level": 45},
     {"move": "Ancient Power", "level": 54},
+    {"move": "Liquidation", "level": 56},
     {"move": "Wring Out", "level": 63},
     {"move": "Night Slash", "level": 72}
   ]
@@ -4451,6 +4664,18 @@
     {"move": "Rock Slide", "level": 73},
     {"move": "Giga Impact", "level": 81}
   ]
+},
+{
+  "name": "Mega Aerodactyl",
+  "pokedex_id": 142,
+  "changed": false,
+  "type1": "Rock",
+  "type2": "Flying",
+  "bst": 615,
+  "stats": {"hp": 80, "atk": 135, "def": 85, "spa": 70, "spd": 95, "spe": 150},
+  "abilities": ["Tough Claws"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10042.png",
+  "moves": []
 },
 {
   "name": "Snorlax",
@@ -4496,6 +4721,7 @@
     {"move": "Water Pulse", "level": 19},
     {"move": "Slam", "level": 21},
     {"move": "Agility", "level": 25},
+    {"move": "Liquidation", "level": 29},
     {"move": "Aqua Tail", "level": 35},
     {"move": "Safeguard", "level": 45},
     {"move": "Dragon Dance", "level": 51},
@@ -4524,6 +4750,7 @@
     {"move": "Agility", "level": 25},
     {"move": "Dragon Tail", "level": 33},
     {"move": "Scald", "level": 33},
+    {"move": "Liquidation", "level": 33},
     {"move": "Aqua Tail", "level": 39},
     {"move": "Dragon Rush", "level": 47},
     {"move": "Safeguard", "level": 53},
@@ -4565,6 +4792,65 @@
     {"move": "Outrage", "level": 67},
     {"move": "Hyper Beam", "level": 75}
   ]
+},
+{
+  "name": "Mega Dragonite",
+  "pokedex_id": 149,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Flying",
+  "bst": 700,
+  "stats": {"hp": 91, "atk": 124, "def": 115, "spa": 145, "spd": 125, "spe": 100},
+  "abilities": ["Multiscale"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10281.png",
+  "moves": []
+},
+{
+  "name": "Mega Mewtwo X",
+  "pokedex_id": 150,
+  "changed": false,
+  "type1": "Psychic",
+  "type2": "Fighting",
+  "bst": 780,
+  "stats": {"hp": 106, "atk": 190, "def": 100, "spa": 154, "spd": 100, "spe": 130},
+  "abilities": ["Steadfast"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10043.png",
+  "moves": []
+},
+{
+  "name": "Mega Mewtwo Y",
+  "pokedex_id": 150,
+  "changed": false,
+  "type1": "Psychic",
+  "bst": 780,
+  "stats": {"hp": 106, "atk": 150, "def": 70, "spa": 194, "spd": 120, "spe": 140},
+  "abilities": ["Insomnia"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10044.png",
+  "moves": []
+},
+{
+  "name": "Mega Meganium",
+  "pokedex_id": 154,
+  "changed": false,
+  "type1": "Grass",
+  "type2": "Fairy",
+  "bst": 625,
+  "stats": {"hp": 80, "atk": 92, "def": 115, "spa": 143, "spd": 115, "spe": 80},
+  "abilities": ["Mega Sol"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10282.png",
+  "moves": []
+},
+{
+  "name": "Mega Feraligatr",
+  "pokedex_id": 160,
+  "changed": false,
+  "type1": "Water",
+  "type2": "Dragon",
+  "bst": 630,
+  "stats": {"hp": 85, "atk": 160, "def": 125, "spa": 89, "spd": 93, "spe": 78},
+  "abilities": ["Dragonize"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10283.png",
+  "moves": []
 },
 {
   "name": "Sentret",
@@ -4750,10 +5036,10 @@
     {"move": "String Shot", "level": 1},
     {"move": "Scary Face", "level": 5},
     {"move": "Constrict", "level": 8},
-    {"move": "Leech Life", "level": 12},
     {"move": "Night Shade", "level": 15},
     {"move": "Feint Attack", "level": 15},
     {"move": "Shadow Sneak", "level": 19},
+    {"move": "Leech Life", "level": 20},
     {"move": "Fury Swipes", "level": 22},
     {"move": "Sucker Punch", "level": 26},
     {"move": "Spider Web", "level": 29},
@@ -4777,10 +5063,10 @@
     {"move": "String Shot", "level": 1},
     {"move": "Scary Face", "level": 5},
     {"move": "Constrict", "level": 8},
-    {"move": "Leech Life", "level": 12},
     {"move": "Night Shade", "level": 15},
     {"move": "Feint Attack", "level": 15},
     {"move": "Shadow Sneak", "level": 19},
+    {"move": "Leech Life", "level": 20},
     {"move": "Fury Swipes", "level": 23},
     {"move": "Sucker Punch", "level": 28},
     {"move": "Spider Web", "level": 32},
@@ -4803,12 +5089,12 @@
   "moves": [
     {"move": "Astonish", "level": 1},
     {"move": "Cross Poison", "level": 1},
-    {"move": "Leech Life", "level": 1},
     {"move": "Screech", "level": 1},
     {"move": "Supersonic", "level": 1},
     {"move": "Bite", "level": 12},
     {"move": "Wing Attack", "level": 15},
     {"move": "Confuse Ray", "level": 19},
+    {"move": "Leech Life", "level": 20},
     {"move": "Swift", "level": 24},
     {"move": "Air Cutter", "level": 27},
     {"move": "Acrobatics", "level": 33},
@@ -5152,6 +5438,18 @@
     {"move": "Light Screen", "level": 57},
     {"move": "Thunder", "level": 62}
   ]
+},
+{
+  "name": "Mega Ampharos",
+  "pokedex_id": 181,
+  "changed": false,
+  "type1": "Electric",
+  "type2": "Dragon",
+  "bst": 610,
+  "stats": {"hp": 90, "atk": 95, "def": 105, "spa": 165, "spd": 110, "spe": 45},
+  "abilities": ["Mold Breaker"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10045.png",
+  "moves": []
 },
 {
   "name": "Bellossom",
@@ -5606,18 +5904,18 @@
     {"move": "Tackle", "level": 1},
     {"move": "Tail Whip", "level": 1},
     {"move": "Sand Attack", "level": 5},
-    {"move": "Astonish", "level": 7},
+    {"move": "Disarming Voice", "level": 7},
     {"move": "Confusion", "level": 9},
     {"move": "Quick Attack", "level": 13},
     {"move": "Swift", "level": 17},
     {"move": "Psybeam", "level": 21},
-    {"move": "Hex", "level": 23},
+    {"move": "Draining Kiss", "level": 23},
     {"move": "Future Sight", "level": 25},
     {"move": "Psych Up", "level": 29},
     {"move": "Morning Sun", "level": 33},
-    {"move": "Shadow Ball", "level": 36},
+    {"move": "Dazzling Gleam", "level": 36},
     {"move": "Psychic", "level": 37},
-    {"move": "Last Resort", "level": 41},
+    {"move": "Moonblast", "level": 41},
     {"move": "Power Swap", "level": 45}
   ]
 },
@@ -5937,9 +6235,9 @@
     {"move": "Poison Sting", "level": 1},
     {"move": "Sand Attack", "level": 4},
     {"move": "Harden", "level": 7},
-    {"move": "Knock Off", "level": 10},
     {"move": "Quick Attack", "level": 13},
     {"move": "Fury Cutter", "level": 16},
+    {"move": "Knock Off", "level": 18},
     {"move": "Feint Attack", "level": 19},
     {"move": "Acrobatics", "level": 22},
     {"move": "Poison Jab", "level": 25},
@@ -6014,7 +6312,7 @@
     {"move": "Aqua Ring", "level": 21},
     {"move": "Iron Head", "level": 24},
     {"move": "Rock Tomb", "level": 28},
-    {"move": "Waterfall", "level": 31},
+    {"move": "Liquidation", "level": 31},
     {"move": "Rock Slide", "level": 35},
     {"move": "Aqua Tail", "level": 39},
     {"move": "Earthquake", "level": 47},
@@ -6023,6 +6321,18 @@
     {"move": "Heavy Slam", "level": 62},
     {"move": "Recover", "level": 68}
   ]
+},
+{
+  "name": "Mega Steelix",
+  "pokedex_id": 208,
+  "changed": false,
+  "type1": "Steel",
+  "type2": "Ground",
+  "bst": 610,
+  "stats": {"hp": 75, "atk": 125, "def": 230, "spa": 55, "spd": 95, "spe": 30},
+  "abilities": ["Sand Force"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10072.png",
+  "moves": []
 },
 {
   "name": "Snubbull",
@@ -6110,6 +6420,7 @@
     {"move": "Revenge", "level": 29},
     {"move": "Brine", "level": 33},
     {"move": "Pin Missile", "level": 37},
+    {"move": "Liquidation", "level": 39},
     {"move": "Take Down", "level": 41},
     {"move": "Aqua Tail", "level": 45},
     {"move": "Poison Jab", "level": 49},
@@ -6178,6 +6489,18 @@
     {"move": "Swords Dance", "level": 57},
     {"move": "Feint", "level": 61}
   ]
+},
+{
+  "name": "Mega Scizor",
+  "pokedex_id": 212,
+  "changed": false,
+  "type1": "Bug",
+  "type2": "Steel",
+  "bst": 600,
+  "stats": {"hp": 70, "atk": 150, "def": 140, "spa": 65, "spd": 100, "spe": 75},
+  "abilities": ["Technician"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10046.png",
+  "moves": []
 },
 {
   "name": "Shuckle",
@@ -6268,6 +6591,18 @@
     {"move": "Close Combat", "level": 58},
     {"move": "Horn Drill", "level": 65}
   ]
+},
+{
+  "name": "Mega Heracross",
+  "pokedex_id": 214,
+  "changed": false,
+  "type1": "Bug",
+  "type2": "Fighting",
+  "bst": 600,
+  "stats": {"hp": 80, "atk": 185, "def": 115, "spa": 40, "spd": 105, "spe": 75},
+  "abilities": ["Skill Link"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10047.png",
+  "moves": []
 },
 {
   "name": "Sneasel",
@@ -6720,6 +7055,18 @@
   ]
 },
 {
+  "name": "Mega Skarmory",
+  "pokedex_id": 227,
+  "changed": false,
+  "type1": "Steel",
+  "type2": "Flying",
+  "bst": 565,
+  "stats": {"hp": 65, "atk": 140, "def": 110, "spa": 40, "spd": 100, "spe": 110},
+  "abilities": ["Stalwart"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10284.png",
+  "moves": []
+},
+{
   "name": "Houndour",
   "pokedex_id": 228,
   "changed": false,
@@ -6776,6 +7123,18 @@
     {"move": "Nasty Plot", "level": 60},
     {"move": "Inferno", "level": 65}
   ]
+},
+{
+  "name": "Mega Houndoom",
+  "pokedex_id": 229,
+  "changed": false,
+  "type1": "Dark",
+  "type2": "Fire",
+  "bst": 600,
+  "stats": {"hp": 75, "atk": 90, "def": 90, "spa": 140, "spd": 90, "spe": 115},
+  "abilities": ["Solar Power"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10048.png",
+  "moves": []
 },
 {
   "name": "Kingdra",
@@ -6847,10 +7206,10 @@
     {"move": "Horn Attack", "level": 1},
     {"move": "Thunder Fang", "level": 1},
     {"move": "Rapid Spin", "level": 6},
-    {"move": "Knock Off", "level": 10},
     {"move": "Rollout", "level": 15},
     {"move": "Magnitude", "level": 19},
     {"move": "Slam", "level": 24},
+    {"move": "Knock Off", "level": 25},
     {"move": "Fury Attack", "level": 25},
     {"move": "Rock Slide", "level": 27},
     {"move": "Assurance", "level": 31},
@@ -7199,6 +7558,54 @@
     {"move": "Hyper Beam", "level": 70},
     {"move": "Giga Impact", "level": 75}
   ]
+},
+{
+  "name": "Mega Tyranitar",
+  "pokedex_id": 248,
+  "changed": false,
+  "type1": "Rock",
+  "type2": "Dark",
+  "bst": 700,
+  "stats": {"hp": 100, "atk": 164, "def": 150, "spa": 95, "spd": 120, "spe": 71},
+  "abilities": ["Sand Stream"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10049.png",
+  "moves": []
+},
+{
+  "name": "Mega Sceptile",
+  "pokedex_id": 254,
+  "changed": false,
+  "type1": "Grass",
+  "type2": "Dragon",
+  "bst": 630,
+  "stats": {"hp": 70, "atk": 110, "def": 75, "spa": 145, "spd": 85, "spe": 145},
+  "abilities": ["Lightning Rod"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10065.png",
+  "moves": []
+},
+{
+  "name": "Mega Blaziken",
+  "pokedex_id": 257,
+  "changed": false,
+  "type1": "Fire",
+  "type2": "Fighting",
+  "bst": 630,
+  "stats": {"hp": 80, "atk": 160, "def": 80, "spa": 130, "spd": 80, "spe": 100},
+  "abilities": ["Speed Boost"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10050.png",
+  "moves": []
+},
+{
+  "name": "Mega Swampert",
+  "pokedex_id": 260,
+  "changed": false,
+  "type1": "Water",
+  "type2": "Ground",
+  "bst": 635,
+  "stats": {"hp": 100, "atk": 150, "def": 110, "spa": 95, "spd": 110, "spe": 70},
+  "abilities": ["Swift Swim"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10064.png",
+  "moves": []
 },
 {
   "name": "Poochyena",
@@ -7791,6 +8198,18 @@
   ]
 },
 {
+  "name": "Mega Gardevoir",
+  "pokedex_id": 282,
+  "changed": false,
+  "type1": "Psychic",
+  "type2": "Fairy",
+  "bst": 618,
+  "stats": {"hp": 68, "atk": 85, "def": 65, "spa": 165, "spd": 135, "spe": 100},
+  "abilities": ["Pixilate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10051.png",
+  "moves": []
+},
+{
   "name": "Surskit",
   "pokedex_id": 283,
   "changed": true,
@@ -7986,10 +8405,10 @@
   "moves": [
     {"move": "Scratch", "level": 1},
     {"move": "Harden", "level": 1},
-    {"move": "Leech Life", "level": 5},
     {"move": "Sand Attack", "level": 9},
     {"move": "Fury Swipes", "level": 14},
     {"move": "Mind Reader", "level": 19},
+    {"move": "Leech Life", "level": 20},
     {"move": "X-Scissor", "level": 23},
     {"move": "False Swipe", "level": 25},
     {"move": "Mud-Slap", "level": 31},
@@ -8041,10 +8460,10 @@
   "moves": [
     {"move": "Harden", "level": 1},
     {"move": "Scratch", "level": 1},
-    {"move": "Leech Life", "level": 5},
     {"move": "Sand Attack", "level": 9},
     {"move": "Fury Swipes", "level": 14},
     {"move": "Mind Reader", "level": 19},
+    {"move": "Leech Life", "level": 20},
     {"move": "Spite", "level": 25},
     {"move": "Confuse Ray", "level": 31},
     {"move": "Shadow Sneak", "level": 38},
@@ -8331,6 +8750,18 @@
   ]
 },
 {
+  "name": "Mega Sableye",
+  "pokedex_id": 302,
+  "changed": false,
+  "type1": "Dark",
+  "type2": "Ghost",
+  "bst": 480,
+  "stats": {"hp": 50, "atk": 85, "def": 125, "spa": 85, "spd": 115, "spe": 20},
+  "abilities": ["Magic Bounce"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10066.png",
+  "moves": []
+},
+{
   "name": "Mawile",
   "pokedex_id": 303,
   "changed": true,
@@ -8360,6 +8791,18 @@
     {"move": "Swallow", "level": 51},
     {"move": "Spit Up", "level": 51}
   ]
+},
+{
+  "name": "Mega Mawile",
+  "pokedex_id": 303,
+  "changed": false,
+  "type1": "Steel",
+  "type2": "Fairy",
+  "bst": 480,
+  "stats": {"hp": 50, "atk": 105, "def": 125, "spa": 55, "spd": 95, "spe": 50},
+  "abilities": ["Huge Power"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10052.png",
+  "moves": []
 },
 {
   "name": "Aron",
@@ -8449,6 +8892,17 @@
   ]
 },
 {
+  "name": "Mega Aggron",
+  "pokedex_id": 306,
+  "changed": false,
+  "type1": "Steel",
+  "bst": 630,
+  "stats": {"hp": 70, "atk": 140, "def": 230, "spa": 60, "spd": 80, "spe": 50},
+  "abilities": ["Filter"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10053.png",
+  "moves": []
+},
+{
   "name": "Meditite",
   "pokedex_id": 307,
   "changed": false,
@@ -8507,6 +8961,18 @@
   ]
 },
 {
+  "name": "Mega Medicham",
+  "pokedex_id": 308,
+  "changed": false,
+  "type1": "Fighting",
+  "type2": "Psychic",
+  "bst": 510,
+  "stats": {"hp": 60, "atk": 100, "def": 85, "spa": 80, "spd": 85, "spe": 100},
+  "abilities": ["Pure Power"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10054.png",
+  "moves": []
+},
+{
   "name": "Electrike",
   "pokedex_id": 309,
   "changed": false,
@@ -8557,6 +9023,17 @@
     {"move": "Wild Charge", "level": 61},
     {"move": "Thunder", "level": 66}
   ]
+},
+{
+  "name": "Mega Manectric",
+  "pokedex_id": 310,
+  "changed": false,
+  "type1": "Electric",
+  "bst": 575,
+  "stats": {"hp": 70, "atk": 75, "def": 80, "spa": 135, "spd": 80, "spe": 135},
+  "abilities": ["Intimidate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10055.png",
+  "moves": []
 },
 {
   "name": "Plusle",
@@ -8639,6 +9116,7 @@
     {"move": "Signal Beam", "level": 25},
     {"move": "Protect", "level": 29},
     {"move": "Helping Hand", "level": 33},
+    {"move": "Fire Lash", "level": 35},
     {"move": "U-turn", "level": 36},
     {"move": "Zen Headbutt", "level": 37},
     {"move": "Bug Buzz", "level": 41},
@@ -8778,7 +9256,8 @@
     {"move": "Waterfall", "level": 26},
     {"move": "Crunch", "level": 28},
     {"move": "Agility", "level": 36},
-    {"move": "Iron Head", "level": 38}
+    {"move": "Iron Head", "level": 38},
+    {"move": "Liquidation", "level": 40}
   ]
 },
 {
@@ -8808,9 +9287,22 @@
     {"move": "Taunt", "level": 40},
     {"move": "Agility", "level": 45},
     {"move": "Iron Tail", "level": 45},
+    {"move": "Liquidation", "level": 46},
     {"move": "Iron Head", "level": 50},
     {"move": "Waterfall", "level": 56}
   ]
+},
+{
+  "name": "Mega Sharpedo",
+  "pokedex_id": 319,
+  "changed": false,
+  "type1": "Water",
+  "type2": "Dark",
+  "bst": 560,
+  "stats": {"hp": 70, "atk": 140, "def": 70, "spa": 110, "spd": 65, "spe": 105},
+  "abilities": ["Strong Jaw"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10070.png",
+  "moves": []
 },
 {
   "name": "Wailmer",
@@ -8958,6 +9450,18 @@
     {"move": "Petal Dance", "level": 57},
     {"move": "Solar Beam", "level": 64}
   ]
+},
+{
+  "name": "Mega Camerupt",
+  "pokedex_id": 323,
+  "changed": false,
+  "type1": "Fire",
+  "type2": "Ground",
+  "bst": 560,
+  "stats": {"hp": 70, "atk": 120, "def": 100, "spa": 145, "spd": 105, "spe": 20},
+  "abilities": ["Sheer Force"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10087.png",
+  "moves": []
 },
 {
   "name": "Torkoal",
@@ -9128,10 +9632,10 @@
     {"move": "Signal Beam", "level": 26},
     {"move": "Supersonic", "level": 29},
     {"move": "Screech", "level": 34},
+    {"move": "Leech Life", "level": 34},
     {"move": "Earth Power", "level": 35},
     {"move": "Bug Buzz", "level": 37},
     {"move": "Drill Run", "level": 39},
-    {"move": "Leech Life", "level": 41},
     {"move": "Sandstorm", "level": 44},
     {"move": "Hyper Beam", "level": 49}
   ]
@@ -9156,9 +9660,9 @@
     {"move": "Signal Beam", "level": 26},
     {"move": "Supersonic", "level": 29},
     {"move": "Screech", "level": 34},
+    {"move": "Leech Life", "level": 34},
     {"move": "Earth Power", "level": 35},
     {"move": "Bug Buzz", "level": 37},
-    {"move": "Leech Life", "level": 41},
     {"move": "Sandstorm", "level": 44},
     {"move": "Earthquake", "level": 45},
     {"move": "X-Scissor", "level": 48},
@@ -9318,6 +9822,18 @@
   ]
 },
 {
+  "name": "Mega Altaria",
+  "pokedex_id": 334,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Fairy",
+  "bst": 590,
+  "stats": {"hp": 75, "atk": 110, "def": 110, "spa": 110, "spd": 105, "spe": 80},
+  "abilities": ["Pixilate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10067.png",
+  "moves": []
+},
+{
   "name": "Zangoose",
   "pokedex_id": 335,
   "changed": true,
@@ -9334,8 +9850,8 @@
     {"move": "Fury Cutter", "level": 8},
     {"move": "Pursuit", "level": 12},
     {"move": "Slash", "level": 15},
-    {"move": "Knock Off", "level": 16},
     {"move": "Low Sweep", "level": 16},
+    {"move": "Knock Off", "level": 18},
     {"move": "Embargo", "level": 19},
     {"move": "Revenge", "level": 26},
     {"move": "Crunch", "level": 28},
@@ -9418,12 +9934,12 @@
     {"move": "Tackle", "level": 1},
     {"move": "Harden", "level": 1},
     {"move": "Rock Throw", "level": 5},
-    {"move": "Fire Spin", "level": 9},
+    {"move": "Confusion", "level": 9},
     {"move": "Rock Polish", "level": 13},
-    {"move": "Flame Wheel", "level": 16},
+    {"move": "Psycho Cut", "level": 16},
     {"move": "Embargo", "level": 21},
     {"move": "Rock Slide", "level": 25},
-    {"move": "Flame Charge", "level": 28},
+    {"move": "Zen Headbutt", "level": 28},
     {"move": "Cosmic Power", "level": 29},
     {"move": "Heal Block", "level": 37},
     {"move": "Flare Blitz", "level": 38},
@@ -9504,6 +10020,7 @@
     {"move": "Bubble Beam", "level": 20},
     {"move": "Protect", "level": 23},
     {"move": "Knock Off", "level": 26},
+    {"move": "Liquidation", "level": 30},
     {"move": "Taunt", "level": 32},
     {"move": "Night Slash", "level": 35},
     {"move": "Crabhammer", "level": 38},
@@ -9532,6 +10049,7 @@
     {"move": "Knock Off", "level": 26},
     {"move": "Swift", "level": 30},
     {"move": "Taunt", "level": 34},
+    {"move": "Liquidation", "level": 36},
     {"move": "Night Slash", "level": 39},
     {"move": "Crabhammer", "level": 44},
     {"move": "Swords Dance", "level": 52},
@@ -9809,12 +10327,12 @@
   "stats": {"hp": 44, "atk": 75, "def": 35, "spa": 63, "spd": 33, "spe": 45},
   "abilities": ["Frisk", "Scrappy"],
   "moves": [
-    {"move": "Knock Off", "level": 1},
     {"move": "Screech", "level": 4},
     {"move": "Night Shade", "level": 7},
     {"move": "Spite", "level": 10},
     {"move": "Will-O-Wisp", "level": 13},
     {"move": "Shadow Sneak", "level": 16},
+    {"move": "Knock Off", "level": 18},
     {"move": "Curse", "level": 19},
     {"move": "Feint Attack", "level": 22},
     {"move": "Hex", "level": 26},
@@ -9837,13 +10355,13 @@
   "abilities": ["Prankster", "Scrappy"],
   "evo": {"from": "Shuppet", "method": "Level 37"},
   "moves": [
-    {"move": "Knock Off", "level": 1},
     {"move": "Slash", "level": 1},
     {"move": "Screech", "level": 4},
     {"move": "Night Shade", "level": 7},
     {"move": "Spite", "level": 10},
     {"move": "Will-O-Wisp", "level": 13},
     {"move": "Shadow Sneak", "level": 16},
+    {"move": "Knock Off", "level": 18},
     {"move": "Curse", "level": 19},
     {"move": "Feint Attack", "level": 22},
     {"move": "Hex", "level": 26},
@@ -9854,6 +10372,17 @@
     {"move": "Double-Edge", "level": 52},
     {"move": "Trick", "level": 58}
   ]
+},
+{
+  "name": "Mega Banette",
+  "pokedex_id": 354,
+  "changed": false,
+  "type1": "Ghost",
+  "bst": 555,
+  "stats": {"hp": 64, "atk": 165, "def": 75, "spa": 93, "spd": 83, "spe": 75},
+  "abilities": ["Prankster"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10056.png",
+  "moves": []
 },
 {
   "name": "Duskull",
@@ -9978,6 +10507,18 @@
   ]
 },
 {
+  "name": "Mega Chimecho",
+  "pokedex_id": 358,
+  "changed": false,
+  "type1": "Psychic",
+  "type2": "Steel",
+  "bst": 555,
+  "stats": {"hp": 75, "atk": 50, "def": 110, "spa": 135, "spd": 120, "spe": 65},
+  "abilities": ["Levitate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10306.png",
+  "moves": []
+},
+{
   "name": "Absol",
   "pokedex_id": 359,
   "changed": true,
@@ -10010,6 +10551,29 @@
     {"move": "Me First", "level": 60},
     {"move": "Perish Song", "level": 65}
   ]
+},
+{
+  "name": "Mega Absol",
+  "pokedex_id": 359,
+  "changed": false,
+  "type1": "Dark",
+  "bst": 565,
+  "stats": {"hp": 65, "atk": 150, "def": 60, "spa": 115, "spd": 60, "spe": 115},
+  "abilities": ["Magic Bounce"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10057.png",
+  "moves": []
+},
+{
+  "name": "Mega Absol Z",
+  "pokedex_id": 359,
+  "changed": false,
+  "type1": "Dark",
+  "type2": "Ghost",
+  "bst": 565,
+  "stats": {"hp": 65, "atk": 154, "def": 60, "spa": 75, "spd": 60, "spe": 151},
+  "abilities": ["Sharpness"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10307.png",
+  "moves": []
 },
 {
   "name": "Wynaut",
@@ -10080,6 +10644,17 @@
     {"move": "Stone Edge", "level": 55},
     {"move": "Sheer Cold", "level": 59}
   ]
+},
+{
+  "name": "Mega Glalie",
+  "pokedex_id": 362,
+  "changed": false,
+  "type1": "Ice",
+  "bst": 580,
+  "stats": {"hp": 80, "atk": 120, "def": 80, "spa": 120, "spd": 80, "spe": 100},
+  "abilities": ["Refrigerate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10074.png",
+  "moves": []
 },
 {
   "name": "Spheal",
@@ -10199,6 +10774,7 @@
     {"move": "Brine", "level": 28},
     {"move": "Baton Pass", "level": 33},
     {"move": "Dive", "level": 37},
+    {"move": "Liquidation", "level": 40},
     {"move": "Crunch", "level": 42},
     {"move": "Aqua Tail", "level": 46},
     {"move": "Hydro Pump", "level": 51}
@@ -10250,6 +10826,7 @@
     {"move": "Take Down", "level": 29},
     {"move": "Mud Sport", "level": 36},
     {"move": "Ancient Power", "level": 43},
+    {"move": "Liquidation", "level": 47},
     {"move": "Double-Edge", "level": 50},
     {"move": "Dive", "level": 57},
     {"move": "Rest", "level": 64},
@@ -10382,7 +10959,7 @@
     {"move": "Bite", "level": 1},
     {"move": "Ember", "level": 1},
     {"move": "Rage", "level": 1},
-    {"move": "Fire Fang", "level": 40},
+    {"move": "Fire Lash", "level": 40},
     {"move": "Dragon Claw", "level": 42},
     {"move": "Flamethrower", "level": 45},
     {"move": "Crunch", "level": 48},
@@ -10393,6 +10970,18 @@
     {"move": "Fire Blast", "level": 65},
     {"move": "Outrage", "level": 70}
   ]
+},
+{
+  "name": "Mega Salamence",
+  "pokedex_id": 373,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Flying",
+  "bst": 700,
+  "stats": {"hp": 95, "atk": 145, "def": 130, "spa": 120, "spd": 90, "spe": 120},
+  "abilities": ["Aerilate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10089.png",
+  "moves": []
 },
 {
   "name": "Beldum",
@@ -10458,6 +11047,54 @@
     {"move": "Iron Defense", "level": 54},
     {"move": "Hyper Beam", "level": 60}
   ]
+},
+{
+  "name": "Mega Metagross",
+  "pokedex_id": 376,
+  "changed": false,
+  "type1": "Steel",
+  "type2": "Psychic",
+  "bst": 700,
+  "stats": {"hp": 80, "atk": 145, "def": 150, "spa": 105, "spd": 110, "spe": 110},
+  "abilities": ["Tough Claws"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10076.png",
+  "moves": []
+},
+{
+  "name": "Mega Latias",
+  "pokedex_id": 380,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Psychic",
+  "bst": 700,
+  "stats": {"hp": 80, "atk": 100, "def": 120, "spa": 140, "spd": 150, "spe": 110},
+  "abilities": ["Levitate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10062.png",
+  "moves": []
+},
+{
+  "name": "Mega Latios",
+  "pokedex_id": 381,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Psychic",
+  "bst": 700,
+  "stats": {"hp": 80, "atk": 130, "def": 100, "spa": 160, "spd": 120, "spe": 110},
+  "abilities": ["Levitate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10063.png",
+  "moves": []
+},
+{
+  "name": "Mega Rayquaza",
+  "pokedex_id": 384,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Flying",
+  "bst": 780,
+  "stats": {"hp": 105, "atk": 180, "def": 100, "spa": 180, "spd": 100, "spe": 115},
+  "abilities": ["Delta Stream"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10079.png",
+  "moves": []
 },
 {
   "name": "Starly",
@@ -10538,6 +11175,18 @@
   ]
 },
 {
+  "name": "Mega Staraptor",
+  "pokedex_id": 398,
+  "changed": false,
+  "type1": "Fighting",
+  "type2": "Flying",
+  "bst": 585,
+  "stats": {"hp": 85, "atk": 140, "def": 100, "spa": 60, "spd": 90, "spe": 110},
+  "abilities": ["Contrary"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10308.png",
+  "moves": []
+},
+{
   "name": "Bidoof",
   "pokedex_id": 399,
   "changed": false,
@@ -10579,6 +11228,7 @@
     {"move": "Headbutt", "level": 18},
     {"move": "Hyper Fang", "level": 23},
     {"move": "Yawn", "level": 28},
+    {"move": "Liquidation", "level": 32},
     {"move": "Amnesia", "level": 33},
     {"move": "Take Down", "level": 38},
     {"move": "Super Fang", "level": 43},
@@ -10614,8 +11264,8 @@
     {"move": "Bide", "level": 1},
     {"move": "Growl", "level": 1},
     {"move": "Fury Cutter", "level": 10},
-    {"move": "Leech Life", "level": 14},
     {"move": "Sing", "level": 18},
+    {"move": "Leech Life", "level": 20},
     {"move": "Focus Energy", "level": 22},
     {"move": "Slash", "level": 26},
     {"move": "X-Scissor", "level": 30},
@@ -10722,6 +11372,7 @@
     {"move": "Roar", "level": 23},
     {"move": "Swagger", "level": 28},
     {"move": "Flame Charge", "level": 32},
+    {"move": "Fire Lash", "level": 32},
     {"move": "Thunder Fang", "level": 35},
     {"move": "Flamethrower", "level": 37},
     {"move": "Flare Blitz", "level": 42},
@@ -11139,6 +11790,7 @@
     {"move": "Whirlpool", "level": 35},
     {"move": "Waterfall", "level": 39},
     {"move": "Razor Wind", "level": 41},
+    {"move": "Liquidation", "level": 41},
     {"move": "Aqua Tail", "level": 46},
     {"move": "Agility", "level": 51},
     {"move": "Hydro Pump", "level": 57}
@@ -11410,6 +12062,18 @@
     {"move": "Bounce", "level": 56},
     {"move": "Healing Wish", "level": 63}
   ]
+},
+{
+  "name": "Mega Lopunny",
+  "pokedex_id": 428,
+  "changed": false,
+  "type1": "Normal",
+  "type2": "Fighting",
+  "bst": 580,
+  "stats": {"hp": 65, "atk": 136, "def": 94, "spa": 54, "spd": 96, "spe": 135},
+  "abilities": ["Scrappy"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10088.png",
+  "moves": []
 },
 {
   "name": "Mismagius",
@@ -11842,6 +12506,29 @@
   ]
 },
 {
+  "name": "Mega Garchomp",
+  "pokedex_id": 445,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Ground",
+  "bst": 700,
+  "stats": {"hp": 108, "atk": 170, "def": 115, "spa": 120, "spd": 95, "spe": 92},
+  "abilities": ["Sand Force"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10058.png",
+  "moves": []
+},
+{
+  "name": "Mega Garchomp Z",
+  "pokedex_id": 445,
+  "changed": false,
+  "type1": "Dragon",
+  "bst": 700,
+  "stats": {"hp": 108, "atk": 130, "def": 85, "spa": 141, "spd": 85, "spe": 151},
+  "abilities": ["Levitate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10309.png",
+  "moves": []
+},
+{
   "name": "Munchlax",
   "pokedex_id": 446,
   "changed": false,
@@ -11925,6 +12612,30 @@
   ]
 },
 {
+  "name": "Mega Lucario",
+  "pokedex_id": 448,
+  "changed": false,
+  "type1": "Fighting",
+  "type2": "Steel",
+  "bst": 625,
+  "stats": {"hp": 70, "atk": 145, "def": 88, "spa": 140, "spd": 70, "spe": 112},
+  "abilities": ["Adaptability"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10059.png",
+  "moves": []
+},
+{
+  "name": "Mega Lucario Z",
+  "pokedex_id": 448,
+  "changed": false,
+  "type1": "Fighting",
+  "type2": "Steel",
+  "bst": 625,
+  "stats": {"hp": 70, "atk": 100, "def": 70, "spa": 164, "spd": 70, "spe": 151},
+  "abilities": ["Aura Guard"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10310.png",
+  "moves": []
+},
+{
   "name": "Hippopotas",
   "pokedex_id": 449,
   "changed": false,
@@ -11974,7 +12685,7 @@
     {"move": "Earthquake", "level": 40},
     {"move": "Bulldoze", "level": 41},
     {"move": "Leaf Storm", "level": 47},
-    {"move": "Waterfall", "level": 48},
+    {"move": "Liquidation", "level": 48},
     {"move": "Double-Edge", "level": 50},
     {"move": "Fissure", "level": 60}
   ]
@@ -11992,10 +12703,10 @@
     {"move": "Bite", "level": 1},
     {"move": "Leer", "level": 1},
     {"move": "Poison Sting", "level": 1},
-    {"move": "Knock Off", "level": 5},
     {"move": "Pin Missile", "level": 9},
     {"move": "Acupressure", "level": 13},
     {"move": "Pursuit", "level": 16},
+    {"move": "Knock Off", "level": 18},
     {"move": "Bug Bite", "level": 20},
     {"move": "Poison Fang", "level": 23},
     {"move": "Scary Face", "level": 23},
@@ -12021,13 +12732,13 @@
     {"move": "Bite", "level": 1},
     {"move": "Fire Fang", "level": 1},
     {"move": "Ice Fang", "level": 1},
-    {"move": "Knock Off", "level": 1},
     {"move": "Leer", "level": 1},
     {"move": "Poison Sting", "level": 1},
     {"move": "Thunder Fang", "level": 1},
     {"move": "Pin Missile", "level": 9},
     {"move": "Acupressure", "level": 13},
     {"move": "Pursuit", "level": 16},
+    {"move": "Knock Off", "level": 18},
     {"move": "Bug Bite", "level": 20},
     {"move": "Poison Fang", "level": 23},
     {"move": "Scary Face", "level": 23},
@@ -12255,6 +12966,18 @@
   ]
 },
 {
+  "name": "Mega Abomasnow",
+  "pokedex_id": 460,
+  "changed": false,
+  "type1": "Grass",
+  "type2": "Ice",
+  "bst": 594,
+  "stats": {"hp": 90, "atk": 132, "def": 105, "spa": 132, "spd": 105, "spe": 30},
+  "abilities": ["Snow Warning"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10060.png",
+  "moves": []
+},
+{
   "name": "Weavile",
   "pokedex_id": 461,
   "changed": true,
@@ -12331,8 +13054,8 @@
     {"move": "Lick", "level": 1},
     {"move": "Supersonic", "level": 5},
     {"move": "Defense Curl", "level": 9},
-    {"move": "Knock Off", "level": 13},
     {"move": "Wrap", "level": 17},
+    {"move": "Knock Off", "level": 18},
     {"move": "Stomp", "level": 21},
     {"move": "Disable", "level": 25},
     {"move": "Slam", "level": 29},
@@ -12596,12 +13319,12 @@
     {"move": "Fire Fang", "level": 1},
     {"move": "Harden", "level": 1},
     {"move": "Ice Fang", "level": 1},
-    {"move": "Knock Off", "level": 1},
     {"move": "Poison Jab", "level": 1},
     {"move": "Sand Attack", "level": 1},
     {"move": "Thunder Fang", "level": 1},
     {"move": "Quick Attack", "level": 13},
     {"move": "Fury Cutter", "level": 16},
+    {"move": "Knock Off", "level": 18},
     {"move": "Poison Tail", "level": 19},
     {"move": "Acrobatics", "level": 22},
     {"move": "Aerial Ace", "level": 25},
@@ -12737,6 +13460,18 @@
   ]
 },
 {
+  "name": "Mega Gallade",
+  "pokedex_id": 475,
+  "changed": false,
+  "type1": "Psychic",
+  "type2": "Fighting",
+  "bst": 618,
+  "stats": {"hp": 68, "atk": 165, "def": 95, "spa": 65, "spd": 115, "spe": 110},
+  "abilities": ["Inner Focus"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10068.png",
+  "moves": []
+},
+{
   "name": "Probopass",
   "pokedex_id": 476,
   "changed": true,
@@ -12830,6 +13565,18 @@
     {"move": "Blizzard", "level": 51},
     {"move": "Destiny Bond", "level": 59}
   ]
+},
+{
+  "name": "Mega Froslass",
+  "pokedex_id": 478,
+  "changed": false,
+  "type1": "Ice",
+  "type2": "Ghost",
+  "bst": 580,
+  "stats": {"hp": 70, "atk": 80, "def": 70, "spa": 140, "spd": 100, "spe": 120},
+  "abilities": ["Snow Warning"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10285.png",
+  "moves": []
 },
 {
   "name": "Rotom",
@@ -13001,6 +13748,41 @@
     {"move": "Charge", "level": 57},
     {"move": "Discharge", "level": 64}
   ]
+},
+{
+  "name": "Mega Heatran",
+  "pokedex_id": 485,
+  "changed": false,
+  "type1": "Fire",
+  "type2": "Steel",
+  "bst": 700,
+  "stats": {"hp": 91, "atk": 120, "def": 106, "spa": 175, "spd": 141, "spe": 67},
+  "abilities": ["Flash Fire", "Flame Body"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10311.png",
+  "moves": []
+},
+{
+  "name": "Mega Darkrai",
+  "pokedex_id": 491,
+  "changed": false,
+  "type1": "Dark",
+  "bst": 700,
+  "stats": {"hp": 70, "atk": 120, "def": 130, "spa": 165, "spd": 130, "spe": 85},
+  "abilities": ["Bad Dreams"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10312.png",
+  "moves": []
+},
+{
+  "name": "Mega Emboar",
+  "pokedex_id": 500,
+  "changed": false,
+  "type1": "Fire",
+  "type2": "Fighting",
+  "bst": 628,
+  "stats": {"hp": 110, "atk": 148, "def": 75, "spa": 110, "spd": 110, "spe": 75},
+  "abilities": ["Mold Breaker"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10286.png",
+  "moves": []
 },
 {
   "name": "Patrat",
@@ -13286,6 +14068,7 @@
     {"move": "Flame Burst", "level": 22},
     {"move": "Seed Bomb", "level": 22},
     {"move": "Amnesia", "level": 25},
+    {"move": "Fire Lash", "level": 26},
     {"move": "Fling", "level": 28},
     {"move": "Acrobatics", "level": 31},
     {"move": "Fire Blast", "level": 34},
@@ -13313,7 +14096,8 @@
     {"move": "Razor Leaf", "level": 1},
     {"move": "Seed Bomb", "level": 1},
     {"move": "Leaf Blade", "level": 1},
-    {"move": "Fire Fang", "level": 10}
+    {"move": "Fire Fang", "level": 10},
+    {"move": "Fire Lash", "level": 22}
   ]
 },
 {
@@ -13740,6 +14524,18 @@
   ]
 },
 {
+  "name": "Mega Excadrill",
+  "pokedex_id": 530,
+  "changed": false,
+  "type1": "Ground",
+  "type2": "Steel",
+  "bst": 608,
+  "stats": {"hp": 110, "atk": 165, "def": 100, "spa": 65, "spd": 65, "spe": 103},
+  "abilities": ["Piercing Drill"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10287.png",
+  "moves": []
+},
+{
   "name": "Audino",
   "pokedex_id": 531,
   "changed": true,
@@ -13768,6 +14564,18 @@
     {"move": "Double-Edge", "level": 50},
     {"move": "Last Resort", "level": 55}
   ]
+},
+{
+  "name": "Mega Audino",
+  "pokedex_id": 531,
+  "changed": false,
+  "type1": "Normal",
+  "type2": "Fairy",
+  "bst": 545,
+  "stats": {"hp": 103, "atk": 60, "def": 126, "spa": 80, "spd": 126, "spe": 50},
+  "abilities": ["Healer"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10069.png",
+  "moves": []
 },
 {
   "name": "Timburr",
@@ -13938,6 +14746,7 @@
     {"move": "Muddy Water", "level": 28},
     {"move": "Clear Smog", "level": 30},
     {"move": "Rain Dance", "level": 33},
+    {"move": "Liquidation", "level": 35},
     {"move": "Acid", "level": 36},
     {"move": "Flail", "level": 39},
     {"move": "Drain Punch", "level": 44},
@@ -13969,6 +14778,7 @@
     {"move": "Revenge", "level": 21},
     {"move": "Storm Throw", "level": 25},
     {"move": "Blaze Kick", "level": 28},
+    {"move": "Fire Lash", "level": 28},
     {"move": "Body Slam", "level": 29},
     {"move": "Bulk Up", "level": 33},
     {"move": "Circle Throw", "level": 37},
@@ -14001,6 +14811,7 @@
     {"move": "Karate Chop", "level": 25},
     {"move": "Dive", "level": 28},
     {"move": "Brick Break", "level": 29},
+    {"move": "Liquidation", "level": 32},
     {"move": "Bulk Up", "level": 33},
     {"move": "Retaliate", "level": 37},
     {"move": "Scald", "level": 38},
@@ -14157,6 +14968,18 @@
     {"move": "Rock Climb", "level": 50},
     {"move": "Double-Edge", "level": 55}
   ]
+},
+{
+  "name": "Mega Scolipede",
+  "pokedex_id": 545,
+  "changed": false,
+  "type1": "Bug",
+  "type2": "Poison",
+  "bst": 585,
+  "stats": {"hp": 60, "atk": 140, "def": 149, "spa": 75, "spd": 99, "spe": 62},
+  "abilities": ["Shell Armor"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10288.png",
+  "moves": []
 },
 {
   "name": "Cottonee",
@@ -14318,6 +15141,7 @@
     {"move": "Lick", "level": 16},
     {"move": "Chip Away", "level": 16},
     {"move": "Take Down", "level": 20},
+    {"move": "Liquidation", "level": 22},
     {"move": "Crunch", "level": 24},
     {"move": "Aqua Tail", "level": 28},
     {"move": "Zen Headbutt", "level": 28},
@@ -14353,7 +15177,7 @@
     {"move": "Aqua Tail", "level": 31},
     {"move": "Scary Face", "level": 34},
     {"move": "Foul Play", "level": 37},
-    {"move": "Waterfall", "level": 37},
+    {"move": "Liquidation", "level": 37},
     {"move": "Sandstorm", "level": 40},
     {"move": "Earthquake", "level": 43},
     {"move": "Thrash", "level": 46}
@@ -14383,7 +15207,7 @@
     {"move": "Aqua Tail", "level": 32},
     {"move": "Scary Face", "level": 36},
     {"move": "Foul Play", "level": 40},
-    {"move": "Waterfall", "level": 42},
+    {"move": "Liquidation", "level": 42},
     {"move": "Sandstorm", "level": 44},
     {"move": "Earthquake", "level": 48},
     {"move": "Thrash", "level": 52}
@@ -14414,7 +15238,7 @@
     {"move": "Scary Face", "level": 36},
     {"move": "Foul Play", "level": 42},
     {"move": "Sandstorm", "level": 48},
-    {"move": "Waterfall", "level": 48},
+    {"move": "Liquidation", "level": 48},
     {"move": "Earthquake", "level": 54},
     {"move": "Outrage", "level": 60}
   ]
@@ -14437,6 +15261,7 @@
     {"move": "Uproar", "level": 17},
     {"move": "Facade", "level": 19},
     {"move": "Fire Punch", "level": 22},
+    {"move": "Fire Lash", "level": 23},
     {"move": "Work Up", "level": 25},
     {"move": "Thrash", "level": 27},
     {"move": "Belly Drum", "level": 30},
@@ -14466,6 +15291,7 @@
     {"move": "Swagger", "level": 17},
     {"move": "Facade", "level": 19},
     {"move": "Fire Punch", "level": 22},
+    {"move": "Fire Lash", "level": 23},
     {"move": "Work Up", "level": 25},
     {"move": "Thrash", "level": 27},
     {"move": "Belly Drum", "level": 30},
@@ -14658,6 +15484,18 @@
   ]
 },
 {
+  "name": "Mega Scrafty",
+  "pokedex_id": 560,
+  "changed": false,
+  "type1": "Dark",
+  "type2": "Fighting",
+  "bst": 588,
+  "stats": {"hp": 65, "atk": 130, "def": 135, "spa": 55, "spd": 135, "spe": 68},
+  "abilities": ["Intimidate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10289.png",
+  "moves": []
+},
+{
   "name": "Sigilyph",
   "pokedex_id": 561,
   "changed": false,
@@ -14767,6 +15605,7 @@
     {"move": "Brine", "level": 28},
     {"move": "Smack Down", "level": 31},
     {"move": "Curse", "level": 35},
+    {"move": "Liquidation", "level": 35},
     {"move": "Shell Smash", "level": 38},
     {"move": "Aqua Tail", "level": 41},
     {"move": "Rock Slide", "level": 45},
@@ -14798,6 +15637,7 @@
     {"move": "Brine", "level": 28},
     {"move": "Smack Down", "level": 31},
     {"move": "Curse", "level": 35},
+    {"move": "Liquidation", "level": 39},
     {"move": "Shell Smash", "level": 40},
     {"move": "Aqua Tail", "level": 45},
     {"move": "Rock Slide", "level": 51},
@@ -15687,6 +16527,7 @@
     {"move": "Wake-Up Slap", "level": 29},
     {"move": "Soak", "level": 33},
     {"move": "Wish", "level": 37},
+    {"move": "Liquidation", "level": 37},
     {"move": "Moonblast", "level": 38},
     {"move": "Brine", "level": 41},
     {"move": "Safeguard", "level": 45},
@@ -15706,7 +16547,6 @@
   "stats": {"hp": 50, "atk": 57, "def": 50, "spa": 57, "spd": 50, "spe": 71},
   "abilities": ["Compound Eyes", "Unnerve"],
   "moves": [
-    {"move": "Leech Life", "level": 1},
     {"move": "Spider Web", "level": 1},
     {"move": "String Shot", "level": 1},
     {"move": "Thunder Wave", "level": 4},
@@ -15714,6 +16554,7 @@
     {"move": "Fury Cutter", "level": 12},
     {"move": "Electroweb", "level": 15},
     {"move": "Bug Bite", "level": 18},
+    {"move": "Leech Life", "level": 20},
     {"move": "Gastro Acid", "level": 23},
     {"move": "Slash", "level": 26},
     {"move": "Electro Ball", "level": 29},
@@ -15735,7 +16576,6 @@
   "abilities": ["Compound Eyes", "Unnerve"],
   "evo": {"from": "Joltik", "method": "Level 36"},
   "moves": [
-    {"move": "Leech Life", "level": 1},
     {"move": "Spider Web", "level": 1},
     {"move": "String Shot", "level": 1},
     {"move": "Thunder Wave", "level": 1},
@@ -15743,6 +16583,7 @@
     {"move": "Fury Cutter", "level": 12},
     {"move": "Electroweb", "level": 15},
     {"move": "Bug Bite", "level": 18},
+    {"move": "Leech Life", "level": 20},
     {"move": "Gastro Acid", "level": 23},
     {"move": "Slash", "level": 26},
     {"move": "Electro Ball", "level": 29},
@@ -15918,6 +16759,7 @@
     {"move": "Charge Beam", "level": 1},
     {"move": "Aqua Jet", "level": 10},
     {"move": "Water Gun", "level": 20},
+    {"move": "Liquidation", "level": 25},
     {"move": "Dive", "level": 30}
   ]
 },
@@ -15942,6 +16784,7 @@
     {"move": "Water Gun", "level": 20},
     {"move": "Discharge", "level": 29},
     {"move": "Dive", "level": 30},
+    {"move": "Liquidation", "level": 34},
     {"move": "Crunch", "level": 39},
     {"move": "Thunderbolt", "level": 44},
     {"move": "Acid Spray", "level": 49},
@@ -15972,12 +16815,23 @@
     {"move": "Aqua Jet", "level": 10},
     {"move": "Bubble", "level": 20},
     {"move": "Dive", "level": 30},
-    {"move": "Waterfall", "level": 34},
+    {"move": "Liquidation", "level": 34},
     {"move": "Thunderbolt", "level": 44},
     {"move": "Wild Charge", "level": 59},
     {"move": "Zap Cannon", "level": 69},
     {"move": "Thrash", "level": 74}
   ]
+},
+{
+  "name": "Mega Eelektross",
+  "pokedex_id": 604,
+  "changed": false,
+  "type1": "Electric",
+  "bst": 615,
+  "stats": {"hp": 85, "atk": 145, "def": 80, "spa": 135, "spd": 90, "spe": 80},
+  "abilities": ["Eelevate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10290.png",
+  "moves": []
 },
 {
   "name": "Elgyem",
@@ -16113,6 +16967,18 @@
     {"move": "Hex", "level": 1},
     {"move": "Smog", "level": 1}
   ]
+},
+{
+  "name": "Mega Chandelure",
+  "pokedex_id": 609,
+  "changed": false,
+  "type1": "Ghost",
+  "type2": "Fire",
+  "bst": 620,
+  "stats": {"hp": 60, "atk": 75, "def": 110, "spa": 175, "spd": 110, "spe": 90},
+  "abilities": ["Infiltrator"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10291.png",
+  "moves": []
 },
 {
   "name": "Axew",
@@ -16307,11 +17173,11 @@
   "stats": {"hp": 50, "atk": 40, "def": 85, "spa": 40, "spd": 65, "spe": 25},
   "abilities": ["Hydration", "Shell Armor"],
   "moves": [
-    {"move": "Leech Life", "level": 1},
     {"move": "Acid", "level": 4},
     {"move": "Bide", "level": 8},
     {"move": "Curse", "level": 13},
     {"move": "Struggle Bug", "level": 16},
+    {"move": "Leech Life", "level": 20},
     {"move": "Mega Drain", "level": 20},
     {"move": "Yawn", "level": 25},
     {"move": "Protect", "level": 28},
@@ -16335,13 +17201,13 @@
   "abilities": ["Unburden", "Sticky Hold"],
   "evo": {"from": "Shelmet", "method": "Use Dusk Stone"},
   "moves": [
-    {"move": "Leech Life", "level": 1},
     {"move": "Acid Spray", "level": 4},
     {"move": "Double Team", "level": 8},
     {"move": "Snarl", "level": 8},
     {"move": "Quick Attack", "level": 13},
     {"move": "Dark Pulse", "level": 14},
     {"move": "Struggle Bug", "level": 16},
+    {"move": "Leech Life", "level": 20},
     {"move": "Mega Drain", "level": 20},
     {"move": "Swift", "level": 25},
     {"move": "Me First", "level": 28},
@@ -16561,6 +17427,18 @@
     {"move": "Hammer Arm", "level": 60},
     {"move": "Focus Punch", "level": 70}
   ]
+},
+{
+  "name": "Mega Golurk",
+  "pokedex_id": 623,
+  "changed": false,
+  "type1": "Ground",
+  "type2": "Ghost",
+  "bst": 583,
+  "stats": {"hp": 89, "atk": 159, "def": 105, "spa": 70, "spd": 105, "spe": 55},
+  "abilities": ["Unseen Fist"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10313.png",
+  "moves": []
 },
 {
   "name": "Pawniard",
@@ -16947,11 +17825,12 @@
   "moves": [
     {"move": "Ember", "level": 1},
     {"move": "String Shot", "level": 1},
-    {"move": "Leech Life", "level": 10},
+    {"move": "Leech Life", "level": 20},
     {"move": "Take Down", "level": 20},
     {"move": "Flame Charge", "level": 30},
     {"move": "Bug Bite", "level": 40},
     {"move": "Double-Edge", "level": 50},
+    {"move": "Fire Lash", "level": 50},
     {"move": "Flame Wheel", "level": 60},
     {"move": "Bug Buzz", "level": 70},
     {"move": "Amnesia", "level": 80},
@@ -16972,8 +17851,8 @@
   "moves": [
     {"move": "Ember", "level": 1},
     {"move": "Gust", "level": 1},
-    {"move": "Leech Life", "level": 1},
     {"move": "String Shot", "level": 1},
+    {"move": "Leech Life", "level": 20},
     {"move": "Fire Spin", "level": 30},
     {"move": "Whirlwind", "level": 40},
     {"move": "Silver Wind", "level": 50},
@@ -16984,6 +17863,42 @@
     {"move": "Hurricane", "level": 90},
     {"move": "Fiery Dance", "level": 100}
   ]
+},
+{
+  "name": "Mega Chesnaught",
+  "pokedex_id": 652,
+  "changed": false,
+  "type1": "Grass",
+  "type2": "Fighting",
+  "bst": 630,
+  "stats": {"hp": 88, "atk": 137, "def": 172, "spa": 74, "spd": 115, "spe": 44},
+  "abilities": ["Bulletproof"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10292.png",
+  "moves": []
+},
+{
+  "name": "Mega Delphox",
+  "pokedex_id": 655,
+  "changed": false,
+  "type1": "Fire",
+  "type2": "Psychic",
+  "bst": 634,
+  "stats": {"hp": 75, "atk": 69, "def": 72, "spa": 159, "spd": 125, "spe": 134},
+  "abilities": ["Levitate"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10293.png",
+  "moves": []
+},
+{
+  "name": "Mega Greninja",
+  "pokedex_id": 658,
+  "changed": false,
+  "type1": "Water",
+  "type2": "Dark",
+  "bst": 630,
+  "stats": {"hp": 72, "atk": 125, "def": 77, "spa": 133, "spd": 81, "spe": 142},
+  "abilities": ["Protean"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10294.png",
+  "moves": []
 },
 {
   "name": "Fletchling",
@@ -17032,6 +17947,7 @@
     {"move": "Roost", "level": 25},
     {"move": "Razor Wind", "level": 27},
     {"move": "Natural Gift", "level": 31},
+    {"move": "Fire Lash", "level": 33},
     {"move": "Flame Charge", "level": 38},
     {"move": "Acrobatics", "level": 42},
     {"move": "Me First", "level": 46},
@@ -17068,6 +17984,87 @@
     {"move": "Tailwind", "level": 55},
     {"move": "Steel Wing", "level": 60}
   ]
+},
+{
+  "name": "Mega Pyroar",
+  "pokedex_id": 668,
+  "changed": false,
+  "type1": "Fire",
+  "type2": "Normal",
+  "bst": 607,
+  "stats": {"hp": 86, "atk": 88, "def": 92, "spa": 129, "spd": 86, "spe": 126},
+  "abilities": ["Fire Mane"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10295.png",
+  "moves": []
+},
+{
+  "name": "Mega Floette",
+  "pokedex_id": 670,
+  "changed": false,
+  "type1": "Fairy",
+  "bst": 651,
+  "stats": {"hp": 74, "atk": 85, "def": 87, "spa": 155, "spd": 148, "spe": 102},
+  "abilities": ["Fairy Aura"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10296.png",
+  "moves": []
+},
+{
+  "name": "Mega Meowstic (Male)",
+  "pokedex_id": 678,
+  "changed": false,
+  "type1": "Psychic",
+  "bst": 566,
+  "stats": {"hp": 74, "atk": 48, "def": 76, "spa": 143, "spd": 101, "spe": 124},
+  "abilities": ["Trace"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10314.png",
+  "moves": []
+},
+{
+  "name": "Mega Meowstic (Female)",
+  "pokedex_id": 678,
+  "changed": false,
+  "type1": "Psychic",
+  "bst": 566,
+  "stats": {"hp": 74, "atk": 48, "def": 76, "spa": 143, "spd": 101, "spe": 124},
+  "abilities": ["Trace"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10326.png",
+  "moves": []
+},
+{
+  "name": "Mega Malamar",
+  "pokedex_id": 687,
+  "changed": false,
+  "type1": "Dark",
+  "type2": "Psychic",
+  "bst": 582,
+  "stats": {"hp": 86, "atk": 102, "def": 88, "spa": 98, "spd": 120, "spe": 88},
+  "abilities": ["Contrary"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10297.png",
+  "moves": []
+},
+{
+  "name": "Mega Barbaracle",
+  "pokedex_id": 689,
+  "changed": false,
+  "type1": "Rock",
+  "type2": "Fighting",
+  "bst": 600,
+  "stats": {"hp": 72, "atk": 140, "def": 130, "spa": 64, "spd": 106, "spe": 88},
+  "abilities": ["Tough Claws"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10298.png",
+  "moves": []
+},
+{
+  "name": "Mega Dragalge",
+  "pokedex_id": 691,
+  "changed": false,
+  "type1": "Poison",
+  "type2": "Dragon",
+  "bst": 594,
+  "stats": {"hp": 65, "atk": 85, "def": 105, "spa": 132, "spd": 163, "spe": 44},
+  "abilities": ["Regenerator"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10299.png",
+  "moves": []
 },
 {
   "name": "Clauncher",
@@ -17331,6 +18328,18 @@
   ]
 },
 {
+  "name": "Mega Hawlucha",
+  "pokedex_id": 701,
+  "changed": false,
+  "type1": "Fighting",
+  "type2": "Flying",
+  "bst": 600,
+  "stats": {"hp": 78, "atk": 137, "def": 100, "spa": 74, "spd": 93, "spe": 118},
+  "abilities": ["No Guard"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10300.png",
+  "moves": []
+},
+{
   "name": "Goomy",
   "pokedex_id": 704,
   "changed": true,
@@ -17465,6 +18474,30 @@
   ]
 },
 {
+  "name": "Mega Zygarde",
+  "pokedex_id": 718,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Ground",
+  "bst": 778,
+  "stats": {"hp": 216, "atk": 70, "def": 91, "spa": 216, "spd": 85, "spe": 100},
+  "abilities": ["Aura Break"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10301.png",
+  "moves": []
+},
+{
+  "name": "Mega Diancie",
+  "pokedex_id": 719,
+  "changed": false,
+  "type1": "Rock",
+  "type2": "Fairy",
+  "bst": 700,
+  "stats": {"hp": 50, "atk": 160, "def": 110, "spa": 160, "spd": 110, "spe": 110},
+  "abilities": ["Magic Bounce"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10075.png",
+  "moves": []
+},
+{
   "name": "Crabrawler",
   "pokedex_id": 739,
   "changed": false,
@@ -17514,6 +18547,18 @@
     {"move": "Dynamic Punch", "level": 45},
     {"move": "Close Combat", "level": 49}
   ]
+},
+{
+  "name": "Mega Crabominable",
+  "pokedex_id": 740,
+  "changed": false,
+  "type1": "Fighting",
+  "type2": "Ice",
+  "bst": 578,
+  "stats": {"hp": 97, "atk": 157, "def": 122, "spa": 62, "spd": 107, "spe": 33},
+  "abilities": ["Iron Fist"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10315.png",
+  "moves": []
 },
 {
   "name": "Oricorio",
@@ -17674,7 +18719,8 @@
     {"move": "Bubble Beam", "level": 16},
     {"move": "Bite", "level": 21},
     {"move": "Aqua Ring", "level": 26},
-    {"move": "Leech Life", "level": 33},
+    {"move": "Leech Life", "level": 29},
+    {"move": "Liquidation", "level": 33},
     {"move": "Crunch", "level": 38},
     {"move": "X-Scissor", "level": 45},
     {"move": "Mirror Coat", "level": 50},
@@ -17699,6 +18745,7 @@
     {"move": "Spite", "level": 13},
     {"move": "Swords Dance", "level": 16},
     {"move": "Slash", "level": 21},
+    {"move": "Liquidation", "level": 25},
     {"move": "Razor Shell", "level": 26}
   ]
 },
@@ -17726,8 +18773,21 @@
     {"move": "Sucker Punch", "level": 31},
     {"move": "Iron Defense", "level": 36},
     {"move": "Pin Missile", "level": 41},
-    {"move": "Waterfall", "level": 48}
+    {"move": "Waterfall", "level": 48},
+    {"move": "Liquidation", "level": 48}
   ]
+},
+{
+  "name": "Mega Golisopod",
+  "pokedex_id": 768,
+  "changed": false,
+  "type1": "Bug",
+  "type2": "Steel",
+  "bst": 630,
+  "stats": {"hp": 75, "atk": 150, "def": 175, "spa": 70, "spd": 120, "spe": 40},
+  "abilities": ["Tough Claws"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10316.png",
+  "moves": []
 },
 {
   "name": "Sandygast",
@@ -17810,6 +18870,18 @@
   ]
 },
 {
+  "name": "Mega Drampa",
+  "pokedex_id": 780,
+  "changed": false,
+  "type1": "Normal",
+  "type2": "Dragon",
+  "bst": 585,
+  "stats": {"hp": 78, "atk": 85, "def": 110, "spa": 160, "spd": 116, "spe": 36},
+  "abilities": ["Berserk"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10302.png",
+  "moves": []
+},
+{
   "name": "Dhelmise",
   "pokedex_id": 781,
   "changed": true,
@@ -17850,7 +18922,7 @@
   "moves": [
     {"move": "Tackle", "level": 1},
     {"move": "Leer", "level": 5},
-    {"move": "Bide", "level": 9},
+    {"move": "Rock Smash", "level": 9},
     {"move": "Protect", "level": 13},
     {"move": "Dragon Tail", "level": 17},
     {"move": "Scary Face", "level": 21},
@@ -17876,7 +18948,7 @@
   "evo": {"from": "Jangmo-o", "method": "Level 28"},
   "moves": [
     {"move": "Autotomize", "level": 1},
-    {"move": "Bide", "level": 1},
+    {"move": "Rock Smash", "level": 1},
     {"move": "Leer", "level": 1},
     {"move": "Protect", "level": 1},
     {"move": "Sky Uppercut", "level": 1},
@@ -17884,11 +18956,11 @@
     {"move": "Dragon Tail", "level": 17},
     {"move": "Scary Face", "level": 21},
     {"move": "Headbutt", "level": 25},
-    {"move": "Work Up", "level": 29},
+    {"move": "Brick Break", "level": 29},
     {"move": "Screech", "level": 33},
     {"move": "Iron Defense", "level": 38},
     {"move": "Dragon Claw", "level": 43},
-    {"move": "Growl", "level": 48},
+    {"move": "Drain Punch", "level": 48},
     {"move": "Dragon Dance", "level": 53},
     {"move": "Outrage", "level": 58},
     {"move": "Close Combat", "level": 63}
@@ -17907,7 +18979,7 @@
   "moves": [
     {"move": "Autotomize", "level": 1},
     {"move": "Belly Drum", "level": 1},
-    {"move": "Bide", "level": 1},
+    {"move": "Rock Smash", "level": 1},
     {"move": "Dragon Pulse", "level": 1},
     {"move": "Leer", "level": 1},
     {"move": "Protect", "level": 1},
@@ -17916,15 +18988,40 @@
     {"move": "Dragon Tail", "level": 17},
     {"move": "Scary Face", "level": 21},
     {"move": "Headbutt", "level": 25},
-    {"move": "Work Up", "level": 29},
+    {"move": "Brick Break", "level": 29},
     {"move": "Screech", "level": 33},
     {"move": "Iron Defense", "level": 38},
     {"move": "Dragon Claw", "level": 43},
-    {"move": "Growl", "level": 51},
+    {"move": "Drain Punch", "level": 51},
+    {"move": "Aura Sphere", "level": 55},
     {"move": "Dragon Dance", "level": 59},
-    {"move": "Outrage", "level": 67},
-    {"move": "Close Combat", "level": 75}
+    {"move": "Close Combat", "level": 63},
+    {"move": "Outrage", "level": 67}
   ]
+},
+{
+  "name": "Mega Magearna",
+  "pokedex_id": 801,
+  "changed": false,
+  "type1": "Steel",
+  "type2": "Fairy",
+  "bst": 700,
+  "stats": {"hp": 80, "atk": 125, "def": 115, "spa": 170, "spd": 115, "spe": 95},
+  "abilities": ["Soul-Heart"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10317.png",
+  "moves": []
+},
+{
+  "name": "Mega Magearna (Original)",
+  "pokedex_id": 801,
+  "changed": false,
+  "type1": "Steel",
+  "type2": "Fairy",
+  "bst": 700,
+  "stats": {"hp": 80, "atk": 125, "def": 115, "spa": 170, "spd": 115, "spe": 95},
+  "abilities": ["Soul-Heart"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10318.png",
+  "moves": []
 },
 {
   "name": "Rookidee",
@@ -18171,6 +19268,7 @@
     {"move": "Fire Spin", "level": 35},
     {"move": "Crunch", "level": 40},
     {"move": "Fire Fang", "level": 45},
+    {"move": "Fire Lash", "level": 45},
     {"move": "X-Scissor", "level": 50},
     {"move": "Overheat", "level": 55}
   ]
@@ -18198,6 +19296,7 @@
     {"move": "Fire Spin", "level": 39},
     {"move": "Crunch", "level": 46},
     {"move": "Fire Fang", "level": 53},
+    {"move": "Fire Lash", "level": 53},
     {"move": "X-Scissor", "level": 60},
     {"move": "Overheat", "level": 67}
   ]
@@ -18657,7 +19756,7 @@
     {"move": "Aqua Jet", "level": 12},
     {"move": "Bite", "level": 16},
     {"move": "Scary Face", "level": 20},
-    {"move": "Waterfall", "level": 24},
+    {"move": "Liquidation", "level": 24},
     {"move": "Soak", "level": 28},
     {"move": "Crunch", "level": 32},
     {"move": "Take Down", "level": 36},
@@ -18838,6 +19937,7 @@
     {"move": "Incinerate", "level": 28},
     {"move": "Lava Plume", "level": 32},
     {"move": "Swords Dance", "level": 37},
+    {"move": "Fire Lash", "level": 38},
     {"move": "Ally Switch", "level": 42},
     {"move": "Flare Blitz", "level": 48},
     {"move": "Psycho Cut", "level": 56}
@@ -19079,7 +20179,7 @@
     {"move": "Taunt", "level": 14},
     {"move": "Rapid Spin", "level": 21},
     {"move": "Brick Break", "level": 28},
-    {"move": "Knock Off", "level": 42},
+    {"move": "Knock Off", "level": 32},
     {"move": "Earthquake", "level": 49},
     {"move": "Giga Impact", "level": 56},
     {"move": "Close Combat", "level": 63},
@@ -19201,13 +20301,13 @@
     {"move": "Flame Charge", "level": 14},
     {"move": "Stomp", "level": 21},
     {"move": "Low Sweep", "level": 28},
+    {"move": "Leech Life", "level": 34},
     {"move": "Morning Sun", "level": 35},
     {"move": "U-turn", "level": 42},
     {"move": "Superpower", "level": 49},
     {"move": "Bulk Up", "level": 56},
     {"move": "Wing Attack", "level": 63},
     {"move": "Whirlwind", "level": 77},
-    {"move": "Leech Life", "level": 84},
     {"move": "Thrash", "level": 91}
   ]
 },
@@ -19262,7 +20362,7 @@
     {"move": "Bulldoze", "level": 7},
     {"move": "Rapid Spin", "level": 21},
     {"move": "Iron Head", "level": 28},
-    {"move": "Knock Off", "level": 42},
+    {"move": "Knock Off", "level": 32},
     {"move": "Earthquake", "level": 49},
     {"move": "Heavy Slam", "level": 56},
     {"move": "Wild Charge", "level": 63},
@@ -19352,10 +20452,10 @@
     {"move": "Assurance", "level": 14},
     {"move": "Dragon Breath", "level": 21},
     {"move": "Snarl", "level": 28},
+    {"move": "Knock Off", "level": 32},
     {"move": "Crunch", "level": 35},
     {"move": "Hyper Voice", "level": 42},
     {"move": "Air Slash", "level": 56},
-    {"move": "Knock Off", "level": 63},
     {"move": "Dark Pulse", "level": 70},
     {"move": "Outrage", "level": 77},
     {"move": "Dragon Pulse", "level": 84},
@@ -19531,13 +20631,14 @@
     {"move": "Feint", "level": 14},
     {"move": "Future Sight", "level": 21},
     {"move": "Dazzling Gleam", "level": 28},
+    {"move": "Psycho Cut", "level": 31},
+    {"move": "Knock Off", "level": 32},
     {"move": "Brick Break", "level": 35},
     {"move": "Night Slash", "level": 42},
     {"move": "Drain Punch", "level": 49},
     {"move": "Moonblast", "level": 56},
     {"move": "Close Combat", "level": 60},
     {"move": "Play Rough", "level": 66},
-    {"move": "Knock Off", "level": 70},
     {"move": "Destiny Bond", "level": 77},
     {"move": "Quick Guard", "level": 84},
     {"move": "Wide Guard", "level": 84}
@@ -19574,6 +20675,28 @@
   ]
 },
 {
+  "name": "Mega Zeraora",
+  "pokedex_id": 807,
+  "changed": false,
+  "type1": "Electric",
+  "bst": 700,
+  "stats": {"hp": 88, "atk": 157, "def": 75, "spa": 147, "spd": 80, "spe": 153},
+  "abilities": ["Volt Absorb"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10319.png",
+  "moves": []
+},
+{
+  "name": "Mega Falinks",
+  "pokedex_id": 870,
+  "changed": false,
+  "type1": "Fighting",
+  "bst": 570,
+  "stats": {"hp": 65, "atk": 135, "def": 135, "spa": 70, "spd": 65, "spe": 100},
+  "abilities": ["Defiant"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10303.png",
+  "moves": []
+},
+{
   "name": "Zarude",
   "pokedex_id": 893,
   "changed": true,
@@ -19593,18 +20716,90 @@
     {"move": "Razor Leaf", "level": 22},
     {"move": "Bullet Seed", "level": 26},
     {"move": "Scary Face", "level": 30},
+    {"move": "Knock Off", "level": 32},
     {"move": "Night Slash", "level": 33},
     {"move": "Seed Bomb", "level": 36},
     {"move": "Crunch", "level": 40},
     {"move": "U-turn", "level": 44},
     {"move": "Swords Dance", "level": 48},
     {"move": "Leaf Blade", "level": 52},
-    {"move": "Knock Off", "level": 56},
     {"move": "Synthesis", "level": 60},
     {"move": "Hammer Arm", "level": 64},
     {"move": "Sucker Punch", "level": 68},
     {"move": "Power Whip", "level": 72}
   ]
+},
+{
+  "name": "Mega Scovillain",
+  "pokedex_id": 952,
+  "changed": false,
+  "type1": "Grass",
+  "type2": "Fire",
+  "bst": 586,
+  "stats": {"hp": 65, "atk": 138, "def": 85, "spa": 138, "spd": 85, "spe": 75},
+  "abilities": ["Spicy Spray"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10320.png",
+  "moves": []
+},
+{
+  "name": "Mega Glimmora",
+  "pokedex_id": 970,
+  "changed": false,
+  "type1": "Rock",
+  "type2": "Poison",
+  "bst": 625,
+  "stats": {"hp": 83, "atk": 90, "def": 105, "spa": 150, "spd": 96, "spe": 101},
+  "abilities": ["Adaptability"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10321.png",
+  "moves": []
+},
+{
+  "name": "Mega Tatsugiri (Curly)",
+  "pokedex_id": 978,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Water",
+  "bst": 575,
+  "stats": {"hp": 68, "atk": 65, "def": 90, "spa": 135, "spd": 125, "spe": 92},
+  "abilities": ["Commander", "Storm Drain"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10322.png",
+  "moves": []
+},
+{
+  "name": "Mega Tatsugiri (Droopy)",
+  "pokedex_id": 978,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Water",
+  "bst": 575,
+  "stats": {"hp": 68, "atk": 65, "def": 90, "spa": 135, "spd": 125, "spe": 92},
+  "abilities": ["Commander", "Storm Drain"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10323.png",
+  "moves": []
+},
+{
+  "name": "Mega Tatsugiri (Stretchy)",
+  "pokedex_id": 978,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Water",
+  "bst": 575,
+  "stats": {"hp": 68, "atk": 65, "def": 90, "spa": 135, "spd": 125, "spe": 92},
+  "abilities": ["Commander", "Storm Drain"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10324.png",
+  "moves": []
+},
+{
+  "name": "Mega Baxcalibur",
+  "pokedex_id": 998,
+  "changed": false,
+  "type1": "Dragon",
+  "type2": "Ice",
+  "bst": 700,
+  "stats": {"hp": 115, "atk": 175, "def": 117, "spa": 105, "spd": 101, "spe": 87},
+  "abilities": ["Thermal Exchange"],
+  "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10325.png",
+  "moves": []
 }
 ]
 }
