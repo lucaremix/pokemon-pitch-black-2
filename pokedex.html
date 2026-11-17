@@ -893,7 +893,6 @@
     box-shadow: 0 0 0 3px rgba(255,203,5,.2), 0 0 18px rgba(255,203,5,.4);
   }
   .card.mega-on .stage::before { opacity: .2; }
-  .mega-pick .lm { padding: 0 13px; }
 
   /* ───────── finishing touches ───────── */
   .card { scroll-margin-top: 80px; }
@@ -1405,7 +1404,6 @@ function fitIcon(img) {
 
 // the Pokémon in this box as little sprite chips: click one to see it in the card
 function lineMiniHTML(box, active) {
-  if (box.members.length < 2) return "";
   return '<div class="line-mini" role="group" aria-label="Pokémon in this box">' + box.members.map((m, k) =>
     '<button type="button" class="lm' + (m === active ? " on" : "") + '" data-k="' + k + '" aria-pressed="' + (m === active) + '" title="' + esc(m.name) + '">' +
       '<span class="lm-s">' + iconHTML(m) + '</span><span class="lm-n">' + esc(m.name) + "</span></button>").join("") + "</div>";
@@ -1441,9 +1439,10 @@ function statsHTML(p) {
 // the Pokémon (or, with mi >= 0, its Mega): name, line chips (or the Mega chips), abilities, stats, BST, radar
 function bodyInner(p, box, mi) {
   const megas = MEGAS.get(p.name) || [], m = megaOf(p, mi), s = m || p;
-  const chips = !m ? lineMiniHTML(box, p) : megas.length < 2 ? "" :
+  const chips = !m ? lineMiniHTML(box, p) :
     '<div class="line-mini mega-pick" role="group" aria-label="Mega Evolutions">' + megas.map((x, j) =>
-      '<button type="button" class="lm' + (x === m ? " on" : "") + '" data-mega="' + j + '" aria-pressed="' + (x === m) + '"><span class="lm-n">' + esc(x.name) + "</span></button>").join("") + "</div>";
+      '<button type="button" class="lm' + (x === m ? " on" : "") + '" data-mega="' + j + '" aria-pressed="' + (x === m) + '" title="' + esc(x.name) + '">' +
+        '<span class="lm-s"><span class="gi gi-sprite">' + spriteImg(x, 22) + '</span></span><span class="lm-n">' + esc(x.name) + "</span></button>").join("") + "</div>";
   return '<div class="b-head"><h2 class="name">' + esc(s.name) + "</h2></div>" + chips +
     '<div class="abilities" role="group" aria-label="Abilities">' + s.abilities.map(abilityLink).join("") + "</div>" +
     '<div class="b-stats"><div class="b-bars"><ul class="stats" aria-label="Base stats">' + statsHTML(s) + "</ul>" +
