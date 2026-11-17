@@ -16876,7 +16876,7 @@
   "type1": "Ice",
   "bst": 305,
   "stats": {"hp": 55, "atk": 70, "def": 40, "spa": 60, "spd": 40, "spe": 40},
-  "abilities": ["Rattled", "Snow Cloak"],
+  "abilities": ["Rattled", "Slush Rush"],
   "moves": [
     {"move": "Powder Snow", "level": 1},
     {"move": "Growl", "level": 5},
@@ -16903,7 +16903,7 @@
   "type2": "Fighting",
   "bst": 505,
   "stats": {"hp": 95, "atk": 130, "def": 80, "spa": 55, "spd": 80, "spe": 65},
-  "abilities": ["Mold Breaker", "Snow Cloak"],
+  "abilities": ["Mold Breaker", "Slush Rush"],
   "evo": {"from": "Cubchoo", "method": "Level 37"},
   "moves": [
     {"move": "Superpower", "level": 1},
