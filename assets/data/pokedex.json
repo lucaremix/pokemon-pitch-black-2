@@ -508,7 +508,7 @@
   "type1": "Electric",
   "bst": 585,
   "stats": {"hp": 60, "atk": 135, "def": 95, "spa": 90, "spd": 95, "spe": 110},
-  "abilities": ["Electric Surge"],
+  "abilities": ["Galvanize"],
   "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/10304.png",
   "moves": []
 },
