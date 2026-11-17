@@ -147,7 +147,7 @@
       "from": null,
       "to": 10
     },
-    "effect": "Has a 20% chance of lowering the target's Defense stat by one stage."
+    "effect": "20% chance to lower the target's Defense by 1."
   },
   {
     "name": "Fire Lash",
@@ -172,7 +172,7 @@
       "from": null,
       "to": 15
     },
-    "effect": "Lowers the target's Defense stat by one stage."
+    "effect": "Lowers the target's Defense by 1."
   },
   {
     "name": "Charm",
